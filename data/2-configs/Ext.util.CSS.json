@@ -1,0 +1,146 @@
+{
+  "name": "CSS",
+  "namespace": "Ext.util",
+  "constructorMethod": null,
+  "properties": [],
+  "methods": [
+    {
+      "name": "createStyleSheet",
+      "returnType": [
+        "StyleSheet"
+      ],
+      "visibility": "public",
+      "arguments": [
+        {
+          "name": "cssText",
+          "comment": "",
+          "type": [
+            "string"
+          ]
+        },
+        {
+          "name": "id",
+          "comment": "",
+          "type": [
+            "string"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "getRule",
+      "returnType": [
+        "CSSRule"
+      ],
+      "visibility": "public",
+      "arguments": [
+        {
+          "name": "selector",
+          "comment": "",
+          "type": [
+            "string",
+            "unknown[]"
+          ]
+        },
+        {
+          "name": "refreshCache",
+          "comment": "",
+          "type": [
+            "boolean"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "getRules",
+      "returnType": [
+        "object"
+      ],
+      "visibility": "public",
+      "arguments": [
+        {
+          "name": "refreshCache",
+          "comment": "",
+          "type": [
+            "boolean"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "refreshCache",
+      "returnType": [
+        "object"
+      ],
+      "visibility": "public",
+      "arguments": []
+    },
+    {
+      "name": "removeStyleSheet",
+      "returnType": [],
+      "visibility": "public",
+      "arguments": [
+        {
+          "name": "id",
+          "comment": "",
+          "type": [
+            "string"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "swapStyleSheet",
+      "returnType": [],
+      "visibility": "public",
+      "arguments": [
+        {
+          "name": "id",
+          "comment": "",
+          "type": [
+            "string"
+          ]
+        },
+        {
+          "name": "url",
+          "comment": "",
+          "type": [
+            "string"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "updateRule",
+      "returnType": [
+        "boolean"
+      ],
+      "visibility": "public",
+      "arguments": [
+        {
+          "name": "selector",
+          "comment": "",
+          "type": [
+            "string",
+            "unknown[]"
+          ]
+        },
+        {
+          "name": "property",
+          "comment": "",
+          "type": [
+            "string"
+          ]
+        },
+        {
+          "name": "value",
+          "comment": "",
+          "type": [
+            "string"
+          ]
+        }
+      ]
+    }
+  ],
+  "events": []
+}

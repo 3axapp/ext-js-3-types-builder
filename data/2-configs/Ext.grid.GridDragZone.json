@@ -1,0 +1,98 @@
+{
+  "name": "GridDragZone",
+  "namespace": "Ext.grid",
+  "extends": "Ext.dd.DragZone",
+  "constructorMethod": {
+    "config": [
+      {
+        "name": "containerScroll?",
+        "type": [
+          "boolean"
+        ],
+        "comment": ""
+      },
+      {
+        "name": "ddGroup?",
+        "type": [
+          "string"
+        ],
+        "comment": ""
+      },
+      {
+        "name": "dropAllowed?",
+        "type": [
+          "string"
+        ],
+        "comment": ""
+      },
+      {
+        "name": "dropNotAllowed?",
+        "type": [
+          "string"
+        ],
+        "comment": ""
+      },
+      {
+        "name": "hlColor?",
+        "type": [
+          "string"
+        ],
+        "comment": ""
+      }
+    ]
+  },
+  "properties": [],
+  "methods": [
+    {
+      "name": "afterRepair",
+      "returnType": [],
+      "visibility": "public",
+      "arguments": []
+    },
+    {
+      "name": "getDragData",
+      "returnType": [],
+      "visibility": "public",
+      "arguments": [
+        {
+          "name": "e",
+          "comment": "",
+          "type": [
+            "object"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "getRepairXY",
+      "returnType": [
+        "unknown[]"
+      ],
+      "visibility": "public",
+      "arguments": [
+        {
+          "name": "e",
+          "comment": "",
+          "type": [
+            "EventObject"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "onInitDrag",
+      "returnType": [],
+      "visibility": "public",
+      "arguments": [
+        {
+          "name": "e",
+          "comment": "",
+          "type": [
+            "object"
+          ]
+        }
+      ]
+    }
+  ],
+  "events": []
+}

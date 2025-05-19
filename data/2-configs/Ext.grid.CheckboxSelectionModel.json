@@ -1,0 +1,513 @@
+{
+  "name": "CheckboxSelectionModel",
+  "namespace": "Ext.grid",
+  "extends": "Ext.grid.RowSelectionModel",
+  "constructorMethod": {
+    "config": [
+      {
+        "name": "checkOnly?",
+        "type": [
+          "boolean"
+        ],
+        "comment": ""
+      },
+      {
+        "name": "header?",
+        "type": [
+          "string"
+        ],
+        "comment": ""
+      },
+      {
+        "name": "listeners?",
+        "type": [
+          "object"
+        ],
+        "comment": ""
+      },
+      {
+        "name": "moveEditorOnEnter?",
+        "type": [
+          "boolean"
+        ],
+        "comment": ""
+      },
+      {
+        "name": "singleSelect?",
+        "type": [
+          "boolean"
+        ],
+        "comment": ""
+      },
+      {
+        "name": "sortable?",
+        "type": [
+          "boolean"
+        ],
+        "comment": ""
+      },
+      {
+        "name": "width?",
+        "type": [
+          "number"
+        ],
+        "comment": ""
+      }
+    ]
+  },
+  "properties": [
+    {
+      "name": "dataIndex",
+      "type": [
+        "string"
+      ],
+      "visibility": "private",
+      "comment": ""
+    },
+    {
+      "name": "fixed",
+      "type": [
+        "boolean"
+      ],
+      "visibility": "private",
+      "comment": ""
+    },
+    {
+      "name": "hideable",
+      "type": [
+        "boolean"
+      ],
+      "visibility": "private",
+      "comment": ""
+    },
+    {
+      "name": "id",
+      "type": [
+        "string"
+      ],
+      "visibility": "private",
+      "comment": ""
+    },
+    {
+      "name": "isColumn",
+      "type": [
+        "boolean"
+      ],
+      "visibility": "private",
+      "comment": ""
+    },
+    {
+      "name": "menuDisabled",
+      "type": [
+        "boolean"
+      ],
+      "visibility": "private",
+      "comment": ""
+    }
+  ],
+  "methods": [
+    {
+      "name": "addListener<T extends ICheckboxSelectionModelEvents = ICheckboxSelectionModelEvents, E extends keyof T = keyof T>",
+      "returnType": [],
+      "visibility": "public",
+      "arguments": [
+        {
+          "name": "eventName",
+          "comment": "",
+          "type": [
+            "E"
+          ]
+        },
+        {
+          "name": "handler",
+          "comment": "",
+          "type": [
+            "T[E]"
+          ]
+        },
+        {
+          "name": "scope?",
+          "comment": "",
+          "type": [
+            "object"
+          ]
+        },
+        {
+          "name": "options?",
+          "comment": "",
+          "type": [
+            "object"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "fireEvent<T extends ICheckboxSelectionModelEvents = ICheckboxSelectionModelEvents, E extends keyof T = keyof T>",
+      "returnType": [
+        "boolean"
+      ],
+      "visibility": "public",
+      "arguments": [
+        {
+          "name": "eventName",
+          "comment": "",
+          "type": [
+            "E"
+          ]
+        },
+        {
+          "name": "...args",
+          "comment": "",
+          "type": [
+            "Parameters<T[E]>"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "hasListener<T extends ICheckboxSelectionModelEvents = ICheckboxSelectionModelEvents, E extends keyof T = keyof T>",
+      "returnType": [
+        "boolean"
+      ],
+      "visibility": "public",
+      "arguments": [
+        {
+          "name": "eventName",
+          "comment": "",
+          "type": [
+            "E"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "initEvents",
+      "returnType": [],
+      "visibility": "private",
+      "arguments": []
+    },
+    {
+      "name": "on<T extends ICheckboxSelectionModelEvents = ICheckboxSelectionModelEvents, E extends keyof T = keyof T>",
+      "returnType": [],
+      "visibility": "public",
+      "arguments": [
+        {
+          "name": "eventName",
+          "comment": "",
+          "type": [
+            "E"
+          ]
+        },
+        {
+          "name": "handler",
+          "comment": "",
+          "type": [
+            "T[E]"
+          ]
+        },
+        {
+          "name": "scope?",
+          "comment": "",
+          "type": [
+            "object"
+          ]
+        },
+        {
+          "name": "options?",
+          "comment": "",
+          "type": [
+            "object"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "onEditorSelect",
+      "returnType": [],
+      "visibility": "private",
+      "arguments": [
+        {
+          "name": "row",
+          "comment": "",
+          "type": [
+            "object"
+          ]
+        },
+        {
+          "name": "lastRow",
+          "comment": "",
+          "type": [
+            "object"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "onHdMouseDown",
+      "returnType": [],
+      "visibility": "private",
+      "arguments": [
+        {
+          "name": "e",
+          "comment": "",
+          "type": [
+            "object"
+          ]
+        },
+        {
+          "name": "t",
+          "comment": "",
+          "type": [
+            "object"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "onMouseDown",
+      "returnType": [],
+      "visibility": "private",
+      "arguments": [
+        {
+          "name": "e",
+          "comment": "",
+          "type": [
+            "object"
+          ]
+        },
+        {
+          "name": "t",
+          "comment": "",
+          "type": [
+            "object"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "processEvent",
+      "returnType": [],
+      "visibility": "private",
+      "arguments": [
+        {
+          "name": "name",
+          "comment": "",
+          "type": [
+            "object"
+          ]
+        },
+        {
+          "name": "e",
+          "comment": "",
+          "type": [
+            "object"
+          ]
+        },
+        {
+          "name": "grid",
+          "comment": "",
+          "type": [
+            "object"
+          ]
+        },
+        {
+          "name": "rowIndex",
+          "comment": "",
+          "type": [
+            "object"
+          ]
+        },
+        {
+          "name": "colIndex",
+          "comment": "",
+          "type": [
+            "object"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "removeListener<T extends ICheckboxSelectionModelEvents = ICheckboxSelectionModelEvents, E extends keyof T = keyof T>",
+      "returnType": [],
+      "visibility": "public",
+      "arguments": [
+        {
+          "name": "eventName",
+          "comment": "",
+          "type": [
+            "E"
+          ]
+        },
+        {
+          "name": "handler",
+          "comment": "",
+          "type": [
+            "T[E]"
+          ]
+        },
+        {
+          "name": "scope?",
+          "comment": "",
+          "type": [
+            "object"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "renderer",
+      "returnType": [],
+      "visibility": "private",
+      "arguments": [
+        {
+          "name": "v",
+          "comment": "",
+          "type": [
+            "object"
+          ]
+        },
+        {
+          "name": "p",
+          "comment": "",
+          "type": [
+            "object"
+          ]
+        },
+        {
+          "name": "record",
+          "comment": "",
+          "type": [
+            "object"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "un<T extends ICheckboxSelectionModelEvents = ICheckboxSelectionModelEvents, E extends keyof T = keyof T>",
+      "returnType": [],
+      "visibility": "public",
+      "arguments": [
+        {
+          "name": "eventName",
+          "comment": "",
+          "type": [
+            "E"
+          ]
+        },
+        {
+          "name": "handler",
+          "comment": "",
+          "type": [
+            "T[E]"
+          ]
+        },
+        {
+          "name": "scope?",
+          "comment": "",
+          "type": [
+            "object"
+          ]
+        }
+      ]
+    }
+  ],
+  "events": [
+    {
+      "name": "beforerowselect",
+      "arguments": [
+        {
+          "name": "thisCmp",
+          "comment": "",
+          "type": [
+            "CheckboxSelectionModel"
+          ]
+        },
+        {
+          "name": "rowIndex",
+          "comment": "",
+          "type": [
+            "number"
+          ]
+        },
+        {
+          "name": "keepExisting",
+          "comment": "",
+          "type": [
+            "boolean"
+          ]
+        },
+        {
+          "name": "record",
+          "comment": "",
+          "type": [
+            "Ext.data.Record"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "rowdeselect",
+      "arguments": [
+        {
+          "name": "thisCmp",
+          "comment": "",
+          "type": [
+            "CheckboxSelectionModel"
+          ]
+        },
+        {
+          "name": "rowIndex",
+          "comment": "",
+          "type": [
+            "number"
+          ]
+        },
+        {
+          "name": "record",
+          "comment": "",
+          "type": [
+            "Ext.data.Record"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "rowselect",
+      "arguments": [
+        {
+          "name": "thisCmp",
+          "comment": "",
+          "type": [
+            "CheckboxSelectionModel"
+          ]
+        },
+        {
+          "name": "rowIndex",
+          "comment": "",
+          "type": [
+            "number"
+          ]
+        },
+        {
+          "name": "r",
+          "comment": "",
+          "type": [
+            "Ext.data.Record"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "selectionchange",
+      "arguments": [
+        {
+          "name": "thisCmp",
+          "comment": "",
+          "type": [
+            "CheckboxSelectionModel"
+          ]
+        }
+      ]
+    }
+  ]
+}

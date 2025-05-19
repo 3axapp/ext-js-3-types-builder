@@ -1,0 +1,130 @@
+{
+  "name": "VTypes",
+  "namespace": "Ext.form",
+  "constructorMethod": null,
+  "properties": [
+    {
+      "name": "alphaMask",
+      "type": [
+        "RegExp"
+      ],
+      "visibility": "public",
+      "comment": ""
+    },
+    {
+      "name": "alphaText",
+      "type": [
+        "string"
+      ],
+      "visibility": "public",
+      "comment": ""
+    },
+    {
+      "name": "alphanumMask",
+      "type": [
+        "RegExp"
+      ],
+      "visibility": "public",
+      "comment": ""
+    },
+    {
+      "name": "alphanumText",
+      "type": [
+        "string"
+      ],
+      "visibility": "public",
+      "comment": ""
+    },
+    {
+      "name": "emailMask",
+      "type": [
+        "RegExp"
+      ],
+      "visibility": "public",
+      "comment": ""
+    },
+    {
+      "name": "emailText",
+      "type": [
+        "string"
+      ],
+      "visibility": "public",
+      "comment": ""
+    },
+    {
+      "name": "urlText",
+      "type": [
+        "string"
+      ],
+      "visibility": "public",
+      "comment": ""
+    }
+  ],
+  "methods": [
+    {
+      "name": "alpha",
+      "returnType": [
+        "boolean"
+      ],
+      "visibility": "public",
+      "arguments": [
+        {
+          "name": "value",
+          "comment": "",
+          "type": [
+            "string"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "alphanum",
+      "returnType": [
+        "boolean"
+      ],
+      "visibility": "public",
+      "arguments": [
+        {
+          "name": "value",
+          "comment": "",
+          "type": [
+            "string"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "email",
+      "returnType": [
+        "boolean"
+      ],
+      "visibility": "public",
+      "arguments": [
+        {
+          "name": "value",
+          "comment": "",
+          "type": [
+            "string"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "url",
+      "returnType": [
+        "boolean"
+      ],
+      "visibility": "public",
+      "arguments": [
+        {
+          "name": "value",
+          "comment": "",
+          "type": [
+            "string"
+          ]
+        }
+      ]
+    }
+  ],
+  "events": []
+}

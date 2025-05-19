@@ -1,0 +1,1699 @@
+{
+  "name": "Tip",
+  "namespace": "Ext",
+  "extends": "Ext.Panel",
+  "constructorMethod": {
+    "config": [
+      {
+        "name": "activeItem?",
+        "type": [
+          "string",
+          "number"
+        ],
+        "comment": ""
+      },
+      {
+        "name": "allowDomMove?",
+        "type": [
+          "boolean"
+        ],
+        "comment": ""
+      },
+      {
+        "name": "anchor?",
+        "type": [
+          "string"
+        ],
+        "comment": ""
+      },
+      {
+        "name": "animCollapse?",
+        "type": [
+          "boolean"
+        ],
+        "comment": ""
+      },
+      {
+        "name": "applyTo?",
+        "type": [
+          "unknown"
+        ],
+        "comment": ""
+      },
+      {
+        "name": "autoDestroy?",
+        "type": [
+          "boolean"
+        ],
+        "comment": ""
+      },
+      {
+        "name": "autoHeight?",
+        "type": [
+          "boolean"
+        ],
+        "comment": ""
+      },
+      {
+        "name": "autoLoad?",
+        "type": [
+          "object",
+          "string",
+          "Function"
+        ],
+        "comment": ""
+      },
+      {
+        "name": "autoScroll?",
+        "type": [
+          "boolean"
+        ],
+        "comment": ""
+      },
+      {
+        "name": "autoShow?",
+        "type": [
+          "boolean"
+        ],
+        "comment": ""
+      },
+      {
+        "name": "autoWidth?",
+        "type": [
+          "boolean"
+        ],
+        "comment": ""
+      },
+      {
+        "name": "baseCls?",
+        "type": [
+          "string"
+        ],
+        "comment": ""
+      },
+      {
+        "name": "bbar?",
+        "type": [
+          "object",
+          "unknown[]"
+        ],
+        "comment": ""
+      },
+      {
+        "name": "bbarCfg?",
+        "type": [
+          "object"
+        ],
+        "comment": ""
+      },
+      {
+        "name": "bodyBorder?",
+        "type": [
+          "boolean"
+        ],
+        "comment": ""
+      },
+      {
+        "name": "bodyCfg?",
+        "type": [
+          "object"
+        ],
+        "comment": ""
+      },
+      {
+        "name": "bodyCssClass?",
+        "type": [
+          "string",
+          "object",
+          "Function"
+        ],
+        "comment": ""
+      },
+      {
+        "name": "bodyStyle?",
+        "type": [
+          "string",
+          "object",
+          "Function"
+        ],
+        "comment": ""
+      },
+      {
+        "name": "border?",
+        "type": [
+          "boolean"
+        ],
+        "comment": ""
+      },
+      {
+        "name": "boxMaxHeight?",
+        "type": [
+          "number"
+        ],
+        "comment": ""
+      },
+      {
+        "name": "boxMaxWidth?",
+        "type": [
+          "number"
+        ],
+        "comment": ""
+      },
+      {
+        "name": "boxMinHeight?",
+        "type": [
+          "number"
+        ],
+        "comment": ""
+      },
+      {
+        "name": "boxMinWidth?",
+        "type": [
+          "number"
+        ],
+        "comment": ""
+      },
+      {
+        "name": "bubbleEvents?",
+        "type": [
+          "unknown[]"
+        ],
+        "comment": ""
+      },
+      {
+        "name": "bufferResize?",
+        "type": [
+          "boolean",
+          "number"
+        ],
+        "comment": ""
+      },
+      {
+        "name": "buttonAlign?",
+        "type": [
+          "string"
+        ],
+        "comment": ""
+      },
+      {
+        "name": "buttons?",
+        "type": [
+          "unknown[]"
+        ],
+        "comment": ""
+      },
+      {
+        "name": "bwrapCfg?",
+        "type": [
+          "object"
+        ],
+        "comment": ""
+      },
+      {
+        "name": "clearCls?",
+        "type": [
+          "string"
+        ],
+        "comment": ""
+      },
+      {
+        "name": "closable?",
+        "type": [
+          "boolean"
+        ],
+        "comment": ""
+      },
+      {
+        "name": "cls?",
+        "type": [
+          "string"
+        ],
+        "comment": ""
+      },
+      {
+        "name": "collapseFirst?",
+        "type": [
+          "boolean"
+        ],
+        "comment": ""
+      },
+      {
+        "name": "collapsed?",
+        "type": [
+          "boolean"
+        ],
+        "comment": ""
+      },
+      {
+        "name": "collapsedCls?",
+        "type": [
+          "string"
+        ],
+        "comment": ""
+      },
+      {
+        "name": "collapsible?",
+        "type": [
+          "boolean"
+        ],
+        "comment": ""
+      },
+      {
+        "name": "contentEl?",
+        "type": [
+          "string"
+        ],
+        "comment": ""
+      },
+      {
+        "name": "ctCls?",
+        "type": [
+          "string"
+        ],
+        "comment": ""
+      },
+      {
+        "name": "data?",
+        "type": [
+          "unknown"
+        ],
+        "comment": ""
+      },
+      {
+        "name": "defaultAlign?",
+        "type": [
+          "string"
+        ],
+        "comment": ""
+      },
+      {
+        "name": "defaultType?",
+        "type": [
+          "string"
+        ],
+        "comment": ""
+      },
+      {
+        "name": "defaults?",
+        "type": [
+          "Object|Function"
+        ],
+        "comment": ""
+      },
+      {
+        "name": "disabled?",
+        "type": [
+          "boolean"
+        ],
+        "comment": ""
+      },
+      {
+        "name": "disabledClass?",
+        "type": [
+          "string"
+        ],
+        "comment": ""
+      },
+      {
+        "name": "draggable?",
+        "type": [
+          "boolean",
+          "object"
+        ],
+        "comment": ""
+      },
+      {
+        "name": "elements?",
+        "type": [
+          "string"
+        ],
+        "comment": ""
+      },
+      {
+        "name": "fbar?",
+        "type": [
+          "object",
+          "unknown[]"
+        ],
+        "comment": ""
+      },
+      {
+        "name": "fieldLabel?",
+        "type": [
+          "string"
+        ],
+        "comment": ""
+      },
+      {
+        "name": "flex?",
+        "type": [
+          "number"
+        ],
+        "comment": ""
+      },
+      {
+        "name": "floating?",
+        "type": [
+          "unknown"
+        ],
+        "comment": ""
+      },
+      {
+        "name": "footer?",
+        "type": [
+          "boolean"
+        ],
+        "comment": ""
+      },
+      {
+        "name": "footerCfg?",
+        "type": [
+          "object"
+        ],
+        "comment": ""
+      },
+      {
+        "name": "forceLayout?",
+        "type": [
+          "boolean"
+        ],
+        "comment": ""
+      },
+      {
+        "name": "frame?",
+        "type": [
+          "boolean"
+        ],
+        "comment": ""
+      },
+      {
+        "name": "header?",
+        "type": [
+          "boolean"
+        ],
+        "comment": ""
+      },
+      {
+        "name": "headerAsText?",
+        "type": [
+          "boolean"
+        ],
+        "comment": ""
+      },
+      {
+        "name": "headerCfg?",
+        "type": [
+          "object"
+        ],
+        "comment": ""
+      },
+      {
+        "name": "height?",
+        "type": [
+          "number"
+        ],
+        "comment": ""
+      },
+      {
+        "name": "hidden?",
+        "type": [
+          "boolean"
+        ],
+        "comment": ""
+      },
+      {
+        "name": "hideBorders?",
+        "type": [
+          "boolean"
+        ],
+        "comment": ""
+      },
+      {
+        "name": "hideCollapseTool?",
+        "type": [
+          "boolean"
+        ],
+        "comment": ""
+      },
+      {
+        "name": "hideLabel?",
+        "type": [
+          "boolean"
+        ],
+        "comment": ""
+      },
+      {
+        "name": "hideMode?",
+        "type": [
+          "string"
+        ],
+        "comment": ""
+      },
+      {
+        "name": "hideParent?",
+        "type": [
+          "boolean"
+        ],
+        "comment": ""
+      },
+      {
+        "name": "html?",
+        "type": [
+          "string",
+          "object"
+        ],
+        "comment": ""
+      },
+      {
+        "name": "iconCls?",
+        "type": [
+          "string"
+        ],
+        "comment": ""
+      },
+      {
+        "name": "id?",
+        "type": [
+          "string"
+        ],
+        "comment": ""
+      },
+      {
+        "name": "itemCls?",
+        "type": [
+          "string"
+        ],
+        "comment": ""
+      },
+      {
+        "name": "itemId?",
+        "type": [
+          "string"
+        ],
+        "comment": ""
+      },
+      {
+        "name": "items?",
+        "type": [
+          "object",
+          "unknown[]"
+        ],
+        "comment": ""
+      },
+      {
+        "name": "keys?",
+        "type": [
+          "object",
+          "unknown[]"
+        ],
+        "comment": ""
+      },
+      {
+        "name": "labelSeparator?",
+        "type": [
+          "string"
+        ],
+        "comment": ""
+      },
+      {
+        "name": "labelStyle?",
+        "type": [
+          "string"
+        ],
+        "comment": ""
+      },
+      {
+        "name": "layout?",
+        "type": [
+          "string",
+          "object"
+        ],
+        "comment": ""
+      },
+      {
+        "name": "layoutConfig?",
+        "type": [
+          "object"
+        ],
+        "comment": ""
+      },
+      {
+        "name": "listeners?",
+        "type": [
+          "object"
+        ],
+        "comment": ""
+      },
+      {
+        "name": "margins?",
+        "type": [
+          "object"
+        ],
+        "comment": ""
+      },
+      {
+        "name": "maskDisabled?",
+        "type": [
+          "boolean"
+        ],
+        "comment": ""
+      },
+      {
+        "name": "maxWidth?",
+        "type": [
+          "number"
+        ],
+        "comment": ""
+      },
+      {
+        "name": "minButtonWidth?",
+        "type": [
+          "number"
+        ],
+        "comment": ""
+      },
+      {
+        "name": "minWidth?",
+        "type": [
+          "number"
+        ],
+        "comment": ""
+      },
+      {
+        "name": "monitorResize?",
+        "type": [
+          "boolean"
+        ],
+        "comment": ""
+      },
+      {
+        "name": "overCls?",
+        "type": [
+          "string"
+        ],
+        "comment": ""
+      },
+      {
+        "name": "padding?",
+        "type": [
+          "number",
+          "string"
+        ],
+        "comment": ""
+      },
+      {
+        "name": "pageX?",
+        "type": [
+          "number"
+        ],
+        "comment": ""
+      },
+      {
+        "name": "pageY?",
+        "type": [
+          "number"
+        ],
+        "comment": ""
+      },
+      {
+        "name": "plugins?",
+        "type": [
+          "object",
+          "unknown[]"
+        ],
+        "comment": ""
+      },
+      {
+        "name": "preventBodyReset?",
+        "type": [
+          "boolean"
+        ],
+        "comment": ""
+      },
+      {
+        "name": "ptype?",
+        "type": [
+          "string"
+        ],
+        "comment": ""
+      },
+      {
+        "name": "ref?",
+        "type": [
+          "string"
+        ],
+        "comment": ""
+      },
+      {
+        "name": "region?",
+        "type": [
+          "string"
+        ],
+        "comment": ""
+      },
+      {
+        "name": "renderTo?",
+        "type": [
+          "unknown"
+        ],
+        "comment": ""
+      },
+      {
+        "name": "resizeEvent?",
+        "type": [
+          "string"
+        ],
+        "comment": ""
+      },
+      {
+        "name": "shadow?",
+        "type": [
+          "boolean",
+          "string"
+        ],
+        "comment": ""
+      },
+      {
+        "name": "shadowOffset?",
+        "type": [
+          "number"
+        ],
+        "comment": ""
+      },
+      {
+        "name": "shim?",
+        "type": [
+          "boolean"
+        ],
+        "comment": ""
+      },
+      {
+        "name": "stateEvents?",
+        "type": [
+          "unknown[]"
+        ],
+        "comment": ""
+      },
+      {
+        "name": "stateId?",
+        "type": [
+          "string"
+        ],
+        "comment": ""
+      },
+      {
+        "name": "stateful?",
+        "type": [
+          "boolean"
+        ],
+        "comment": ""
+      },
+      {
+        "name": "style?",
+        "type": [
+          "string"
+        ],
+        "comment": ""
+      },
+      {
+        "name": "tabTip?",
+        "type": [
+          "string"
+        ],
+        "comment": ""
+      },
+      {
+        "name": "tbar?",
+        "type": [
+          "object",
+          "unknown[]"
+        ],
+        "comment": ""
+      },
+      {
+        "name": "tbarCfg?",
+        "type": [
+          "object"
+        ],
+        "comment": ""
+      },
+      {
+        "name": "title?",
+        "type": [
+          "string"
+        ],
+        "comment": ""
+      },
+      {
+        "name": "titleCollapse?",
+        "type": [
+          "boolean"
+        ],
+        "comment": ""
+      },
+      {
+        "name": "toolTemplate?",
+        "type": [
+          "Ext.Template",
+          "Ext.XTemplate"
+        ],
+        "comment": ""
+      },
+      {
+        "name": "tools?",
+        "type": [
+          "unknown[]"
+        ],
+        "comment": ""
+      },
+      {
+        "name": "tpl?",
+        "type": [
+          "unknown"
+        ],
+        "comment": ""
+      },
+      {
+        "name": "tplWriteMode?",
+        "type": [
+          "string"
+        ],
+        "comment": ""
+      },
+      {
+        "name": "unstyled?",
+        "type": [
+          "boolean"
+        ],
+        "comment": ""
+      },
+      {
+        "name": "width?",
+        "type": [
+          "number"
+        ],
+        "comment": ""
+      },
+      {
+        "name": "x?",
+        "type": [
+          "number"
+        ],
+        "comment": ""
+      },
+      {
+        "name": "xtype?",
+        "type": [
+          "string"
+        ],
+        "comment": ""
+      },
+      {
+        "name": "y?",
+        "type": [
+          "number"
+        ],
+        "comment": ""
+      }
+    ]
+  },
+  "properties": [
+    {
+      "name": "autoRender",
+      "type": [
+        "boolean"
+      ],
+      "visibility": "private",
+      "comment": ""
+    },
+    {
+      "name": "closeAction",
+      "type": [
+        "string"
+      ],
+      "visibility": "private",
+      "comment": ""
+    },
+    {
+      "name": "hidden",
+      "type": [
+        "boolean"
+      ],
+      "visibility": "public",
+      "comment": ""
+    },
+    {
+      "name": "quickShowInterval",
+      "type": [
+        "number"
+      ],
+      "visibility": "private",
+      "comment": ""
+    }
+  ],
+  "methods": [
+    {
+      "name": "addListener<T extends ITipEvents = ITipEvents, E extends keyof T = keyof T>",
+      "returnType": [],
+      "visibility": "public",
+      "arguments": [
+        {
+          "name": "eventName",
+          "comment": "",
+          "type": [
+            "E"
+          ]
+        },
+        {
+          "name": "handler",
+          "comment": "",
+          "type": [
+            "T[E]"
+          ]
+        },
+        {
+          "name": "scope?",
+          "comment": "",
+          "type": [
+            "object"
+          ]
+        },
+        {
+          "name": "options?",
+          "comment": "",
+          "type": [
+            "object"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "afterRender",
+      "returnType": [],
+      "visibility": "private",
+      "arguments": []
+    },
+    {
+      "name": "doAutoWidth",
+      "returnType": [],
+      "visibility": "private",
+      "arguments": [
+        {
+          "name": "adjust",
+          "comment": "",
+          "type": [
+            "object"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "fireEvent<T extends ITipEvents = ITipEvents, E extends keyof T = keyof T>",
+      "returnType": [
+        "boolean"
+      ],
+      "visibility": "public",
+      "arguments": [
+        {
+          "name": "eventName",
+          "comment": "",
+          "type": [
+            "E"
+          ]
+        },
+        {
+          "name": "...args",
+          "comment": "",
+          "type": [
+            "Parameters<T[E]>"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "hasListener<T extends ITipEvents = ITipEvents, E extends keyof T = keyof T>",
+      "returnType": [
+        "boolean"
+      ],
+      "visibility": "public",
+      "arguments": [
+        {
+          "name": "eventName",
+          "comment": "",
+          "type": [
+            "E"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "initComponent",
+      "returnType": [],
+      "visibility": "private",
+      "arguments": []
+    },
+    {
+      "name": "initDraggable",
+      "returnType": [],
+      "visibility": "private",
+      "arguments": []
+    },
+    {
+      "name": "on<T extends ITipEvents = ITipEvents, E extends keyof T = keyof T>",
+      "returnType": [],
+      "visibility": "public",
+      "arguments": [
+        {
+          "name": "eventName",
+          "comment": "",
+          "type": [
+            "E"
+          ]
+        },
+        {
+          "name": "handler",
+          "comment": "",
+          "type": [
+            "T[E]"
+          ]
+        },
+        {
+          "name": "scope?",
+          "comment": "",
+          "type": [
+            "object"
+          ]
+        },
+        {
+          "name": "options?",
+          "comment": "",
+          "type": [
+            "object"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "removeListener<T extends ITipEvents = ITipEvents, E extends keyof T = keyof T>",
+      "returnType": [],
+      "visibility": "public",
+      "arguments": [
+        {
+          "name": "eventName",
+          "comment": "",
+          "type": [
+            "E"
+          ]
+        },
+        {
+          "name": "handler",
+          "comment": "",
+          "type": [
+            "T[E]"
+          ]
+        },
+        {
+          "name": "scope?",
+          "comment": "",
+          "type": [
+            "object"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "showAt",
+      "returnType": [],
+      "visibility": "public",
+      "arguments": [
+        {
+          "name": "xy",
+          "comment": "",
+          "type": [
+            "unknown[]"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "showBy",
+      "returnType": [],
+      "visibility": "public",
+      "arguments": [
+        {
+          "name": "el",
+          "comment": "",
+          "type": [
+            "unknown"
+          ]
+        },
+        {
+          "name": "position?",
+          "comment": "",
+          "type": [
+            "string"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "un<T extends ITipEvents = ITipEvents, E extends keyof T = keyof T>",
+      "returnType": [],
+      "visibility": "public",
+      "arguments": [
+        {
+          "name": "eventName",
+          "comment": "",
+          "type": [
+            "E"
+          ]
+        },
+        {
+          "name": "handler",
+          "comment": "",
+          "type": [
+            "T[E]"
+          ]
+        },
+        {
+          "name": "scope?",
+          "comment": "",
+          "type": [
+            "object"
+          ]
+        }
+      ]
+    }
+  ],
+  "events": [
+    {
+      "name": "activate",
+      "arguments": [
+        {
+          "name": "p",
+          "comment": "",
+          "type": [
+            "Ext.Panel"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "add",
+      "arguments": [
+        {
+          "name": "thisCmp",
+          "comment": "",
+          "type": [
+            "Tip"
+          ]
+        },
+        {
+          "name": "component",
+          "comment": "",
+          "type": [
+            "Ext.Component"
+          ]
+        },
+        {
+          "name": "index",
+          "comment": "",
+          "type": [
+            "number"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "added",
+      "arguments": [
+        {
+          "name": "thisCmp",
+          "comment": "",
+          "type": [
+            "Tip"
+          ]
+        },
+        {
+          "name": "ownerCt",
+          "comment": "",
+          "type": [
+            "Ext.Container"
+          ]
+        },
+        {
+          "name": "index",
+          "comment": "",
+          "type": [
+            "number"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "afterlayout",
+      "arguments": [
+        {
+          "name": "thisCmp",
+          "comment": "",
+          "type": [
+            "Tip"
+          ]
+        },
+        {
+          "name": "layout",
+          "comment": "",
+          "type": [
+            "Ext.layout.ContainerLayout"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "afterrender",
+      "arguments": [
+        {
+          "name": "thisCmp",
+          "comment": "",
+          "type": [
+            "Tip"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "beforeadd",
+      "arguments": [
+        {
+          "name": "thisCmp",
+          "comment": "",
+          "type": [
+            "Tip"
+          ]
+        },
+        {
+          "name": "component",
+          "comment": "",
+          "type": [
+            "Ext.Component"
+          ]
+        },
+        {
+          "name": "index",
+          "comment": "",
+          "type": [
+            "number"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "beforeclose",
+      "arguments": [
+        {
+          "name": "p",
+          "comment": "",
+          "type": [
+            "Ext.Panel"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "beforecollapse",
+      "arguments": [
+        {
+          "name": "p",
+          "comment": "",
+          "type": [
+            "Ext.Panel"
+          ]
+        },
+        {
+          "name": "animate",
+          "comment": "",
+          "type": [
+            "boolean"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "beforedestroy",
+      "arguments": [
+        {
+          "name": "thisCmp",
+          "comment": "",
+          "type": [
+            "Tip"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "beforeexpand",
+      "arguments": [
+        {
+          "name": "p",
+          "comment": "",
+          "type": [
+            "Ext.Panel"
+          ]
+        },
+        {
+          "name": "animate",
+          "comment": "",
+          "type": [
+            "boolean"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "beforehide",
+      "arguments": [
+        {
+          "name": "thisCmp",
+          "comment": "",
+          "type": [
+            "Tip"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "beforeremove",
+      "arguments": [
+        {
+          "name": "thisCmp",
+          "comment": "",
+          "type": [
+            "Tip"
+          ]
+        },
+        {
+          "name": "component",
+          "comment": "",
+          "type": [
+            "Ext.Component"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "beforerender",
+      "arguments": [
+        {
+          "name": "thisCmp",
+          "comment": "",
+          "type": [
+            "Tip"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "beforeshow",
+      "arguments": [
+        {
+          "name": "thisCmp",
+          "comment": "",
+          "type": [
+            "Tip"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "beforestaterestore",
+      "arguments": [
+        {
+          "name": "thisCmp",
+          "comment": "",
+          "type": [
+            "Tip"
+          ]
+        },
+        {
+          "name": "state",
+          "comment": "",
+          "type": [
+            "object"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "beforestatesave",
+      "arguments": [
+        {
+          "name": "thisCmp",
+          "comment": "",
+          "type": [
+            "Tip"
+          ]
+        },
+        {
+          "name": "state",
+          "comment": "",
+          "type": [
+            "object"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "bodyresize",
+      "arguments": [
+        {
+          "name": "p",
+          "comment": "",
+          "type": [
+            "Ext.Panel"
+          ]
+        },
+        {
+          "name": "width",
+          "comment": "",
+          "type": [
+            "number"
+          ]
+        },
+        {
+          "name": "height",
+          "comment": "",
+          "type": [
+            "number"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "close",
+      "arguments": [
+        {
+          "name": "p",
+          "comment": "",
+          "type": [
+            "Ext.Panel"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "collapse",
+      "arguments": [
+        {
+          "name": "p",
+          "comment": "",
+          "type": [
+            "Ext.Panel"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "deactivate",
+      "arguments": [
+        {
+          "name": "p",
+          "comment": "",
+          "type": [
+            "Ext.Panel"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "destroy",
+      "arguments": [
+        {
+          "name": "thisCmp",
+          "comment": "",
+          "type": [
+            "Tip"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "disable",
+      "arguments": [
+        {
+          "name": "thisCmp",
+          "comment": "",
+          "type": [
+            "Tip"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "enable",
+      "arguments": [
+        {
+          "name": "thisCmp",
+          "comment": "",
+          "type": [
+            "Tip"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "expand",
+      "arguments": [
+        {
+          "name": "p",
+          "comment": "",
+          "type": [
+            "Ext.Panel"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "hide",
+      "arguments": [
+        {
+          "name": "thisCmp",
+          "comment": "",
+          "type": [
+            "Tip"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "iconchange",
+      "arguments": [
+        {
+          "name": "p",
+          "comment": "",
+          "type": [
+            "Ext.Panel"
+          ]
+        },
+        {
+          "name": "newIcon",
+          "comment": "",
+          "type": [
+            "string"
+          ]
+        },
+        {
+          "name": "oldIcon",
+          "comment": "",
+          "type": [
+            "string"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "move",
+      "arguments": [
+        {
+          "name": "thisCmp",
+          "comment": "",
+          "type": [
+            "Tip"
+          ]
+        },
+        {
+          "name": "x",
+          "comment": "",
+          "type": [
+            "number"
+          ]
+        },
+        {
+          "name": "y",
+          "comment": "",
+          "type": [
+            "number"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "remove",
+      "arguments": [
+        {
+          "name": "thisCmp",
+          "comment": "",
+          "type": [
+            "Tip"
+          ]
+        },
+        {
+          "name": "component",
+          "comment": "",
+          "type": [
+            "Ext.Component"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "removed",
+      "arguments": [
+        {
+          "name": "thisCmp",
+          "comment": "",
+          "type": [
+            "Tip"
+          ]
+        },
+        {
+          "name": "ownerCt",
+          "comment": "",
+          "type": [
+            "Ext.Container"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "render",
+      "arguments": [
+        {
+          "name": "thisCmp",
+          "comment": "",
+          "type": [
+            "Tip"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "resize",
+      "arguments": [
+        {
+          "name": "thisCmp",
+          "comment": "",
+          "type": [
+            "Tip"
+          ]
+        },
+        {
+          "name": "adjWidth",
+          "comment": "",
+          "type": [
+            "number"
+          ]
+        },
+        {
+          "name": "adjHeight",
+          "comment": "",
+          "type": [
+            "number"
+          ]
+        },
+        {
+          "name": "rawWidth",
+          "comment": "",
+          "type": [
+            "number"
+          ]
+        },
+        {
+          "name": "rawHeight",
+          "comment": "",
+          "type": [
+            "number"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "show",
+      "arguments": [
+        {
+          "name": "thisCmp",
+          "comment": "",
+          "type": [
+            "Tip"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "staterestore",
+      "arguments": [
+        {
+          "name": "thisCmp",
+          "comment": "",
+          "type": [
+            "Tip"
+          ]
+        },
+        {
+          "name": "state",
+          "comment": "",
+          "type": [
+            "object"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "statesave",
+      "arguments": [
+        {
+          "name": "thisCmp",
+          "comment": "",
+          "type": [
+            "Tip"
+          ]
+        },
+        {
+          "name": "state",
+          "comment": "",
+          "type": [
+            "object"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "titlechange",
+      "arguments": [
+        {
+          "name": "p",
+          "comment": "",
+          "type": [
+            "Ext.Panel"
+          ]
+        },
+        {
+          "name": "The",
+          "comment": "",
+          "type": [
+            "string"
+          ]
+        }
+      ]
+    }
+  ]
+}

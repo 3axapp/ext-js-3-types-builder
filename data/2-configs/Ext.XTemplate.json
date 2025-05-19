@@ -1,0 +1,93 @@
+{
+  "name": "XTemplate",
+  "namespace": "Ext",
+  "extends": "Ext.Template",
+  "constructorMethod": {
+    "config": [
+      {
+        "name": "compiled?",
+        "type": [
+          "boolean"
+        ],
+        "comment": ""
+      },
+      {
+        "name": "disableFormats?",
+        "type": [
+          "boolean"
+        ],
+        "comment": ""
+      },
+      {
+        "name": "re?",
+        "type": [
+          "RegExp"
+        ],
+        "comment": ""
+      }
+    ]
+  },
+  "properties": [],
+  "methods": [
+    {
+      "name": "apply",
+      "returnType": [
+        "string"
+      ],
+      "visibility": "public",
+      "arguments": [
+        {
+          "name": "values",
+          "comment": "",
+          "type": [
+            "object",
+            "unknown[]"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "applyTemplate",
+      "returnType": [
+        "string"
+      ],
+      "visibility": "public",
+      "arguments": [
+        {
+          "name": "values",
+          "comment": "",
+          "type": [
+            "object"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "compile",
+      "returnType": [
+        "this"
+      ],
+      "visibility": "public",
+      "arguments": []
+    },
+    {
+      "name": "from",
+      "static": true,
+      "returnType": [
+        "Ext.Template"
+      ],
+      "visibility": "public",
+      "arguments": [
+        {
+          "name": "el",
+          "comment": "",
+          "type": [
+            "string",
+            "HTMLElement"
+          ]
+        }
+      ]
+    }
+  ],
+  "events": []
+}

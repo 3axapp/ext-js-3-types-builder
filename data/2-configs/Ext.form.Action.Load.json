@@ -1,0 +1,89 @@
+{
+  "name": "Load",
+  "namespace": "Ext.form.Action",
+  "extends": "Ext.form.Action",
+  "constructorMethod": {
+    "config": [
+      {
+        "name": "failure?",
+        "type": [
+          "Function"
+        ],
+        "comment": ""
+      },
+      {
+        "name": "method?",
+        "type": [
+          "string"
+        ],
+        "comment": ""
+      },
+      {
+        "name": "params?",
+        "type": [
+          "unknown"
+        ],
+        "comment": ""
+      },
+      {
+        "name": "reset?",
+        "type": [
+          "boolean"
+        ],
+        "comment": ""
+      },
+      {
+        "name": "scope?",
+        "type": [
+          "object"
+        ],
+        "comment": ""
+      },
+      {
+        "name": "submitEmptyText?",
+        "type": [
+          "boolean"
+        ],
+        "comment": ""
+      },
+      {
+        "name": "success?",
+        "type": [
+          "Function"
+        ],
+        "comment": ""
+      },
+      {
+        "name": "timeout?",
+        "type": [
+          "number"
+        ],
+        "comment": ""
+      },
+      {
+        "name": "url?",
+        "type": [
+          "string"
+        ],
+        "comment": ""
+      },
+      {
+        "name": "waitMsg?",
+        "type": [
+          "string"
+        ],
+        "comment": ""
+      },
+      {
+        "name": "waitTitle?",
+        "type": [
+          "string"
+        ],
+        "comment": ""
+      }
+    ]
+  },
+  "properties": [],
+  "methods": [],
+  "events": []
+}

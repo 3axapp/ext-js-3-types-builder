@@ -1,0 +1,3908 @@
+{
+  "name": "Element",
+  "namespace": "Ext",
+  "extends": null,
+  "constructorMethod": null,
+  "properties": [
+    {
+      "name": "autoBoxAdjust",
+      "type": [
+        "boolean"
+      ],
+      "visibility": "public",
+      "comment": ""
+    },
+    {
+      "name": "defaultUnit",
+      "type": [
+        "string"
+      ],
+      "visibility": "public",
+      "comment": ""
+    },
+    {
+      "name": "dom",
+      "type": [
+        "HTMLElement"
+      ],
+      "visibility": "public",
+      "comment": ""
+    },
+    {
+      "name": "id",
+      "type": [
+        "string"
+      ],
+      "visibility": "public",
+      "comment": ""
+    },
+    {
+      "name": "originalDisplay",
+      "type": [
+        "string"
+      ],
+      "visibility": "public",
+      "comment": ""
+    },
+    {
+      "name": "DISPLAY",
+      "static": true,
+      "type": [
+        "number"
+      ],
+      "visibility": "public",
+      "comment": ""
+    },
+    {
+      "name": "OFFSETS",
+      "static": true,
+      "type": [
+        "number"
+      ],
+      "visibility": "public",
+      "comment": ""
+    },
+    {
+      "name": "VISIBILITY",
+      "static": true,
+      "type": [
+        "number"
+      ],
+      "visibility": "public",
+      "comment": ""
+    },
+    {
+      "name": "visibilityCls",
+      "static": true,
+      "type": [
+        "string"
+      ],
+      "visibility": "public",
+      "comment": ""
+    }
+  ],
+  "methods": [
+    {
+      "name": "addClass",
+      "returnType": [
+        "this"
+      ],
+      "visibility": "public",
+      "arguments": [
+        {
+          "name": "className",
+          "comment": "",
+          "type": [
+            "string",
+            "unknown[]"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "addClassOnClick",
+      "returnType": [
+        "this"
+      ],
+      "visibility": "public",
+      "arguments": [
+        {
+          "name": "className",
+          "comment": "",
+          "type": [
+            "string"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "addClassOnFocus",
+      "returnType": [
+        "this"
+      ],
+      "visibility": "public",
+      "arguments": [
+        {
+          "name": "className",
+          "comment": "",
+          "type": [
+            "string"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "addClassOnOver",
+      "returnType": [
+        "this"
+      ],
+      "visibility": "public",
+      "arguments": [
+        {
+          "name": "className",
+          "comment": "",
+          "type": [
+            "string"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "addKeyListener",
+      "returnType": [
+        "Ext.KeyMap"
+      ],
+      "visibility": "public",
+      "arguments": [
+        {
+          "name": "key",
+          "comment": "",
+          "type": [
+            "number",
+            "unknown[]",
+            "object",
+            "string"
+          ]
+        },
+        {
+          "name": "fn",
+          "comment": "",
+          "type": [
+            "Function"
+          ]
+        },
+        {
+          "name": "scope?",
+          "comment": "",
+          "type": [
+            "object"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "addKeyMap",
+      "returnType": [
+        "Ext.KeyMap"
+      ],
+      "visibility": "public",
+      "arguments": [
+        {
+          "name": "config",
+          "comment": "",
+          "type": [
+            "object"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "addListener<T extends IElementEvents = IElementEvents, E extends keyof T = keyof T>",
+      "returnType": [
+        "this"
+      ],
+      "visibility": "public",
+      "arguments": [
+        {
+          "name": "eventName",
+          "comment": "",
+          "type": [
+            "E"
+          ]
+        },
+        {
+          "name": "fn",
+          "comment": "",
+          "type": [
+            "Function"
+          ]
+        },
+        {
+          "name": "scope?",
+          "comment": "",
+          "type": [
+            "object"
+          ]
+        },
+        {
+          "name": "options?",
+          "comment": "",
+          "type": [
+            "object"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "addUnits",
+      "returnType": [],
+      "visibility": "private",
+      "arguments": [
+        {
+          "name": "size",
+          "comment": "",
+          "type": [
+            "object"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "alignTo",
+      "returnType": [
+        "this"
+      ],
+      "visibility": "public",
+      "arguments": [
+        {
+          "name": "element",
+          "comment": "",
+          "type": [
+            "unknown"
+          ]
+        },
+        {
+          "name": "position",
+          "comment": "",
+          "type": [
+            "string"
+          ]
+        },
+        {
+          "name": "offsets?",
+          "comment": "",
+          "type": [
+            "unknown[]"
+          ]
+        },
+        {
+          "name": "animate?",
+          "comment": "",
+          "type": [
+            "boolean",
+            "object"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "anchorTo",
+      "returnType": [
+        "this"
+      ],
+      "visibility": "public",
+      "arguments": [
+        {
+          "name": "element",
+          "comment": "",
+          "type": [
+            "unknown"
+          ]
+        },
+        {
+          "name": "position",
+          "comment": "",
+          "type": [
+            "string"
+          ]
+        },
+        {
+          "name": "offsets?",
+          "comment": "",
+          "type": [
+            "unknown[]"
+          ]
+        },
+        {
+          "name": "animate?",
+          "comment": "",
+          "type": [
+            "boolean",
+            "object"
+          ]
+        },
+        {
+          "name": "monitorScroll?",
+          "comment": "",
+          "type": [
+            "boolean",
+            "number"
+          ]
+        },
+        {
+          "name": "callback?",
+          "comment": "",
+          "type": [
+            "Function"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "animate",
+      "returnType": [
+        "this"
+      ],
+      "visibility": "public",
+      "arguments": [
+        {
+          "name": "args",
+          "comment": "",
+          "type": [
+            "object"
+          ]
+        },
+        {
+          "name": "duration?",
+          "comment": "",
+          "type": [
+            "number"
+          ]
+        },
+        {
+          "name": "onComplete?",
+          "comment": "",
+          "type": [
+            "Function"
+          ]
+        },
+        {
+          "name": "easing?",
+          "comment": "",
+          "type": [
+            "string"
+          ]
+        },
+        {
+          "name": "animType?",
+          "comment": "",
+          "type": [
+            "string"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "appendChild",
+      "returnType": [
+        "this"
+      ],
+      "visibility": "public",
+      "arguments": [
+        {
+          "name": "el",
+          "comment": "",
+          "type": [
+            "string",
+            "HTMLElement",
+            "unknown[]",
+            "Element",
+            "Ext.CompositeElement"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "appendTo",
+      "returnType": [
+        "this"
+      ],
+      "visibility": "public",
+      "arguments": [
+        {
+          "name": "el",
+          "comment": "",
+          "type": [
+            "unknown"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "applyStyles",
+      "returnType": [
+        "this"
+      ],
+      "visibility": "public",
+      "arguments": [
+        {
+          "name": "styles",
+          "comment": "",
+          "type": [
+            "string",
+            "object",
+            "Function"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "blur",
+      "returnType": [
+        "this"
+      ],
+      "visibility": "public",
+      "arguments": []
+    },
+    {
+      "name": "boxWrap",
+      "returnType": [
+        "Ext.Element"
+      ],
+      "visibility": "public",
+      "arguments": [
+        {
+          "name": "className?",
+          "comment": "",
+          "type": [
+            "string"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "center",
+      "returnType": [],
+      "visibility": "public",
+      "arguments": [
+        {
+          "name": "centerIn?",
+          "comment": "",
+          "type": [
+            "unknown"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "child",
+      "returnType": [
+        "HTMLElement",
+        "Ext.Element"
+      ],
+      "visibility": "public",
+      "arguments": [
+        {
+          "name": "selector",
+          "comment": "",
+          "type": [
+            "string"
+          ]
+        },
+        {
+          "name": "returnDom?",
+          "comment": "",
+          "type": [
+            "boolean"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "clean",
+      "returnType": [],
+      "visibility": "public",
+      "arguments": [
+        {
+          "name": "forceReclean?",
+          "comment": "",
+          "type": [
+            "boolean"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "clearOpacity",
+      "returnType": [
+        "this"
+      ],
+      "visibility": "public",
+      "arguments": []
+    },
+    {
+      "name": "clearPositioning",
+      "returnType": [
+        "this"
+      ],
+      "visibility": "public",
+      "arguments": [
+        {
+          "name": "value?",
+          "comment": "",
+          "type": [
+            "string"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "clip",
+      "returnType": [
+        "this"
+      ],
+      "visibility": "public",
+      "arguments": []
+    },
+    {
+      "name": "contains",
+      "returnType": [
+        "boolean"
+      ],
+      "visibility": "public",
+      "arguments": [
+        {
+          "name": "el",
+          "comment": "",
+          "type": [
+            "HTMLElement",
+            "string"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "createChild",
+      "returnType": [
+        "Ext.Element"
+      ],
+      "visibility": "public",
+      "arguments": [
+        {
+          "name": "config",
+          "comment": "",
+          "type": [
+            "object"
+          ]
+        },
+        {
+          "name": "insertBefore?",
+          "comment": "",
+          "type": [
+            "HTMLElement"
+          ]
+        },
+        {
+          "name": "returnDom?",
+          "comment": "",
+          "type": [
+            "boolean"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "createProxy",
+      "returnType": [
+        "Ext.Element"
+      ],
+      "visibility": "public",
+      "arguments": [
+        {
+          "name": "config",
+          "comment": "",
+          "type": [
+            "string",
+            "object"
+          ]
+        },
+        {
+          "name": "renderTo?",
+          "comment": "",
+          "type": [
+            "string",
+            "HTMLElement"
+          ]
+        },
+        {
+          "name": "matchBox?",
+          "comment": "",
+          "type": [
+            "boolean"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "createShim",
+      "returnType": [
+        "Ext.Element"
+      ],
+      "visibility": "public",
+      "arguments": []
+    },
+    {
+      "name": "down",
+      "returnType": [
+        "HTMLElement",
+        "Ext.Element"
+      ],
+      "visibility": "public",
+      "arguments": [
+        {
+          "name": "selector",
+          "comment": "",
+          "type": [
+            "string"
+          ]
+        },
+        {
+          "name": "returnDom?",
+          "comment": "",
+          "type": [
+            "boolean"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "enableDisplayMode",
+      "returnType": [
+        "this"
+      ],
+      "visibility": "public",
+      "arguments": [
+        {
+          "name": "display?",
+          "comment": "",
+          "type": [
+            "string"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "findParent",
+      "returnType": [
+        "HTMLElement"
+      ],
+      "visibility": "public",
+      "arguments": [
+        {
+          "name": "selector",
+          "comment": "",
+          "type": [
+            "string"
+          ]
+        },
+        {
+          "name": "maxDepth?",
+          "comment": "",
+          "type": [
+            "number",
+            "unknown"
+          ]
+        },
+        {
+          "name": "returnEl?",
+          "comment": "",
+          "type": [
+            "boolean"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "findParentNode",
+      "returnType": [
+        "HTMLElement"
+      ],
+      "visibility": "public",
+      "arguments": [
+        {
+          "name": "selector",
+          "comment": "",
+          "type": [
+            "string"
+          ]
+        },
+        {
+          "name": "maxDepth?",
+          "comment": "",
+          "type": [
+            "number",
+            "unknown"
+          ]
+        },
+        {
+          "name": "returnEl?",
+          "comment": "",
+          "type": [
+            "boolean"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "first",
+      "returnType": [
+        "Ext.Element",
+        "HTMLElement"
+      ],
+      "visibility": "public",
+      "arguments": [
+        {
+          "name": "selector?",
+          "comment": "",
+          "type": [
+            "string"
+          ]
+        },
+        {
+          "name": "returnDom?",
+          "comment": "",
+          "type": [
+            "boolean"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "fly",
+      "returnType": [
+        "Element"
+      ],
+      "visibility": "public",
+      "arguments": [
+        {
+          "name": "el",
+          "comment": "",
+          "type": [
+            "string",
+            "HTMLElement"
+          ]
+        },
+        {
+          "name": "named?",
+          "comment": "",
+          "type": [
+            "string"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "focus",
+      "returnType": [
+        "this"
+      ],
+      "visibility": "public",
+      "arguments": [
+        {
+          "name": "defer?",
+          "comment": "",
+          "type": [
+            "number"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "getAlignToXY",
+      "returnType": [
+        "unknown[]"
+      ],
+      "visibility": "public",
+      "arguments": [
+        {
+          "name": "element",
+          "comment": "",
+          "type": [
+            "unknown"
+          ]
+        },
+        {
+          "name": "position",
+          "comment": "",
+          "type": [
+            "string"
+          ]
+        },
+        {
+          "name": "offsets?",
+          "comment": "",
+          "type": [
+            "unknown[]"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "getAnchorXY",
+      "returnType": [
+        "unknown[]"
+      ],
+      "visibility": "public",
+      "arguments": [
+        {
+          "name": "anchor?",
+          "comment": "",
+          "type": [
+            "string"
+          ]
+        },
+        {
+          "name": "local?",
+          "comment": "",
+          "type": [
+            "boolean"
+          ]
+        },
+        {
+          "name": "size?",
+          "comment": "",
+          "type": [
+            "object"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "getAttribute",
+      "returnType": [
+        "string"
+      ],
+      "visibility": "public",
+      "arguments": [
+        {
+          "name": "name",
+          "comment": "",
+          "type": [
+            "string"
+          ]
+        },
+        {
+          "name": "namespace?",
+          "comment": "",
+          "type": [
+            "string"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "getAttributeNS",
+      "returnType": [
+        "string"
+      ],
+      "visibility": "public",
+      "arguments": [
+        {
+          "name": "namespace",
+          "comment": "",
+          "type": [
+            "string"
+          ]
+        },
+        {
+          "name": "name",
+          "comment": "",
+          "type": [
+            "string"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "getBorderWidth",
+      "returnType": [
+        "number"
+      ],
+      "visibility": "public",
+      "arguments": [
+        {
+          "name": "side",
+          "comment": "",
+          "type": [
+            "string"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "getBottom",
+      "returnType": [
+        "number"
+      ],
+      "visibility": "public",
+      "arguments": [
+        {
+          "name": "local",
+          "comment": "",
+          "type": [
+            "boolean"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "getBox",
+      "returnType": [
+        "object"
+      ],
+      "visibility": "public",
+      "arguments": [
+        {
+          "name": "contentBox?",
+          "comment": "",
+          "type": [
+            "boolean"
+          ]
+        },
+        {
+          "name": "local?",
+          "comment": "",
+          "type": [
+            "boolean"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "getCenterXY",
+      "returnType": [
+        "unknown[]"
+      ],
+      "visibility": "public",
+      "arguments": []
+    },
+    {
+      "name": "getColor",
+      "returnType": [],
+      "visibility": "public",
+      "arguments": [
+        {
+          "name": "attr",
+          "comment": "",
+          "type": [
+            "string"
+          ]
+        },
+        {
+          "name": "defaultValue",
+          "comment": "",
+          "type": [
+            "string"
+          ]
+        },
+        {
+          "name": "prefix?",
+          "comment": "",
+          "type": [
+            "string"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "getComputedHeight",
+      "returnType": [
+        "number"
+      ],
+      "visibility": "public",
+      "arguments": []
+    },
+    {
+      "name": "getComputedWidth",
+      "returnType": [
+        "number"
+      ],
+      "visibility": "public",
+      "arguments": []
+    },
+    {
+      "name": "getFrameWidth",
+      "returnType": [
+        "number"
+      ],
+      "visibility": "public",
+      "arguments": [
+        {
+          "name": "sides",
+          "comment": "",
+          "type": [
+            "string"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "getHeight",
+      "returnType": [
+        "number"
+      ],
+      "visibility": "public",
+      "arguments": [
+        {
+          "name": "contentHeight?",
+          "comment": "",
+          "type": [
+            "boolean"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "getLeft",
+      "returnType": [
+        "number"
+      ],
+      "visibility": "public",
+      "arguments": [
+        {
+          "name": "local",
+          "comment": "",
+          "type": [
+            "boolean"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "getMargins",
+      "returnType": [
+        "object",
+        "number"
+      ],
+      "visibility": "public",
+      "arguments": [
+        {
+          "name": "sides?",
+          "comment": "",
+          "type": [
+            "string"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "getOffsetsTo",
+      "returnType": [
+        "unknown[]"
+      ],
+      "visibility": "public",
+      "arguments": [
+        {
+          "name": "element",
+          "comment": "",
+          "type": [
+            "unknown"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "getPadding",
+      "returnType": [
+        "number"
+      ],
+      "visibility": "public",
+      "arguments": [
+        {
+          "name": "side",
+          "comment": "",
+          "type": [
+            "string"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "getPositioning",
+      "returnType": [
+        "object"
+      ],
+      "visibility": "public",
+      "arguments": []
+    },
+    {
+      "name": "getRegion",
+      "returnType": [
+        "Ext.lib.Region"
+      ],
+      "visibility": "public",
+      "arguments": []
+    },
+    {
+      "name": "getRight",
+      "returnType": [
+        "number"
+      ],
+      "visibility": "public",
+      "arguments": [
+        {
+          "name": "local",
+          "comment": "",
+          "type": [
+            "boolean"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "getScroll",
+      "returnType": [
+        "object"
+      ],
+      "visibility": "public",
+      "arguments": []
+    },
+    {
+      "name": "getSize",
+      "returnType": [
+        "object"
+      ],
+      "visibility": "public",
+      "arguments": [
+        {
+          "name": "contentSize?",
+          "comment": "",
+          "type": [
+            "boolean"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "getStyle",
+      "returnType": [
+        "string"
+      ],
+      "visibility": "public",
+      "arguments": [
+        {
+          "name": "property",
+          "comment": "",
+          "type": [
+            "string"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "getStyleSize",
+      "returnType": [],
+      "visibility": "public",
+      "arguments": []
+    },
+    {
+      "name": "getStyles",
+      "returnType": [
+        "object"
+      ],
+      "visibility": "public",
+      "arguments": [
+        {
+          "name": "style1",
+          "comment": "",
+          "type": [
+            "string"
+          ]
+        },
+        {
+          "name": "style2",
+          "comment": "",
+          "type": [
+            "string"
+          ]
+        },
+        {
+          "name": "etc",
+          "comment": "",
+          "type": [
+            "string"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "getTextWidth",
+      "returnType": [
+        "number"
+      ],
+      "visibility": "public",
+      "arguments": [
+        {
+          "name": "text",
+          "comment": "",
+          "type": [
+            "string"
+          ]
+        },
+        {
+          "name": "min?",
+          "comment": "",
+          "type": [
+            "number"
+          ]
+        },
+        {
+          "name": "max?",
+          "comment": "",
+          "type": [
+            "number"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "getTop",
+      "returnType": [
+        "number"
+      ],
+      "visibility": "public",
+      "arguments": [
+        {
+          "name": "local",
+          "comment": "",
+          "type": [
+            "boolean"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "getUpdater",
+      "returnType": [
+        "Ext.Updater"
+      ],
+      "visibility": "public",
+      "arguments": []
+    },
+    {
+      "name": "getValue",
+      "returnType": [
+        "string",
+        "number"
+      ],
+      "visibility": "public",
+      "arguments": [
+        {
+          "name": "asNumber",
+          "comment": "",
+          "type": [
+            "boolean"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "getViewSize",
+      "returnType": [],
+      "visibility": "public",
+      "arguments": []
+    },
+    {
+      "name": "getWidth",
+      "returnType": [
+        "number"
+      ],
+      "visibility": "public",
+      "arguments": [
+        {
+          "name": "contentWidth?",
+          "comment": "",
+          "type": [
+            "boolean"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "getX",
+      "returnType": [
+        "number"
+      ],
+      "visibility": "public",
+      "arguments": []
+    },
+    {
+      "name": "getXY",
+      "returnType": [
+        "unknown[]"
+      ],
+      "visibility": "public",
+      "arguments": []
+    },
+    {
+      "name": "getY",
+      "returnType": [
+        "number"
+      ],
+      "visibility": "public",
+      "arguments": []
+    },
+    {
+      "name": "hasClass",
+      "returnType": [
+        "boolean"
+      ],
+      "visibility": "public",
+      "arguments": [
+        {
+          "name": "className",
+          "comment": "",
+          "type": [
+            "string"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "hasMetrics",
+      "returnType": [],
+      "visibility": "private",
+      "arguments": []
+    },
+    {
+      "name": "hide",
+      "returnType": [
+        "this"
+      ],
+      "visibility": "public",
+      "arguments": [
+        {
+          "name": "animate?",
+          "comment": "",
+          "type": [
+            "boolean",
+            "object"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "hover",
+      "returnType": [
+        "this"
+      ],
+      "visibility": "public",
+      "arguments": [
+        {
+          "name": "overFn",
+          "comment": "",
+          "type": [
+            "Function"
+          ]
+        },
+        {
+          "name": "outFn",
+          "comment": "",
+          "type": [
+            "Function"
+          ]
+        },
+        {
+          "name": "scope?",
+          "comment": "",
+          "type": [
+            "object"
+          ]
+        },
+        {
+          "name": "options?",
+          "comment": "",
+          "type": [
+            "object"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "initDD",
+      "returnType": [
+        "Ext.dd.DD"
+      ],
+      "visibility": "public",
+      "arguments": [
+        {
+          "name": "group",
+          "comment": "",
+          "type": [
+            "string"
+          ]
+        },
+        {
+          "name": "config",
+          "comment": "",
+          "type": [
+            "object"
+          ]
+        },
+        {
+          "name": "overrides",
+          "comment": "",
+          "type": [
+            "object"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "initDDProxy",
+      "returnType": [
+        "Ext.dd.DDProxy"
+      ],
+      "visibility": "public",
+      "arguments": [
+        {
+          "name": "group",
+          "comment": "",
+          "type": [
+            "string"
+          ]
+        },
+        {
+          "name": "config",
+          "comment": "",
+          "type": [
+            "object"
+          ]
+        },
+        {
+          "name": "overrides",
+          "comment": "",
+          "type": [
+            "object"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "initDDTarget",
+      "returnType": [
+        "Ext.dd.DDTarget"
+      ],
+      "visibility": "public",
+      "arguments": [
+        {
+          "name": "group",
+          "comment": "",
+          "type": [
+            "string"
+          ]
+        },
+        {
+          "name": "config",
+          "comment": "",
+          "type": [
+            "object"
+          ]
+        },
+        {
+          "name": "overrides",
+          "comment": "",
+          "type": [
+            "object"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "insertAfter",
+      "returnType": [
+        "this"
+      ],
+      "visibility": "public",
+      "arguments": [
+        {
+          "name": "el",
+          "comment": "",
+          "type": [
+            "unknown"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "insertBefore",
+      "returnType": [
+        "this"
+      ],
+      "visibility": "public",
+      "arguments": [
+        {
+          "name": "el",
+          "comment": "",
+          "type": [
+            "unknown"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "insertFirst",
+      "returnType": [
+        "Ext.Element"
+      ],
+      "visibility": "public",
+      "arguments": [
+        {
+          "name": "el",
+          "comment": "",
+          "type": [
+            "unknown",
+            "object"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "insertHtml",
+      "returnType": [
+        "HTMLElement",
+        "Ext.Element"
+      ],
+      "visibility": "public",
+      "arguments": [
+        {
+          "name": "where",
+          "comment": "",
+          "type": [
+            "string"
+          ]
+        },
+        {
+          "name": "html",
+          "comment": "",
+          "type": [
+            "string"
+          ]
+        },
+        {
+          "name": "returnEl?",
+          "comment": "",
+          "type": [
+            "boolean"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "insertSibling",
+      "returnType": [
+        "Ext.Element"
+      ],
+      "visibility": "public",
+      "arguments": [
+        {
+          "name": "el",
+          "comment": "",
+          "type": [
+            "unknown",
+            "object",
+            "unknown[]"
+          ]
+        },
+        {
+          "name": "where?",
+          "comment": "",
+          "type": [
+            "string"
+          ]
+        },
+        {
+          "name": "returnDom?",
+          "comment": "",
+          "type": [
+            "boolean"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "is",
+      "returnType": [
+        "boolean"
+      ],
+      "visibility": "public",
+      "arguments": [
+        {
+          "name": "selector",
+          "comment": "",
+          "type": [
+            "string"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "isBorderBox",
+      "returnType": [
+        "boolean"
+      ],
+      "visibility": "public",
+      "arguments": []
+    },
+    {
+      "name": "isDisplayed",
+      "returnType": [
+        "boolean"
+      ],
+      "visibility": "public",
+      "arguments": []
+    },
+    {
+      "name": "isMasked",
+      "returnType": [
+        "boolean"
+      ],
+      "visibility": "public",
+      "arguments": []
+    },
+    {
+      "name": "isScrollable",
+      "returnType": [
+        "boolean"
+      ],
+      "visibility": "public",
+      "arguments": []
+    },
+    {
+      "name": "isVisible",
+      "returnType": [
+        "boolean"
+      ],
+      "visibility": "public",
+      "arguments": []
+    },
+    {
+      "name": "last",
+      "returnType": [
+        "Ext.Element",
+        "HTMLElement"
+      ],
+      "visibility": "public",
+      "arguments": [
+        {
+          "name": "selector?",
+          "comment": "",
+          "type": [
+            "string"
+          ]
+        },
+        {
+          "name": "returnDom?",
+          "comment": "",
+          "type": [
+            "boolean"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "load",
+      "returnType": [
+        "this"
+      ],
+      "visibility": "public",
+      "arguments": [
+        {
+          "name": "options",
+          "comment": "",
+          "type": [
+            "unknown"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "mask",
+      "returnType": [
+        "Element"
+      ],
+      "visibility": "public",
+      "arguments": [
+        {
+          "name": "msg?",
+          "comment": "",
+          "type": [
+            "string"
+          ]
+        },
+        {
+          "name": "msgCls?",
+          "comment": "",
+          "type": [
+            "string"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "move",
+      "returnType": [
+        "this"
+      ],
+      "visibility": "public",
+      "arguments": [
+        {
+          "name": "direction",
+          "comment": "",
+          "type": [
+            "string"
+          ]
+        },
+        {
+          "name": "distance",
+          "comment": "",
+          "type": [
+            "number"
+          ]
+        },
+        {
+          "name": "animate?",
+          "comment": "",
+          "type": [
+            "boolean",
+            "object"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "moveTo",
+      "returnType": [
+        "this"
+      ],
+      "visibility": "public",
+      "arguments": [
+        {
+          "name": "x",
+          "comment": "",
+          "type": [
+            "number"
+          ]
+        },
+        {
+          "name": "y",
+          "comment": "",
+          "type": [
+            "number"
+          ]
+        },
+        {
+          "name": "animate?",
+          "comment": "",
+          "type": [
+            "boolean",
+            "object"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "next",
+      "returnType": [
+        "Ext.Element",
+        "HTMLElement"
+      ],
+      "visibility": "public",
+      "arguments": [
+        {
+          "name": "selector?",
+          "comment": "",
+          "type": [
+            "string"
+          ]
+        },
+        {
+          "name": "returnDom?",
+          "comment": "",
+          "type": [
+            "boolean"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "on<T extends IElementEvents = IElementEvents, E extends keyof T = keyof T>",
+      "returnType": [],
+      "visibility": "public",
+      "arguments": [
+        {
+          "name": "eventName",
+          "comment": "",
+          "type": [
+            "E"
+          ]
+        },
+        {
+          "name": "fn",
+          "comment": "",
+          "type": [
+            "Function"
+          ]
+        },
+        {
+          "name": "scope?",
+          "comment": "",
+          "type": [
+            "object"
+          ]
+        },
+        {
+          "name": "options?",
+          "comment": "",
+          "type": [
+            "object"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "parent",
+      "returnType": [
+        "Ext.Element",
+        "HTMLElement"
+      ],
+      "visibility": "public",
+      "arguments": [
+        {
+          "name": "selector?",
+          "comment": "",
+          "type": [
+            "string"
+          ]
+        },
+        {
+          "name": "returnDom?",
+          "comment": "",
+          "type": [
+            "boolean"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "position",
+      "returnType": [],
+      "visibility": "public",
+      "arguments": [
+        {
+          "name": "pos?",
+          "comment": "",
+          "type": [
+            "string"
+          ]
+        },
+        {
+          "name": "zIndex?",
+          "comment": "",
+          "type": [
+            "number"
+          ]
+        },
+        {
+          "name": "x?",
+          "comment": "",
+          "type": [
+            "number"
+          ]
+        },
+        {
+          "name": "y?",
+          "comment": "",
+          "type": [
+            "number"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "prev",
+      "returnType": [
+        "Ext.Element",
+        "HTMLElement"
+      ],
+      "visibility": "public",
+      "arguments": [
+        {
+          "name": "selector?",
+          "comment": "",
+          "type": [
+            "string"
+          ]
+        },
+        {
+          "name": "returnDom?",
+          "comment": "",
+          "type": [
+            "boolean"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "purgeAllListeners",
+      "returnType": [
+        "this"
+      ],
+      "visibility": "public",
+      "arguments": []
+    },
+    {
+      "name": "query",
+      "returnType": [
+        "unknown[]"
+      ],
+      "visibility": "public",
+      "arguments": [
+        {
+          "name": "selector",
+          "comment": "",
+          "type": [
+            "string"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "radioClass",
+      "returnType": [
+        "this"
+      ],
+      "visibility": "public",
+      "arguments": [
+        {
+          "name": "className",
+          "comment": "",
+          "type": [
+            "string",
+            "unknown[]"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "relayEvent",
+      "returnType": [],
+      "visibility": "public",
+      "arguments": [
+        {
+          "name": "eventName",
+          "comment": "",
+          "type": [
+            "string"
+          ]
+        },
+        {
+          "name": "object",
+          "comment": "",
+          "type": [
+            "object"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "remove",
+      "returnType": [],
+      "visibility": "public",
+      "arguments": []
+    },
+    {
+      "name": "removeAllListeners",
+      "returnType": [
+        "this"
+      ],
+      "visibility": "public",
+      "arguments": []
+    },
+    {
+      "name": "removeAnchor",
+      "returnType": [
+        "this"
+      ],
+      "visibility": "public",
+      "arguments": []
+    },
+    {
+      "name": "removeClass",
+      "returnType": [
+        "this"
+      ],
+      "visibility": "public",
+      "arguments": [
+        {
+          "name": "className",
+          "comment": "",
+          "type": [
+            "string",
+            "unknown[]"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "removeListener<T extends IElementEvents = IElementEvents, E extends keyof T = keyof T>",
+      "returnType": [
+        "this"
+      ],
+      "visibility": "public",
+      "arguments": [
+        {
+          "name": "eventName",
+          "comment": "",
+          "type": [
+            "E"
+          ]
+        },
+        {
+          "name": "fn",
+          "comment": "",
+          "type": [
+            "Function"
+          ]
+        },
+        {
+          "name": "scope",
+          "comment": "",
+          "type": [
+            "object"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "repaint",
+      "returnType": [
+        "this"
+      ],
+      "visibility": "public",
+      "arguments": []
+    },
+    {
+      "name": "replace",
+      "returnType": [
+        "this"
+      ],
+      "visibility": "public",
+      "arguments": [
+        {
+          "name": "el",
+          "comment": "",
+          "type": [
+            "unknown"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "replaceClass",
+      "returnType": [
+        "this"
+      ],
+      "visibility": "public",
+      "arguments": [
+        {
+          "name": "oldClassName",
+          "comment": "",
+          "type": [
+            "string"
+          ]
+        },
+        {
+          "name": "newClassName",
+          "comment": "",
+          "type": [
+            "string"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "replaceWith",
+      "returnType": [
+        "this"
+      ],
+      "visibility": "public",
+      "arguments": [
+        {
+          "name": "el",
+          "comment": "",
+          "type": [
+            "unknown",
+            "object"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "scroll",
+      "returnType": [
+        "boolean"
+      ],
+      "visibility": "public",
+      "arguments": [
+        {
+          "name": "direction",
+          "comment": "",
+          "type": [
+            "string"
+          ]
+        },
+        {
+          "name": "distance",
+          "comment": "",
+          "type": [
+            "number"
+          ]
+        },
+        {
+          "name": "animate?",
+          "comment": "",
+          "type": [
+            "boolean",
+            "object"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "scrollIntoView",
+      "returnType": [
+        "this"
+      ],
+      "visibility": "public",
+      "arguments": [
+        {
+          "name": "container?",
+          "comment": "",
+          "type": [
+            "unknown"
+          ]
+        },
+        {
+          "name": "hscroll?",
+          "comment": "",
+          "type": [
+            "boolean"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "scrollTo",
+      "returnType": [
+        "this"
+      ],
+      "visibility": "public",
+      "arguments": [
+        {
+          "name": "side",
+          "comment": "",
+          "type": [
+            "string"
+          ]
+        },
+        {
+          "name": "value",
+          "comment": "",
+          "type": [
+            "number"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "select",
+      "returnType": [
+        "Ext.CompositeElement",
+        "Ext.CompositeElementLite"
+      ],
+      "visibility": "public",
+      "arguments": [
+        {
+          "name": "selector",
+          "comment": "",
+          "type": [
+            "string"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "set",
+      "returnType": [
+        "this"
+      ],
+      "visibility": "public",
+      "arguments": [
+        {
+          "name": "o",
+          "comment": "",
+          "type": [
+            "object"
+          ]
+        },
+        {
+          "name": "useSet?",
+          "comment": "",
+          "type": [
+            "boolean"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "setBottom",
+      "returnType": [
+        "this"
+      ],
+      "visibility": "public",
+      "arguments": [
+        {
+          "name": "bottom",
+          "comment": "",
+          "type": [
+            "string"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "setBounds",
+      "returnType": [
+        "this"
+      ],
+      "visibility": "public",
+      "arguments": [
+        {
+          "name": "x",
+          "comment": "",
+          "type": [
+            "number"
+          ]
+        },
+        {
+          "name": "y",
+          "comment": "",
+          "type": [
+            "number"
+          ]
+        },
+        {
+          "name": "width",
+          "comment": "",
+          "type": [
+            "unknown"
+          ]
+        },
+        {
+          "name": "height",
+          "comment": "",
+          "type": [
+            "unknown"
+          ]
+        },
+        {
+          "name": "animate?",
+          "comment": "",
+          "type": [
+            "boolean",
+            "object"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "setBox",
+      "returnType": [
+        "this"
+      ],
+      "visibility": "public",
+      "arguments": [
+        {
+          "name": "box",
+          "comment": "",
+          "type": [
+            "object"
+          ]
+        },
+        {
+          "name": "adjust?",
+          "comment": "",
+          "type": [
+            "boolean"
+          ]
+        },
+        {
+          "name": "animate?",
+          "comment": "",
+          "type": [
+            "boolean",
+            "object"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "setDisplayed",
+      "returnType": [
+        "this"
+      ],
+      "visibility": "public",
+      "arguments": [
+        {
+          "name": "value",
+          "comment": "",
+          "type": [
+            "unknown"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "setHeight",
+      "returnType": [
+        "this"
+      ],
+      "visibility": "public",
+      "arguments": [
+        {
+          "name": "height",
+          "comment": "",
+          "type": [
+            "unknown"
+          ]
+        },
+        {
+          "name": "animate?",
+          "comment": "",
+          "type": [
+            "boolean",
+            "object"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "setLeft",
+      "returnType": [
+        "this"
+      ],
+      "visibility": "public",
+      "arguments": [
+        {
+          "name": "left",
+          "comment": "",
+          "type": [
+            "string"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "setLeftTop",
+      "returnType": [
+        "this"
+      ],
+      "visibility": "public",
+      "arguments": [
+        {
+          "name": "left",
+          "comment": "",
+          "type": [
+            "string"
+          ]
+        },
+        {
+          "name": "top",
+          "comment": "",
+          "type": [
+            "string"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "setLocation",
+      "returnType": [
+        "this"
+      ],
+      "visibility": "public",
+      "arguments": [
+        {
+          "name": "x",
+          "comment": "",
+          "type": [
+            "number"
+          ]
+        },
+        {
+          "name": "y",
+          "comment": "",
+          "type": [
+            "number"
+          ]
+        },
+        {
+          "name": "animate?",
+          "comment": "",
+          "type": [
+            "boolean",
+            "object"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "setOpacity",
+      "returnType": [
+        "this"
+      ],
+      "visibility": "public",
+      "arguments": [
+        {
+          "name": "opacity",
+          "comment": "",
+          "type": [
+            "number"
+          ]
+        },
+        {
+          "name": "animate?",
+          "comment": "",
+          "type": [
+            "boolean",
+            "object"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "setPositioning",
+      "returnType": [
+        "this"
+      ],
+      "visibility": "public",
+      "arguments": [
+        {
+          "name": "posCfg",
+          "comment": "",
+          "type": [
+            "object"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "setRegion",
+      "returnType": [
+        "this"
+      ],
+      "visibility": "public",
+      "arguments": [
+        {
+          "name": "region",
+          "comment": "",
+          "type": [
+            "Ext.lib.Region"
+          ]
+        },
+        {
+          "name": "animate?",
+          "comment": "",
+          "type": [
+            "boolean",
+            "object"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "setRight",
+      "returnType": [
+        "this"
+      ],
+      "visibility": "public",
+      "arguments": [
+        {
+          "name": "right",
+          "comment": "",
+          "type": [
+            "string"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "setSize",
+      "returnType": [
+        "this"
+      ],
+      "visibility": "public",
+      "arguments": [
+        {
+          "name": "width",
+          "comment": "",
+          "type": [
+            "unknown"
+          ]
+        },
+        {
+          "name": "height",
+          "comment": "",
+          "type": [
+            "unknown"
+          ]
+        },
+        {
+          "name": "animate?",
+          "comment": "",
+          "type": [
+            "boolean",
+            "object"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "setStyle",
+      "returnType": [
+        "this"
+      ],
+      "visibility": "public",
+      "arguments": [
+        {
+          "name": "property",
+          "comment": "",
+          "type": [
+            "string",
+            "object"
+          ]
+        },
+        {
+          "name": "value?",
+          "comment": "",
+          "type": [
+            "string"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "setTop",
+      "returnType": [
+        "this"
+      ],
+      "visibility": "public",
+      "arguments": [
+        {
+          "name": "top",
+          "comment": "",
+          "type": [
+            "string"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "setVisibilityMode",
+      "returnType": [
+        "this"
+      ],
+      "visibility": "public",
+      "arguments": [
+        {
+          "name": "visMode",
+          "comment": "",
+          "type": [
+            "number"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "setVisible",
+      "returnType": [
+        "this"
+      ],
+      "visibility": "public",
+      "arguments": [
+        {
+          "name": "visible",
+          "comment": "",
+          "type": [
+            "boolean"
+          ]
+        },
+        {
+          "name": "animate?",
+          "comment": "",
+          "type": [
+            "boolean",
+            "object"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "setWidth",
+      "returnType": [
+        "this"
+      ],
+      "visibility": "public",
+      "arguments": [
+        {
+          "name": "width",
+          "comment": "",
+          "type": [
+            "unknown"
+          ]
+        },
+        {
+          "name": "animate?",
+          "comment": "",
+          "type": [
+            "boolean",
+            "object"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "setX",
+      "returnType": [
+        "this"
+      ],
+      "visibility": "public",
+      "arguments": [
+        {
+          "name": "The",
+          "comment": "",
+          "type": [
+            "number"
+          ]
+        },
+        {
+          "name": "animate?",
+          "comment": "",
+          "type": [
+            "boolean",
+            "object"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "setXY",
+      "returnType": [
+        "this"
+      ],
+      "visibility": "public",
+      "arguments": [
+        {
+          "name": "pos",
+          "comment": "",
+          "type": [
+            "unknown[]"
+          ]
+        },
+        {
+          "name": "animate?",
+          "comment": "",
+          "type": [
+            "boolean",
+            "object"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "setY",
+      "returnType": [
+        "this"
+      ],
+      "visibility": "public",
+      "arguments": [
+        {
+          "name": "The",
+          "comment": "",
+          "type": [
+            "number"
+          ]
+        },
+        {
+          "name": "animate?",
+          "comment": "",
+          "type": [
+            "boolean",
+            "object"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "show",
+      "returnType": [
+        "this"
+      ],
+      "visibility": "public",
+      "arguments": [
+        {
+          "name": "animate?",
+          "comment": "",
+          "type": [
+            "boolean",
+            "object"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "swallowEvent",
+      "returnType": [
+        "this"
+      ],
+      "visibility": "public",
+      "arguments": [
+        {
+          "name": "eventName",
+          "comment": "",
+          "type": [
+            "string",
+            "unknown[]"
+          ]
+        },
+        {
+          "name": "preventDefault?",
+          "comment": "",
+          "type": [
+            "boolean"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "toggle",
+      "returnType": [
+        "this"
+      ],
+      "visibility": "public",
+      "arguments": [
+        {
+          "name": "animate?",
+          "comment": "",
+          "type": [
+            "boolean",
+            "object"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "toggleClass",
+      "returnType": [
+        "this"
+      ],
+      "visibility": "public",
+      "arguments": [
+        {
+          "name": "className",
+          "comment": "",
+          "type": [
+            "string"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "translatePoints",
+      "returnType": [
+        "object"
+      ],
+      "visibility": "public",
+      "arguments": [
+        {
+          "name": "x",
+          "comment": "",
+          "type": [
+            "number",
+            "unknown[]"
+          ]
+        },
+        {
+          "name": "y?",
+          "comment": "",
+          "type": [
+            "number"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "un<T extends IElementEvents = IElementEvents, E extends keyof T = keyof T>",
+      "returnType": [
+        "this"
+      ],
+      "visibility": "public",
+      "arguments": [
+        {
+          "name": "eventName",
+          "comment": "",
+          "type": [
+            "E"
+          ]
+        },
+        {
+          "name": "fn",
+          "comment": "",
+          "type": [
+            "Function"
+          ]
+        },
+        {
+          "name": "scope",
+          "comment": "",
+          "type": [
+            "object"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "unclip",
+      "returnType": [
+        "this"
+      ],
+      "visibility": "public",
+      "arguments": []
+    },
+    {
+      "name": "unmask",
+      "returnType": [],
+      "visibility": "public",
+      "arguments": []
+    },
+    {
+      "name": "unselectable",
+      "returnType": [
+        "this"
+      ],
+      "visibility": "public",
+      "arguments": []
+    },
+    {
+      "name": "up",
+      "returnType": [
+        "Ext.Element"
+      ],
+      "visibility": "public",
+      "arguments": [
+        {
+          "name": "selector",
+          "comment": "",
+          "type": [
+            "string"
+          ]
+        },
+        {
+          "name": "maxDepth?",
+          "comment": "",
+          "type": [
+            "number",
+            "unknown"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "update",
+      "returnType": [
+        "this"
+      ],
+      "visibility": "public",
+      "arguments": [
+        {
+          "name": "html",
+          "comment": "",
+          "type": [
+            "string"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "wrap",
+      "returnType": [
+        "HTMLElement",
+        "Element"
+      ],
+      "visibility": "public",
+      "arguments": [
+        {
+          "name": "config?",
+          "comment": "",
+          "type": [
+            "object"
+          ]
+        },
+        {
+          "name": "returnDom?",
+          "comment": "",
+          "type": [
+            "boolean"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "get",
+      "static": true,
+      "returnType": [
+        "Element"
+      ],
+      "visibility": "public",
+      "arguments": [
+        {
+          "name": "el",
+          "comment": "",
+          "type": [
+            "unknown"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "select",
+      "static": true,
+      "returnType": [
+        "Ext.CompositeElementLite",
+        "Ext.CompositeElement"
+      ],
+      "visibility": "public",
+      "arguments": [
+        {
+          "name": "selector",
+          "comment": "",
+          "type": [
+            "string",
+            "unknown[]"
+          ]
+        },
+        {
+          "name": "root?",
+          "comment": "",
+          "type": [
+            "HTMLElement",
+            "string"
+          ]
+        }
+      ]
+    }
+  ],
+  "events": [
+    {
+      "name": "DOMActivate",
+      "arguments": [
+        {
+          "name": "e",
+          "comment": "",
+          "type": [
+            "Ext.EventObject"
+          ]
+        },
+        {
+          "name": "t",
+          "comment": "",
+          "type": [
+            "HTMLElement"
+          ]
+        },
+        {
+          "name": "o",
+          "comment": "",
+          "type": [
+            "object"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "DOMAttrModified",
+      "arguments": [
+        {
+          "name": "e",
+          "comment": "",
+          "type": [
+            "Ext.EventObject"
+          ]
+        },
+        {
+          "name": "t",
+          "comment": "",
+          "type": [
+            "HTMLElement"
+          ]
+        },
+        {
+          "name": "o",
+          "comment": "",
+          "type": [
+            "object"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "DOMCharacterDataModified",
+      "arguments": [
+        {
+          "name": "e",
+          "comment": "",
+          "type": [
+            "Ext.EventObject"
+          ]
+        },
+        {
+          "name": "t",
+          "comment": "",
+          "type": [
+            "HTMLElement"
+          ]
+        },
+        {
+          "name": "o",
+          "comment": "",
+          "type": [
+            "object"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "DOMFocusIn",
+      "arguments": [
+        {
+          "name": "e",
+          "comment": "",
+          "type": [
+            "Ext.EventObject"
+          ]
+        },
+        {
+          "name": "t",
+          "comment": "",
+          "type": [
+            "HTMLElement"
+          ]
+        },
+        {
+          "name": "o",
+          "comment": "",
+          "type": [
+            "object"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "DOMFocusOut",
+      "arguments": [
+        {
+          "name": "e",
+          "comment": "",
+          "type": [
+            "Ext.EventObject"
+          ]
+        },
+        {
+          "name": "t",
+          "comment": "",
+          "type": [
+            "HTMLElement"
+          ]
+        },
+        {
+          "name": "o",
+          "comment": "",
+          "type": [
+            "object"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "DOMNodeInserted",
+      "arguments": [
+        {
+          "name": "e",
+          "comment": "",
+          "type": [
+            "Ext.EventObject"
+          ]
+        },
+        {
+          "name": "t",
+          "comment": "",
+          "type": [
+            "HTMLElement"
+          ]
+        },
+        {
+          "name": "o",
+          "comment": "",
+          "type": [
+            "object"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "DOMNodeInsertedIntoDocument",
+      "arguments": [
+        {
+          "name": "e",
+          "comment": "",
+          "type": [
+            "Ext.EventObject"
+          ]
+        },
+        {
+          "name": "t",
+          "comment": "",
+          "type": [
+            "HTMLElement"
+          ]
+        },
+        {
+          "name": "o",
+          "comment": "",
+          "type": [
+            "object"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "DOMNodeRemoved",
+      "arguments": [
+        {
+          "name": "e",
+          "comment": "",
+          "type": [
+            "Ext.EventObject"
+          ]
+        },
+        {
+          "name": "t",
+          "comment": "",
+          "type": [
+            "HTMLElement"
+          ]
+        },
+        {
+          "name": "o",
+          "comment": "",
+          "type": [
+            "object"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "DOMNodeRemovedFromDocument",
+      "arguments": [
+        {
+          "name": "e",
+          "comment": "",
+          "type": [
+            "Ext.EventObject"
+          ]
+        },
+        {
+          "name": "t",
+          "comment": "",
+          "type": [
+            "HTMLElement"
+          ]
+        },
+        {
+          "name": "o",
+          "comment": "",
+          "type": [
+            "object"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "DOMSubtreeModified",
+      "arguments": [
+        {
+          "name": "e",
+          "comment": "",
+          "type": [
+            "Ext.EventObject"
+          ]
+        },
+        {
+          "name": "t",
+          "comment": "",
+          "type": [
+            "HTMLElement"
+          ]
+        },
+        {
+          "name": "o",
+          "comment": "",
+          "type": [
+            "object"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "abort",
+      "arguments": [
+        {
+          "name": "e",
+          "comment": "",
+          "type": [
+            "Ext.EventObject"
+          ]
+        },
+        {
+          "name": "t",
+          "comment": "",
+          "type": [
+            "HTMLElement"
+          ]
+        },
+        {
+          "name": "o",
+          "comment": "",
+          "type": [
+            "object"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "blur",
+      "arguments": [
+        {
+          "name": "e",
+          "comment": "",
+          "type": [
+            "Ext.EventObject"
+          ]
+        },
+        {
+          "name": "t",
+          "comment": "",
+          "type": [
+            "HTMLElement"
+          ]
+        },
+        {
+          "name": "o",
+          "comment": "",
+          "type": [
+            "object"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "change",
+      "arguments": [
+        {
+          "name": "e",
+          "comment": "",
+          "type": [
+            "Ext.EventObject"
+          ]
+        },
+        {
+          "name": "t",
+          "comment": "",
+          "type": [
+            "HTMLElement"
+          ]
+        },
+        {
+          "name": "o",
+          "comment": "",
+          "type": [
+            "object"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "click",
+      "arguments": [
+        {
+          "name": "e",
+          "comment": "",
+          "type": [
+            "Ext.EventObject"
+          ]
+        },
+        {
+          "name": "t",
+          "comment": "",
+          "type": [
+            "HTMLElement"
+          ]
+        },
+        {
+          "name": "o",
+          "comment": "",
+          "type": [
+            "object"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "contextmenu",
+      "arguments": [
+        {
+          "name": "e",
+          "comment": "",
+          "type": [
+            "Ext.EventObject"
+          ]
+        },
+        {
+          "name": "t",
+          "comment": "",
+          "type": [
+            "HTMLElement"
+          ]
+        },
+        {
+          "name": "o",
+          "comment": "",
+          "type": [
+            "object"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "dblclick",
+      "arguments": [
+        {
+          "name": "e",
+          "comment": "",
+          "type": [
+            "Ext.EventObject"
+          ]
+        },
+        {
+          "name": "t",
+          "comment": "",
+          "type": [
+            "HTMLElement"
+          ]
+        },
+        {
+          "name": "o",
+          "comment": "",
+          "type": [
+            "object"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "error",
+      "arguments": [
+        {
+          "name": "e",
+          "comment": "",
+          "type": [
+            "Ext.EventObject"
+          ]
+        },
+        {
+          "name": "t",
+          "comment": "",
+          "type": [
+            "HTMLElement"
+          ]
+        },
+        {
+          "name": "o",
+          "comment": "",
+          "type": [
+            "object"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "focus",
+      "arguments": [
+        {
+          "name": "e",
+          "comment": "",
+          "type": [
+            "Ext.EventObject"
+          ]
+        },
+        {
+          "name": "t",
+          "comment": "",
+          "type": [
+            "HTMLElement"
+          ]
+        },
+        {
+          "name": "o",
+          "comment": "",
+          "type": [
+            "object"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "keydown",
+      "arguments": [
+        {
+          "name": "e",
+          "comment": "",
+          "type": [
+            "Ext.EventObject"
+          ]
+        },
+        {
+          "name": "t",
+          "comment": "",
+          "type": [
+            "HTMLElement"
+          ]
+        },
+        {
+          "name": "o",
+          "comment": "",
+          "type": [
+            "object"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "keypress",
+      "arguments": [
+        {
+          "name": "e",
+          "comment": "",
+          "type": [
+            "Ext.EventObject"
+          ]
+        },
+        {
+          "name": "t",
+          "comment": "",
+          "type": [
+            "HTMLElement"
+          ]
+        },
+        {
+          "name": "o",
+          "comment": "",
+          "type": [
+            "object"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "keyup",
+      "arguments": [
+        {
+          "name": "e",
+          "comment": "",
+          "type": [
+            "Ext.EventObject"
+          ]
+        },
+        {
+          "name": "t",
+          "comment": "",
+          "type": [
+            "HTMLElement"
+          ]
+        },
+        {
+          "name": "o",
+          "comment": "",
+          "type": [
+            "object"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "load",
+      "arguments": [
+        {
+          "name": "e",
+          "comment": "",
+          "type": [
+            "Ext.EventObject"
+          ]
+        },
+        {
+          "name": "t",
+          "comment": "",
+          "type": [
+            "HTMLElement"
+          ]
+        },
+        {
+          "name": "o",
+          "comment": "",
+          "type": [
+            "object"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "mousedown",
+      "arguments": [
+        {
+          "name": "e",
+          "comment": "",
+          "type": [
+            "Ext.EventObject"
+          ]
+        },
+        {
+          "name": "t",
+          "comment": "",
+          "type": [
+            "HTMLElement"
+          ]
+        },
+        {
+          "name": "o",
+          "comment": "",
+          "type": [
+            "object"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "mouseenter",
+      "arguments": [
+        {
+          "name": "e",
+          "comment": "",
+          "type": [
+            "Ext.EventObject"
+          ]
+        },
+        {
+          "name": "t",
+          "comment": "",
+          "type": [
+            "HTMLElement"
+          ]
+        },
+        {
+          "name": "o",
+          "comment": "",
+          "type": [
+            "object"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "mouseleave",
+      "arguments": [
+        {
+          "name": "e",
+          "comment": "",
+          "type": [
+            "Ext.EventObject"
+          ]
+        },
+        {
+          "name": "t",
+          "comment": "",
+          "type": [
+            "HTMLElement"
+          ]
+        },
+        {
+          "name": "o",
+          "comment": "",
+          "type": [
+            "object"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "mousemove",
+      "arguments": [
+        {
+          "name": "e",
+          "comment": "",
+          "type": [
+            "Ext.EventObject"
+          ]
+        },
+        {
+          "name": "t",
+          "comment": "",
+          "type": [
+            "HTMLElement"
+          ]
+        },
+        {
+          "name": "o",
+          "comment": "",
+          "type": [
+            "object"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "mouseout",
+      "arguments": [
+        {
+          "name": "e",
+          "comment": "",
+          "type": [
+            "Ext.EventObject"
+          ]
+        },
+        {
+          "name": "t",
+          "comment": "",
+          "type": [
+            "HTMLElement"
+          ]
+        },
+        {
+          "name": "o",
+          "comment": "",
+          "type": [
+            "object"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "mouseover",
+      "arguments": [
+        {
+          "name": "e",
+          "comment": "",
+          "type": [
+            "Ext.EventObject"
+          ]
+        },
+        {
+          "name": "t",
+          "comment": "",
+          "type": [
+            "HTMLElement"
+          ]
+        },
+        {
+          "name": "o",
+          "comment": "",
+          "type": [
+            "object"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "mouseup",
+      "arguments": [
+        {
+          "name": "e",
+          "comment": "",
+          "type": [
+            "Ext.EventObject"
+          ]
+        },
+        {
+          "name": "t",
+          "comment": "",
+          "type": [
+            "HTMLElement"
+          ]
+        },
+        {
+          "name": "o",
+          "comment": "",
+          "type": [
+            "object"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "reset",
+      "arguments": [
+        {
+          "name": "e",
+          "comment": "",
+          "type": [
+            "Ext.EventObject"
+          ]
+        },
+        {
+          "name": "t",
+          "comment": "",
+          "type": [
+            "HTMLElement"
+          ]
+        },
+        {
+          "name": "o",
+          "comment": "",
+          "type": [
+            "object"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "resize",
+      "arguments": [
+        {
+          "name": "e",
+          "comment": "",
+          "type": [
+            "Ext.EventObject"
+          ]
+        },
+        {
+          "name": "t",
+          "comment": "",
+          "type": [
+            "HTMLElement"
+          ]
+        },
+        {
+          "name": "o",
+          "comment": "",
+          "type": [
+            "object"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "scroll",
+      "arguments": [
+        {
+          "name": "e",
+          "comment": "",
+          "type": [
+            "Ext.EventObject"
+          ]
+        },
+        {
+          "name": "t",
+          "comment": "",
+          "type": [
+            "HTMLElement"
+          ]
+        },
+        {
+          "name": "o",
+          "comment": "",
+          "type": [
+            "object"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "select",
+      "arguments": [
+        {
+          "name": "e",
+          "comment": "",
+          "type": [
+            "Ext.EventObject"
+          ]
+        },
+        {
+          "name": "t",
+          "comment": "",
+          "type": [
+            "HTMLElement"
+          ]
+        },
+        {
+          "name": "o",
+          "comment": "",
+          "type": [
+            "object"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "submit",
+      "arguments": [
+        {
+          "name": "e",
+          "comment": "",
+          "type": [
+            "Ext.EventObject"
+          ]
+        },
+        {
+          "name": "t",
+          "comment": "",
+          "type": [
+            "HTMLElement"
+          ]
+        },
+        {
+          "name": "o",
+          "comment": "",
+          "type": [
+            "object"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "unload",
+      "arguments": [
+        {
+          "name": "e",
+          "comment": "",
+          "type": [
+            "Ext.EventObject"
+          ]
+        },
+        {
+          "name": "t",
+          "comment": "",
+          "type": [
+            "HTMLElement"
+          ]
+        },
+        {
+          "name": "o",
+          "comment": "",
+          "type": [
+            "object"
+          ]
+        }
+      ]
+    }
+  ]
+}

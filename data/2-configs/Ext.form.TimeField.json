@@ -1,0 +1,1863 @@
+{
+  "name": "TimeField",
+  "namespace": "Ext.form",
+  "extends": "Ext.form.ComboBox",
+  "constructorMethod": {
+    "config": [
+      {
+        "name": "allQuery?",
+        "type": [
+          "string"
+        ],
+        "comment": ""
+      },
+      {
+        "name": "allowBlank?",
+        "type": [
+          "boolean"
+        ],
+        "comment": ""
+      },
+      {
+        "name": "allowDomMove?",
+        "type": [
+          "boolean"
+        ],
+        "comment": ""
+      },
+      {
+        "name": "altFormats?",
+        "type": [
+          "string"
+        ],
+        "comment": ""
+      },
+      {
+        "name": "anchor?",
+        "type": [
+          "string"
+        ],
+        "comment": ""
+      },
+      {
+        "name": "applyTo?",
+        "type": [
+          "unknown"
+        ],
+        "comment": ""
+      },
+      {
+        "name": "autoCreate?",
+        "type": [
+          "string",
+          "object"
+        ],
+        "comment": ""
+      },
+      {
+        "name": "autoScroll?",
+        "type": [
+          "boolean"
+        ],
+        "comment": ""
+      },
+      {
+        "name": "autoSelect?",
+        "type": [
+          "boolean"
+        ],
+        "comment": ""
+      },
+      {
+        "name": "autoShow?",
+        "type": [
+          "boolean"
+        ],
+        "comment": ""
+      },
+      {
+        "name": "blankText?",
+        "type": [
+          "string"
+        ],
+        "comment": ""
+      },
+      {
+        "name": "boxMaxHeight?",
+        "type": [
+          "number"
+        ],
+        "comment": ""
+      },
+      {
+        "name": "boxMaxWidth?",
+        "type": [
+          "number"
+        ],
+        "comment": ""
+      },
+      {
+        "name": "boxMinHeight?",
+        "type": [
+          "number"
+        ],
+        "comment": ""
+      },
+      {
+        "name": "boxMinWidth?",
+        "type": [
+          "number"
+        ],
+        "comment": ""
+      },
+      {
+        "name": "bubbleEvents?",
+        "type": [
+          "unknown[]"
+        ],
+        "comment": ""
+      },
+      {
+        "name": "clearCls?",
+        "type": [
+          "string"
+        ],
+        "comment": ""
+      },
+      {
+        "name": "clearFilterOnReset?",
+        "type": [
+          "boolean"
+        ],
+        "comment": ""
+      },
+      {
+        "name": "cls?",
+        "type": [
+          "string"
+        ],
+        "comment": ""
+      },
+      {
+        "name": "contentEl?",
+        "type": [
+          "string"
+        ],
+        "comment": ""
+      },
+      {
+        "name": "ctCls?",
+        "type": [
+          "string"
+        ],
+        "comment": ""
+      },
+      {
+        "name": "data?",
+        "type": [
+          "unknown"
+        ],
+        "comment": ""
+      },
+      {
+        "name": "disableKeyFilter?",
+        "type": [
+          "boolean"
+        ],
+        "comment": ""
+      },
+      {
+        "name": "disabled?",
+        "type": [
+          "boolean"
+        ],
+        "comment": ""
+      },
+      {
+        "name": "disabledClass?",
+        "type": [
+          "string"
+        ],
+        "comment": ""
+      },
+      {
+        "name": "displayField?",
+        "type": [
+          "string"
+        ],
+        "comment": ""
+      },
+      {
+        "name": "editable?",
+        "type": [
+          "boolean"
+        ],
+        "comment": ""
+      },
+      {
+        "name": "emptyClass?",
+        "type": [
+          "string"
+        ],
+        "comment": ""
+      },
+      {
+        "name": "emptyText?",
+        "type": [
+          "string"
+        ],
+        "comment": ""
+      },
+      {
+        "name": "enableKeyEvents?",
+        "type": [
+          "boolean"
+        ],
+        "comment": ""
+      },
+      {
+        "name": "fieldClass?",
+        "type": [
+          "string"
+        ],
+        "comment": ""
+      },
+      {
+        "name": "fieldLabel?",
+        "type": [
+          "string"
+        ],
+        "comment": ""
+      },
+      {
+        "name": "flex?",
+        "type": [
+          "number"
+        ],
+        "comment": ""
+      },
+      {
+        "name": "focusClass?",
+        "type": [
+          "string"
+        ],
+        "comment": ""
+      },
+      {
+        "name": "forceSelection?",
+        "type": [
+          "boolean"
+        ],
+        "comment": ""
+      },
+      {
+        "name": "format?",
+        "type": [
+          "string"
+        ],
+        "comment": ""
+      },
+      {
+        "name": "handleHeight?",
+        "type": [
+          "number"
+        ],
+        "comment": ""
+      },
+      {
+        "name": "height?",
+        "type": [
+          "number"
+        ],
+        "comment": ""
+      },
+      {
+        "name": "hidden?",
+        "type": [
+          "boolean"
+        ],
+        "comment": ""
+      },
+      {
+        "name": "hiddenId?",
+        "type": [
+          "string"
+        ],
+        "comment": ""
+      },
+      {
+        "name": "hiddenName?",
+        "type": [
+          "string"
+        ],
+        "comment": ""
+      },
+      {
+        "name": "hiddenValue?",
+        "type": [
+          "string"
+        ],
+        "comment": ""
+      },
+      {
+        "name": "hideLabel?",
+        "type": [
+          "boolean"
+        ],
+        "comment": ""
+      },
+      {
+        "name": "hideMode?",
+        "type": [
+          "string"
+        ],
+        "comment": ""
+      },
+      {
+        "name": "hideParent?",
+        "type": [
+          "boolean"
+        ],
+        "comment": ""
+      },
+      {
+        "name": "hideTrigger?",
+        "type": [
+          "boolean"
+        ],
+        "comment": ""
+      },
+      {
+        "name": "html?",
+        "type": [
+          "string",
+          "object"
+        ],
+        "comment": ""
+      },
+      {
+        "name": "id?",
+        "type": [
+          "string"
+        ],
+        "comment": ""
+      },
+      {
+        "name": "increment?",
+        "type": [
+          "number"
+        ],
+        "comment": ""
+      },
+      {
+        "name": "inputType?",
+        "type": [
+          "string"
+        ],
+        "comment": ""
+      },
+      {
+        "name": "invalidClass?",
+        "type": [
+          "string"
+        ],
+        "comment": ""
+      },
+      {
+        "name": "invalidText?",
+        "type": [
+          "string"
+        ],
+        "comment": ""
+      },
+      {
+        "name": "itemCls?",
+        "type": [
+          "string"
+        ],
+        "comment": ""
+      },
+      {
+        "name": "itemId?",
+        "type": [
+          "string"
+        ],
+        "comment": ""
+      },
+      {
+        "name": "itemSelector?",
+        "type": [
+          "string"
+        ],
+        "comment": ""
+      },
+      {
+        "name": "labelSeparator?",
+        "type": [
+          "string"
+        ],
+        "comment": ""
+      },
+      {
+        "name": "labelStyle?",
+        "type": [
+          "string"
+        ],
+        "comment": ""
+      },
+      {
+        "name": "lazyInit?",
+        "type": [
+          "boolean"
+        ],
+        "comment": ""
+      },
+      {
+        "name": "lazyRender?",
+        "type": [
+          "boolean"
+        ],
+        "comment": ""
+      },
+      {
+        "name": "listAlign?",
+        "type": [
+          "string",
+          "unknown[]"
+        ],
+        "comment": ""
+      },
+      {
+        "name": "listClass?",
+        "type": [
+          "string"
+        ],
+        "comment": ""
+      },
+      {
+        "name": "listEmptyText?",
+        "type": [
+          "string"
+        ],
+        "comment": ""
+      },
+      {
+        "name": "listWidth?",
+        "type": [
+          "number"
+        ],
+        "comment": ""
+      },
+      {
+        "name": "listeners?",
+        "type": [
+          "object"
+        ],
+        "comment": ""
+      },
+      {
+        "name": "loadingText?",
+        "type": [
+          "string"
+        ],
+        "comment": ""
+      },
+      {
+        "name": "margins?",
+        "type": [
+          "object"
+        ],
+        "comment": ""
+      },
+      {
+        "name": "maskRe?",
+        "type": [
+          "RegExp"
+        ],
+        "comment": ""
+      },
+      {
+        "name": "maxHeight?",
+        "type": [
+          "number"
+        ],
+        "comment": ""
+      },
+      {
+        "name": "maxLength?",
+        "type": [
+          "number"
+        ],
+        "comment": ""
+      },
+      {
+        "name": "maxLengthText?",
+        "type": [
+          "string"
+        ],
+        "comment": ""
+      },
+      {
+        "name": "maxText?",
+        "type": [
+          "string"
+        ],
+        "comment": ""
+      },
+      {
+        "name": "maxValue?",
+        "type": [
+          "Date",
+          "string"
+        ],
+        "comment": ""
+      },
+      {
+        "name": "minChars?",
+        "type": [
+          "number"
+        ],
+        "comment": ""
+      },
+      {
+        "name": "minHeight?",
+        "type": [
+          "number"
+        ],
+        "comment": ""
+      },
+      {
+        "name": "minLength?",
+        "type": [
+          "number"
+        ],
+        "comment": ""
+      },
+      {
+        "name": "minLengthText?",
+        "type": [
+          "string"
+        ],
+        "comment": ""
+      },
+      {
+        "name": "minListWidth?",
+        "type": [
+          "number"
+        ],
+        "comment": ""
+      },
+      {
+        "name": "minText?",
+        "type": [
+          "string"
+        ],
+        "comment": ""
+      },
+      {
+        "name": "minValue?",
+        "type": [
+          "Date",
+          "string"
+        ],
+        "comment": ""
+      },
+      {
+        "name": "mode?",
+        "type": [
+          "string"
+        ],
+        "comment": ""
+      },
+      {
+        "name": "msgFx?",
+        "type": [
+          "string"
+        ],
+        "comment": ""
+      },
+      {
+        "name": "msgTarget?",
+        "type": [
+          "string"
+        ],
+        "comment": ""
+      },
+      {
+        "name": "name?",
+        "type": [
+          "string"
+        ],
+        "comment": ""
+      },
+      {
+        "name": "overCls?",
+        "type": [
+          "string"
+        ],
+        "comment": ""
+      },
+      {
+        "name": "pageSize?",
+        "type": [
+          "number"
+        ],
+        "comment": ""
+      },
+      {
+        "name": "pageX?",
+        "type": [
+          "number"
+        ],
+        "comment": ""
+      },
+      {
+        "name": "pageY?",
+        "type": [
+          "number"
+        ],
+        "comment": ""
+      },
+      {
+        "name": "plugins?",
+        "type": [
+          "object",
+          "unknown[]"
+        ],
+        "comment": ""
+      },
+      {
+        "name": "preventMark?",
+        "type": [
+          "boolean"
+        ],
+        "comment": ""
+      },
+      {
+        "name": "ptype?",
+        "type": [
+          "string"
+        ],
+        "comment": ""
+      },
+      {
+        "name": "queryDelay?",
+        "type": [
+          "number"
+        ],
+        "comment": ""
+      },
+      {
+        "name": "queryParam?",
+        "type": [
+          "string"
+        ],
+        "comment": ""
+      },
+      {
+        "name": "readOnly?",
+        "type": [
+          "boolean"
+        ],
+        "comment": ""
+      },
+      {
+        "name": "ref?",
+        "type": [
+          "string"
+        ],
+        "comment": ""
+      },
+      {
+        "name": "regex?",
+        "type": [
+          "RegExp"
+        ],
+        "comment": ""
+      },
+      {
+        "name": "regexText?",
+        "type": [
+          "string"
+        ],
+        "comment": ""
+      },
+      {
+        "name": "region?",
+        "type": [
+          "string"
+        ],
+        "comment": ""
+      },
+      {
+        "name": "renderTo?",
+        "type": [
+          "unknown"
+        ],
+        "comment": ""
+      },
+      {
+        "name": "resizable?",
+        "type": [
+          "boolean"
+        ],
+        "comment": ""
+      },
+      {
+        "name": "selectOnFocus?",
+        "type": [
+          "boolean"
+        ],
+        "comment": ""
+      },
+      {
+        "name": "selectedClass?",
+        "type": [
+          "string"
+        ],
+        "comment": ""
+      },
+      {
+        "name": "shadow?",
+        "type": [
+          "boolean",
+          "string"
+        ],
+        "comment": ""
+      },
+      {
+        "name": "stateEvents?",
+        "type": [
+          "unknown[]"
+        ],
+        "comment": ""
+      },
+      {
+        "name": "stateId?",
+        "type": [
+          "string"
+        ],
+        "comment": ""
+      },
+      {
+        "name": "stateful?",
+        "type": [
+          "boolean"
+        ],
+        "comment": ""
+      },
+      {
+        "name": "store?",
+        "type": [
+          "Ext.data.Store",
+          "unknown[]"
+        ],
+        "comment": ""
+      },
+      {
+        "name": "stripCharsRe?",
+        "type": [
+          "RegExp"
+        ],
+        "comment": ""
+      },
+      {
+        "name": "style?",
+        "type": [
+          "string"
+        ],
+        "comment": ""
+      },
+      {
+        "name": "submitValue?",
+        "type": [
+          "boolean"
+        ],
+        "comment": ""
+      },
+      {
+        "name": "tabIndex?",
+        "type": [
+          "number"
+        ],
+        "comment": ""
+      },
+      {
+        "name": "tabTip?",
+        "type": [
+          "string"
+        ],
+        "comment": ""
+      },
+      {
+        "name": "title?",
+        "type": [
+          "string"
+        ],
+        "comment": ""
+      },
+      {
+        "name": "tpl?",
+        "type": [
+          "string",
+          "Ext.XTemplate"
+        ],
+        "comment": ""
+      },
+      {
+        "name": "tplWriteMode?",
+        "type": [
+          "string"
+        ],
+        "comment": ""
+      },
+      {
+        "name": "transform?",
+        "type": [
+          "unknown"
+        ],
+        "comment": ""
+      },
+      {
+        "name": "triggerAction?",
+        "type": [
+          "string"
+        ],
+        "comment": ""
+      },
+      {
+        "name": "triggerClass?",
+        "type": [
+          "string"
+        ],
+        "comment": ""
+      },
+      {
+        "name": "triggerConfig?",
+        "type": [
+          "unknown"
+        ],
+        "comment": ""
+      },
+      {
+        "name": "typeAhead?",
+        "type": [
+          "boolean"
+        ],
+        "comment": ""
+      },
+      {
+        "name": "typeAheadDelay?",
+        "type": [
+          "number"
+        ],
+        "comment": ""
+      },
+      {
+        "name": "validateOnBlur?",
+        "type": [
+          "boolean"
+        ],
+        "comment": ""
+      },
+      {
+        "name": "validationDelay?",
+        "type": [
+          "number"
+        ],
+        "comment": ""
+      },
+      {
+        "name": "validationEvent?",
+        "type": [
+          "string",
+          "boolean"
+        ],
+        "comment": ""
+      },
+      {
+        "name": "validator?",
+        "type": [
+          "Function"
+        ],
+        "comment": ""
+      },
+      {
+        "name": "value?",
+        "type": [
+          "unknown"
+        ],
+        "comment": ""
+      },
+      {
+        "name": "valueField?",
+        "type": [
+          "string"
+        ],
+        "comment": ""
+      },
+      {
+        "name": "valueNotFoundText?",
+        "type": [
+          "string"
+        ],
+        "comment": ""
+      },
+      {
+        "name": "vtype?",
+        "type": [
+          "string"
+        ],
+        "comment": ""
+      },
+      {
+        "name": "vtypeText?",
+        "type": [
+          "string"
+        ],
+        "comment": ""
+      },
+      {
+        "name": "width?",
+        "type": [
+          "number"
+        ],
+        "comment": ""
+      },
+      {
+        "name": "wrapFocusClass?",
+        "type": [
+          "string"
+        ],
+        "comment": ""
+      },
+      {
+        "name": "x?",
+        "type": [
+          "number"
+        ],
+        "comment": ""
+      },
+      {
+        "name": "xtype?",
+        "type": [
+          "string"
+        ],
+        "comment": ""
+      },
+      {
+        "name": "y?",
+        "type": [
+          "number"
+        ],
+        "comment": ""
+      }
+    ]
+  },
+  "properties": [
+    {
+      "name": "formatDate",
+      "type": [
+        "object"
+      ],
+      "visibility": "private",
+      "comment": ""
+    },
+    {
+      "name": "initDate",
+      "type": [
+        "string"
+      ],
+      "visibility": "private",
+      "comment": ""
+    },
+    {
+      "name": "initDateFormat",
+      "type": [
+        "string"
+      ],
+      "visibility": "private",
+      "comment": ""
+    },
+    {
+      "name": "validateValue",
+      "type": [
+        "object"
+      ],
+      "visibility": "private",
+      "comment": ""
+    }
+  ],
+  "methods": [
+    {
+      "name": "addListener<T extends ITimeFieldEvents = ITimeFieldEvents, E extends keyof T = keyof T>",
+      "returnType": [],
+      "visibility": "public",
+      "arguments": [
+        {
+          "name": "eventName",
+          "comment": "",
+          "type": [
+            "E"
+          ]
+        },
+        {
+          "name": "handler",
+          "comment": "",
+          "type": [
+            "T[E]"
+          ]
+        },
+        {
+          "name": "scope?",
+          "comment": "",
+          "type": [
+            "object"
+          ]
+        },
+        {
+          "name": "options?",
+          "comment": "",
+          "type": [
+            "object"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "fireEvent<T extends ITimeFieldEvents = ITimeFieldEvents, E extends keyof T = keyof T>",
+      "returnType": [
+        "boolean"
+      ],
+      "visibility": "public",
+      "arguments": [
+        {
+          "name": "eventName",
+          "comment": "",
+          "type": [
+            "E"
+          ]
+        },
+        {
+          "name": "...args",
+          "comment": "",
+          "type": [
+            "Parameters<T[E]>"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "generateStore",
+      "returnType": [],
+      "visibility": "private",
+      "arguments": [
+        {
+          "name": "initial",
+          "comment": "",
+          "type": [
+            "object"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "getValue",
+      "returnType": [
+        "string"
+      ],
+      "visibility": "public",
+      "arguments": []
+    },
+    {
+      "name": "hasListener<T extends ITimeFieldEvents = ITimeFieldEvents, E extends keyof T = keyof T>",
+      "returnType": [
+        "boolean"
+      ],
+      "visibility": "public",
+      "arguments": [
+        {
+          "name": "eventName",
+          "comment": "",
+          "type": [
+            "E"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "initComponent",
+      "returnType": [],
+      "visibility": "private",
+      "arguments": []
+    },
+    {
+      "name": "on<T extends ITimeFieldEvents = ITimeFieldEvents, E extends keyof T = keyof T>",
+      "returnType": [],
+      "visibility": "public",
+      "arguments": [
+        {
+          "name": "eventName",
+          "comment": "",
+          "type": [
+            "E"
+          ]
+        },
+        {
+          "name": "handler",
+          "comment": "",
+          "type": [
+            "T[E]"
+          ]
+        },
+        {
+          "name": "scope?",
+          "comment": "",
+          "type": [
+            "object"
+          ]
+        },
+        {
+          "name": "options?",
+          "comment": "",
+          "type": [
+            "object"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "parseDate",
+      "returnType": [],
+      "visibility": "private",
+      "arguments": [
+        {
+          "name": "value",
+          "comment": "",
+          "type": [
+            "object"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "removeListener<T extends ITimeFieldEvents = ITimeFieldEvents, E extends keyof T = keyof T>",
+      "returnType": [],
+      "visibility": "public",
+      "arguments": [
+        {
+          "name": "eventName",
+          "comment": "",
+          "type": [
+            "E"
+          ]
+        },
+        {
+          "name": "handler",
+          "comment": "",
+          "type": [
+            "T[E]"
+          ]
+        },
+        {
+          "name": "scope?",
+          "comment": "",
+          "type": [
+            "object"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "setLimit",
+      "returnType": [],
+      "visibility": "private",
+      "arguments": [
+        {
+          "name": "value",
+          "comment": "",
+          "type": [
+            "object"
+          ]
+        },
+        {
+          "name": "isMin",
+          "comment": "",
+          "type": [
+            "object"
+          ]
+        },
+        {
+          "name": "initial",
+          "comment": "",
+          "type": [
+            "object"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "setMaxValue",
+      "returnType": [
+        "this"
+      ],
+      "visibility": "public",
+      "arguments": [
+        {
+          "name": "value",
+          "comment": "",
+          "type": [
+            "Date",
+            "string"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "setMinValue",
+      "returnType": [
+        "this"
+      ],
+      "visibility": "public",
+      "arguments": [
+        {
+          "name": "value",
+          "comment": "",
+          "type": [
+            "Date",
+            "string"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "setValue",
+      "returnType": [
+        "this"
+      ],
+      "visibility": "public",
+      "arguments": [
+        {
+          "name": "value",
+          "comment": "",
+          "type": [
+            "object"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "un<T extends ITimeFieldEvents = ITimeFieldEvents, E extends keyof T = keyof T>",
+      "returnType": [],
+      "visibility": "public",
+      "arguments": [
+        {
+          "name": "eventName",
+          "comment": "",
+          "type": [
+            "E"
+          ]
+        },
+        {
+          "name": "handler",
+          "comment": "",
+          "type": [
+            "T[E]"
+          ]
+        },
+        {
+          "name": "scope?",
+          "comment": "",
+          "type": [
+            "object"
+          ]
+        }
+      ]
+    }
+  ],
+  "events": [
+    {
+      "name": "added",
+      "arguments": [
+        {
+          "name": "thisCmp",
+          "comment": "",
+          "type": [
+            "TimeField"
+          ]
+        },
+        {
+          "name": "ownerCt",
+          "comment": "",
+          "type": [
+            "Ext.Container"
+          ]
+        },
+        {
+          "name": "index",
+          "comment": "",
+          "type": [
+            "number"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "afterrender",
+      "arguments": [
+        {
+          "name": "thisCmp",
+          "comment": "",
+          "type": [
+            "TimeField"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "autosize",
+      "arguments": [
+        {
+          "name": "thisCmp",
+          "comment": "",
+          "type": [
+            "TimeField"
+          ]
+        },
+        {
+          "name": "width",
+          "comment": "",
+          "type": [
+            "number"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "beforedestroy",
+      "arguments": [
+        {
+          "name": "thisCmp",
+          "comment": "",
+          "type": [
+            "TimeField"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "beforehide",
+      "arguments": [
+        {
+          "name": "thisCmp",
+          "comment": "",
+          "type": [
+            "TimeField"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "beforequery",
+      "arguments": [
+        {
+          "name": "queryEvent",
+          "comment": "",
+          "type": [
+            "object"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "beforerender",
+      "arguments": [
+        {
+          "name": "thisCmp",
+          "comment": "",
+          "type": [
+            "TimeField"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "beforeselect",
+      "arguments": [
+        {
+          "name": "combo",
+          "comment": "",
+          "type": [
+            "Ext.form.ComboBox"
+          ]
+        },
+        {
+          "name": "record",
+          "comment": "",
+          "type": [
+            "Ext.data.Record"
+          ]
+        },
+        {
+          "name": "index",
+          "comment": "",
+          "type": [
+            "number"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "beforeshow",
+      "arguments": [
+        {
+          "name": "thisCmp",
+          "comment": "",
+          "type": [
+            "TimeField"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "beforestaterestore",
+      "arguments": [
+        {
+          "name": "thisCmp",
+          "comment": "",
+          "type": [
+            "TimeField"
+          ]
+        },
+        {
+          "name": "state",
+          "comment": "",
+          "type": [
+            "object"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "beforestatesave",
+      "arguments": [
+        {
+          "name": "thisCmp",
+          "comment": "",
+          "type": [
+            "TimeField"
+          ]
+        },
+        {
+          "name": "state",
+          "comment": "",
+          "type": [
+            "object"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "blur",
+      "arguments": [
+        {
+          "name": "thisCmp",
+          "comment": "",
+          "type": [
+            "TimeField"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "change",
+      "arguments": [
+        {
+          "name": "thisCmp",
+          "comment": "",
+          "type": [
+            "TimeField"
+          ]
+        },
+        {
+          "name": "newValue",
+          "comment": "",
+          "type": [
+            "unknown"
+          ]
+        },
+        {
+          "name": "oldValue",
+          "comment": "",
+          "type": [
+            "unknown"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "collapse",
+      "arguments": [
+        {
+          "name": "combo",
+          "comment": "",
+          "type": [
+            "Ext.form.ComboBox"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "destroy",
+      "arguments": [
+        {
+          "name": "thisCmp",
+          "comment": "",
+          "type": [
+            "TimeField"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "disable",
+      "arguments": [
+        {
+          "name": "thisCmp",
+          "comment": "",
+          "type": [
+            "TimeField"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "enable",
+      "arguments": [
+        {
+          "name": "thisCmp",
+          "comment": "",
+          "type": [
+            "TimeField"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "expand",
+      "arguments": [
+        {
+          "name": "combo",
+          "comment": "",
+          "type": [
+            "Ext.form.ComboBox"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "focus",
+      "arguments": [
+        {
+          "name": "thisCmp",
+          "comment": "",
+          "type": [
+            "TimeField"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "hide",
+      "arguments": [
+        {
+          "name": "thisCmp",
+          "comment": "",
+          "type": [
+            "TimeField"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "invalid",
+      "arguments": [
+        {
+          "name": "thisCmp",
+          "comment": "",
+          "type": [
+            "TimeField"
+          ]
+        },
+        {
+          "name": "msg",
+          "comment": "",
+          "type": [
+            "string"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "keydown",
+      "arguments": [
+        {
+          "name": "thisCmp",
+          "comment": "",
+          "type": [
+            "TimeField"
+          ]
+        },
+        {
+          "name": "e",
+          "comment": "",
+          "type": [
+            "Ext.EventObject"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "keypress",
+      "arguments": [
+        {
+          "name": "thisCmp",
+          "comment": "",
+          "type": [
+            "TimeField"
+          ]
+        },
+        {
+          "name": "e",
+          "comment": "",
+          "type": [
+            "Ext.EventObject"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "keyup",
+      "arguments": [
+        {
+          "name": "thisCmp",
+          "comment": "",
+          "type": [
+            "TimeField"
+          ]
+        },
+        {
+          "name": "e",
+          "comment": "",
+          "type": [
+            "Ext.EventObject"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "move",
+      "arguments": [
+        {
+          "name": "thisCmp",
+          "comment": "",
+          "type": [
+            "TimeField"
+          ]
+        },
+        {
+          "name": "x",
+          "comment": "",
+          "type": [
+            "number"
+          ]
+        },
+        {
+          "name": "y",
+          "comment": "",
+          "type": [
+            "number"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "removed",
+      "arguments": [
+        {
+          "name": "thisCmp",
+          "comment": "",
+          "type": [
+            "TimeField"
+          ]
+        },
+        {
+          "name": "ownerCt",
+          "comment": "",
+          "type": [
+            "Ext.Container"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "render",
+      "arguments": [
+        {
+          "name": "thisCmp",
+          "comment": "",
+          "type": [
+            "TimeField"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "resize",
+      "arguments": [
+        {
+          "name": "thisCmp",
+          "comment": "",
+          "type": [
+            "TimeField"
+          ]
+        },
+        {
+          "name": "adjWidth",
+          "comment": "",
+          "type": [
+            "number"
+          ]
+        },
+        {
+          "name": "adjHeight",
+          "comment": "",
+          "type": [
+            "number"
+          ]
+        },
+        {
+          "name": "rawWidth",
+          "comment": "",
+          "type": [
+            "number"
+          ]
+        },
+        {
+          "name": "rawHeight",
+          "comment": "",
+          "type": [
+            "number"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "select",
+      "arguments": [
+        {
+          "name": "combo",
+          "comment": "",
+          "type": [
+            "Ext.form.ComboBox"
+          ]
+        },
+        {
+          "name": "record",
+          "comment": "",
+          "type": [
+            "Ext.data.Record"
+          ]
+        },
+        {
+          "name": "index",
+          "comment": "",
+          "type": [
+            "number"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "show",
+      "arguments": [
+        {
+          "name": "thisCmp",
+          "comment": "",
+          "type": [
+            "TimeField"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "specialkey",
+      "arguments": [
+        {
+          "name": "thisCmp",
+          "comment": "",
+          "type": [
+            "TimeField"
+          ]
+        },
+        {
+          "name": "e",
+          "comment": "",
+          "type": [
+            "Ext.EventObject"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "staterestore",
+      "arguments": [
+        {
+          "name": "thisCmp",
+          "comment": "",
+          "type": [
+            "TimeField"
+          ]
+        },
+        {
+          "name": "state",
+          "comment": "",
+          "type": [
+            "object"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "statesave",
+      "arguments": [
+        {
+          "name": "thisCmp",
+          "comment": "",
+          "type": [
+            "TimeField"
+          ]
+        },
+        {
+          "name": "state",
+          "comment": "",
+          "type": [
+            "object"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "valid",
+      "arguments": [
+        {
+          "name": "thisCmp",
+          "comment": "",
+          "type": [
+            "TimeField"
+          ]
+        }
+      ]
+    }
+  ]
+}

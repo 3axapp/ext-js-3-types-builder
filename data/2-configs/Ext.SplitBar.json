@@ -1,0 +1,479 @@
+{
+  "name": "SplitBar",
+  "namespace": "Ext",
+  "extends": "Ext.util.Observable",
+  "constructorMethod": {
+    "config": [
+      {
+        "name": "listeners?",
+        "type": [
+          "object"
+        ],
+        "comment": ""
+      }
+    ]
+  },
+  "properties": [
+    {
+      "name": "adapter",
+      "type": [
+        "object"
+      ],
+      "visibility": "private",
+      "comment": ""
+    },
+    {
+      "name": "animate",
+      "type": [
+        "boolean"
+      ],
+      "visibility": "public",
+      "comment": ""
+    },
+    {
+      "name": "b4StartDrag",
+      "type": [
+        "object"
+      ],
+      "visibility": "private",
+      "comment": ""
+    },
+    {
+      "name": "dd",
+      "type": [
+        "object"
+      ],
+      "visibility": "private",
+      "comment": ""
+    },
+    {
+      "name": "dragSpecs",
+      "type": [
+        "object"
+      ],
+      "visibility": "private",
+      "comment": ""
+    },
+    {
+      "name": "el",
+      "type": [
+        "object"
+      ],
+      "visibility": "private",
+      "comment": ""
+    },
+    {
+      "name": "endDrag",
+      "type": [
+        "object"
+      ],
+      "visibility": "private",
+      "comment": ""
+    },
+    {
+      "name": "maxSize",
+      "type": [
+        "number"
+      ],
+      "visibility": "public",
+      "comment": ""
+    },
+    {
+      "name": "minSize",
+      "type": [
+        "number"
+      ],
+      "visibility": "public",
+      "comment": ""
+    },
+    {
+      "name": "orientation",
+      "type": [
+        "number"
+      ],
+      "visibility": "private",
+      "comment": ""
+    },
+    {
+      "name": "proxy",
+      "type": [
+        "object"
+      ],
+      "visibility": "private",
+      "comment": ""
+    },
+    {
+      "name": "resizingEl",
+      "type": [
+        "object"
+      ],
+      "visibility": "private",
+      "comment": ""
+    },
+    {
+      "name": "shim",
+      "type": [
+        "object"
+      ],
+      "visibility": "private",
+      "comment": ""
+    },
+    {
+      "name": "tickSize",
+      "type": [
+        "number"
+      ],
+      "visibility": "public",
+      "comment": ""
+    },
+    {
+      "name": "useShim",
+      "type": [
+        "boolean"
+      ],
+      "visibility": "public",
+      "comment": ""
+    }
+  ],
+  "methods": [
+    {
+      "name": "addListener<T extends ISplitBarEvents = ISplitBarEvents, E extends keyof T = keyof T>",
+      "returnType": [],
+      "visibility": "public",
+      "arguments": [
+        {
+          "name": "eventName",
+          "comment": "",
+          "type": [
+            "E"
+          ]
+        },
+        {
+          "name": "handler",
+          "comment": "",
+          "type": [
+            "T[E]"
+          ]
+        },
+        {
+          "name": "scope?",
+          "comment": "",
+          "type": [
+            "object"
+          ]
+        },
+        {
+          "name": "options?",
+          "comment": "",
+          "type": [
+            "object"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "createProxy",
+      "returnType": [],
+      "visibility": "private",
+      "arguments": [
+        {
+          "name": "dir",
+          "comment": "",
+          "type": [
+            "object"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "destroy",
+      "returnType": [],
+      "visibility": "public",
+      "arguments": [
+        {
+          "name": "removeEl",
+          "comment": "",
+          "type": [
+            "boolean"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "fireEvent<T extends ISplitBarEvents = ISplitBarEvents, E extends keyof T = keyof T>",
+      "returnType": [
+        "boolean"
+      ],
+      "visibility": "public",
+      "arguments": [
+        {
+          "name": "eventName",
+          "comment": "",
+          "type": [
+            "E"
+          ]
+        },
+        {
+          "name": "...args",
+          "comment": "",
+          "type": [
+            "Parameters<T[E]>"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "getAdapter",
+      "returnType": [
+        "object"
+      ],
+      "visibility": "public",
+      "arguments": []
+    },
+    {
+      "name": "getMaximumSize",
+      "returnType": [
+        "number"
+      ],
+      "visibility": "public",
+      "arguments": []
+    },
+    {
+      "name": "getMinimumSize",
+      "returnType": [
+        "number"
+      ],
+      "visibility": "public",
+      "arguments": []
+    },
+    {
+      "name": "hasListener<T extends ISplitBarEvents = ISplitBarEvents, E extends keyof T = keyof T>",
+      "returnType": [
+        "boolean"
+      ],
+      "visibility": "public",
+      "arguments": [
+        {
+          "name": "eventName",
+          "comment": "",
+          "type": [
+            "E"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "on<T extends ISplitBarEvents = ISplitBarEvents, E extends keyof T = keyof T>",
+      "returnType": [],
+      "visibility": "public",
+      "arguments": [
+        {
+          "name": "eventName",
+          "comment": "",
+          "type": [
+            "E"
+          ]
+        },
+        {
+          "name": "handler",
+          "comment": "",
+          "type": [
+            "T[E]"
+          ]
+        },
+        {
+          "name": "scope?",
+          "comment": "",
+          "type": [
+            "object"
+          ]
+        },
+        {
+          "name": "options?",
+          "comment": "",
+          "type": [
+            "object"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "onEndProxyDrag",
+      "returnType": [],
+      "visibility": "private",
+      "arguments": [
+        {
+          "name": "e",
+          "comment": "",
+          "type": [
+            "object"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "removeListener<T extends ISplitBarEvents = ISplitBarEvents, E extends keyof T = keyof T>",
+      "returnType": [],
+      "visibility": "public",
+      "arguments": [
+        {
+          "name": "eventName",
+          "comment": "",
+          "type": [
+            "E"
+          ]
+        },
+        {
+          "name": "handler",
+          "comment": "",
+          "type": [
+            "T[E]"
+          ]
+        },
+        {
+          "name": "scope?",
+          "comment": "",
+          "type": [
+            "object"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "setAdapter",
+      "returnType": [],
+      "visibility": "public",
+      "arguments": [
+        {
+          "name": "adapter",
+          "comment": "",
+          "type": [
+            "object"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "setCurrentSize",
+      "returnType": [],
+      "visibility": "public",
+      "arguments": [
+        {
+          "name": "size",
+          "comment": "",
+          "type": [
+            "number"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "setMaximumSize",
+      "returnType": [],
+      "visibility": "public",
+      "arguments": [
+        {
+          "name": "maxSize",
+          "comment": "",
+          "type": [
+            "number"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "setMinimumSize",
+      "returnType": [],
+      "visibility": "public",
+      "arguments": [
+        {
+          "name": "minSize",
+          "comment": "",
+          "type": [
+            "number"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "un<T extends ISplitBarEvents = ISplitBarEvents, E extends keyof T = keyof T>",
+      "returnType": [],
+      "visibility": "public",
+      "arguments": [
+        {
+          "name": "eventName",
+          "comment": "",
+          "type": [
+            "E"
+          ]
+        },
+        {
+          "name": "handler",
+          "comment": "",
+          "type": [
+            "T[E]"
+          ]
+        },
+        {
+          "name": "scope?",
+          "comment": "",
+          "type": [
+            "object"
+          ]
+        }
+      ]
+    }
+  ],
+  "events": [
+    {
+      "name": "beforeresize",
+      "arguments": [
+        {
+          "name": "thisCmp",
+          "comment": "",
+          "type": [
+            "SplitBar"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "moved",
+      "arguments": [
+        {
+          "name": "thisCmp",
+          "comment": "",
+          "type": [
+            "SplitBar"
+          ]
+        },
+        {
+          "name": "newSize",
+          "comment": "",
+          "type": [
+            "number"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "resize",
+      "arguments": [
+        {
+          "name": "thisCmp",
+          "comment": "",
+          "type": [
+            "SplitBar"
+          ]
+        },
+        {
+          "name": "newSize",
+          "comment": "",
+          "type": [
+            "number"
+          ]
+        }
+      ]
+    }
+  ]
+}

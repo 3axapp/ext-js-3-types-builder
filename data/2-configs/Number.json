@@ -1,0 +1,32 @@
+{
+  "name": "Number",
+  "namespace": "",
+  "constructorMethod": null,
+  "properties": [],
+  "methods": [
+    {
+      "name": "constrain",
+      "returnType": [
+        "number"
+      ],
+      "visibility": "public",
+      "arguments": [
+        {
+          "name": "min",
+          "comment": "",
+          "type": [
+            "number"
+          ]
+        },
+        {
+          "name": "max",
+          "comment": "",
+          "type": [
+            "number"
+          ]
+        }
+      ]
+    }
+  ],
+  "events": []
+}

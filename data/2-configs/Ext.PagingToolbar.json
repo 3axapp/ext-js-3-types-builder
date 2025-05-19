@@ -1,0 +1,1355 @@
+{
+  "name": "PagingToolbar",
+  "namespace": "Ext",
+  "extends": "Ext.Toolbar",
+  "constructorMethod": {
+    "config": [
+      {
+        "name": "activeItem?",
+        "type": [
+          "string",
+          "number"
+        ],
+        "comment": ""
+      },
+      {
+        "name": "afterPageText?",
+        "type": [
+          "string"
+        ],
+        "comment": ""
+      },
+      {
+        "name": "allowDomMove?",
+        "type": [
+          "boolean"
+        ],
+        "comment": ""
+      },
+      {
+        "name": "anchor?",
+        "type": [
+          "string"
+        ],
+        "comment": ""
+      },
+      {
+        "name": "applyTo?",
+        "type": [
+          "unknown"
+        ],
+        "comment": ""
+      },
+      {
+        "name": "autoDestroy?",
+        "type": [
+          "boolean"
+        ],
+        "comment": ""
+      },
+      {
+        "name": "autoEl?",
+        "type": [
+          "unknown"
+        ],
+        "comment": ""
+      },
+      {
+        "name": "autoHeight?",
+        "type": [
+          "boolean"
+        ],
+        "comment": ""
+      },
+      {
+        "name": "autoScroll?",
+        "type": [
+          "boolean"
+        ],
+        "comment": ""
+      },
+      {
+        "name": "autoShow?",
+        "type": [
+          "boolean"
+        ],
+        "comment": ""
+      },
+      {
+        "name": "autoWidth?",
+        "type": [
+          "boolean"
+        ],
+        "comment": ""
+      },
+      {
+        "name": "beforePageText?",
+        "type": [
+          "string"
+        ],
+        "comment": ""
+      },
+      {
+        "name": "boxMaxHeight?",
+        "type": [
+          "number"
+        ],
+        "comment": ""
+      },
+      {
+        "name": "boxMaxWidth?",
+        "type": [
+          "number"
+        ],
+        "comment": ""
+      },
+      {
+        "name": "boxMinHeight?",
+        "type": [
+          "number"
+        ],
+        "comment": ""
+      },
+      {
+        "name": "boxMinWidth?",
+        "type": [
+          "number"
+        ],
+        "comment": ""
+      },
+      {
+        "name": "bubbleEvents?",
+        "type": [
+          "unknown[]"
+        ],
+        "comment": ""
+      },
+      {
+        "name": "bufferResize?",
+        "type": [
+          "boolean",
+          "number"
+        ],
+        "comment": ""
+      },
+      {
+        "name": "buttonAlign?",
+        "type": [
+          "string"
+        ],
+        "comment": ""
+      },
+      {
+        "name": "clearCls?",
+        "type": [
+          "string"
+        ],
+        "comment": ""
+      },
+      {
+        "name": "cls?",
+        "type": [
+          "string"
+        ],
+        "comment": ""
+      },
+      {
+        "name": "contentEl?",
+        "type": [
+          "string"
+        ],
+        "comment": ""
+      },
+      {
+        "name": "ctCls?",
+        "type": [
+          "string"
+        ],
+        "comment": ""
+      },
+      {
+        "name": "data?",
+        "type": [
+          "unknown"
+        ],
+        "comment": ""
+      },
+      {
+        "name": "defaultType?",
+        "type": [
+          "string"
+        ],
+        "comment": ""
+      },
+      {
+        "name": "defaults?",
+        "type": [
+          "Object|Function"
+        ],
+        "comment": ""
+      },
+      {
+        "name": "disabled?",
+        "type": [
+          "boolean"
+        ],
+        "comment": ""
+      },
+      {
+        "name": "disabledClass?",
+        "type": [
+          "string"
+        ],
+        "comment": ""
+      },
+      {
+        "name": "displayInfo?",
+        "type": [
+          "boolean"
+        ],
+        "comment": ""
+      },
+      {
+        "name": "displayMsg?",
+        "type": [
+          "string"
+        ],
+        "comment": ""
+      },
+      {
+        "name": "emptyMsg?",
+        "type": [
+          "string"
+        ],
+        "comment": ""
+      },
+      {
+        "name": "enableOverflow?",
+        "type": [
+          "boolean"
+        ],
+        "comment": ""
+      },
+      {
+        "name": "fieldLabel?",
+        "type": [
+          "string"
+        ],
+        "comment": ""
+      },
+      {
+        "name": "firstText?",
+        "type": [
+          "string"
+        ],
+        "comment": ""
+      },
+      {
+        "name": "flex?",
+        "type": [
+          "number"
+        ],
+        "comment": ""
+      },
+      {
+        "name": "forceLayout?",
+        "type": [
+          "boolean"
+        ],
+        "comment": ""
+      },
+      {
+        "name": "height?",
+        "type": [
+          "number"
+        ],
+        "comment": ""
+      },
+      {
+        "name": "hidden?",
+        "type": [
+          "boolean"
+        ],
+        "comment": ""
+      },
+      {
+        "name": "hideBorders?",
+        "type": [
+          "boolean"
+        ],
+        "comment": ""
+      },
+      {
+        "name": "hideLabel?",
+        "type": [
+          "boolean"
+        ],
+        "comment": ""
+      },
+      {
+        "name": "hideMode?",
+        "type": [
+          "string"
+        ],
+        "comment": ""
+      },
+      {
+        "name": "hideParent?",
+        "type": [
+          "boolean"
+        ],
+        "comment": ""
+      },
+      {
+        "name": "html?",
+        "type": [
+          "string",
+          "object"
+        ],
+        "comment": ""
+      },
+      {
+        "name": "id?",
+        "type": [
+          "string"
+        ],
+        "comment": ""
+      },
+      {
+        "name": "itemCls?",
+        "type": [
+          "string"
+        ],
+        "comment": ""
+      },
+      {
+        "name": "itemId?",
+        "type": [
+          "string"
+        ],
+        "comment": ""
+      },
+      {
+        "name": "items?",
+        "type": [
+          "object",
+          "unknown[]"
+        ],
+        "comment": ""
+      },
+      {
+        "name": "labelSeparator?",
+        "type": [
+          "string"
+        ],
+        "comment": ""
+      },
+      {
+        "name": "labelStyle?",
+        "type": [
+          "string"
+        ],
+        "comment": ""
+      },
+      {
+        "name": "lastText?",
+        "type": [
+          "string"
+        ],
+        "comment": ""
+      },
+      {
+        "name": "layout?",
+        "type": [
+          "string",
+          "object"
+        ],
+        "comment": ""
+      },
+      {
+        "name": "layoutConfig?",
+        "type": [
+          "object"
+        ],
+        "comment": ""
+      },
+      {
+        "name": "listeners?",
+        "type": [
+          "object"
+        ],
+        "comment": ""
+      },
+      {
+        "name": "margins?",
+        "type": [
+          "object"
+        ],
+        "comment": ""
+      },
+      {
+        "name": "monitorResize?",
+        "type": [
+          "boolean"
+        ],
+        "comment": ""
+      },
+      {
+        "name": "nextText?",
+        "type": [
+          "string"
+        ],
+        "comment": ""
+      },
+      {
+        "name": "overCls?",
+        "type": [
+          "string"
+        ],
+        "comment": ""
+      },
+      {
+        "name": "pageSize?",
+        "type": [
+          "number"
+        ],
+        "comment": ""
+      },
+      {
+        "name": "pageX?",
+        "type": [
+          "number"
+        ],
+        "comment": ""
+      },
+      {
+        "name": "pageY?",
+        "type": [
+          "number"
+        ],
+        "comment": ""
+      },
+      {
+        "name": "plugins?",
+        "type": [
+          "object",
+          "unknown[]"
+        ],
+        "comment": ""
+      },
+      {
+        "name": "prependButtons?",
+        "type": [
+          "boolean"
+        ],
+        "comment": ""
+      },
+      {
+        "name": "prevText?",
+        "type": [
+          "string"
+        ],
+        "comment": ""
+      },
+      {
+        "name": "ptype?",
+        "type": [
+          "string"
+        ],
+        "comment": ""
+      },
+      {
+        "name": "ref?",
+        "type": [
+          "string"
+        ],
+        "comment": ""
+      },
+      {
+        "name": "refreshText?",
+        "type": [
+          "string"
+        ],
+        "comment": ""
+      },
+      {
+        "name": "region?",
+        "type": [
+          "string"
+        ],
+        "comment": ""
+      },
+      {
+        "name": "renderTo?",
+        "type": [
+          "unknown"
+        ],
+        "comment": ""
+      },
+      {
+        "name": "resizeEvent?",
+        "type": [
+          "string"
+        ],
+        "comment": ""
+      },
+      {
+        "name": "stateEvents?",
+        "type": [
+          "unknown[]"
+        ],
+        "comment": ""
+      },
+      {
+        "name": "stateId?",
+        "type": [
+          "string"
+        ],
+        "comment": ""
+      },
+      {
+        "name": "stateful?",
+        "type": [
+          "boolean"
+        ],
+        "comment": ""
+      },
+      {
+        "name": "store?",
+        "type": [
+          "Ext.data.Store"
+        ],
+        "comment": ""
+      },
+      {
+        "name": "style?",
+        "type": [
+          "string"
+        ],
+        "comment": ""
+      },
+      {
+        "name": "tabTip?",
+        "type": [
+          "string"
+        ],
+        "comment": ""
+      },
+      {
+        "name": "tpl?",
+        "type": [
+          "unknown"
+        ],
+        "comment": ""
+      },
+      {
+        "name": "tplWriteMode?",
+        "type": [
+          "string"
+        ],
+        "comment": ""
+      },
+      {
+        "name": "width?",
+        "type": [
+          "number"
+        ],
+        "comment": ""
+      },
+      {
+        "name": "x?",
+        "type": [
+          "number"
+        ],
+        "comment": ""
+      },
+      {
+        "name": "xtype?",
+        "type": [
+          "string"
+        ],
+        "comment": ""
+      },
+      {
+        "name": "y?",
+        "type": [
+          "number"
+        ],
+        "comment": ""
+      }
+    ]
+  },
+  "properties": [
+    {
+      "name": "cursor",
+      "type": [
+        "number"
+      ],
+      "visibility": "public",
+      "comment": ""
+    },
+    {
+      "name": "pageSize",
+      "type": [
+        "number"
+      ],
+      "visibility": "public",
+      "comment": ""
+    },
+    {
+      "name": "paramNames",
+      "type": [
+        "object"
+      ],
+      "visibility": "public",
+      "comment": ""
+    }
+  ],
+  "methods": [
+    {
+      "name": "addListener<T extends IPagingToolbarEvents = IPagingToolbarEvents, E extends keyof T = keyof T>",
+      "returnType": [],
+      "visibility": "public",
+      "arguments": [
+        {
+          "name": "eventName",
+          "comment": "",
+          "type": [
+            "E"
+          ]
+        },
+        {
+          "name": "handler",
+          "comment": "",
+          "type": [
+            "T[E]"
+          ]
+        },
+        {
+          "name": "scope?",
+          "comment": "",
+          "type": [
+            "object"
+          ]
+        },
+        {
+          "name": "options?",
+          "comment": "",
+          "type": [
+            "object"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "bind",
+      "returnType": [],
+      "visibility": "public",
+      "arguments": [
+        {
+          "name": "store",
+          "comment": "",
+          "type": [
+            "Ext.data.Store"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "bindStore",
+      "returnType": [],
+      "visibility": "public",
+      "arguments": [
+        {
+          "name": "store",
+          "comment": "",
+          "type": [
+            "Store"
+          ]
+        },
+        {
+          "name": "initial?",
+          "comment": "",
+          "type": [
+            "boolean"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "changePage",
+      "returnType": [],
+      "visibility": "public",
+      "arguments": [
+        {
+          "name": "page",
+          "comment": "",
+          "type": [
+            "Integer"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "doRefresh",
+      "returnType": [],
+      "visibility": "public",
+      "arguments": []
+    },
+    {
+      "name": "fireEvent<T extends IPagingToolbarEvents = IPagingToolbarEvents, E extends keyof T = keyof T>",
+      "returnType": [
+        "boolean"
+      ],
+      "visibility": "public",
+      "arguments": [
+        {
+          "name": "eventName",
+          "comment": "",
+          "type": [
+            "E"
+          ]
+        },
+        {
+          "name": "...args",
+          "comment": "",
+          "type": [
+            "Parameters<T[E]>"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "hasListener<T extends IPagingToolbarEvents = IPagingToolbarEvents, E extends keyof T = keyof T>",
+      "returnType": [
+        "boolean"
+      ],
+      "visibility": "public",
+      "arguments": [
+        {
+          "name": "eventName",
+          "comment": "",
+          "type": [
+            "E"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "moveFirst",
+      "returnType": [],
+      "visibility": "public",
+      "arguments": []
+    },
+    {
+      "name": "moveLast",
+      "returnType": [],
+      "visibility": "public",
+      "arguments": []
+    },
+    {
+      "name": "moveNext",
+      "returnType": [],
+      "visibility": "public",
+      "arguments": []
+    },
+    {
+      "name": "movePrevious",
+      "returnType": [],
+      "visibility": "public",
+      "arguments": []
+    },
+    {
+      "name": "on<T extends IPagingToolbarEvents = IPagingToolbarEvents, E extends keyof T = keyof T>",
+      "returnType": [],
+      "visibility": "public",
+      "arguments": [
+        {
+          "name": "eventName",
+          "comment": "",
+          "type": [
+            "E"
+          ]
+        },
+        {
+          "name": "handler",
+          "comment": "",
+          "type": [
+            "T[E]"
+          ]
+        },
+        {
+          "name": "scope?",
+          "comment": "",
+          "type": [
+            "object"
+          ]
+        },
+        {
+          "name": "options?",
+          "comment": "",
+          "type": [
+            "object"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "removeListener<T extends IPagingToolbarEvents = IPagingToolbarEvents, E extends keyof T = keyof T>",
+      "returnType": [],
+      "visibility": "public",
+      "arguments": [
+        {
+          "name": "eventName",
+          "comment": "",
+          "type": [
+            "E"
+          ]
+        },
+        {
+          "name": "handler",
+          "comment": "",
+          "type": [
+            "T[E]"
+          ]
+        },
+        {
+          "name": "scope?",
+          "comment": "",
+          "type": [
+            "object"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "un<T extends IPagingToolbarEvents = IPagingToolbarEvents, E extends keyof T = keyof T>",
+      "returnType": [],
+      "visibility": "public",
+      "arguments": [
+        {
+          "name": "eventName",
+          "comment": "",
+          "type": [
+            "E"
+          ]
+        },
+        {
+          "name": "handler",
+          "comment": "",
+          "type": [
+            "T[E]"
+          ]
+        },
+        {
+          "name": "scope?",
+          "comment": "",
+          "type": [
+            "object"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "unbind",
+      "returnType": [],
+      "visibility": "public",
+      "arguments": [
+        {
+          "name": "store",
+          "comment": "",
+          "type": [
+            "Ext.data.Store"
+          ]
+        }
+      ]
+    }
+  ],
+  "events": [
+    {
+      "name": "add",
+      "arguments": [
+        {
+          "name": "thisCmp",
+          "comment": "",
+          "type": [
+            "PagingToolbar"
+          ]
+        },
+        {
+          "name": "component",
+          "comment": "",
+          "type": [
+            "Ext.Component"
+          ]
+        },
+        {
+          "name": "index",
+          "comment": "",
+          "type": [
+            "number"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "added",
+      "arguments": [
+        {
+          "name": "thisCmp",
+          "comment": "",
+          "type": [
+            "PagingToolbar"
+          ]
+        },
+        {
+          "name": "ownerCt",
+          "comment": "",
+          "type": [
+            "Ext.Container"
+          ]
+        },
+        {
+          "name": "index",
+          "comment": "",
+          "type": [
+            "number"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "afterlayout",
+      "arguments": [
+        {
+          "name": "thisCmp",
+          "comment": "",
+          "type": [
+            "PagingToolbar"
+          ]
+        },
+        {
+          "name": "layout",
+          "comment": "",
+          "type": [
+            "Ext.layout.ContainerLayout"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "afterrender",
+      "arguments": [
+        {
+          "name": "thisCmp",
+          "comment": "",
+          "type": [
+            "PagingToolbar"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "beforeadd",
+      "arguments": [
+        {
+          "name": "thisCmp",
+          "comment": "",
+          "type": [
+            "PagingToolbar"
+          ]
+        },
+        {
+          "name": "component",
+          "comment": "",
+          "type": [
+            "Ext.Component"
+          ]
+        },
+        {
+          "name": "index",
+          "comment": "",
+          "type": [
+            "number"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "beforechange",
+      "arguments": [
+        {
+          "name": "thisCmp",
+          "comment": "",
+          "type": [
+            "PagingToolbar"
+          ]
+        },
+        {
+          "name": "params",
+          "comment": "",
+          "type": [
+            "object"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "beforedestroy",
+      "arguments": [
+        {
+          "name": "thisCmp",
+          "comment": "",
+          "type": [
+            "PagingToolbar"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "beforehide",
+      "arguments": [
+        {
+          "name": "thisCmp",
+          "comment": "",
+          "type": [
+            "PagingToolbar"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "beforeremove",
+      "arguments": [
+        {
+          "name": "thisCmp",
+          "comment": "",
+          "type": [
+            "PagingToolbar"
+          ]
+        },
+        {
+          "name": "component",
+          "comment": "",
+          "type": [
+            "Ext.Component"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "beforerender",
+      "arguments": [
+        {
+          "name": "thisCmp",
+          "comment": "",
+          "type": [
+            "PagingToolbar"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "beforeshow",
+      "arguments": [
+        {
+          "name": "thisCmp",
+          "comment": "",
+          "type": [
+            "PagingToolbar"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "beforestaterestore",
+      "arguments": [
+        {
+          "name": "thisCmp",
+          "comment": "",
+          "type": [
+            "PagingToolbar"
+          ]
+        },
+        {
+          "name": "state",
+          "comment": "",
+          "type": [
+            "object"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "beforestatesave",
+      "arguments": [
+        {
+          "name": "thisCmp",
+          "comment": "",
+          "type": [
+            "PagingToolbar"
+          ]
+        },
+        {
+          "name": "state",
+          "comment": "",
+          "type": [
+            "object"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "change",
+      "arguments": [
+        {
+          "name": "thisCmp",
+          "comment": "",
+          "type": [
+            "PagingToolbar"
+          ]
+        },
+        {
+          "name": "pageData",
+          "comment": "",
+          "type": [
+            "object"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "destroy",
+      "arguments": [
+        {
+          "name": "thisCmp",
+          "comment": "",
+          "type": [
+            "PagingToolbar"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "disable",
+      "arguments": [
+        {
+          "name": "thisCmp",
+          "comment": "",
+          "type": [
+            "PagingToolbar"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "enable",
+      "arguments": [
+        {
+          "name": "thisCmp",
+          "comment": "",
+          "type": [
+            "PagingToolbar"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "hide",
+      "arguments": [
+        {
+          "name": "thisCmp",
+          "comment": "",
+          "type": [
+            "PagingToolbar"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "move",
+      "arguments": [
+        {
+          "name": "thisCmp",
+          "comment": "",
+          "type": [
+            "PagingToolbar"
+          ]
+        },
+        {
+          "name": "x",
+          "comment": "",
+          "type": [
+            "number"
+          ]
+        },
+        {
+          "name": "y",
+          "comment": "",
+          "type": [
+            "number"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "overflowchange",
+      "arguments": [
+        {
+          "name": "c",
+          "comment": "",
+          "type": [
+            "object"
+          ]
+        },
+        {
+          "name": "lastOverflow",
+          "comment": "",
+          "type": [
+            "boolean"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "remove",
+      "arguments": [
+        {
+          "name": "thisCmp",
+          "comment": "",
+          "type": [
+            "PagingToolbar"
+          ]
+        },
+        {
+          "name": "component",
+          "comment": "",
+          "type": [
+            "Ext.Component"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "removed",
+      "arguments": [
+        {
+          "name": "thisCmp",
+          "comment": "",
+          "type": [
+            "PagingToolbar"
+          ]
+        },
+        {
+          "name": "ownerCt",
+          "comment": "",
+          "type": [
+            "Ext.Container"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "render",
+      "arguments": [
+        {
+          "name": "thisCmp",
+          "comment": "",
+          "type": [
+            "PagingToolbar"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "resize",
+      "arguments": [
+        {
+          "name": "thisCmp",
+          "comment": "",
+          "type": [
+            "PagingToolbar"
+          ]
+        },
+        {
+          "name": "adjWidth",
+          "comment": "",
+          "type": [
+            "number"
+          ]
+        },
+        {
+          "name": "adjHeight",
+          "comment": "",
+          "type": [
+            "number"
+          ]
+        },
+        {
+          "name": "rawWidth",
+          "comment": "",
+          "type": [
+            "number"
+          ]
+        },
+        {
+          "name": "rawHeight",
+          "comment": "",
+          "type": [
+            "number"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "show",
+      "arguments": [
+        {
+          "name": "thisCmp",
+          "comment": "",
+          "type": [
+            "PagingToolbar"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "staterestore",
+      "arguments": [
+        {
+          "name": "thisCmp",
+          "comment": "",
+          "type": [
+            "PagingToolbar"
+          ]
+        },
+        {
+          "name": "state",
+          "comment": "",
+          "type": [
+            "object"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "statesave",
+      "arguments": [
+        {
+          "name": "thisCmp",
+          "comment": "",
+          "type": [
+            "PagingToolbar"
+          ]
+        },
+        {
+          "name": "state",
+          "comment": "",
+          "type": [
+            "object"
+          ]
+        }
+      ]
+    }
+  ]
+}

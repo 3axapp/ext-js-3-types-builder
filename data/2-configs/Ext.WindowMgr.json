@@ -1,0 +1,9 @@
+{
+  "name": "WindowMgr",
+  "namespace": "Ext",
+  "extends": "Ext.WindowGroup",
+  "constructorMethod": null,
+  "properties": [],
+  "methods": [],
+  "events": []
+}

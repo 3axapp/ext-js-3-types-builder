@@ -1,0 +1,255 @@
+{
+  "name": "Record",
+  "namespace": "Ext.data",
+  "constructorMethod": null,
+  "properties": [
+    {
+      "name": "data",
+      "type": [
+        "object"
+      ],
+      "visibility": "public",
+      "comment": ""
+    },
+    {
+      "name": "dirty",
+      "type": [
+        "boolean"
+      ],
+      "visibility": "public",
+      "comment": ""
+    },
+    {
+      "name": "fields",
+      "type": [
+        "Ext.util.MixedCollection"
+      ],
+      "visibility": "public",
+      "comment": ""
+    },
+    {
+      "name": "id",
+      "type": [
+        "object"
+      ],
+      "visibility": "public",
+      "comment": ""
+    },
+    {
+      "name": "json",
+      "type": [
+        "unknown[]",
+        "object"
+      ],
+      "visibility": "public",
+      "comment": ""
+    },
+    {
+      "name": "modified",
+      "type": [
+        "object"
+      ],
+      "visibility": "public",
+      "comment": ""
+    },
+    {
+      "name": "node",
+      "type": [
+        "Node"
+      ],
+      "visibility": "public",
+      "comment": ""
+    },
+    {
+      "name": "phantom",
+      "type": [
+        "boolean"
+      ],
+      "visibility": "public",
+      "comment": ""
+    },
+    {
+      "name": "store",
+      "type": [
+        "Ext.data.Store"
+      ],
+      "visibility": "public",
+      "comment": ""
+    }
+  ],
+  "methods": [
+    {
+      "name": "beginEdit",
+      "returnType": [],
+      "visibility": "public",
+      "arguments": []
+    },
+    {
+      "name": "cancelEdit",
+      "returnType": [],
+      "visibility": "public",
+      "arguments": []
+    },
+    {
+      "name": "commit",
+      "returnType": [],
+      "visibility": "public",
+      "arguments": [
+        {
+          "name": "silent?",
+          "comment": "",
+          "type": [
+            "boolean"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "copy",
+      "returnType": [
+        "Ext.data.Record"
+      ],
+      "visibility": "public",
+      "arguments": [
+        {
+          "name": "id?",
+          "comment": "",
+          "type": [
+            "string"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "endEdit",
+      "returnType": [],
+      "visibility": "public",
+      "arguments": []
+    },
+    {
+      "name": "get",
+      "returnType": [
+        "object"
+      ],
+      "visibility": "public",
+      "arguments": [
+        {
+          "name": "name",
+          "comment": "",
+          "type": [
+            "string"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "getChanges",
+      "returnType": [
+        "object"
+      ],
+      "visibility": "public",
+      "arguments": []
+    },
+    {
+      "name": "id",
+      "returnType": [
+        "string"
+      ],
+      "visibility": "public",
+      "arguments": [
+        {
+          "name": "rec",
+          "comment": "",
+          "type": [
+            "Ext.data.Record"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "isModified",
+      "returnType": [
+        "boolean"
+      ],
+      "visibility": "public",
+      "arguments": [
+        {
+          "name": "fieldName",
+          "comment": "",
+          "type": [
+            "string"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "isValid",
+      "returnType": [
+        "boolean"
+      ],
+      "visibility": "public",
+      "arguments": []
+    },
+    {
+      "name": "markDirty",
+      "returnType": [],
+      "visibility": "public",
+      "arguments": []
+    },
+    {
+      "name": "reject",
+      "returnType": [],
+      "visibility": "public",
+      "arguments": [
+        {
+          "name": "silent?",
+          "comment": "",
+          "type": [
+            "boolean"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "set",
+      "returnType": [],
+      "visibility": "public",
+      "arguments": [
+        {
+          "name": "name",
+          "comment": "",
+          "type": [
+            "string"
+          ]
+        },
+        {
+          "name": "value",
+          "comment": "",
+          "type": [
+            "string",
+            "object",
+            "unknown[]"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "create",
+      "static": true,
+      "returnType": [
+        "Function"
+      ],
+      "visibility": "public",
+      "arguments": [
+        {
+          "name": "o",
+          "comment": "",
+          "type": [
+            "unknown[]"
+          ]
+        }
+      ]
+    }
+  ],
+  "events": []
+}

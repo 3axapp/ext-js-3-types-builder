@@ -1,0 +1,219 @@
+{
+  "name": "DomQuery",
+  "namespace": "Ext",
+  "constructorMethod": null,
+  "properties": [
+    {
+      "name": "matchers",
+      "type": [
+        "unknown[]"
+      ],
+      "visibility": "public",
+      "comment": ""
+    },
+    {
+      "name": "operators",
+      "type": [
+        "object"
+      ],
+      "visibility": "public",
+      "comment": ""
+    },
+    {
+      "name": "pseudos",
+      "type": [
+        "object"
+      ],
+      "visibility": "public",
+      "comment": ""
+    }
+  ],
+  "methods": [
+    {
+      "name": "compile",
+      "returnType": [
+        "Function"
+      ],
+      "visibility": "public",
+      "arguments": [
+        {
+          "name": "selector",
+          "comment": "",
+          "type": [
+            "string"
+          ]
+        },
+        {
+          "name": "type?",
+          "comment": "",
+          "type": [
+            "string"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "filter",
+      "returnType": [
+        "unknown[]"
+      ],
+      "visibility": "public",
+      "arguments": [
+        {
+          "name": "el",
+          "comment": "",
+          "type": [
+            "unknown[]"
+          ]
+        },
+        {
+          "name": "selector",
+          "comment": "",
+          "type": [
+            "string"
+          ]
+        },
+        {
+          "name": "nonMatches",
+          "comment": "",
+          "type": [
+            "boolean"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "is",
+      "returnType": [
+        "boolean"
+      ],
+      "visibility": "public",
+      "arguments": [
+        {
+          "name": "el",
+          "comment": "",
+          "type": [
+            "string",
+            "HTMLElement",
+            "unknown[]"
+          ]
+        },
+        {
+          "name": "selector",
+          "comment": "",
+          "type": [
+            "string"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "jsSelect",
+      "returnType": [
+        "unknown[]"
+      ],
+      "visibility": "public",
+      "arguments": [
+        {
+          "name": "selector",
+          "comment": "",
+          "type": [
+            "string"
+          ]
+        },
+        {
+          "name": "root?",
+          "comment": "",
+          "type": [
+            "Node",
+            "string"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "selectNode",
+      "returnType": [
+        "Element"
+      ],
+      "visibility": "public",
+      "arguments": [
+        {
+          "name": "selector",
+          "comment": "",
+          "type": [
+            "string"
+          ]
+        },
+        {
+          "name": "root?",
+          "comment": "",
+          "type": [
+            "Node"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "selectNumber",
+      "returnType": [
+        "number"
+      ],
+      "visibility": "public",
+      "arguments": [
+        {
+          "name": "selector",
+          "comment": "",
+          "type": [
+            "string"
+          ]
+        },
+        {
+          "name": "root?",
+          "comment": "",
+          "type": [
+            "Node"
+          ]
+        },
+        {
+          "name": "defaultValue?",
+          "comment": "",
+          "type": [
+            "number"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "selectValue",
+      "returnType": [
+        "string"
+      ],
+      "visibility": "public",
+      "arguments": [
+        {
+          "name": "selector",
+          "comment": "",
+          "type": [
+            "string"
+          ]
+        },
+        {
+          "name": "root?",
+          "comment": "",
+          "type": [
+            "Node"
+          ]
+        },
+        {
+          "name": "defaultValue?",
+          "comment": "",
+          "type": [
+            "string"
+          ]
+        }
+      ]
+    }
+  ],
+  "events": []
+}

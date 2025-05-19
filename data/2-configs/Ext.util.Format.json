@@ -1,0 +1,425 @@
+{
+  "name": "Format",
+  "namespace": "Ext.util",
+  "constructorMethod": null,
+  "properties": [],
+  "methods": [
+    {
+      "name": "capitalize",
+      "returnType": [
+        "string"
+      ],
+      "visibility": "public",
+      "arguments": [
+        {
+          "name": "value",
+          "comment": "",
+          "type": [
+            "string"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "date",
+      "returnType": [
+        "string"
+      ],
+      "visibility": "public",
+      "arguments": [
+        {
+          "name": "value",
+          "comment": "",
+          "type": [
+            "string",
+            "Date"
+          ]
+        },
+        {
+          "name": "format?",
+          "comment": "",
+          "type": [
+            "string"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "dateRenderer",
+      "returnType": [
+        "Function"
+      ],
+      "visibility": "public",
+      "arguments": [
+        {
+          "name": "format",
+          "comment": "",
+          "type": [
+            "string"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "defaultValue",
+      "returnType": [
+        "string"
+      ],
+      "visibility": "public",
+      "arguments": [
+        {
+          "name": "value",
+          "comment": "",
+          "type": [
+            "unknown"
+          ]
+        },
+        {
+          "name": "defaultValue",
+          "comment": "",
+          "type": [
+            "string"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "ellipsis",
+      "returnType": [
+        "string"
+      ],
+      "visibility": "public",
+      "arguments": [
+        {
+          "name": "value",
+          "comment": "",
+          "type": [
+            "string"
+          ]
+        },
+        {
+          "name": "length",
+          "comment": "",
+          "type": [
+            "number"
+          ]
+        },
+        {
+          "name": "word",
+          "comment": "",
+          "type": [
+            "boolean"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "fileSize",
+      "returnType": [
+        "string"
+      ],
+      "visibility": "public",
+      "arguments": [
+        {
+          "name": "size",
+          "comment": "",
+          "type": [
+            "number",
+            "string"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "htmlDecode",
+      "returnType": [
+        "string"
+      ],
+      "visibility": "public",
+      "arguments": [
+        {
+          "name": "value",
+          "comment": "",
+          "type": [
+            "string"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "htmlEncode",
+      "returnType": [
+        "string"
+      ],
+      "visibility": "public",
+      "arguments": [
+        {
+          "name": "value",
+          "comment": "",
+          "type": [
+            "string"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "lowercase",
+      "returnType": [
+        "string"
+      ],
+      "visibility": "public",
+      "arguments": [
+        {
+          "name": "value",
+          "comment": "",
+          "type": [
+            "string"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "math",
+      "returnType": [
+        "Function"
+      ],
+      "visibility": "public",
+      "arguments": []
+    },
+    {
+      "name": "nl2br",
+      "returnType": [
+        "string"
+      ],
+      "visibility": "public",
+      "arguments": [
+        {
+          "name": "The",
+          "comment": "",
+          "type": [
+            "string"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "number",
+      "returnType": [
+        "string"
+      ],
+      "visibility": "public",
+      "arguments": [
+        {
+          "name": "v",
+          "comment": "",
+          "type": [
+            "number"
+          ]
+        },
+        {
+          "name": "format",
+          "comment": "",
+          "type": [
+            "string"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "numberRenderer",
+      "returnType": [
+        "Function"
+      ],
+      "visibility": "public",
+      "arguments": [
+        {
+          "name": "format",
+          "comment": "",
+          "type": [
+            "string"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "plural",
+      "returnType": [],
+      "visibility": "public",
+      "arguments": [
+        {
+          "name": "value",
+          "comment": "",
+          "type": [
+            "number"
+          ]
+        },
+        {
+          "name": "singular",
+          "comment": "",
+          "type": [
+            "string"
+          ]
+        },
+        {
+          "name": "plural?",
+          "comment": "",
+          "type": [
+            "string"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "round",
+      "returnType": [
+        "number"
+      ],
+      "visibility": "public",
+      "arguments": [
+        {
+          "name": "value",
+          "comment": "",
+          "type": [
+            "number",
+            "string"
+          ]
+        },
+        {
+          "name": "precision",
+          "comment": "",
+          "type": [
+            "number"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "stripScripts",
+      "returnType": [
+        "string"
+      ],
+      "visibility": "public",
+      "arguments": [
+        {
+          "name": "value",
+          "comment": "",
+          "type": [
+            "unknown"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "stripTags",
+      "returnType": [
+        "string"
+      ],
+      "visibility": "public",
+      "arguments": [
+        {
+          "name": "value",
+          "comment": "",
+          "type": [
+            "unknown"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "substr",
+      "returnType": [
+        "string"
+      ],
+      "visibility": "public",
+      "arguments": [
+        {
+          "name": "value",
+          "comment": "",
+          "type": [
+            "string"
+          ]
+        },
+        {
+          "name": "start",
+          "comment": "",
+          "type": [
+            "number"
+          ]
+        },
+        {
+          "name": "length",
+          "comment": "",
+          "type": [
+            "number"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "trim",
+      "returnType": [
+        "string"
+      ],
+      "visibility": "public",
+      "arguments": [
+        {
+          "name": "value",
+          "comment": "",
+          "type": [
+            "string"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "undef",
+      "returnType": [
+        "unknown"
+      ],
+      "visibility": "public",
+      "arguments": [
+        {
+          "name": "value",
+          "comment": "",
+          "type": [
+            "unknown"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "uppercase",
+      "returnType": [
+        "string"
+      ],
+      "visibility": "public",
+      "arguments": [
+        {
+          "name": "value",
+          "comment": "",
+          "type": [
+            "string"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "usMoney",
+      "returnType": [
+        "string"
+      ],
+      "visibility": "public",
+      "arguments": [
+        {
+          "name": "value",
+          "comment": "",
+          "type": [
+            "number",
+            "string"
+          ]
+        }
+      ]
+    }
+  ],
+  "events": []
+}

@@ -1,0 +1,57 @@
+{
+  "name": "JSON",
+  "namespace": "Ext.util",
+  "constructorMethod": null,
+  "properties": [],
+  "methods": [
+    {
+      "name": "decode",
+      "returnType": [
+        "object"
+      ],
+      "visibility": "public",
+      "arguments": [
+        {
+          "name": "json",
+          "comment": "",
+          "type": [
+            "string"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "encode",
+      "returnType": [
+        "string"
+      ],
+      "visibility": "public",
+      "arguments": [
+        {
+          "name": "o",
+          "comment": "",
+          "type": [
+            "unknown"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "encodeDate",
+      "returnType": [
+        "string"
+      ],
+      "visibility": "public",
+      "arguments": [
+        {
+          "name": "d",
+          "comment": "",
+          "type": [
+            "Date"
+          ]
+        }
+      ]
+    }
+  ],
+  "events": []
+}

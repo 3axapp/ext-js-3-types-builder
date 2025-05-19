@@ -1,0 +1,295 @@
+{
+  "name": "ToolbarLayout",
+  "namespace": "Ext.layout",
+  "extends": "Ext.layout.ContainerLayout",
+  "constructorMethod": {
+    "config": [
+      {
+        "name": "extraCls?",
+        "type": [
+          "string"
+        ],
+        "comment": ""
+      },
+      {
+        "name": "renderHidden?",
+        "type": [
+          "boolean"
+        ],
+        "comment": ""
+      }
+    ]
+  },
+  "properties": [
+    {
+      "name": "hiddenItems",
+      "type": [
+        "unknown[]"
+      ],
+      "visibility": "public",
+      "comment": ""
+    },
+    {
+      "name": "lastOverflow",
+      "type": [
+        "boolean"
+      ],
+      "visibility": "private",
+      "comment": ""
+    },
+    {
+      "name": "monitorResize",
+      "type": [
+        "boolean"
+      ],
+      "visibility": "private",
+      "comment": ""
+    },
+    {
+      "name": "more",
+      "type": [
+        "Ext.Button"
+      ],
+      "visibility": "private",
+      "comment": ""
+    },
+    {
+      "name": "moreMenu",
+      "type": [
+        "Ext.menu.Menu"
+      ],
+      "visibility": "private",
+      "comment": ""
+    },
+    {
+      "name": "noItemsMenuText",
+      "type": [
+        "string"
+      ],
+      "visibility": "public",
+      "comment": ""
+    },
+    {
+      "name": "tableHTML",
+      "type": [
+        "string"
+      ],
+      "visibility": "private",
+      "comment": ""
+    },
+    {
+      "name": "triggerWidth",
+      "type": [
+        "number"
+      ],
+      "visibility": "public",
+      "comment": ""
+    },
+    {
+      "name": "type",
+      "type": [
+        "string"
+      ],
+      "visibility": "private",
+      "comment": ""
+    }
+  ],
+  "methods": [
+    {
+      "name": "addComponentToMenu",
+      "returnType": [],
+      "visibility": "private",
+      "arguments": [
+        {
+          "name": "menu",
+          "comment": "",
+          "type": [
+            "Ext.menu.Menu"
+          ]
+        },
+        {
+          "name": "component",
+          "comment": "",
+          "type": [
+            "Ext.Component"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "beforeMoreShow",
+      "returnType": [],
+      "visibility": "private",
+      "arguments": [
+        {
+          "name": "m",
+          "comment": "",
+          "type": [
+            "Ext.menu.Menu"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "cleanup",
+      "returnType": [],
+      "visibility": "private",
+      "arguments": [
+        {
+          "name": "el",
+          "comment": "",
+          "type": [
+            "Ext.Element"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "clearMenu",
+      "returnType": [],
+      "visibility": "private",
+      "arguments": []
+    },
+    {
+      "name": "createMenuConfig",
+      "returnType": [],
+      "visibility": "private",
+      "arguments": [
+        {
+          "name": "component",
+          "comment": "",
+          "type": [
+            "Ext.Component"
+          ]
+        },
+        {
+          "name": "hideOnClick",
+          "comment": "",
+          "type": [
+            "boolean"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "destroy",
+      "returnType": [],
+      "visibility": "private",
+      "arguments": []
+    },
+    {
+      "name": "fitToSize",
+      "returnType": [],
+      "visibility": "private",
+      "arguments": [
+        {
+          "name": "target",
+          "comment": "",
+          "type": [
+            "Ext.Element"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "getItemWidth",
+      "returnType": [
+        "number"
+      ],
+      "visibility": "private",
+      "arguments": [
+        {
+          "name": "c",
+          "comment": "",
+          "type": [
+            "Ext.Component"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "hideItem",
+      "returnType": [],
+      "visibility": "private",
+      "arguments": [
+        {
+          "name": "item",
+          "comment": "",
+          "type": [
+            "Ext.Component"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "initMore",
+      "returnType": [],
+      "visibility": "private",
+      "arguments": []
+    },
+    {
+      "name": "insertCell",
+      "returnType": [],
+      "visibility": "private",
+      "arguments": [
+        {
+          "name": "c",
+          "comment": "",
+          "type": [
+            "Ext.Component"
+          ]
+        },
+        {
+          "name": "target",
+          "comment": "",
+          "type": [
+            "Ext.Element"
+          ]
+        },
+        {
+          "name": "position",
+          "comment": "",
+          "type": [
+            "number"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "onLayout",
+      "returnType": [],
+      "visibility": "private",
+      "arguments": [
+        {
+          "name": "ct",
+          "comment": "",
+          "type": [
+            "object"
+          ]
+        },
+        {
+          "name": "target",
+          "comment": "",
+          "type": [
+            "object"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "unhideItem",
+      "returnType": [],
+      "visibility": "private",
+      "arguments": [
+        {
+          "name": "item",
+          "comment": "",
+          "type": [
+            "Ext.Component"
+          ]
+        }
+      ]
+    }
+  ],
+  "events": []
+}

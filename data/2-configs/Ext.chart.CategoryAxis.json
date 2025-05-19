@@ -1,0 +1,34 @@
+{
+  "name": "CategoryAxis",
+  "namespace": "Ext.chart",
+  "extends": "Ext.chart.Axis",
+  "constructorMethod": null,
+  "properties": [
+    {
+      "name": "calculateCategoryCount",
+      "type": [
+        "boolean"
+      ],
+      "visibility": "public",
+      "comment": ""
+    },
+    {
+      "name": "categoryNames",
+      "type": [
+        "unknown[]"
+      ],
+      "visibility": "public",
+      "comment": ""
+    },
+    {
+      "name": "type",
+      "type": [
+        "string"
+      ],
+      "visibility": "public",
+      "comment": ""
+    }
+  ],
+  "methods": [],
+  "events": []
+}

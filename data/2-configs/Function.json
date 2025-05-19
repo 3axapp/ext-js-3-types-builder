@@ -1,0 +1,133 @@
+{
+  "name": "Function",
+  "namespace": "",
+  "extends": null,
+  "constructorMethod": null,
+  "properties": [],
+  "methods": [
+    {
+      "name": "createCallback",
+      "returnType": [
+        "Function"
+      ],
+      "visibility": "public",
+      "arguments": []
+    },
+    {
+      "name": "createDelegate",
+      "returnType": [
+        "Function"
+      ],
+      "visibility": "public",
+      "arguments": [
+        {
+          "name": "scope?",
+          "comment": "",
+          "type": [
+            "object"
+          ]
+        },
+        {
+          "name": "args?",
+          "comment": "",
+          "type": [
+            "unknown[]"
+          ]
+        },
+        {
+          "name": "appendArgs?",
+          "comment": "",
+          "type": [
+            "boolean",
+            "number"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "createInterceptor",
+      "returnType": [
+        "Function"
+      ],
+      "visibility": "public",
+      "arguments": [
+        {
+          "name": "fcn",
+          "comment": "",
+          "type": [
+            "Function"
+          ]
+        },
+        {
+          "name": "scope?",
+          "comment": "",
+          "type": [
+            "object"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "createSequence",
+      "returnType": [
+        "Function"
+      ],
+      "visibility": "public",
+      "arguments": [
+        {
+          "name": "fcn",
+          "comment": "",
+          "type": [
+            "Function"
+          ]
+        },
+        {
+          "name": "scope?",
+          "comment": "",
+          "type": [
+            "object"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "defer",
+      "returnType": [
+        "number"
+      ],
+      "visibility": "public",
+      "arguments": [
+        {
+          "name": "millis",
+          "comment": "",
+          "type": [
+            "number"
+          ]
+        },
+        {
+          "name": "scope?",
+          "comment": "",
+          "type": [
+            "object"
+          ]
+        },
+        {
+          "name": "args?",
+          "comment": "",
+          "type": [
+            "unknown[]"
+          ]
+        },
+        {
+          "name": "appendArgs?",
+          "comment": "",
+          "type": [
+            "boolean",
+            "number"
+          ]
+        }
+      ]
+    }
+  ],
+  "events": []
+}

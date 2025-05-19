@@ -1,0 +1,1226 @@
+{
+  "name": "GroupingView",
+  "namespace": "Ext.grid",
+  "extends": "Ext.grid.GridView",
+  "constructorMethod": {
+    "config": [
+      {
+        "name": "autoFill?",
+        "type": [
+          "boolean"
+        ],
+        "comment": ""
+      },
+      {
+        "name": "cancelEditOnToggle?",
+        "type": [
+          "boolean"
+        ],
+        "comment": ""
+      },
+      {
+        "name": "cellSelector?",
+        "type": [
+          "string"
+        ],
+        "comment": ""
+      },
+      {
+        "name": "cellSelectorDepth?",
+        "type": [
+          "number"
+        ],
+        "comment": ""
+      },
+      {
+        "name": "columnsText?",
+        "type": [
+          "string"
+        ],
+        "comment": ""
+      },
+      {
+        "name": "deferEmptyText?",
+        "type": [
+          "boolean"
+        ],
+        "comment": ""
+      },
+      {
+        "name": "emptyGroupText?",
+        "type": [
+          "string"
+        ],
+        "comment": ""
+      },
+      {
+        "name": "emptyText?",
+        "type": [
+          "string"
+        ],
+        "comment": ""
+      },
+      {
+        "name": "enableGrouping?",
+        "type": [
+          "boolean"
+        ],
+        "comment": ""
+      },
+      {
+        "name": "enableGroupingMenu?",
+        "type": [
+          "boolean"
+        ],
+        "comment": ""
+      },
+      {
+        "name": "enableNoGroups?",
+        "type": [
+          "boolean"
+        ],
+        "comment": ""
+      },
+      {
+        "name": "enableRowBody?",
+        "type": [
+          "boolean"
+        ],
+        "comment": ""
+      },
+      {
+        "name": "forceFit?",
+        "type": [
+          "boolean"
+        ],
+        "comment": ""
+      },
+      {
+        "name": "groupByText?",
+        "type": [
+          "string"
+        ],
+        "comment": ""
+      },
+      {
+        "name": "groupMode?",
+        "type": [
+          "string"
+        ],
+        "comment": ""
+      },
+      {
+        "name": "groupRenderer?",
+        "type": [
+          "Function"
+        ],
+        "comment": ""
+      },
+      {
+        "name": "groupTextTpl?",
+        "type": [
+          "string"
+        ],
+        "comment": ""
+      },
+      {
+        "name": "headerMenuOpenCls?",
+        "type": [
+          "string"
+        ],
+        "comment": ""
+      },
+      {
+        "name": "headersDisabled?",
+        "type": [
+          "boolean"
+        ],
+        "comment": ""
+      },
+      {
+        "name": "hideGroupedColumn?",
+        "type": [
+          "boolean"
+        ],
+        "comment": ""
+      },
+      {
+        "name": "hideSortIcons?",
+        "type": [
+          "boolean"
+        ],
+        "comment": ""
+      },
+      {
+        "name": "ignoreAdd?",
+        "type": [
+          "boolean"
+        ],
+        "comment": ""
+      },
+      {
+        "name": "listeners?",
+        "type": [
+          "object"
+        ],
+        "comment": ""
+      },
+      {
+        "name": "markDirty?",
+        "type": [
+          "boolean"
+        ],
+        "comment": ""
+      },
+      {
+        "name": "rowBodySelector?",
+        "type": [
+          "string"
+        ],
+        "comment": ""
+      },
+      {
+        "name": "rowBodySelectorDepth?",
+        "type": [
+          "number"
+        ],
+        "comment": ""
+      },
+      {
+        "name": "rowOverCls?",
+        "type": [
+          "string"
+        ],
+        "comment": ""
+      },
+      {
+        "name": "rowSelector?",
+        "type": [
+          "string"
+        ],
+        "comment": ""
+      },
+      {
+        "name": "rowSelectorDepth?",
+        "type": [
+          "number"
+        ],
+        "comment": ""
+      },
+      {
+        "name": "scrollOffset?",
+        "type": [
+          "number"
+        ],
+        "comment": ""
+      },
+      {
+        "name": "selectedRowClass?",
+        "type": [
+          "string"
+        ],
+        "comment": ""
+      },
+      {
+        "name": "showGroupName?",
+        "type": [
+          "boolean"
+        ],
+        "comment": ""
+      },
+      {
+        "name": "showGroupsText?",
+        "type": [
+          "string"
+        ],
+        "comment": ""
+      },
+      {
+        "name": "sortAscText?",
+        "type": [
+          "string"
+        ],
+        "comment": ""
+      },
+      {
+        "name": "sortClasses?",
+        "type": [
+          "unknown[]"
+        ],
+        "comment": ""
+      },
+      {
+        "name": "sortDescText?",
+        "type": [
+          "string"
+        ],
+        "comment": ""
+      },
+      {
+        "name": "startCollapsed?",
+        "type": [
+          "boolean"
+        ],
+        "comment": ""
+      }
+    ]
+  },
+  "properties": [],
+  "methods": [
+    {
+      "name": "addListener<T extends IGroupingViewEvents = IGroupingViewEvents, E extends keyof T = keyof T>",
+      "returnType": [],
+      "visibility": "public",
+      "arguments": [
+        {
+          "name": "eventName",
+          "comment": "",
+          "type": [
+            "E"
+          ]
+        },
+        {
+          "name": "handler",
+          "comment": "",
+          "type": [
+            "T[E]"
+          ]
+        },
+        {
+          "name": "scope?",
+          "comment": "",
+          "type": [
+            "object"
+          ]
+        },
+        {
+          "name": "options?",
+          "comment": "",
+          "type": [
+            "object"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "afterRender",
+      "returnType": [],
+      "visibility": "private",
+      "arguments": []
+    },
+    {
+      "name": "afterRenderUI",
+      "returnType": [],
+      "visibility": "private",
+      "arguments": []
+    },
+    {
+      "name": "beforeMenuShow",
+      "returnType": [],
+      "visibility": "private",
+      "arguments": []
+    },
+    {
+      "name": "canGroup",
+      "returnType": [],
+      "visibility": "private",
+      "arguments": []
+    },
+    {
+      "name": "collapseAllGroups",
+      "returnType": [],
+      "visibility": "public",
+      "arguments": []
+    },
+    {
+      "name": "constructId",
+      "returnType": [],
+      "visibility": "private",
+      "arguments": [
+        {
+          "name": "value",
+          "comment": "",
+          "type": [
+            "object"
+          ]
+        },
+        {
+          "name": "field",
+          "comment": "",
+          "type": [
+            "object"
+          ]
+        },
+        {
+          "name": "idx",
+          "comment": "",
+          "type": [
+            "object"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "doGroupEnd",
+      "returnType": [],
+      "visibility": "private",
+      "arguments": [
+        {
+          "name": "buf",
+          "comment": "",
+          "type": [
+            "object"
+          ]
+        },
+        {
+          "name": "g",
+          "comment": "",
+          "type": [
+            "object"
+          ]
+        },
+        {
+          "name": "cs",
+          "comment": "",
+          "type": [
+            "object"
+          ]
+        },
+        {
+          "name": "ds",
+          "comment": "",
+          "type": [
+            "object"
+          ]
+        },
+        {
+          "name": "colCount",
+          "comment": "",
+          "type": [
+            "object"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "doGroupStart",
+      "returnType": [],
+      "visibility": "private",
+      "arguments": [
+        {
+          "name": "buf",
+          "comment": "",
+          "type": [
+            "object"
+          ]
+        },
+        {
+          "name": "g",
+          "comment": "",
+          "type": [
+            "object"
+          ]
+        },
+        {
+          "name": "cs",
+          "comment": "",
+          "type": [
+            "object"
+          ]
+        },
+        {
+          "name": "ds",
+          "comment": "",
+          "type": [
+            "object"
+          ]
+        },
+        {
+          "name": "colCount",
+          "comment": "",
+          "type": [
+            "object"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "doRender",
+      "returnType": [
+        "string"
+      ],
+      "visibility": "private",
+      "arguments": [
+        {
+          "name": "columns",
+          "comment": "",
+          "type": [
+            "unknown[]"
+          ]
+        },
+        {
+          "name": "records",
+          "comment": "",
+          "type": [
+            "unknown[]"
+          ]
+        },
+        {
+          "name": "store",
+          "comment": "",
+          "type": [
+            "Ext.data.Store"
+          ]
+        },
+        {
+          "name": "startRow",
+          "comment": "",
+          "type": [
+            "number"
+          ]
+        },
+        {
+          "name": "colCount",
+          "comment": "",
+          "type": [
+            "number"
+          ]
+        },
+        {
+          "name": "stripe",
+          "comment": "",
+          "type": [
+            "boolean"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "expandAllGroups",
+      "returnType": [],
+      "visibility": "public",
+      "arguments": []
+    },
+    {
+      "name": "findGroup",
+      "returnType": [],
+      "visibility": "private",
+      "arguments": [
+        {
+          "name": "el",
+          "comment": "",
+          "type": [
+            "object"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "fireEvent<T extends IGroupingViewEvents = IGroupingViewEvents, E extends keyof T = keyof T>",
+      "returnType": [
+        "boolean"
+      ],
+      "visibility": "public",
+      "arguments": [
+        {
+          "name": "eventName",
+          "comment": "",
+          "type": [
+            "E"
+          ]
+        },
+        {
+          "name": "...args",
+          "comment": "",
+          "type": [
+            "Parameters<T[E]>"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "getGroup",
+      "returnType": [],
+      "visibility": "private",
+      "arguments": [
+        {
+          "name": "v",
+          "comment": "",
+          "type": [
+            "object"
+          ]
+        },
+        {
+          "name": "r",
+          "comment": "",
+          "type": [
+            "object"
+          ]
+        },
+        {
+          "name": "groupRenderer",
+          "comment": "",
+          "type": [
+            "object"
+          ]
+        },
+        {
+          "name": "rowIndex",
+          "comment": "",
+          "type": [
+            "object"
+          ]
+        },
+        {
+          "name": "colIndex",
+          "comment": "",
+          "type": [
+            "object"
+          ]
+        },
+        {
+          "name": "ds",
+          "comment": "",
+          "type": [
+            "object"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "getGroupField",
+      "returnType": [],
+      "visibility": "private",
+      "arguments": []
+    },
+    {
+      "name": "getGroupId",
+      "returnType": [
+        "string"
+      ],
+      "visibility": "public",
+      "arguments": [
+        {
+          "name": "value",
+          "comment": "",
+          "type": [
+            "string"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "getGroups",
+      "returnType": [],
+      "visibility": "private",
+      "arguments": []
+    },
+    {
+      "name": "getPrefix",
+      "returnType": [],
+      "visibility": "private",
+      "arguments": [
+        {
+          "name": "field",
+          "comment": "",
+          "type": [
+            "object"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "getRows",
+      "returnType": [],
+      "visibility": "private",
+      "arguments": []
+    },
+    {
+      "name": "hasListener<T extends IGroupingViewEvents = IGroupingViewEvents, E extends keyof T = keyof T>",
+      "returnType": [
+        "boolean"
+      ],
+      "visibility": "public",
+      "arguments": [
+        {
+          "name": "eventName",
+          "comment": "",
+          "type": [
+            "E"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "initTemplates",
+      "returnType": [],
+      "visibility": "private",
+      "arguments": []
+    },
+    {
+      "name": "on<T extends IGroupingViewEvents = IGroupingViewEvents, E extends keyof T = keyof T>",
+      "returnType": [],
+      "visibility": "public",
+      "arguments": [
+        {
+          "name": "eventName",
+          "comment": "",
+          "type": [
+            "E"
+          ]
+        },
+        {
+          "name": "handler",
+          "comment": "",
+          "type": [
+            "T[E]"
+          ]
+        },
+        {
+          "name": "scope?",
+          "comment": "",
+          "type": [
+            "object"
+          ]
+        },
+        {
+          "name": "options?",
+          "comment": "",
+          "type": [
+            "object"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "onAdd",
+      "returnType": [],
+      "visibility": "private",
+      "arguments": [
+        {
+          "name": "ds",
+          "comment": "",
+          "type": [
+            "object"
+          ]
+        },
+        {
+          "name": "records",
+          "comment": "",
+          "type": [
+            "object"
+          ]
+        },
+        {
+          "name": "index",
+          "comment": "",
+          "type": [
+            "object"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "onAllColumnWidthsUpdated",
+      "returnType": [],
+      "visibility": "private",
+      "arguments": [
+        {
+          "name": "ws",
+          "comment": "",
+          "type": [
+            "object"
+          ]
+        },
+        {
+          "name": "tw",
+          "comment": "",
+          "type": [
+            "object"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "onBeforeRowSelect",
+      "returnType": [],
+      "visibility": "private",
+      "arguments": [
+        {
+          "name": "sm",
+          "comment": "",
+          "type": [
+            "object"
+          ]
+        },
+        {
+          "name": "rowIndex",
+          "comment": "",
+          "type": [
+            "object"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "onColumnHiddenUpdated",
+      "returnType": [],
+      "visibility": "private",
+      "arguments": [
+        {
+          "name": "col",
+          "comment": "",
+          "type": [
+            "object"
+          ]
+        },
+        {
+          "name": "hidden",
+          "comment": "",
+          "type": [
+            "object"
+          ]
+        },
+        {
+          "name": "tw",
+          "comment": "",
+          "type": [
+            "object"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "onColumnWidthUpdated",
+      "returnType": [],
+      "visibility": "private",
+      "arguments": [
+        {
+          "name": "col",
+          "comment": "",
+          "type": [
+            "object"
+          ]
+        },
+        {
+          "name": "w",
+          "comment": "",
+          "type": [
+            "object"
+          ]
+        },
+        {
+          "name": "tw",
+          "comment": "",
+          "type": [
+            "object"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "onGroupByClick",
+      "returnType": [],
+      "visibility": "private",
+      "arguments": []
+    },
+    {
+      "name": "onLayout",
+      "returnType": [],
+      "visibility": "private",
+      "arguments": []
+    },
+    {
+      "name": "onRemove",
+      "returnType": [],
+      "visibility": "private",
+      "arguments": [
+        {
+          "name": "ds",
+          "comment": "",
+          "type": [
+            "object"
+          ]
+        },
+        {
+          "name": "record",
+          "comment": "",
+          "type": [
+            "object"
+          ]
+        },
+        {
+          "name": "index",
+          "comment": "",
+          "type": [
+            "object"
+          ]
+        },
+        {
+          "name": "isUpdate",
+          "comment": "",
+          "type": [
+            "object"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "onShowGroupsClick",
+      "returnType": [],
+      "visibility": "private",
+      "arguments": [
+        {
+          "name": "mi",
+          "comment": "",
+          "type": [
+            "object"
+          ]
+        },
+        {
+          "name": "checked",
+          "comment": "",
+          "type": [
+            "object"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "processEvent",
+      "returnType": [],
+      "visibility": "private",
+      "arguments": [
+        {
+          "name": "name",
+          "comment": "",
+          "type": [
+            "object"
+          ]
+        },
+        {
+          "name": "e",
+          "comment": "",
+          "type": [
+            "object"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "refreshRow",
+      "returnType": [],
+      "visibility": "private",
+      "arguments": [
+        {
+          "name": "record",
+          "comment": "",
+          "type": [
+            "object"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "removeListener<T extends IGroupingViewEvents = IGroupingViewEvents, E extends keyof T = keyof T>",
+      "returnType": [],
+      "visibility": "public",
+      "arguments": [
+        {
+          "name": "eventName",
+          "comment": "",
+          "type": [
+            "E"
+          ]
+        },
+        {
+          "name": "handler",
+          "comment": "",
+          "type": [
+            "T[E]"
+          ]
+        },
+        {
+          "name": "scope?",
+          "comment": "",
+          "type": [
+            "object"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "renderRows",
+      "returnType": [],
+      "visibility": "private",
+      "arguments": [
+        {
+          "name": "startRow",
+          "comment": "",
+          "type": [
+            "number"
+          ]
+        },
+        {
+          "name": "endRow",
+          "comment": "",
+          "type": [
+            "number"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "renderUI",
+      "returnType": [],
+      "visibility": "private",
+      "arguments": []
+    },
+    {
+      "name": "toggleAllGroups",
+      "returnType": [],
+      "visibility": "public",
+      "arguments": [
+        {
+          "name": "expanded?",
+          "comment": "",
+          "type": [
+            "boolean"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "toggleGroup",
+      "returnType": [],
+      "visibility": "public",
+      "arguments": [
+        {
+          "name": "groupId",
+          "comment": "",
+          "type": [
+            "string"
+          ]
+        },
+        {
+          "name": "expanded?",
+          "comment": "",
+          "type": [
+            "boolean"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "toggleRowIndex",
+      "returnType": [],
+      "visibility": "public",
+      "arguments": [
+        {
+          "name": "rowIndex",
+          "comment": "",
+          "type": [
+            "number"
+          ]
+        },
+        {
+          "name": "expanded?",
+          "comment": "",
+          "type": [
+            "boolean"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "un<T extends IGroupingViewEvents = IGroupingViewEvents, E extends keyof T = keyof T>",
+      "returnType": [],
+      "visibility": "public",
+      "arguments": [
+        {
+          "name": "eventName",
+          "comment": "",
+          "type": [
+            "E"
+          ]
+        },
+        {
+          "name": "handler",
+          "comment": "",
+          "type": [
+            "T[E]"
+          ]
+        },
+        {
+          "name": "scope?",
+          "comment": "",
+          "type": [
+            "object"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "updateGroupWidths",
+      "returnType": [],
+      "visibility": "private",
+      "arguments": []
+    }
+  ],
+  "events": [
+    {
+      "name": "beforerefresh",
+      "arguments": [
+        {
+          "name": "view",
+          "comment": "",
+          "type": [
+            "Ext.grid.GridView"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "beforerowremoved",
+      "arguments": [
+        {
+          "name": "view",
+          "comment": "",
+          "type": [
+            "Ext.grid.GridView"
+          ]
+        },
+        {
+          "name": "rowIndex",
+          "comment": "",
+          "type": [
+            "number"
+          ]
+        },
+        {
+          "name": "record",
+          "comment": "",
+          "type": [
+            "Ext.data.Record"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "beforerowsinserted",
+      "arguments": [
+        {
+          "name": "view",
+          "comment": "",
+          "type": [
+            "Ext.grid.GridView"
+          ]
+        },
+        {
+          "name": "firstRow",
+          "comment": "",
+          "type": [
+            "number"
+          ]
+        },
+        {
+          "name": "lastRow",
+          "comment": "",
+          "type": [
+            "number"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "refresh",
+      "arguments": [
+        {
+          "name": "view",
+          "comment": "",
+          "type": [
+            "Ext.grid.GridView"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "rowremoved",
+      "arguments": [
+        {
+          "name": "view",
+          "comment": "",
+          "type": [
+            "Ext.grid.GridView"
+          ]
+        },
+        {
+          "name": "rowIndex",
+          "comment": "",
+          "type": [
+            "number"
+          ]
+        },
+        {
+          "name": "record",
+          "comment": "",
+          "type": [
+            "Ext.data.Record"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "rowsinserted",
+      "arguments": [
+        {
+          "name": "view",
+          "comment": "",
+          "type": [
+            "Ext.grid.GridView"
+          ]
+        },
+        {
+          "name": "firstRow",
+          "comment": "",
+          "type": [
+            "number"
+          ]
+        },
+        {
+          "name": "lastRow",
+          "comment": "",
+          "type": [
+            "number"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "rowupdated",
+      "arguments": [
+        {
+          "name": "view",
+          "comment": "",
+          "type": [
+            "Ext.grid.GridView"
+          ]
+        },
+        {
+          "name": "firstRow",
+          "comment": "",
+          "type": [
+            "number"
+          ]
+        },
+        {
+          "name": "record",
+          "comment": "",
+          "type": [
+            "Ext.data.record"
+          ]
+        }
+      ]
+    }
+  ]
+}

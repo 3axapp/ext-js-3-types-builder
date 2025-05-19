@@ -1,0 +1,181 @@
+{
+  "name": "Menu",
+  "namespace": "Ext.layout.boxOverflow",
+  "extends": "Ext.layout.boxOverflow.None",
+  "constructorMethod": {
+    "config": [
+      {
+        "name": "afterCls?",
+        "type": [
+          "string"
+        ],
+        "comment": ""
+      }
+    ]
+  },
+  "properties": [
+    {
+      "name": "menu",
+      "type": [
+        "Ext.menu.Menu"
+      ],
+      "visibility": "private",
+      "comment": ""
+    },
+    {
+      "name": "menuItems",
+      "type": [
+        "unknown[]"
+      ],
+      "visibility": "public",
+      "comment": ""
+    },
+    {
+      "name": "menuTrigger",
+      "type": [
+        "Ext.Button"
+      ],
+      "visibility": "private",
+      "comment": ""
+    },
+    {
+      "name": "noItemsMenuText",
+      "type": [
+        "string"
+      ],
+      "visibility": "public",
+      "comment": ""
+    }
+  ],
+  "methods": [
+    {
+      "name": "addComponentToMenu",
+      "returnType": [],
+      "visibility": "private",
+      "arguments": [
+        {
+          "name": "menu",
+          "comment": "",
+          "type": [
+            "Ext.menu.Menu"
+          ]
+        },
+        {
+          "name": "component",
+          "comment": "",
+          "type": [
+            "Ext.Component"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "beforeMenuShow",
+      "returnType": [],
+      "visibility": "private",
+      "arguments": [
+        {
+          "name": "menu",
+          "comment": "",
+          "type": [
+            "object"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "clearMenu",
+      "returnType": [],
+      "visibility": "private",
+      "arguments": []
+    },
+    {
+      "name": "clearOverflow",
+      "returnType": [],
+      "visibility": "private",
+      "arguments": [
+        {
+          "name": "calculations",
+          "comment": "",
+          "type": [
+            "object"
+          ]
+        },
+        {
+          "name": "targetSize",
+          "comment": "",
+          "type": [
+            "object"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "createInnerElements",
+      "returnType": [],
+      "visibility": "private",
+      "arguments": [
+        {
+          "name": "container",
+          "comment": "",
+          "type": [
+            "Ext.Container"
+          ]
+        },
+        {
+          "name": "target",
+          "comment": "",
+          "type": [
+            "Ext.Element"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "createMenu",
+      "returnType": [],
+      "visibility": "private",
+      "arguments": []
+    },
+    {
+      "name": "createMenuConfig",
+      "returnType": [],
+      "visibility": "private",
+      "arguments": [
+        {
+          "name": "component",
+          "comment": "",
+          "type": [
+            "Ext.Component"
+          ]
+        },
+        {
+          "name": "hideOnClick",
+          "comment": "",
+          "type": [
+            "boolean"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "destroy",
+      "returnType": [],
+      "visibility": "private",
+      "arguments": []
+    },
+    {
+      "name": "hideTrigger",
+      "returnType": [],
+      "visibility": "private",
+      "arguments": []
+    },
+    {
+      "name": "showTrigger",
+      "returnType": [],
+      "visibility": "private",
+      "arguments": []
+    }
+  ],
+  "events": []
+}

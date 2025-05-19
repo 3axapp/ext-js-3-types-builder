@@ -1,0 +1,44 @@
+{
+  "name": "BasicRenderer",
+  "namespace": "Ext.Updater",
+  "constructorMethod": null,
+  "properties": [],
+  "methods": [
+    {
+      "name": "render",
+      "returnType": [],
+      "visibility": "public",
+      "arguments": [
+        {
+          "name": "el",
+          "comment": "",
+          "type": [
+            "Ext.Element"
+          ]
+        },
+        {
+          "name": "xhr",
+          "comment": "",
+          "type": [
+            "object"
+          ]
+        },
+        {
+          "name": "updateManager",
+          "comment": "",
+          "type": [
+            "Updater"
+          ]
+        },
+        {
+          "name": "callback",
+          "comment": "",
+          "type": [
+            "Function"
+          ]
+        }
+      ]
+    }
+  ],
+  "events": []
+}

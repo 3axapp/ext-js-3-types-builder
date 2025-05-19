@@ -1,0 +1,113 @@
+{
+  "name": "AbsoluteLayout",
+  "namespace": "Ext.layout",
+  "extends": "Ext.layout.AnchorLayout",
+  "constructorMethod": {
+    "config": [
+      {
+        "name": "anchor?",
+        "type": [
+          "string"
+        ],
+        "comment": ""
+      },
+      {
+        "name": "defaultAnchor?",
+        "type": [
+          "string"
+        ],
+        "comment": ""
+      },
+      {
+        "name": "extraCls?",
+        "type": [
+          "string"
+        ],
+        "comment": ""
+      },
+      {
+        "name": "renderHidden?",
+        "type": [
+          "boolean"
+        ],
+        "comment": ""
+      }
+    ]
+  },
+  "properties": [
+    {
+      "name": "type",
+      "type": [
+        "string"
+      ],
+      "visibility": "private",
+      "comment": ""
+    }
+  ],
+  "methods": [
+    {
+      "name": "adjustHeightAnchor",
+      "returnType": [],
+      "visibility": "private",
+      "arguments": [
+        {
+          "name": "value",
+          "comment": "",
+          "type": [
+            "object"
+          ]
+        },
+        {
+          "name": "comp",
+          "comment": "",
+          "type": [
+            "object"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "adjustWidthAnchor",
+      "returnType": [],
+      "visibility": "private",
+      "arguments": [
+        {
+          "name": "value",
+          "comment": "",
+          "type": [
+            "object"
+          ]
+        },
+        {
+          "name": "comp",
+          "comment": "",
+          "type": [
+            "object"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "onLayout",
+      "returnType": [],
+      "visibility": "private",
+      "arguments": [
+        {
+          "name": "ct",
+          "comment": "",
+          "type": [
+            "object"
+          ]
+        },
+        {
+          "name": "target",
+          "comment": "",
+          "type": [
+            "object"
+          ]
+        }
+      ]
+    }
+  ],
+  "events": []
+}

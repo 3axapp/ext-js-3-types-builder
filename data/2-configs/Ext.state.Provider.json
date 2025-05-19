@@ -1,0 +1,311 @@
+{
+  "name": "Provider",
+  "namespace": "Ext.state",
+  "extends": "Ext.util.Observable",
+  "constructorMethod": {
+    "config": [
+      {
+        "name": "listeners?",
+        "type": [
+          "object"
+        ],
+        "comment": ""
+      }
+    ]
+  },
+  "properties": [
+    {
+      "name": "re",
+      "type": [
+        "RegExp"
+      ],
+      "visibility": "public",
+      "comment": ""
+    }
+  ],
+  "methods": [
+    {
+      "name": "addListener<T extends IProviderEvents = IProviderEvents, E extends keyof T = keyof T>",
+      "returnType": [],
+      "visibility": "public",
+      "arguments": [
+        {
+          "name": "eventName",
+          "comment": "",
+          "type": [
+            "E"
+          ]
+        },
+        {
+          "name": "handler",
+          "comment": "",
+          "type": [
+            "T[E]"
+          ]
+        },
+        {
+          "name": "scope?",
+          "comment": "",
+          "type": [
+            "object"
+          ]
+        },
+        {
+          "name": "options?",
+          "comment": "",
+          "type": [
+            "object"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "clear",
+      "returnType": [],
+      "visibility": "public",
+      "arguments": [
+        {
+          "name": "name",
+          "comment": "",
+          "type": [
+            "string"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "decodeValue",
+      "returnType": [
+        "unknown"
+      ],
+      "visibility": "public",
+      "arguments": [
+        {
+          "name": "value",
+          "comment": "",
+          "type": [
+            "string"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "encodeValue",
+      "returnType": [
+        "string"
+      ],
+      "visibility": "public",
+      "arguments": [
+        {
+          "name": "value",
+          "comment": "",
+          "type": [
+            "unknown"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "fireEvent<T extends IProviderEvents = IProviderEvents, E extends keyof T = keyof T>",
+      "returnType": [
+        "boolean"
+      ],
+      "visibility": "public",
+      "arguments": [
+        {
+          "name": "eventName",
+          "comment": "",
+          "type": [
+            "E"
+          ]
+        },
+        {
+          "name": "...args",
+          "comment": "",
+          "type": [
+            "Parameters<T[E]>"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "get",
+      "returnType": [
+        "unknown"
+      ],
+      "visibility": "public",
+      "arguments": [
+        {
+          "name": "name",
+          "comment": "",
+          "type": [
+            "string"
+          ]
+        },
+        {
+          "name": "defaultValue",
+          "comment": "",
+          "type": [
+            "unknown"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "hasListener<T extends IProviderEvents = IProviderEvents, E extends keyof T = keyof T>",
+      "returnType": [
+        "boolean"
+      ],
+      "visibility": "public",
+      "arguments": [
+        {
+          "name": "eventName",
+          "comment": "",
+          "type": [
+            "E"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "on<T extends IProviderEvents = IProviderEvents, E extends keyof T = keyof T>",
+      "returnType": [],
+      "visibility": "public",
+      "arguments": [
+        {
+          "name": "eventName",
+          "comment": "",
+          "type": [
+            "E"
+          ]
+        },
+        {
+          "name": "handler",
+          "comment": "",
+          "type": [
+            "T[E]"
+          ]
+        },
+        {
+          "name": "scope?",
+          "comment": "",
+          "type": [
+            "object"
+          ]
+        },
+        {
+          "name": "options?",
+          "comment": "",
+          "type": [
+            "object"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "removeListener<T extends IProviderEvents = IProviderEvents, E extends keyof T = keyof T>",
+      "returnType": [],
+      "visibility": "public",
+      "arguments": [
+        {
+          "name": "eventName",
+          "comment": "",
+          "type": [
+            "E"
+          ]
+        },
+        {
+          "name": "handler",
+          "comment": "",
+          "type": [
+            "T[E]"
+          ]
+        },
+        {
+          "name": "scope?",
+          "comment": "",
+          "type": [
+            "object"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "set",
+      "returnType": [],
+      "visibility": "public",
+      "arguments": [
+        {
+          "name": "name",
+          "comment": "",
+          "type": [
+            "string"
+          ]
+        },
+        {
+          "name": "value",
+          "comment": "",
+          "type": [
+            "unknown"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "un<T extends IProviderEvents = IProviderEvents, E extends keyof T = keyof T>",
+      "returnType": [],
+      "visibility": "public",
+      "arguments": [
+        {
+          "name": "eventName",
+          "comment": "",
+          "type": [
+            "E"
+          ]
+        },
+        {
+          "name": "handler",
+          "comment": "",
+          "type": [
+            "T[E]"
+          ]
+        },
+        {
+          "name": "scope?",
+          "comment": "",
+          "type": [
+            "object"
+          ]
+        }
+      ]
+    }
+  ],
+  "events": [
+    {
+      "name": "statechange",
+      "arguments": [
+        {
+          "name": "thisCmp",
+          "comment": "",
+          "type": [
+            "Provider"
+          ]
+        },
+        {
+          "name": "key",
+          "comment": "",
+          "type": [
+            "string"
+          ]
+        },
+        {
+          "name": "value",
+          "comment": "",
+          "type": [
+            "string"
+          ]
+        }
+      ]
+    }
+  ]
+}

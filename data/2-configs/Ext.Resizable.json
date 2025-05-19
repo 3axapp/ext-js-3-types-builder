@@ -1,0 +1,668 @@
+{
+  "name": "Resizable",
+  "namespace": "Ext",
+  "extends": "Ext.util.Observable",
+  "constructorMethod": {
+    "config": [
+      {
+        "name": "adjustments?",
+        "type": [
+          "unknown[]",
+          "string"
+        ],
+        "comment": ""
+      },
+      {
+        "name": "animate?",
+        "type": [
+          "boolean"
+        ],
+        "comment": ""
+      },
+      {
+        "name": "constrainTo?",
+        "type": [
+          "unknown"
+        ],
+        "comment": ""
+      },
+      {
+        "name": "disableTrackOver?",
+        "type": [
+          "boolean"
+        ],
+        "comment": ""
+      },
+      {
+        "name": "draggable?",
+        "type": [
+          "boolean"
+        ],
+        "comment": ""
+      },
+      {
+        "name": "duration?",
+        "type": [
+          "number"
+        ],
+        "comment": ""
+      },
+      {
+        "name": "dynamic?",
+        "type": [
+          "boolean"
+        ],
+        "comment": ""
+      },
+      {
+        "name": "easing?",
+        "type": [
+          "string"
+        ],
+        "comment": ""
+      },
+      {
+        "name": "enabled?",
+        "type": [
+          "boolean"
+        ],
+        "comment": ""
+      },
+      {
+        "name": "handleCls?",
+        "type": [
+          "string"
+        ],
+        "comment": ""
+      },
+      {
+        "name": "handles?",
+        "type": [
+          "string"
+        ],
+        "comment": ""
+      },
+      {
+        "name": "height?",
+        "type": [
+          "number"
+        ],
+        "comment": ""
+      },
+      {
+        "name": "heightIncrement?",
+        "type": [
+          "number"
+        ],
+        "comment": ""
+      },
+      {
+        "name": "listeners?",
+        "type": [
+          "object"
+        ],
+        "comment": ""
+      },
+      {
+        "name": "maxHeight?",
+        "type": [
+          "number"
+        ],
+        "comment": ""
+      },
+      {
+        "name": "maxWidth?",
+        "type": [
+          "number"
+        ],
+        "comment": ""
+      },
+      {
+        "name": "minHeight?",
+        "type": [
+          "number"
+        ],
+        "comment": ""
+      },
+      {
+        "name": "minWidth?",
+        "type": [
+          "number"
+        ],
+        "comment": ""
+      },
+      {
+        "name": "minX?",
+        "type": [
+          "number"
+        ],
+        "comment": ""
+      },
+      {
+        "name": "minY?",
+        "type": [
+          "number"
+        ],
+        "comment": ""
+      },
+      {
+        "name": "multiDirectional?",
+        "type": [
+          "boolean"
+        ],
+        "comment": ""
+      },
+      {
+        "name": "pinned?",
+        "type": [
+          "boolean"
+        ],
+        "comment": ""
+      },
+      {
+        "name": "preserveRatio?",
+        "type": [
+          "boolean"
+        ],
+        "comment": ""
+      },
+      {
+        "name": "resizeChild?",
+        "type": [
+          "boolean",
+          "string",
+          "Element"
+        ],
+        "comment": ""
+      },
+      {
+        "name": "resizeRegion?",
+        "type": [
+          "Ext.lib.Region"
+        ],
+        "comment": ""
+      },
+      {
+        "name": "transparent?",
+        "type": [
+          "boolean"
+        ],
+        "comment": ""
+      },
+      {
+        "name": "width?",
+        "type": [
+          "number"
+        ],
+        "comment": ""
+      },
+      {
+        "name": "widthIncrement?",
+        "type": [
+          "number"
+        ],
+        "comment": ""
+      },
+      {
+        "name": "wrap?",
+        "type": [
+          "boolean"
+        ],
+        "comment": ""
+      }
+    ]
+  },
+  "properties": [
+    {
+      "name": "enabled",
+      "type": [
+        "boolean"
+      ],
+      "visibility": "public",
+      "comment": ""
+    },
+    {
+      "name": "proxy",
+      "type": [
+        "Ext.Element"
+      ],
+      "visibility": "public",
+      "comment": ""
+    }
+  ],
+  "methods": [
+    {
+      "name": "addListener<T extends IResizableEvents = IResizableEvents, E extends keyof T = keyof T>",
+      "returnType": [],
+      "visibility": "public",
+      "arguments": [
+        {
+          "name": "eventName",
+          "comment": "",
+          "type": [
+            "E"
+          ]
+        },
+        {
+          "name": "handler",
+          "comment": "",
+          "type": [
+            "T[E]"
+          ]
+        },
+        {
+          "name": "scope?",
+          "comment": "",
+          "type": [
+            "object"
+          ]
+        },
+        {
+          "name": "options?",
+          "comment": "",
+          "type": [
+            "object"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "constrain",
+      "returnType": [],
+      "visibility": "private",
+      "arguments": [
+        {
+          "name": "v",
+          "comment": "",
+          "type": [
+            "object"
+          ]
+        },
+        {
+          "name": "diff",
+          "comment": "",
+          "type": [
+            "object"
+          ]
+        },
+        {
+          "name": "m",
+          "comment": "",
+          "type": [
+            "object"
+          ]
+        },
+        {
+          "name": "mx",
+          "comment": "",
+          "type": [
+            "object"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "destroy",
+      "returnType": [],
+      "visibility": "public",
+      "arguments": [
+        {
+          "name": "removeEl?",
+          "comment": "",
+          "type": [
+            "boolean"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "fireEvent<T extends IResizableEvents = IResizableEvents, E extends keyof T = keyof T>",
+      "returnType": [
+        "boolean"
+      ],
+      "visibility": "public",
+      "arguments": [
+        {
+          "name": "eventName",
+          "comment": "",
+          "type": [
+            "E"
+          ]
+        },
+        {
+          "name": "...args",
+          "comment": "",
+          "type": [
+            "Parameters<T[E]>"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "getEl",
+      "returnType": [
+        "Ext.Element"
+      ],
+      "visibility": "public",
+      "arguments": []
+    },
+    {
+      "name": "getResizeChild",
+      "returnType": [
+        "Ext.Element"
+      ],
+      "visibility": "public",
+      "arguments": []
+    },
+    {
+      "name": "handleOut",
+      "returnType": [],
+      "visibility": "private",
+      "arguments": []
+    },
+    {
+      "name": "handleOver",
+      "returnType": [],
+      "visibility": "private",
+      "arguments": []
+    },
+    {
+      "name": "hasListener<T extends IResizableEvents = IResizableEvents, E extends keyof T = keyof T>",
+      "returnType": [
+        "boolean"
+      ],
+      "visibility": "public",
+      "arguments": [
+        {
+          "name": "eventName",
+          "comment": "",
+          "type": [
+            "E"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "on<T extends IResizableEvents = IResizableEvents, E extends keyof T = keyof T>",
+      "returnType": [],
+      "visibility": "public",
+      "arguments": [
+        {
+          "name": "eventName",
+          "comment": "",
+          "type": [
+            "E"
+          ]
+        },
+        {
+          "name": "handler",
+          "comment": "",
+          "type": [
+            "T[E]"
+          ]
+        },
+        {
+          "name": "scope?",
+          "comment": "",
+          "type": [
+            "object"
+          ]
+        },
+        {
+          "name": "options?",
+          "comment": "",
+          "type": [
+            "object"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "onMouseDown",
+      "returnType": [],
+      "visibility": "private",
+      "arguments": [
+        {
+          "name": "handle",
+          "comment": "",
+          "type": [
+            "object"
+          ]
+        },
+        {
+          "name": "e",
+          "comment": "",
+          "type": [
+            "object"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "onMouseMove",
+      "returnType": [],
+      "visibility": "private",
+      "arguments": [
+        {
+          "name": "e",
+          "comment": "",
+          "type": [
+            "object"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "onMouseUp",
+      "returnType": [],
+      "visibility": "private",
+      "arguments": [
+        {
+          "name": "e",
+          "comment": "",
+          "type": [
+            "object"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "removeListener<T extends IResizableEvents = IResizableEvents, E extends keyof T = keyof T>",
+      "returnType": [],
+      "visibility": "public",
+      "arguments": [
+        {
+          "name": "eventName",
+          "comment": "",
+          "type": [
+            "E"
+          ]
+        },
+        {
+          "name": "handler",
+          "comment": "",
+          "type": [
+            "T[E]"
+          ]
+        },
+        {
+          "name": "scope?",
+          "comment": "",
+          "type": [
+            "object"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "resizeElement",
+      "returnType": [],
+      "visibility": "public",
+      "arguments": []
+    },
+    {
+      "name": "resizeTo",
+      "returnType": [],
+      "visibility": "public",
+      "arguments": [
+        {
+          "name": "width",
+          "comment": "",
+          "type": [
+            "number"
+          ]
+        },
+        {
+          "name": "height",
+          "comment": "",
+          "type": [
+            "number"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "snap",
+      "returnType": [],
+      "visibility": "private",
+      "arguments": [
+        {
+          "name": "value",
+          "comment": "",
+          "type": [
+            "object"
+          ]
+        },
+        {
+          "name": "inc",
+          "comment": "",
+          "type": [
+            "object"
+          ]
+        },
+        {
+          "name": "min",
+          "comment": "",
+          "type": [
+            "object"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "startSizing",
+      "returnType": [],
+      "visibility": "private",
+      "arguments": [
+        {
+          "name": "e",
+          "comment": "",
+          "type": [
+            "object"
+          ]
+        },
+        {
+          "name": "handle",
+          "comment": "",
+          "type": [
+            "object"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "syncHandleHeight",
+      "returnType": [],
+      "visibility": "private",
+      "arguments": []
+    },
+    {
+      "name": "un<T extends IResizableEvents = IResizableEvents, E extends keyof T = keyof T>",
+      "returnType": [],
+      "visibility": "public",
+      "arguments": [
+        {
+          "name": "eventName",
+          "comment": "",
+          "type": [
+            "E"
+          ]
+        },
+        {
+          "name": "handler",
+          "comment": "",
+          "type": [
+            "T[E]"
+          ]
+        },
+        {
+          "name": "scope?",
+          "comment": "",
+          "type": [
+            "object"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "updateChildSize",
+      "returnType": [],
+      "visibility": "private",
+      "arguments": []
+    }
+  ],
+  "events": [
+    {
+      "name": "beforeresize",
+      "arguments": [
+        {
+          "name": "thisCmp",
+          "comment": "",
+          "type": [
+            "Resizable"
+          ]
+        },
+        {
+          "name": "e",
+          "comment": "",
+          "type": [
+            "Ext.EventObject"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "resize",
+      "arguments": [
+        {
+          "name": "thisCmp",
+          "comment": "",
+          "type": [
+            "Resizable"
+          ]
+        },
+        {
+          "name": "width",
+          "comment": "",
+          "type": [
+            "number"
+          ]
+        },
+        {
+          "name": "height",
+          "comment": "",
+          "type": [
+            "number"
+          ]
+        },
+        {
+          "name": "e",
+          "comment": "",
+          "type": [
+            "Ext.EventObject"
+          ]
+        }
+      ]
+    }
+  ]
+}

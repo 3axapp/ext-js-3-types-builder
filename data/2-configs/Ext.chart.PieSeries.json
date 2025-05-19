@@ -1,0 +1,34 @@
+{
+  "name": "PieSeries",
+  "namespace": "Ext.chart",
+  "extends": "Ext.chart.Series",
+  "constructorMethod": null,
+  "properties": [
+    {
+      "name": "categoryField",
+      "type": [
+        "object"
+      ],
+      "visibility": "private",
+      "comment": ""
+    },
+    {
+      "name": "dataField",
+      "type": [
+        "object"
+      ],
+      "visibility": "private",
+      "comment": ""
+    },
+    {
+      "name": "type",
+      "type": [
+        "string"
+      ],
+      "visibility": "public",
+      "comment": ""
+    }
+  ],
+  "methods": [],
+  "events": []
+}

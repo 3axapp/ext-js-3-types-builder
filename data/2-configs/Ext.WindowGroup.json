@@ -1,0 +1,155 @@
+{
+  "name": "WindowGroup",
+  "namespace": "Ext",
+  "constructorMethod": null,
+  "properties": [
+    {
+      "name": "zseed",
+      "type": [
+        "number"
+      ],
+      "visibility": "public",
+      "comment": ""
+    }
+  ],
+  "methods": [
+    {
+      "name": "bringToFront",
+      "returnType": [
+        "boolean"
+      ],
+      "visibility": "public",
+      "arguments": [
+        {
+          "name": "win",
+          "comment": "",
+          "type": [
+            "string",
+            "object"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "each",
+      "returnType": [],
+      "visibility": "public",
+      "arguments": [
+        {
+          "name": "fn",
+          "comment": "",
+          "type": [
+            "Function"
+          ]
+        },
+        {
+          "name": "scope?",
+          "comment": "",
+          "type": [
+            "object"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "get",
+      "returnType": [
+        "Ext.Window"
+      ],
+      "visibility": "public",
+      "arguments": [
+        {
+          "name": "id",
+          "comment": "",
+          "type": [
+            "string",
+            "object"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "getActive",
+      "returnType": [
+        "Ext.Window"
+      ],
+      "visibility": "public",
+      "arguments": []
+    },
+    {
+      "name": "getBy",
+      "returnType": [
+        "unknown[]"
+      ],
+      "visibility": "public",
+      "arguments": [
+        {
+          "name": "fn",
+          "comment": "",
+          "type": [
+            "Function"
+          ]
+        },
+        {
+          "name": "scope?",
+          "comment": "",
+          "type": [
+            "object"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "hideAll",
+      "returnType": [],
+      "visibility": "public",
+      "arguments": []
+    },
+    {
+      "name": "register",
+      "returnType": [],
+      "visibility": "public",
+      "arguments": [
+        {
+          "name": "win",
+          "comment": "",
+          "type": [
+            "Window"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "sendToBack",
+      "returnType": [
+        "Ext.Window"
+      ],
+      "visibility": "public",
+      "arguments": [
+        {
+          "name": "win",
+          "comment": "",
+          "type": [
+            "string",
+            "object"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "unregister",
+      "returnType": [],
+      "visibility": "public",
+      "arguments": [
+        {
+          "name": "win",
+          "comment": "",
+          "type": [
+            "Window"
+          ]
+        }
+      ]
+    }
+  ],
+  "events": []
+}

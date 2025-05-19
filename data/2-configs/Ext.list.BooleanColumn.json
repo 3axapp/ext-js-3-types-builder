@@ -1,0 +1,75 @@
+{
+  "name": "BooleanColumn",
+  "namespace": "Ext.list",
+  "extends": "Ext.list.Column",
+  "constructorMethod": {
+    "config": [
+      {
+        "name": "align?",
+        "type": [
+          "string"
+        ],
+        "comment": ""
+      },
+      {
+        "name": "cls?",
+        "type": [
+          "string"
+        ],
+        "comment": ""
+      },
+      {
+        "name": "dataIndex?",
+        "type": [
+          "string"
+        ],
+        "comment": ""
+      },
+      {
+        "name": "falseText?",
+        "type": [
+          "string"
+        ],
+        "comment": ""
+      },
+      {
+        "name": "header?",
+        "type": [
+          "string"
+        ],
+        "comment": ""
+      },
+      {
+        "name": "tpl?",
+        "type": [
+          "string"
+        ],
+        "comment": ""
+      },
+      {
+        "name": "trueText?",
+        "type": [
+          "string"
+        ],
+        "comment": ""
+      },
+      {
+        "name": "undefinedText?",
+        "type": [
+          "string"
+        ],
+        "comment": ""
+      },
+      {
+        "name": "width?",
+        "type": [
+          "number"
+        ],
+        "comment": ""
+      }
+    ]
+  },
+  "properties": [],
+  "methods": [],
+  "events": []
+}

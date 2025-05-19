@@ -1,0 +1,159 @@
+{
+  "name": "AbstractManager",
+  "namespace": "Ext",
+  "extends": null,
+  "constructorMethod": null,
+  "properties": [
+    {
+      "name": "all",
+      "type": [
+        "Ext.util.MixedCollection"
+      ],
+      "visibility": "public",
+      "comment": ""
+    },
+    {
+      "name": "typeName",
+      "type": [
+        "string"
+      ],
+      "visibility": "private",
+      "comment": ""
+    }
+  ],
+  "methods": [
+    {
+      "name": "create",
+      "returnType": [
+        "unknown"
+      ],
+      "visibility": "public",
+      "arguments": [
+        {
+          "name": "config",
+          "comment": "",
+          "type": [
+            "object"
+          ]
+        },
+        {
+          "name": "defaultType",
+          "comment": "",
+          "type": [
+            "string"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "get",
+      "returnType": [
+        "object"
+      ],
+      "visibility": "public",
+      "arguments": [
+        {
+          "name": "id",
+          "comment": "",
+          "type": [
+            "string"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "isRegistered",
+      "returnType": [
+        "boolean"
+      ],
+      "visibility": "public",
+      "arguments": [
+        {
+          "name": "xtype",
+          "comment": "",
+          "type": [
+            "Ext.Component"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "onAvailable",
+      "returnType": [],
+      "visibility": "public",
+      "arguments": [
+        {
+          "name": "id",
+          "comment": "",
+          "type": [
+            "string"
+          ]
+        },
+        {
+          "name": "fn",
+          "comment": "",
+          "type": [
+            "Function"
+          ]
+        },
+        {
+          "name": "scope",
+          "comment": "",
+          "type": [
+            "object"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "register",
+      "returnType": [],
+      "visibility": "public",
+      "arguments": [
+        {
+          "name": "item",
+          "comment": "",
+          "type": [
+            "unknown"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "registerType",
+      "returnType": [],
+      "visibility": "public",
+      "arguments": [
+        {
+          "name": "xtype",
+          "comment": "",
+          "type": [
+            "string"
+          ]
+        },
+        {
+          "name": "cls",
+          "comment": "",
+          "type": [
+            "typeof Ext.Component"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "unregister",
+      "returnType": [],
+      "visibility": "public",
+      "arguments": [
+        {
+          "name": "item",
+          "comment": "",
+          "type": [
+            "unknown"
+          ]
+        }
+      ]
+    }
+  ],
+  "events": []
+}

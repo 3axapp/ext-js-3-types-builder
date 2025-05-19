@@ -1,0 +1,1936 @@
+{
+  "name": "DataView",
+  "namespace": "Ext",
+  "extends": "Ext.BoxComponent",
+  "constructorMethod": {
+    "config": [
+      {
+        "name": "allowDomMove?",
+        "type": [
+          "boolean"
+        ],
+        "comment": ""
+      },
+      {
+        "name": "anchor?",
+        "type": [
+          "string"
+        ],
+        "comment": ""
+      },
+      {
+        "name": "applyTo?",
+        "type": [
+          "unknown"
+        ],
+        "comment": ""
+      },
+      {
+        "name": "autoEl?",
+        "type": [
+          "unknown"
+        ],
+        "comment": ""
+      },
+      {
+        "name": "autoHeight?",
+        "type": [
+          "boolean"
+        ],
+        "comment": ""
+      },
+      {
+        "name": "autoScroll?",
+        "type": [
+          "boolean"
+        ],
+        "comment": ""
+      },
+      {
+        "name": "autoShow?",
+        "type": [
+          "boolean"
+        ],
+        "comment": ""
+      },
+      {
+        "name": "autoWidth?",
+        "type": [
+          "boolean"
+        ],
+        "comment": ""
+      },
+      {
+        "name": "blockRefresh?",
+        "type": [
+          "boolean"
+        ],
+        "comment": ""
+      },
+      {
+        "name": "boxMaxHeight?",
+        "type": [
+          "number"
+        ],
+        "comment": ""
+      },
+      {
+        "name": "boxMaxWidth?",
+        "type": [
+          "number"
+        ],
+        "comment": ""
+      },
+      {
+        "name": "boxMinHeight?",
+        "type": [
+          "number"
+        ],
+        "comment": ""
+      },
+      {
+        "name": "boxMinWidth?",
+        "type": [
+          "number"
+        ],
+        "comment": ""
+      },
+      {
+        "name": "bubbleEvents?",
+        "type": [
+          "unknown[]"
+        ],
+        "comment": ""
+      },
+      {
+        "name": "clearCls?",
+        "type": [
+          "string"
+        ],
+        "comment": ""
+      },
+      {
+        "name": "cls?",
+        "type": [
+          "string"
+        ],
+        "comment": ""
+      },
+      {
+        "name": "contentEl?",
+        "type": [
+          "string"
+        ],
+        "comment": ""
+      },
+      {
+        "name": "ctCls?",
+        "type": [
+          "string"
+        ],
+        "comment": ""
+      },
+      {
+        "name": "data?",
+        "type": [
+          "unknown"
+        ],
+        "comment": ""
+      },
+      {
+        "name": "deferEmptyText?",
+        "type": [
+          "boolean"
+        ],
+        "comment": ""
+      },
+      {
+        "name": "disabled?",
+        "type": [
+          "boolean"
+        ],
+        "comment": ""
+      },
+      {
+        "name": "disabledClass?",
+        "type": [
+          "string"
+        ],
+        "comment": ""
+      },
+      {
+        "name": "emptyText?",
+        "type": [
+          "string"
+        ],
+        "comment": ""
+      },
+      {
+        "name": "fieldLabel?",
+        "type": [
+          "string"
+        ],
+        "comment": ""
+      },
+      {
+        "name": "flex?",
+        "type": [
+          "number"
+        ],
+        "comment": ""
+      },
+      {
+        "name": "height?",
+        "type": [
+          "number"
+        ],
+        "comment": ""
+      },
+      {
+        "name": "hidden?",
+        "type": [
+          "boolean"
+        ],
+        "comment": ""
+      },
+      {
+        "name": "hideLabel?",
+        "type": [
+          "boolean"
+        ],
+        "comment": ""
+      },
+      {
+        "name": "hideMode?",
+        "type": [
+          "string"
+        ],
+        "comment": ""
+      },
+      {
+        "name": "hideParent?",
+        "type": [
+          "boolean"
+        ],
+        "comment": ""
+      },
+      {
+        "name": "html?",
+        "type": [
+          "string",
+          "object"
+        ],
+        "comment": ""
+      },
+      {
+        "name": "id?",
+        "type": [
+          "string"
+        ],
+        "comment": ""
+      },
+      {
+        "name": "itemCls?",
+        "type": [
+          "string"
+        ],
+        "comment": ""
+      },
+      {
+        "name": "itemId?",
+        "type": [
+          "string"
+        ],
+        "comment": ""
+      },
+      {
+        "name": "itemSelector?",
+        "type": [
+          "string"
+        ],
+        "comment": ""
+      },
+      {
+        "name": "labelSeparator?",
+        "type": [
+          "string"
+        ],
+        "comment": ""
+      },
+      {
+        "name": "labelStyle?",
+        "type": [
+          "string"
+        ],
+        "comment": ""
+      },
+      {
+        "name": "listeners?",
+        "type": [
+          "object"
+        ],
+        "comment": ""
+      },
+      {
+        "name": "loadingText?",
+        "type": [
+          "string"
+        ],
+        "comment": ""
+      },
+      {
+        "name": "margins?",
+        "type": [
+          "object"
+        ],
+        "comment": ""
+      },
+      {
+        "name": "multiSelect?",
+        "type": [
+          "boolean"
+        ],
+        "comment": ""
+      },
+      {
+        "name": "overClass?",
+        "type": [
+          "string"
+        ],
+        "comment": ""
+      },
+      {
+        "name": "overCls?",
+        "type": [
+          "string"
+        ],
+        "comment": ""
+      },
+      {
+        "name": "pageX?",
+        "type": [
+          "number"
+        ],
+        "comment": ""
+      },
+      {
+        "name": "pageY?",
+        "type": [
+          "number"
+        ],
+        "comment": ""
+      },
+      {
+        "name": "plugins?",
+        "type": [
+          "object",
+          "unknown[]"
+        ],
+        "comment": ""
+      },
+      {
+        "name": "ptype?",
+        "type": [
+          "string"
+        ],
+        "comment": ""
+      },
+      {
+        "name": "ref?",
+        "type": [
+          "string"
+        ],
+        "comment": ""
+      },
+      {
+        "name": "region?",
+        "type": [
+          "string"
+        ],
+        "comment": ""
+      },
+      {
+        "name": "renderTo?",
+        "type": [
+          "unknown"
+        ],
+        "comment": ""
+      },
+      {
+        "name": "selectedClass?",
+        "type": [
+          "string"
+        ],
+        "comment": ""
+      },
+      {
+        "name": "simpleSelect?",
+        "type": [
+          "boolean"
+        ],
+        "comment": ""
+      },
+      {
+        "name": "singleSelect?",
+        "type": [
+          "boolean"
+        ],
+        "comment": ""
+      },
+      {
+        "name": "stateEvents?",
+        "type": [
+          "unknown[]"
+        ],
+        "comment": ""
+      },
+      {
+        "name": "stateId?",
+        "type": [
+          "string"
+        ],
+        "comment": ""
+      },
+      {
+        "name": "stateful?",
+        "type": [
+          "boolean"
+        ],
+        "comment": ""
+      },
+      {
+        "name": "store?",
+        "type": [
+          "Ext.data.Store"
+        ],
+        "comment": ""
+      },
+      {
+        "name": "style?",
+        "type": [
+          "string"
+        ],
+        "comment": ""
+      },
+      {
+        "name": "tabTip?",
+        "type": [
+          "string"
+        ],
+        "comment": ""
+      },
+      {
+        "name": "tpl?",
+        "type": [
+          "string",
+          "unknown[]"
+        ],
+        "comment": ""
+      },
+      {
+        "name": "tplWriteMode?",
+        "type": [
+          "string"
+        ],
+        "comment": ""
+      },
+      {
+        "name": "trackOver?",
+        "type": [
+          "boolean"
+        ],
+        "comment": ""
+      },
+      {
+        "name": "width?",
+        "type": [
+          "number"
+        ],
+        "comment": ""
+      },
+      {
+        "name": "x?",
+        "type": [
+          "number"
+        ],
+        "comment": ""
+      },
+      {
+        "name": "xtype?",
+        "type": [
+          "string"
+        ],
+        "comment": ""
+      },
+      {
+        "name": "y?",
+        "type": [
+          "number"
+        ],
+        "comment": ""
+      }
+    ]
+  },
+  "properties": [
+    {
+      "name": "last",
+      "type": [
+        "boolean"
+      ],
+      "visibility": "private",
+      "comment": ""
+    }
+  ],
+  "methods": [
+    {
+      "name": "addListener<T extends IDataViewEvents = IDataViewEvents, E extends keyof T = keyof T>",
+      "returnType": [],
+      "visibility": "public",
+      "arguments": [
+        {
+          "name": "eventName",
+          "comment": "",
+          "type": [
+            "E"
+          ]
+        },
+        {
+          "name": "handler",
+          "comment": "",
+          "type": [
+            "T[E]"
+          ]
+        },
+        {
+          "name": "scope?",
+          "comment": "",
+          "type": [
+            "object"
+          ]
+        },
+        {
+          "name": "options?",
+          "comment": "",
+          "type": [
+            "object"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "afterRender",
+      "returnType": [],
+      "visibility": "private",
+      "arguments": []
+    },
+    {
+      "name": "bindStore",
+      "returnType": [],
+      "visibility": "public",
+      "arguments": [
+        {
+          "name": "store",
+          "comment": "",
+          "type": [
+            "Store"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "bufferRender",
+      "returnType": [],
+      "visibility": "private",
+      "arguments": [
+        {
+          "name": "records",
+          "comment": "",
+          "type": [
+            "object"
+          ]
+        },
+        {
+          "name": "index",
+          "comment": "",
+          "type": [
+            "object"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "clearSelections",
+      "returnType": [],
+      "visibility": "public",
+      "arguments": [
+        {
+          "name": "suppressEvent?",
+          "comment": "",
+          "type": [
+            "boolean"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "collectData",
+      "returnType": [
+        "unknown[]"
+      ],
+      "visibility": "public",
+      "arguments": [
+        {
+          "name": "records",
+          "comment": "",
+          "type": [
+            "unknown[]"
+          ]
+        },
+        {
+          "name": "startIndex",
+          "comment": "",
+          "type": [
+            "number"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "deselect",
+      "returnType": [],
+      "visibility": "public",
+      "arguments": [
+        {
+          "name": "node",
+          "comment": "",
+          "type": [
+            "HTMLElement",
+            "number",
+            "Ext.data.Record"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "doMultiSelection",
+      "returnType": [],
+      "visibility": "private",
+      "arguments": [
+        {
+          "name": "item",
+          "comment": "",
+          "type": [
+            "object"
+          ]
+        },
+        {
+          "name": "index",
+          "comment": "",
+          "type": [
+            "object"
+          ]
+        },
+        {
+          "name": "e",
+          "comment": "",
+          "type": [
+            "object"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "doSingleSelection",
+      "returnType": [],
+      "visibility": "private",
+      "arguments": [
+        {
+          "name": "item",
+          "comment": "",
+          "type": [
+            "object"
+          ]
+        },
+        {
+          "name": "index",
+          "comment": "",
+          "type": [
+            "object"
+          ]
+        },
+        {
+          "name": "e",
+          "comment": "",
+          "type": [
+            "object"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "findItemFromChild",
+      "returnType": [
+        "HTMLElement"
+      ],
+      "visibility": "public",
+      "arguments": [
+        {
+          "name": "node",
+          "comment": "",
+          "type": [
+            "HTMLElement"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "fireEvent<T extends IDataViewEvents = IDataViewEvents, E extends keyof T = keyof T>",
+      "returnType": [
+        "boolean"
+      ],
+      "visibility": "public",
+      "arguments": [
+        {
+          "name": "eventName",
+          "comment": "",
+          "type": [
+            "E"
+          ]
+        },
+        {
+          "name": "...args",
+          "comment": "",
+          "type": [
+            "Parameters<T[E]>"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "getNode",
+      "returnType": [
+        "HTMLElement"
+      ],
+      "visibility": "public",
+      "arguments": [
+        {
+          "name": "nodeInfo",
+          "comment": "",
+          "type": [
+            "HTMLElement",
+            "string",
+            "number",
+            "Ext.data.Record"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "getNodes",
+      "returnType": [
+        "unknown[]"
+      ],
+      "visibility": "public",
+      "arguments": [
+        {
+          "name": "start?",
+          "comment": "",
+          "type": [
+            "number"
+          ]
+        },
+        {
+          "name": "end?",
+          "comment": "",
+          "type": [
+            "number"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "getRecord",
+      "returnType": [
+        "Ext.data.Record"
+      ],
+      "visibility": "public",
+      "arguments": [
+        {
+          "name": "node",
+          "comment": "",
+          "type": [
+            "HTMLElement"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "getRecords",
+      "returnType": [
+        "unknown[]"
+      ],
+      "visibility": "public",
+      "arguments": [
+        {
+          "name": "nodes",
+          "comment": "",
+          "type": [
+            "unknown[]"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "getSelectedIndexes",
+      "returnType": [
+        "unknown[]"
+      ],
+      "visibility": "public",
+      "arguments": []
+    },
+    {
+      "name": "getSelectedNodes",
+      "returnType": [
+        "unknown[]"
+      ],
+      "visibility": "public",
+      "arguments": []
+    },
+    {
+      "name": "getSelectedRecords",
+      "returnType": [
+        "unknown[]"
+      ],
+      "visibility": "public",
+      "arguments": []
+    },
+    {
+      "name": "getSelectionCount",
+      "returnType": [
+        "number"
+      ],
+      "visibility": "public",
+      "arguments": []
+    },
+    {
+      "name": "getStore",
+      "returnType": [
+        "Ext.data.Store"
+      ],
+      "visibility": "public",
+      "arguments": []
+    },
+    {
+      "name": "getTemplateTarget",
+      "returnType": [],
+      "visibility": "private",
+      "arguments": []
+    },
+    {
+      "name": "hasListener<T extends IDataViewEvents = IDataViewEvents, E extends keyof T = keyof T>",
+      "returnType": [
+        "boolean"
+      ],
+      "visibility": "public",
+      "arguments": [
+        {
+          "name": "eventName",
+          "comment": "",
+          "type": [
+            "E"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "indexOf",
+      "returnType": [
+        "number"
+      ],
+      "visibility": "public",
+      "arguments": [
+        {
+          "name": "nodeInfo",
+          "comment": "",
+          "type": [
+            "HTMLElement",
+            "string",
+            "number",
+            "Ext.data.Record"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "initComponent",
+      "returnType": [],
+      "visibility": "private",
+      "arguments": []
+    },
+    {
+      "name": "isSelected",
+      "returnType": [
+        "boolean"
+      ],
+      "visibility": "public",
+      "arguments": [
+        {
+          "name": "node",
+          "comment": "",
+          "type": [
+            "HTMLElement",
+            "number",
+            "Ext.data.Record"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "on<T extends IDataViewEvents = IDataViewEvents, E extends keyof T = keyof T>",
+      "returnType": [],
+      "visibility": "public",
+      "arguments": [
+        {
+          "name": "eventName",
+          "comment": "",
+          "type": [
+            "E"
+          ]
+        },
+        {
+          "name": "handler",
+          "comment": "",
+          "type": [
+            "T[E]"
+          ]
+        },
+        {
+          "name": "scope?",
+          "comment": "",
+          "type": [
+            "object"
+          ]
+        },
+        {
+          "name": "options?",
+          "comment": "",
+          "type": [
+            "object"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "onAdd",
+      "returnType": [],
+      "visibility": "private",
+      "arguments": [
+        {
+          "name": "ds",
+          "comment": "",
+          "type": [
+            "object"
+          ]
+        },
+        {
+          "name": "records",
+          "comment": "",
+          "type": [
+            "object"
+          ]
+        },
+        {
+          "name": "index",
+          "comment": "",
+          "type": [
+            "object"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "onBeforeLoad",
+      "returnType": [],
+      "visibility": "private",
+      "arguments": []
+    },
+    {
+      "name": "onClick",
+      "returnType": [],
+      "visibility": "private",
+      "arguments": [
+        {
+          "name": "e",
+          "comment": "",
+          "type": [
+            "object"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "onContainerClick",
+      "returnType": [],
+      "visibility": "private",
+      "arguments": [
+        {
+          "name": "e",
+          "comment": "",
+          "type": [
+            "object"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "onContextMenu",
+      "returnType": [],
+      "visibility": "private",
+      "arguments": [
+        {
+          "name": "e",
+          "comment": "",
+          "type": [
+            "object"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "onDataChanged",
+      "returnType": [],
+      "visibility": "private",
+      "arguments": []
+    },
+    {
+      "name": "onDblClick",
+      "returnType": [],
+      "visibility": "private",
+      "arguments": [
+        {
+          "name": "e",
+          "comment": "",
+          "type": [
+            "object"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "onDestroy",
+      "returnType": [],
+      "visibility": "private",
+      "arguments": []
+    },
+    {
+      "name": "onItemClick",
+      "returnType": [],
+      "visibility": "private",
+      "arguments": [
+        {
+          "name": "item",
+          "comment": "",
+          "type": [
+            "object"
+          ]
+        },
+        {
+          "name": "index",
+          "comment": "",
+          "type": [
+            "object"
+          ]
+        },
+        {
+          "name": "e",
+          "comment": "",
+          "type": [
+            "object"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "onMouseOut",
+      "returnType": [],
+      "visibility": "private",
+      "arguments": [
+        {
+          "name": "e",
+          "comment": "",
+          "type": [
+            "object"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "onMouseOver",
+      "returnType": [],
+      "visibility": "private",
+      "arguments": [
+        {
+          "name": "e",
+          "comment": "",
+          "type": [
+            "object"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "onRemove",
+      "returnType": [],
+      "visibility": "private",
+      "arguments": [
+        {
+          "name": "ds",
+          "comment": "",
+          "type": [
+            "object"
+          ]
+        },
+        {
+          "name": "record",
+          "comment": "",
+          "type": [
+            "object"
+          ]
+        },
+        {
+          "name": "index",
+          "comment": "",
+          "type": [
+            "object"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "onUpdate",
+      "returnType": [],
+      "visibility": "private",
+      "arguments": [
+        {
+          "name": "ds",
+          "comment": "",
+          "type": [
+            "object"
+          ]
+        },
+        {
+          "name": "record",
+          "comment": "",
+          "type": [
+            "object"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "prepareData",
+      "returnType": [
+        "unknown[]",
+        "object"
+      ],
+      "visibility": "public",
+      "arguments": [
+        {
+          "name": "data",
+          "comment": "",
+          "type": [
+            "unknown[]",
+            "object"
+          ]
+        },
+        {
+          "name": "recordIndex",
+          "comment": "",
+          "type": [
+            "number"
+          ]
+        },
+        {
+          "name": "record",
+          "comment": "",
+          "type": [
+            "Ext.data.Record"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "refresh",
+      "returnType": [],
+      "visibility": "public",
+      "arguments": []
+    },
+    {
+      "name": "refreshNode",
+      "returnType": [],
+      "visibility": "public",
+      "arguments": [
+        {
+          "name": "index",
+          "comment": "",
+          "type": [
+            "number"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "removeListener<T extends IDataViewEvents = IDataViewEvents, E extends keyof T = keyof T>",
+      "returnType": [],
+      "visibility": "public",
+      "arguments": [
+        {
+          "name": "eventName",
+          "comment": "",
+          "type": [
+            "E"
+          ]
+        },
+        {
+          "name": "handler",
+          "comment": "",
+          "type": [
+            "T[E]"
+          ]
+        },
+        {
+          "name": "scope?",
+          "comment": "",
+          "type": [
+            "object"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "select",
+      "returnType": [],
+      "visibility": "public",
+      "arguments": [
+        {
+          "name": "nodeInfo",
+          "comment": "",
+          "type": [
+            "unknown[]",
+            "HTMLElement",
+            "string",
+            "number",
+            "Ext.data.Record"
+          ]
+        },
+        {
+          "name": "keepExisting?",
+          "comment": "",
+          "type": [
+            "boolean"
+          ]
+        },
+        {
+          "name": "suppressEvent?",
+          "comment": "",
+          "type": [
+            "boolean"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "selectRange",
+      "returnType": [],
+      "visibility": "public",
+      "arguments": [
+        {
+          "name": "start",
+          "comment": "",
+          "type": [
+            "number"
+          ]
+        },
+        {
+          "name": "end",
+          "comment": "",
+          "type": [
+            "number"
+          ]
+        },
+        {
+          "name": "keepExisting?",
+          "comment": "",
+          "type": [
+            "boolean"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "setStore",
+      "returnType": [],
+      "visibility": "public",
+      "arguments": [
+        {
+          "name": "store",
+          "comment": "",
+          "type": [
+            "Store"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "un<T extends IDataViewEvents = IDataViewEvents, E extends keyof T = keyof T>",
+      "returnType": [],
+      "visibility": "public",
+      "arguments": [
+        {
+          "name": "eventName",
+          "comment": "",
+          "type": [
+            "E"
+          ]
+        },
+        {
+          "name": "handler",
+          "comment": "",
+          "type": [
+            "T[E]"
+          ]
+        },
+        {
+          "name": "scope?",
+          "comment": "",
+          "type": [
+            "object"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "updateIndexes",
+      "returnType": [],
+      "visibility": "private",
+      "arguments": [
+        {
+          "name": "startIndex",
+          "comment": "",
+          "type": [
+            "object"
+          ]
+        },
+        {
+          "name": "endIndex",
+          "comment": "",
+          "type": [
+            "object"
+          ]
+        }
+      ]
+    }
+  ],
+  "events": [
+    {
+      "name": "added",
+      "arguments": [
+        {
+          "name": "thisCmp",
+          "comment": "",
+          "type": [
+            "DataView"
+          ]
+        },
+        {
+          "name": "ownerCt",
+          "comment": "",
+          "type": [
+            "Ext.Container"
+          ]
+        },
+        {
+          "name": "index",
+          "comment": "",
+          "type": [
+            "number"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "afterrender",
+      "arguments": [
+        {
+          "name": "thisCmp",
+          "comment": "",
+          "type": [
+            "DataView"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "beforeclick",
+      "arguments": [
+        {
+          "name": "thisCmp",
+          "comment": "",
+          "type": [
+            "DataView"
+          ]
+        },
+        {
+          "name": "index",
+          "comment": "",
+          "type": [
+            "number"
+          ]
+        },
+        {
+          "name": "node",
+          "comment": "",
+          "type": [
+            "HTMLElement"
+          ]
+        },
+        {
+          "name": "e",
+          "comment": "",
+          "type": [
+            "Ext.EventObject"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "beforedestroy",
+      "arguments": [
+        {
+          "name": "thisCmp",
+          "comment": "",
+          "type": [
+            "DataView"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "beforehide",
+      "arguments": [
+        {
+          "name": "thisCmp",
+          "comment": "",
+          "type": [
+            "DataView"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "beforerender",
+      "arguments": [
+        {
+          "name": "thisCmp",
+          "comment": "",
+          "type": [
+            "DataView"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "beforeselect",
+      "arguments": [
+        {
+          "name": "thisCmp",
+          "comment": "",
+          "type": [
+            "DataView"
+          ]
+        },
+        {
+          "name": "node",
+          "comment": "",
+          "type": [
+            "HTMLElement"
+          ]
+        },
+        {
+          "name": "selections",
+          "comment": "",
+          "type": [
+            "unknown[]"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "beforeshow",
+      "arguments": [
+        {
+          "name": "thisCmp",
+          "comment": "",
+          "type": [
+            "DataView"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "beforestaterestore",
+      "arguments": [
+        {
+          "name": "thisCmp",
+          "comment": "",
+          "type": [
+            "DataView"
+          ]
+        },
+        {
+          "name": "state",
+          "comment": "",
+          "type": [
+            "object"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "beforestatesave",
+      "arguments": [
+        {
+          "name": "thisCmp",
+          "comment": "",
+          "type": [
+            "DataView"
+          ]
+        },
+        {
+          "name": "state",
+          "comment": "",
+          "type": [
+            "object"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "click",
+      "arguments": [
+        {
+          "name": "thisCmp",
+          "comment": "",
+          "type": [
+            "DataView"
+          ]
+        },
+        {
+          "name": "index",
+          "comment": "",
+          "type": [
+            "number"
+          ]
+        },
+        {
+          "name": "node",
+          "comment": "",
+          "type": [
+            "HTMLElement"
+          ]
+        },
+        {
+          "name": "e",
+          "comment": "",
+          "type": [
+            "Ext.EventObject"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "containerclick",
+      "arguments": [
+        {
+          "name": "thisCmp",
+          "comment": "",
+          "type": [
+            "DataView"
+          ]
+        },
+        {
+          "name": "e",
+          "comment": "",
+          "type": [
+            "Ext.EventObject"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "containercontextmenu",
+      "arguments": [
+        {
+          "name": "thisCmp",
+          "comment": "",
+          "type": [
+            "DataView"
+          ]
+        },
+        {
+          "name": "e",
+          "comment": "",
+          "type": [
+            "Ext.EventObject"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "contextmenu",
+      "arguments": [
+        {
+          "name": "thisCmp",
+          "comment": "",
+          "type": [
+            "DataView"
+          ]
+        },
+        {
+          "name": "index",
+          "comment": "",
+          "type": [
+            "number"
+          ]
+        },
+        {
+          "name": "node",
+          "comment": "",
+          "type": [
+            "HTMLElement"
+          ]
+        },
+        {
+          "name": "e",
+          "comment": "",
+          "type": [
+            "Ext.EventObject"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "dblclick",
+      "arguments": [
+        {
+          "name": "thisCmp",
+          "comment": "",
+          "type": [
+            "DataView"
+          ]
+        },
+        {
+          "name": "index",
+          "comment": "",
+          "type": [
+            "number"
+          ]
+        },
+        {
+          "name": "node",
+          "comment": "",
+          "type": [
+            "HTMLElement"
+          ]
+        },
+        {
+          "name": "e",
+          "comment": "",
+          "type": [
+            "Ext.EventObject"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "destroy",
+      "arguments": [
+        {
+          "name": "thisCmp",
+          "comment": "",
+          "type": [
+            "DataView"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "disable",
+      "arguments": [
+        {
+          "name": "thisCmp",
+          "comment": "",
+          "type": [
+            "DataView"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "enable",
+      "arguments": [
+        {
+          "name": "thisCmp",
+          "comment": "",
+          "type": [
+            "DataView"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "hide",
+      "arguments": [
+        {
+          "name": "thisCmp",
+          "comment": "",
+          "type": [
+            "DataView"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "mouseenter",
+      "arguments": [
+        {
+          "name": "thisCmp",
+          "comment": "",
+          "type": [
+            "DataView"
+          ]
+        },
+        {
+          "name": "index",
+          "comment": "",
+          "type": [
+            "number"
+          ]
+        },
+        {
+          "name": "node",
+          "comment": "",
+          "type": [
+            "HTMLElement"
+          ]
+        },
+        {
+          "name": "e",
+          "comment": "",
+          "type": [
+            "Ext.EventObject"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "mouseleave",
+      "arguments": [
+        {
+          "name": "thisCmp",
+          "comment": "",
+          "type": [
+            "DataView"
+          ]
+        },
+        {
+          "name": "index",
+          "comment": "",
+          "type": [
+            "number"
+          ]
+        },
+        {
+          "name": "node",
+          "comment": "",
+          "type": [
+            "HTMLElement"
+          ]
+        },
+        {
+          "name": "e",
+          "comment": "",
+          "type": [
+            "Ext.EventObject"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "move",
+      "arguments": [
+        {
+          "name": "thisCmp",
+          "comment": "",
+          "type": [
+            "DataView"
+          ]
+        },
+        {
+          "name": "x",
+          "comment": "",
+          "type": [
+            "number"
+          ]
+        },
+        {
+          "name": "y",
+          "comment": "",
+          "type": [
+            "number"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "removed",
+      "arguments": [
+        {
+          "name": "thisCmp",
+          "comment": "",
+          "type": [
+            "DataView"
+          ]
+        },
+        {
+          "name": "ownerCt",
+          "comment": "",
+          "type": [
+            "Ext.Container"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "render",
+      "arguments": [
+        {
+          "name": "thisCmp",
+          "comment": "",
+          "type": [
+            "DataView"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "resize",
+      "arguments": [
+        {
+          "name": "thisCmp",
+          "comment": "",
+          "type": [
+            "DataView"
+          ]
+        },
+        {
+          "name": "adjWidth",
+          "comment": "",
+          "type": [
+            "number"
+          ]
+        },
+        {
+          "name": "adjHeight",
+          "comment": "",
+          "type": [
+            "number"
+          ]
+        },
+        {
+          "name": "rawWidth",
+          "comment": "",
+          "type": [
+            "number"
+          ]
+        },
+        {
+          "name": "rawHeight",
+          "comment": "",
+          "type": [
+            "number"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "selectionchange",
+      "arguments": [
+        {
+          "name": "thisCmp",
+          "comment": "",
+          "type": [
+            "DataView"
+          ]
+        },
+        {
+          "name": "selections",
+          "comment": "",
+          "type": [
+            "unknown[]"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "show",
+      "arguments": [
+        {
+          "name": "thisCmp",
+          "comment": "",
+          "type": [
+            "DataView"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "staterestore",
+      "arguments": [
+        {
+          "name": "thisCmp",
+          "comment": "",
+          "type": [
+            "DataView"
+          ]
+        },
+        {
+          "name": "state",
+          "comment": "",
+          "type": [
+            "object"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "statesave",
+      "arguments": [
+        {
+          "name": "thisCmp",
+          "comment": "",
+          "type": [
+            "DataView"
+          ]
+        },
+        {
+          "name": "state",
+          "comment": "",
+          "type": [
+            "object"
+          ]
+        }
+      ]
+    }
+  ]
+}

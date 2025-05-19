@@ -1,0 +1,1424 @@
+{
+  "name": "TreeNode",
+  "namespace": "Ext.tree",
+  "extends": "Ext.data.Node",
+  "constructorMethod": {
+    "config": [
+      {
+        "name": "allowChildren?",
+        "type": [
+          "boolean"
+        ],
+        "comment": ""
+      },
+      {
+        "name": "allowDrag?",
+        "type": [
+          "boolean"
+        ],
+        "comment": ""
+      },
+      {
+        "name": "allowDrop?",
+        "type": [
+          "boolean"
+        ],
+        "comment": ""
+      },
+      {
+        "name": "checked?",
+        "type": [
+          "boolean"
+        ],
+        "comment": ""
+      },
+      {
+        "name": "cls?",
+        "type": [
+          "string"
+        ],
+        "comment": ""
+      },
+      {
+        "name": "disabled?",
+        "type": [
+          "boolean"
+        ],
+        "comment": ""
+      },
+      {
+        "name": "draggable?",
+        "type": [
+          "boolean"
+        ],
+        "comment": ""
+      },
+      {
+        "name": "editable?",
+        "type": [
+          "boolean"
+        ],
+        "comment": ""
+      },
+      {
+        "name": "expandable?",
+        "type": [
+          "boolean"
+        ],
+        "comment": ""
+      },
+      {
+        "name": "expanded?",
+        "type": [
+          "boolean"
+        ],
+        "comment": ""
+      },
+      {
+        "name": "hidden?",
+        "type": [
+          "boolean"
+        ],
+        "comment": ""
+      },
+      {
+        "name": "href?",
+        "type": [
+          "string"
+        ],
+        "comment": ""
+      },
+      {
+        "name": "hrefTarget?",
+        "type": [
+          "string"
+        ],
+        "comment": ""
+      },
+      {
+        "name": "icon?",
+        "type": [
+          "string"
+        ],
+        "comment": ""
+      },
+      {
+        "name": "iconCls?",
+        "type": [
+          "string"
+        ],
+        "comment": ""
+      },
+      {
+        "name": "id?",
+        "type": [
+          "string"
+        ],
+        "comment": ""
+      },
+      {
+        "name": "isTarget?",
+        "type": [
+          "boolean"
+        ],
+        "comment": ""
+      },
+      {
+        "name": "leaf?",
+        "type": [
+          "boolean"
+        ],
+        "comment": ""
+      },
+      {
+        "name": "listeners?",
+        "type": [
+          "object"
+        ],
+        "comment": ""
+      },
+      {
+        "name": "qtip?",
+        "type": [
+          "string"
+        ],
+        "comment": ""
+      },
+      {
+        "name": "qtipCfg?",
+        "type": [
+          "string"
+        ],
+        "comment": ""
+      },
+      {
+        "name": "singleClickExpand?",
+        "type": [
+          "boolean"
+        ],
+        "comment": ""
+      },
+      {
+        "name": "text?",
+        "type": [
+          "string"
+        ],
+        "comment": ""
+      },
+      {
+        "name": "uiProvider?",
+        "type": [
+          "Function"
+        ],
+        "comment": ""
+      }
+    ]
+  },
+  "properties": [
+    {
+      "name": "disabled",
+      "type": [
+        "boolean"
+      ],
+      "visibility": "public",
+      "comment": ""
+    },
+    {
+      "name": "hidden",
+      "type": [
+        "boolean"
+      ],
+      "visibility": "public",
+      "comment": ""
+    },
+    {
+      "name": "preventHScroll",
+      "type": [
+        "boolean"
+      ],
+      "visibility": "private",
+      "comment": ""
+    },
+    {
+      "name": "text",
+      "type": [
+        "string"
+      ],
+      "visibility": "public",
+      "comment": ""
+    },
+    {
+      "name": "ui",
+      "type": [
+        "TreeNodeUI"
+      ],
+      "visibility": "public",
+      "comment": ""
+    }
+  ],
+  "methods": [
+    {
+      "name": "addListener<T extends ITreeNodeEvents = ITreeNodeEvents, E extends keyof T = keyof T>",
+      "returnType": [],
+      "visibility": "public",
+      "arguments": [
+        {
+          "name": "eventName",
+          "comment": "",
+          "type": [
+            "E"
+          ]
+        },
+        {
+          "name": "handler",
+          "comment": "",
+          "type": [
+            "T[E]"
+          ]
+        },
+        {
+          "name": "scope?",
+          "comment": "",
+          "type": [
+            "object"
+          ]
+        },
+        {
+          "name": "options?",
+          "comment": "",
+          "type": [
+            "object"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "appendChild",
+      "returnType": [
+        "Node"
+      ],
+      "visibility": "public",
+      "arguments": [
+        {
+          "name": "n",
+          "comment": "",
+          "type": [
+            "object"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "beginUpdate",
+      "returnType": [],
+      "visibility": "private",
+      "arguments": []
+    },
+    {
+      "name": "cancelExpand",
+      "returnType": [],
+      "visibility": "private",
+      "arguments": []
+    },
+    {
+      "name": "collapse",
+      "returnType": [],
+      "visibility": "public",
+      "arguments": [
+        {
+          "name": "deep?",
+          "comment": "",
+          "type": [
+            "boolean"
+          ]
+        },
+        {
+          "name": "anim?",
+          "comment": "",
+          "type": [
+            "boolean"
+          ]
+        },
+        {
+          "name": "callback?",
+          "comment": "",
+          "type": [
+            "Function"
+          ]
+        },
+        {
+          "name": "scope?",
+          "comment": "",
+          "type": [
+            "object"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "collapseChildNodes",
+      "returnType": [],
+      "visibility": "public",
+      "arguments": [
+        {
+          "name": "deep?",
+          "comment": "",
+          "type": [
+            "boolean"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "delayedExpand",
+      "returnType": [],
+      "visibility": "private",
+      "arguments": [
+        {
+          "name": "delay",
+          "comment": "",
+          "type": [
+            "object"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "destroy",
+      "returnType": [],
+      "visibility": "public",
+      "arguments": [
+        {
+          "name": "silent",
+          "comment": "",
+          "type": [
+            "object"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "disable",
+      "returnType": [],
+      "visibility": "public",
+      "arguments": []
+    },
+    {
+      "name": "enable",
+      "returnType": [],
+      "visibility": "public",
+      "arguments": []
+    },
+    {
+      "name": "endUpdate",
+      "returnType": [],
+      "visibility": "private",
+      "arguments": []
+    },
+    {
+      "name": "ensureVisible",
+      "returnType": [],
+      "visibility": "public",
+      "arguments": [
+        {
+          "name": "callback?",
+          "comment": "",
+          "type": [
+            "Function"
+          ]
+        },
+        {
+          "name": "scope?",
+          "comment": "",
+          "type": [
+            "object"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "expand",
+      "returnType": [],
+      "visibility": "public",
+      "arguments": [
+        {
+          "name": "deep?",
+          "comment": "",
+          "type": [
+            "boolean"
+          ]
+        },
+        {
+          "name": "anim?",
+          "comment": "",
+          "type": [
+            "boolean"
+          ]
+        },
+        {
+          "name": "callback?",
+          "comment": "",
+          "type": [
+            "Function"
+          ]
+        },
+        {
+          "name": "scope?",
+          "comment": "",
+          "type": [
+            "object"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "expandChildNodes",
+      "returnType": [],
+      "visibility": "public",
+      "arguments": [
+        {
+          "name": "deep?",
+          "comment": "",
+          "type": [
+            "boolean"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "fireEvent<T extends ITreeNodeEvents = ITreeNodeEvents, E extends keyof T = keyof T>",
+      "returnType": [
+        "boolean"
+      ],
+      "visibility": "public",
+      "arguments": [
+        {
+          "name": "evtName",
+          "comment": "",
+          "type": [
+            "object"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "getLoader",
+      "returnType": [],
+      "visibility": "private",
+      "arguments": []
+    },
+    {
+      "name": "getUI",
+      "returnType": [
+        "TreeNodeUI"
+      ],
+      "visibility": "public",
+      "arguments": []
+    },
+    {
+      "name": "hasListener<T extends ITreeNodeEvents = ITreeNodeEvents, E extends keyof T = keyof T>",
+      "returnType": [
+        "boolean"
+      ],
+      "visibility": "public",
+      "arguments": [
+        {
+          "name": "eventName",
+          "comment": "",
+          "type": [
+            "E"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "insertBefore",
+      "returnType": [
+        "Node"
+      ],
+      "visibility": "public",
+      "arguments": [
+        {
+          "name": "node",
+          "comment": "",
+          "type": [
+            "object"
+          ]
+        },
+        {
+          "name": "refNode",
+          "comment": "",
+          "type": [
+            "object"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "isExpanded",
+      "returnType": [
+        "boolean"
+      ],
+      "visibility": "public",
+      "arguments": []
+    },
+    {
+      "name": "isHiddenRoot",
+      "returnType": [],
+      "visibility": "private",
+      "arguments": []
+    },
+    {
+      "name": "isSelected",
+      "returnType": [
+        "boolean"
+      ],
+      "visibility": "public",
+      "arguments": []
+    },
+    {
+      "name": "on<T extends ITreeNodeEvents = ITreeNodeEvents, E extends keyof T = keyof T>",
+      "returnType": [],
+      "visibility": "public",
+      "arguments": [
+        {
+          "name": "eventName",
+          "comment": "",
+          "type": [
+            "E"
+          ]
+        },
+        {
+          "name": "handler",
+          "comment": "",
+          "type": [
+            "T[E]"
+          ]
+        },
+        {
+          "name": "scope?",
+          "comment": "",
+          "type": [
+            "object"
+          ]
+        },
+        {
+          "name": "options?",
+          "comment": "",
+          "type": [
+            "object"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "onIdChange",
+      "returnType": [],
+      "visibility": "private",
+      "arguments": [
+        {
+          "name": "id",
+          "comment": "",
+          "type": [
+            "object"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "removeChild",
+      "returnType": [
+        "Node"
+      ],
+      "visibility": "public",
+      "arguments": [
+        {
+          "name": "node",
+          "comment": "",
+          "type": [
+            "object"
+          ]
+        },
+        {
+          "name": "destroy",
+          "comment": "",
+          "type": [
+            "object"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "removeListener<T extends ITreeNodeEvents = ITreeNodeEvents, E extends keyof T = keyof T>",
+      "returnType": [],
+      "visibility": "public",
+      "arguments": [
+        {
+          "name": "eventName",
+          "comment": "",
+          "type": [
+            "E"
+          ]
+        },
+        {
+          "name": "handler",
+          "comment": "",
+          "type": [
+            "T[E]"
+          ]
+        },
+        {
+          "name": "scope?",
+          "comment": "",
+          "type": [
+            "object"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "render",
+      "returnType": [],
+      "visibility": "private",
+      "arguments": [
+        {
+          "name": "bulkRender",
+          "comment": "",
+          "type": [
+            "object"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "renderChildren",
+      "returnType": [],
+      "visibility": "private",
+      "arguments": [
+        {
+          "name": "suppressEvent",
+          "comment": "",
+          "type": [
+            "object"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "renderIndent",
+      "returnType": [],
+      "visibility": "private",
+      "arguments": [
+        {
+          "name": "deep",
+          "comment": "",
+          "type": [
+            "object"
+          ]
+        },
+        {
+          "name": "refresh",
+          "comment": "",
+          "type": [
+            "object"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "runCallback",
+      "returnType": [],
+      "visibility": "private",
+      "arguments": [
+        {
+          "name": "cb",
+          "comment": "",
+          "type": [
+            "object"
+          ]
+        },
+        {
+          "name": "scope",
+          "comment": "",
+          "type": [
+            "object"
+          ]
+        },
+        {
+          "name": "args",
+          "comment": "",
+          "type": [
+            "object"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "select",
+      "returnType": [],
+      "visibility": "public",
+      "arguments": []
+    },
+    {
+      "name": "setCls",
+      "returnType": [],
+      "visibility": "public",
+      "arguments": [
+        {
+          "name": "cls",
+          "comment": "",
+          "type": [
+            "string"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "setFirstChild",
+      "returnType": [],
+      "visibility": "private",
+      "arguments": [
+        {
+          "name": "node",
+          "comment": "",
+          "type": [
+            "object"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "setHref",
+      "returnType": [],
+      "visibility": "public",
+      "arguments": [
+        {
+          "name": "href",
+          "comment": "",
+          "type": [
+            "string"
+          ]
+        },
+        {
+          "name": "target?",
+          "comment": "",
+          "type": [
+            "string"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "setIcon",
+      "returnType": [],
+      "visibility": "public",
+      "arguments": [
+        {
+          "name": "icon",
+          "comment": "",
+          "type": [
+            "string"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "setIconCls",
+      "returnType": [],
+      "visibility": "public",
+      "arguments": [
+        {
+          "name": "cls",
+          "comment": "",
+          "type": [
+            "string"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "setLastChild",
+      "returnType": [],
+      "visibility": "private",
+      "arguments": [
+        {
+          "name": "node",
+          "comment": "",
+          "type": [
+            "object"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "setText",
+      "returnType": [],
+      "visibility": "public",
+      "arguments": [
+        {
+          "name": "text",
+          "comment": "",
+          "type": [
+            "string"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "setTooltip",
+      "returnType": [],
+      "visibility": "public",
+      "arguments": [
+        {
+          "name": "tip",
+          "comment": "",
+          "type": [
+            "string"
+          ]
+        },
+        {
+          "name": "title?",
+          "comment": "",
+          "type": [
+            "string"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "sort",
+      "returnType": [],
+      "visibility": "public",
+      "arguments": [
+        {
+          "name": "fn",
+          "comment": "",
+          "type": [
+            "object"
+          ]
+        },
+        {
+          "name": "scope",
+          "comment": "",
+          "type": [
+            "object"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "toggle",
+      "returnType": [],
+      "visibility": "public",
+      "arguments": []
+    },
+    {
+      "name": "un<T extends ITreeNodeEvents = ITreeNodeEvents, E extends keyof T = keyof T>",
+      "returnType": [],
+      "visibility": "public",
+      "arguments": [
+        {
+          "name": "eventName",
+          "comment": "",
+          "type": [
+            "E"
+          ]
+        },
+        {
+          "name": "handler",
+          "comment": "",
+          "type": [
+            "T[E]"
+          ]
+        },
+        {
+          "name": "scope?",
+          "comment": "",
+          "type": [
+            "object"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "unselect",
+      "returnType": [],
+      "visibility": "public",
+      "arguments": [
+        {
+          "name": "silent?",
+          "comment": "",
+          "type": [
+            "boolean"
+          ]
+        }
+      ]
+    }
+  ],
+  "events": [
+    {
+      "name": "append",
+      "arguments": [
+        {
+          "name": "tree",
+          "comment": "",
+          "type": [
+            "Tree"
+          ]
+        },
+        {
+          "name": "thisCmp",
+          "comment": "",
+          "type": [
+            "TreeNode"
+          ]
+        },
+        {
+          "name": "node",
+          "comment": "",
+          "type": [
+            "Node"
+          ]
+        },
+        {
+          "name": "index",
+          "comment": "",
+          "type": [
+            "number"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "beforeappend",
+      "arguments": [
+        {
+          "name": "tree",
+          "comment": "",
+          "type": [
+            "Tree"
+          ]
+        },
+        {
+          "name": "thisCmp",
+          "comment": "",
+          "type": [
+            "TreeNode"
+          ]
+        },
+        {
+          "name": "node",
+          "comment": "",
+          "type": [
+            "Node"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "beforechildrenrendered",
+      "arguments": [
+        {
+          "name": "thisCmp",
+          "comment": "",
+          "type": [
+            "TreeNode"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "beforeclick",
+      "arguments": [
+        {
+          "name": "thisCmp",
+          "comment": "",
+          "type": [
+            "TreeNode"
+          ]
+        },
+        {
+          "name": "e",
+          "comment": "",
+          "type": [
+            "Ext.EventObject"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "beforecollapse",
+      "arguments": [
+        {
+          "name": "thisCmp",
+          "comment": "",
+          "type": [
+            "TreeNode"
+          ]
+        },
+        {
+          "name": "deep",
+          "comment": "",
+          "type": [
+            "boolean"
+          ]
+        },
+        {
+          "name": "anim",
+          "comment": "",
+          "type": [
+            "boolean"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "beforedblclick",
+      "arguments": [
+        {
+          "name": "thisCmp",
+          "comment": "",
+          "type": [
+            "TreeNode"
+          ]
+        },
+        {
+          "name": "e",
+          "comment": "",
+          "type": [
+            "Ext.EventObject"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "beforeexpand",
+      "arguments": [
+        {
+          "name": "thisCmp",
+          "comment": "",
+          "type": [
+            "TreeNode"
+          ]
+        },
+        {
+          "name": "deep",
+          "comment": "",
+          "type": [
+            "boolean"
+          ]
+        },
+        {
+          "name": "anim",
+          "comment": "",
+          "type": [
+            "boolean"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "beforeinsert",
+      "arguments": [
+        {
+          "name": "tree",
+          "comment": "",
+          "type": [
+            "Tree"
+          ]
+        },
+        {
+          "name": "thisCmp",
+          "comment": "",
+          "type": [
+            "TreeNode"
+          ]
+        },
+        {
+          "name": "node",
+          "comment": "",
+          "type": [
+            "Node"
+          ]
+        },
+        {
+          "name": "refNode",
+          "comment": "",
+          "type": [
+            "Node"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "beforemove",
+      "arguments": [
+        {
+          "name": "tree",
+          "comment": "",
+          "type": [
+            "Tree"
+          ]
+        },
+        {
+          "name": "thisCmp",
+          "comment": "",
+          "type": [
+            "TreeNode"
+          ]
+        },
+        {
+          "name": "oldParent",
+          "comment": "",
+          "type": [
+            "Node"
+          ]
+        },
+        {
+          "name": "newParent",
+          "comment": "",
+          "type": [
+            "Node"
+          ]
+        },
+        {
+          "name": "index",
+          "comment": "",
+          "type": [
+            "number"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "beforeremove",
+      "arguments": [
+        {
+          "name": "tree",
+          "comment": "",
+          "type": [
+            "Tree"
+          ]
+        },
+        {
+          "name": "thisCmp",
+          "comment": "",
+          "type": [
+            "TreeNode"
+          ]
+        },
+        {
+          "name": "node",
+          "comment": "",
+          "type": [
+            "Node"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "checkchange",
+      "arguments": [
+        {
+          "name": "thisCmp",
+          "comment": "",
+          "type": [
+            "TreeNode"
+          ]
+        },
+        {
+          "name": "checked",
+          "comment": "",
+          "type": [
+            "boolean"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "click",
+      "arguments": [
+        {
+          "name": "thisCmp",
+          "comment": "",
+          "type": [
+            "TreeNode"
+          ]
+        },
+        {
+          "name": "e",
+          "comment": "",
+          "type": [
+            "Ext.EventObject"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "collapse",
+      "arguments": [
+        {
+          "name": "thisCmp",
+          "comment": "",
+          "type": [
+            "TreeNode"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "contextmenu",
+      "arguments": [
+        {
+          "name": "thisCmp",
+          "comment": "",
+          "type": [
+            "TreeNode"
+          ]
+        },
+        {
+          "name": "e",
+          "comment": "",
+          "type": [
+            "Ext.EventObject"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "dblclick",
+      "arguments": [
+        {
+          "name": "thisCmp",
+          "comment": "",
+          "type": [
+            "TreeNode"
+          ]
+        },
+        {
+          "name": "e",
+          "comment": "",
+          "type": [
+            "Ext.EventObject"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "disabledchange",
+      "arguments": [
+        {
+          "name": "thisCmp",
+          "comment": "",
+          "type": [
+            "TreeNode"
+          ]
+        },
+        {
+          "name": "disabled",
+          "comment": "",
+          "type": [
+            "boolean"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "expand",
+      "arguments": [
+        {
+          "name": "thisCmp",
+          "comment": "",
+          "type": [
+            "TreeNode"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "insert",
+      "arguments": [
+        {
+          "name": "tree",
+          "comment": "",
+          "type": [
+            "Tree"
+          ]
+        },
+        {
+          "name": "thisCmp",
+          "comment": "",
+          "type": [
+            "TreeNode"
+          ]
+        },
+        {
+          "name": "node",
+          "comment": "",
+          "type": [
+            "Node"
+          ]
+        },
+        {
+          "name": "refNode",
+          "comment": "",
+          "type": [
+            "Node"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "move",
+      "arguments": [
+        {
+          "name": "tree",
+          "comment": "",
+          "type": [
+            "Tree"
+          ]
+        },
+        {
+          "name": "thisCmp",
+          "comment": "",
+          "type": [
+            "TreeNode"
+          ]
+        },
+        {
+          "name": "oldParent",
+          "comment": "",
+          "type": [
+            "Node"
+          ]
+        },
+        {
+          "name": "newParent",
+          "comment": "",
+          "type": [
+            "Node"
+          ]
+        },
+        {
+          "name": "index",
+          "comment": "",
+          "type": [
+            "number"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "remove",
+      "arguments": [
+        {
+          "name": "tree",
+          "comment": "",
+          "type": [
+            "Tree"
+          ]
+        },
+        {
+          "name": "thisCmp",
+          "comment": "",
+          "type": [
+            "TreeNode"
+          ]
+        },
+        {
+          "name": "node",
+          "comment": "",
+          "type": [
+            "Node"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "textchange",
+      "arguments": [
+        {
+          "name": "thisCmp",
+          "comment": "",
+          "type": [
+            "TreeNode"
+          ]
+        },
+        {
+          "name": "text",
+          "comment": "",
+          "type": [
+            "string"
+          ]
+        },
+        {
+          "name": "oldText",
+          "comment": "",
+          "type": [
+            "string"
+          ]
+        }
+      ]
+    }
+  ]
+}

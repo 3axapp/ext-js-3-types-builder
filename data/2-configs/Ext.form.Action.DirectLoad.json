@@ -1,0 +1,146 @@
+{
+  "name": "DirectLoad",
+  "namespace": "Ext.form.Action",
+  "extends": "Ext.form.Action.Load",
+  "constructorMethod": {
+    "config": [
+      {
+        "name": "failure?",
+        "type": [
+          "Function"
+        ],
+        "comment": ""
+      },
+      {
+        "name": "method?",
+        "type": [
+          "string"
+        ],
+        "comment": ""
+      },
+      {
+        "name": "params?",
+        "type": [
+          "unknown"
+        ],
+        "comment": ""
+      },
+      {
+        "name": "reset?",
+        "type": [
+          "boolean"
+        ],
+        "comment": ""
+      },
+      {
+        "name": "scope?",
+        "type": [
+          "object"
+        ],
+        "comment": ""
+      },
+      {
+        "name": "submitEmptyText?",
+        "type": [
+          "boolean"
+        ],
+        "comment": ""
+      },
+      {
+        "name": "success?",
+        "type": [
+          "Function"
+        ],
+        "comment": ""
+      },
+      {
+        "name": "timeout?",
+        "type": [
+          "number"
+        ],
+        "comment": ""
+      },
+      {
+        "name": "url?",
+        "type": [
+          "string"
+        ],
+        "comment": ""
+      },
+      {
+        "name": "waitMsg?",
+        "type": [
+          "string"
+        ],
+        "comment": ""
+      },
+      {
+        "name": "waitTitle?",
+        "type": [
+          "string"
+        ],
+        "comment": ""
+      }
+    ]
+  },
+  "properties": [
+    {
+      "name": "type",
+      "type": [
+        "string"
+      ],
+      "visibility": "public",
+      "comment": ""
+    }
+  ],
+  "methods": [
+    {
+      "name": "getParams",
+      "returnType": [],
+      "visibility": "private",
+      "arguments": []
+    },
+    {
+      "name": "processResponse",
+      "returnType": [],
+      "visibility": "private",
+      "arguments": [
+        {
+          "name": "result",
+          "comment": "",
+          "type": [
+            "object"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "run",
+      "returnType": [],
+      "visibility": "private",
+      "arguments": []
+    },
+    {
+      "name": "success",
+      "returnType": [],
+      "visibility": "private",
+      "arguments": [
+        {
+          "name": "response",
+          "comment": "",
+          "type": [
+            "object"
+          ]
+        },
+        {
+          "name": "trans",
+          "comment": "",
+          "type": [
+            "object"
+          ]
+        }
+      ]
+    }
+  ],
+  "events": []
+}

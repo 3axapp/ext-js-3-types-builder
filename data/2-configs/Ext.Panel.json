@@ -1,0 +1,2413 @@
+{
+  "name": "Panel",
+  "namespace": "Ext",
+  "extends": "Ext.Container",
+  "constructorMethod": {
+    "config": [
+      {
+        "name": "activeItem?",
+        "type": [
+          "string",
+          "number"
+        ],
+        "comment": ""
+      },
+      {
+        "name": "allowDomMove?",
+        "type": [
+          "boolean"
+        ],
+        "comment": ""
+      },
+      {
+        "name": "anchor?",
+        "type": [
+          "string"
+        ],
+        "comment": ""
+      },
+      {
+        "name": "animCollapse?",
+        "type": [
+          "boolean"
+        ],
+        "comment": ""
+      },
+      {
+        "name": "applyTo?",
+        "type": [
+          "unknown"
+        ],
+        "comment": ""
+      },
+      {
+        "name": "autoDestroy?",
+        "type": [
+          "boolean"
+        ],
+        "comment": ""
+      },
+      {
+        "name": "autoHeight?",
+        "type": [
+          "boolean"
+        ],
+        "comment": ""
+      },
+      {
+        "name": "autoLoad?",
+        "type": [
+          "object",
+          "string",
+          "Function"
+        ],
+        "comment": ""
+      },
+      {
+        "name": "autoScroll?",
+        "type": [
+          "boolean"
+        ],
+        "comment": ""
+      },
+      {
+        "name": "autoShow?",
+        "type": [
+          "boolean"
+        ],
+        "comment": ""
+      },
+      {
+        "name": "autoWidth?",
+        "type": [
+          "boolean"
+        ],
+        "comment": ""
+      },
+      {
+        "name": "baseCls?",
+        "type": [
+          "string"
+        ],
+        "comment": ""
+      },
+      {
+        "name": "bbar?",
+        "type": [
+          "object",
+          "unknown[]"
+        ],
+        "comment": ""
+      },
+      {
+        "name": "bbarCfg?",
+        "type": [
+          "object"
+        ],
+        "comment": ""
+      },
+      {
+        "name": "bodyBorder?",
+        "type": [
+          "boolean"
+        ],
+        "comment": ""
+      },
+      {
+        "name": "bodyCfg?",
+        "type": [
+          "object"
+        ],
+        "comment": ""
+      },
+      {
+        "name": "bodyCssClass?",
+        "type": [
+          "string",
+          "object",
+          "Function"
+        ],
+        "comment": ""
+      },
+      {
+        "name": "bodyStyle?",
+        "type": [
+          "string",
+          "object",
+          "Function"
+        ],
+        "comment": ""
+      },
+      {
+        "name": "border?",
+        "type": [
+          "boolean"
+        ],
+        "comment": ""
+      },
+      {
+        "name": "boxMaxHeight?",
+        "type": [
+          "number"
+        ],
+        "comment": ""
+      },
+      {
+        "name": "boxMaxWidth?",
+        "type": [
+          "number"
+        ],
+        "comment": ""
+      },
+      {
+        "name": "boxMinHeight?",
+        "type": [
+          "number"
+        ],
+        "comment": ""
+      },
+      {
+        "name": "boxMinWidth?",
+        "type": [
+          "number"
+        ],
+        "comment": ""
+      },
+      {
+        "name": "bubbleEvents?",
+        "type": [
+          "unknown[]"
+        ],
+        "comment": ""
+      },
+      {
+        "name": "bufferResize?",
+        "type": [
+          "boolean",
+          "number"
+        ],
+        "comment": ""
+      },
+      {
+        "name": "buttonAlign?",
+        "type": [
+          "string"
+        ],
+        "comment": ""
+      },
+      {
+        "name": "buttons?",
+        "type": [
+          "unknown[]"
+        ],
+        "comment": ""
+      },
+      {
+        "name": "bwrapCfg?",
+        "type": [
+          "object"
+        ],
+        "comment": ""
+      },
+      {
+        "name": "clearCls?",
+        "type": [
+          "string"
+        ],
+        "comment": ""
+      },
+      {
+        "name": "closable?",
+        "type": [
+          "boolean"
+        ],
+        "comment": ""
+      },
+      {
+        "name": "cls?",
+        "type": [
+          "string"
+        ],
+        "comment": ""
+      },
+      {
+        "name": "collapseFirst?",
+        "type": [
+          "boolean"
+        ],
+        "comment": ""
+      },
+      {
+        "name": "collapsed?",
+        "type": [
+          "boolean"
+        ],
+        "comment": ""
+      },
+      {
+        "name": "collapsedCls?",
+        "type": [
+          "string"
+        ],
+        "comment": ""
+      },
+      {
+        "name": "collapsible?",
+        "type": [
+          "boolean"
+        ],
+        "comment": ""
+      },
+      {
+        "name": "contentEl?",
+        "type": [
+          "string"
+        ],
+        "comment": ""
+      },
+      {
+        "name": "ctCls?",
+        "type": [
+          "string"
+        ],
+        "comment": ""
+      },
+      {
+        "name": "data?",
+        "type": [
+          "unknown"
+        ],
+        "comment": ""
+      },
+      {
+        "name": "defaultType?",
+        "type": [
+          "string"
+        ],
+        "comment": ""
+      },
+      {
+        "name": "defaults?",
+        "type": [
+          "Object|Function"
+        ],
+        "comment": ""
+      },
+      {
+        "name": "disabled?",
+        "type": [
+          "boolean"
+        ],
+        "comment": ""
+      },
+      {
+        "name": "disabledClass?",
+        "type": [
+          "string"
+        ],
+        "comment": ""
+      },
+      {
+        "name": "draggable?",
+        "type": [
+          "boolean",
+          "object"
+        ],
+        "comment": ""
+      },
+      {
+        "name": "elements?",
+        "type": [
+          "string"
+        ],
+        "comment": ""
+      },
+      {
+        "name": "fbar?",
+        "type": [
+          "object",
+          "unknown[]"
+        ],
+        "comment": ""
+      },
+      {
+        "name": "fieldLabel?",
+        "type": [
+          "string"
+        ],
+        "comment": ""
+      },
+      {
+        "name": "flex?",
+        "type": [
+          "number"
+        ],
+        "comment": ""
+      },
+      {
+        "name": "floating?",
+        "type": [
+          "unknown"
+        ],
+        "comment": ""
+      },
+      {
+        "name": "footer?",
+        "type": [
+          "boolean"
+        ],
+        "comment": ""
+      },
+      {
+        "name": "footerCfg?",
+        "type": [
+          "object"
+        ],
+        "comment": ""
+      },
+      {
+        "name": "forceLayout?",
+        "type": [
+          "boolean"
+        ],
+        "comment": ""
+      },
+      {
+        "name": "frame?",
+        "type": [
+          "boolean"
+        ],
+        "comment": ""
+      },
+      {
+        "name": "header?",
+        "type": [
+          "boolean"
+        ],
+        "comment": ""
+      },
+      {
+        "name": "headerAsText?",
+        "type": [
+          "boolean"
+        ],
+        "comment": ""
+      },
+      {
+        "name": "headerCfg?",
+        "type": [
+          "object"
+        ],
+        "comment": ""
+      },
+      {
+        "name": "height?",
+        "type": [
+          "number"
+        ],
+        "comment": ""
+      },
+      {
+        "name": "hidden?",
+        "type": [
+          "boolean"
+        ],
+        "comment": ""
+      },
+      {
+        "name": "hideBorders?",
+        "type": [
+          "boolean"
+        ],
+        "comment": ""
+      },
+      {
+        "name": "hideCollapseTool?",
+        "type": [
+          "boolean"
+        ],
+        "comment": ""
+      },
+      {
+        "name": "hideLabel?",
+        "type": [
+          "boolean"
+        ],
+        "comment": ""
+      },
+      {
+        "name": "hideMode?",
+        "type": [
+          "string"
+        ],
+        "comment": ""
+      },
+      {
+        "name": "hideParent?",
+        "type": [
+          "boolean"
+        ],
+        "comment": ""
+      },
+      {
+        "name": "html?",
+        "type": [
+          "string",
+          "object"
+        ],
+        "comment": ""
+      },
+      {
+        "name": "iconCls?",
+        "type": [
+          "string"
+        ],
+        "comment": ""
+      },
+      {
+        "name": "id?",
+        "type": [
+          "string"
+        ],
+        "comment": ""
+      },
+      {
+        "name": "itemCls?",
+        "type": [
+          "string"
+        ],
+        "comment": ""
+      },
+      {
+        "name": "itemId?",
+        "type": [
+          "string"
+        ],
+        "comment": ""
+      },
+      {
+        "name": "items?",
+        "type": [
+          "object",
+          "unknown[]"
+        ],
+        "comment": ""
+      },
+      {
+        "name": "keys?",
+        "type": [
+          "object",
+          "unknown[]"
+        ],
+        "comment": ""
+      },
+      {
+        "name": "labelSeparator?",
+        "type": [
+          "string"
+        ],
+        "comment": ""
+      },
+      {
+        "name": "labelStyle?",
+        "type": [
+          "string"
+        ],
+        "comment": ""
+      },
+      {
+        "name": "layout?",
+        "type": [
+          "string",
+          "object"
+        ],
+        "comment": ""
+      },
+      {
+        "name": "layoutConfig?",
+        "type": [
+          "object"
+        ],
+        "comment": ""
+      },
+      {
+        "name": "listeners?",
+        "type": [
+          "object"
+        ],
+        "comment": ""
+      },
+      {
+        "name": "margins?",
+        "type": [
+          "object"
+        ],
+        "comment": ""
+      },
+      {
+        "name": "maskDisabled?",
+        "type": [
+          "boolean"
+        ],
+        "comment": ""
+      },
+      {
+        "name": "minButtonWidth?",
+        "type": [
+          "number"
+        ],
+        "comment": ""
+      },
+      {
+        "name": "monitorResize?",
+        "type": [
+          "boolean"
+        ],
+        "comment": ""
+      },
+      {
+        "name": "overCls?",
+        "type": [
+          "string"
+        ],
+        "comment": ""
+      },
+      {
+        "name": "padding?",
+        "type": [
+          "number",
+          "string"
+        ],
+        "comment": ""
+      },
+      {
+        "name": "pageX?",
+        "type": [
+          "number"
+        ],
+        "comment": ""
+      },
+      {
+        "name": "pageY?",
+        "type": [
+          "number"
+        ],
+        "comment": ""
+      },
+      {
+        "name": "plugins?",
+        "type": [
+          "object",
+          "unknown[]"
+        ],
+        "comment": ""
+      },
+      {
+        "name": "preventBodyReset?",
+        "type": [
+          "boolean"
+        ],
+        "comment": ""
+      },
+      {
+        "name": "ptype?",
+        "type": [
+          "string"
+        ],
+        "comment": ""
+      },
+      {
+        "name": "ref?",
+        "type": [
+          "string"
+        ],
+        "comment": ""
+      },
+      {
+        "name": "region?",
+        "type": [
+          "string"
+        ],
+        "comment": ""
+      },
+      {
+        "name": "renderTo?",
+        "type": [
+          "unknown"
+        ],
+        "comment": ""
+      },
+      {
+        "name": "resizeEvent?",
+        "type": [
+          "string"
+        ],
+        "comment": ""
+      },
+      {
+        "name": "shadow?",
+        "type": [
+          "boolean",
+          "string"
+        ],
+        "comment": ""
+      },
+      {
+        "name": "shadowOffset?",
+        "type": [
+          "number"
+        ],
+        "comment": ""
+      },
+      {
+        "name": "shim?",
+        "type": [
+          "boolean"
+        ],
+        "comment": ""
+      },
+      {
+        "name": "stateEvents?",
+        "type": [
+          "unknown[]"
+        ],
+        "comment": ""
+      },
+      {
+        "name": "stateId?",
+        "type": [
+          "string"
+        ],
+        "comment": ""
+      },
+      {
+        "name": "stateful?",
+        "type": [
+          "boolean"
+        ],
+        "comment": ""
+      },
+      {
+        "name": "style?",
+        "type": [
+          "string"
+        ],
+        "comment": ""
+      },
+      {
+        "name": "tabTip?",
+        "type": [
+          "string"
+        ],
+        "comment": ""
+      },
+      {
+        "name": "tbar?",
+        "type": [
+          "object",
+          "unknown[]"
+        ],
+        "comment": ""
+      },
+      {
+        "name": "tbarCfg?",
+        "type": [
+          "object"
+        ],
+        "comment": ""
+      },
+      {
+        "name": "title?",
+        "type": [
+          "string"
+        ],
+        "comment": ""
+      },
+      {
+        "name": "titleCollapse?",
+        "type": [
+          "boolean"
+        ],
+        "comment": ""
+      },
+      {
+        "name": "toolTemplate?",
+        "type": [
+          "Ext.Template",
+          "Ext.XTemplate"
+        ],
+        "comment": ""
+      },
+      {
+        "name": "tools?",
+        "type": [
+          "unknown[]"
+        ],
+        "comment": ""
+      },
+      {
+        "name": "tpl?",
+        "type": [
+          "unknown"
+        ],
+        "comment": ""
+      },
+      {
+        "name": "tplWriteMode?",
+        "type": [
+          "string"
+        ],
+        "comment": ""
+      },
+      {
+        "name": "unstyled?",
+        "type": [
+          "boolean"
+        ],
+        "comment": ""
+      },
+      {
+        "name": "width?",
+        "type": [
+          "number"
+        ],
+        "comment": ""
+      },
+      {
+        "name": "x?",
+        "type": [
+          "number"
+        ],
+        "comment": ""
+      },
+      {
+        "name": "xtype?",
+        "type": [
+          "string"
+        ],
+        "comment": ""
+      },
+      {
+        "name": "y?",
+        "type": [
+          "number"
+        ],
+        "comment": ""
+      }
+    ]
+  },
+  "properties": [
+    {
+      "name": "body",
+      "type": [
+        "Ext.Element"
+      ],
+      "visibility": "public",
+      "comment": ""
+    },
+    {
+      "name": "buttons",
+      "type": [
+        "unknown[]"
+      ],
+      "visibility": "public",
+      "comment": ""
+    },
+    {
+      "name": "bwrap",
+      "type": [
+        "Ext.Element"
+      ],
+      "visibility": "public",
+      "comment": ""
+    },
+    {
+      "name": "collapseDefaults",
+      "type": [
+        "object"
+      ],
+      "visibility": "private",
+      "comment": ""
+    },
+    {
+      "name": "collapseEl",
+      "type": [
+        "string"
+      ],
+      "visibility": "private",
+      "comment": ""
+    },
+    {
+      "name": "collapsed",
+      "type": [
+        "boolean"
+      ],
+      "visibility": "public",
+      "comment": ""
+    },
+    {
+      "name": "dd",
+      "type": [
+        "Ext.dd.DragSource"
+      ],
+      "visibility": "public",
+      "comment": ""
+    },
+    {
+      "name": "deferHeight",
+      "type": [
+        "boolean"
+      ],
+      "visibility": "private",
+      "comment": ""
+    },
+    {
+      "name": "expandDefaults",
+      "type": [
+        "object"
+      ],
+      "visibility": "private",
+      "comment": ""
+    },
+    {
+      "name": "footer",
+      "type": [
+        "Ext.Element"
+      ],
+      "visibility": "public",
+      "comment": ""
+    },
+    {
+      "name": "header",
+      "type": [
+        "Ext.Element"
+      ],
+      "visibility": "public",
+      "comment": ""
+    },
+    {
+      "name": "slideAnchor",
+      "type": [
+        "string"
+      ],
+      "visibility": "private",
+      "comment": ""
+    },
+    {
+      "name": "toolTarget",
+      "type": [
+        "string"
+      ],
+      "visibility": "private",
+      "comment": ""
+    }
+  ],
+  "methods": [
+    {
+      "name": "addButton",
+      "returnType": [
+        "Ext.Button"
+      ],
+      "visibility": "public",
+      "arguments": [
+        {
+          "name": "config",
+          "comment": "",
+          "type": [
+            "string",
+            "object"
+          ]
+        },
+        {
+          "name": "handler",
+          "comment": "",
+          "type": [
+            "Function"
+          ]
+        },
+        {
+          "name": "scope",
+          "comment": "",
+          "type": [
+            "object"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "addListener<T extends IPanelEvents = IPanelEvents, E extends keyof T = keyof T>",
+      "returnType": [],
+      "visibility": "public",
+      "arguments": [
+        {
+          "name": "eventName",
+          "comment": "",
+          "type": [
+            "E"
+          ]
+        },
+        {
+          "name": "handler",
+          "comment": "",
+          "type": [
+            "T[E]"
+          ]
+        },
+        {
+          "name": "scope?",
+          "comment": "",
+          "type": [
+            "object"
+          ]
+        },
+        {
+          "name": "options?",
+          "comment": "",
+          "type": [
+            "object"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "addTool",
+      "returnType": [],
+      "visibility": "private",
+      "arguments": []
+    },
+    {
+      "name": "adjustBodyHeight",
+      "returnType": [],
+      "visibility": "private",
+      "arguments": [
+        {
+          "name": "h",
+          "comment": "",
+          "type": [
+            "object"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "adjustBodyWidth",
+      "returnType": [],
+      "visibility": "private",
+      "arguments": [
+        {
+          "name": "w",
+          "comment": "",
+          "type": [
+            "object"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "afterCollapse",
+      "returnType": [],
+      "visibility": "private",
+      "arguments": [
+        {
+          "name": "anim",
+          "comment": "",
+          "type": [
+            "object"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "afterEffect",
+      "returnType": [],
+      "visibility": "private",
+      "arguments": [
+        {
+          "name": "anim",
+          "comment": "",
+          "type": [
+            "object"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "afterExpand",
+      "returnType": [],
+      "visibility": "private",
+      "arguments": [
+        {
+          "name": "anim",
+          "comment": "",
+          "type": [
+            "object"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "afterRender",
+      "returnType": [],
+      "visibility": "private",
+      "arguments": []
+    },
+    {
+      "name": "beforeDestroy",
+      "returnType": [],
+      "visibility": "private",
+      "arguments": []
+    },
+    {
+      "name": "beforeEffect",
+      "returnType": [],
+      "visibility": "private",
+      "arguments": [
+        {
+          "name": "anim",
+          "comment": "",
+          "type": [
+            "object"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "collapse",
+      "returnType": [
+        "this"
+      ],
+      "visibility": "public",
+      "arguments": [
+        {
+          "name": "animate",
+          "comment": "",
+          "type": [
+            "boolean"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "createClasses",
+      "returnType": [],
+      "visibility": "private",
+      "arguments": []
+    },
+    {
+      "name": "createEffect",
+      "returnType": [],
+      "visibility": "private",
+      "arguments": [
+        {
+          "name": "a",
+          "comment": "",
+          "type": [
+            "object"
+          ]
+        },
+        {
+          "name": "cb",
+          "comment": "",
+          "type": [
+            "object"
+          ]
+        },
+        {
+          "name": "scope",
+          "comment": "",
+          "type": [
+            "object"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "createElement",
+      "returnType": [],
+      "visibility": "private",
+      "arguments": [
+        {
+          "name": "name",
+          "comment": "",
+          "type": [
+            "object"
+          ]
+        },
+        {
+          "name": "pnode",
+          "comment": "",
+          "type": [
+            "object"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "createFbar",
+      "returnType": [],
+      "visibility": "private",
+      "arguments": [
+        {
+          "name": "fbar",
+          "comment": "",
+          "type": [
+            "object"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "createGhost",
+      "returnType": [],
+      "visibility": "private",
+      "arguments": [
+        {
+          "name": "cls",
+          "comment": "",
+          "type": [
+            "object"
+          ]
+        },
+        {
+          "name": "useShim",
+          "comment": "",
+          "type": [
+            "object"
+          ]
+        },
+        {
+          "name": "appendTo",
+          "comment": "",
+          "type": [
+            "object"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "createToolHandler",
+      "returnType": [],
+      "visibility": "private",
+      "arguments": [
+        {
+          "name": "t",
+          "comment": "",
+          "type": [
+            "object"
+          ]
+        },
+        {
+          "name": "tc",
+          "comment": "",
+          "type": [
+            "object"
+          ]
+        },
+        {
+          "name": "overCls",
+          "comment": "",
+          "type": [
+            "object"
+          ]
+        },
+        {
+          "name": "panel",
+          "comment": "",
+          "type": [
+            "object"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "createToolbar",
+      "returnType": [],
+      "visibility": "private",
+      "arguments": [
+        {
+          "name": "tb",
+          "comment": "",
+          "type": [
+            "object"
+          ]
+        },
+        {
+          "name": "options",
+          "comment": "",
+          "type": [
+            "object"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "doAutoLoad",
+      "returnType": [],
+      "visibility": "private",
+      "arguments": []
+    },
+    {
+      "name": "expand",
+      "returnType": [
+        "this"
+      ],
+      "visibility": "public",
+      "arguments": [
+        {
+          "name": "animate",
+          "comment": "",
+          "type": [
+            "boolean"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "fireEvent<T extends IPanelEvents = IPanelEvents, E extends keyof T = keyof T>",
+      "returnType": [
+        "boolean"
+      ],
+      "visibility": "public",
+      "arguments": [
+        {
+          "name": "eventName",
+          "comment": "",
+          "type": [
+            "E"
+          ]
+        },
+        {
+          "name": "...args",
+          "comment": "",
+          "type": [
+            "Parameters<T[E]>"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "getBottomToolbar",
+      "returnType": [
+        "Ext.Toolbar"
+      ],
+      "visibility": "public",
+      "arguments": []
+    },
+    {
+      "name": "getContentTarget",
+      "returnType": [],
+      "visibility": "private",
+      "arguments": []
+    },
+    {
+      "name": "getFooterToolbar",
+      "returnType": [
+        "Ext.Toolbar"
+      ],
+      "visibility": "public",
+      "arguments": []
+    },
+    {
+      "name": "getFrameHeight",
+      "returnType": [
+        "number"
+      ],
+      "visibility": "public",
+      "arguments": []
+    },
+    {
+      "name": "getFrameWidth",
+      "returnType": [
+        "number"
+      ],
+      "visibility": "public",
+      "arguments": []
+    },
+    {
+      "name": "getInnerHeight",
+      "returnType": [
+        "number"
+      ],
+      "visibility": "public",
+      "arguments": []
+    },
+    {
+      "name": "getInnerWidth",
+      "returnType": [
+        "number"
+      ],
+      "visibility": "public",
+      "arguments": []
+    },
+    {
+      "name": "getKeyMap",
+      "returnType": [],
+      "visibility": "private",
+      "arguments": []
+    },
+    {
+      "name": "getLayoutTarget",
+      "returnType": [
+        "Ext.Element"
+      ],
+      "visibility": "public",
+      "arguments": []
+    },
+    {
+      "name": "getTool",
+      "returnType": [
+        "object"
+      ],
+      "visibility": "public",
+      "arguments": [
+        {
+          "name": "id",
+          "comment": "",
+          "type": [
+            "string"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "getToolbarHeight",
+      "returnType": [],
+      "visibility": "private",
+      "arguments": []
+    },
+    {
+      "name": "getTopToolbar",
+      "returnType": [
+        "Ext.Toolbar"
+      ],
+      "visibility": "public",
+      "arguments": []
+    },
+    {
+      "name": "getUpdater",
+      "returnType": [
+        "Ext.Updater"
+      ],
+      "visibility": "public",
+      "arguments": []
+    },
+    {
+      "name": "hasListener<T extends IPanelEvents = IPanelEvents, E extends keyof T = keyof T>",
+      "returnType": [
+        "boolean"
+      ],
+      "visibility": "public",
+      "arguments": [
+        {
+          "name": "eventName",
+          "comment": "",
+          "type": [
+            "E"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "initComponent",
+      "returnType": [],
+      "visibility": "private",
+      "arguments": []
+    },
+    {
+      "name": "initDraggable",
+      "returnType": [],
+      "visibility": "private",
+      "arguments": []
+    },
+    {
+      "name": "initEvents",
+      "returnType": [],
+      "visibility": "private",
+      "arguments": []
+    },
+    {
+      "name": "load",
+      "returnType": [
+        "this"
+      ],
+      "visibility": "public",
+      "arguments": [
+        {
+          "name": "config",
+          "comment": "",
+          "type": [
+            "object",
+            "string",
+            "Function"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "makeFloating",
+      "returnType": [],
+      "visibility": "private",
+      "arguments": [
+        {
+          "name": "cfg",
+          "comment": "",
+          "type": [
+            "object"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "on<T extends IPanelEvents = IPanelEvents, E extends keyof T = keyof T>",
+      "returnType": [],
+      "visibility": "public",
+      "arguments": [
+        {
+          "name": "eventName",
+          "comment": "",
+          "type": [
+            "E"
+          ]
+        },
+        {
+          "name": "handler",
+          "comment": "",
+          "type": [
+            "T[E]"
+          ]
+        },
+        {
+          "name": "scope?",
+          "comment": "",
+          "type": [
+            "object"
+          ]
+        },
+        {
+          "name": "options?",
+          "comment": "",
+          "type": [
+            "object"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "onBodyResize",
+      "returnType": [],
+      "visibility": "private",
+      "arguments": [
+        {
+          "name": "w",
+          "comment": "",
+          "type": [
+            "object"
+          ]
+        },
+        {
+          "name": "h",
+          "comment": "",
+          "type": [
+            "object"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "onCollapse",
+      "returnType": [],
+      "visibility": "private",
+      "arguments": [
+        {
+          "name": "doAnim",
+          "comment": "",
+          "type": [
+            "object"
+          ]
+        },
+        {
+          "name": "animArg",
+          "comment": "",
+          "type": [
+            "object"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "onDisable",
+      "returnType": [],
+      "visibility": "private",
+      "arguments": []
+    },
+    {
+      "name": "onEnable",
+      "returnType": [],
+      "visibility": "private",
+      "arguments": []
+    },
+    {
+      "name": "onExpand",
+      "returnType": [],
+      "visibility": "private",
+      "arguments": [
+        {
+          "name": "doAnim",
+          "comment": "",
+          "type": [
+            "object"
+          ]
+        },
+        {
+          "name": "animArg",
+          "comment": "",
+          "type": [
+            "object"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "onHide",
+      "returnType": [],
+      "visibility": "private",
+      "arguments": []
+    },
+    {
+      "name": "onLayout",
+      "returnType": [],
+      "visibility": "private",
+      "arguments": [
+        {
+          "name": "shallow",
+          "comment": "",
+          "type": [
+            "object"
+          ]
+        },
+        {
+          "name": "force",
+          "comment": "",
+          "type": [
+            "object"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "onPosition",
+      "returnType": [],
+      "visibility": "private",
+      "arguments": [
+        {
+          "name": "x",
+          "comment": "",
+          "type": [
+            "number"
+          ]
+        },
+        {
+          "name": "y",
+          "comment": "",
+          "type": [
+            "number"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "onRender",
+      "returnType": [],
+      "visibility": "private",
+      "arguments": [
+        {
+          "name": "ct",
+          "comment": "",
+          "type": [
+            "object"
+          ]
+        },
+        {
+          "name": "position",
+          "comment": "",
+          "type": [
+            "object"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "onResize",
+      "returnType": [],
+      "visibility": "private",
+      "arguments": [
+        {
+          "name": "adjWidth",
+          "comment": "",
+          "type": [
+            "number"
+          ]
+        },
+        {
+          "name": "adjHeight",
+          "comment": "",
+          "type": [
+            "number"
+          ]
+        },
+        {
+          "name": "rawWidth",
+          "comment": "",
+          "type": [
+            "number"
+          ]
+        },
+        {
+          "name": "rawHeight",
+          "comment": "",
+          "type": [
+            "number"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "onShow",
+      "returnType": [],
+      "visibility": "private",
+      "arguments": []
+    },
+    {
+      "name": "removeListener<T extends IPanelEvents = IPanelEvents, E extends keyof T = keyof T>",
+      "returnType": [],
+      "visibility": "public",
+      "arguments": [
+        {
+          "name": "eventName",
+          "comment": "",
+          "type": [
+            "E"
+          ]
+        },
+        {
+          "name": "handler",
+          "comment": "",
+          "type": [
+            "T[E]"
+          ]
+        },
+        {
+          "name": "scope?",
+          "comment": "",
+          "type": [
+            "object"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "setIconClass",
+      "returnType": [],
+      "visibility": "public",
+      "arguments": [
+        {
+          "name": "cls",
+          "comment": "",
+          "type": [
+            "string"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "setTitle",
+      "returnType": [
+        "this"
+      ],
+      "visibility": "public",
+      "arguments": [
+        {
+          "name": "title",
+          "comment": "",
+          "type": [
+            "string"
+          ]
+        },
+        {
+          "name": "iconCls?",
+          "comment": "",
+          "type": [
+            "string"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "syncHeight",
+      "returnType": [],
+      "visibility": "private",
+      "arguments": []
+    },
+    {
+      "name": "syncShadow",
+      "returnType": [],
+      "visibility": "private",
+      "arguments": []
+    },
+    {
+      "name": "toggleCollapse",
+      "returnType": [
+        "this"
+      ],
+      "visibility": "public",
+      "arguments": [
+        {
+          "name": "animate",
+          "comment": "",
+          "type": [
+            "boolean"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "un<T extends IPanelEvents = IPanelEvents, E extends keyof T = keyof T>",
+      "returnType": [],
+      "visibility": "public",
+      "arguments": [
+        {
+          "name": "eventName",
+          "comment": "",
+          "type": [
+            "E"
+          ]
+        },
+        {
+          "name": "handler",
+          "comment": "",
+          "type": [
+            "T[E]"
+          ]
+        },
+        {
+          "name": "scope?",
+          "comment": "",
+          "type": [
+            "object"
+          ]
+        }
+      ]
+    }
+  ],
+  "events": [
+    {
+      "name": "activate",
+      "arguments": [
+        {
+          "name": "p",
+          "comment": "",
+          "type": [
+            "Ext.Panel"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "add",
+      "arguments": [
+        {
+          "name": "thisCmp",
+          "comment": "",
+          "type": [
+            "Panel"
+          ]
+        },
+        {
+          "name": "component",
+          "comment": "",
+          "type": [
+            "Ext.Component"
+          ]
+        },
+        {
+          "name": "index",
+          "comment": "",
+          "type": [
+            "number"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "added",
+      "arguments": [
+        {
+          "name": "thisCmp",
+          "comment": "",
+          "type": [
+            "Panel"
+          ]
+        },
+        {
+          "name": "ownerCt",
+          "comment": "",
+          "type": [
+            "Ext.Container"
+          ]
+        },
+        {
+          "name": "index",
+          "comment": "",
+          "type": [
+            "number"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "afterlayout",
+      "arguments": [
+        {
+          "name": "thisCmp",
+          "comment": "",
+          "type": [
+            "Panel"
+          ]
+        },
+        {
+          "name": "layout",
+          "comment": "",
+          "type": [
+            "Ext.layout.ContainerLayout"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "afterrender",
+      "arguments": [
+        {
+          "name": "thisCmp",
+          "comment": "",
+          "type": [
+            "Panel"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "beforeadd",
+      "arguments": [
+        {
+          "name": "thisCmp",
+          "comment": "",
+          "type": [
+            "Panel"
+          ]
+        },
+        {
+          "name": "component",
+          "comment": "",
+          "type": [
+            "Ext.Component"
+          ]
+        },
+        {
+          "name": "index",
+          "comment": "",
+          "type": [
+            "number"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "beforeclose",
+      "arguments": [
+        {
+          "name": "p",
+          "comment": "",
+          "type": [
+            "Ext.Panel"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "beforecollapse",
+      "arguments": [
+        {
+          "name": "p",
+          "comment": "",
+          "type": [
+            "Ext.Panel"
+          ]
+        },
+        {
+          "name": "animate",
+          "comment": "",
+          "type": [
+            "boolean"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "beforedestroy",
+      "arguments": [
+        {
+          "name": "thisCmp",
+          "comment": "",
+          "type": [
+            "Panel"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "beforeexpand",
+      "arguments": [
+        {
+          "name": "p",
+          "comment": "",
+          "type": [
+            "Ext.Panel"
+          ]
+        },
+        {
+          "name": "animate",
+          "comment": "",
+          "type": [
+            "boolean"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "beforehide",
+      "arguments": [
+        {
+          "name": "thisCmp",
+          "comment": "",
+          "type": [
+            "Panel"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "beforeremove",
+      "arguments": [
+        {
+          "name": "thisCmp",
+          "comment": "",
+          "type": [
+            "Panel"
+          ]
+        },
+        {
+          "name": "component",
+          "comment": "",
+          "type": [
+            "Ext.Component"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "beforerender",
+      "arguments": [
+        {
+          "name": "thisCmp",
+          "comment": "",
+          "type": [
+            "Panel"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "beforeshow",
+      "arguments": [
+        {
+          "name": "thisCmp",
+          "comment": "",
+          "type": [
+            "Panel"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "beforestaterestore",
+      "arguments": [
+        {
+          "name": "thisCmp",
+          "comment": "",
+          "type": [
+            "Panel"
+          ]
+        },
+        {
+          "name": "state",
+          "comment": "",
+          "type": [
+            "object"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "beforestatesave",
+      "arguments": [
+        {
+          "name": "thisCmp",
+          "comment": "",
+          "type": [
+            "Panel"
+          ]
+        },
+        {
+          "name": "state",
+          "comment": "",
+          "type": [
+            "object"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "bodyresize",
+      "arguments": [
+        {
+          "name": "p",
+          "comment": "",
+          "type": [
+            "Ext.Panel"
+          ]
+        },
+        {
+          "name": "width",
+          "comment": "",
+          "type": [
+            "number"
+          ]
+        },
+        {
+          "name": "height",
+          "comment": "",
+          "type": [
+            "number"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "close",
+      "arguments": [
+        {
+          "name": "p",
+          "comment": "",
+          "type": [
+            "Ext.Panel"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "collapse",
+      "arguments": [
+        {
+          "name": "p",
+          "comment": "",
+          "type": [
+            "Ext.Panel"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "deactivate",
+      "arguments": [
+        {
+          "name": "p",
+          "comment": "",
+          "type": [
+            "Ext.Panel"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "destroy",
+      "arguments": [
+        {
+          "name": "thisCmp",
+          "comment": "",
+          "type": [
+            "Panel"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "disable",
+      "arguments": [
+        {
+          "name": "thisCmp",
+          "comment": "",
+          "type": [
+            "Panel"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "enable",
+      "arguments": [
+        {
+          "name": "thisCmp",
+          "comment": "",
+          "type": [
+            "Panel"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "expand",
+      "arguments": [
+        {
+          "name": "p",
+          "comment": "",
+          "type": [
+            "Ext.Panel"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "hide",
+      "arguments": [
+        {
+          "name": "thisCmp",
+          "comment": "",
+          "type": [
+            "Panel"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "iconchange",
+      "arguments": [
+        {
+          "name": "p",
+          "comment": "",
+          "type": [
+            "Ext.Panel"
+          ]
+        },
+        {
+          "name": "newIcon",
+          "comment": "",
+          "type": [
+            "string"
+          ]
+        },
+        {
+          "name": "oldIcon",
+          "comment": "",
+          "type": [
+            "string"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "move",
+      "arguments": [
+        {
+          "name": "thisCmp",
+          "comment": "",
+          "type": [
+            "Panel"
+          ]
+        },
+        {
+          "name": "x",
+          "comment": "",
+          "type": [
+            "number"
+          ]
+        },
+        {
+          "name": "y",
+          "comment": "",
+          "type": [
+            "number"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "remove",
+      "arguments": [
+        {
+          "name": "thisCmp",
+          "comment": "",
+          "type": [
+            "Panel"
+          ]
+        },
+        {
+          "name": "component",
+          "comment": "",
+          "type": [
+            "Ext.Component"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "removed",
+      "arguments": [
+        {
+          "name": "thisCmp",
+          "comment": "",
+          "type": [
+            "Panel"
+          ]
+        },
+        {
+          "name": "ownerCt",
+          "comment": "",
+          "type": [
+            "Ext.Container"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "render",
+      "arguments": [
+        {
+          "name": "thisCmp",
+          "comment": "",
+          "type": [
+            "Panel"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "resize",
+      "arguments": [
+        {
+          "name": "thisCmp",
+          "comment": "",
+          "type": [
+            "Panel"
+          ]
+        },
+        {
+          "name": "adjWidth",
+          "comment": "",
+          "type": [
+            "number"
+          ]
+        },
+        {
+          "name": "adjHeight",
+          "comment": "",
+          "type": [
+            "number"
+          ]
+        },
+        {
+          "name": "rawWidth",
+          "comment": "",
+          "type": [
+            "number"
+          ]
+        },
+        {
+          "name": "rawHeight",
+          "comment": "",
+          "type": [
+            "number"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "show",
+      "arguments": [
+        {
+          "name": "thisCmp",
+          "comment": "",
+          "type": [
+            "Panel"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "staterestore",
+      "arguments": [
+        {
+          "name": "thisCmp",
+          "comment": "",
+          "type": [
+            "Panel"
+          ]
+        },
+        {
+          "name": "state",
+          "comment": "",
+          "type": [
+            "object"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "statesave",
+      "arguments": [
+        {
+          "name": "thisCmp",
+          "comment": "",
+          "type": [
+            "Panel"
+          ]
+        },
+        {
+          "name": "state",
+          "comment": "",
+          "type": [
+            "object"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "titlechange",
+      "arguments": [
+        {
+          "name": "p",
+          "comment": "",
+          "type": [
+            "Ext.Panel"
+          ]
+        },
+        {
+          "name": "The",
+          "comment": "",
+          "type": [
+            "string"
+          ]
+        }
+      ]
+    }
+  ]
+}

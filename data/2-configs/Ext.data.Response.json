@@ -1,0 +1,56 @@
+{
+  "name": "Response",
+  "namespace": "Ext.data",
+  "extends": null,
+  "constructorMethod": {
+    "config": [
+      {
+        "name": "action?",
+        "type": [
+          "string"
+        ],
+        "comment": ""
+      },
+      {
+        "name": "data?",
+        "type": [
+          "unknown[]",
+          "object"
+        ],
+        "comment": ""
+      },
+      {
+        "name": "message?",
+        "type": [
+          "string"
+        ],
+        "comment": ""
+      },
+      {
+        "name": "raw?",
+        "type": [
+          "object"
+        ],
+        "comment": ""
+      },
+      {
+        "name": "records?",
+        "type": [
+          "Ext.data.Record",
+          "Ext.data.Record[]"
+        ],
+        "comment": ""
+      },
+      {
+        "name": "success?",
+        "type": [
+          "boolean"
+        ],
+        "comment": ""
+      }
+    ]
+  },
+  "properties": [],
+  "methods": [],
+  "events": []
+}

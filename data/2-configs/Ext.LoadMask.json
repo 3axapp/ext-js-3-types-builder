@@ -1,0 +1,73 @@
+{
+  "name": "LoadMask",
+  "namespace": "Ext",
+  "constructorMethod": {
+    "config": [
+      {
+        "name": "msg?",
+        "type": [
+          "string"
+        ],
+        "comment": ""
+      },
+      {
+        "name": "msgCls?",
+        "type": [
+          "string"
+        ],
+        "comment": ""
+      },
+      {
+        "name": "removeMask?",
+        "type": [
+          "boolean"
+        ],
+        "comment": ""
+      },
+      {
+        "name": "store?",
+        "type": [
+          "Ext.data.Store"
+        ],
+        "comment": ""
+      }
+    ]
+  },
+  "properties": [
+    {
+      "name": "disabled",
+      "type": [
+        "boolean"
+      ],
+      "visibility": "public",
+      "comment": ""
+    }
+  ],
+  "methods": [
+    {
+      "name": "disable",
+      "returnType": [],
+      "visibility": "public",
+      "arguments": []
+    },
+    {
+      "name": "enable",
+      "returnType": [],
+      "visibility": "public",
+      "arguments": []
+    },
+    {
+      "name": "hide",
+      "returnType": [],
+      "visibility": "public",
+      "arguments": []
+    },
+    {
+      "name": "show",
+      "returnType": [],
+      "visibility": "public",
+      "arguments": []
+    }
+  ],
+  "events": []
+}

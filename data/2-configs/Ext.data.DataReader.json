@@ -1,0 +1,162 @@
+{
+  "name": "DataReader",
+  "namespace": "Ext.data",
+  "constructorMethod": {
+    "config": [
+      {
+        "name": "fields?",
+        "type": [
+          "unknown[]",
+          "object"
+        ],
+        "comment": ""
+      },
+      {
+        "name": "messageProperty?",
+        "type": [
+          "string"
+        ],
+        "comment": ""
+      }
+    ]
+  },
+  "properties": [
+    {
+      "name": "meta",
+      "type": [
+        "unknown"
+      ],
+      "visibility": "public",
+      "comment": ""
+    }
+  ],
+  "methods": [
+    {
+      "name": "buildExtractors",
+      "returnType": [],
+      "visibility": "public",
+      "arguments": []
+    },
+    {
+      "name": "extractData",
+      "returnType": [],
+      "visibility": "private",
+      "arguments": [
+        {
+          "name": "data-root",
+          "comment": "",
+          "type": [
+            "Object[]",
+            "object"
+          ]
+        },
+        {
+          "name": "returnRecords",
+          "comment": "",
+          "type": [
+            "boolean"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "extractValues",
+      "returnType": [],
+      "visibility": "public",
+      "arguments": []
+    },
+    {
+      "name": "getId",
+      "returnType": [],
+      "visibility": "public",
+      "arguments": []
+    },
+    {
+      "name": "getMessage",
+      "returnType": [],
+      "visibility": "public",
+      "arguments": []
+    },
+    {
+      "name": "getRoot",
+      "returnType": [],
+      "visibility": "public",
+      "arguments": []
+    },
+    {
+      "name": "getSuccess",
+      "returnType": [],
+      "visibility": "public",
+      "arguments": []
+    },
+    {
+      "name": "getTotal",
+      "returnType": [],
+      "visibility": "public",
+      "arguments": []
+    },
+    {
+      "name": "isData",
+      "returnType": [
+        "boolean"
+      ],
+      "visibility": "public",
+      "arguments": [
+        {
+          "name": "data",
+          "comment": "",
+          "type": [
+            "object"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "realize",
+      "returnType": [],
+      "visibility": "public",
+      "arguments": [
+        {
+          "name": "record",
+          "comment": "",
+          "type": [
+            "Ext.data.Record",
+            "Ext.data.Record[]"
+          ]
+        },
+        {
+          "name": "data",
+          "comment": "",
+          "type": [
+            "object",
+            "Object[]"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "update",
+      "returnType": [],
+      "visibility": "public",
+      "arguments": [
+        {
+          "name": "rs",
+          "comment": "",
+          "type": [
+            "Ext.data.Record",
+            "Ext.data.Record[]"
+          ]
+        },
+        {
+          "name": "data",
+          "comment": "",
+          "type": [
+            "object",
+            "Object[]"
+          ]
+        }
+      ]
+    }
+  ],
+  "events": []
+}

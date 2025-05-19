@@ -1,0 +1,54 @@
+{
+  "name": "Column",
+  "namespace": "Ext.list",
+  "extends": null,
+  "constructorMethod": {
+    "config": [
+      {
+        "name": "align?",
+        "type": [
+          "string"
+        ],
+        "comment": ""
+      },
+      {
+        "name": "cls?",
+        "type": [
+          "string"
+        ],
+        "comment": ""
+      },
+      {
+        "name": "dataIndex?",
+        "type": [
+          "string"
+        ],
+        "comment": ""
+      },
+      {
+        "name": "header?",
+        "type": [
+          "string"
+        ],
+        "comment": ""
+      },
+      {
+        "name": "tpl?",
+        "type": [
+          "string"
+        ],
+        "comment": ""
+      },
+      {
+        "name": "width?",
+        "type": [
+          "number"
+        ],
+        "comment": ""
+      }
+    ]
+  },
+  "properties": [],
+  "methods": [],
+  "events": []
+}

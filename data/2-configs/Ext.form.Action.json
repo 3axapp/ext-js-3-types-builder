@@ -1,0 +1,157 @@
+{
+  "name": "Action",
+  "namespace": "Ext.form",
+  "constructorMethod": {
+    "config": [
+      {
+        "name": "failure?",
+        "type": [
+          "Function"
+        ],
+        "comment": ""
+      },
+      {
+        "name": "method?",
+        "type": [
+          "string"
+        ],
+        "comment": ""
+      },
+      {
+        "name": "params?",
+        "type": [
+          "unknown"
+        ],
+        "comment": ""
+      },
+      {
+        "name": "reset?",
+        "type": [
+          "boolean"
+        ],
+        "comment": ""
+      },
+      {
+        "name": "scope?",
+        "type": [
+          "object"
+        ],
+        "comment": ""
+      },
+      {
+        "name": "submitEmptyText?",
+        "type": [
+          "boolean"
+        ],
+        "comment": ""
+      },
+      {
+        "name": "success?",
+        "type": [
+          "Function"
+        ],
+        "comment": ""
+      },
+      {
+        "name": "timeout?",
+        "type": [
+          "number"
+        ],
+        "comment": ""
+      },
+      {
+        "name": "url?",
+        "type": [
+          "string"
+        ],
+        "comment": ""
+      },
+      {
+        "name": "waitMsg?",
+        "type": [
+          "string"
+        ],
+        "comment": ""
+      },
+      {
+        "name": "waitTitle?",
+        "type": [
+          "string"
+        ],
+        "comment": ""
+      }
+    ]
+  },
+  "properties": [
+    {
+      "name": "failureType",
+      "type": [
+        "string"
+      ],
+      "visibility": "public",
+      "comment": ""
+    },
+    {
+      "name": "response",
+      "type": [
+        "object"
+      ],
+      "visibility": "public",
+      "comment": ""
+    },
+    {
+      "name": "result",
+      "type": [
+        "object"
+      ],
+      "visibility": "public",
+      "comment": ""
+    },
+    {
+      "name": "type",
+      "type": [
+        "string"
+      ],
+      "visibility": "public",
+      "comment": ""
+    },
+    {
+      "name": "CLIENT_INVALID",
+      "static": true,
+      "type": [
+        "string"
+      ],
+      "visibility": "public",
+      "comment": ""
+    },
+    {
+      "name": "CONNECT_FAILURE",
+      "static": true,
+      "type": [
+        "string"
+      ],
+      "visibility": "public",
+      "comment": ""
+    },
+    {
+      "name": "LOAD_FAILURE",
+      "static": true,
+      "type": [
+        "string"
+      ],
+      "visibility": "public",
+      "comment": ""
+    },
+    {
+      "name": "SERVER_INVALID",
+      "static": true,
+      "type": [
+        "string"
+      ],
+      "visibility": "public",
+      "comment": ""
+    }
+  ],
+  "methods": [],
+  "events": []
+}

@@ -1,0 +1,764 @@
+{
+  "name": "DragDropMgr",
+  "namespace": "Ext.dd",
+  "constructorMethod": null,
+  "properties": [
+    {
+      "name": "INTERSECT",
+      "type": [
+        "int"
+      ],
+      "visibility": "public",
+      "comment": ""
+    },
+    {
+      "name": "POINT",
+      "type": [
+        "int"
+      ],
+      "visibility": "public",
+      "comment": ""
+    },
+    {
+      "name": "clickPixelThresh",
+      "type": [
+        "int"
+      ],
+      "visibility": "public",
+      "comment": ""
+    },
+    {
+      "name": "clickTimeThresh",
+      "type": [
+        "int"
+      ],
+      "visibility": "public",
+      "comment": ""
+    },
+    {
+      "name": "clickTimeout",
+      "type": [
+        "object"
+      ],
+      "visibility": "private",
+      "comment": ""
+    },
+    {
+      "name": "deltaX",
+      "type": [
+        "int"
+      ],
+      "visibility": "private",
+      "comment": ""
+    },
+    {
+      "name": "deltaY",
+      "type": [
+        "int"
+      ],
+      "visibility": "private",
+      "comment": ""
+    },
+    {
+      "name": "dragCurrent",
+      "type": [
+        "DragDrop"
+      ],
+      "visibility": "private",
+      "comment": ""
+    },
+    {
+      "name": "dragOvers",
+      "type": [
+        "unknown[]"
+      ],
+      "visibility": "private",
+      "comment": ""
+    },
+    {
+      "name": "dragThreshMet",
+      "type": [
+        "boolean"
+      ],
+      "visibility": "private",
+      "comment": ""
+    },
+    {
+      "name": "elementCache",
+      "type": [
+        "object"
+      ],
+      "visibility": "private",
+      "comment": ""
+    },
+    {
+      "name": "handleIds",
+      "type": [
+        "String[]"
+      ],
+      "visibility": "private",
+      "comment": ""
+    },
+    {
+      "name": "ids",
+      "type": [
+        "String[]"
+      ],
+      "visibility": "private",
+      "comment": ""
+    },
+    {
+      "name": "initialized",
+      "type": [
+        "boolean"
+      ],
+      "visibility": "private",
+      "comment": ""
+    },
+    {
+      "name": "locationCache",
+      "type": [
+        "object"
+      ],
+      "visibility": "private",
+      "comment": ""
+    },
+    {
+      "name": "locked",
+      "type": [
+        "boolean"
+      ],
+      "visibility": "private",
+      "comment": ""
+    },
+    {
+      "name": "mode",
+      "type": [
+        "int"
+      ],
+      "visibility": "public",
+      "comment": ""
+    },
+    {
+      "name": "notifyOccluded",
+      "type": [
+        "boolean"
+      ],
+      "visibility": "public",
+      "comment": ""
+    },
+    {
+      "name": "preventDefault",
+      "type": [
+        "boolean"
+      ],
+      "visibility": "public",
+      "comment": ""
+    },
+    {
+      "name": "startX",
+      "type": [
+        "int"
+      ],
+      "visibility": "private",
+      "comment": ""
+    },
+    {
+      "name": "startY",
+      "type": [
+        "int"
+      ],
+      "visibility": "private",
+      "comment": ""
+    },
+    {
+      "name": "stopPropagation",
+      "type": [
+        "boolean"
+      ],
+      "visibility": "public",
+      "comment": ""
+    },
+    {
+      "name": "useCache",
+      "type": [
+        "boolean"
+      ],
+      "visibility": "public",
+      "comment": ""
+    }
+  ],
+  "methods": [
+    {
+      "name": "_execOnAll",
+      "returnType": [],
+      "visibility": "private",
+      "arguments": [
+        {
+          "name": "sMethod",
+          "comment": "",
+          "type": [
+            "object"
+          ]
+        },
+        {
+          "name": "args",
+          "comment": "",
+          "type": [
+            "object"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "_onLoad",
+      "returnType": [],
+      "visibility": "private",
+      "arguments": []
+    },
+    {
+      "name": "_onResize",
+      "returnType": [],
+      "visibility": "private",
+      "arguments": [
+        {
+          "name": "e",
+          "comment": "",
+          "type": [
+            "object"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "_onUnload",
+      "returnType": [],
+      "visibility": "private",
+      "arguments": [
+        {
+          "name": "e",
+          "comment": "",
+          "type": [
+            "object"
+          ]
+        },
+        {
+          "name": "me",
+          "comment": "",
+          "type": [
+            "object"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "_remove",
+      "returnType": [],
+      "visibility": "private",
+      "arguments": [
+        {
+          "name": "oDD",
+          "comment": "",
+          "type": [
+            "object"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "byZIndex",
+      "returnType": [],
+      "visibility": "private",
+      "arguments": [
+        {
+          "name": "d1",
+          "comment": "",
+          "type": [
+            "object"
+          ]
+        },
+        {
+          "name": "d2",
+          "comment": "",
+          "type": [
+            "object"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "fireEvents",
+      "returnType": [],
+      "visibility": "private",
+      "arguments": [
+        {
+          "name": "e",
+          "comment": "",
+          "type": [
+            "Event"
+          ]
+        },
+        {
+          "name": "isDrop",
+          "comment": "",
+          "type": [
+            "boolean"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "getBestMatch",
+      "returnType": [
+        "DragDrop"
+      ],
+      "visibility": "public",
+      "arguments": [
+        {
+          "name": "dds",
+          "comment": "",
+          "type": [
+            "DragDrop[]"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "getCss",
+      "returnType": [
+        "object"
+      ],
+      "visibility": "public",
+      "arguments": [
+        {
+          "name": "id",
+          "comment": "",
+          "type": [
+            "string"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "getDDById",
+      "returnType": [
+        "DragDrop"
+      ],
+      "visibility": "public",
+      "arguments": [
+        {
+          "name": "id",
+          "comment": "",
+          "type": [
+            "string"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "getElWrapper",
+      "returnType": [
+        "Ext.dd.DDM.ElementWrapper"
+      ],
+      "visibility": "private",
+      "arguments": [
+        {
+          "name": "id",
+          "comment": "",
+          "type": [
+            "string"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "getElement",
+      "returnType": [
+        "object"
+      ],
+      "visibility": "public",
+      "arguments": [
+        {
+          "name": "id",
+          "comment": "",
+          "type": [
+            "string"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "getLocation",
+      "returnType": [
+        "Ext.lib.Region"
+      ],
+      "visibility": "public",
+      "arguments": [
+        {
+          "name": "oDD",
+          "comment": "",
+          "type": [
+            "DragDrop"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "getRelated",
+      "returnType": [
+        "DragDrop[]"
+      ],
+      "visibility": "public",
+      "arguments": [
+        {
+          "name": "p_oDD",
+          "comment": "",
+          "type": [
+            "DragDrop"
+          ]
+        },
+        {
+          "name": "bTargetsOnly",
+          "comment": "",
+          "type": [
+            "boolean"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "getZIndex",
+      "returnType": [
+        "number"
+      ],
+      "visibility": "private",
+      "arguments": [
+        {
+          "name": "element",
+          "comment": "",
+          "type": [
+            "object"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "handleMouseDown",
+      "returnType": [],
+      "visibility": "private",
+      "arguments": [
+        {
+          "name": "e",
+          "comment": "",
+          "type": [
+            "Event"
+          ]
+        },
+        {
+          "name": "oDD",
+          "comment": "",
+          "type": [
+            "object"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "handleMouseMove",
+      "returnType": [],
+      "visibility": "private",
+      "arguments": [
+        {
+          "name": "e",
+          "comment": "",
+          "type": [
+            "Event"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "handleMouseUp",
+      "returnType": [],
+      "visibility": "private",
+      "arguments": [
+        {
+          "name": "e",
+          "comment": "",
+          "type": [
+            "Event"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "init",
+      "returnType": [],
+      "visibility": "private",
+      "arguments": []
+    },
+    {
+      "name": "isDragDrop",
+      "returnType": [
+        "boolean"
+      ],
+      "visibility": "public",
+      "arguments": [
+        {
+          "name": "id",
+          "comment": "",
+          "type": [
+            "string"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "isHandle",
+      "returnType": [
+        "boolean"
+      ],
+      "visibility": "public",
+      "arguments": [
+        {
+          "name": "id",
+          "comment": "",
+          "type": [
+            "string"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "isLegalTarget",
+      "returnType": [
+        "boolean"
+      ],
+      "visibility": "public",
+      "arguments": [
+        {
+          "name": "oDD",
+          "comment": "",
+          "type": [
+            "DragDrop"
+          ]
+        },
+        {
+          "name": "oTargetDD",
+          "comment": "",
+          "type": [
+            "DragDrop"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "isLocked",
+      "returnType": [
+        "boolean"
+      ],
+      "visibility": "public",
+      "arguments": []
+    },
+    {
+      "name": "isOverTarget",
+      "returnType": [
+        "boolean"
+      ],
+      "visibility": "private",
+      "arguments": [
+        {
+          "name": "pt",
+          "comment": "",
+          "type": [
+            "Ext.lib.Point"
+          ]
+        },
+        {
+          "name": "oTarget",
+          "comment": "",
+          "type": [
+            "DragDrop"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "isTypeOfDD",
+      "returnType": [
+        "boolean"
+      ],
+      "visibility": "public",
+      "arguments": [
+        {
+          "name": "the",
+          "comment": "",
+          "type": [
+            "object"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "lock",
+      "returnType": [],
+      "visibility": "public",
+      "arguments": []
+    },
+    {
+      "name": "refreshCache",
+      "returnType": [],
+      "visibility": "public",
+      "arguments": [
+        {
+          "name": "groups",
+          "comment": "",
+          "type": [
+            "object"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "regDragDrop",
+      "returnType": [],
+      "visibility": "public",
+      "arguments": [
+        {
+          "name": "oDD",
+          "comment": "",
+          "type": [
+            "DragDrop"
+          ]
+        },
+        {
+          "name": "sGroup",
+          "comment": "",
+          "type": [
+            "string"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "regHandle",
+      "returnType": [],
+      "visibility": "public",
+      "arguments": [
+        {
+          "name": "sDDId",
+          "comment": "",
+          "type": [
+            "string"
+          ]
+        },
+        {
+          "name": "sHandleId",
+          "comment": "",
+          "type": [
+            "string"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "removeDDFromGroup",
+      "returnType": [],
+      "visibility": "private",
+      "arguments": [
+        {
+          "name": "oDD",
+          "comment": "",
+          "type": [
+            "object"
+          ]
+        },
+        {
+          "name": "sGroup",
+          "comment": "",
+          "type": [
+            "object"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "startDrag",
+      "returnType": [],
+      "visibility": "public",
+      "arguments": [
+        {
+          "name": "x",
+          "comment": "",
+          "type": [
+            "object"
+          ]
+        },
+        {
+          "name": "y",
+          "comment": "",
+          "type": [
+            "object"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "stopDrag",
+      "returnType": [],
+      "visibility": "private",
+      "arguments": [
+        {
+          "name": "e",
+          "comment": "",
+          "type": [
+            "Event"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "stopEvent",
+      "returnType": [],
+      "visibility": "public",
+      "arguments": [
+        {
+          "name": "e",
+          "comment": "",
+          "type": [
+            "Event"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "unlock",
+      "returnType": [],
+      "visibility": "public",
+      "arguments": []
+    },
+    {
+      "name": "unregAll",
+      "returnType": [],
+      "visibility": "private",
+      "arguments": []
+    },
+    {
+      "name": "verifyEl",
+      "returnType": [
+        "boolean"
+      ],
+      "visibility": "public",
+      "arguments": [
+        {
+          "name": "el",
+          "comment": "",
+          "type": [
+            "HTMLElement"
+          ]
+        }
+      ]
+    }
+  ],
+  "events": []
+}

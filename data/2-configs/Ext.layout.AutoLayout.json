@@ -1,0 +1,65 @@
+{
+  "name": "AutoLayout",
+  "namespace": "Ext.layout",
+  "extends": "Ext.layout.ContainerLayout",
+  "constructorMethod": {
+    "config": [
+      {
+        "name": "extraCls?",
+        "type": [
+          "string"
+        ],
+        "comment": ""
+      },
+      {
+        "name": "renderHidden?",
+        "type": [
+          "boolean"
+        ],
+        "comment": ""
+      }
+    ]
+  },
+  "properties": [
+    {
+      "name": "monitorResize",
+      "type": [
+        "boolean"
+      ],
+      "visibility": "private",
+      "comment": ""
+    },
+    {
+      "name": "type",
+      "type": [
+        "string"
+      ],
+      "visibility": "private",
+      "comment": ""
+    }
+  ],
+  "methods": [
+    {
+      "name": "onLayout",
+      "returnType": [],
+      "visibility": "private",
+      "arguments": [
+        {
+          "name": "ct",
+          "comment": "",
+          "type": [
+            "object"
+          ]
+        },
+        {
+          "name": "target",
+          "comment": "",
+          "type": [
+            "object"
+          ]
+        }
+      ]
+    }
+  ],
+  "events": []
+}

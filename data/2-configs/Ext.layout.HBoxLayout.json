@@ -1,0 +1,94 @@
+{
+  "name": "HBoxLayout",
+  "namespace": "Ext.layout",
+  "extends": "Ext.layout.BoxLayout",
+  "constructorMethod": {
+    "config": [
+      {
+        "name": "align?",
+        "type": [
+          "string"
+        ],
+        "comment": ""
+      },
+      {
+        "name": "defaultMargins?",
+        "type": [
+          "object"
+        ],
+        "comment": ""
+      },
+      {
+        "name": "extraCls?",
+        "type": [
+          "string"
+        ],
+        "comment": ""
+      },
+      {
+        "name": "flex?",
+        "type": [
+          "number"
+        ],
+        "comment": ""
+      },
+      {
+        "name": "pack?",
+        "type": [
+          "string"
+        ],
+        "comment": ""
+      },
+      {
+        "name": "padding?",
+        "type": [
+          "string"
+        ],
+        "comment": ""
+      },
+      {
+        "name": "renderHidden?",
+        "type": [
+          "boolean"
+        ],
+        "comment": ""
+      }
+    ]
+  },
+  "properties": [
+    {
+      "name": "type",
+      "type": [
+        "string"
+      ],
+      "visibility": "private",
+      "comment": ""
+    }
+  ],
+  "methods": [
+    {
+      "name": "calculateChildBoxes",
+      "returnType": [
+        "object"
+      ],
+      "visibility": "private",
+      "arguments": [
+        {
+          "name": "visibleItems",
+          "comment": "",
+          "type": [
+            "unknown[]"
+          ]
+        },
+        {
+          "name": "targetSize",
+          "comment": "",
+          "type": [
+            "object"
+          ]
+        }
+      ]
+    }
+  ],
+  "events": []
+}

@@ -1,0 +1,86 @@
+{
+  "name": "CardLayout",
+  "namespace": "Ext.layout",
+  "extends": "Ext.layout.FitLayout",
+  "constructorMethod": {
+    "config": [
+      {
+        "name": "deferredRender?",
+        "type": [
+          "boolean"
+        ],
+        "comment": ""
+      },
+      {
+        "name": "extraCls?",
+        "type": [
+          "string"
+        ],
+        "comment": ""
+      },
+      {
+        "name": "layoutOnCardChange?",
+        "type": [
+          "boolean"
+        ],
+        "comment": ""
+      },
+      {
+        "name": "renderHidden?",
+        "type": [
+          "boolean"
+        ],
+        "comment": ""
+      }
+    ]
+  },
+  "properties": [
+    {
+      "name": "type",
+      "type": [
+        "string"
+      ],
+      "visibility": "private",
+      "comment": ""
+    }
+  ],
+  "methods": [
+    {
+      "name": "renderAll",
+      "returnType": [],
+      "visibility": "private",
+      "arguments": [
+        {
+          "name": "ct",
+          "comment": "",
+          "type": [
+            "object"
+          ]
+        },
+        {
+          "name": "target",
+          "comment": "",
+          "type": [
+            "object"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "setActiveItem",
+      "returnType": [],
+      "visibility": "public",
+      "arguments": [
+        {
+          "name": "item",
+          "comment": "",
+          "type": [
+            "string",
+            "number"
+          ]
+        }
+      ]
+    }
+  ],
+  "events": []
+}

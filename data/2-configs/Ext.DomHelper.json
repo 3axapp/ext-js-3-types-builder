@@ -1,0 +1,289 @@
+{
+  "name": "DomHelper",
+  "namespace": "Ext",
+  "extends": null,
+  "constructorMethod": null,
+  "properties": [
+    {
+      "name": "lastIndex",
+      "type": [
+        "number"
+      ],
+      "visibility": "public",
+      "comment": ""
+    },
+    {
+      "name": "useDom",
+      "type": [
+        "boolean"
+      ],
+      "visibility": "public",
+      "comment": ""
+    }
+  ],
+  "methods": [
+    {
+      "name": "append",
+      "returnType": [
+        "HTMLElement",
+        "Ext.Element"
+      ],
+      "visibility": "public",
+      "arguments": [
+        {
+          "name": "el",
+          "comment": "",
+          "type": [
+            "unknown"
+          ]
+        },
+        {
+          "name": "o",
+          "comment": "",
+          "type": [
+            "object",
+            "string"
+          ]
+        },
+        {
+          "name": "returnElement?",
+          "comment": "",
+          "type": [
+            "boolean"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "applyStyles",
+      "returnType": [],
+      "visibility": "public",
+      "arguments": [
+        {
+          "name": "el",
+          "comment": "",
+          "type": [
+            "string",
+            "HTMLElement"
+          ]
+        },
+        {
+          "name": "styles",
+          "comment": "",
+          "type": [
+            "string",
+            "object",
+            "Function"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "createDom",
+      "returnType": [
+        "HTMLElement"
+      ],
+      "visibility": "public",
+      "arguments": [
+        {
+          "name": "o",
+          "comment": "",
+          "type": [
+            "object",
+            "string"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "createTemplate",
+      "returnType": [
+        "Ext.Template"
+      ],
+      "visibility": "public",
+      "arguments": [
+        {
+          "name": "o",
+          "comment": "",
+          "type": [
+            "object"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "insertAfter",
+      "returnType": [
+        "HTMLElement",
+        "Ext.Element"
+      ],
+      "visibility": "public",
+      "arguments": [
+        {
+          "name": "el",
+          "comment": "",
+          "type": [
+            "unknown"
+          ]
+        },
+        {
+          "name": "o",
+          "comment": "",
+          "type": [
+            "object"
+          ]
+        },
+        {
+          "name": "returnElement?",
+          "comment": "",
+          "type": [
+            "boolean"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "insertBefore",
+      "returnType": [
+        "HTMLElement",
+        "Ext.Element"
+      ],
+      "visibility": "public",
+      "arguments": [
+        {
+          "name": "el",
+          "comment": "",
+          "type": [
+            "unknown"
+          ]
+        },
+        {
+          "name": "o",
+          "comment": "",
+          "type": [
+            "object",
+            "string"
+          ]
+        },
+        {
+          "name": "returnElement?",
+          "comment": "",
+          "type": [
+            "boolean"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "insertFirst",
+      "returnType": [
+        "HTMLElement",
+        "Ext.Element"
+      ],
+      "visibility": "public",
+      "arguments": [
+        {
+          "name": "el",
+          "comment": "",
+          "type": [
+            "unknown"
+          ]
+        },
+        {
+          "name": "o",
+          "comment": "",
+          "type": [
+            "object",
+            "string"
+          ]
+        },
+        {
+          "name": "returnElement?",
+          "comment": "",
+          "type": [
+            "boolean"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "insertHtml",
+      "returnType": [
+        "HTMLElement"
+      ],
+      "visibility": "public",
+      "arguments": [
+        {
+          "name": "where",
+          "comment": "",
+          "type": [
+            "string"
+          ]
+        },
+        {
+          "name": "el",
+          "comment": "",
+          "type": [
+            "HTMLElement"
+          ]
+        },
+        {
+          "name": "html",
+          "comment": "",
+          "type": [
+            "string"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "markup",
+      "returnType": [
+        "string"
+      ],
+      "visibility": "public",
+      "arguments": [
+        {
+          "name": "o",
+          "comment": "",
+          "type": [
+            "object"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "overwrite",
+      "returnType": [
+        "HTMLElement",
+        "Ext.Element"
+      ],
+      "visibility": "public",
+      "arguments": [
+        {
+          "name": "el",
+          "comment": "",
+          "type": [
+            "unknown"
+          ]
+        },
+        {
+          "name": "o",
+          "comment": "",
+          "type": [
+            "object",
+            "string"
+          ]
+        },
+        {
+          "name": "returnElement?",
+          "comment": "",
+          "type": [
+            "boolean"
+          ]
+        }
+      ]
+    }
+  ],
+  "events": []
+}

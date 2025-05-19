@@ -1,0 +1,9 @@
+{
+  "name": "TaskMgr",
+  "namespace": "Ext",
+  "extends": "Ext.util.TaskRunner",
+  "constructorMethod": null,
+  "properties": [],
+  "methods": [],
+  "events": []
+}

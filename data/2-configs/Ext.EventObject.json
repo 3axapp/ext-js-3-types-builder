@@ -1,0 +1,158 @@
+{
+  "name": "EventObject",
+  "namespace": "Ext",
+  "constructorMethod": null,
+  "properties": [],
+  "methods": [
+    {
+      "name": "getCharCode",
+      "returnType": [
+        "number"
+      ],
+      "visibility": "public",
+      "arguments": []
+    },
+    {
+      "name": "getKey",
+      "returnType": [
+        "number"
+      ],
+      "visibility": "public",
+      "arguments": []
+    },
+    {
+      "name": "getPageX",
+      "returnType": [
+        "number"
+      ],
+      "visibility": "public",
+      "arguments": []
+    },
+    {
+      "name": "getPageY",
+      "returnType": [
+        "number"
+      ],
+      "visibility": "public",
+      "arguments": []
+    },
+    {
+      "name": "getRelatedTarget",
+      "returnType": [
+        "HTMLElement"
+      ],
+      "visibility": "public",
+      "arguments": []
+    },
+    {
+      "name": "getTarget",
+      "returnType": [
+        "HTMLelement"
+      ],
+      "visibility": "public",
+      "arguments": [
+        {
+          "name": "selector?",
+          "comment": "",
+          "type": [
+            "string"
+          ]
+        },
+        {
+          "name": "maxDepth?",
+          "comment": "",
+          "type": [
+            "number",
+            "unknown"
+          ]
+        },
+        {
+          "name": "returnEl?",
+          "comment": "",
+          "type": [
+            "boolean"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "getWheelDelta",
+      "returnType": [
+        "number"
+      ],
+      "visibility": "public",
+      "arguments": []
+    },
+    {
+      "name": "getXY",
+      "returnType": [
+        "unknown[]"
+      ],
+      "visibility": "public",
+      "arguments": []
+    },
+    {
+      "name": "preventDefault",
+      "returnType": [],
+      "visibility": "public",
+      "arguments": []
+    },
+    {
+      "name": "setEvent",
+      "returnType": [],
+      "visibility": "private",
+      "arguments": [
+        {
+          "name": "e",
+          "comment": "",
+          "type": [
+            "object"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "stopEvent",
+      "returnType": [],
+      "visibility": "public",
+      "arguments": []
+    },
+    {
+      "name": "stopPropagation",
+      "returnType": [],
+      "visibility": "public",
+      "arguments": []
+    },
+    {
+      "name": "within",
+      "returnType": [
+        "boolean"
+      ],
+      "visibility": "public",
+      "arguments": [
+        {
+          "name": "el",
+          "comment": "",
+          "type": [
+            "unknown"
+          ]
+        },
+        {
+          "name": "related?",
+          "comment": "",
+          "type": [
+            "boolean"
+          ]
+        },
+        {
+          "name": "allowEl?",
+          "comment": "",
+          "type": [
+            "boolean"
+          ]
+        }
+      ]
+    }
+  ],
+  "events": []
+}

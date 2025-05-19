@@ -1,0 +1,426 @@
+{
+  "name": "MessageBox",
+  "namespace": "Ext",
+  "constructorMethod": null,
+  "properties": [
+    {
+      "name": "CANCEL",
+      "type": [
+        "object"
+      ],
+      "visibility": "public",
+      "comment": ""
+    },
+    {
+      "name": "ERROR",
+      "type": [
+        "string"
+      ],
+      "visibility": "public",
+      "comment": ""
+    },
+    {
+      "name": "INFO",
+      "type": [
+        "string"
+      ],
+      "visibility": "public",
+      "comment": ""
+    },
+    {
+      "name": "OK",
+      "type": [
+        "object"
+      ],
+      "visibility": "public",
+      "comment": ""
+    },
+    {
+      "name": "OKCANCEL",
+      "type": [
+        "object"
+      ],
+      "visibility": "public",
+      "comment": ""
+    },
+    {
+      "name": "QUESTION",
+      "type": [
+        "string"
+      ],
+      "visibility": "public",
+      "comment": ""
+    },
+    {
+      "name": "WARNING",
+      "type": [
+        "string"
+      ],
+      "visibility": "public",
+      "comment": ""
+    },
+    {
+      "name": "YESNO",
+      "type": [
+        "object"
+      ],
+      "visibility": "public",
+      "comment": ""
+    },
+    {
+      "name": "YESNOCANCEL",
+      "type": [
+        "object"
+      ],
+      "visibility": "public",
+      "comment": ""
+    },
+    {
+      "name": "buttonText",
+      "type": [
+        "object"
+      ],
+      "visibility": "public",
+      "comment": ""
+    },
+    {
+      "name": "defaultTextHeight",
+      "type": [
+        "number"
+      ],
+      "visibility": "public",
+      "comment": ""
+    },
+    {
+      "name": "maxWidth",
+      "type": [
+        "number"
+      ],
+      "visibility": "public",
+      "comment": ""
+    },
+    {
+      "name": "minProgressWidth",
+      "type": [
+        "number"
+      ],
+      "visibility": "public",
+      "comment": ""
+    },
+    {
+      "name": "minPromptWidth",
+      "type": [
+        "number"
+      ],
+      "visibility": "public",
+      "comment": ""
+    },
+    {
+      "name": "minWidth",
+      "type": [
+        "number"
+      ],
+      "visibility": "public",
+      "comment": ""
+    }
+  ],
+  "methods": [
+    {
+      "name": "alert",
+      "returnType": [
+        "this"
+      ],
+      "visibility": "public",
+      "arguments": [
+        {
+          "name": "title",
+          "comment": "",
+          "type": [
+            "string"
+          ]
+        },
+        {
+          "name": "msg",
+          "comment": "",
+          "type": [
+            "string"
+          ]
+        },
+        {
+          "name": "fn?",
+          "comment": "",
+          "type": [
+            "Function"
+          ]
+        },
+        {
+          "name": "scope?",
+          "comment": "",
+          "type": [
+            "object"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "confirm",
+      "returnType": [
+        "this"
+      ],
+      "visibility": "public",
+      "arguments": [
+        {
+          "name": "title",
+          "comment": "",
+          "type": [
+            "string"
+          ]
+        },
+        {
+          "name": "msg",
+          "comment": "",
+          "type": [
+            "string"
+          ]
+        },
+        {
+          "name": "fn?",
+          "comment": "",
+          "type": [
+            "Function"
+          ]
+        },
+        {
+          "name": "scope?",
+          "comment": "",
+          "type": [
+            "object"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "getDialog",
+      "returnType": [
+        "Ext.Window"
+      ],
+      "visibility": "public",
+      "arguments": [
+        {
+          "name": "titleText",
+          "comment": "",
+          "type": [
+            "object"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "hide",
+      "returnType": [
+        "this"
+      ],
+      "visibility": "public",
+      "arguments": []
+    },
+    {
+      "name": "isVisible",
+      "returnType": [
+        "boolean"
+      ],
+      "visibility": "public",
+      "arguments": []
+    },
+    {
+      "name": "progress",
+      "returnType": [
+        "this"
+      ],
+      "visibility": "public",
+      "arguments": [
+        {
+          "name": "title",
+          "comment": "",
+          "type": [
+            "string"
+          ]
+        },
+        {
+          "name": "msg",
+          "comment": "",
+          "type": [
+            "string"
+          ]
+        },
+        {
+          "name": "progressText?",
+          "comment": "",
+          "type": [
+            "string"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "prompt",
+      "returnType": [
+        "this"
+      ],
+      "visibility": "public",
+      "arguments": [
+        {
+          "name": "title",
+          "comment": "",
+          "type": [
+            "string"
+          ]
+        },
+        {
+          "name": "msg",
+          "comment": "",
+          "type": [
+            "string"
+          ]
+        },
+        {
+          "name": "fn?",
+          "comment": "",
+          "type": [
+            "Function"
+          ]
+        },
+        {
+          "name": "scope?",
+          "comment": "",
+          "type": [
+            "object"
+          ]
+        },
+        {
+          "name": "multiline?",
+          "comment": "",
+          "type": [
+            "boolean",
+            "number"
+          ]
+        },
+        {
+          "name": "value?",
+          "comment": "",
+          "type": [
+            "string"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "setIcon",
+      "returnType": [
+        "this"
+      ],
+      "visibility": "public",
+      "arguments": [
+        {
+          "name": "icon",
+          "comment": "",
+          "type": [
+            "string"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "show",
+      "returnType": [
+        "this"
+      ],
+      "visibility": "public",
+      "arguments": [
+        {
+          "name": "config",
+          "comment": "",
+          "type": [
+            "object"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "updateProgress",
+      "returnType": [
+        "this"
+      ],
+      "visibility": "public",
+      "arguments": [
+        {
+          "name": "value",
+          "comment": "",
+          "type": [
+            "number"
+          ]
+        },
+        {
+          "name": "progressText",
+          "comment": "",
+          "type": [
+            "string"
+          ]
+        },
+        {
+          "name": "msg",
+          "comment": "",
+          "type": [
+            "string"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "updateText",
+      "returnType": [
+        "this"
+      ],
+      "visibility": "public",
+      "arguments": [
+        {
+          "name": "text?",
+          "comment": "",
+          "type": [
+            "string"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "wait",
+      "returnType": [
+        "this"
+      ],
+      "visibility": "public",
+      "arguments": [
+        {
+          "name": "msg",
+          "comment": "",
+          "type": [
+            "string"
+          ]
+        },
+        {
+          "name": "title?",
+          "comment": "",
+          "type": [
+            "string"
+          ]
+        },
+        {
+          "name": "config?",
+          "comment": "",
+          "type": [
+            "object"
+          ]
+        }
+      ]
+    }
+  ],
+  "events": []
+}

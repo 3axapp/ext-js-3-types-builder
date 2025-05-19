@@ -1,0 +1,587 @@
+{
+  "name": "Updater",
+  "namespace": "Ext",
+  "extends": "Ext.util.Observable",
+  "constructorMethod": {
+    "config": [
+      {
+        "name": "listeners?",
+        "type": [
+          "object"
+        ],
+        "comment": ""
+      }
+    ]
+  },
+  "properties": [
+    {
+      "name": "defaultUrl",
+      "type": [
+        "string"
+      ],
+      "visibility": "public",
+      "comment": ""
+    },
+    {
+      "name": "disableCaching",
+      "type": [
+        "boolean"
+      ],
+      "visibility": "public",
+      "comment": ""
+    },
+    {
+      "name": "el",
+      "type": [
+        "Ext.Element"
+      ],
+      "visibility": "public",
+      "comment": ""
+    },
+    {
+      "name": "formUpdateDelegate",
+      "type": [
+        "Function"
+      ],
+      "visibility": "public",
+      "comment": ""
+    },
+    {
+      "name": "indicatorText",
+      "type": [
+        "string"
+      ],
+      "visibility": "public",
+      "comment": ""
+    },
+    {
+      "name": "loadScripts",
+      "type": [
+        "boolean"
+      ],
+      "visibility": "public",
+      "comment": ""
+    },
+    {
+      "name": "refreshDelegate",
+      "type": [
+        "Function"
+      ],
+      "visibility": "public",
+      "comment": ""
+    },
+    {
+      "name": "renderer",
+      "type": [
+        "object"
+      ],
+      "visibility": "public",
+      "comment": ""
+    },
+    {
+      "name": "showLoadIndicator",
+      "type": [
+        "string"
+      ],
+      "visibility": "public",
+      "comment": ""
+    },
+    {
+      "name": "sslBlankUrl",
+      "type": [
+        "string"
+      ],
+      "visibility": "public",
+      "comment": ""
+    },
+    {
+      "name": "timeout",
+      "type": [
+        "number"
+      ],
+      "visibility": "public",
+      "comment": ""
+    },
+    {
+      "name": "transaction",
+      "type": [
+        "object"
+      ],
+      "visibility": "public",
+      "comment": ""
+    },
+    {
+      "name": "updateDelegate",
+      "type": [
+        "Function"
+      ],
+      "visibility": "public",
+      "comment": ""
+    }
+  ],
+  "methods": [
+    {
+      "name": "abort",
+      "returnType": [],
+      "visibility": "public",
+      "arguments": []
+    },
+    {
+      "name": "addListener<T extends IUpdaterEvents = IUpdaterEvents, E extends keyof T = keyof T>",
+      "returnType": [],
+      "visibility": "public",
+      "arguments": [
+        {
+          "name": "eventName",
+          "comment": "",
+          "type": [
+            "E"
+          ]
+        },
+        {
+          "name": "handler",
+          "comment": "",
+          "type": [
+            "T[E]"
+          ]
+        },
+        {
+          "name": "scope?",
+          "comment": "",
+          "type": [
+            "object"
+          ]
+        },
+        {
+          "name": "options?",
+          "comment": "",
+          "type": [
+            "object"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "fireEvent<T extends IUpdaterEvents = IUpdaterEvents, E extends keyof T = keyof T>",
+      "returnType": [
+        "boolean"
+      ],
+      "visibility": "public",
+      "arguments": [
+        {
+          "name": "eventName",
+          "comment": "",
+          "type": [
+            "E"
+          ]
+        },
+        {
+          "name": "...args",
+          "comment": "",
+          "type": [
+            "Parameters<T[E]>"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "formUpdate",
+      "returnType": [],
+      "visibility": "public",
+      "arguments": [
+        {
+          "name": "form",
+          "comment": "",
+          "type": [
+            "string",
+            "HTMLElement"
+          ]
+        },
+        {
+          "name": "url?",
+          "comment": "",
+          "type": [
+            "string"
+          ]
+        },
+        {
+          "name": "reset?",
+          "comment": "",
+          "type": [
+            "boolean"
+          ]
+        },
+        {
+          "name": "callback?",
+          "comment": "",
+          "type": [
+            "Function"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "getDefaultRenderer",
+      "returnType": [],
+      "visibility": "public",
+      "arguments": []
+    },
+    {
+      "name": "getEl",
+      "returnType": [
+        "Ext.Element"
+      ],
+      "visibility": "public",
+      "arguments": []
+    },
+    {
+      "name": "getRenderer",
+      "returnType": [
+        "object"
+      ],
+      "visibility": "public",
+      "arguments": []
+    },
+    {
+      "name": "hasListener<T extends IUpdaterEvents = IUpdaterEvents, E extends keyof T = keyof T>",
+      "returnType": [
+        "boolean"
+      ],
+      "visibility": "public",
+      "arguments": [
+        {
+          "name": "eventName",
+          "comment": "",
+          "type": [
+            "E"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "isAutoRefreshing",
+      "returnType": [],
+      "visibility": "public",
+      "arguments": []
+    },
+    {
+      "name": "isUpdating",
+      "returnType": [
+        "boolean"
+      ],
+      "visibility": "public",
+      "arguments": []
+    },
+    {
+      "name": "on<T extends IUpdaterEvents = IUpdaterEvents, E extends keyof T = keyof T>",
+      "returnType": [],
+      "visibility": "public",
+      "arguments": [
+        {
+          "name": "eventName",
+          "comment": "",
+          "type": [
+            "E"
+          ]
+        },
+        {
+          "name": "handler",
+          "comment": "",
+          "type": [
+            "T[E]"
+          ]
+        },
+        {
+          "name": "scope?",
+          "comment": "",
+          "type": [
+            "object"
+          ]
+        },
+        {
+          "name": "options?",
+          "comment": "",
+          "type": [
+            "object"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "refresh",
+      "returnType": [],
+      "visibility": "public",
+      "arguments": [
+        {
+          "name": "callback?",
+          "comment": "",
+          "type": [
+            "Function"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "removeListener<T extends IUpdaterEvents = IUpdaterEvents, E extends keyof T = keyof T>",
+      "returnType": [],
+      "visibility": "public",
+      "arguments": [
+        {
+          "name": "eventName",
+          "comment": "",
+          "type": [
+            "E"
+          ]
+        },
+        {
+          "name": "handler",
+          "comment": "",
+          "type": [
+            "T[E]"
+          ]
+        },
+        {
+          "name": "scope?",
+          "comment": "",
+          "type": [
+            "object"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "setDefaultUrl",
+      "returnType": [],
+      "visibility": "public",
+      "arguments": [
+        {
+          "name": "defaultUrl",
+          "comment": "",
+          "type": [
+            "string",
+            "Function"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "setRenderer",
+      "returnType": [],
+      "visibility": "public",
+      "arguments": [
+        {
+          "name": "renderer",
+          "comment": "",
+          "type": [
+            "object"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "showLoading",
+      "returnType": [],
+      "visibility": "public",
+      "arguments": []
+    },
+    {
+      "name": "startAutoRefresh",
+      "returnType": [],
+      "visibility": "public",
+      "arguments": [
+        {
+          "name": "interval",
+          "comment": "",
+          "type": [
+            "number"
+          ]
+        },
+        {
+          "name": "url?",
+          "comment": "",
+          "type": [
+            "string",
+            "object",
+            "Function"
+          ]
+        },
+        {
+          "name": "params?",
+          "comment": "",
+          "type": [
+            "string",
+            "object"
+          ]
+        },
+        {
+          "name": "callback?",
+          "comment": "",
+          "type": [
+            "Function"
+          ]
+        },
+        {
+          "name": "refreshNow?",
+          "comment": "",
+          "type": [
+            "boolean"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "stopAutoRefresh",
+      "returnType": [],
+      "visibility": "public",
+      "arguments": []
+    },
+    {
+      "name": "un<T extends IUpdaterEvents = IUpdaterEvents, E extends keyof T = keyof T>",
+      "returnType": [],
+      "visibility": "public",
+      "arguments": [
+        {
+          "name": "eventName",
+          "comment": "",
+          "type": [
+            "E"
+          ]
+        },
+        {
+          "name": "handler",
+          "comment": "",
+          "type": [
+            "T[E]"
+          ]
+        },
+        {
+          "name": "scope?",
+          "comment": "",
+          "type": [
+            "object"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "update",
+      "returnType": [],
+      "visibility": "public",
+      "arguments": [
+        {
+          "name": "options",
+          "comment": "",
+          "type": [
+            "object"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "updateElement",
+      "static": true,
+      "returnType": [],
+      "visibility": "public",
+      "arguments": [
+        {
+          "name": "el",
+          "comment": "",
+          "type": [
+            "unknown"
+          ]
+        },
+        {
+          "name": "url",
+          "comment": "",
+          "type": [
+            "string"
+          ]
+        },
+        {
+          "name": "params?",
+          "comment": "",
+          "type": [
+            "string",
+            "object"
+          ]
+        },
+        {
+          "name": "options?",
+          "comment": "",
+          "type": [
+            "object"
+          ]
+        }
+      ]
+    }
+  ],
+  "events": [
+    {
+      "name": "beforeupdate",
+      "arguments": [
+        {
+          "name": "el",
+          "comment": "",
+          "type": [
+            "Ext.Element"
+          ]
+        },
+        {
+          "name": "url",
+          "comment": "",
+          "type": [
+            "string",
+            "object",
+            "Function"
+          ]
+        },
+        {
+          "name": "params",
+          "comment": "",
+          "type": [
+            "string",
+            "object"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "failure",
+      "arguments": [
+        {
+          "name": "el",
+          "comment": "",
+          "type": [
+            "Ext.Element"
+          ]
+        },
+        {
+          "name": "oResponseObject",
+          "comment": "",
+          "type": [
+            "object"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "update",
+      "arguments": [
+        {
+          "name": "el",
+          "comment": "",
+          "type": [
+            "Ext.Element"
+          ]
+        },
+        {
+          "name": "oResponseObject",
+          "comment": "",
+          "type": [
+            "object"
+          ]
+        }
+      ]
+    }
+  ]
+}

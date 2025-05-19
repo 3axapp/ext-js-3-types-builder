@@ -1,0 +1,694 @@
+{
+  "name": "TreeNodeUI",
+  "namespace": "Ext.tree",
+  "extends": null,
+  "constructorMethod": null,
+  "properties": [],
+  "methods": [
+    {
+      "name": "addClass",
+      "returnType": [],
+      "visibility": "public",
+      "arguments": [
+        {
+          "name": "className",
+          "comment": "",
+          "type": [
+            "string",
+            "unknown[]"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "afterLoad",
+      "returnType": [],
+      "visibility": "private",
+      "arguments": []
+    },
+    {
+      "name": "animCollapse",
+      "returnType": [],
+      "visibility": "private",
+      "arguments": [
+        {
+          "name": "callback",
+          "comment": "",
+          "type": [
+            "object"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "animExpand",
+      "returnType": [],
+      "visibility": "private",
+      "arguments": [
+        {
+          "name": "callback",
+          "comment": "",
+          "type": [
+            "object"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "appendDDGhost",
+      "returnType": [],
+      "visibility": "private",
+      "arguments": [
+        {
+          "name": "ghostNode",
+          "comment": "",
+          "type": [
+            "object"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "beforeLoad",
+      "returnType": [],
+      "visibility": "private",
+      "arguments": []
+    },
+    {
+      "name": "blur",
+      "returnType": [],
+      "visibility": "private",
+      "arguments": []
+    },
+    {
+      "name": "collapse",
+      "returnType": [],
+      "visibility": "private",
+      "arguments": []
+    },
+    {
+      "name": "destroy",
+      "returnType": [],
+      "visibility": "private",
+      "arguments": []
+    },
+    {
+      "name": "ecClick",
+      "returnType": [],
+      "visibility": "private",
+      "arguments": [
+        {
+          "name": "e",
+          "comment": "",
+          "type": [
+            "object"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "endDrop",
+      "returnType": [],
+      "visibility": "private",
+      "arguments": []
+    },
+    {
+      "name": "expand",
+      "returnType": [],
+      "visibility": "private",
+      "arguments": []
+    },
+    {
+      "name": "fireEvent",
+      "returnType": [],
+      "visibility": "private",
+      "arguments": []
+    },
+    {
+      "name": "focus",
+      "returnType": [],
+      "visibility": "private",
+      "arguments": []
+    },
+    {
+      "name": "getAnchor",
+      "returnType": [
+        "HTMLElement"
+      ],
+      "visibility": "public",
+      "arguments": []
+    },
+    {
+      "name": "getChildIndent",
+      "returnType": [],
+      "visibility": "private",
+      "arguments": []
+    },
+    {
+      "name": "getContainer",
+      "returnType": [],
+      "visibility": "private",
+      "arguments": []
+    },
+    {
+      "name": "getDDHandles",
+      "returnType": [],
+      "visibility": "private",
+      "arguments": []
+    },
+    {
+      "name": "getDDRepairXY",
+      "returnType": [],
+      "visibility": "private",
+      "arguments": []
+    },
+    {
+      "name": "getEl",
+      "returnType": [
+        "HTMLElement"
+      ],
+      "visibility": "public",
+      "arguments": []
+    },
+    {
+      "name": "getHref",
+      "returnType": [],
+      "visibility": "private",
+      "arguments": [
+        {
+          "name": "href",
+          "comment": "",
+          "type": [
+            "string"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "getIconEl",
+      "returnType": [
+        "HTMLElement"
+      ],
+      "visibility": "public",
+      "arguments": []
+    },
+    {
+      "name": "getTextEl",
+      "returnType": [
+        "HtmlNode"
+      ],
+      "visibility": "public",
+      "arguments": []
+    },
+    {
+      "name": "hide",
+      "returnType": [],
+      "visibility": "public",
+      "arguments": []
+    },
+    {
+      "name": "highlight",
+      "returnType": [],
+      "visibility": "private",
+      "arguments": []
+    },
+    {
+      "name": "initEvents",
+      "returnType": [],
+      "visibility": "private",
+      "arguments": []
+    },
+    {
+      "name": "isChecked",
+      "returnType": [
+        "boolean"
+      ],
+      "visibility": "public",
+      "arguments": []
+    },
+    {
+      "name": "onCheckChange",
+      "returnType": [],
+      "visibility": "private",
+      "arguments": []
+    },
+    {
+      "name": "onClick",
+      "returnType": [],
+      "visibility": "private",
+      "arguments": [
+        {
+          "name": "e",
+          "comment": "",
+          "type": [
+            "object"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "onClsChange",
+      "returnType": [],
+      "visibility": "private",
+      "arguments": [
+        {
+          "name": "node",
+          "comment": "",
+          "type": [
+            "object"
+          ]
+        },
+        {
+          "name": "cls",
+          "comment": "",
+          "type": [
+            "object"
+          ]
+        },
+        {
+          "name": "oldCls",
+          "comment": "",
+          "type": [
+            "object"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "onContextMenu",
+      "returnType": [],
+      "visibility": "private",
+      "arguments": [
+        {
+          "name": "e",
+          "comment": "",
+          "type": [
+            "object"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "onDblClick",
+      "returnType": [],
+      "visibility": "private",
+      "arguments": [
+        {
+          "name": "e",
+          "comment": "",
+          "type": [
+            "object"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "onDisableChange",
+      "returnType": [],
+      "visibility": "private",
+      "arguments": [
+        {
+          "name": "node",
+          "comment": "",
+          "type": [
+            "object"
+          ]
+        },
+        {
+          "name": "state",
+          "comment": "",
+          "type": [
+            "object"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "onHrefChange",
+      "returnType": [],
+      "visibility": "private",
+      "arguments": [
+        {
+          "name": "node",
+          "comment": "",
+          "type": [
+            "object"
+          ]
+        },
+        {
+          "name": "href",
+          "comment": "",
+          "type": [
+            "object"
+          ]
+        },
+        {
+          "name": "target",
+          "comment": "",
+          "type": [
+            "object"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "onIconChange",
+      "returnType": [],
+      "visibility": "private",
+      "arguments": [
+        {
+          "name": "node",
+          "comment": "",
+          "type": [
+            "object"
+          ]
+        },
+        {
+          "name": "icon",
+          "comment": "",
+          "type": [
+            "object"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "onIconClsChange",
+      "returnType": [],
+      "visibility": "private",
+      "arguments": [
+        {
+          "name": "node",
+          "comment": "",
+          "type": [
+            "object"
+          ]
+        },
+        {
+          "name": "cls",
+          "comment": "",
+          "type": [
+            "object"
+          ]
+        },
+        {
+          "name": "oldCls",
+          "comment": "",
+          "type": [
+            "object"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "onIdChange",
+      "returnType": [],
+      "visibility": "private",
+      "arguments": [
+        {
+          "name": "id",
+          "comment": "",
+          "type": [
+            "object"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "onMove",
+      "returnType": [],
+      "visibility": "private",
+      "arguments": [
+        {
+          "name": "tree",
+          "comment": "",
+          "type": [
+            "object"
+          ]
+        },
+        {
+          "name": "node",
+          "comment": "",
+          "type": [
+            "object"
+          ]
+        },
+        {
+          "name": "oldParent",
+          "comment": "",
+          "type": [
+            "object"
+          ]
+        },
+        {
+          "name": "newParent",
+          "comment": "",
+          "type": [
+            "object"
+          ]
+        },
+        {
+          "name": "index",
+          "comment": "",
+          "type": [
+            "object"
+          ]
+        },
+        {
+          "name": "refNode",
+          "comment": "",
+          "type": [
+            "object"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "onOut",
+      "returnType": [],
+      "visibility": "private",
+      "arguments": [
+        {
+          "name": "e",
+          "comment": "",
+          "type": [
+            "object"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "onOver",
+      "returnType": [],
+      "visibility": "private",
+      "arguments": [
+        {
+          "name": "e",
+          "comment": "",
+          "type": [
+            "object"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "onRender",
+      "returnType": [],
+      "visibility": "private",
+      "arguments": []
+    },
+    {
+      "name": "onSelectedChange",
+      "returnType": [],
+      "visibility": "private",
+      "arguments": [
+        {
+          "name": "state",
+          "comment": "",
+          "type": [
+            "object"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "onTextChange",
+      "returnType": [],
+      "visibility": "private",
+      "arguments": [
+        {
+          "name": "node",
+          "comment": "",
+          "type": [
+            "object"
+          ]
+        },
+        {
+          "name": "text",
+          "comment": "",
+          "type": [
+            "object"
+          ]
+        },
+        {
+          "name": "oldText",
+          "comment": "",
+          "type": [
+            "object"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "onTipChange",
+      "returnType": [],
+      "visibility": "private",
+      "arguments": [
+        {
+          "name": "node",
+          "comment": "",
+          "type": [
+            "object"
+          ]
+        },
+        {
+          "name": "tip",
+          "comment": "",
+          "type": [
+            "object"
+          ]
+        },
+        {
+          "name": "title",
+          "comment": "",
+          "type": [
+            "object"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "remove",
+      "returnType": [],
+      "visibility": "private",
+      "arguments": []
+    },
+    {
+      "name": "removeChild",
+      "returnType": [],
+      "visibility": "private",
+      "arguments": [
+        {
+          "name": "node",
+          "comment": "",
+          "type": [
+            "object"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "removeClass",
+      "returnType": [],
+      "visibility": "public",
+      "arguments": [
+        {
+          "name": "className",
+          "comment": "",
+          "type": [
+            "string",
+            "unknown[]"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "render",
+      "returnType": [],
+      "visibility": "private",
+      "arguments": [
+        {
+          "name": "bulkRender",
+          "comment": "",
+          "type": [
+            "object"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "renderElements",
+      "returnType": [],
+      "visibility": "private",
+      "arguments": [
+        {
+          "name": "n",
+          "comment": "",
+          "type": [
+            "object"
+          ]
+        },
+        {
+          "name": "a",
+          "comment": "",
+          "type": [
+            "object"
+          ]
+        },
+        {
+          "name": "targetNode",
+          "comment": "",
+          "type": [
+            "object"
+          ]
+        },
+        {
+          "name": "bulkRender",
+          "comment": "",
+          "type": [
+            "object"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "renderIndent",
+      "returnType": [],
+      "visibility": "private",
+      "arguments": []
+    },
+    {
+      "name": "show",
+      "returnType": [],
+      "visibility": "public",
+      "arguments": []
+    },
+    {
+      "name": "startDrop",
+      "returnType": [],
+      "visibility": "private",
+      "arguments": []
+    },
+    {
+      "name": "toggleCheck",
+      "returnType": [],
+      "visibility": "public",
+      "arguments": [
+        {
+          "name": "value?",
+          "comment": "",
+          "type": [
+            "boolean"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "updateExpandIcon",
+      "returnType": [],
+      "visibility": "private",
+      "arguments": []
+    }
+  ],
+  "events": []
+}

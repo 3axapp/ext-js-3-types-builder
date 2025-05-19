@@ -1,0 +1,90 @@
+{
+  "name": "TimeAxis",
+  "namespace": "Ext.chart",
+  "extends": "Ext.chart.Axis",
+  "constructorMethod": null,
+  "properties": [
+    {
+      "name": "calculateByLabelSize",
+      "type": [
+        "boolean"
+      ],
+      "visibility": "public",
+      "comment": ""
+    },
+    {
+      "name": "majorTimeUnit",
+      "type": [
+        "string"
+      ],
+      "visibility": "public",
+      "comment": ""
+    },
+    {
+      "name": "majorUnit",
+      "type": [
+        "number"
+      ],
+      "visibility": "public",
+      "comment": ""
+    },
+    {
+      "name": "maximum",
+      "type": [
+        "number"
+      ],
+      "visibility": "public",
+      "comment": ""
+    },
+    {
+      "name": "minimum",
+      "type": [
+        "Date"
+      ],
+      "visibility": "public",
+      "comment": ""
+    },
+    {
+      "name": "minorTimeUnit",
+      "type": [
+        "string"
+      ],
+      "visibility": "public",
+      "comment": ""
+    },
+    {
+      "name": "minorUnit",
+      "type": [
+        "number"
+      ],
+      "visibility": "public",
+      "comment": ""
+    },
+    {
+      "name": "snapToUnits",
+      "type": [
+        "boolean"
+      ],
+      "visibility": "public",
+      "comment": ""
+    },
+    {
+      "name": "stackingEnabled",
+      "type": [
+        "boolean"
+      ],
+      "visibility": "public",
+      "comment": ""
+    },
+    {
+      "name": "type",
+      "type": [
+        "string"
+      ],
+      "visibility": "public",
+      "comment": ""
+    }
+  ],
+  "methods": [],
+  "events": []
+}

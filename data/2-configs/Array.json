@@ -1,0 +1,48 @@
+{
+  "name": "Array",
+  "namespace": "",
+  "constructorMethod": null,
+  "properties": [],
+  "methods": [
+    {
+      "name": "indexOf",
+      "returnType": [
+        "number"
+      ],
+      "visibility": "public",
+      "arguments": [
+        {
+          "name": "o",
+          "comment": "",
+          "type": [
+            "object"
+          ]
+        },
+        {
+          "name": "from?",
+          "comment": "",
+          "type": [
+            "number"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "remove",
+      "returnType": [
+        "this"
+      ],
+      "visibility": "public",
+      "arguments": [
+        {
+          "name": "o",
+          "comment": "",
+          "type": [
+            "object"
+          ]
+        }
+      ]
+    }
+  ],
+  "events": []
+}

@@ -1,0 +1,278 @@
+{
+  "name": "Scroller",
+  "namespace": "Ext.layout.boxOverflow",
+  "extends": "Ext.layout.boxOverflow.None",
+  "constructorMethod": {
+    "config": [
+      {
+        "name": "afterCls?",
+        "type": [
+          "string"
+        ],
+        "comment": ""
+      },
+      {
+        "name": "afterScrollerCls?",
+        "type": [
+          "string"
+        ],
+        "comment": ""
+      },
+      {
+        "name": "animateScroll?",
+        "type": [
+          "boolean"
+        ],
+        "comment": ""
+      },
+      {
+        "name": "beforeCls?",
+        "type": [
+          "string"
+        ],
+        "comment": ""
+      },
+      {
+        "name": "beforeScrollerCls?",
+        "type": [
+          "string"
+        ],
+        "comment": ""
+      },
+      {
+        "name": "scrollDuration?",
+        "type": [
+          "number"
+        ],
+        "comment": ""
+      },
+      {
+        "name": "scrollIncrement?",
+        "type": [
+          "number"
+        ],
+        "comment": ""
+      },
+      {
+        "name": "scrollRepeatInterval?",
+        "type": [
+          "number"
+        ],
+        "comment": ""
+      },
+      {
+        "name": "scrollerCls?",
+        "type": [
+          "string"
+        ],
+        "comment": ""
+      },
+      {
+        "name": "wheelIncrement?",
+        "type": [
+          "number"
+        ],
+        "comment": ""
+      }
+    ]
+  },
+  "properties": [
+    {
+      "name": "afterScroller",
+      "type": [
+        "Ext.Element"
+      ],
+      "visibility": "public",
+      "comment": ""
+    },
+    {
+      "name": "beforeScroller",
+      "type": [
+        "Ext.Element"
+      ],
+      "visibility": "public",
+      "comment": ""
+    }
+  ],
+  "methods": [
+    {
+      "name": "atExtremeBefore",
+      "returnType": [
+        "boolean"
+      ],
+      "visibility": "private",
+      "arguments": []
+    },
+    {
+      "name": "clearOverflow",
+      "returnType": [],
+      "visibility": "private",
+      "arguments": []
+    },
+    {
+      "name": "createScrollers",
+      "returnType": [],
+      "visibility": "private",
+      "arguments": []
+    },
+    {
+      "name": "createWheelListener",
+      "returnType": [],
+      "visibility": "private",
+      "arguments": []
+    },
+    {
+      "name": "destroy",
+      "returnType": [],
+      "visibility": "private",
+      "arguments": []
+    },
+    {
+      "name": "getItem",
+      "returnType": [
+        "Ext.Component"
+      ],
+      "visibility": "private",
+      "arguments": [
+        {
+          "name": "item",
+          "comment": "",
+          "type": [
+            "Ext.Component",
+            "string",
+            "number"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "getItemVisibility",
+      "returnType": [
+        "object"
+      ],
+      "visibility": "private",
+      "arguments": [
+        {
+          "name": "item",
+          "comment": "",
+          "type": [
+            "Ext.Component"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "getScrollAnim",
+      "returnType": [
+        "object"
+      ],
+      "visibility": "private",
+      "arguments": []
+    },
+    {
+      "name": "handleOverflow",
+      "returnType": [],
+      "visibility": "private",
+      "arguments": [
+        {
+          "name": "calculations",
+          "comment": "",
+          "type": [
+            "object"
+          ]
+        },
+        {
+          "name": "targetSize",
+          "comment": "",
+          "type": [
+            "object"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "hideScrollers",
+      "returnType": [],
+      "visibility": "private",
+      "arguments": []
+    },
+    {
+      "name": "scrollBy",
+      "returnType": [],
+      "visibility": "private",
+      "arguments": [
+        {
+          "name": "delta",
+          "comment": "",
+          "type": [
+            "number"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "scrollLeft",
+      "returnType": [],
+      "visibility": "private",
+      "arguments": [
+        {
+          "name": "animate",
+          "comment": "",
+          "type": [
+            "object"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "scrollRight",
+      "returnType": [],
+      "visibility": "private",
+      "arguments": [
+        {
+          "name": "animate",
+          "comment": "",
+          "type": [
+            "object"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "scrollToItem",
+      "returnType": [],
+      "visibility": "public",
+      "arguments": [
+        {
+          "name": "item",
+          "comment": "",
+          "type": [
+            "string",
+            "number",
+            "Ext.Component"
+          ]
+        },
+        {
+          "name": "animate",
+          "comment": "",
+          "type": [
+            "boolean"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "showScrollers",
+      "returnType": [],
+      "visibility": "private",
+      "arguments": []
+    },
+    {
+      "name": "updateScrollButtons",
+      "returnType": [],
+      "visibility": "private",
+      "arguments": []
+    }
+  ],
+  "events": []
+}

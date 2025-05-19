@@ -1,0 +1,22 @@
+{
+  "name": "None",
+  "namespace": "Ext.layout.boxOverflow",
+  "extends": null,
+  "constructorMethod": null,
+  "properties": [],
+  "methods": [
+    {
+      "name": "clearOverflow",
+      "returnType": [],
+      "visibility": "private",
+      "arguments": []
+    },
+    {
+      "name": "handleOverflow",
+      "returnType": [],
+      "visibility": "private",
+      "arguments": []
+    }
+  ],
+  "events": []
+}

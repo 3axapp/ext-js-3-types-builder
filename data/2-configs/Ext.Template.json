@@ -1,0 +1,309 @@
+{
+  "name": "Template",
+  "namespace": "Ext",
+  "extends": null,
+  "constructorMethod": {
+    "config": [
+      {
+        "name": "compiled?",
+        "type": [
+          "boolean"
+        ],
+        "comment": ""
+      },
+      {
+        "name": "disableFormats?",
+        "type": [
+          "boolean"
+        ],
+        "comment": ""
+      },
+      {
+        "name": "re?",
+        "type": [
+          "RegExp"
+        ],
+        "comment": ""
+      }
+    ]
+  },
+  "properties": [
+    {
+      "name": "disableFormats",
+      "type": [
+        "boolean"
+      ],
+      "visibility": "public",
+      "comment": ""
+    },
+    {
+      "name": "html",
+      "type": [
+        "object"
+      ],
+      "visibility": "private",
+      "comment": ""
+    },
+    {
+      "name": "re",
+      "type": [
+        "RegExp"
+      ],
+      "visibility": "public",
+      "comment": ""
+    }
+  ],
+  "methods": [
+    {
+      "name": "append",
+      "returnType": [
+        "HTMLElement",
+        "Ext.Element"
+      ],
+      "visibility": "public",
+      "arguments": [
+        {
+          "name": "el",
+          "comment": "",
+          "type": [
+            "unknown"
+          ]
+        },
+        {
+          "name": "values",
+          "comment": "",
+          "type": [
+            "object",
+            "unknown[]"
+          ]
+        },
+        {
+          "name": "returnElement?",
+          "comment": "",
+          "type": [
+            "boolean"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "apply",
+      "returnType": [
+        "string"
+      ],
+      "visibility": "public",
+      "arguments": [
+        {
+          "name": "values",
+          "comment": "",
+          "type": [
+            "object",
+            "unknown[]"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "applyTemplate",
+      "returnType": [
+        "string"
+      ],
+      "visibility": "public",
+      "arguments": [
+        {
+          "name": "values",
+          "comment": "",
+          "type": [
+            "object",
+            "unknown[]"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "compile",
+      "returnType": [
+        "this"
+      ],
+      "visibility": "public",
+      "arguments": []
+    },
+    {
+      "name": "insertAfter",
+      "returnType": [
+        "HTMLElement",
+        "Ext.Element"
+      ],
+      "visibility": "public",
+      "arguments": [
+        {
+          "name": "el",
+          "comment": "",
+          "type": [
+            "unknown"
+          ]
+        },
+        {
+          "name": "values",
+          "comment": "",
+          "type": [
+            "object",
+            "unknown[]"
+          ]
+        },
+        {
+          "name": "returnElement?",
+          "comment": "",
+          "type": [
+            "boolean"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "insertBefore",
+      "returnType": [
+        "HTMLElement",
+        "Ext.Element"
+      ],
+      "visibility": "public",
+      "arguments": [
+        {
+          "name": "el",
+          "comment": "",
+          "type": [
+            "unknown"
+          ]
+        },
+        {
+          "name": "values",
+          "comment": "",
+          "type": [
+            "object",
+            "unknown[]"
+          ]
+        },
+        {
+          "name": "returnElement?",
+          "comment": "",
+          "type": [
+            "boolean"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "insertFirst",
+      "returnType": [
+        "HTMLElement",
+        "Ext.Element"
+      ],
+      "visibility": "public",
+      "arguments": [
+        {
+          "name": "el",
+          "comment": "",
+          "type": [
+            "unknown"
+          ]
+        },
+        {
+          "name": "values",
+          "comment": "",
+          "type": [
+            "object",
+            "unknown[]"
+          ]
+        },
+        {
+          "name": "returnElement?",
+          "comment": "",
+          "type": [
+            "boolean"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "overwrite",
+      "returnType": [
+        "HTMLElement",
+        "Ext.Element"
+      ],
+      "visibility": "public",
+      "arguments": [
+        {
+          "name": "el",
+          "comment": "",
+          "type": [
+            "unknown"
+          ]
+        },
+        {
+          "name": "values",
+          "comment": "",
+          "type": [
+            "object",
+            "unknown[]"
+          ]
+        },
+        {
+          "name": "returnElement?",
+          "comment": "",
+          "type": [
+            "boolean"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "set",
+      "returnType": [
+        "this"
+      ],
+      "visibility": "public",
+      "arguments": [
+        {
+          "name": "html",
+          "comment": "",
+          "type": [
+            "string"
+          ]
+        },
+        {
+          "name": "compile?",
+          "comment": "",
+          "type": [
+            "boolean"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "from",
+      "static": true,
+      "returnType": [
+        "Ext.Template"
+      ],
+      "visibility": "public",
+      "arguments": [
+        {
+          "name": "el",
+          "comment": "",
+          "type": [
+            "string",
+            "HTMLElement"
+          ]
+        },
+        {
+          "name": "config",
+          "comment": "",
+          "type": [
+            "object"
+          ]
+        }
+      ]
+    }
+  ],
+  "events": []
+}

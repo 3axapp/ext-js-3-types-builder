@@ -1,0 +1,317 @@
+{
+  "name": "PropertyStore",
+  "namespace": "Ext.grid",
+  "extends": "Ext.util.Observable",
+  "constructorMethod": {
+    "config": [
+      {
+        "name": "listeners?",
+        "type": [
+          "object"
+        ],
+        "comment": ""
+      }
+    ]
+  },
+  "properties": [],
+  "methods": [
+    {
+      "name": "addListener",
+      "returnType": [],
+      "visibility": "public",
+      "arguments": [
+        {
+          "name": "eventName",
+          "comment": "",
+          "type": [
+            "string"
+          ]
+        },
+        {
+          "name": "handler",
+          "comment": "",
+          "type": [
+            "Function"
+          ]
+        },
+        {
+          "name": "scope?",
+          "comment": "",
+          "type": [
+            "object"
+          ]
+        },
+        {
+          "name": "options?",
+          "comment": "",
+          "type": [
+            "object"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "fireEvent",
+      "returnType": [
+        "boolean"
+      ],
+      "visibility": "public",
+      "arguments": [
+        {
+          "name": "eventName",
+          "comment": "",
+          "type": [
+            "string"
+          ]
+        },
+        {
+          "name": "...args",
+          "comment": "",
+          "type": [
+            "object[]"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "getProperty",
+      "returnType": [],
+      "visibility": "private",
+      "arguments": [
+        {
+          "name": "row",
+          "comment": "",
+          "type": [
+            "object"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "getRec",
+      "returnType": [],
+      "visibility": "private",
+      "arguments": [
+        {
+          "name": "prop",
+          "comment": "",
+          "type": [
+            "object"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "getSource",
+      "returnType": [],
+      "visibility": "private",
+      "arguments": []
+    },
+    {
+      "name": "hasListener",
+      "returnType": [
+        "boolean"
+      ],
+      "visibility": "public",
+      "arguments": [
+        {
+          "name": "eventName",
+          "comment": "",
+          "type": [
+            "string"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "isEditableValue",
+      "returnType": [],
+      "visibility": "private",
+      "arguments": [
+        {
+          "name": "val",
+          "comment": "",
+          "type": [
+            "object"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "on",
+      "returnType": [],
+      "visibility": "public",
+      "arguments": [
+        {
+          "name": "eventName",
+          "comment": "",
+          "type": [
+            "string"
+          ]
+        },
+        {
+          "name": "handler",
+          "comment": "",
+          "type": [
+            "Function"
+          ]
+        },
+        {
+          "name": "scope?",
+          "comment": "",
+          "type": [
+            "object"
+          ]
+        },
+        {
+          "name": "options?",
+          "comment": "",
+          "type": [
+            "object"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "onUpdate",
+      "returnType": [],
+      "visibility": "private",
+      "arguments": [
+        {
+          "name": "ds",
+          "comment": "",
+          "type": [
+            "object"
+          ]
+        },
+        {
+          "name": "record",
+          "comment": "",
+          "type": [
+            "object"
+          ]
+        },
+        {
+          "name": "type",
+          "comment": "",
+          "type": [
+            "object"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "remove",
+      "returnType": [],
+      "visibility": "private",
+      "arguments": [
+        {
+          "name": "prop",
+          "comment": "",
+          "type": [
+            "object"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "removeListener",
+      "returnType": [],
+      "visibility": "public",
+      "arguments": [
+        {
+          "name": "eventName",
+          "comment": "",
+          "type": [
+            "string"
+          ]
+        },
+        {
+          "name": "handler",
+          "comment": "",
+          "type": [
+            "Function"
+          ]
+        },
+        {
+          "name": "scope?",
+          "comment": "",
+          "type": [
+            "object"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "setSource",
+      "returnType": [],
+      "visibility": "private",
+      "arguments": [
+        {
+          "name": "o",
+          "comment": "",
+          "type": [
+            "object"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "setValue",
+      "returnType": [],
+      "visibility": "private",
+      "arguments": [
+        {
+          "name": "prop",
+          "comment": "",
+          "type": [
+            "object"
+          ]
+        },
+        {
+          "name": "value",
+          "comment": "",
+          "type": [
+            "object"
+          ]
+        },
+        {
+          "name": "create",
+          "comment": "",
+          "type": [
+            "object"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "un",
+      "returnType": [],
+      "visibility": "public",
+      "arguments": [
+        {
+          "name": "eventName",
+          "comment": "",
+          "type": [
+            "string"
+          ]
+        },
+        {
+          "name": "handler",
+          "comment": "",
+          "type": [
+            "Function"
+          ]
+        },
+        {
+          "name": "scope?",
+          "comment": "",
+          "type": [
+            "object"
+          ]
+        }
+      ]
+    }
+  ],
+  "events": []
+}

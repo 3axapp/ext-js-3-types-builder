@@ -1,0 +1,766 @@
+{
+  "name": "PivotGridView",
+  "namespace": "Ext.grid",
+  "extends": "Ext.grid.GridView",
+  "constructorMethod": {
+    "config": [
+      {
+        "name": "autoFill?",
+        "type": [
+          "boolean"
+        ],
+        "comment": ""
+      },
+      {
+        "name": "cellSelector?",
+        "type": [
+          "string"
+        ],
+        "comment": ""
+      },
+      {
+        "name": "cellSelectorDepth?",
+        "type": [
+          "number"
+        ],
+        "comment": ""
+      },
+      {
+        "name": "columnsText?",
+        "type": [
+          "string"
+        ],
+        "comment": ""
+      },
+      {
+        "name": "deferEmptyText?",
+        "type": [
+          "boolean"
+        ],
+        "comment": ""
+      },
+      {
+        "name": "emptyText?",
+        "type": [
+          "string"
+        ],
+        "comment": ""
+      },
+      {
+        "name": "enableRowBody?",
+        "type": [
+          "boolean"
+        ],
+        "comment": ""
+      },
+      {
+        "name": "forceFit?",
+        "type": [
+          "boolean"
+        ],
+        "comment": ""
+      },
+      {
+        "name": "getCellCls?",
+        "type": [
+          "Function"
+        ],
+        "comment": ""
+      },
+      {
+        "name": "headerMenuOpenCls?",
+        "type": [
+          "string"
+        ],
+        "comment": ""
+      },
+      {
+        "name": "headersDisabled?",
+        "type": [
+          "boolean"
+        ],
+        "comment": ""
+      },
+      {
+        "name": "hideSortIcons?",
+        "type": [
+          "boolean"
+        ],
+        "comment": ""
+      },
+      {
+        "name": "listeners?",
+        "type": [
+          "object"
+        ],
+        "comment": ""
+      },
+      {
+        "name": "markDirty?",
+        "type": [
+          "boolean"
+        ],
+        "comment": ""
+      },
+      {
+        "name": "rowBodySelector?",
+        "type": [
+          "string"
+        ],
+        "comment": ""
+      },
+      {
+        "name": "rowBodySelectorDepth?",
+        "type": [
+          "number"
+        ],
+        "comment": ""
+      },
+      {
+        "name": "rowOverCls?",
+        "type": [
+          "string"
+        ],
+        "comment": ""
+      },
+      {
+        "name": "rowSelector?",
+        "type": [
+          "string"
+        ],
+        "comment": ""
+      },
+      {
+        "name": "rowSelectorDepth?",
+        "type": [
+          "number"
+        ],
+        "comment": ""
+      },
+      {
+        "name": "scrollOffset?",
+        "type": [
+          "number"
+        ],
+        "comment": ""
+      },
+      {
+        "name": "selectedRowClass?",
+        "type": [
+          "string"
+        ],
+        "comment": ""
+      },
+      {
+        "name": "sortAscText?",
+        "type": [
+          "string"
+        ],
+        "comment": ""
+      },
+      {
+        "name": "sortClasses?",
+        "type": [
+          "unknown[]"
+        ],
+        "comment": ""
+      },
+      {
+        "name": "sortDescText?",
+        "type": [
+          "string"
+        ],
+        "comment": ""
+      },
+      {
+        "name": "title?",
+        "type": [
+          "string"
+        ],
+        "comment": ""
+      }
+    ]
+  },
+  "properties": [
+    {
+      "name": "Ext",
+      "type": [
+        "masterTpl"
+      ],
+      "visibility": "public",
+      "comment": ""
+    },
+    {
+      "name": "colHeaderCellCls",
+      "type": [
+        "string"
+      ],
+      "visibility": "public",
+      "comment": ""
+    },
+    {
+      "name": "headerTitleEl",
+      "type": [
+        "Ext.Element"
+      ],
+      "visibility": "public",
+      "comment": ""
+    },
+    {
+      "name": "rowHeadersEl",
+      "type": [
+        "Ext.Element"
+      ],
+      "visibility": "public",
+      "comment": ""
+    }
+  ],
+  "methods": [
+    {
+      "name": "addListener<T extends IPivotGridViewEvents = IPivotGridViewEvents, E extends keyof T = keyof T>",
+      "returnType": [],
+      "visibility": "public",
+      "arguments": [
+        {
+          "name": "eventName",
+          "comment": "",
+          "type": [
+            "E"
+          ]
+        },
+        {
+          "name": "handler",
+          "comment": "",
+          "type": [
+            "T[E]"
+          ]
+        },
+        {
+          "name": "scope?",
+          "comment": "",
+          "type": [
+            "object"
+          ]
+        },
+        {
+          "name": "options?",
+          "comment": "",
+          "type": [
+            "object"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "fireEvent<T extends IPivotGridViewEvents = IPivotGridViewEvents, E extends keyof T = keyof T>",
+      "returnType": [
+        "boolean"
+      ],
+      "visibility": "public",
+      "arguments": [
+        {
+          "name": "eventName",
+          "comment": "",
+          "type": [
+            "E"
+          ]
+        },
+        {
+          "name": "...args",
+          "comment": "",
+          "type": [
+            "Parameters<T[E]>"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "fitColumns",
+      "returnType": [],
+      "visibility": "private",
+      "arguments": []
+    },
+    {
+      "name": "getCellIndex",
+      "returnType": [],
+      "visibility": "private",
+      "arguments": [
+        {
+          "name": "el",
+          "comment": "",
+          "type": [
+            "HTMLElement"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "getColumnHeaders",
+      "returnType": [
+        "unknown[]"
+      ],
+      "visibility": "public",
+      "arguments": []
+    },
+    {
+      "name": "getGridInnerWidth",
+      "returnType": [],
+      "visibility": "private",
+      "arguments": []
+    },
+    {
+      "name": "getRowHeaders",
+      "returnType": [
+        "unknown[]"
+      ],
+      "visibility": "public",
+      "arguments": []
+    },
+    {
+      "name": "getTotalColumnHeaderHeight",
+      "returnType": [
+        "number"
+      ],
+      "visibility": "private",
+      "arguments": []
+    },
+    {
+      "name": "getTotalRowHeaderWidth",
+      "returnType": [
+        "number"
+      ],
+      "visibility": "public",
+      "arguments": []
+    },
+    {
+      "name": "hasListener<T extends IPivotGridViewEvents = IPivotGridViewEvents, E extends keyof T = keyof T>",
+      "returnType": [
+        "boolean"
+      ],
+      "visibility": "public",
+      "arguments": [
+        {
+          "name": "eventName",
+          "comment": "",
+          "type": [
+            "E"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "initElements",
+      "returnType": [],
+      "visibility": "private",
+      "arguments": []
+    },
+    {
+      "name": "initTemplates",
+      "returnType": [],
+      "visibility": "private",
+      "arguments": []
+    },
+    {
+      "name": "isMenuDisabled",
+      "returnType": [],
+      "visibility": "private",
+      "arguments": [
+        {
+          "name": "cellIndex",
+          "comment": "",
+          "type": [
+            "object"
+          ]
+        },
+        {
+          "name": "el",
+          "comment": "",
+          "type": [
+            "object"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "on<T extends IPivotGridViewEvents = IPivotGridViewEvents, E extends keyof T = keyof T>",
+      "returnType": [],
+      "visibility": "public",
+      "arguments": [
+        {
+          "name": "eventName",
+          "comment": "",
+          "type": [
+            "E"
+          ]
+        },
+        {
+          "name": "handler",
+          "comment": "",
+          "type": [
+            "T[E]"
+          ]
+        },
+        {
+          "name": "scope?",
+          "comment": "",
+          "type": [
+            "object"
+          ]
+        },
+        {
+          "name": "options?",
+          "comment": "",
+          "type": [
+            "object"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "onLayout",
+      "returnType": [],
+      "visibility": "private",
+      "arguments": [
+        {
+          "name": "width",
+          "comment": "",
+          "type": [
+            "object"
+          ]
+        },
+        {
+          "name": "height",
+          "comment": "",
+          "type": [
+            "object"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "refresh",
+      "returnType": [],
+      "visibility": "public",
+      "arguments": [
+        {
+          "name": "headersToo?",
+          "comment": "",
+          "type": [
+            "boolean"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "removeListener<T extends IPivotGridViewEvents = IPivotGridViewEvents, E extends keyof T = keyof T>",
+      "returnType": [],
+      "visibility": "public",
+      "arguments": [
+        {
+          "name": "eventName",
+          "comment": "",
+          "type": [
+            "E"
+          ]
+        },
+        {
+          "name": "handler",
+          "comment": "",
+          "type": [
+            "T[E]"
+          ]
+        },
+        {
+          "name": "scope?",
+          "comment": "",
+          "type": [
+            "object"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "renderGroupColumnHeaders",
+      "returnType": [],
+      "visibility": "private",
+      "arguments": []
+    },
+    {
+      "name": "renderGroupRowHeaders",
+      "returnType": [],
+      "visibility": "private",
+      "arguments": []
+    },
+    {
+      "name": "renderHeaders",
+      "returnType": [],
+      "visibility": "private",
+      "arguments": []
+    },
+    {
+      "name": "renderRows",
+      "returnType": [],
+      "visibility": "private",
+      "arguments": [
+        {
+          "name": "startRow",
+          "comment": "",
+          "type": [
+            "number"
+          ]
+        },
+        {
+          "name": "endRow",
+          "comment": "",
+          "type": [
+            "number"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "renderUI",
+      "returnType": [],
+      "visibility": "private",
+      "arguments": []
+    },
+    {
+      "name": "resizeAllRows",
+      "returnType": [],
+      "visibility": "private",
+      "arguments": [
+        {
+          "name": "width",
+          "comment": "",
+          "type": [
+            "number"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "resizeColumnHeaders",
+      "returnType": [],
+      "visibility": "private",
+      "arguments": [
+        {
+          "name": "width",
+          "comment": "",
+          "type": [
+            "number"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "resizeRowHeaders",
+      "returnType": [],
+      "visibility": "private",
+      "arguments": []
+    },
+    {
+      "name": "setTitle",
+      "returnType": [],
+      "visibility": "public",
+      "arguments": [
+        {
+          "name": "title",
+          "comment": "",
+          "type": [
+            "string"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "un<T extends IPivotGridViewEvents = IPivotGridViewEvents, E extends keyof T = keyof T>",
+      "returnType": [],
+      "visibility": "public",
+      "arguments": [
+        {
+          "name": "eventName",
+          "comment": "",
+          "type": [
+            "E"
+          ]
+        },
+        {
+          "name": "handler",
+          "comment": "",
+          "type": [
+            "T[E]"
+          ]
+        },
+        {
+          "name": "scope?",
+          "comment": "",
+          "type": [
+            "object"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "updateHeaders",
+      "returnType": [],
+      "visibility": "private",
+      "arguments": []
+    }
+  ],
+  "events": [
+    {
+      "name": "beforerefresh",
+      "arguments": [
+        {
+          "name": "view",
+          "comment": "",
+          "type": [
+            "Ext.grid.GridView"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "beforerowremoved",
+      "arguments": [
+        {
+          "name": "view",
+          "comment": "",
+          "type": [
+            "Ext.grid.GridView"
+          ]
+        },
+        {
+          "name": "rowIndex",
+          "comment": "",
+          "type": [
+            "number"
+          ]
+        },
+        {
+          "name": "record",
+          "comment": "",
+          "type": [
+            "Ext.data.Record"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "beforerowsinserted",
+      "arguments": [
+        {
+          "name": "view",
+          "comment": "",
+          "type": [
+            "Ext.grid.GridView"
+          ]
+        },
+        {
+          "name": "firstRow",
+          "comment": "",
+          "type": [
+            "number"
+          ]
+        },
+        {
+          "name": "lastRow",
+          "comment": "",
+          "type": [
+            "number"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "refresh",
+      "arguments": [
+        {
+          "name": "view",
+          "comment": "",
+          "type": [
+            "Ext.grid.GridView"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "rowremoved",
+      "arguments": [
+        {
+          "name": "view",
+          "comment": "",
+          "type": [
+            "Ext.grid.GridView"
+          ]
+        },
+        {
+          "name": "rowIndex",
+          "comment": "",
+          "type": [
+            "number"
+          ]
+        },
+        {
+          "name": "record",
+          "comment": "",
+          "type": [
+            "Ext.data.Record"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "rowsinserted",
+      "arguments": [
+        {
+          "name": "view",
+          "comment": "",
+          "type": [
+            "Ext.grid.GridView"
+          ]
+        },
+        {
+          "name": "firstRow",
+          "comment": "",
+          "type": [
+            "number"
+          ]
+        },
+        {
+          "name": "lastRow",
+          "comment": "",
+          "type": [
+            "number"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "rowupdated",
+      "arguments": [
+        {
+          "name": "view",
+          "comment": "",
+          "type": [
+            "Ext.grid.GridView"
+          ]
+        },
+        {
+          "name": "firstRow",
+          "comment": "",
+          "type": [
+            "number"
+          ]
+        },
+        {
+          "name": "record",
+          "comment": "",
+          "type": [
+            "Ext.data.record"
+          ]
+        }
+      ]
+    }
+  ]
+}

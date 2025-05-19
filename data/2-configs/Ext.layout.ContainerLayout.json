@@ -1,0 +1,291 @@
+{
+  "name": "ContainerLayout",
+  "namespace": "Ext.layout",
+  "extends": null,
+  "constructorMethod": {
+    "config": [
+      {
+        "name": "extraCls?",
+        "type": [
+          "string"
+        ],
+        "comment": ""
+      },
+      {
+        "name": "renderHidden?",
+        "type": [
+          "boolean"
+        ],
+        "comment": ""
+      }
+    ]
+  },
+  "properties": [
+    {
+      "name": "activeItem",
+      "type": [
+        "object"
+      ],
+      "visibility": "private",
+      "comment": ""
+    },
+    {
+      "name": "fieldTpl",
+      "type": [
+        "Ext.Template"
+      ],
+      "visibility": "public",
+      "comment": ""
+    },
+    {
+      "name": "getLayoutTargetSize",
+      "type": [
+        "object"
+      ],
+      "visibility": "private",
+      "comment": ""
+    },
+    {
+      "name": "monitorResize",
+      "type": [
+        "boolean"
+      ],
+      "visibility": "private",
+      "comment": ""
+    },
+    {
+      "name": "type",
+      "type": [
+        "string"
+      ],
+      "visibility": "private",
+      "comment": ""
+    }
+  ],
+  "methods": [
+    {
+      "name": "IEMeasureHack",
+      "returnType": [],
+      "visibility": "private",
+      "arguments": [
+        {
+          "name": "target",
+          "comment": "",
+          "type": [
+            "object"
+          ]
+        },
+        {
+          "name": "viewFlag",
+          "comment": "",
+          "type": [
+            "object"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "afterRemove",
+      "returnType": [],
+      "visibility": "private",
+      "arguments": [
+        {
+          "name": "c",
+          "comment": "",
+          "type": [
+            "object"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "configureItem",
+      "returnType": [],
+      "visibility": "private",
+      "arguments": [
+        {
+          "name": "c",
+          "comment": "",
+          "type": [
+            "object"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "destroy",
+      "returnType": [],
+      "visibility": "private",
+      "arguments": []
+    },
+    {
+      "name": "getRenderedItems",
+      "returnType": [],
+      "visibility": "private",
+      "arguments": [
+        {
+          "name": "ct",
+          "comment": "",
+          "type": [
+            "object"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "isValidParent",
+      "returnType": [],
+      "visibility": "private",
+      "arguments": [
+        {
+          "name": "c",
+          "comment": "",
+          "type": [
+            "object"
+          ]
+        },
+        {
+          "name": "target",
+          "comment": "",
+          "type": [
+            "object"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "layout",
+      "returnType": [],
+      "visibility": "private",
+      "arguments": []
+    },
+    {
+      "name": "onLayout",
+      "returnType": [],
+      "visibility": "private",
+      "arguments": [
+        {
+          "name": "ct",
+          "comment": "",
+          "type": [
+            "object"
+          ]
+        },
+        {
+          "name": "target",
+          "comment": "",
+          "type": [
+            "object"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "onRemove",
+      "returnType": [],
+      "visibility": "private",
+      "arguments": [
+        {
+          "name": "c",
+          "comment": "",
+          "type": [
+            "object"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "onResize",
+      "returnType": [],
+      "visibility": "private",
+      "arguments": []
+    },
+    {
+      "name": "parseMargins",
+      "returnType": [
+        "object"
+      ],
+      "visibility": "public",
+      "arguments": [
+        {
+          "name": "v",
+          "comment": "",
+          "type": [
+            "number",
+            "string"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "renderAll",
+      "returnType": [],
+      "visibility": "private",
+      "arguments": [
+        {
+          "name": "ct",
+          "comment": "",
+          "type": [
+            "object"
+          ]
+        },
+        {
+          "name": "target",
+          "comment": "",
+          "type": [
+            "object"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "renderItem",
+      "returnType": [],
+      "visibility": "private",
+      "arguments": [
+        {
+          "name": "c",
+          "comment": "",
+          "type": [
+            "Ext.Component"
+          ]
+        },
+        {
+          "name": "position",
+          "comment": "",
+          "type": [
+            "number"
+          ]
+        },
+        {
+          "name": "target",
+          "comment": "",
+          "type": [
+            "Ext.Element"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "runLayout",
+      "returnType": [],
+      "visibility": "private",
+      "arguments": []
+    },
+    {
+      "name": "setContainer",
+      "returnType": [],
+      "visibility": "private",
+      "arguments": [
+        {
+          "name": "ct",
+          "comment": "",
+          "type": [
+            "object"
+          ]
+        }
+      ]
+    }
+  ],
+  "events": []
+}

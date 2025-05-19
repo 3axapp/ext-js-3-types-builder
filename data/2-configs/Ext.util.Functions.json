@@ -1,0 +1,152 @@
+{
+  "name": "Functions",
+  "namespace": "Ext.util",
+  "constructorMethod": null,
+  "properties": [],
+  "methods": [
+    {
+      "name": "createDelegate",
+      "returnType": [
+        "Function"
+      ],
+      "visibility": "public",
+      "arguments": [
+        {
+          "name": "fn",
+          "comment": "",
+          "type": [
+            "Function"
+          ]
+        },
+        {
+          "name": "scope?",
+          "comment": "",
+          "type": [
+            "object"
+          ]
+        },
+        {
+          "name": "args?",
+          "comment": "",
+          "type": [
+            "unknown[]"
+          ]
+        },
+        {
+          "name": "appendArgs?",
+          "comment": "",
+          "type": [
+            "boolean",
+            "number"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "createInterceptor",
+      "returnType": [
+        "Function"
+      ],
+      "visibility": "public",
+      "arguments": [
+        {
+          "name": "origFn",
+          "comment": "",
+          "type": [
+            "Function"
+          ]
+        },
+        {
+          "name": "newFn",
+          "comment": "",
+          "type": [
+            "Function"
+          ]
+        },
+        {
+          "name": "scope?",
+          "comment": "",
+          "type": [
+            "object"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "createSequence",
+      "returnType": [
+        "Function"
+      ],
+      "visibility": "public",
+      "arguments": [
+        {
+          "name": "origFn",
+          "comment": "",
+          "type": [
+            "Function"
+          ]
+        },
+        {
+          "name": "newFn",
+          "comment": "",
+          "type": [
+            "Function"
+          ]
+        },
+        {
+          "name": "scope?",
+          "comment": "",
+          "type": [
+            "object"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "defer",
+      "returnType": [
+        "number"
+      ],
+      "visibility": "public",
+      "arguments": [
+        {
+          "name": "fn",
+          "comment": "",
+          "type": [
+            "Function"
+          ]
+        },
+        {
+          "name": "millis",
+          "comment": "",
+          "type": [
+            "number"
+          ]
+        },
+        {
+          "name": "scope?",
+          "comment": "",
+          "type": [
+            "object"
+          ]
+        },
+        {
+          "name": "args?",
+          "comment": "",
+          "type": [
+            "unknown[]"
+          ]
+        },
+        {
+          "name": "appendArgs?",
+          "comment": "",
+          "type": [
+            "boolean",
+            "number"
+          ]
+        }
+      ]
+    }
+  ],
+  "events": []
+}

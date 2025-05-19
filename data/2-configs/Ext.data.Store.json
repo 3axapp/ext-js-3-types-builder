@@ -1,0 +1,2023 @@
+{
+  "name": "Store",
+  "namespace": "Ext.data",
+  "extends": "Ext.util.Observable",
+  "constructorMethod": {
+    "config": [
+      {
+        "name": "autoDestroy?",
+        "type": [
+          "boolean"
+        ],
+        "comment": ""
+      },
+      {
+        "name": "autoLoad?",
+        "type": [
+          "boolean",
+          "object"
+        ],
+        "comment": ""
+      },
+      {
+        "name": "autoSave?",
+        "type": [
+          "boolean"
+        ],
+        "comment": ""
+      },
+      {
+        "name": "baseParams?",
+        "type": [
+          "object"
+        ],
+        "comment": ""
+      },
+      {
+        "name": "batch?",
+        "type": [
+          "boolean"
+        ],
+        "comment": ""
+      },
+      {
+        "name": "data?",
+        "type": [
+          "unknown[]"
+        ],
+        "comment": ""
+      },
+      {
+        "name": "defaultParamNames?",
+        "type": [
+          "object"
+        ],
+        "comment": ""
+      },
+      {
+        "name": "listeners?",
+        "type": [
+          "object"
+        ],
+        "comment": ""
+      },
+      {
+        "name": "paramNames?",
+        "type": [
+          "object"
+        ],
+        "comment": ""
+      },
+      {
+        "name": "proxy?",
+        "type": [
+          "Ext.data.DataProxy"
+        ],
+        "comment": ""
+      },
+      {
+        "name": "pruneModifiedRecords?",
+        "type": [
+          "boolean"
+        ],
+        "comment": ""
+      },
+      {
+        "name": "reader?",
+        "type": [
+          "Ext.data.DataReader"
+        ],
+        "comment": ""
+      },
+      {
+        "name": "remoteSort?",
+        "type": [
+          "boolean"
+        ],
+        "comment": ""
+      },
+      {
+        "name": "restful?",
+        "type": [
+          "boolean"
+        ],
+        "comment": ""
+      },
+      {
+        "name": "sortInfo?",
+        "type": [
+          "object"
+        ],
+        "comment": ""
+      },
+      {
+        "name": "storeId?",
+        "type": [
+          "string"
+        ],
+        "comment": ""
+      },
+      {
+        "name": "url?",
+        "type": [
+          "string"
+        ],
+        "comment": ""
+      },
+      {
+        "name": "writer?",
+        "type": [
+          "Ext.data.DataWriter"
+        ],
+        "comment": ""
+      }
+    ]
+  },
+  "properties": [
+    {
+      "name": "baseParams",
+      "type": [
+        "object"
+      ],
+      "visibility": "public",
+      "comment": ""
+    },
+    {
+      "name": "batchKey",
+      "type": [
+        "string"
+      ],
+      "visibility": "private",
+      "comment": ""
+    },
+    {
+      "name": "fields",
+      "type": [
+        "Ext.util.MixedCollection"
+      ],
+      "visibility": "public",
+      "comment": ""
+    },
+    {
+      "name": "hasMultiSort",
+      "type": [
+        "boolean"
+      ],
+      "visibility": "public",
+      "comment": ""
+    },
+    {
+      "name": "isDestroyed",
+      "type": [
+        "boolean"
+      ],
+      "visibility": "public",
+      "comment": ""
+    },
+    {
+      "name": "lastOptions",
+      "type": [
+        "object"
+      ],
+      "visibility": "public",
+      "comment": ""
+    },
+    {
+      "name": "multiSortInfo",
+      "type": [
+        "object"
+      ],
+      "visibility": "public",
+      "comment": ""
+    },
+    {
+      "name": "recordType",
+      "type": [
+        "Function"
+      ],
+      "visibility": "public",
+      "comment": ""
+    }
+  ],
+  "methods": [
+    {
+      "name": "add",
+      "returnType": [],
+      "visibility": "public",
+      "arguments": [
+        {
+          "name": "records",
+          "comment": "",
+          "type": [
+            "Ext.data.Record[]"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "addListener<T extends IStoreEvents = IStoreEvents, E extends keyof T = keyof T>",
+      "returnType": [],
+      "visibility": "public",
+      "arguments": [
+        {
+          "name": "eventName",
+          "comment": "",
+          "type": [
+            "E"
+          ]
+        },
+        {
+          "name": "handler",
+          "comment": "",
+          "type": [
+            "T[E]"
+          ]
+        },
+        {
+          "name": "scope?",
+          "comment": "",
+          "type": [
+            "object"
+          ]
+        },
+        {
+          "name": "options?",
+          "comment": "",
+          "type": [
+            "object"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "addSorted",
+      "returnType": [],
+      "visibility": "public",
+      "arguments": [
+        {
+          "name": "record",
+          "comment": "",
+          "type": [
+            "Ext.data.Record"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "addToBatch",
+      "returnType": [],
+      "visibility": "private",
+      "arguments": [
+        {
+          "name": "batch",
+          "comment": "",
+          "type": [
+            "object"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "afterCommit",
+      "returnType": [],
+      "visibility": "private",
+      "arguments": [
+        {
+          "name": "record",
+          "comment": "",
+          "type": [
+            "object"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "afterEdit",
+      "returnType": [],
+      "visibility": "private",
+      "arguments": [
+        {
+          "name": "record",
+          "comment": "",
+          "type": [
+            "object"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "afterReject",
+      "returnType": [],
+      "visibility": "private",
+      "arguments": [
+        {
+          "name": "record",
+          "comment": "",
+          "type": [
+            "object"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "applySort",
+      "returnType": [],
+      "visibility": "private",
+      "arguments": []
+    },
+    {
+      "name": "buildWriter",
+      "returnType": [
+        "Ext.data.DataWriter"
+      ],
+      "visibility": "private",
+      "arguments": [
+        {
+          "name": "config",
+          "comment": "",
+          "type": [
+            "object"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "clearData",
+      "returnType": [],
+      "visibility": "private",
+      "arguments": []
+    },
+    {
+      "name": "clearFilter",
+      "returnType": [],
+      "visibility": "public",
+      "arguments": [
+        {
+          "name": "suppressEvent",
+          "comment": "",
+          "type": [
+            "boolean"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "clearModified",
+      "returnType": [],
+      "visibility": "private",
+      "arguments": [
+        {
+          "name": "rs",
+          "comment": "",
+          "type": [
+            "object"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "collect",
+      "returnType": [
+        "unknown[]"
+      ],
+      "visibility": "public",
+      "arguments": [
+        {
+          "name": "dataIndex",
+          "comment": "",
+          "type": [
+            "string"
+          ]
+        },
+        {
+          "name": "allowNull?",
+          "comment": "",
+          "type": [
+            "boolean"
+          ]
+        },
+        {
+          "name": "bypassFilter?",
+          "comment": "",
+          "type": [
+            "boolean"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "commitChanges",
+      "returnType": [],
+      "visibility": "public",
+      "arguments": []
+    },
+    {
+      "name": "createCallback",
+      "returnType": [],
+      "visibility": "private",
+      "arguments": [
+        {
+          "name": "action",
+          "comment": "",
+          "type": [
+            "object"
+          ]
+        },
+        {
+          "name": "rs",
+          "comment": "",
+          "type": [
+            "object"
+          ]
+        },
+        {
+          "name": "batch",
+          "comment": "",
+          "type": [
+            "object"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "createFilterFn",
+      "returnType": [],
+      "visibility": "private",
+      "arguments": [
+        {
+          "name": "property",
+          "comment": "",
+          "type": [
+            "string"
+          ]
+        },
+        {
+          "name": "value",
+          "comment": "",
+          "type": [
+            "string",
+            "RegExp"
+          ]
+        },
+        {
+          "name": "anyMatch",
+          "comment": "",
+          "type": [
+            "boolean"
+          ]
+        },
+        {
+          "name": "caseSensitive",
+          "comment": "",
+          "type": [
+            "boolean"
+          ]
+        },
+        {
+          "name": "exactMatch",
+          "comment": "",
+          "type": [
+            "boolean"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "createMultipleFilterFn",
+      "returnType": [
+        "Function"
+      ],
+      "visibility": "private",
+      "arguments": [
+        {
+          "name": "filters",
+          "comment": "",
+          "type": [
+            "unknown[]"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "createRecords",
+      "returnType": [],
+      "visibility": "private",
+      "arguments": [
+        {
+          "name": "store",
+          "comment": "",
+          "type": [
+            "object"
+          ]
+        },
+        {
+          "name": "records",
+          "comment": "",
+          "type": [
+            "object"
+          ]
+        },
+        {
+          "name": "index",
+          "comment": "",
+          "type": [
+            "object"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "createSortFunction",
+      "returnType": [
+        "Function"
+      ],
+      "visibility": "private",
+      "arguments": [
+        {
+          "name": "field",
+          "comment": "",
+          "type": [
+            "string"
+          ]
+        },
+        {
+          "name": "direction",
+          "comment": "",
+          "type": [
+            "string"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "destroy",
+      "returnType": [],
+      "visibility": "public",
+      "arguments": []
+    },
+    {
+      "name": "destroyRecord",
+      "returnType": [],
+      "visibility": "private",
+      "arguments": [
+        {
+          "name": "store",
+          "comment": "",
+          "type": [
+            "Store"
+          ]
+        },
+        {
+          "name": "record",
+          "comment": "",
+          "type": [
+            "Ext.data.Record"
+          ]
+        },
+        {
+          "name": "index",
+          "comment": "",
+          "type": [
+            "number"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "doTransaction",
+      "returnType": [],
+      "visibility": "private",
+      "arguments": [
+        {
+          "name": "action",
+          "comment": "",
+          "type": [
+            "object"
+          ]
+        },
+        {
+          "name": "rs",
+          "comment": "",
+          "type": [
+            "object"
+          ]
+        },
+        {
+          "name": "batch",
+          "comment": "",
+          "type": [
+            "object"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "doUpdate",
+      "returnType": [],
+      "visibility": "private",
+      "arguments": [
+        {
+          "name": "rec",
+          "comment": "",
+          "type": [
+            "object"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "each",
+      "returnType": [],
+      "visibility": "public",
+      "arguments": [
+        {
+          "name": "fn",
+          "comment": "",
+          "type": [
+            "Function"
+          ]
+        },
+        {
+          "name": "scope?",
+          "comment": "",
+          "type": [
+            "object"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "execute",
+      "returnType": [],
+      "visibility": "private",
+      "arguments": [
+        {
+          "name": "action",
+          "comment": "",
+          "type": [
+            "string"
+          ]
+        },
+        {
+          "name": "rs",
+          "comment": "",
+          "type": [
+            "Ext.data.Record",
+            "Ext.data.Record[]"
+          ]
+        },
+        {
+          "name": "options",
+          "comment": "",
+          "type": [
+            "object"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "filter",
+      "returnType": [],
+      "visibility": "public",
+      "arguments": [
+        {
+          "name": "field",
+          "comment": "",
+          "type": [
+            "string",
+            "unknown[]"
+          ]
+        },
+        {
+          "name": "value",
+          "comment": "",
+          "type": [
+            "string",
+            "RegExp"
+          ]
+        },
+        {
+          "name": "anyMatch?",
+          "comment": "",
+          "type": [
+            "boolean"
+          ]
+        },
+        {
+          "name": "caseSensitive?",
+          "comment": "",
+          "type": [
+            "boolean"
+          ]
+        },
+        {
+          "name": "exactMatch?",
+          "comment": "",
+          "type": [
+            "boolean"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "filterBy",
+      "returnType": [],
+      "visibility": "public",
+      "arguments": [
+        {
+          "name": "fn",
+          "comment": "",
+          "type": [
+            "Function"
+          ]
+        },
+        {
+          "name": "scope?",
+          "comment": "",
+          "type": [
+            "object"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "find",
+      "returnType": [
+        "number"
+      ],
+      "visibility": "public",
+      "arguments": [
+        {
+          "name": "fieldName",
+          "comment": "",
+          "type": [
+            "string"
+          ]
+        },
+        {
+          "name": "value",
+          "comment": "",
+          "type": [
+            "string",
+            "RegExp"
+          ]
+        },
+        {
+          "name": "startIndex?",
+          "comment": "",
+          "type": [
+            "number"
+          ]
+        },
+        {
+          "name": "anyMatch?",
+          "comment": "",
+          "type": [
+            "boolean"
+          ]
+        },
+        {
+          "name": "caseSensitive?",
+          "comment": "",
+          "type": [
+            "boolean"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "findBy",
+      "returnType": [
+        "number"
+      ],
+      "visibility": "public",
+      "arguments": [
+        {
+          "name": "fn",
+          "comment": "",
+          "type": [
+            "Function"
+          ]
+        },
+        {
+          "name": "scope?",
+          "comment": "",
+          "type": [
+            "object"
+          ]
+        },
+        {
+          "name": "startIndex?",
+          "comment": "",
+          "type": [
+            "number"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "findExact",
+      "returnType": [
+        "number"
+      ],
+      "visibility": "public",
+      "arguments": [
+        {
+          "name": "fieldName",
+          "comment": "",
+          "type": [
+            "string"
+          ]
+        },
+        {
+          "name": "value",
+          "comment": "",
+          "type": [
+            "unknown"
+          ]
+        },
+        {
+          "name": "startIndex?",
+          "comment": "",
+          "type": [
+            "number"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "findInsertIndex",
+      "returnType": [],
+      "visibility": "private",
+      "arguments": [
+        {
+          "name": "record",
+          "comment": "",
+          "type": [
+            "object"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "fireEvent<T extends IStoreEvents = IStoreEvents, E extends keyof T = keyof T>",
+      "returnType": [
+        "boolean"
+      ],
+      "visibility": "public",
+      "arguments": [
+        {
+          "name": "eventName",
+          "comment": "",
+          "type": [
+            "E"
+          ]
+        },
+        {
+          "name": "...args",
+          "comment": "",
+          "type": [
+            "Parameters<T[E]>"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "getAt",
+      "returnType": [
+        "Ext.data.Record"
+      ],
+      "visibility": "public",
+      "arguments": [
+        {
+          "name": "index",
+          "comment": "",
+          "type": [
+            "number"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "getById",
+      "returnType": [
+        "Ext.data.Record"
+      ],
+      "visibility": "public",
+      "arguments": [
+        {
+          "name": "id",
+          "comment": "",
+          "type": [
+            "string"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "getCount",
+      "returnType": [
+        "number"
+      ],
+      "visibility": "public",
+      "arguments": []
+    },
+    {
+      "name": "getModifiedRecords",
+      "returnType": [
+        "Ext.data.Record[]"
+      ],
+      "visibility": "public",
+      "arguments": []
+    },
+    {
+      "name": "getRange",
+      "returnType": [
+        "Ext.data.Record[]"
+      ],
+      "visibility": "public",
+      "arguments": [
+        {
+          "name": "startIndex?",
+          "comment": "",
+          "type": [
+            "number"
+          ]
+        },
+        {
+          "name": "endIndex?",
+          "comment": "",
+          "type": [
+            "number"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "getSortState",
+      "returnType": [
+        "object"
+      ],
+      "visibility": "public",
+      "arguments": []
+    },
+    {
+      "name": "getTotalCount",
+      "returnType": [
+        "number"
+      ],
+      "visibility": "public",
+      "arguments": []
+    },
+    {
+      "name": "handleException",
+      "returnType": [],
+      "visibility": "private",
+      "arguments": [
+        {
+          "name": "e",
+          "comment": "",
+          "type": [
+            "object"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "hasListener<T extends IStoreEvents = IStoreEvents, E extends keyof T = keyof T>",
+      "returnType": [
+        "boolean"
+      ],
+      "visibility": "public",
+      "arguments": [
+        {
+          "name": "eventName",
+          "comment": "",
+          "type": [
+            "E"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "indexOf",
+      "returnType": [
+        "number"
+      ],
+      "visibility": "public",
+      "arguments": [
+        {
+          "name": "record",
+          "comment": "",
+          "type": [
+            "Ext.data.Record"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "indexOfId",
+      "returnType": [
+        "number"
+      ],
+      "visibility": "public",
+      "arguments": [
+        {
+          "name": "id",
+          "comment": "",
+          "type": [
+            "string"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "insert",
+      "returnType": [],
+      "visibility": "public",
+      "arguments": [
+        {
+          "name": "index",
+          "comment": "",
+          "type": [
+            "number"
+          ]
+        },
+        {
+          "name": "records",
+          "comment": "",
+          "type": [
+            "Ext.data.Record[]"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "isFiltered",
+      "returnType": [
+        "boolean"
+      ],
+      "visibility": "public",
+      "arguments": []
+    },
+    {
+      "name": "load",
+      "returnType": [
+        "boolean"
+      ],
+      "visibility": "public",
+      "arguments": [
+        {
+          "name": "options",
+          "comment": "",
+          "type": [
+            "object"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "loadData",
+      "returnType": [],
+      "visibility": "public",
+      "arguments": [
+        {
+          "name": "data",
+          "comment": "",
+          "type": [
+            "object"
+          ]
+        },
+        {
+          "name": "append?",
+          "comment": "",
+          "type": [
+            "boolean"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "loadRecords",
+      "returnType": [],
+      "visibility": "private",
+      "arguments": [
+        {
+          "name": "o",
+          "comment": "",
+          "type": [
+            "object"
+          ]
+        },
+        {
+          "name": "options",
+          "comment": "",
+          "type": [
+            "object"
+          ]
+        },
+        {
+          "name": "success",
+          "comment": "",
+          "type": [
+            "object"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "multiSort",
+      "returnType": [],
+      "visibility": "public",
+      "arguments": [
+        {
+          "name": "sorters",
+          "comment": "",
+          "type": [
+            "unknown[]"
+          ]
+        },
+        {
+          "name": "direction",
+          "comment": "",
+          "type": [
+            "string"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "on<T extends IStoreEvents = IStoreEvents, E extends keyof T = keyof T>",
+      "returnType": [],
+      "visibility": "public",
+      "arguments": [
+        {
+          "name": "eventName",
+          "comment": "",
+          "type": [
+            "E"
+          ]
+        },
+        {
+          "name": "handler",
+          "comment": "",
+          "type": [
+            "T[E]"
+          ]
+        },
+        {
+          "name": "scope?",
+          "comment": "",
+          "type": [
+            "object"
+          ]
+        },
+        {
+          "name": "options?",
+          "comment": "",
+          "type": [
+            "object"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "onClear",
+      "returnType": [],
+      "visibility": "private",
+      "arguments": [
+        {
+          "name": "store",
+          "comment": "",
+          "type": [
+            "object"
+          ]
+        },
+        {
+          "name": "records",
+          "comment": "",
+          "type": [
+            "object"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "onCreateRecords",
+      "returnType": [],
+      "visibility": "private",
+      "arguments": [
+        {
+          "name": "success",
+          "comment": "",
+          "type": [
+            "object"
+          ]
+        },
+        {
+          "name": "rs",
+          "comment": "",
+          "type": [
+            "object"
+          ]
+        },
+        {
+          "name": "data",
+          "comment": "",
+          "type": [
+            "object"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "onDestroyRecords",
+      "returnType": [],
+      "visibility": "private",
+      "arguments": [
+        {
+          "name": "success",
+          "comment": "",
+          "type": [
+            "object"
+          ]
+        },
+        {
+          "name": "rs",
+          "comment": "",
+          "type": [
+            "object"
+          ]
+        },
+        {
+          "name": "data",
+          "comment": "",
+          "type": [
+            "object"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "onMetaChange",
+      "returnType": [],
+      "visibility": "private",
+      "arguments": [
+        {
+          "name": "meta",
+          "comment": "",
+          "type": [
+            "object"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "onUpdateRecords",
+      "returnType": [],
+      "visibility": "private",
+      "arguments": [
+        {
+          "name": "success",
+          "comment": "",
+          "type": [
+            "object"
+          ]
+        },
+        {
+          "name": "rs",
+          "comment": "",
+          "type": [
+            "object"
+          ]
+        },
+        {
+          "name": "data",
+          "comment": "",
+          "type": [
+            "object"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "query",
+      "returnType": [
+        "Ext.util.MixedCollection"
+      ],
+      "visibility": "public",
+      "arguments": [
+        {
+          "name": "field",
+          "comment": "",
+          "type": [
+            "string"
+          ]
+        },
+        {
+          "name": "value",
+          "comment": "",
+          "type": [
+            "string",
+            "RegExp"
+          ]
+        },
+        {
+          "name": "anyMatch?",
+          "comment": "",
+          "type": [
+            "boolean"
+          ]
+        },
+        {
+          "name": "caseSensitive?",
+          "comment": "",
+          "type": [
+            "boolean"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "queryBy",
+      "returnType": [
+        "Ext.util.MixedCollection"
+      ],
+      "visibility": "public",
+      "arguments": [
+        {
+          "name": "fn",
+          "comment": "",
+          "type": [
+            "Function"
+          ]
+        },
+        {
+          "name": "scope?",
+          "comment": "",
+          "type": [
+            "object"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "reMap",
+      "returnType": [],
+      "visibility": "private",
+      "arguments": [
+        {
+          "name": "record",
+          "comment": "",
+          "type": [
+            "object"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "rejectChanges",
+      "returnType": [],
+      "visibility": "public",
+      "arguments": []
+    },
+    {
+      "name": "reload",
+      "returnType": [],
+      "visibility": "public",
+      "arguments": [
+        {
+          "name": "options",
+          "comment": "",
+          "type": [
+            "object"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "remove",
+      "returnType": [],
+      "visibility": "public",
+      "arguments": [
+        {
+          "name": "record",
+          "comment": "",
+          "type": [
+            "Ext.data.Record",
+            "Ext.data.Record[]"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "removeAll",
+      "returnType": [],
+      "visibility": "public",
+      "arguments": [
+        {
+          "name": "silent",
+          "comment": "",
+          "type": [
+            "boolean"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "removeAt",
+      "returnType": [],
+      "visibility": "public",
+      "arguments": [
+        {
+          "name": "index",
+          "comment": "",
+          "type": [
+            "number"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "removeFromBatch",
+      "returnType": [],
+      "visibility": "private",
+      "arguments": [
+        {
+          "name": "batch",
+          "comment": "",
+          "type": [
+            "object"
+          ]
+        },
+        {
+          "name": "action",
+          "comment": "",
+          "type": [
+            "object"
+          ]
+        },
+        {
+          "name": "data",
+          "comment": "",
+          "type": [
+            "object"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "removeListener<T extends IStoreEvents = IStoreEvents, E extends keyof T = keyof T>",
+      "returnType": [],
+      "visibility": "public",
+      "arguments": [
+        {
+          "name": "eventName",
+          "comment": "",
+          "type": [
+            "E"
+          ]
+        },
+        {
+          "name": "handler",
+          "comment": "",
+          "type": [
+            "T[E]"
+          ]
+        },
+        {
+          "name": "scope?",
+          "comment": "",
+          "type": [
+            "object"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "save",
+      "returnType": [
+        "number"
+      ],
+      "visibility": "public",
+      "arguments": []
+    },
+    {
+      "name": "setBaseParam",
+      "returnType": [],
+      "visibility": "public",
+      "arguments": [
+        {
+          "name": "name",
+          "comment": "",
+          "type": [
+            "string"
+          ]
+        },
+        {
+          "name": "value",
+          "comment": "",
+          "type": [
+            "unknown"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "setDefaultSort",
+      "returnType": [],
+      "visibility": "public",
+      "arguments": [
+        {
+          "name": "fieldName",
+          "comment": "",
+          "type": [
+            "string"
+          ]
+        },
+        {
+          "name": "dir?",
+          "comment": "",
+          "type": [
+            "string"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "singleSort",
+      "returnType": [],
+      "visibility": "public",
+      "arguments": [
+        {
+          "name": "fieldName",
+          "comment": "",
+          "type": [
+            "string"
+          ]
+        },
+        {
+          "name": "dir?",
+          "comment": "",
+          "type": [
+            "string"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "sort",
+      "returnType": [],
+      "visibility": "public",
+      "arguments": [
+        {
+          "name": "fieldName",
+          "comment": "",
+          "type": [
+            "string",
+            "unknown[]"
+          ]
+        },
+        {
+          "name": "dir?",
+          "comment": "",
+          "type": [
+            "string"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "sortData",
+      "returnType": [],
+      "visibility": "private",
+      "arguments": []
+    },
+    {
+      "name": "storeOptions",
+      "returnType": [],
+      "visibility": "private",
+      "arguments": [
+        {
+          "name": "o",
+          "comment": "",
+          "type": [
+            "object"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "sum",
+      "returnType": [
+        "number"
+      ],
+      "visibility": "public",
+      "arguments": [
+        {
+          "name": "property",
+          "comment": "",
+          "type": [
+            "string"
+          ]
+        },
+        {
+          "name": "start?",
+          "comment": "",
+          "type": [
+            "number"
+          ]
+        },
+        {
+          "name": "end?",
+          "comment": "",
+          "type": [
+            "number"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "un<T extends IStoreEvents = IStoreEvents, E extends keyof T = keyof T>",
+      "returnType": [],
+      "visibility": "public",
+      "arguments": [
+        {
+          "name": "eventName",
+          "comment": "",
+          "type": [
+            "E"
+          ]
+        },
+        {
+          "name": "handler",
+          "comment": "",
+          "type": [
+            "T[E]"
+          ]
+        },
+        {
+          "name": "scope?",
+          "comment": "",
+          "type": [
+            "object"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "updateRecord",
+      "returnType": [],
+      "visibility": "private",
+      "arguments": [
+        {
+          "name": "store",
+          "comment": "",
+          "type": [
+            "object"
+          ]
+        },
+        {
+          "name": "record",
+          "comment": "",
+          "type": [
+            "object"
+          ]
+        },
+        {
+          "name": "action",
+          "comment": "",
+          "type": [
+            "object"
+          ]
+        }
+      ]
+    }
+  ],
+  "events": [
+    {
+      "name": "add",
+      "arguments": [
+        {
+          "name": "thisCmp",
+          "comment": "",
+          "type": [
+            "Store"
+          ]
+        },
+        {
+          "name": "records",
+          "comment": "",
+          "type": [
+            "Ext.data.Record[]"
+          ]
+        },
+        {
+          "name": "index",
+          "comment": "",
+          "type": [
+            "number"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "beforeload",
+      "arguments": [
+        {
+          "name": "thisCmp",
+          "comment": "",
+          "type": [
+            "Store"
+          ]
+        },
+        {
+          "name": "options",
+          "comment": "",
+          "type": [
+            "object"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "beforesave",
+      "arguments": [
+        {
+          "name": "store",
+          "comment": "",
+          "type": [
+            "Ext.data.Store"
+          ]
+        },
+        {
+          "name": "data",
+          "comment": "",
+          "type": [
+            "object"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "beforewrite",
+      "arguments": [
+        {
+          "name": "store",
+          "comment": "",
+          "type": [
+            "Ext.data.Store"
+          ]
+        },
+        {
+          "name": "action",
+          "comment": "",
+          "type": [
+            "string"
+          ]
+        },
+        {
+          "name": "rs",
+          "comment": "",
+          "type": [
+            "Ext.data.Record",
+            "Ext.data.Record[]"
+          ]
+        },
+        {
+          "name": "options",
+          "comment": "",
+          "type": [
+            "object"
+          ]
+        },
+        {
+          "name": "arg",
+          "comment": "",
+          "type": [
+            "object"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "clear",
+      "arguments": [
+        {
+          "name": "thisCmp",
+          "comment": "",
+          "type": [
+            "Store"
+          ]
+        },
+        {
+          "name": "records",
+          "comment": "",
+          "type": [
+            "Ext.data.Record[]"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "datachanged",
+      "arguments": [
+        {
+          "name": "thisCmp",
+          "comment": "",
+          "type": [
+            "Store"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "exception",
+      "arguments": [
+        {
+          "name": "misc",
+          "comment": "",
+          "type": [
+            "misc"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "load",
+      "arguments": [
+        {
+          "name": "thisCmp",
+          "comment": "",
+          "type": [
+            "Store"
+          ]
+        },
+        {
+          "name": "records",
+          "comment": "",
+          "type": [
+            "Ext.data.Record[]"
+          ]
+        },
+        {
+          "name": "options",
+          "comment": "",
+          "type": [
+            "object"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "loadexception",
+      "arguments": [
+        {
+          "name": "misc",
+          "comment": "",
+          "type": [
+            "misc"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "metachange",
+      "arguments": [
+        {
+          "name": "thisCmp",
+          "comment": "",
+          "type": [
+            "Store"
+          ]
+        },
+        {
+          "name": "meta",
+          "comment": "",
+          "type": [
+            "object"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "remove",
+      "arguments": [
+        {
+          "name": "thisCmp",
+          "comment": "",
+          "type": [
+            "Store"
+          ]
+        },
+        {
+          "name": "record",
+          "comment": "",
+          "type": [
+            "Ext.data.Record"
+          ]
+        },
+        {
+          "name": "index",
+          "comment": "",
+          "type": [
+            "number"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "save",
+      "arguments": [
+        {
+          "name": "store",
+          "comment": "",
+          "type": [
+            "Ext.data.Store"
+          ]
+        },
+        {
+          "name": "batch",
+          "comment": "",
+          "type": [
+            "number"
+          ]
+        },
+        {
+          "name": "data",
+          "comment": "",
+          "type": [
+            "object"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "update",
+      "arguments": [
+        {
+          "name": "thisCmp",
+          "comment": "",
+          "type": [
+            "Store"
+          ]
+        },
+        {
+          "name": "record",
+          "comment": "",
+          "type": [
+            "Ext.data.Record"
+          ]
+        },
+        {
+          "name": "operation",
+          "comment": "",
+          "type": [
+            "string"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "write",
+      "arguments": [
+        {
+          "name": "store",
+          "comment": "",
+          "type": [
+            "Ext.data.Store"
+          ]
+        },
+        {
+          "name": "action",
+          "comment": "",
+          "type": [
+            "string"
+          ]
+        },
+        {
+          "name": "result",
+          "comment": "",
+          "type": [
+            "object"
+          ]
+        },
+        {
+          "name": "res",
+          "comment": "",
+          "type": [
+            "Ext.Direct.Transaction"
+          ]
+        },
+        {
+          "name": "rs",
+          "comment": "",
+          "type": [
+            "Ext.data.Record",
+            "Ext.data.Record[]"
+          ]
+        }
+      ]
+    }
+  ]
+}

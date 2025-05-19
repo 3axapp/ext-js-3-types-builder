@@ -1,0 +1,112 @@
+{
+  "name": "Registry",
+  "namespace": "Ext.dd",
+  "constructorMethod": null,
+  "properties": [],
+  "methods": [
+    {
+      "name": "getHandle",
+      "returnType": [
+        "object"
+      ],
+      "visibility": "public",
+      "arguments": [
+        {
+          "name": "id",
+          "comment": "",
+          "type": [
+            "string",
+            "HTMLElement"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "getHandleFromEvent",
+      "returnType": [
+        "object"
+      ],
+      "visibility": "public",
+      "arguments": [
+        {
+          "name": "e",
+          "comment": "",
+          "type": [
+            "Event"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "getTarget",
+      "returnType": [
+        "object"
+      ],
+      "visibility": "public",
+      "arguments": [
+        {
+          "name": "id",
+          "comment": "",
+          "type": [
+            "string",
+            "HTMLElement"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "getTargetFromEvent",
+      "returnType": [
+        "object"
+      ],
+      "visibility": "public",
+      "arguments": [
+        {
+          "name": "e",
+          "comment": "",
+          "type": [
+            "Event"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "register",
+      "returnType": [],
+      "visibility": "public",
+      "arguments": [
+        {
+          "name": "element",
+          "comment": "",
+          "type": [
+            "string",
+            "HTMLElement"
+          ]
+        },
+        {
+          "name": "data?",
+          "comment": "",
+          "type": [
+            "object"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "unregister",
+      "returnType": [],
+      "visibility": "public",
+      "arguments": [
+        {
+          "name": "element",
+          "comment": "",
+          "type": [
+            "string",
+            "HTMLElement"
+          ]
+        }
+      ]
+    }
+  ],
+  "events": []
+}

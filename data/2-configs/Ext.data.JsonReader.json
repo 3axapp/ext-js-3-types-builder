@@ -1,0 +1,156 @@
+{
+  "name": "JsonReader",
+  "namespace": "Ext.data",
+  "extends": "Ext.data.DataReader",
+  "constructorMethod": {
+    "config": [
+      {
+        "name": "fields?",
+        "type": [
+          "unknown[]",
+          "object"
+        ],
+        "comment": ""
+      },
+      {
+        "name": "idProperty?",
+        "type": [
+          "string"
+        ],
+        "comment": ""
+      },
+      {
+        "name": "messageProperty?",
+        "type": [
+          "string"
+        ],
+        "comment": ""
+      },
+      {
+        "name": "root?",
+        "type": [
+          "string"
+        ],
+        "comment": ""
+      },
+      {
+        "name": "successProperty?",
+        "type": [
+          "string"
+        ],
+        "comment": ""
+      },
+      {
+        "name": "totalProperty?",
+        "type": [
+          "string"
+        ],
+        "comment": ""
+      }
+    ]
+  },
+  "properties": [
+    {
+      "name": "jsonData",
+      "type": [
+        "object"
+      ],
+      "visibility": "public",
+      "comment": ""
+    },
+    {
+      "name": "meta",
+      "type": [
+        "unknown"
+      ],
+      "visibility": "public",
+      "comment": ""
+    }
+  ],
+  "methods": [
+    {
+      "name": "extractValues",
+      "returnType": [],
+      "visibility": "private",
+      "arguments": [
+        {
+          "name": "data",
+          "comment": "",
+          "type": [
+            "object"
+          ]
+        },
+        {
+          "name": "items",
+          "comment": "",
+          "type": [
+            "unknown[]"
+          ]
+        },
+        {
+          "name": "len",
+          "comment": "",
+          "type": [
+            "Integer"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "read",
+      "returnType": [
+        "object"
+      ],
+      "visibility": "public",
+      "arguments": [
+        {
+          "name": "response",
+          "comment": "",
+          "type": [
+            "object"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "readRecords",
+      "returnType": [
+        "object"
+      ],
+      "visibility": "public",
+      "arguments": [
+        {
+          "name": "o",
+          "comment": "",
+          "type": [
+            "object"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "readResponse",
+      "returnType": [
+        "Response"
+      ],
+      "visibility": "public",
+      "arguments": [
+        {
+          "name": "action",
+          "comment": "",
+          "type": [
+            "string"
+          ]
+        },
+        {
+          "name": "response",
+          "comment": "",
+          "type": [
+            "object"
+          ]
+        }
+      ]
+    }
+  ],
+  "events": []
+}

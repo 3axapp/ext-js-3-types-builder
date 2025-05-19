@@ -1,0 +1,515 @@
+{
+  "name": "Date",
+  "namespace": "",
+  "constructorMethod": null,
+  "properties": [
+    {
+      "name": "DAY",
+      "static": true,
+      "type": [
+        "string"
+      ],
+      "visibility": "public",
+      "comment": ""
+    },
+    {
+      "name": "HOUR",
+      "static": true,
+      "type": [
+        "string"
+      ],
+      "visibility": "public",
+      "comment": ""
+    },
+    {
+      "name": "MILLI",
+      "static": true,
+      "type": [
+        "string"
+      ],
+      "visibility": "public",
+      "comment": ""
+    },
+    {
+      "name": "MINUTE",
+      "static": true,
+      "type": [
+        "string"
+      ],
+      "visibility": "public",
+      "comment": ""
+    },
+    {
+      "name": "MONTH",
+      "static": true,
+      "type": [
+        "string"
+      ],
+      "visibility": "public",
+      "comment": ""
+    },
+    {
+      "name": "SECOND",
+      "static": true,
+      "type": [
+        "string"
+      ],
+      "visibility": "public",
+      "comment": ""
+    },
+    {
+      "name": "YEAR",
+      "static": true,
+      "type": [
+        "string"
+      ],
+      "visibility": "public",
+      "comment": ""
+    },
+    {
+      "name": "dayNames",
+      "static": true,
+      "type": [
+        "unknown[]"
+      ],
+      "visibility": "public",
+      "comment": ""
+    },
+    {
+      "name": "defaults",
+      "static": true,
+      "type": [
+        "object"
+      ],
+      "visibility": "public",
+      "comment": ""
+    },
+    {
+      "name": "formatCodes",
+      "static": true,
+      "type": [
+        "object"
+      ],
+      "visibility": "public",
+      "comment": ""
+    },
+    {
+      "name": "formatFunctions",
+      "static": true,
+      "type": [
+        "object"
+      ],
+      "visibility": "public",
+      "comment": ""
+    },
+    {
+      "name": "monthNames",
+      "static": true,
+      "type": [
+        "unknown[]"
+      ],
+      "visibility": "public",
+      "comment": ""
+    },
+    {
+      "name": "monthNumbers",
+      "static": true,
+      "type": [
+        "object"
+      ],
+      "visibility": "public",
+      "comment": ""
+    },
+    {
+      "name": "parseFunctions",
+      "static": true,
+      "type": [
+        "object"
+      ],
+      "visibility": "public",
+      "comment": ""
+    },
+    {
+      "name": "useStrict",
+      "static": true,
+      "type": [
+        "boolean"
+      ],
+      "visibility": "public",
+      "comment": ""
+    }
+  ],
+  "methods": [
+    {
+      "name": "a",
+      "returnType": [],
+      "visibility": "public",
+      "arguments": []
+    },
+    {
+      "name": "add",
+      "returnType": [
+        "Date"
+      ],
+      "visibility": "public",
+      "arguments": [
+        {
+          "name": "interval",
+          "comment": "",
+          "type": [
+            "string"
+          ]
+        },
+        {
+          "name": "value",
+          "comment": "",
+          "type": [
+            "number"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "between",
+      "returnType": [
+        "boolean"
+      ],
+      "visibility": "public",
+      "arguments": [
+        {
+          "name": "start",
+          "comment": "",
+          "type": [
+            "Date"
+          ]
+        },
+        {
+          "name": "end",
+          "comment": "",
+          "type": [
+            "Date"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "clearTime",
+      "returnType": [
+        "this"
+      ],
+      "visibility": "public",
+      "arguments": [
+        {
+          "name": "clone",
+          "comment": "",
+          "type": [
+            "boolean"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "clone",
+      "returnType": [
+        "Date"
+      ],
+      "visibility": "public",
+      "arguments": []
+    },
+    {
+      "name": "format",
+      "returnType": [
+        "string"
+      ],
+      "visibility": "public",
+      "arguments": [
+        {
+          "name": "format",
+          "comment": "",
+          "type": [
+            "string"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "getDayOfYear",
+      "returnType": [
+        "number"
+      ],
+      "visibility": "public",
+      "arguments": []
+    },
+    {
+      "name": "getDaysInMonth",
+      "returnType": [
+        "number"
+      ],
+      "visibility": "public",
+      "arguments": []
+    },
+    {
+      "name": "getElapsed",
+      "returnType": [
+        "number"
+      ],
+      "visibility": "public",
+      "arguments": [
+        {
+          "name": "date?",
+          "comment": "",
+          "type": [
+            "Date"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "getFirstDateOfMonth",
+      "returnType": [
+        "Date"
+      ],
+      "visibility": "public",
+      "arguments": []
+    },
+    {
+      "name": "getFirstDayOfMonth",
+      "returnType": [
+        "number"
+      ],
+      "visibility": "public",
+      "arguments": []
+    },
+    {
+      "name": "getGMTOffset",
+      "returnType": [
+        "string"
+      ],
+      "visibility": "public",
+      "arguments": [
+        {
+          "name": "colon?",
+          "comment": "",
+          "type": [
+            "boolean"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "getLastDateOfMonth",
+      "returnType": [
+        "Date"
+      ],
+      "visibility": "public",
+      "arguments": []
+    },
+    {
+      "name": "getLastDayOfMonth",
+      "returnType": [
+        "number"
+      ],
+      "visibility": "public",
+      "arguments": []
+    },
+    {
+      "name": "getSuffix",
+      "returnType": [
+        "string"
+      ],
+      "visibility": "public",
+      "arguments": []
+    },
+    {
+      "name": "getTimezone",
+      "returnType": [
+        "string"
+      ],
+      "visibility": "public",
+      "arguments": []
+    },
+    {
+      "name": "getWeekOfYear",
+      "returnType": [
+        "number"
+      ],
+      "visibility": "public",
+      "arguments": []
+    },
+    {
+      "name": "isDST",
+      "returnType": [
+        "boolean"
+      ],
+      "visibility": "public",
+      "arguments": []
+    },
+    {
+      "name": "isLeapYear",
+      "returnType": [
+        "boolean"
+      ],
+      "visibility": "public",
+      "arguments": []
+    },
+    {
+      "name": "formatContainsHourInfo",
+      "static": true,
+      "returnType": [
+        "boolean"
+      ],
+      "visibility": "public",
+      "arguments": [
+        {
+          "name": "format",
+          "comment": "",
+          "type": [
+            "object"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "getMonthNumber",
+      "static": true,
+      "returnType": [
+        "number"
+      ],
+      "visibility": "public",
+      "arguments": [
+        {
+          "name": "name",
+          "comment": "",
+          "type": [
+            "string"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "getShortDayName",
+      "static": true,
+      "returnType": [
+        "string"
+      ],
+      "visibility": "public",
+      "arguments": [
+        {
+          "name": "day",
+          "comment": "",
+          "type": [
+            "number"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "getShortMonthName",
+      "static": true,
+      "returnType": [
+        "string"
+      ],
+      "visibility": "public",
+      "arguments": [
+        {
+          "name": "month",
+          "comment": "",
+          "type": [
+            "number"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "isValid",
+      "static": true,
+      "returnType": [
+        "boolean"
+      ],
+      "visibility": "public",
+      "arguments": [
+        {
+          "name": "year",
+          "comment": "",
+          "type": [
+            "number"
+          ]
+        },
+        {
+          "name": "month",
+          "comment": "",
+          "type": [
+            "number"
+          ]
+        },
+        {
+          "name": "day",
+          "comment": "",
+          "type": [
+            "number"
+          ]
+        },
+        {
+          "name": "hour?",
+          "comment": "",
+          "type": [
+            "number"
+          ]
+        },
+        {
+          "name": "minute?",
+          "comment": "",
+          "type": [
+            "number"
+          ]
+        },
+        {
+          "name": "second?",
+          "comment": "",
+          "type": [
+            "number"
+          ]
+        },
+        {
+          "name": "millisecond?",
+          "comment": "",
+          "type": [
+            "number"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "parseDate",
+      "static": true,
+      "returnType": [
+        "Date"
+      ],
+      "visibility": "public",
+      "arguments": [
+        {
+          "name": "input",
+          "comment": "",
+          "type": [
+            "string"
+          ]
+        },
+        {
+          "name": "format",
+          "comment": "",
+          "type": [
+            "string"
+          ]
+        },
+        {
+          "name": "strict?",
+          "comment": "",
+          "type": [
+            "boolean"
+          ]
+        }
+      ]
+    }
+  ],
+  "events": []
+}

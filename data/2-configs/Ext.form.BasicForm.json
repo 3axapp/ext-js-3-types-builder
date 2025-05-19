@@ -1,0 +1,763 @@
+{
+  "name": "BasicForm",
+  "namespace": "Ext.form",
+  "extends": "Ext.util.Observable",
+  "constructorMethod": {
+    "config": [
+      {
+        "name": "api?",
+        "type": [
+          "object"
+        ],
+        "comment": ""
+      },
+      {
+        "name": "baseParams?",
+        "type": [
+          "object"
+        ],
+        "comment": ""
+      },
+      {
+        "name": "errorReader?",
+        "type": [
+          "DataReader"
+        ],
+        "comment": ""
+      },
+      {
+        "name": "fileUpload?",
+        "type": [
+          "boolean"
+        ],
+        "comment": ""
+      },
+      {
+        "name": "listeners?",
+        "type": [
+          "object"
+        ],
+        "comment": ""
+      },
+      {
+        "name": "method?",
+        "type": [
+          "string"
+        ],
+        "comment": ""
+      },
+      {
+        "name": "paramOrder?",
+        "type": [
+          "unknown[]",
+          "string"
+        ],
+        "comment": ""
+      },
+      {
+        "name": "paramsAsHash?",
+        "type": [
+          "boolean"
+        ],
+        "comment": ""
+      },
+      {
+        "name": "reader?",
+        "type": [
+          "DataReader"
+        ],
+        "comment": ""
+      },
+      {
+        "name": "standardSubmit?",
+        "type": [
+          "boolean"
+        ],
+        "comment": ""
+      },
+      {
+        "name": "timeout?",
+        "type": [
+          "number"
+        ],
+        "comment": ""
+      },
+      {
+        "name": "trackResetOnLoad?",
+        "type": [
+          "boolean"
+        ],
+        "comment": ""
+      },
+      {
+        "name": "url?",
+        "type": [
+          "string"
+        ],
+        "comment": ""
+      },
+      {
+        "name": "waitTitle?",
+        "type": [
+          "string"
+        ],
+        "comment": ""
+      }
+    ]
+  },
+  "properties": [
+    {
+      "name": "activeAction",
+      "type": [
+        "object"
+      ],
+      "visibility": "private",
+      "comment": ""
+    },
+    {
+      "name": "items",
+      "type": [
+        "Ext.util.MixedCollection"
+      ],
+      "visibility": "public",
+      "comment": ""
+    },
+    {
+      "name": "waitMsgTarget",
+      "type": [
+        "unknown"
+      ],
+      "visibility": "public",
+      "comment": ""
+    }
+  ],
+  "methods": [
+    {
+      "name": "add",
+      "returnType": [
+        "this"
+      ],
+      "visibility": "public",
+      "arguments": [
+        {
+          "name": "field1",
+          "comment": "",
+          "type": [
+            "Field"
+          ]
+        },
+        {
+          "name": "field2?",
+          "comment": "",
+          "type": [
+            "Field"
+          ]
+        },
+        {
+          "name": "etc?",
+          "comment": "",
+          "type": [
+            "Field"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "addListener<T extends IBasicFormEvents = IBasicFormEvents, E extends keyof T = keyof T>",
+      "returnType": [],
+      "visibility": "public",
+      "arguments": [
+        {
+          "name": "eventName",
+          "comment": "",
+          "type": [
+            "E"
+          ]
+        },
+        {
+          "name": "handler",
+          "comment": "",
+          "type": [
+            "T[E]"
+          ]
+        },
+        {
+          "name": "scope?",
+          "comment": "",
+          "type": [
+            "object"
+          ]
+        },
+        {
+          "name": "options?",
+          "comment": "",
+          "type": [
+            "object"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "afterAction",
+      "returnType": [],
+      "visibility": "private",
+      "arguments": [
+        {
+          "name": "action",
+          "comment": "",
+          "type": [
+            "object"
+          ]
+        },
+        {
+          "name": "success",
+          "comment": "",
+          "type": [
+            "object"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "applyIfToFields",
+      "returnType": [
+        "this"
+      ],
+      "visibility": "public",
+      "arguments": [
+        {
+          "name": "values",
+          "comment": "",
+          "type": [
+            "object"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "applyToFields",
+      "returnType": [
+        "this"
+      ],
+      "visibility": "public",
+      "arguments": [
+        {
+          "name": "values",
+          "comment": "",
+          "type": [
+            "object"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "beforeAction",
+      "returnType": [],
+      "visibility": "private",
+      "arguments": [
+        {
+          "name": "action",
+          "comment": "",
+          "type": [
+            "object"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "callFieldMethod",
+      "returnType": [
+        "this"
+      ],
+      "visibility": "private",
+      "arguments": [
+        {
+          "name": "fnName",
+          "comment": "",
+          "type": [
+            "object"
+          ]
+        },
+        {
+          "name": "args",
+          "comment": "",
+          "type": [
+            "object"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "cleanDestroyed",
+      "returnType": [],
+      "visibility": "public",
+      "arguments": []
+    },
+    {
+      "name": "clearInvalid",
+      "returnType": [
+        "this"
+      ],
+      "visibility": "public",
+      "arguments": []
+    },
+    {
+      "name": "destroy",
+      "returnType": [],
+      "visibility": "private",
+      "arguments": [
+        {
+          "name": "bound",
+          "comment": "",
+          "type": [
+            "boolean"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "doAction",
+      "returnType": [
+        "this"
+      ],
+      "visibility": "public",
+      "arguments": [
+        {
+          "name": "actionName",
+          "comment": "",
+          "type": [
+            "string",
+            "object"
+          ]
+        },
+        {
+          "name": "options?",
+          "comment": "",
+          "type": [
+            "object"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "findField",
+      "returnType": [
+        "object"
+      ],
+      "visibility": "public",
+      "arguments": [
+        {
+          "name": "id",
+          "comment": "",
+          "type": [
+            "string"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "fireEvent<T extends IBasicFormEvents = IBasicFormEvents, E extends keyof T = keyof T>",
+      "returnType": [
+        "boolean"
+      ],
+      "visibility": "public",
+      "arguments": [
+        {
+          "name": "eventName",
+          "comment": "",
+          "type": [
+            "E"
+          ]
+        },
+        {
+          "name": "...args",
+          "comment": "",
+          "type": [
+            "Parameters<T[E]>"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "getEl",
+      "returnType": [
+        "object"
+      ],
+      "visibility": "public",
+      "arguments": []
+    },
+    {
+      "name": "getFieldValues",
+      "returnType": [
+        "object"
+      ],
+      "visibility": "public",
+      "arguments": [
+        {
+          "name": "dirtyOnly?",
+          "comment": "",
+          "type": [
+            "boolean"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "getValues",
+      "returnType": [
+        "string",
+        "object"
+      ],
+      "visibility": "public",
+      "arguments": [
+        {
+          "name": "asString?",
+          "comment": "",
+          "type": [
+            "boolean"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "hasListener<T extends IBasicFormEvents = IBasicFormEvents, E extends keyof T = keyof T>",
+      "returnType": [
+        "boolean"
+      ],
+      "visibility": "public",
+      "arguments": [
+        {
+          "name": "eventName",
+          "comment": "",
+          "type": [
+            "E"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "initEl",
+      "returnType": [],
+      "visibility": "private",
+      "arguments": [
+        {
+          "name": "el",
+          "comment": "",
+          "type": [
+            "object"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "isDirty",
+      "returnType": [
+        "object"
+      ],
+      "visibility": "public",
+      "arguments": []
+    },
+    {
+      "name": "isValid",
+      "returnType": [
+        "object"
+      ],
+      "visibility": "public",
+      "arguments": []
+    },
+    {
+      "name": "load",
+      "returnType": [
+        "this"
+      ],
+      "visibility": "public",
+      "arguments": [
+        {
+          "name": "options",
+          "comment": "",
+          "type": [
+            "object"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "loadRecord",
+      "returnType": [
+        "this"
+      ],
+      "visibility": "public",
+      "arguments": [
+        {
+          "name": "record",
+          "comment": "",
+          "type": [
+            "Ext.data.Record"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "markInvalid",
+      "returnType": [
+        "this"
+      ],
+      "visibility": "public",
+      "arguments": [
+        {
+          "name": "errors",
+          "comment": "",
+          "type": [
+            "unknown[]",
+            "object"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "on<T extends IBasicFormEvents = IBasicFormEvents, E extends keyof T = keyof T>",
+      "returnType": [],
+      "visibility": "public",
+      "arguments": [
+        {
+          "name": "eventName",
+          "comment": "",
+          "type": [
+            "E"
+          ]
+        },
+        {
+          "name": "handler",
+          "comment": "",
+          "type": [
+            "T[E]"
+          ]
+        },
+        {
+          "name": "scope?",
+          "comment": "",
+          "type": [
+            "object"
+          ]
+        },
+        {
+          "name": "options?",
+          "comment": "",
+          "type": [
+            "object"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "onSubmit",
+      "returnType": [],
+      "visibility": "private",
+      "arguments": [
+        {
+          "name": "e",
+          "comment": "",
+          "type": [
+            "object"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "remove",
+      "returnType": [
+        "this"
+      ],
+      "visibility": "public",
+      "arguments": [
+        {
+          "name": "field",
+          "comment": "",
+          "type": [
+            "Field"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "removeListener<T extends IBasicFormEvents = IBasicFormEvents, E extends keyof T = keyof T>",
+      "returnType": [],
+      "visibility": "public",
+      "arguments": [
+        {
+          "name": "eventName",
+          "comment": "",
+          "type": [
+            "E"
+          ]
+        },
+        {
+          "name": "handler",
+          "comment": "",
+          "type": [
+            "T[E]"
+          ]
+        },
+        {
+          "name": "scope?",
+          "comment": "",
+          "type": [
+            "object"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "render",
+      "returnType": [
+        "this"
+      ],
+      "visibility": "public",
+      "arguments": []
+    },
+    {
+      "name": "reset",
+      "returnType": [
+        "this"
+      ],
+      "visibility": "public",
+      "arguments": []
+    },
+    {
+      "name": "setValues",
+      "returnType": [
+        "this"
+      ],
+      "visibility": "public",
+      "arguments": [
+        {
+          "name": "values",
+          "comment": "",
+          "type": [
+            "unknown[]",
+            "object"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "submit",
+      "returnType": [
+        "BasicForm"
+      ],
+      "visibility": "public",
+      "arguments": [
+        {
+          "name": "options",
+          "comment": "",
+          "type": [
+            "object"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "un<T extends IBasicFormEvents = IBasicFormEvents, E extends keyof T = keyof T>",
+      "returnType": [],
+      "visibility": "public",
+      "arguments": [
+        {
+          "name": "eventName",
+          "comment": "",
+          "type": [
+            "E"
+          ]
+        },
+        {
+          "name": "handler",
+          "comment": "",
+          "type": [
+            "T[E]"
+          ]
+        },
+        {
+          "name": "scope?",
+          "comment": "",
+          "type": [
+            "object"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "updateRecord",
+      "returnType": [
+        "this"
+      ],
+      "visibility": "public",
+      "arguments": [
+        {
+          "name": "record",
+          "comment": "",
+          "type": [
+            "Ext.data.Record"
+          ]
+        }
+      ]
+    }
+  ],
+  "events": [
+    {
+      "name": "actioncomplete",
+      "arguments": [
+        {
+          "name": "thisCmp",
+          "comment": "",
+          "type": [
+            "BasicForm"
+          ]
+        },
+        {
+          "name": "action",
+          "comment": "",
+          "type": [
+            "Action"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "actionfailed",
+      "arguments": [
+        {
+          "name": "thisCmp",
+          "comment": "",
+          "type": [
+            "BasicForm"
+          ]
+        },
+        {
+          "name": "action",
+          "comment": "",
+          "type": [
+            "Action"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "beforeaction",
+      "arguments": [
+        {
+          "name": "thisCmp",
+          "comment": "",
+          "type": [
+            "BasicForm"
+          ]
+        },
+        {
+          "name": "action",
+          "comment": "",
+          "type": [
+            "Action"
+          ]
+        }
+      ]
+    }
+  ]
+}

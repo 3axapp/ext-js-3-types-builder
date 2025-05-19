@@ -1,0 +1,85 @@
+{
+  "name": "TreeDropZone",
+  "namespace": "Ext.tree",
+  "extends": "Ext.dd.DropZone",
+  "constructorMethod": {
+    "config": [
+      {
+        "name": "allowContainerDrop?",
+        "type": [
+          "string"
+        ],
+        "comment": ""
+      },
+      {
+        "name": "allowParentInsert?",
+        "type": [
+          "boolean"
+        ],
+        "comment": ""
+      },
+      {
+        "name": "appendOnly?",
+        "type": [
+          "string"
+        ],
+        "comment": ""
+      },
+      {
+        "name": "ddGroup?",
+        "type": [
+          "string"
+        ],
+        "comment": ""
+      },
+      {
+        "name": "dropAllowed?",
+        "type": [
+          "string"
+        ],
+        "comment": ""
+      },
+      {
+        "name": "dropNotAllowed?",
+        "type": [
+          "string"
+        ],
+        "comment": ""
+      },
+      {
+        "name": "expandDelay?",
+        "type": [
+          "string"
+        ],
+        "comment": ""
+      },
+      {
+        "name": "overClass?",
+        "type": [
+          "string"
+        ],
+        "comment": ""
+      }
+    ]
+  },
+  "properties": [
+    {
+      "name": "dragOverData",
+      "type": [
+        "Ext.tree.TreePanel"
+      ],
+      "visibility": "public",
+      "comment": ""
+    },
+    {
+      "name": "tree",
+      "type": [
+        "Ext.tree.TreePanel"
+      ],
+      "visibility": "public",
+      "comment": ""
+    }
+  ],
+  "methods": [],
+  "events": []
+}

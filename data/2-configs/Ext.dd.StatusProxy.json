@@ -1,0 +1,145 @@
+{
+  "name": "StatusProxy",
+  "namespace": "Ext.dd",
+  "constructorMethod": {
+    "config": [
+      {
+        "name": "dropAllowed?",
+        "type": [
+          "string"
+        ],
+        "comment": ""
+      },
+      {
+        "name": "dropNotAllowed?",
+        "type": [
+          "string"
+        ],
+        "comment": ""
+      }
+    ]
+  },
+  "properties": [],
+  "methods": [
+    {
+      "name": "getEl",
+      "returnType": [
+        "Ext.Layer"
+      ],
+      "visibility": "public",
+      "arguments": []
+    },
+    {
+      "name": "getGhost",
+      "returnType": [
+        "Ext.Element"
+      ],
+      "visibility": "public",
+      "arguments": []
+    },
+    {
+      "name": "hide",
+      "returnType": [],
+      "visibility": "public",
+      "arguments": [
+        {
+          "name": "clear",
+          "comment": "",
+          "type": [
+            "boolean"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "repair",
+      "returnType": [],
+      "visibility": "public",
+      "arguments": [
+        {
+          "name": "xy",
+          "comment": "",
+          "type": [
+            "unknown[]"
+          ]
+        },
+        {
+          "name": "callback",
+          "comment": "",
+          "type": [
+            "Function"
+          ]
+        },
+        {
+          "name": "scope",
+          "comment": "",
+          "type": [
+            "object"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "reset",
+      "returnType": [],
+      "visibility": "public",
+      "arguments": [
+        {
+          "name": "clearGhost",
+          "comment": "",
+          "type": [
+            "boolean"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "setStatus",
+      "returnType": [],
+      "visibility": "public",
+      "arguments": [
+        {
+          "name": "cssClass",
+          "comment": "",
+          "type": [
+            "string"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "show",
+      "returnType": [],
+      "visibility": "public",
+      "arguments": []
+    },
+    {
+      "name": "stop",
+      "returnType": [],
+      "visibility": "public",
+      "arguments": []
+    },
+    {
+      "name": "sync",
+      "returnType": [],
+      "visibility": "public",
+      "arguments": []
+    },
+    {
+      "name": "update",
+      "returnType": [],
+      "visibility": "public",
+      "arguments": [
+        {
+          "name": "html",
+          "comment": "",
+          "type": [
+            "string",
+            "HTMLElement"
+          ]
+        }
+      ]
+    }
+  ],
+  "events": []
+}

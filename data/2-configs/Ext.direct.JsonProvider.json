@@ -1,0 +1,282 @@
+{
+  "name": "JsonProvider",
+  "namespace": "Ext.direct",
+  "extends": "Ext.direct.Provider",
+  "constructorMethod": {
+    "config": [
+      {
+        "name": "id?",
+        "type": [
+          "string"
+        ],
+        "comment": ""
+      },
+      {
+        "name": "listeners?",
+        "type": [
+          "object"
+        ],
+        "comment": ""
+      },
+      {
+        "name": "priority?",
+        "type": [
+          "number"
+        ],
+        "comment": ""
+      },
+      {
+        "name": "type?",
+        "type": [
+          "string"
+        ],
+        "comment": ""
+      }
+    ]
+  },
+  "properties": [],
+  "methods": [
+    {
+      "name": "addListener<T extends IJsonProviderEvents = IJsonProviderEvents, E extends keyof T = keyof T>",
+      "returnType": [],
+      "visibility": "public",
+      "arguments": [
+        {
+          "name": "eventName",
+          "comment": "",
+          "type": [
+            "E"
+          ]
+        },
+        {
+          "name": "handler",
+          "comment": "",
+          "type": [
+            "T[E]"
+          ]
+        },
+        {
+          "name": "scope?",
+          "comment": "",
+          "type": [
+            "object"
+          ]
+        },
+        {
+          "name": "options?",
+          "comment": "",
+          "type": [
+            "object"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "fireEvent<T extends IJsonProviderEvents = IJsonProviderEvents, E extends keyof T = keyof T>",
+      "returnType": [
+        "boolean"
+      ],
+      "visibility": "public",
+      "arguments": [
+        {
+          "name": "eventName",
+          "comment": "",
+          "type": [
+            "E"
+          ]
+        },
+        {
+          "name": "...args",
+          "comment": "",
+          "type": [
+            "Parameters<T[E]>"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "getEvents",
+      "returnType": [],
+      "visibility": "private",
+      "arguments": [
+        {
+          "name": "xhr",
+          "comment": "",
+          "type": [
+            "object"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "hasListener<T extends IJsonProviderEvents = IJsonProviderEvents, E extends keyof T = keyof T>",
+      "returnType": [
+        "boolean"
+      ],
+      "visibility": "public",
+      "arguments": [
+        {
+          "name": "eventName",
+          "comment": "",
+          "type": [
+            "E"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "on<T extends IJsonProviderEvents = IJsonProviderEvents, E extends keyof T = keyof T>",
+      "returnType": [],
+      "visibility": "public",
+      "arguments": [
+        {
+          "name": "eventName",
+          "comment": "",
+          "type": [
+            "E"
+          ]
+        },
+        {
+          "name": "handler",
+          "comment": "",
+          "type": [
+            "T[E]"
+          ]
+        },
+        {
+          "name": "scope?",
+          "comment": "",
+          "type": [
+            "object"
+          ]
+        },
+        {
+          "name": "options?",
+          "comment": "",
+          "type": [
+            "object"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "parseResponse",
+      "returnType": [],
+      "visibility": "private",
+      "arguments": [
+        {
+          "name": "xhr",
+          "comment": "",
+          "type": [
+            "object"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "removeListener<T extends IJsonProviderEvents = IJsonProviderEvents, E extends keyof T = keyof T>",
+      "returnType": [],
+      "visibility": "public",
+      "arguments": [
+        {
+          "name": "eventName",
+          "comment": "",
+          "type": [
+            "E"
+          ]
+        },
+        {
+          "name": "handler",
+          "comment": "",
+          "type": [
+            "T[E]"
+          ]
+        },
+        {
+          "name": "scope?",
+          "comment": "",
+          "type": [
+            "object"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "un<T extends IJsonProviderEvents = IJsonProviderEvents, E extends keyof T = keyof T>",
+      "returnType": [],
+      "visibility": "public",
+      "arguments": [
+        {
+          "name": "eventName",
+          "comment": "",
+          "type": [
+            "E"
+          ]
+        },
+        {
+          "name": "handler",
+          "comment": "",
+          "type": [
+            "T[E]"
+          ]
+        },
+        {
+          "name": "scope?",
+          "comment": "",
+          "type": [
+            "object"
+          ]
+        }
+      ]
+    }
+  ],
+  "events": [
+    {
+      "name": "connect",
+      "arguments": [
+        {
+          "name": "provider",
+          "comment": "",
+          "type": [
+            "Ext.direct.Provider"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "data",
+      "arguments": [
+        {
+          "name": "provider",
+          "comment": "",
+          "type": [
+            "Ext.direct.Provider"
+          ]
+        },
+        {
+          "name": "e",
+          "comment": "",
+          "type": [
+            "event"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "disconnect",
+      "arguments": [
+        {
+          "name": "provider",
+          "comment": "",
+          "type": [
+            "Ext.direct.Provider"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "exception",
+      "arguments": []
+    }
+  ]
+}

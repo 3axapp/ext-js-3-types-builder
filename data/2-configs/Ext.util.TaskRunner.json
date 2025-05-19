@@ -1,0 +1,47 @@
+{
+  "name": "TaskRunner",
+  "namespace": "Ext.util",
+  "constructorMethod": null,
+  "properties": [],
+  "methods": [
+    {
+      "name": "start",
+      "returnType": [
+        "object"
+      ],
+      "visibility": "public",
+      "arguments": [
+        {
+          "name": "task",
+          "comment": "",
+          "type": [
+            "object"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "stop",
+      "returnType": [
+        "object"
+      ],
+      "visibility": "public",
+      "arguments": [
+        {
+          "name": "task",
+          "comment": "",
+          "type": [
+            "object"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "stopAll",
+      "returnType": [],
+      "visibility": "public",
+      "arguments": []
+    }
+  ],
+  "events": []
+}

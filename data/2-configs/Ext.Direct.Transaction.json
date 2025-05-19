@@ -1,0 +1,9 @@
+{
+  "name": "Transaction",
+  "namespace": "Ext.Direct",
+  "extends": null,
+  "constructorMethod": null,
+  "properties": [],
+  "methods": [],
+  "events": []
+}

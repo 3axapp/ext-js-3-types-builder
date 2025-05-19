@@ -1,0 +1,75 @@
+{
+  "name": "DDProxy",
+  "namespace": "Ext.dd",
+  "extends": "Ext.dd.DD",
+  "constructorMethod": null,
+  "properties": [
+    {
+      "name": "centerFrame",
+      "type": [
+        "boolean"
+      ],
+      "visibility": "public",
+      "comment": ""
+    },
+    {
+      "name": "resizeFrame",
+      "type": [
+        "boolean"
+      ],
+      "visibility": "public",
+      "comment": ""
+    },
+    {
+      "name": "Ext",
+      "static": true,
+      "type": [
+        "string"
+      ],
+      "visibility": "public",
+      "comment": ""
+    }
+  ],
+  "methods": [
+    {
+      "name": "_resizeProxy",
+      "returnType": [],
+      "visibility": "private",
+      "arguments": []
+    },
+    {
+      "name": "createFrame",
+      "returnType": [],
+      "visibility": "public",
+      "arguments": []
+    },
+    {
+      "name": "initFrame",
+      "returnType": [],
+      "visibility": "public",
+      "arguments": []
+    },
+    {
+      "name": "showFrame",
+      "returnType": [],
+      "visibility": "private",
+      "arguments": [
+        {
+          "name": "iPageX",
+          "comment": "",
+          "type": [
+            "int"
+          ]
+        },
+        {
+          "name": "iPageY",
+          "comment": "",
+          "type": [
+            "int"
+          ]
+        }
+      ]
+    }
+  ],
+  "events": []
+}

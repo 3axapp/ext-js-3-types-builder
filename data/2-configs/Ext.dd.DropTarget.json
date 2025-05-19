@@ -1,0 +1,182 @@
+{
+  "name": "DropTarget",
+  "namespace": "Ext.dd",
+  "extends": "Ext.dd.DDTarget",
+  "constructorMethod": {
+    "config": [
+      {
+        "name": "ddGroup?",
+        "type": [
+          "string"
+        ],
+        "comment": ""
+      },
+      {
+        "name": "dropAllowed?",
+        "type": [
+          "string"
+        ],
+        "comment": ""
+      },
+      {
+        "name": "dropNotAllowed?",
+        "type": [
+          "string"
+        ],
+        "comment": ""
+      },
+      {
+        "name": "overClass?",
+        "type": [
+          "string"
+        ],
+        "comment": ""
+      }
+    ]
+  },
+  "properties": [
+    {
+      "name": "isNotifyTarget",
+      "type": [
+        "boolean"
+      ],
+      "visibility": "private",
+      "comment": ""
+    },
+    {
+      "name": "isTarget",
+      "type": [
+        "boolean"
+      ],
+      "visibility": "public",
+      "comment": ""
+    }
+  ],
+  "methods": [
+    {
+      "name": "destroy",
+      "returnType": [],
+      "visibility": "private",
+      "arguments": []
+    },
+    {
+      "name": "notifyDrop",
+      "returnType": [
+        "boolean"
+      ],
+      "visibility": "public",
+      "arguments": [
+        {
+          "name": "source",
+          "comment": "",
+          "type": [
+            "Ext.dd.DragSource"
+          ]
+        },
+        {
+          "name": "e",
+          "comment": "",
+          "type": [
+            "Event"
+          ]
+        },
+        {
+          "name": "data",
+          "comment": "",
+          "type": [
+            "object"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "notifyEnter",
+      "returnType": [
+        "string"
+      ],
+      "visibility": "public",
+      "arguments": [
+        {
+          "name": "source",
+          "comment": "",
+          "type": [
+            "Ext.dd.DragSource"
+          ]
+        },
+        {
+          "name": "e",
+          "comment": "",
+          "type": [
+            "Event"
+          ]
+        },
+        {
+          "name": "data",
+          "comment": "",
+          "type": [
+            "object"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "notifyOut",
+      "returnType": [],
+      "visibility": "public",
+      "arguments": [
+        {
+          "name": "source",
+          "comment": "",
+          "type": [
+            "Ext.dd.DragSource"
+          ]
+        },
+        {
+          "name": "e",
+          "comment": "",
+          "type": [
+            "Event"
+          ]
+        },
+        {
+          "name": "data",
+          "comment": "",
+          "type": [
+            "object"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "notifyOver",
+      "returnType": [
+        "string"
+      ],
+      "visibility": "public",
+      "arguments": [
+        {
+          "name": "source",
+          "comment": "",
+          "type": [
+            "Ext.dd.DragSource"
+          ]
+        },
+        {
+          "name": "e",
+          "comment": "",
+          "type": [
+            "Event"
+          ]
+        },
+        {
+          "name": "data",
+          "comment": "",
+          "type": [
+            "object"
+          ]
+        }
+      ]
+    }
+  ],
+  "events": []
+}

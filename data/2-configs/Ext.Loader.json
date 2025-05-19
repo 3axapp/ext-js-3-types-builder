@@ -1,0 +1,87 @@
+{
+  "name": "Loader",
+  "namespace": "Ext",
+  "constructorMethod": null,
+  "properties": [],
+  "methods": [
+    {
+      "name": "buildScriptTag",
+      "returnType": [
+        "Element"
+      ],
+      "visibility": "private",
+      "arguments": [
+        {
+          "name": "filename",
+          "comment": "",
+          "type": [
+            "string"
+          ]
+        },
+        {
+          "name": "callback",
+          "comment": "",
+          "type": [
+            "Function"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "load",
+      "returnType": [],
+      "visibility": "public",
+      "arguments": [
+        {
+          "name": "fileList",
+          "comment": "",
+          "type": [
+            "unknown[]"
+          ]
+        },
+        {
+          "name": "callback",
+          "comment": "",
+          "type": [
+            "Function"
+          ]
+        },
+        {
+          "name": "scope",
+          "comment": "",
+          "type": [
+            "object"
+          ]
+        },
+        {
+          "name": "preserveOrder",
+          "comment": "",
+          "type": [
+            "boolean"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "loadFileIndex",
+      "returnType": [],
+      "visibility": "public",
+      "arguments": [
+        {
+          "name": "index",
+          "comment": "",
+          "type": [
+            "object"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "onFileLoaded",
+      "returnType": [],
+      "visibility": "public",
+      "arguments": []
+    }
+  ],
+  "events": []
+}

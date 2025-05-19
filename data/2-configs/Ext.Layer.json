@@ -1,0 +1,1129 @@
+{
+  "name": "Layer",
+  "namespace": "Ext",
+  "extends": "Ext.Element",
+  "constructorMethod": {
+    "config": [
+      {
+        "name": "cls?",
+        "type": [
+          "string"
+        ],
+        "comment": ""
+      },
+      {
+        "name": "constrain?",
+        "type": [
+          "boolean"
+        ],
+        "comment": ""
+      },
+      {
+        "name": "dh?",
+        "type": [
+          "object"
+        ],
+        "comment": ""
+      },
+      {
+        "name": "shadow?",
+        "type": [
+          "string",
+          "boolean"
+        ],
+        "comment": ""
+      },
+      {
+        "name": "shadowOffset?",
+        "type": [
+          "number"
+        ],
+        "comment": ""
+      },
+      {
+        "name": "shim?",
+        "type": [
+          "boolean"
+        ],
+        "comment": ""
+      },
+      {
+        "name": "useDisplay?",
+        "type": [
+          "boolean"
+        ],
+        "comment": ""
+      },
+      {
+        "name": "zindex?",
+        "type": [
+          "number"
+        ],
+        "comment": ""
+      }
+    ]
+  },
+  "properties": [],
+  "methods": [
+    {
+      "name": "addListener<T extends ILayerEvents = ILayerEvents, E extends keyof T = keyof T>",
+      "returnType": [
+        "this"
+      ],
+      "visibility": "public",
+      "arguments": [
+        {
+          "name": "eventName",
+          "comment": "",
+          "type": [
+            "E"
+          ]
+        },
+        {
+          "name": "fn",
+          "comment": "",
+          "type": [
+            "Function"
+          ]
+        },
+        {
+          "name": "scope?",
+          "comment": "",
+          "type": [
+            "object"
+          ]
+        },
+        {
+          "name": "options?",
+          "comment": "",
+          "type": [
+            "object"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "on<T extends ILayerEvents = ILayerEvents, E extends keyof T = keyof T>",
+      "returnType": [],
+      "visibility": "public",
+      "arguments": [
+        {
+          "name": "eventName",
+          "comment": "",
+          "type": [
+            "E"
+          ]
+        },
+        {
+          "name": "fn",
+          "comment": "",
+          "type": [
+            "Function"
+          ]
+        },
+        {
+          "name": "scope?",
+          "comment": "",
+          "type": [
+            "object"
+          ]
+        },
+        {
+          "name": "options?",
+          "comment": "",
+          "type": [
+            "object"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "removeListener<T extends ILayerEvents = ILayerEvents, E extends keyof T = keyof T>",
+      "returnType": [
+        "this"
+      ],
+      "visibility": "public",
+      "arguments": [
+        {
+          "name": "eventName",
+          "comment": "",
+          "type": [
+            "E"
+          ]
+        },
+        {
+          "name": "fn",
+          "comment": "",
+          "type": [
+            "Function"
+          ]
+        },
+        {
+          "name": "scope",
+          "comment": "",
+          "type": [
+            "object"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "setZIndex",
+      "returnType": [
+        "this"
+      ],
+      "visibility": "public",
+      "arguments": [
+        {
+          "name": "zindex",
+          "comment": "",
+          "type": [
+            "number"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "un<T extends ILayerEvents = ILayerEvents, E extends keyof T = keyof T>",
+      "returnType": [
+        "this"
+      ],
+      "visibility": "public",
+      "arguments": [
+        {
+          "name": "eventName",
+          "comment": "",
+          "type": [
+            "E"
+          ]
+        },
+        {
+          "name": "fn",
+          "comment": "",
+          "type": [
+            "Function"
+          ]
+        },
+        {
+          "name": "scope",
+          "comment": "",
+          "type": [
+            "object"
+          ]
+        }
+      ]
+    }
+  ],
+  "events": [
+    {
+      "name": "DOMActivate",
+      "arguments": [
+        {
+          "name": "e",
+          "comment": "",
+          "type": [
+            "Ext.EventObject"
+          ]
+        },
+        {
+          "name": "t",
+          "comment": "",
+          "type": [
+            "HTMLElement"
+          ]
+        },
+        {
+          "name": "o",
+          "comment": "",
+          "type": [
+            "object"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "DOMAttrModified",
+      "arguments": [
+        {
+          "name": "e",
+          "comment": "",
+          "type": [
+            "Ext.EventObject"
+          ]
+        },
+        {
+          "name": "t",
+          "comment": "",
+          "type": [
+            "HTMLElement"
+          ]
+        },
+        {
+          "name": "o",
+          "comment": "",
+          "type": [
+            "object"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "DOMCharacterDataModified",
+      "arguments": [
+        {
+          "name": "e",
+          "comment": "",
+          "type": [
+            "Ext.EventObject"
+          ]
+        },
+        {
+          "name": "t",
+          "comment": "",
+          "type": [
+            "HTMLElement"
+          ]
+        },
+        {
+          "name": "o",
+          "comment": "",
+          "type": [
+            "object"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "DOMFocusIn",
+      "arguments": [
+        {
+          "name": "e",
+          "comment": "",
+          "type": [
+            "Ext.EventObject"
+          ]
+        },
+        {
+          "name": "t",
+          "comment": "",
+          "type": [
+            "HTMLElement"
+          ]
+        },
+        {
+          "name": "o",
+          "comment": "",
+          "type": [
+            "object"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "DOMFocusOut",
+      "arguments": [
+        {
+          "name": "e",
+          "comment": "",
+          "type": [
+            "Ext.EventObject"
+          ]
+        },
+        {
+          "name": "t",
+          "comment": "",
+          "type": [
+            "HTMLElement"
+          ]
+        },
+        {
+          "name": "o",
+          "comment": "",
+          "type": [
+            "object"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "DOMNodeInserted",
+      "arguments": [
+        {
+          "name": "e",
+          "comment": "",
+          "type": [
+            "Ext.EventObject"
+          ]
+        },
+        {
+          "name": "t",
+          "comment": "",
+          "type": [
+            "HTMLElement"
+          ]
+        },
+        {
+          "name": "o",
+          "comment": "",
+          "type": [
+            "object"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "DOMNodeInsertedIntoDocument",
+      "arguments": [
+        {
+          "name": "e",
+          "comment": "",
+          "type": [
+            "Ext.EventObject"
+          ]
+        },
+        {
+          "name": "t",
+          "comment": "",
+          "type": [
+            "HTMLElement"
+          ]
+        },
+        {
+          "name": "o",
+          "comment": "",
+          "type": [
+            "object"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "DOMNodeRemoved",
+      "arguments": [
+        {
+          "name": "e",
+          "comment": "",
+          "type": [
+            "Ext.EventObject"
+          ]
+        },
+        {
+          "name": "t",
+          "comment": "",
+          "type": [
+            "HTMLElement"
+          ]
+        },
+        {
+          "name": "o",
+          "comment": "",
+          "type": [
+            "object"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "DOMNodeRemovedFromDocument",
+      "arguments": [
+        {
+          "name": "e",
+          "comment": "",
+          "type": [
+            "Ext.EventObject"
+          ]
+        },
+        {
+          "name": "t",
+          "comment": "",
+          "type": [
+            "HTMLElement"
+          ]
+        },
+        {
+          "name": "o",
+          "comment": "",
+          "type": [
+            "object"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "DOMSubtreeModified",
+      "arguments": [
+        {
+          "name": "e",
+          "comment": "",
+          "type": [
+            "Ext.EventObject"
+          ]
+        },
+        {
+          "name": "t",
+          "comment": "",
+          "type": [
+            "HTMLElement"
+          ]
+        },
+        {
+          "name": "o",
+          "comment": "",
+          "type": [
+            "object"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "abort",
+      "arguments": [
+        {
+          "name": "e",
+          "comment": "",
+          "type": [
+            "Ext.EventObject"
+          ]
+        },
+        {
+          "name": "t",
+          "comment": "",
+          "type": [
+            "HTMLElement"
+          ]
+        },
+        {
+          "name": "o",
+          "comment": "",
+          "type": [
+            "object"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "blur",
+      "arguments": [
+        {
+          "name": "e",
+          "comment": "",
+          "type": [
+            "Ext.EventObject"
+          ]
+        },
+        {
+          "name": "t",
+          "comment": "",
+          "type": [
+            "HTMLElement"
+          ]
+        },
+        {
+          "name": "o",
+          "comment": "",
+          "type": [
+            "object"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "change",
+      "arguments": [
+        {
+          "name": "e",
+          "comment": "",
+          "type": [
+            "Ext.EventObject"
+          ]
+        },
+        {
+          "name": "t",
+          "comment": "",
+          "type": [
+            "HTMLElement"
+          ]
+        },
+        {
+          "name": "o",
+          "comment": "",
+          "type": [
+            "object"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "click",
+      "arguments": [
+        {
+          "name": "e",
+          "comment": "",
+          "type": [
+            "Ext.EventObject"
+          ]
+        },
+        {
+          "name": "t",
+          "comment": "",
+          "type": [
+            "HTMLElement"
+          ]
+        },
+        {
+          "name": "o",
+          "comment": "",
+          "type": [
+            "object"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "contextmenu",
+      "arguments": [
+        {
+          "name": "e",
+          "comment": "",
+          "type": [
+            "Ext.EventObject"
+          ]
+        },
+        {
+          "name": "t",
+          "comment": "",
+          "type": [
+            "HTMLElement"
+          ]
+        },
+        {
+          "name": "o",
+          "comment": "",
+          "type": [
+            "object"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "dblclick",
+      "arguments": [
+        {
+          "name": "e",
+          "comment": "",
+          "type": [
+            "Ext.EventObject"
+          ]
+        },
+        {
+          "name": "t",
+          "comment": "",
+          "type": [
+            "HTMLElement"
+          ]
+        },
+        {
+          "name": "o",
+          "comment": "",
+          "type": [
+            "object"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "error",
+      "arguments": [
+        {
+          "name": "e",
+          "comment": "",
+          "type": [
+            "Ext.EventObject"
+          ]
+        },
+        {
+          "name": "t",
+          "comment": "",
+          "type": [
+            "HTMLElement"
+          ]
+        },
+        {
+          "name": "o",
+          "comment": "",
+          "type": [
+            "object"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "focus",
+      "arguments": [
+        {
+          "name": "e",
+          "comment": "",
+          "type": [
+            "Ext.EventObject"
+          ]
+        },
+        {
+          "name": "t",
+          "comment": "",
+          "type": [
+            "HTMLElement"
+          ]
+        },
+        {
+          "name": "o",
+          "comment": "",
+          "type": [
+            "object"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "keydown",
+      "arguments": [
+        {
+          "name": "e",
+          "comment": "",
+          "type": [
+            "Ext.EventObject"
+          ]
+        },
+        {
+          "name": "t",
+          "comment": "",
+          "type": [
+            "HTMLElement"
+          ]
+        },
+        {
+          "name": "o",
+          "comment": "",
+          "type": [
+            "object"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "keypress",
+      "arguments": [
+        {
+          "name": "e",
+          "comment": "",
+          "type": [
+            "Ext.EventObject"
+          ]
+        },
+        {
+          "name": "t",
+          "comment": "",
+          "type": [
+            "HTMLElement"
+          ]
+        },
+        {
+          "name": "o",
+          "comment": "",
+          "type": [
+            "object"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "keyup",
+      "arguments": [
+        {
+          "name": "e",
+          "comment": "",
+          "type": [
+            "Ext.EventObject"
+          ]
+        },
+        {
+          "name": "t",
+          "comment": "",
+          "type": [
+            "HTMLElement"
+          ]
+        },
+        {
+          "name": "o",
+          "comment": "",
+          "type": [
+            "object"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "load",
+      "arguments": [
+        {
+          "name": "e",
+          "comment": "",
+          "type": [
+            "Ext.EventObject"
+          ]
+        },
+        {
+          "name": "t",
+          "comment": "",
+          "type": [
+            "HTMLElement"
+          ]
+        },
+        {
+          "name": "o",
+          "comment": "",
+          "type": [
+            "object"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "mousedown",
+      "arguments": [
+        {
+          "name": "e",
+          "comment": "",
+          "type": [
+            "Ext.EventObject"
+          ]
+        },
+        {
+          "name": "t",
+          "comment": "",
+          "type": [
+            "HTMLElement"
+          ]
+        },
+        {
+          "name": "o",
+          "comment": "",
+          "type": [
+            "object"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "mouseenter",
+      "arguments": [
+        {
+          "name": "e",
+          "comment": "",
+          "type": [
+            "Ext.EventObject"
+          ]
+        },
+        {
+          "name": "t",
+          "comment": "",
+          "type": [
+            "HTMLElement"
+          ]
+        },
+        {
+          "name": "o",
+          "comment": "",
+          "type": [
+            "object"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "mouseleave",
+      "arguments": [
+        {
+          "name": "e",
+          "comment": "",
+          "type": [
+            "Ext.EventObject"
+          ]
+        },
+        {
+          "name": "t",
+          "comment": "",
+          "type": [
+            "HTMLElement"
+          ]
+        },
+        {
+          "name": "o",
+          "comment": "",
+          "type": [
+            "object"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "mousemove",
+      "arguments": [
+        {
+          "name": "e",
+          "comment": "",
+          "type": [
+            "Ext.EventObject"
+          ]
+        },
+        {
+          "name": "t",
+          "comment": "",
+          "type": [
+            "HTMLElement"
+          ]
+        },
+        {
+          "name": "o",
+          "comment": "",
+          "type": [
+            "object"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "mouseout",
+      "arguments": [
+        {
+          "name": "e",
+          "comment": "",
+          "type": [
+            "Ext.EventObject"
+          ]
+        },
+        {
+          "name": "t",
+          "comment": "",
+          "type": [
+            "HTMLElement"
+          ]
+        },
+        {
+          "name": "o",
+          "comment": "",
+          "type": [
+            "object"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "mouseover",
+      "arguments": [
+        {
+          "name": "e",
+          "comment": "",
+          "type": [
+            "Ext.EventObject"
+          ]
+        },
+        {
+          "name": "t",
+          "comment": "",
+          "type": [
+            "HTMLElement"
+          ]
+        },
+        {
+          "name": "o",
+          "comment": "",
+          "type": [
+            "object"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "mouseup",
+      "arguments": [
+        {
+          "name": "e",
+          "comment": "",
+          "type": [
+            "Ext.EventObject"
+          ]
+        },
+        {
+          "name": "t",
+          "comment": "",
+          "type": [
+            "HTMLElement"
+          ]
+        },
+        {
+          "name": "o",
+          "comment": "",
+          "type": [
+            "object"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "reset",
+      "arguments": [
+        {
+          "name": "e",
+          "comment": "",
+          "type": [
+            "Ext.EventObject"
+          ]
+        },
+        {
+          "name": "t",
+          "comment": "",
+          "type": [
+            "HTMLElement"
+          ]
+        },
+        {
+          "name": "o",
+          "comment": "",
+          "type": [
+            "object"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "resize",
+      "arguments": [
+        {
+          "name": "e",
+          "comment": "",
+          "type": [
+            "Ext.EventObject"
+          ]
+        },
+        {
+          "name": "t",
+          "comment": "",
+          "type": [
+            "HTMLElement"
+          ]
+        },
+        {
+          "name": "o",
+          "comment": "",
+          "type": [
+            "object"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "scroll",
+      "arguments": [
+        {
+          "name": "e",
+          "comment": "",
+          "type": [
+            "Ext.EventObject"
+          ]
+        },
+        {
+          "name": "t",
+          "comment": "",
+          "type": [
+            "HTMLElement"
+          ]
+        },
+        {
+          "name": "o",
+          "comment": "",
+          "type": [
+            "object"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "select",
+      "arguments": [
+        {
+          "name": "e",
+          "comment": "",
+          "type": [
+            "Ext.EventObject"
+          ]
+        },
+        {
+          "name": "t",
+          "comment": "",
+          "type": [
+            "HTMLElement"
+          ]
+        },
+        {
+          "name": "o",
+          "comment": "",
+          "type": [
+            "object"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "submit",
+      "arguments": [
+        {
+          "name": "e",
+          "comment": "",
+          "type": [
+            "Ext.EventObject"
+          ]
+        },
+        {
+          "name": "t",
+          "comment": "",
+          "type": [
+            "HTMLElement"
+          ]
+        },
+        {
+          "name": "o",
+          "comment": "",
+          "type": [
+            "object"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "unload",
+      "arguments": [
+        {
+          "name": "e",
+          "comment": "",
+          "type": [
+            "Ext.EventObject"
+          ]
+        },
+        {
+          "name": "t",
+          "comment": "",
+          "type": [
+            "HTMLElement"
+          ]
+        },
+        {
+          "name": "o",
+          "comment": "",
+          "type": [
+            "object"
+          ]
+        }
+      ]
+    }
+  ]
+}

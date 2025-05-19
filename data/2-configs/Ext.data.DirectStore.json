@@ -1,0 +1,630 @@
+{
+  "name": "DirectStore",
+  "namespace": "Ext.data",
+  "extends": "Ext.data.Store",
+  "constructorMethod": {
+    "config": [
+      {
+        "name": "autoDestroy?",
+        "type": [
+          "boolean"
+        ],
+        "comment": ""
+      },
+      {
+        "name": "autoLoad?",
+        "type": [
+          "boolean",
+          "object"
+        ],
+        "comment": ""
+      },
+      {
+        "name": "autoSave?",
+        "type": [
+          "boolean"
+        ],
+        "comment": ""
+      },
+      {
+        "name": "baseParams?",
+        "type": [
+          "object"
+        ],
+        "comment": ""
+      },
+      {
+        "name": "batch?",
+        "type": [
+          "boolean"
+        ],
+        "comment": ""
+      },
+      {
+        "name": "data?",
+        "type": [
+          "unknown[]"
+        ],
+        "comment": ""
+      },
+      {
+        "name": "defaultParamNames?",
+        "type": [
+          "object"
+        ],
+        "comment": ""
+      },
+      {
+        "name": "listeners?",
+        "type": [
+          "object"
+        ],
+        "comment": ""
+      },
+      {
+        "name": "paramNames?",
+        "type": [
+          "object"
+        ],
+        "comment": ""
+      },
+      {
+        "name": "proxy?",
+        "type": [
+          "Ext.data.DataProxy"
+        ],
+        "comment": ""
+      },
+      {
+        "name": "pruneModifiedRecords?",
+        "type": [
+          "boolean"
+        ],
+        "comment": ""
+      },
+      {
+        "name": "reader?",
+        "type": [
+          "Ext.data.DataReader"
+        ],
+        "comment": ""
+      },
+      {
+        "name": "remoteSort?",
+        "type": [
+          "boolean"
+        ],
+        "comment": ""
+      },
+      {
+        "name": "restful?",
+        "type": [
+          "boolean"
+        ],
+        "comment": ""
+      },
+      {
+        "name": "sortInfo?",
+        "type": [
+          "object"
+        ],
+        "comment": ""
+      },
+      {
+        "name": "storeId?",
+        "type": [
+          "string"
+        ],
+        "comment": ""
+      },
+      {
+        "name": "url?",
+        "type": [
+          "string"
+        ],
+        "comment": ""
+      },
+      {
+        "name": "writer?",
+        "type": [
+          "Ext.data.DataWriter"
+        ],
+        "comment": ""
+      }
+    ]
+  },
+  "properties": [],
+  "methods": [
+    {
+      "name": "addListener<T extends IDirectStoreEvents = IDirectStoreEvents, E extends keyof T = keyof T>",
+      "returnType": [],
+      "visibility": "public",
+      "arguments": [
+        {
+          "name": "eventName",
+          "comment": "",
+          "type": [
+            "E"
+          ]
+        },
+        {
+          "name": "handler",
+          "comment": "",
+          "type": [
+            "T[E]"
+          ]
+        },
+        {
+          "name": "scope?",
+          "comment": "",
+          "type": [
+            "object"
+          ]
+        },
+        {
+          "name": "options?",
+          "comment": "",
+          "type": [
+            "object"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "fireEvent<T extends IDirectStoreEvents = IDirectStoreEvents, E extends keyof T = keyof T>",
+      "returnType": [
+        "boolean"
+      ],
+      "visibility": "public",
+      "arguments": [
+        {
+          "name": "eventName",
+          "comment": "",
+          "type": [
+            "E"
+          ]
+        },
+        {
+          "name": "...args",
+          "comment": "",
+          "type": [
+            "Parameters<T[E]>"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "hasListener<T extends IDirectStoreEvents = IDirectStoreEvents, E extends keyof T = keyof T>",
+      "returnType": [
+        "boolean"
+      ],
+      "visibility": "public",
+      "arguments": [
+        {
+          "name": "eventName",
+          "comment": "",
+          "type": [
+            "E"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "on<T extends IDirectStoreEvents = IDirectStoreEvents, E extends keyof T = keyof T>",
+      "returnType": [],
+      "visibility": "public",
+      "arguments": [
+        {
+          "name": "eventName",
+          "comment": "",
+          "type": [
+            "E"
+          ]
+        },
+        {
+          "name": "handler",
+          "comment": "",
+          "type": [
+            "T[E]"
+          ]
+        },
+        {
+          "name": "scope?",
+          "comment": "",
+          "type": [
+            "object"
+          ]
+        },
+        {
+          "name": "options?",
+          "comment": "",
+          "type": [
+            "object"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "removeListener<T extends IDirectStoreEvents = IDirectStoreEvents, E extends keyof T = keyof T>",
+      "returnType": [],
+      "visibility": "public",
+      "arguments": [
+        {
+          "name": "eventName",
+          "comment": "",
+          "type": [
+            "E"
+          ]
+        },
+        {
+          "name": "handler",
+          "comment": "",
+          "type": [
+            "T[E]"
+          ]
+        },
+        {
+          "name": "scope?",
+          "comment": "",
+          "type": [
+            "object"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "un<T extends IDirectStoreEvents = IDirectStoreEvents, E extends keyof T = keyof T>",
+      "returnType": [],
+      "visibility": "public",
+      "arguments": [
+        {
+          "name": "eventName",
+          "comment": "",
+          "type": [
+            "E"
+          ]
+        },
+        {
+          "name": "handler",
+          "comment": "",
+          "type": [
+            "T[E]"
+          ]
+        },
+        {
+          "name": "scope?",
+          "comment": "",
+          "type": [
+            "object"
+          ]
+        }
+      ]
+    }
+  ],
+  "events": [
+    {
+      "name": "add",
+      "arguments": [
+        {
+          "name": "thisCmp",
+          "comment": "",
+          "type": [
+            "DirectStore"
+          ]
+        },
+        {
+          "name": "records",
+          "comment": "",
+          "type": [
+            "Ext.data.Record[]"
+          ]
+        },
+        {
+          "name": "index",
+          "comment": "",
+          "type": [
+            "number"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "beforeload",
+      "arguments": [
+        {
+          "name": "thisCmp",
+          "comment": "",
+          "type": [
+            "DirectStore"
+          ]
+        },
+        {
+          "name": "options",
+          "comment": "",
+          "type": [
+            "object"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "beforesave",
+      "arguments": [
+        {
+          "name": "store",
+          "comment": "",
+          "type": [
+            "Ext.data.Store"
+          ]
+        },
+        {
+          "name": "data",
+          "comment": "",
+          "type": [
+            "object"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "beforewrite",
+      "arguments": [
+        {
+          "name": "store",
+          "comment": "",
+          "type": [
+            "Ext.data.Store"
+          ]
+        },
+        {
+          "name": "action",
+          "comment": "",
+          "type": [
+            "string"
+          ]
+        },
+        {
+          "name": "rs",
+          "comment": "",
+          "type": [
+            "Ext.data.Record",
+            "Ext.data.Record[]"
+          ]
+        },
+        {
+          "name": "options",
+          "comment": "",
+          "type": [
+            "object"
+          ]
+        },
+        {
+          "name": "arg",
+          "comment": "",
+          "type": [
+            "object"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "clear",
+      "arguments": [
+        {
+          "name": "thisCmp",
+          "comment": "",
+          "type": [
+            "DirectStore"
+          ]
+        },
+        {
+          "name": "records",
+          "comment": "",
+          "type": [
+            "Ext.data.Record[]"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "datachanged",
+      "arguments": [
+        {
+          "name": "thisCmp",
+          "comment": "",
+          "type": [
+            "DirectStore"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "exception",
+      "arguments": [
+        {
+          "name": "misc",
+          "comment": "",
+          "type": [
+            "misc"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "load",
+      "arguments": [
+        {
+          "name": "thisCmp",
+          "comment": "",
+          "type": [
+            "DirectStore"
+          ]
+        },
+        {
+          "name": "records",
+          "comment": "",
+          "type": [
+            "Ext.data.Record[]"
+          ]
+        },
+        {
+          "name": "options",
+          "comment": "",
+          "type": [
+            "object"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "loadexception",
+      "arguments": [
+        {
+          "name": "misc",
+          "comment": "",
+          "type": [
+            "misc"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "metachange",
+      "arguments": [
+        {
+          "name": "thisCmp",
+          "comment": "",
+          "type": [
+            "DirectStore"
+          ]
+        },
+        {
+          "name": "meta",
+          "comment": "",
+          "type": [
+            "object"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "remove",
+      "arguments": [
+        {
+          "name": "thisCmp",
+          "comment": "",
+          "type": [
+            "DirectStore"
+          ]
+        },
+        {
+          "name": "record",
+          "comment": "",
+          "type": [
+            "Ext.data.Record"
+          ]
+        },
+        {
+          "name": "index",
+          "comment": "",
+          "type": [
+            "number"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "save",
+      "arguments": [
+        {
+          "name": "store",
+          "comment": "",
+          "type": [
+            "Ext.data.Store"
+          ]
+        },
+        {
+          "name": "batch",
+          "comment": "",
+          "type": [
+            "number"
+          ]
+        },
+        {
+          "name": "data",
+          "comment": "",
+          "type": [
+            "object"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "update",
+      "arguments": [
+        {
+          "name": "thisCmp",
+          "comment": "",
+          "type": [
+            "DirectStore"
+          ]
+        },
+        {
+          "name": "record",
+          "comment": "",
+          "type": [
+            "Ext.data.Record"
+          ]
+        },
+        {
+          "name": "operation",
+          "comment": "",
+          "type": [
+            "string"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "write",
+      "arguments": [
+        {
+          "name": "store",
+          "comment": "",
+          "type": [
+            "Ext.data.Store"
+          ]
+        },
+        {
+          "name": "action",
+          "comment": "",
+          "type": [
+            "string"
+          ]
+        },
+        {
+          "name": "result",
+          "comment": "",
+          "type": [
+            "object"
+          ]
+        },
+        {
+          "name": "res",
+          "comment": "",
+          "type": [
+            "Ext.Direct.Transaction"
+          ]
+        },
+        {
+          "name": "rs",
+          "comment": "",
+          "type": [
+            "Ext.data.Record",
+            "Ext.data.Record[]"
+          ]
+        }
+      ]
+    }
+  ]
+}

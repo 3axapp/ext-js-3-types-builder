@@ -1,0 +1,9 @@
+{
+  "name": "DDTarget",
+  "namespace": "Ext.dd",
+  "extends": "Ext.dd.DragDrop",
+  "constructorMethod": null,
+  "properties": [],
+  "methods": [],
+  "events": []
+}

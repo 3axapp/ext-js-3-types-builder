@@ -1,0 +1,51 @@
+{
+  "name": "BasicLayoutAdapter",
+  "namespace": "Ext.SplitBar",
+  "constructorMethod": null,
+  "properties": [],
+  "methods": [
+    {
+      "name": "getElementSize",
+      "returnType": [],
+      "visibility": "public",
+      "arguments": [
+        {
+          "name": "s",
+          "comment": "",
+          "type": [
+            "Ext.SplitBar"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "setElementSize",
+      "returnType": [],
+      "visibility": "public",
+      "arguments": [
+        {
+          "name": "s",
+          "comment": "",
+          "type": [
+            "Ext.SplitBar"
+          ]
+        },
+        {
+          "name": "newSize",
+          "comment": "",
+          "type": [
+            "number"
+          ]
+        },
+        {
+          "name": "onComplete",
+          "comment": "",
+          "type": [
+            "Function"
+          ]
+        }
+      ]
+    }
+  ],
+  "events": []
+}

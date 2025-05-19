@@ -1,0 +1,1095 @@
+{
+  "name": "DragDrop",
+  "namespace": "Ext.dd",
+  "constructorMethod": null,
+  "properties": [
+    {
+      "name": "__ygDragDrop",
+      "type": [
+        "boolean"
+      ],
+      "visibility": "private",
+      "comment": ""
+    },
+    {
+      "name": "_domRef",
+      "type": [
+        "object"
+      ],
+      "visibility": "private",
+      "comment": ""
+    },
+    {
+      "name": "available",
+      "type": [
+        "boolean"
+      ],
+      "visibility": "public",
+      "comment": ""
+    },
+    {
+      "name": "config",
+      "type": [
+        "object"
+      ],
+      "visibility": "public",
+      "comment": ""
+    },
+    {
+      "name": "constrainX",
+      "type": [
+        "boolean"
+      ],
+      "visibility": "private",
+      "comment": ""
+    },
+    {
+      "name": "constrainY",
+      "type": [
+        "boolean"
+      ],
+      "visibility": "private",
+      "comment": ""
+    },
+    {
+      "name": "defaultPadding",
+      "type": [
+        "object"
+      ],
+      "visibility": "public",
+      "comment": ""
+    },
+    {
+      "name": "dragElId",
+      "type": [
+        "string"
+      ],
+      "visibility": "private",
+      "comment": ""
+    },
+    {
+      "name": "groups",
+      "type": [
+        "object"
+      ],
+      "visibility": "public",
+      "comment": ""
+    },
+    {
+      "name": "handleElId",
+      "type": [
+        "string"
+      ],
+      "visibility": "private",
+      "comment": ""
+    },
+    {
+      "name": "hasOuterHandles",
+      "type": [
+        "boolean"
+      ],
+      "visibility": "public",
+      "comment": ""
+    },
+    {
+      "name": "id",
+      "type": [
+        "string"
+      ],
+      "visibility": "public",
+      "comment": ""
+    },
+    {
+      "name": "ignoreSelf",
+      "type": [
+        "boolean"
+      ],
+      "visibility": "public",
+      "comment": ""
+    },
+    {
+      "name": "invalidHandleClasses",
+      "type": [
+        "unknown[]"
+      ],
+      "visibility": "public",
+      "comment": ""
+    },
+    {
+      "name": "invalidHandleIds",
+      "type": [
+        "object"
+      ],
+      "visibility": "public",
+      "comment": ""
+    },
+    {
+      "name": "invalidHandleTypes",
+      "type": [
+        "object"
+      ],
+      "visibility": "public",
+      "comment": ""
+    },
+    {
+      "name": "isTarget",
+      "type": [
+        "boolean"
+      ],
+      "visibility": "public",
+      "comment": ""
+    },
+    {
+      "name": "locked",
+      "type": [
+        "boolean"
+      ],
+      "visibility": "private",
+      "comment": ""
+    },
+    {
+      "name": "maintainOffset",
+      "type": [
+        "boolean"
+      ],
+      "visibility": "public",
+      "comment": ""
+    },
+    {
+      "name": "maxX",
+      "type": [
+        "int"
+      ],
+      "visibility": "private",
+      "comment": ""
+    },
+    {
+      "name": "maxY",
+      "type": [
+        "int"
+      ],
+      "visibility": "private",
+      "comment": ""
+    },
+    {
+      "name": "minX",
+      "type": [
+        "int"
+      ],
+      "visibility": "private",
+      "comment": ""
+    },
+    {
+      "name": "minY",
+      "type": [
+        "int"
+      ],
+      "visibility": "private",
+      "comment": ""
+    },
+    {
+      "name": "moveOnly",
+      "type": [
+        "boolean"
+      ],
+      "visibility": "public",
+      "comment": ""
+    },
+    {
+      "name": "padding",
+      "type": [
+        "int[]"
+      ],
+      "visibility": "public",
+      "comment": ""
+    },
+    {
+      "name": "primaryButtonOnly",
+      "type": [
+        "boolean"
+      ],
+      "visibility": "public",
+      "comment": ""
+    },
+    {
+      "name": "startPageX",
+      "type": [
+        "int"
+      ],
+      "visibility": "private",
+      "comment": ""
+    },
+    {
+      "name": "startPageY",
+      "type": [
+        "int"
+      ],
+      "visibility": "private",
+      "comment": ""
+    },
+    {
+      "name": "xTicks",
+      "type": [
+        "int[]"
+      ],
+      "visibility": "public",
+      "comment": ""
+    },
+    {
+      "name": "yTicks",
+      "type": [
+        "int[]"
+      ],
+      "visibility": "public",
+      "comment": ""
+    }
+  ],
+  "methods": [
+    {
+      "name": "addInvalidHandleClass",
+      "returnType": [],
+      "visibility": "public",
+      "arguments": [
+        {
+          "name": "cssClass",
+          "comment": "",
+          "type": [
+            "string"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "addInvalidHandleId",
+      "returnType": [],
+      "visibility": "public",
+      "arguments": [
+        {
+          "name": "id",
+          "comment": "",
+          "type": [
+            "string"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "addInvalidHandleType",
+      "returnType": [],
+      "visibility": "public",
+      "arguments": [
+        {
+          "name": "tagName",
+          "comment": "",
+          "type": [
+            "string"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "addToGroup",
+      "returnType": [],
+      "visibility": "public",
+      "arguments": [
+        {
+          "name": "sGroup",
+          "comment": "",
+          "type": [
+            "object"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "applyConfig",
+      "returnType": [],
+      "visibility": "public",
+      "arguments": []
+    },
+    {
+      "name": "b4Drag",
+      "returnType": [],
+      "visibility": "private",
+      "arguments": [
+        {
+          "name": "e",
+          "comment": "",
+          "type": [
+            "object"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "b4DragDrop",
+      "returnType": [],
+      "visibility": "private",
+      "arguments": [
+        {
+          "name": "e",
+          "comment": "",
+          "type": [
+            "object"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "b4DragOut",
+      "returnType": [],
+      "visibility": "private",
+      "arguments": [
+        {
+          "name": "e",
+          "comment": "",
+          "type": [
+            "object"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "b4DragOver",
+      "returnType": [],
+      "visibility": "private",
+      "arguments": [
+        {
+          "name": "e",
+          "comment": "",
+          "type": [
+            "object"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "b4EndDrag",
+      "returnType": [],
+      "visibility": "private",
+      "arguments": [
+        {
+          "name": "e",
+          "comment": "",
+          "type": [
+            "object"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "b4MouseDown",
+      "returnType": [],
+      "visibility": "private",
+      "arguments": [
+        {
+          "name": "e",
+          "comment": "",
+          "type": [
+            "Event"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "b4StartDrag",
+      "returnType": [],
+      "visibility": "private",
+      "arguments": [
+        {
+          "name": "x",
+          "comment": "",
+          "type": [
+            "object"
+          ]
+        },
+        {
+          "name": "y",
+          "comment": "",
+          "type": [
+            "object"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "clearConstraints",
+      "returnType": [],
+      "visibility": "public",
+      "arguments": []
+    },
+    {
+      "name": "clearTicks",
+      "returnType": [],
+      "visibility": "public",
+      "arguments": []
+    },
+    {
+      "name": "constrainTo",
+      "returnType": [],
+      "visibility": "public",
+      "arguments": [
+        {
+          "name": "constrainTo",
+          "comment": "",
+          "type": [
+            "unknown"
+          ]
+        },
+        {
+          "name": "pad?",
+          "comment": "",
+          "type": [
+            "object",
+            "number"
+          ]
+        },
+        {
+          "name": "inContent?",
+          "comment": "",
+          "type": [
+            "boolean"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "endDrag",
+      "returnType": [],
+      "visibility": "public",
+      "arguments": [
+        {
+          "name": "e",
+          "comment": "",
+          "type": [
+            "Event"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "getDragEl",
+      "returnType": [
+        "HTMLElement"
+      ],
+      "visibility": "public",
+      "arguments": []
+    },
+    {
+      "name": "getEl",
+      "returnType": [
+        "HTMLElement"
+      ],
+      "visibility": "public",
+      "arguments": []
+    },
+    {
+      "name": "getTick",
+      "returnType": [
+        "int"
+      ],
+      "visibility": "private",
+      "arguments": [
+        {
+          "name": "val",
+          "comment": "",
+          "type": [
+            "int"
+          ]
+        },
+        {
+          "name": "tickArray",
+          "comment": "",
+          "type": [
+            "int[]"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "handleMouseDown",
+      "returnType": [],
+      "visibility": "private",
+      "arguments": [
+        {
+          "name": "e",
+          "comment": "",
+          "type": [
+            "Event"
+          ]
+        },
+        {
+          "name": "oDD",
+          "comment": "",
+          "type": [
+            "Ext.dd.DragDrop"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "handleOnAvailable",
+      "returnType": [],
+      "visibility": "private",
+      "arguments": []
+    },
+    {
+      "name": "init",
+      "returnType": [],
+      "visibility": "public",
+      "arguments": [
+        {
+          "name": "id",
+          "comment": "",
+          "type": [
+            "object"
+          ]
+        },
+        {
+          "name": "sGroup",
+          "comment": "",
+          "type": [
+            "string"
+          ]
+        },
+        {
+          "name": "config",
+          "comment": "",
+          "type": [
+            "object"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "initTarget",
+      "returnType": [],
+      "visibility": "public",
+      "arguments": [
+        {
+          "name": "id",
+          "comment": "",
+          "type": [
+            "object"
+          ]
+        },
+        {
+          "name": "sGroup",
+          "comment": "",
+          "type": [
+            "string"
+          ]
+        },
+        {
+          "name": "config",
+          "comment": "",
+          "type": [
+            "object"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "isLocked",
+      "returnType": [
+        "boolean"
+      ],
+      "visibility": "public",
+      "arguments": []
+    },
+    {
+      "name": "isValidHandleChild",
+      "returnType": [
+        "boolean"
+      ],
+      "visibility": "public",
+      "arguments": [
+        {
+          "name": "node",
+          "comment": "",
+          "type": [
+            "HTMLElement"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "lock",
+      "returnType": [],
+      "visibility": "public",
+      "arguments": []
+    },
+    {
+      "name": "onAvailable",
+      "returnType": [],
+      "visibility": "public",
+      "arguments": []
+    },
+    {
+      "name": "onDrag",
+      "returnType": [],
+      "visibility": "public",
+      "arguments": [
+        {
+          "name": "e",
+          "comment": "",
+          "type": [
+            "Event"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "onDragDrop",
+      "returnType": [],
+      "visibility": "public",
+      "arguments": [
+        {
+          "name": "e",
+          "comment": "",
+          "type": [
+            "Event"
+          ]
+        },
+        {
+          "name": "id",
+          "comment": "",
+          "type": [
+            "string",
+            "DragDrop[]"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "onDragEnter",
+      "returnType": [],
+      "visibility": "public",
+      "arguments": [
+        {
+          "name": "e",
+          "comment": "",
+          "type": [
+            "Event"
+          ]
+        },
+        {
+          "name": "id",
+          "comment": "",
+          "type": [
+            "string",
+            "DragDrop[]"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "onDragOut",
+      "returnType": [],
+      "visibility": "public",
+      "arguments": [
+        {
+          "name": "e",
+          "comment": "",
+          "type": [
+            "Event"
+          ]
+        },
+        {
+          "name": "id",
+          "comment": "",
+          "type": [
+            "string",
+            "DragDrop[]"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "onDragOver",
+      "returnType": [],
+      "visibility": "public",
+      "arguments": [
+        {
+          "name": "e",
+          "comment": "",
+          "type": [
+            "Event"
+          ]
+        },
+        {
+          "name": "id",
+          "comment": "",
+          "type": [
+            "string",
+            "DragDrop[]"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "onInvalidDrop",
+      "returnType": [],
+      "visibility": "public",
+      "arguments": [
+        {
+          "name": "e",
+          "comment": "",
+          "type": [
+            "Event"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "onMouseDown",
+      "returnType": [],
+      "visibility": "public",
+      "arguments": [
+        {
+          "name": "e",
+          "comment": "",
+          "type": [
+            "Event"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "onMouseUp",
+      "returnType": [],
+      "visibility": "public",
+      "arguments": [
+        {
+          "name": "e",
+          "comment": "",
+          "type": [
+            "Event"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "removeFromGroup",
+      "returnType": [],
+      "visibility": "public",
+      "arguments": [
+        {
+          "name": "sGroup",
+          "comment": "",
+          "type": [
+            "string"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "removeInvalidHandleClass",
+      "returnType": [],
+      "visibility": "public",
+      "arguments": [
+        {
+          "name": "cssClass",
+          "comment": "",
+          "type": [
+            "string"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "removeInvalidHandleId",
+      "returnType": [],
+      "visibility": "public",
+      "arguments": [
+        {
+          "name": "id",
+          "comment": "",
+          "type": [
+            "string"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "removeInvalidHandleType",
+      "returnType": [],
+      "visibility": "public",
+      "arguments": [
+        {
+          "name": "tagName",
+          "comment": "",
+          "type": [
+            "string"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "resetConstraints",
+      "returnType": [],
+      "visibility": "public",
+      "arguments": [
+        {
+          "name": "maintainOffset",
+          "comment": "",
+          "type": [
+            "boolean"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "setDragElId",
+      "returnType": [],
+      "visibility": "public",
+      "arguments": [
+        {
+          "name": "id",
+          "comment": "",
+          "type": [
+            "object"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "setHandleElId",
+      "returnType": [],
+      "visibility": "public",
+      "arguments": [
+        {
+          "name": "id",
+          "comment": "",
+          "type": [
+            "object"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "setInitPosition",
+      "returnType": [],
+      "visibility": "public",
+      "arguments": [
+        {
+          "name": "diffX",
+          "comment": "",
+          "type": [
+            "int"
+          ]
+        },
+        {
+          "name": "diffY",
+          "comment": "",
+          "type": [
+            "int"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "setOuterHandleElId",
+      "returnType": [],
+      "visibility": "public",
+      "arguments": [
+        {
+          "name": "id",
+          "comment": "",
+          "type": [
+            "object"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "setPadding",
+      "returnType": [],
+      "visibility": "public",
+      "arguments": [
+        {
+          "name": "iTop",
+          "comment": "",
+          "type": [
+            "int"
+          ]
+        },
+        {
+          "name": "iRight",
+          "comment": "",
+          "type": [
+            "int"
+          ]
+        },
+        {
+          "name": "iBot",
+          "comment": "",
+          "type": [
+            "int"
+          ]
+        },
+        {
+          "name": "iLeft",
+          "comment": "",
+          "type": [
+            "int"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "setStartPosition",
+      "returnType": [],
+      "visibility": "private",
+      "arguments": [
+        {
+          "name": "pos",
+          "comment": "",
+          "type": [
+            "object"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "setXConstraint",
+      "returnType": [],
+      "visibility": "public",
+      "arguments": [
+        {
+          "name": "iLeft",
+          "comment": "",
+          "type": [
+            "int"
+          ]
+        },
+        {
+          "name": "iRight",
+          "comment": "",
+          "type": [
+            "int"
+          ]
+        },
+        {
+          "name": "iTickSize",
+          "comment": "",
+          "type": [
+            "int"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "setXTicks",
+      "returnType": [],
+      "visibility": "private",
+      "arguments": [
+        {
+          "name": "iStartX",
+          "comment": "",
+          "type": [
+            "object"
+          ]
+        },
+        {
+          "name": "iTickSize",
+          "comment": "",
+          "type": [
+            "object"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "setYConstraint",
+      "returnType": [],
+      "visibility": "public",
+      "arguments": [
+        {
+          "name": "iUp",
+          "comment": "",
+          "type": [
+            "int"
+          ]
+        },
+        {
+          "name": "iDown",
+          "comment": "",
+          "type": [
+            "int"
+          ]
+        },
+        {
+          "name": "iTickSize",
+          "comment": "",
+          "type": [
+            "int"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "setYTicks",
+      "returnType": [],
+      "visibility": "private",
+      "arguments": [
+        {
+          "name": "iStartY",
+          "comment": "",
+          "type": [
+            "object"
+          ]
+        },
+        {
+          "name": "iTickSize",
+          "comment": "",
+          "type": [
+            "object"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "startDrag",
+      "returnType": [],
+      "visibility": "public",
+      "arguments": [
+        {
+          "name": "X",
+          "comment": "",
+          "type": [
+            "int"
+          ]
+        },
+        {
+          "name": "Y",
+          "comment": "",
+          "type": [
+            "int"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "toString",
+      "returnType": [
+        "string"
+      ],
+      "visibility": "public",
+      "arguments": []
+    },
+    {
+      "name": "unlock",
+      "returnType": [],
+      "visibility": "public",
+      "arguments": []
+    },
+    {
+      "name": "unreg",
+      "returnType": [],
+      "visibility": "public",
+      "arguments": []
+    }
+  ],
+  "events": []
+}

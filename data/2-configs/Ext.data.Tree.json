@@ -1,0 +1,539 @@
+{
+  "name": "Tree",
+  "namespace": "Ext.data",
+  "extends": "Ext.util.Observable",
+  "constructorMethod": {
+    "config": [
+      {
+        "name": "listeners?",
+        "type": [
+          "object"
+        ],
+        "comment": ""
+      },
+      {
+        "name": "pathSeparator?",
+        "type": [
+          "string"
+        ],
+        "comment": ""
+      }
+    ]
+  },
+  "properties": [
+    {
+      "name": "root",
+      "type": [
+        "Node"
+      ],
+      "visibility": "public",
+      "comment": ""
+    }
+  ],
+  "methods": [
+    {
+      "name": "addListener<T extends ITreeEvents = ITreeEvents, E extends keyof T = keyof T>",
+      "returnType": [],
+      "visibility": "public",
+      "arguments": [
+        {
+          "name": "eventName",
+          "comment": "",
+          "type": [
+            "E"
+          ]
+        },
+        {
+          "name": "handler",
+          "comment": "",
+          "type": [
+            "T[E]"
+          ]
+        },
+        {
+          "name": "scope?",
+          "comment": "",
+          "type": [
+            "object"
+          ]
+        },
+        {
+          "name": "options?",
+          "comment": "",
+          "type": [
+            "object"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "fireEvent<T extends ITreeEvents = ITreeEvents, E extends keyof T = keyof T>",
+      "returnType": [
+        "boolean"
+      ],
+      "visibility": "public",
+      "arguments": [
+        {
+          "name": "eventName",
+          "comment": "",
+          "type": [
+            "E"
+          ]
+        },
+        {
+          "name": "...args",
+          "comment": "",
+          "type": [
+            "Parameters<T[E]>"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "getNodeById",
+      "returnType": [
+        "Node"
+      ],
+      "visibility": "public",
+      "arguments": [
+        {
+          "name": "id",
+          "comment": "",
+          "type": [
+            "string"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "getRootNode",
+      "returnType": [
+        "Node"
+      ],
+      "visibility": "public",
+      "arguments": []
+    },
+    {
+      "name": "hasListener<T extends ITreeEvents = ITreeEvents, E extends keyof T = keyof T>",
+      "returnType": [
+        "boolean"
+      ],
+      "visibility": "public",
+      "arguments": [
+        {
+          "name": "eventName",
+          "comment": "",
+          "type": [
+            "E"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "on<T extends ITreeEvents = ITreeEvents, E extends keyof T = keyof T>",
+      "returnType": [],
+      "visibility": "public",
+      "arguments": [
+        {
+          "name": "eventName",
+          "comment": "",
+          "type": [
+            "E"
+          ]
+        },
+        {
+          "name": "handler",
+          "comment": "",
+          "type": [
+            "T[E]"
+          ]
+        },
+        {
+          "name": "scope?",
+          "comment": "",
+          "type": [
+            "object"
+          ]
+        },
+        {
+          "name": "options?",
+          "comment": "",
+          "type": [
+            "object"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "proxyNodeEvent",
+      "returnType": [],
+      "visibility": "private",
+      "arguments": []
+    },
+    {
+      "name": "registerNode",
+      "returnType": [],
+      "visibility": "private",
+      "arguments": [
+        {
+          "name": "node",
+          "comment": "",
+          "type": [
+            "object"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "removeListener<T extends ITreeEvents = ITreeEvents, E extends keyof T = keyof T>",
+      "returnType": [],
+      "visibility": "public",
+      "arguments": [
+        {
+          "name": "eventName",
+          "comment": "",
+          "type": [
+            "E"
+          ]
+        },
+        {
+          "name": "handler",
+          "comment": "",
+          "type": [
+            "T[E]"
+          ]
+        },
+        {
+          "name": "scope?",
+          "comment": "",
+          "type": [
+            "object"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "setRootNode",
+      "returnType": [
+        "Node"
+      ],
+      "visibility": "public",
+      "arguments": [
+        {
+          "name": "node",
+          "comment": "",
+          "type": [
+            "Node"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "toString",
+      "returnType": [],
+      "visibility": "private",
+      "arguments": []
+    },
+    {
+      "name": "un<T extends ITreeEvents = ITreeEvents, E extends keyof T = keyof T>",
+      "returnType": [],
+      "visibility": "public",
+      "arguments": [
+        {
+          "name": "eventName",
+          "comment": "",
+          "type": [
+            "E"
+          ]
+        },
+        {
+          "name": "handler",
+          "comment": "",
+          "type": [
+            "T[E]"
+          ]
+        },
+        {
+          "name": "scope?",
+          "comment": "",
+          "type": [
+            "object"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "unregisterNode",
+      "returnType": [],
+      "visibility": "private",
+      "arguments": [
+        {
+          "name": "node",
+          "comment": "",
+          "type": [
+            "object"
+          ]
+        }
+      ]
+    }
+  ],
+  "events": [
+    {
+      "name": "append",
+      "arguments": [
+        {
+          "name": "tree",
+          "comment": "",
+          "type": [
+            "Tree"
+          ]
+        },
+        {
+          "name": "parent",
+          "comment": "",
+          "type": [
+            "Node"
+          ]
+        },
+        {
+          "name": "node",
+          "comment": "",
+          "type": [
+            "Node"
+          ]
+        },
+        {
+          "name": "index",
+          "comment": "",
+          "type": [
+            "number"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "beforeappend",
+      "arguments": [
+        {
+          "name": "tree",
+          "comment": "",
+          "type": [
+            "Tree"
+          ]
+        },
+        {
+          "name": "parent",
+          "comment": "",
+          "type": [
+            "Node"
+          ]
+        },
+        {
+          "name": "node",
+          "comment": "",
+          "type": [
+            "Node"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "beforeinsert",
+      "arguments": [
+        {
+          "name": "tree",
+          "comment": "",
+          "type": [
+            "Tree"
+          ]
+        },
+        {
+          "name": "parent",
+          "comment": "",
+          "type": [
+            "Node"
+          ]
+        },
+        {
+          "name": "node",
+          "comment": "",
+          "type": [
+            "Node"
+          ]
+        },
+        {
+          "name": "refNode",
+          "comment": "",
+          "type": [
+            "Node"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "beforemove",
+      "arguments": [
+        {
+          "name": "tree",
+          "comment": "",
+          "type": [
+            "Tree"
+          ]
+        },
+        {
+          "name": "node",
+          "comment": "",
+          "type": [
+            "Node"
+          ]
+        },
+        {
+          "name": "oldParent",
+          "comment": "",
+          "type": [
+            "Node"
+          ]
+        },
+        {
+          "name": "newParent",
+          "comment": "",
+          "type": [
+            "Node"
+          ]
+        },
+        {
+          "name": "index",
+          "comment": "",
+          "type": [
+            "number"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "beforeremove",
+      "arguments": [
+        {
+          "name": "tree",
+          "comment": "",
+          "type": [
+            "Tree"
+          ]
+        },
+        {
+          "name": "parent",
+          "comment": "",
+          "type": [
+            "Node"
+          ]
+        },
+        {
+          "name": "node",
+          "comment": "",
+          "type": [
+            "Node"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "insert",
+      "arguments": [
+        {
+          "name": "tree",
+          "comment": "",
+          "type": [
+            "Tree"
+          ]
+        },
+        {
+          "name": "parent",
+          "comment": "",
+          "type": [
+            "Node"
+          ]
+        },
+        {
+          "name": "node",
+          "comment": "",
+          "type": [
+            "Node"
+          ]
+        },
+        {
+          "name": "refNode",
+          "comment": "",
+          "type": [
+            "Node"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "move",
+      "arguments": [
+        {
+          "name": "tree",
+          "comment": "",
+          "type": [
+            "Tree"
+          ]
+        },
+        {
+          "name": "node",
+          "comment": "",
+          "type": [
+            "Node"
+          ]
+        },
+        {
+          "name": "oldParent",
+          "comment": "",
+          "type": [
+            "Node"
+          ]
+        },
+        {
+          "name": "newParent",
+          "comment": "",
+          "type": [
+            "Node"
+          ]
+        },
+        {
+          "name": "index",
+          "comment": "",
+          "type": [
+            "number"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "remove",
+      "arguments": [
+        {
+          "name": "tree",
+          "comment": "",
+          "type": [
+            "Tree"
+          ]
+        },
+        {
+          "name": "parent",
+          "comment": "",
+          "type": [
+            "Node"
+          ]
+        },
+        {
+          "name": "node",
+          "comment": "",
+          "type": [
+            "Node"
+          ]
+        }
+      ]
+    }
+  ]
+}

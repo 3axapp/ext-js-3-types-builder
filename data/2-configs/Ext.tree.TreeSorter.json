@@ -1,0 +1,104 @@
+{
+  "name": "TreeSorter",
+  "namespace": "Ext.tree",
+  "extends": null,
+  "constructorMethod": {
+    "config": [
+      {
+        "name": "caseSensitive?",
+        "type": [
+          "boolean"
+        ],
+        "comment": ""
+      },
+      {
+        "name": "dir?",
+        "type": [
+          "string"
+        ],
+        "comment": ""
+      },
+      {
+        "name": "folderSort?",
+        "type": [
+          "boolean"
+        ],
+        "comment": ""
+      },
+      {
+        "name": "leafAttr?",
+        "type": [
+          "string"
+        ],
+        "comment": ""
+      },
+      {
+        "name": "property?",
+        "type": [
+          "string"
+        ],
+        "comment": ""
+      },
+      {
+        "name": "sortType?",
+        "type": [
+          "Function"
+        ],
+        "comment": ""
+      }
+    ]
+  },
+  "properties": [],
+  "methods": [
+    {
+      "name": "doSort",
+      "returnType": [],
+      "visibility": "private",
+      "arguments": [
+        {
+          "name": "node",
+          "comment": "",
+          "type": [
+            "object"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "updateSort",
+      "returnType": [],
+      "visibility": "private",
+      "arguments": [
+        {
+          "name": "tree",
+          "comment": "",
+          "type": [
+            "object"
+          ]
+        },
+        {
+          "name": "node",
+          "comment": "",
+          "type": [
+            "object"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "updateSortParent",
+      "returnType": [],
+      "visibility": "private",
+      "arguments": [
+        {
+          "name": "node",
+          "comment": "",
+          "type": [
+            "object"
+          ]
+        }
+      ]
+    }
+  ],
+  "events": []
+}

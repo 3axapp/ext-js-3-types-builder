@@ -1,0 +1,157 @@
+{
+  "name": "DataWriter",
+  "namespace": "Ext.data",
+  "constructorMethod": {
+    "config": [
+      {
+        "name": "createRecord?",
+        "type": [
+          "Function"
+        ],
+        "comment": ""
+      },
+      {
+        "name": "destroyRecord?",
+        "type": [
+          "Function"
+        ],
+        "comment": ""
+      },
+      {
+        "name": "listful?",
+        "type": [
+          "boolean"
+        ],
+        "comment": ""
+      },
+      {
+        "name": "updateRecord?",
+        "type": [
+          "Function"
+        ],
+        "comment": ""
+      },
+      {
+        "name": "writeAllFields?",
+        "type": [
+          "boolean"
+        ],
+        "comment": ""
+      }
+    ]
+  },
+  "properties": [],
+  "methods": [
+    {
+      "name": "apply",
+      "returnType": [],
+      "visibility": "public",
+      "arguments": [
+        {
+          "name": "params",
+          "comment": "",
+          "type": [
+            "object"
+          ]
+        },
+        {
+          "name": "baseParams",
+          "comment": "",
+          "type": [
+            "object"
+          ]
+        },
+        {
+          "name": "action",
+          "comment": "",
+          "type": [
+            "string"
+          ]
+        },
+        {
+          "name": "rs",
+          "comment": "",
+          "type": [
+            "Ext.data.Record",
+            "Ext.data.Record[]"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "render",
+      "returnType": [],
+      "visibility": "public",
+      "arguments": [
+        {
+          "name": "action",
+          "comment": "",
+          "type": [
+            "string"
+          ]
+        },
+        {
+          "name": "rs",
+          "comment": "",
+          "type": [
+            "Ext.data.Record[]"
+          ]
+        },
+        {
+          "name": "params",
+          "comment": "",
+          "type": [
+            "object"
+          ]
+        },
+        {
+          "name": "data",
+          "comment": "",
+          "type": [
+            "object"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "toArray",
+      "returnType": [
+        "Object[]"
+      ],
+      "visibility": "protected",
+      "arguments": [
+        {
+          "name": "data",
+          "comment": "",
+          "type": [
+            "Hash"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "toHash",
+      "returnType": [
+        "object"
+      ],
+      "visibility": "protected",
+      "arguments": [
+        {
+          "name": "rec",
+          "comment": "",
+          "type": [
+            "Ext.data.Record"
+          ]
+        },
+        {
+          "name": "config",
+          "comment": "",
+          "type": [
+            "object"
+          ]
+        }
+      ]
+    }
+  ],
+  "events": []
+}

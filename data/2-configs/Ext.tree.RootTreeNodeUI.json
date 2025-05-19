@@ -1,0 +1,34 @@
+{
+  "name": "RootTreeNodeUI",
+  "namespace": "Ext.tree",
+  "extends": "Ext.tree.TreeNodeUI",
+  "constructorMethod": null,
+  "properties": [],
+  "methods": [
+    {
+      "name": "collapse",
+      "returnType": [],
+      "visibility": "private",
+      "arguments": []
+    },
+    {
+      "name": "expand",
+      "returnType": [],
+      "visibility": "private",
+      "arguments": []
+    },
+    {
+      "name": "fireEvent",
+      "returnType": [],
+      "visibility": "private",
+      "arguments": []
+    },
+    {
+      "name": "render",
+      "returnType": [],
+      "visibility": "private",
+      "arguments": []
+    }
+  ],
+  "events": []
+}

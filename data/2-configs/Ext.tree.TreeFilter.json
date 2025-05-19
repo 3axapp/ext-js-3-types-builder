@@ -1,0 +1,65 @@
+{
+  "name": "TreeFilter",
+  "namespace": "Ext.tree",
+  "constructorMethod": null,
+  "properties": [],
+  "methods": [
+    {
+      "name": "clear",
+      "returnType": [],
+      "visibility": "public",
+      "arguments": []
+    },
+    {
+      "name": "filter",
+      "returnType": [],
+      "visibility": "public",
+      "arguments": [
+        {
+          "name": "value",
+          "comment": "",
+          "type": [
+            "string",
+            "RegExp"
+          ]
+        },
+        {
+          "name": "attr?",
+          "comment": "",
+          "type": [
+            "string"
+          ]
+        },
+        {
+          "name": "startNode?",
+          "comment": "",
+          "type": [
+            "TreeNode"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "filterBy",
+      "returnType": [],
+      "visibility": "public",
+      "arguments": [
+        {
+          "name": "fn",
+          "comment": "",
+          "type": [
+            "Function"
+          ]
+        },
+        {
+          "name": "scope?",
+          "comment": "",
+          "type": [
+            "object"
+          ]
+        }
+      ]
+    }
+  ],
+  "events": []
+}

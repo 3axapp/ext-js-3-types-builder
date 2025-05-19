@@ -1,0 +1,38 @@
+{
+  "name": "CompositeElement",
+  "namespace": "Ext",
+  "extends": "Ext.CompositeElementLite",
+  "constructorMethod": null,
+  "properties": [],
+  "methods": [
+    {
+      "name": "getElement",
+      "returnType": [],
+      "visibility": "private",
+      "arguments": [
+        {
+          "name": "el",
+          "comment": "",
+          "type": [
+            "object"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "transformElement",
+      "returnType": [],
+      "visibility": "private",
+      "arguments": [
+        {
+          "name": "el",
+          "comment": "",
+          "type": [
+            "object"
+          ]
+        }
+      ]
+    }
+  ],
+  "events": []
+}

@@ -1,0 +1,102 @@
+{
+  "name": "Cookies",
+  "namespace": "Ext.util",
+  "constructorMethod": null,
+  "properties": [],
+  "methods": [
+    {
+      "name": "clear",
+      "returnType": [],
+      "visibility": "public",
+      "arguments": [
+        {
+          "name": "name",
+          "comment": "",
+          "type": [
+            "string"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "get",
+      "returnType": [
+        "unknown"
+      ],
+      "visibility": "public",
+      "arguments": [
+        {
+          "name": "name",
+          "comment": "",
+          "type": [
+            "string"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "getCookieVal",
+      "returnType": [],
+      "visibility": "private",
+      "arguments": [
+        {
+          "name": "offset",
+          "comment": "",
+          "type": [
+            "object"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "set",
+      "returnType": [],
+      "visibility": "public",
+      "arguments": [
+        {
+          "name": "name",
+          "comment": "",
+          "type": [
+            "string"
+          ]
+        },
+        {
+          "name": "value",
+          "comment": "",
+          "type": [
+            "unknown"
+          ]
+        },
+        {
+          "name": "expires?",
+          "comment": "",
+          "type": [
+            "object"
+          ]
+        },
+        {
+          "name": "path?",
+          "comment": "",
+          "type": [
+            "string"
+          ]
+        },
+        {
+          "name": "domain?",
+          "comment": "",
+          "type": [
+            "string"
+          ]
+        },
+        {
+          "name": "secure?",
+          "comment": "",
+          "type": [
+            "boolean"
+          ]
+        }
+      ]
+    }
+  ],
+  "events": []
+}

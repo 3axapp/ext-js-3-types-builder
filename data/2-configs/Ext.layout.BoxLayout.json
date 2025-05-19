@@ -1,0 +1,288 @@
+{
+  "name": "BoxLayout",
+  "namespace": "Ext.layout",
+  "extends": "Ext.layout.ContainerLayout",
+  "constructorMethod": {
+    "config": [
+      {
+        "name": "defaultMargins?",
+        "type": [
+          "object"
+        ],
+        "comment": ""
+      },
+      {
+        "name": "extraCls?",
+        "type": [
+          "string"
+        ],
+        "comment": ""
+      },
+      {
+        "name": "padding?",
+        "type": [
+          "string"
+        ],
+        "comment": ""
+      },
+      {
+        "name": "renderHidden?",
+        "type": [
+          "boolean"
+        ],
+        "comment": ""
+      }
+    ]
+  },
+  "properties": [
+    {
+      "name": "childBoxCache",
+      "type": [
+        "unknown[]"
+      ],
+      "visibility": "private",
+      "comment": ""
+    },
+    {
+      "name": "innerCls",
+      "type": [
+        "string"
+      ],
+      "visibility": "private",
+      "comment": ""
+    },
+    {
+      "name": "layoutTargetLastSize",
+      "type": [
+        "object"
+      ],
+      "visibility": "private",
+      "comment": ""
+    },
+    {
+      "name": "monitorResize",
+      "type": [
+        "boolean"
+      ],
+      "visibility": "private",
+      "comment": ""
+    },
+    {
+      "name": "pack",
+      "type": [
+        "string"
+      ],
+      "visibility": "private",
+      "comment": ""
+    },
+    {
+      "name": "scrollOffset",
+      "type": [
+        "number"
+      ],
+      "visibility": "private",
+      "comment": ""
+    },
+    {
+      "name": "targetCls",
+      "type": [
+        "string"
+      ],
+      "visibility": "private",
+      "comment": ""
+    },
+    {
+      "name": "type",
+      "type": [
+        "string"
+      ],
+      "visibility": "private",
+      "comment": ""
+    }
+  ],
+  "methods": [
+    {
+      "name": "destroy",
+      "returnType": [],
+      "visibility": "private",
+      "arguments": []
+    },
+    {
+      "name": "getLayoutTargetSize",
+      "returnType": [],
+      "visibility": "private",
+      "arguments": []
+    },
+    {
+      "name": "getVisibleItems",
+      "returnType": [
+        "unknown[]"
+      ],
+      "visibility": "private",
+      "arguments": [
+        {
+          "name": "ct",
+          "comment": "",
+          "type": [
+            "object"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "handleTargetOverflow",
+      "returnType": [],
+      "visibility": "private",
+      "arguments": [
+        {
+          "name": "previousTargetSize",
+          "comment": "",
+          "type": [
+            "object"
+          ]
+        },
+        {
+          "name": "container",
+          "comment": "",
+          "type": [
+            "Ext.Container"
+          ]
+        },
+        {
+          "name": "target",
+          "comment": "",
+          "type": [
+            "Ext.Element"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "isValidParent",
+      "returnType": [],
+      "visibility": "private",
+      "arguments": [
+        {
+          "name": "c",
+          "comment": "",
+          "type": [
+            "object"
+          ]
+        },
+        {
+          "name": "target",
+          "comment": "",
+          "type": [
+            "object"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "onLayout",
+      "returnType": [],
+      "visibility": "private",
+      "arguments": [
+        {
+          "name": "container",
+          "comment": "",
+          "type": [
+            "object"
+          ]
+        },
+        {
+          "name": "target",
+          "comment": "",
+          "type": [
+            "object"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "renderAll",
+      "returnType": [],
+      "visibility": "private",
+      "arguments": [
+        {
+          "name": "ct",
+          "comment": "",
+          "type": [
+            "object"
+          ]
+        },
+        {
+          "name": "target",
+          "comment": "",
+          "type": [
+            "object"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "renderItem",
+      "returnType": [],
+      "visibility": "private",
+      "arguments": [
+        {
+          "name": "c",
+          "comment": "",
+          "type": [
+            "Ext.Component"
+          ]
+        },
+        {
+          "name": "position",
+          "comment": "",
+          "type": [
+            "number"
+          ]
+        },
+        {
+          "name": "target",
+          "comment": "",
+          "type": [
+            "Ext.Element"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "updateChildBoxes",
+      "returnType": [],
+      "visibility": "public",
+      "arguments": [
+        {
+          "name": "boxes",
+          "comment": "",
+          "type": [
+            "unknown[]"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "updateInnerCtSize",
+      "returnType": [],
+      "visibility": "private",
+      "arguments": [
+        {
+          "name": "currentSize",
+          "comment": "",
+          "type": [
+            "object"
+          ]
+        },
+        {
+          "name": "calculations",
+          "comment": "",
+          "type": [
+            "unknown[]"
+          ]
+        }
+      ]
+    }
+  ],
+  "events": []
+}

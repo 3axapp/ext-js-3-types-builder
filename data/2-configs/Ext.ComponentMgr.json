@@ -1,0 +1,226 @@
+{
+  "name": "ComponentMgr",
+  "namespace": "Ext",
+  "constructorMethod": null,
+  "properties": [
+    {
+      "name": "all",
+      "type": [
+        "Ext.util.MixedCollection"
+      ],
+      "visibility": "public",
+      "comment": ""
+    },
+    {
+      "name": "ptypes",
+      "type": [
+        "object"
+      ],
+      "visibility": "public",
+      "comment": ""
+    },
+    {
+      "name": "types",
+      "type": [
+        "object"
+      ],
+      "visibility": "public",
+      "comment": ""
+    }
+  ],
+  "methods": [
+    {
+      "name": "create",
+      "returnType": [
+        "Ext.Component"
+      ],
+      "visibility": "public",
+      "arguments": [
+        {
+          "name": "config",
+          "comment": "",
+          "type": [
+            "object"
+          ]
+        },
+        {
+          "name": "defaultType",
+          "comment": "",
+          "type": [
+            "typeof Ext.util.Observable"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "createPlugin",
+      "returnType": [
+        "Ext.Component"
+      ],
+      "visibility": "public",
+      "arguments": [
+        {
+          "name": "config",
+          "comment": "",
+          "type": [
+            "object"
+          ]
+        },
+        {
+          "name": "defaultType",
+          "comment": "",
+          "type": [
+            "typeof Ext.util.Observable"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "get",
+      "returnType": [
+        "object"
+      ],
+      "visibility": "public",
+      "arguments": [
+        {
+          "name": "id",
+          "comment": "",
+          "type": [
+            "string"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "isPluginRegistered",
+      "returnType": [
+        "boolean"
+      ],
+      "visibility": "public",
+      "arguments": [
+        {
+          "name": "ptype",
+          "comment": "",
+          "type": [
+            "Ext.Component"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "isRegistered",
+      "returnType": [
+        "boolean"
+      ],
+      "visibility": "public",
+      "arguments": [
+        {
+          "name": "xtype",
+          "comment": "",
+          "type": [
+            "Ext.Component"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "onAvailable",
+      "returnType": [],
+      "visibility": "public",
+      "arguments": [
+        {
+          "name": "id",
+          "comment": "",
+          "type": [
+            "string"
+          ]
+        },
+        {
+          "name": "fn",
+          "comment": "",
+          "type": [
+            "Function"
+          ]
+        },
+        {
+          "name": "scope",
+          "comment": "",
+          "type": [
+            "object"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "register",
+      "returnType": [],
+      "visibility": "public",
+      "arguments": [
+        {
+          "name": "c",
+          "comment": "",
+          "type": [
+            "Ext.Component"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "registerPlugin",
+      "returnType": [],
+      "visibility": "public",
+      "arguments": [
+        {
+          "name": "ptype",
+          "comment": "",
+          "type": [
+            "string"
+          ]
+        },
+        {
+          "name": "cls",
+          "comment": "",
+          "type": [
+            "typeof Ext.Component"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "registerType",
+      "returnType": [],
+      "visibility": "public",
+      "arguments": [
+        {
+          "name": "xtype",
+          "comment": "",
+          "type": [
+            "string"
+          ]
+        },
+        {
+          "name": "cls",
+          "comment": "",
+          "type": [
+            "typeof Ext.Component"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "unregister",
+      "returnType": [],
+      "visibility": "public",
+      "arguments": [
+        {
+          "name": "c",
+          "comment": "",
+          "type": [
+            "Ext.Component"
+          ]
+        }
+      ]
+    }
+  ],
+  "events": []
+}

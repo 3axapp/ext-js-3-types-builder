@@ -1,0 +1,202 @@
+{
+  "name": "ElementWrapper",
+  "namespace": "Ext.dd.DragDropMgr",
+  "constructorMethod": null,
+  "properties": [
+    {
+      "name": "_timeoutCount",
+      "type": [
+        "number"
+      ],
+      "visibility": "private",
+      "comment": ""
+    },
+    {
+      "name": "css",
+      "type": [
+        "object"
+      ],
+      "visibility": "public",
+      "comment": ""
+    },
+    {
+      "name": "el",
+      "type": [
+        "object"
+      ],
+      "visibility": "public",
+      "comment": ""
+    },
+    {
+      "name": "id",
+      "type": [
+        "object"
+      ],
+      "visibility": "public",
+      "comment": ""
+    }
+  ],
+  "methods": [
+    {
+      "name": "_addListeners",
+      "returnType": [],
+      "visibility": "private",
+      "arguments": []
+    },
+    {
+      "name": "getPosX",
+      "returnType": [
+        "int"
+      ],
+      "visibility": "public",
+      "arguments": [
+        {
+          "name": "el",
+          "comment": "",
+          "type": [
+            "object"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "getPosY",
+      "returnType": [
+        "int"
+      ],
+      "visibility": "public",
+      "arguments": [
+        {
+          "name": "el",
+          "comment": "",
+          "type": [
+            "object"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "getScroll",
+      "returnType": [],
+      "visibility": "private",
+      "arguments": []
+    },
+    {
+      "name": "getScrollLeft",
+      "returnType": [
+        "int"
+      ],
+      "visibility": "public",
+      "arguments": []
+    },
+    {
+      "name": "getScrollTop",
+      "returnType": [
+        "int"
+      ],
+      "visibility": "public",
+      "arguments": []
+    },
+    {
+      "name": "getStyle",
+      "returnType": [
+        "string"
+      ],
+      "visibility": "public",
+      "arguments": [
+        {
+          "name": "el",
+          "comment": "",
+          "type": [
+            "HTMLElement"
+          ]
+        },
+        {
+          "name": "styleProp",
+          "comment": "",
+          "type": [
+            "string"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "handleWasClicked",
+      "returnType": [],
+      "visibility": "public",
+      "arguments": [
+        {
+          "name": "node",
+          "comment": "",
+          "type": [
+            "object"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "moveToEl",
+      "returnType": [],
+      "visibility": "public",
+      "arguments": [
+        {
+          "name": "moveEl",
+          "comment": "",
+          "type": [
+            "HTMLElement"
+          ]
+        },
+        {
+          "name": "targetEl",
+          "comment": "",
+          "type": [
+            "HTMLElement"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "numericSort",
+      "returnType": [],
+      "visibility": "public",
+      "arguments": [
+        {
+          "name": "a",
+          "comment": "",
+          "type": [
+            "object"
+          ]
+        },
+        {
+          "name": "b",
+          "comment": "",
+          "type": [
+            "object"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "swapNode",
+      "returnType": [],
+      "visibility": "public",
+      "arguments": [
+        {
+          "name": "n1",
+          "comment": "",
+          "type": [
+            "object"
+          ]
+        },
+        {
+          "name": "n2",
+          "comment": "",
+          "type": [
+            "object"
+          ]
+        }
+      ]
+    }
+  ],
+  "events": []
+}

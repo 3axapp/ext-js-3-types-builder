@@ -1,0 +1,2374 @@
+{
+  "name": "GridView",
+  "namespace": "Ext.grid",
+  "extends": "Ext.util.Observable",
+  "constructorMethod": {
+    "config": [
+      {
+        "name": "autoFill?",
+        "type": [
+          "boolean"
+        ],
+        "comment": ""
+      },
+      {
+        "name": "cellSelector?",
+        "type": [
+          "string"
+        ],
+        "comment": ""
+      },
+      {
+        "name": "cellSelectorDepth?",
+        "type": [
+          "number"
+        ],
+        "comment": ""
+      },
+      {
+        "name": "columnsText?",
+        "type": [
+          "string"
+        ],
+        "comment": ""
+      },
+      {
+        "name": "deferEmptyText?",
+        "type": [
+          "boolean"
+        ],
+        "comment": ""
+      },
+      {
+        "name": "emptyText?",
+        "type": [
+          "string"
+        ],
+        "comment": ""
+      },
+      {
+        "name": "enableRowBody?",
+        "type": [
+          "boolean"
+        ],
+        "comment": ""
+      },
+      {
+        "name": "forceFit?",
+        "type": [
+          "boolean"
+        ],
+        "comment": ""
+      },
+      {
+        "name": "headerMenuOpenCls?",
+        "type": [
+          "string"
+        ],
+        "comment": ""
+      },
+      {
+        "name": "headersDisabled?",
+        "type": [
+          "boolean"
+        ],
+        "comment": ""
+      },
+      {
+        "name": "hideSortIcons?",
+        "type": [
+          "boolean"
+        ],
+        "comment": ""
+      },
+      {
+        "name": "listeners?",
+        "type": [
+          "object"
+        ],
+        "comment": ""
+      },
+      {
+        "name": "markDirty?",
+        "type": [
+          "boolean"
+        ],
+        "comment": ""
+      },
+      {
+        "name": "rowBodySelector?",
+        "type": [
+          "string"
+        ],
+        "comment": ""
+      },
+      {
+        "name": "rowBodySelectorDepth?",
+        "type": [
+          "number"
+        ],
+        "comment": ""
+      },
+      {
+        "name": "rowOverCls?",
+        "type": [
+          "string"
+        ],
+        "comment": ""
+      },
+      {
+        "name": "rowSelector?",
+        "type": [
+          "string"
+        ],
+        "comment": ""
+      },
+      {
+        "name": "rowSelectorDepth?",
+        "type": [
+          "number"
+        ],
+        "comment": ""
+      },
+      {
+        "name": "scrollOffset?",
+        "type": [
+          "number"
+        ],
+        "comment": ""
+      },
+      {
+        "name": "selectedRowClass?",
+        "type": [
+          "string"
+        ],
+        "comment": ""
+      },
+      {
+        "name": "sortAscText?",
+        "type": [
+          "string"
+        ],
+        "comment": ""
+      },
+      {
+        "name": "sortClasses?",
+        "type": [
+          "unknown[]"
+        ],
+        "comment": ""
+      },
+      {
+        "name": "sortDescText?",
+        "type": [
+          "string"
+        ],
+        "comment": ""
+      }
+    ]
+  },
+  "properties": [
+    {
+      "name": "Ext",
+      "type": [
+        "masterTpl"
+      ],
+      "visibility": "public",
+      "comment": ""
+    },
+    {
+      "name": "bodyTpl",
+      "type": [
+        "Ext.Template"
+      ],
+      "visibility": "public",
+      "comment": ""
+    },
+    {
+      "name": "borderWidth",
+      "type": [
+        "number"
+      ],
+      "visibility": "private",
+      "comment": ""
+    },
+    {
+      "name": "cellTpl",
+      "type": [
+        "Ext.Template"
+      ],
+      "visibility": "public",
+      "comment": ""
+    },
+    {
+      "name": "dragZone",
+      "type": [
+        "Ext.grid.GridDragZone"
+      ],
+      "visibility": "public",
+      "comment": ""
+    },
+    {
+      "name": "firstRowCls",
+      "type": [
+        "string"
+      ],
+      "visibility": "private",
+      "comment": ""
+    },
+    {
+      "name": "hdCls",
+      "type": [
+        "string"
+      ],
+      "visibility": "private",
+      "comment": ""
+    },
+    {
+      "name": "headerTpl",
+      "type": [
+        "Ext.Template"
+      ],
+      "visibility": "public",
+      "comment": ""
+    },
+    {
+      "name": "lastRowCls",
+      "type": [
+        "string"
+      ],
+      "visibility": "private",
+      "comment": ""
+    },
+    {
+      "name": "mainBody",
+      "type": [
+        "Ext.Element"
+      ],
+      "visibility": "public",
+      "comment": ""
+    },
+    {
+      "name": "rowClsRe",
+      "type": [
+        "RegExp"
+      ],
+      "visibility": "private",
+      "comment": ""
+    },
+    {
+      "name": "tdClass",
+      "type": [
+        "string"
+      ],
+      "visibility": "private",
+      "comment": ""
+    }
+  ],
+  "methods": [
+    {
+      "name": "addListener<T extends IGridViewEvents = IGridViewEvents, E extends keyof T = keyof T>",
+      "returnType": [],
+      "visibility": "public",
+      "arguments": [
+        {
+          "name": "eventName",
+          "comment": "",
+          "type": [
+            "E"
+          ]
+        },
+        {
+          "name": "handler",
+          "comment": "",
+          "type": [
+            "T[E]"
+          ]
+        },
+        {
+          "name": "scope?",
+          "comment": "",
+          "type": [
+            "object"
+          ]
+        },
+        {
+          "name": "options?",
+          "comment": "",
+          "type": [
+            "object"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "addRowClass",
+      "returnType": [],
+      "visibility": "private",
+      "arguments": [
+        {
+          "name": "rowId",
+          "comment": "",
+          "type": [
+            "object"
+          ]
+        },
+        {
+          "name": "cls",
+          "comment": "",
+          "type": [
+            "object"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "afterMove",
+      "returnType": [],
+      "visibility": "private",
+      "arguments": [
+        {
+          "name": "colIndex",
+          "comment": "",
+          "type": [
+            "object"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "afterRender",
+      "returnType": [],
+      "visibility": "private",
+      "arguments": []
+    },
+    {
+      "name": "afterRenderUI",
+      "returnType": [],
+      "visibility": "private",
+      "arguments": []
+    },
+    {
+      "name": "applyEmptyText",
+      "returnType": [],
+      "visibility": "private",
+      "arguments": []
+    },
+    {
+      "name": "autoExpand",
+      "returnType": [],
+      "visibility": "private",
+      "arguments": [
+        {
+          "name": "preventUpdate",
+          "comment": "",
+          "type": [
+            "boolean"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "beforeColMenuShow",
+      "returnType": [],
+      "visibility": "private",
+      "arguments": []
+    },
+    {
+      "name": "beforeUpdate",
+      "returnType": [],
+      "visibility": "private",
+      "arguments": []
+    },
+    {
+      "name": "bind",
+      "returnType": [],
+      "visibility": "private",
+      "arguments": [
+        {
+          "name": "d",
+          "comment": "",
+          "type": [
+            "object"
+          ]
+        },
+        {
+          "name": "c",
+          "comment": "",
+          "type": [
+            "object"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "clearHeaderSortState",
+      "returnType": [],
+      "visibility": "private",
+      "arguments": []
+    },
+    {
+      "name": "deleteRows",
+      "returnType": [],
+      "visibility": "private",
+      "arguments": [
+        {
+          "name": "dm",
+          "comment": "",
+          "type": [
+            "object"
+          ]
+        },
+        {
+          "name": "firstRow",
+          "comment": "",
+          "type": [
+            "object"
+          ]
+        },
+        {
+          "name": "lastRow",
+          "comment": "",
+          "type": [
+            "object"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "destroy",
+      "returnType": [],
+      "visibility": "private",
+      "arguments": []
+    },
+    {
+      "name": "doRender",
+      "returnType": [
+        "string"
+      ],
+      "visibility": "private",
+      "arguments": [
+        {
+          "name": "columns",
+          "comment": "",
+          "type": [
+            "unknown[]"
+          ]
+        },
+        {
+          "name": "records",
+          "comment": "",
+          "type": [
+            "unknown[]"
+          ]
+        },
+        {
+          "name": "store",
+          "comment": "",
+          "type": [
+            "Ext.data.Store"
+          ]
+        },
+        {
+          "name": "startRow",
+          "comment": "",
+          "type": [
+            "number"
+          ]
+        },
+        {
+          "name": "colCount",
+          "comment": "",
+          "type": [
+            "number"
+          ]
+        },
+        {
+          "name": "stripe",
+          "comment": "",
+          "type": [
+            "boolean"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "ensureVisible",
+      "returnType": [],
+      "visibility": "private",
+      "arguments": [
+        {
+          "name": "row",
+          "comment": "",
+          "type": [
+            "object"
+          ]
+        },
+        {
+          "name": "col",
+          "comment": "",
+          "type": [
+            "object"
+          ]
+        },
+        {
+          "name": "hscroll",
+          "comment": "",
+          "type": [
+            "object"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "findCell",
+      "returnType": [],
+      "visibility": "private",
+      "arguments": [
+        {
+          "name": "el",
+          "comment": "",
+          "type": [
+            "object"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "findCellIndex",
+      "returnType": [
+        "number"
+      ],
+      "visibility": "public",
+      "arguments": [
+        {
+          "name": "el",
+          "comment": "",
+          "type": [
+            "HTMLElement"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "findHeaderCell",
+      "returnType": [],
+      "visibility": "private",
+      "arguments": [
+        {
+          "name": "el",
+          "comment": "",
+          "type": [
+            "object"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "findHeaderIndex",
+      "returnType": [],
+      "visibility": "private",
+      "arguments": [
+        {
+          "name": "el",
+          "comment": "",
+          "type": [
+            "object"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "findRow",
+      "returnType": [
+        "HTMLElement"
+      ],
+      "visibility": "public",
+      "arguments": [
+        {
+          "name": "el",
+          "comment": "",
+          "type": [
+            "HTMLElement"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "findRowBody",
+      "returnType": [
+        "HTMLElement"
+      ],
+      "visibility": "public",
+      "arguments": [
+        {
+          "name": "el",
+          "comment": "",
+          "type": [
+            "HTMLElement"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "findRowIndex",
+      "returnType": [
+        "number"
+      ],
+      "visibility": "public",
+      "arguments": [
+        {
+          "name": "el",
+          "comment": "",
+          "type": [
+            "HTMLElement"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "fireEvent<T extends IGridViewEvents = IGridViewEvents, E extends keyof T = keyof T>",
+      "returnType": [
+        "boolean"
+      ],
+      "visibility": "public",
+      "arguments": [
+        {
+          "name": "eventName",
+          "comment": "",
+          "type": [
+            "E"
+          ]
+        },
+        {
+          "name": "...args",
+          "comment": "",
+          "type": [
+            "Parameters<T[E]>"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "fitColumns",
+      "returnType": [
+        "boolean"
+      ],
+      "visibility": "private",
+      "arguments": [
+        {
+          "name": "preventRefresh",
+          "comment": "",
+          "type": [
+            "boolean"
+          ]
+        },
+        {
+          "name": "onlyExpand",
+          "comment": "",
+          "type": [
+            "null"
+          ]
+        },
+        {
+          "name": "omitColumn",
+          "comment": "",
+          "type": [
+            "number"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "fly",
+      "returnType": [],
+      "visibility": "private",
+      "arguments": [
+        {
+          "name": "el",
+          "comment": "",
+          "type": [
+            "object"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "focusCell",
+      "returnType": [],
+      "visibility": "public",
+      "arguments": [
+        {
+          "name": "row",
+          "comment": "",
+          "type": [
+            "number"
+          ]
+        },
+        {
+          "name": "col",
+          "comment": "",
+          "type": [
+            "number"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "focusRow",
+      "returnType": [],
+      "visibility": "public",
+      "arguments": [
+        {
+          "name": "row",
+          "comment": "",
+          "type": [
+            "number"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "getCell",
+      "returnType": [
+        "HTMLElement"
+      ],
+      "visibility": "public",
+      "arguments": [
+        {
+          "name": "row",
+          "comment": "",
+          "type": [
+            "number"
+          ]
+        },
+        {
+          "name": "col",
+          "comment": "",
+          "type": [
+            "number"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "getCellIndex",
+      "returnType": [],
+      "visibility": "private",
+      "arguments": [
+        {
+          "name": "el",
+          "comment": "",
+          "type": [
+            "object"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "getColumnData",
+      "returnType": [
+        "unknown[]"
+      ],
+      "visibility": "private",
+      "arguments": []
+    },
+    {
+      "name": "getColumnId",
+      "returnType": [],
+      "visibility": "private",
+      "arguments": [
+        {
+          "name": "index",
+          "comment": "",
+          "type": [
+            "object"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "getColumnStyle",
+      "returnType": [
+        "string"
+      ],
+      "visibility": "private",
+      "arguments": [
+        {
+          "name": "colIndex",
+          "comment": "",
+          "type": [
+            "number"
+          ]
+        },
+        {
+          "name": "isHeader",
+          "comment": "",
+          "type": [
+            "boolean"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "getColumnTooltip",
+      "returnType": [],
+      "visibility": "private",
+      "arguments": [
+        {
+          "name": "i",
+          "comment": "",
+          "type": [
+            "object"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "getColumnWidth",
+      "returnType": [
+        "number"
+      ],
+      "visibility": "private",
+      "arguments": [
+        {
+          "name": "column",
+          "comment": "",
+          "type": [
+            "object"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "getEditorParent",
+      "returnType": [],
+      "visibility": "private",
+      "arguments": []
+    },
+    {
+      "name": "getGridInnerWidth",
+      "returnType": [
+        "number"
+      ],
+      "visibility": "public",
+      "arguments": []
+    },
+    {
+      "name": "getHeaderCell",
+      "returnType": [
+        "HTMLElement"
+      ],
+      "visibility": "public",
+      "arguments": [
+        {
+          "name": "index",
+          "comment": "",
+          "type": [
+            "number"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "getOffsetWidth",
+      "returnType": [],
+      "visibility": "private",
+      "arguments": []
+    },
+    {
+      "name": "getPreviousVisible",
+      "returnType": [
+        "number",
+        "undefined"
+      ],
+      "visibility": "private",
+      "arguments": [
+        {
+          "name": "index",
+          "comment": "",
+          "type": [
+            "number"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "getResolvedXY",
+      "returnType": [
+        "unknown[]"
+      ],
+      "visibility": "private",
+      "arguments": [
+        {
+          "name": "resolved",
+          "comment": "",
+          "type": [
+            "object"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "getRow",
+      "returnType": [
+        "HTMLElement"
+      ],
+      "visibility": "public",
+      "arguments": [
+        {
+          "name": "index",
+          "comment": "",
+          "type": [
+            "number"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "getRowClass",
+      "returnType": [
+        "string"
+      ],
+      "visibility": "public",
+      "arguments": [
+        {
+          "name": "record",
+          "comment": "",
+          "type": [
+            "Ext.data.Record"
+          ]
+        },
+        {
+          "name": "index",
+          "comment": "",
+          "type": [
+            "number"
+          ]
+        },
+        {
+          "name": "rowParams",
+          "comment": "",
+          "type": [
+            "object"
+          ]
+        },
+        {
+          "name": "store",
+          "comment": "",
+          "type": [
+            "Store"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "getRows",
+      "returnType": [],
+      "visibility": "private",
+      "arguments": []
+    },
+    {
+      "name": "getScrollOffset",
+      "returnType": [],
+      "visibility": "private",
+      "arguments": []
+    },
+    {
+      "name": "getScrollState",
+      "returnType": [],
+      "visibility": "private",
+      "arguments": []
+    },
+    {
+      "name": "getTotalWidth",
+      "returnType": [
+        "string"
+      ],
+      "visibility": "private",
+      "arguments": []
+    },
+    {
+      "name": "handleHdDown",
+      "returnType": [],
+      "visibility": "private",
+      "arguments": [
+        {
+          "name": "e",
+          "comment": "",
+          "type": [
+            "object"
+          ]
+        },
+        {
+          "name": "target",
+          "comment": "",
+          "type": [
+            "object"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "handleHdMenuClick",
+      "returnType": [],
+      "visibility": "private",
+      "arguments": [
+        {
+          "name": "item",
+          "comment": "",
+          "type": [
+            "object"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "handleHdMenuClickDefault",
+      "returnType": [],
+      "visibility": "public",
+      "arguments": [
+        {
+          "name": "item",
+          "comment": "",
+          "type": [
+            "Ext.menu.BaseItem"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "handleHdMove",
+      "returnType": [],
+      "visibility": "private",
+      "arguments": [
+        {
+          "name": "e",
+          "comment": "",
+          "type": [
+            "object"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "handleHdOut",
+      "returnType": [],
+      "visibility": "private",
+      "arguments": [
+        {
+          "name": "e",
+          "comment": "",
+          "type": [
+            "object"
+          ]
+        },
+        {
+          "name": "target",
+          "comment": "",
+          "type": [
+            "object"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "handleHdOver",
+      "returnType": [],
+      "visibility": "private",
+      "arguments": [
+        {
+          "name": "e",
+          "comment": "",
+          "type": [
+            "object"
+          ]
+        },
+        {
+          "name": "target",
+          "comment": "",
+          "type": [
+            "object"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "handleWheel",
+      "returnType": [],
+      "visibility": "private",
+      "arguments": [
+        {
+          "name": "e",
+          "comment": "",
+          "type": [
+            "object"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "hasListener<T extends IGridViewEvents = IGridViewEvents, E extends keyof T = keyof T>",
+      "returnType": [
+        "boolean"
+      ],
+      "visibility": "public",
+      "arguments": [
+        {
+          "name": "eventName",
+          "comment": "",
+          "type": [
+            "E"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "hasRows",
+      "returnType": [
+        "boolean"
+      ],
+      "visibility": "private",
+      "arguments": []
+    },
+    {
+      "name": "init",
+      "returnType": [],
+      "visibility": "private",
+      "arguments": [
+        {
+          "name": "grid",
+          "comment": "",
+          "type": [
+            "object"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "initData",
+      "returnType": [],
+      "visibility": "private",
+      "arguments": [
+        {
+          "name": "newStore",
+          "comment": "",
+          "type": [
+            "Ext.data.Store"
+          ]
+        },
+        {
+          "name": "newColModel",
+          "comment": "",
+          "type": [
+            "Ext.grid.ColumnModel"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "initElements",
+      "returnType": [],
+      "visibility": "private",
+      "arguments": []
+    },
+    {
+      "name": "initEvents",
+      "returnType": [],
+      "visibility": "private",
+      "arguments": []
+    },
+    {
+      "name": "initTemplates",
+      "returnType": [],
+      "visibility": "private",
+      "arguments": []
+    },
+    {
+      "name": "initUI",
+      "returnType": [],
+      "visibility": "private",
+      "arguments": [
+        {
+          "name": "grid",
+          "comment": "",
+          "type": [
+            "object"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "insertRows",
+      "returnType": [],
+      "visibility": "private",
+      "arguments": [
+        {
+          "name": "dm",
+          "comment": "",
+          "type": [
+            "object"
+          ]
+        },
+        {
+          "name": "firstRow",
+          "comment": "",
+          "type": [
+            "object"
+          ]
+        },
+        {
+          "name": "lastRow",
+          "comment": "",
+          "type": [
+            "object"
+          ]
+        },
+        {
+          "name": "isUpdate",
+          "comment": "",
+          "type": [
+            "object"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "isHideableColumn",
+      "returnType": [],
+      "visibility": "private",
+      "arguments": [
+        {
+          "name": "c",
+          "comment": "",
+          "type": [
+            "object"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "isMenuDisabled",
+      "returnType": [],
+      "visibility": "private",
+      "arguments": [
+        {
+          "name": "cellIndex",
+          "comment": "",
+          "type": [
+            "number"
+          ]
+        },
+        {
+          "name": "el",
+          "comment": "",
+          "type": [
+            "Ext.Element"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "layout",
+      "returnType": [],
+      "visibility": "private",
+      "arguments": [
+        {
+          "name": "initial",
+          "comment": "",
+          "type": [
+            "object"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "on<T extends IGridViewEvents = IGridViewEvents, E extends keyof T = keyof T>",
+      "returnType": [],
+      "visibility": "public",
+      "arguments": [
+        {
+          "name": "eventName",
+          "comment": "",
+          "type": [
+            "E"
+          ]
+        },
+        {
+          "name": "handler",
+          "comment": "",
+          "type": [
+            "T[E]"
+          ]
+        },
+        {
+          "name": "scope?",
+          "comment": "",
+          "type": [
+            "object"
+          ]
+        },
+        {
+          "name": "options?",
+          "comment": "",
+          "type": [
+            "object"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "onAdd",
+      "returnType": [],
+      "visibility": "private",
+      "arguments": [
+        {
+          "name": "store",
+          "comment": "",
+          "type": [
+            "object"
+          ]
+        },
+        {
+          "name": "records",
+          "comment": "",
+          "type": [
+            "object"
+          ]
+        },
+        {
+          "name": "index",
+          "comment": "",
+          "type": [
+            "object"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "onAllColumnWidthsUpdated",
+      "returnType": [],
+      "visibility": "private",
+      "arguments": [
+        {
+          "name": "ws",
+          "comment": "",
+          "type": [
+            "object"
+          ]
+        },
+        {
+          "name": "tw",
+          "comment": "",
+          "type": [
+            "object"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "onCellDeselect",
+      "returnType": [],
+      "visibility": "private",
+      "arguments": [
+        {
+          "name": "row",
+          "comment": "",
+          "type": [
+            "object"
+          ]
+        },
+        {
+          "name": "col",
+          "comment": "",
+          "type": [
+            "object"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "onCellSelect",
+      "returnType": [],
+      "visibility": "private",
+      "arguments": [
+        {
+          "name": "row",
+          "comment": "",
+          "type": [
+            "object"
+          ]
+        },
+        {
+          "name": "col",
+          "comment": "",
+          "type": [
+            "object"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "onClear",
+      "returnType": [],
+      "visibility": "private",
+      "arguments": []
+    },
+    {
+      "name": "onColConfigChange",
+      "returnType": [],
+      "visibility": "private",
+      "arguments": []
+    },
+    {
+      "name": "onColWidthChange",
+      "returnType": [],
+      "visibility": "private",
+      "arguments": [
+        {
+          "name": "cm",
+          "comment": "",
+          "type": [
+            "object"
+          ]
+        },
+        {
+          "name": "col",
+          "comment": "",
+          "type": [
+            "object"
+          ]
+        },
+        {
+          "name": "width",
+          "comment": "",
+          "type": [
+            "object"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "onColumnHiddenUpdated",
+      "returnType": [],
+      "visibility": "private",
+      "arguments": [
+        {
+          "name": "col",
+          "comment": "",
+          "type": [
+            "object"
+          ]
+        },
+        {
+          "name": "hidden",
+          "comment": "",
+          "type": [
+            "object"
+          ]
+        },
+        {
+          "name": "tw",
+          "comment": "",
+          "type": [
+            "object"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "onColumnMove",
+      "returnType": [],
+      "visibility": "private",
+      "arguments": [
+        {
+          "name": "cm",
+          "comment": "",
+          "type": [
+            "object"
+          ]
+        },
+        {
+          "name": "oldIndex",
+          "comment": "",
+          "type": [
+            "object"
+          ]
+        },
+        {
+          "name": "newIndex",
+          "comment": "",
+          "type": [
+            "object"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "onColumnSplitterMoved",
+      "returnType": [],
+      "visibility": "private",
+      "arguments": [
+        {
+          "name": "cellIndex",
+          "comment": "",
+          "type": [
+            "object"
+          ]
+        },
+        {
+          "name": "width",
+          "comment": "",
+          "type": [
+            "object"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "onColumnWidthUpdated",
+      "returnType": [],
+      "visibility": "private",
+      "arguments": [
+        {
+          "name": "col",
+          "comment": "",
+          "type": [
+            "object"
+          ]
+        },
+        {
+          "name": "w",
+          "comment": "",
+          "type": [
+            "object"
+          ]
+        },
+        {
+          "name": "tw",
+          "comment": "",
+          "type": [
+            "object"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "onDataChange",
+      "returnType": [],
+      "visibility": "private",
+      "arguments": []
+    },
+    {
+      "name": "onDenyColumnHide",
+      "returnType": [],
+      "visibility": "private",
+      "arguments": []
+    },
+    {
+      "name": "onHeaderChange",
+      "returnType": [],
+      "visibility": "private",
+      "arguments": [
+        {
+          "name": "cm",
+          "comment": "",
+          "type": [
+            "object"
+          ]
+        },
+        {
+          "name": "col",
+          "comment": "",
+          "type": [
+            "object"
+          ]
+        },
+        {
+          "name": "text",
+          "comment": "",
+          "type": [
+            "object"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "onHeaderClick",
+      "returnType": [],
+      "visibility": "private",
+      "arguments": [
+        {
+          "name": "g",
+          "comment": "",
+          "type": [
+            "object"
+          ]
+        },
+        {
+          "name": "index",
+          "comment": "",
+          "type": [
+            "object"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "onHiddenChange",
+      "returnType": [],
+      "visibility": "private",
+      "arguments": [
+        {
+          "name": "cm",
+          "comment": "",
+          "type": [
+            "object"
+          ]
+        },
+        {
+          "name": "col",
+          "comment": "",
+          "type": [
+            "object"
+          ]
+        },
+        {
+          "name": "hidden",
+          "comment": "",
+          "type": [
+            "object"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "onLayout",
+      "returnType": [],
+      "visibility": "private",
+      "arguments": [
+        {
+          "name": "vw",
+          "comment": "",
+          "type": [
+            "object"
+          ]
+        },
+        {
+          "name": "vh",
+          "comment": "",
+          "type": [
+            "object"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "onLoad",
+      "returnType": [],
+      "visibility": "private",
+      "arguments": []
+    },
+    {
+      "name": "onRemove",
+      "returnType": [],
+      "visibility": "private",
+      "arguments": [
+        {
+          "name": "store",
+          "comment": "",
+          "type": [
+            "object"
+          ]
+        },
+        {
+          "name": "record",
+          "comment": "",
+          "type": [
+            "object"
+          ]
+        },
+        {
+          "name": "index",
+          "comment": "",
+          "type": [
+            "object"
+          ]
+        },
+        {
+          "name": "isUpdate",
+          "comment": "",
+          "type": [
+            "object"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "onRowDeselect",
+      "returnType": [],
+      "visibility": "private",
+      "arguments": [
+        {
+          "name": "row",
+          "comment": "",
+          "type": [
+            "object"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "onRowOut",
+      "returnType": [],
+      "visibility": "private",
+      "arguments": [
+        {
+          "name": "e",
+          "comment": "",
+          "type": [
+            "object"
+          ]
+        },
+        {
+          "name": "target",
+          "comment": "",
+          "type": [
+            "object"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "onRowOver",
+      "returnType": [],
+      "visibility": "private",
+      "arguments": [
+        {
+          "name": "e",
+          "comment": "",
+          "type": [
+            "object"
+          ]
+        },
+        {
+          "name": "target",
+          "comment": "",
+          "type": [
+            "object"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "onRowSelect",
+      "returnType": [],
+      "visibility": "private",
+      "arguments": [
+        {
+          "name": "row",
+          "comment": "",
+          "type": [
+            "object"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "onUpdate",
+      "returnType": [],
+      "visibility": "private",
+      "arguments": [
+        {
+          "name": "store",
+          "comment": "",
+          "type": [
+            "object"
+          ]
+        },
+        {
+          "name": "record",
+          "comment": "",
+          "type": [
+            "object"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "processEvent",
+      "returnType": [],
+      "visibility": "private",
+      "arguments": [
+        {
+          "name": "name",
+          "comment": "",
+          "type": [
+            "object"
+          ]
+        },
+        {
+          "name": "e",
+          "comment": "",
+          "type": [
+            "object"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "processRows",
+      "returnType": [],
+      "visibility": "private",
+      "arguments": [
+        {
+          "name": "startRow",
+          "comment": "",
+          "type": [
+            "number"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "refresh",
+      "returnType": [],
+      "visibility": "public",
+      "arguments": [
+        {
+          "name": "headersToo?",
+          "comment": "",
+          "type": [
+            "boolean"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "refreshRow",
+      "returnType": [],
+      "visibility": "private",
+      "arguments": [
+        {
+          "name": "record",
+          "comment": "",
+          "type": [
+            "object"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "removeListener<T extends IGridViewEvents = IGridViewEvents, E extends keyof T = keyof T>",
+      "returnType": [],
+      "visibility": "public",
+      "arguments": [
+        {
+          "name": "eventName",
+          "comment": "",
+          "type": [
+            "E"
+          ]
+        },
+        {
+          "name": "handler",
+          "comment": "",
+          "type": [
+            "T[E]"
+          ]
+        },
+        {
+          "name": "scope?",
+          "comment": "",
+          "type": [
+            "object"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "removeRow",
+      "returnType": [],
+      "visibility": "private",
+      "arguments": [
+        {
+          "name": "row",
+          "comment": "",
+          "type": [
+            "object"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "removeRowClass",
+      "returnType": [],
+      "visibility": "private",
+      "arguments": [
+        {
+          "name": "row",
+          "comment": "",
+          "type": [
+            "object"
+          ]
+        },
+        {
+          "name": "cls",
+          "comment": "",
+          "type": [
+            "object"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "removeRows",
+      "returnType": [],
+      "visibility": "private",
+      "arguments": [
+        {
+          "name": "firstRow",
+          "comment": "",
+          "type": [
+            "object"
+          ]
+        },
+        {
+          "name": "lastRow",
+          "comment": "",
+          "type": [
+            "object"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "render",
+      "returnType": [],
+      "visibility": "private",
+      "arguments": []
+    },
+    {
+      "name": "renderBody",
+      "returnType": [],
+      "visibility": "private",
+      "arguments": []
+    },
+    {
+      "name": "renderHeaders",
+      "returnType": [
+        "string"
+      ],
+      "visibility": "private",
+      "arguments": []
+    },
+    {
+      "name": "renderRows",
+      "returnType": [],
+      "visibility": "private",
+      "arguments": [
+        {
+          "name": "startRow",
+          "comment": "",
+          "type": [
+            "number"
+          ]
+        },
+        {
+          "name": "endRow",
+          "comment": "",
+          "type": [
+            "number"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "renderUI",
+      "returnType": [],
+      "visibility": "private",
+      "arguments": []
+    },
+    {
+      "name": "resolveCell",
+      "returnType": [],
+      "visibility": "private",
+      "arguments": [
+        {
+          "name": "row",
+          "comment": "",
+          "type": [
+            "object"
+          ]
+        },
+        {
+          "name": "col",
+          "comment": "",
+          "type": [
+            "object"
+          ]
+        },
+        {
+          "name": "hscroll",
+          "comment": "",
+          "type": [
+            "object"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "restoreScroll",
+      "returnType": [],
+      "visibility": "private",
+      "arguments": [
+        {
+          "name": "state",
+          "comment": "",
+          "type": [
+            "object"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "scrollToTop",
+      "returnType": [],
+      "visibility": "public",
+      "arguments": []
+    },
+    {
+      "name": "syncFocusEl",
+      "returnType": [],
+      "visibility": "private",
+      "arguments": [
+        {
+          "name": "row",
+          "comment": "",
+          "type": [
+            "object"
+          ]
+        },
+        {
+          "name": "col",
+          "comment": "",
+          "type": [
+            "object"
+          ]
+        },
+        {
+          "name": "hscroll",
+          "comment": "",
+          "type": [
+            "object"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "syncHeaderScroll",
+      "returnType": [],
+      "visibility": "private",
+      "arguments": []
+    },
+    {
+      "name": "syncScroll",
+      "returnType": [],
+      "visibility": "private",
+      "arguments": []
+    },
+    {
+      "name": "un<T extends IGridViewEvents = IGridViewEvents, E extends keyof T = keyof T>",
+      "returnType": [],
+      "visibility": "public",
+      "arguments": [
+        {
+          "name": "eventName",
+          "comment": "",
+          "type": [
+            "E"
+          ]
+        },
+        {
+          "name": "handler",
+          "comment": "",
+          "type": [
+            "T[E]"
+          ]
+        },
+        {
+          "name": "scope?",
+          "comment": "",
+          "type": [
+            "object"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "updateAllColumnWidths",
+      "returnType": [],
+      "visibility": "private",
+      "arguments": []
+    },
+    {
+      "name": "updateColumnHidden",
+      "returnType": [],
+      "visibility": "private",
+      "arguments": [
+        {
+          "name": "col",
+          "comment": "",
+          "type": [
+            "number"
+          ]
+        },
+        {
+          "name": "hidden",
+          "comment": "",
+          "type": [
+            "boolean"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "updateColumnText",
+      "returnType": [],
+      "visibility": "private",
+      "arguments": [
+        {
+          "name": "col",
+          "comment": "",
+          "type": [
+            "object"
+          ]
+        },
+        {
+          "name": "text",
+          "comment": "",
+          "type": [
+            "object"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "updateColumnWidth",
+      "returnType": [],
+      "visibility": "private",
+      "arguments": [
+        {
+          "name": "column",
+          "comment": "",
+          "type": [
+            "number"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "updateHeaderSortState",
+      "returnType": [],
+      "visibility": "private",
+      "arguments": []
+    },
+    {
+      "name": "updateHeaderWidth",
+      "returnType": [],
+      "visibility": "private",
+      "arguments": [
+        {
+          "name": "updateMain",
+          "comment": "",
+          "type": [
+            "boolean"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "updateHeaders",
+      "returnType": [],
+      "visibility": "private",
+      "arguments": []
+    },
+    {
+      "name": "updateSortIcon",
+      "returnType": [],
+      "visibility": "private",
+      "arguments": [
+        {
+          "name": "col",
+          "comment": "",
+          "type": [
+            "object"
+          ]
+        },
+        {
+          "name": "dir",
+          "comment": "",
+          "type": [
+            "object"
+          ]
+        }
+      ]
+    }
+  ],
+  "events": [
+    {
+      "name": "beforerefresh",
+      "arguments": [
+        {
+          "name": "view",
+          "comment": "",
+          "type": [
+            "Ext.grid.GridView"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "beforerowremoved",
+      "arguments": [
+        {
+          "name": "view",
+          "comment": "",
+          "type": [
+            "Ext.grid.GridView"
+          ]
+        },
+        {
+          "name": "rowIndex",
+          "comment": "",
+          "type": [
+            "number"
+          ]
+        },
+        {
+          "name": "record",
+          "comment": "",
+          "type": [
+            "Ext.data.Record"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "beforerowsinserted",
+      "arguments": [
+        {
+          "name": "view",
+          "comment": "",
+          "type": [
+            "Ext.grid.GridView"
+          ]
+        },
+        {
+          "name": "firstRow",
+          "comment": "",
+          "type": [
+            "number"
+          ]
+        },
+        {
+          "name": "lastRow",
+          "comment": "",
+          "type": [
+            "number"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "refresh",
+      "arguments": [
+        {
+          "name": "view",
+          "comment": "",
+          "type": [
+            "Ext.grid.GridView"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "rowremoved",
+      "arguments": [
+        {
+          "name": "view",
+          "comment": "",
+          "type": [
+            "Ext.grid.GridView"
+          ]
+        },
+        {
+          "name": "rowIndex",
+          "comment": "",
+          "type": [
+            "number"
+          ]
+        },
+        {
+          "name": "record",
+          "comment": "",
+          "type": [
+            "Ext.data.Record"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "rowsinserted",
+      "arguments": [
+        {
+          "name": "view",
+          "comment": "",
+          "type": [
+            "Ext.grid.GridView"
+          ]
+        },
+        {
+          "name": "firstRow",
+          "comment": "",
+          "type": [
+            "number"
+          ]
+        },
+        {
+          "name": "lastRow",
+          "comment": "",
+          "type": [
+            "number"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "rowupdated",
+      "arguments": [
+        {
+          "name": "view",
+          "comment": "",
+          "type": [
+            "Ext.grid.GridView"
+          ]
+        },
+        {
+          "name": "firstRow",
+          "comment": "",
+          "type": [
+            "number"
+          ]
+        },
+        {
+          "name": "record",
+          "comment": "",
+          "type": [
+            "Ext.data.record"
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,30 @@
+{
+  "name": "FlashProxy",
+  "namespace": "Ext",
+  "constructorMethod": null,
+  "properties": [],
+  "methods": [
+    {
+      "name": "onEvent",
+      "returnType": [],
+      "visibility": "private",
+      "arguments": [
+        {
+          "name": "id",
+          "comment": "",
+          "type": [
+            "object"
+          ]
+        },
+        {
+          "name": "e",
+          "comment": "",
+          "type": [
+            "object"
+          ]
+        }
+      ]
+    }
+  ],
+  "events": []
+}

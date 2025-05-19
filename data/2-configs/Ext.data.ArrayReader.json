@@ -1,0 +1,79 @@
+{
+  "name": "ArrayReader",
+  "namespace": "Ext.data",
+  "extends": "Ext.data.JsonReader",
+  "constructorMethod": {
+    "config": [
+      {
+        "name": "fields?",
+        "type": [
+          "unknown[]",
+          "object"
+        ],
+        "comment": ""
+      },
+      {
+        "name": "id?",
+        "type": [
+          "number"
+        ],
+        "comment": ""
+      },
+      {
+        "name": "idIndex?",
+        "type": [
+          "number"
+        ],
+        "comment": ""
+      },
+      {
+        "name": "idProperty?",
+        "type": [
+          "string"
+        ],
+        "comment": ""
+      },
+      {
+        "name": "messageProperty?",
+        "type": [
+          "string"
+        ],
+        "comment": ""
+      },
+      {
+        "name": "root?",
+        "type": [
+          "string"
+        ],
+        "comment": ""
+      },
+      {
+        "name": "totalProperty?",
+        "type": [
+          "string"
+        ],
+        "comment": ""
+      }
+    ]
+  },
+  "properties": [],
+  "methods": [
+    {
+      "name": "readRecords",
+      "returnType": [
+        "object"
+      ],
+      "visibility": "public",
+      "arguments": [
+        {
+          "name": "o",
+          "comment": "",
+          "type": [
+            "object"
+          ]
+        }
+      ]
+    }
+  ],
+  "events": []
+}

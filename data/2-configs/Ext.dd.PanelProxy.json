@@ -1,0 +1,135 @@
+{
+  "name": "PanelProxy",
+  "namespace": "Ext.dd",
+  "extends": null,
+  "constructorMethod": {
+    "config": [
+      {
+        "name": "insertProxy?",
+        "type": [
+          "boolean"
+        ],
+        "comment": ""
+      }
+    ]
+  },
+  "properties": [],
+  "methods": [
+    {
+      "name": "getEl",
+      "returnType": [
+        "Element"
+      ],
+      "visibility": "public",
+      "arguments": []
+    },
+    {
+      "name": "getGhost",
+      "returnType": [
+        "Element"
+      ],
+      "visibility": "public",
+      "arguments": []
+    },
+    {
+      "name": "getProxy",
+      "returnType": [
+        "Element"
+      ],
+      "visibility": "public",
+      "arguments": []
+    },
+    {
+      "name": "hide",
+      "returnType": [],
+      "visibility": "public",
+      "arguments": []
+    },
+    {
+      "name": "moveProxy",
+      "returnType": [],
+      "visibility": "public",
+      "arguments": [
+        {
+          "name": "parentNode",
+          "comment": "",
+          "type": [
+            "HTMLElement"
+          ]
+        },
+        {
+          "name": "before?",
+          "comment": "",
+          "type": [
+            "HTMLElement"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "repair",
+      "returnType": [],
+      "visibility": "private",
+      "arguments": [
+        {
+          "name": "xy",
+          "comment": "",
+          "type": [
+            "object"
+          ]
+        },
+        {
+          "name": "callback",
+          "comment": "",
+          "type": [
+            "object"
+          ]
+        },
+        {
+          "name": "scope",
+          "comment": "",
+          "type": [
+            "object"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "reset",
+      "returnType": [],
+      "visibility": "private",
+      "arguments": []
+    },
+    {
+      "name": "setStatus",
+      "returnType": [],
+      "visibility": "private",
+      "arguments": []
+    },
+    {
+      "name": "show",
+      "returnType": [],
+      "visibility": "public",
+      "arguments": []
+    },
+    {
+      "name": "stop",
+      "returnType": [],
+      "visibility": "private",
+      "arguments": []
+    },
+    {
+      "name": "sync",
+      "returnType": [],
+      "visibility": "private",
+      "arguments": []
+    },
+    {
+      "name": "update",
+      "returnType": [],
+      "visibility": "private",
+      "arguments": []
+    }
+  ],
+  "events": []
+}

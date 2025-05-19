@@ -1,0 +1,97 @@
+{
+  "name": "KeyMap",
+  "namespace": "Ext",
+  "constructorMethod": null,
+  "properties": [
+    {
+      "name": "stopEvent",
+      "type": [
+        "boolean"
+      ],
+      "visibility": "public",
+      "comment": ""
+    }
+  ],
+  "methods": [
+    {
+      "name": "addBinding",
+      "returnType": [],
+      "visibility": "public",
+      "arguments": [
+        {
+          "name": "config",
+          "comment": "",
+          "type": [
+            "object",
+            "unknown[]"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "disable",
+      "returnType": [],
+      "visibility": "public",
+      "arguments": []
+    },
+    {
+      "name": "enable",
+      "returnType": [],
+      "visibility": "public",
+      "arguments": []
+    },
+    {
+      "name": "isEnabled",
+      "returnType": [
+        "boolean"
+      ],
+      "visibility": "public",
+      "arguments": []
+    },
+    {
+      "name": "on",
+      "returnType": [],
+      "visibility": "public",
+      "arguments": [
+        {
+          "name": "key",
+          "comment": "",
+          "type": [
+            "number",
+            "unknown[]",
+            "object"
+          ]
+        },
+        {
+          "name": "fn",
+          "comment": "",
+          "type": [
+            "Function"
+          ]
+        },
+        {
+          "name": "scope?",
+          "comment": "",
+          "type": [
+            "object"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "setDisabled",
+      "returnType": [],
+      "visibility": "public",
+      "arguments": [
+        {
+          "name": "disabled",
+          "comment": "",
+          "type": [
+            "boolean"
+          ]
+        }
+      ]
+    }
+  ],
+  "events": []
+}

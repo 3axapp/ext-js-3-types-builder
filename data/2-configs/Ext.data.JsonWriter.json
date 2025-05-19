@@ -1,0 +1,139 @@
+{
+  "name": "JsonWriter",
+  "namespace": "Ext.data",
+  "extends": "Ext.data.DataWriter",
+  "constructorMethod": {
+    "config": [
+      {
+        "name": "createRecord?",
+        "type": [
+          "Function"
+        ],
+        "comment": ""
+      },
+      {
+        "name": "destroyRecord?",
+        "type": [
+          "Function"
+        ],
+        "comment": ""
+      },
+      {
+        "name": "encode?",
+        "type": [
+          "boolean"
+        ],
+        "comment": ""
+      },
+      {
+        "name": "encodeDelete?",
+        "type": [
+          "boolean"
+        ],
+        "comment": ""
+      },
+      {
+        "name": "listful?",
+        "type": [
+          "boolean"
+        ],
+        "comment": ""
+      },
+      {
+        "name": "updateRecord?",
+        "type": [
+          "Function"
+        ],
+        "comment": ""
+      },
+      {
+        "name": "writeAllFields?",
+        "type": [
+          "boolean"
+        ],
+        "comment": ""
+      }
+    ]
+  },
+  "properties": [],
+  "methods": [
+    {
+      "name": "createRecord",
+      "returnType": [
+        "object"
+      ],
+      "visibility": "protected",
+      "arguments": [
+        {
+          "name": "rec",
+          "comment": "",
+          "type": [
+            "Ext.data.Record"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "destroyRecord",
+      "returnType": [
+        "object"
+      ],
+      "visibility": "protected",
+      "arguments": [
+        {
+          "name": "rec",
+          "comment": "",
+          "type": [
+            "Ext.data.Record"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "render",
+      "returnType": [],
+      "visibility": "public",
+      "arguments": [
+        {
+          "name": "Ajax",
+          "comment": "",
+          "type": [
+            "object"
+          ]
+        },
+        {
+          "name": "baseParams",
+          "comment": "",
+          "type": [
+            "object"
+          ]
+        },
+        {
+          "name": "data",
+          "comment": "",
+          "type": [
+            "object",
+            "Object[]"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "updateRecord",
+      "returnType": [
+        "object"
+      ],
+      "visibility": "protected",
+      "arguments": [
+        {
+          "name": "rec",
+          "comment": "",
+          "type": [
+            "Ext.data.Record"
+          ]
+        }
+      ]
+    }
+  ],
+  "events": []
+}

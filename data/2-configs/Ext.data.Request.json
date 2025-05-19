@@ -1,0 +1,54 @@
+{
+  "name": "Request",
+  "namespace": "Ext.data",
+  "constructorMethod": {
+    "config": [
+      {
+        "name": "action?",
+        "type": [
+          "string"
+        ],
+        "comment": ""
+      },
+      {
+        "name": "callback?",
+        "type": [
+          "Function"
+        ],
+        "comment": ""
+      },
+      {
+        "name": "params?",
+        "type": [
+          "object"
+        ],
+        "comment": ""
+      },
+      {
+        "name": "reader?",
+        "type": [
+          "Ext.data.DataReader"
+        ],
+        "comment": ""
+      },
+      {
+        "name": "rs?",
+        "type": [
+          "Ext.data.Record[]",
+          "Ext.data.Record"
+        ],
+        "comment": ""
+      },
+      {
+        "name": "scope?",
+        "type": [
+          "object"
+        ],
+        "comment": ""
+      }
+    ]
+  },
+  "properties": [],
+  "methods": [],
+  "events": []
+}

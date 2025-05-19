@@ -1,0 +1,597 @@
+{
+  "name": "RemotingProvider",
+  "namespace": "Ext.direct",
+  "extends": "Ext.direct.JsonProvider",
+  "constructorMethod": {
+    "config": [
+      {
+        "name": "actions?",
+        "type": [
+          "object"
+        ],
+        "comment": ""
+      },
+      {
+        "name": "enableBuffer?",
+        "type": [
+          "number",
+          "boolean"
+        ],
+        "comment": ""
+      },
+      {
+        "name": "enableUrlEncode?",
+        "type": [
+          "string"
+        ],
+        "comment": ""
+      },
+      {
+        "name": "id?",
+        "type": [
+          "string"
+        ],
+        "comment": ""
+      },
+      {
+        "name": "listeners?",
+        "type": [
+          "object"
+        ],
+        "comment": ""
+      },
+      {
+        "name": "maxRetries?",
+        "type": [
+          "number"
+        ],
+        "comment": ""
+      },
+      {
+        "name": "namespace?",
+        "type": [
+          "string",
+          "object"
+        ],
+        "comment": ""
+      },
+      {
+        "name": "priority?",
+        "type": [
+          "number"
+        ],
+        "comment": ""
+      },
+      {
+        "name": "timeout?",
+        "type": [
+          "number"
+        ],
+        "comment": ""
+      },
+      {
+        "name": "type?",
+        "type": [
+          "string"
+        ],
+        "comment": ""
+      },
+      {
+        "name": "url?",
+        "type": [
+          "string"
+        ],
+        "comment": ""
+      }
+    ]
+  },
+  "properties": [],
+  "methods": [
+    {
+      "name": "addListener<T extends IRemotingProviderEvents = IRemotingProviderEvents, E extends keyof T = keyof T>",
+      "returnType": [],
+      "visibility": "public",
+      "arguments": [
+        {
+          "name": "eventName",
+          "comment": "",
+          "type": [
+            "E"
+          ]
+        },
+        {
+          "name": "handler",
+          "comment": "",
+          "type": [
+            "T[E]"
+          ]
+        },
+        {
+          "name": "scope?",
+          "comment": "",
+          "type": [
+            "object"
+          ]
+        },
+        {
+          "name": "options?",
+          "comment": "",
+          "type": [
+            "object"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "combineAndSend",
+      "returnType": [],
+      "visibility": "private",
+      "arguments": []
+    },
+    {
+      "name": "connect",
+      "returnType": [],
+      "visibility": "public",
+      "arguments": []
+    },
+    {
+      "name": "createMethod",
+      "returnType": [],
+      "visibility": "private",
+      "arguments": [
+        {
+          "name": "c",
+          "comment": "",
+          "type": [
+            "object"
+          ]
+        },
+        {
+          "name": "m",
+          "comment": "",
+          "type": [
+            "object"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "disconnect",
+      "returnType": [],
+      "visibility": "public",
+      "arguments": []
+    },
+    {
+      "name": "doCall",
+      "returnType": [],
+      "visibility": "private",
+      "arguments": [
+        {
+          "name": "c",
+          "comment": "",
+          "type": [
+            "object"
+          ]
+        },
+        {
+          "name": "m",
+          "comment": "",
+          "type": [
+            "object"
+          ]
+        },
+        {
+          "name": "args",
+          "comment": "",
+          "type": [
+            "object"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "doCallback",
+      "returnType": [],
+      "visibility": "private",
+      "arguments": [
+        {
+          "name": "t",
+          "comment": "",
+          "type": [
+            "object"
+          ]
+        },
+        {
+          "name": "e",
+          "comment": "",
+          "type": [
+            "object"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "doForm",
+      "returnType": [],
+      "visibility": "private",
+      "arguments": [
+        {
+          "name": "c",
+          "comment": "",
+          "type": [
+            "object"
+          ]
+        },
+        {
+          "name": "m",
+          "comment": "",
+          "type": [
+            "object"
+          ]
+        },
+        {
+          "name": "form",
+          "comment": "",
+          "type": [
+            "object"
+          ]
+        },
+        {
+          "name": "callback",
+          "comment": "",
+          "type": [
+            "object"
+          ]
+        },
+        {
+          "name": "scope",
+          "comment": "",
+          "type": [
+            "object"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "doSend",
+      "returnType": [],
+      "visibility": "private",
+      "arguments": [
+        {
+          "name": "data",
+          "comment": "",
+          "type": [
+            "object"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "fireEvent<T extends IRemotingProviderEvents = IRemotingProviderEvents, E extends keyof T = keyof T>",
+      "returnType": [
+        "boolean"
+      ],
+      "visibility": "public",
+      "arguments": [
+        {
+          "name": "eventName",
+          "comment": "",
+          "type": [
+            "E"
+          ]
+        },
+        {
+          "name": "...args",
+          "comment": "",
+          "type": [
+            "Parameters<T[E]>"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "getCallData",
+      "returnType": [],
+      "visibility": "private",
+      "arguments": [
+        {
+          "name": "t",
+          "comment": "",
+          "type": [
+            "object"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "getTransaction",
+      "returnType": [],
+      "visibility": "private",
+      "arguments": [
+        {
+          "name": "opt",
+          "comment": "",
+          "type": [
+            "object"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "hasListener<T extends IRemotingProviderEvents = IRemotingProviderEvents, E extends keyof T = keyof T>",
+      "returnType": [
+        "boolean"
+      ],
+      "visibility": "public",
+      "arguments": [
+        {
+          "name": "eventName",
+          "comment": "",
+          "type": [
+            "E"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "initAPI",
+      "returnType": [],
+      "visibility": "private",
+      "arguments": []
+    },
+    {
+      "name": "isConnected",
+      "returnType": [],
+      "visibility": "public",
+      "arguments": []
+    },
+    {
+      "name": "on<T extends IRemotingProviderEvents = IRemotingProviderEvents, E extends keyof T = keyof T>",
+      "returnType": [],
+      "visibility": "public",
+      "arguments": [
+        {
+          "name": "eventName",
+          "comment": "",
+          "type": [
+            "E"
+          ]
+        },
+        {
+          "name": "handler",
+          "comment": "",
+          "type": [
+            "T[E]"
+          ]
+        },
+        {
+          "name": "scope?",
+          "comment": "",
+          "type": [
+            "object"
+          ]
+        },
+        {
+          "name": "options?",
+          "comment": "",
+          "type": [
+            "object"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "onData",
+      "returnType": [],
+      "visibility": "private",
+      "arguments": [
+        {
+          "name": "opt",
+          "comment": "",
+          "type": [
+            "object"
+          ]
+        },
+        {
+          "name": "success",
+          "comment": "",
+          "type": [
+            "object"
+          ]
+        },
+        {
+          "name": "xhr",
+          "comment": "",
+          "type": [
+            "object"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "processForm",
+      "returnType": [],
+      "visibility": "private",
+      "arguments": [
+        {
+          "name": "t",
+          "comment": "",
+          "type": [
+            "object"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "queueTransaction",
+      "returnType": [],
+      "visibility": "private",
+      "arguments": [
+        {
+          "name": "t",
+          "comment": "",
+          "type": [
+            "object"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "removeListener<T extends IRemotingProviderEvents = IRemotingProviderEvents, E extends keyof T = keyof T>",
+      "returnType": [],
+      "visibility": "public",
+      "arguments": [
+        {
+          "name": "eventName",
+          "comment": "",
+          "type": [
+            "E"
+          ]
+        },
+        {
+          "name": "handler",
+          "comment": "",
+          "type": [
+            "T[E]"
+          ]
+        },
+        {
+          "name": "scope?",
+          "comment": "",
+          "type": [
+            "object"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "un<T extends IRemotingProviderEvents = IRemotingProviderEvents, E extends keyof T = keyof T>",
+      "returnType": [],
+      "visibility": "public",
+      "arguments": [
+        {
+          "name": "eventName",
+          "comment": "",
+          "type": [
+            "E"
+          ]
+        },
+        {
+          "name": "handler",
+          "comment": "",
+          "type": [
+            "T[E]"
+          ]
+        },
+        {
+          "name": "scope?",
+          "comment": "",
+          "type": [
+            "object"
+          ]
+        }
+      ]
+    }
+  ],
+  "events": [
+    {
+      "name": "beforecall",
+      "arguments": [
+        {
+          "name": "provider",
+          "comment": "",
+          "type": [
+            "Ext.direct.RemotingProvider"
+          ]
+        },
+        {
+          "name": "transaction",
+          "comment": "",
+          "type": [
+            "Ext.Direct.Transaction"
+          ]
+        },
+        {
+          "name": "meta",
+          "comment": "",
+          "type": [
+            "object"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "call",
+      "arguments": [
+        {
+          "name": "provider",
+          "comment": "",
+          "type": [
+            "Ext.direct.RemotingProvider"
+          ]
+        },
+        {
+          "name": "transaction",
+          "comment": "",
+          "type": [
+            "Ext.Direct.Transaction"
+          ]
+        },
+        {
+          "name": "meta",
+          "comment": "",
+          "type": [
+            "object"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "connect",
+      "arguments": [
+        {
+          "name": "provider",
+          "comment": "",
+          "type": [
+            "Ext.direct.Provider"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "data",
+      "arguments": [
+        {
+          "name": "provider",
+          "comment": "",
+          "type": [
+            "Ext.direct.Provider"
+          ]
+        },
+        {
+          "name": "e",
+          "comment": "",
+          "type": [
+            "event"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "disconnect",
+      "arguments": [
+        {
+          "name": "provider",
+          "comment": "",
+          "type": [
+            "Ext.direct.Provider"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "exception",
+      "arguments": []
+    }
+  ]
+}

@@ -1,0 +1,127 @@
+{
+  "name": "Api",
+  "namespace": "Ext.data",
+  "extends": null,
+  "constructorMethod": null,
+  "properties": [
+    {
+      "name": "actions",
+      "type": [
+        "object"
+      ],
+      "visibility": "public",
+      "comment": ""
+    },
+    {
+      "name": "restActions",
+      "type": [
+        "object"
+      ],
+      "visibility": "public",
+      "comment": ""
+    }
+  ],
+  "methods": [
+    {
+      "name": "getVerb",
+      "returnType": [
+        "string",
+        "null"
+      ],
+      "visibility": "public",
+      "arguments": [
+        {
+          "name": "name",
+          "comment": "",
+          "type": [
+            "string"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "hasUniqueUrl",
+      "returnType": [
+        "boolean"
+      ],
+      "visibility": "public",
+      "arguments": [
+        {
+          "name": "proxy",
+          "comment": "",
+          "type": [
+            "Ext.data.DataProxy"
+          ]
+        },
+        {
+          "name": "verb",
+          "comment": "",
+          "type": [
+            "string"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "isAction",
+      "returnType": [
+        "boolean"
+      ],
+      "visibility": "public",
+      "arguments": [
+        {
+          "name": "action",
+          "comment": "",
+          "type": [
+            "string"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "isValid",
+      "returnType": [
+        "String[]|true"
+      ],
+      "visibility": "public",
+      "arguments": [
+        {
+          "name": "api",
+          "comment": "",
+          "type": [
+            "object"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "prepare",
+      "returnType": [],
+      "visibility": "public",
+      "arguments": [
+        {
+          "name": "proxy",
+          "comment": "",
+          "type": [
+            "Ext.data.DataProxy"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "restify",
+      "returnType": [],
+      "visibility": "public",
+      "arguments": [
+        {
+          "name": "proxy",
+          "comment": "",
+          "type": [
+            "Ext.data.DataProxy"
+          ]
+        }
+      ]
+    }
+  ],
+  "events": []
+}

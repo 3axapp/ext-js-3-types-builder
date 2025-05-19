@@ -1,0 +1,1037 @@
+{
+  "name": "Node",
+  "namespace": "Ext.data",
+  "extends": "Ext.util.Observable",
+  "constructorMethod": {
+    "config": [
+      {
+        "name": "id?",
+        "type": [
+          "string"
+        ],
+        "comment": ""
+      },
+      {
+        "name": "leaf?",
+        "type": [
+          "boolean"
+        ],
+        "comment": ""
+      },
+      {
+        "name": "listeners?",
+        "type": [
+          "object"
+        ],
+        "comment": ""
+      }
+    ]
+  },
+  "properties": [
+    {
+      "name": "attributes",
+      "type": [
+        "object"
+      ],
+      "visibility": "public",
+      "comment": ""
+    },
+    {
+      "name": "childNodes",
+      "type": [
+        "unknown[]"
+      ],
+      "visibility": "public",
+      "comment": ""
+    },
+    {
+      "name": "firstChild",
+      "type": [
+        "Node"
+      ],
+      "visibility": "public",
+      "comment": ""
+    },
+    {
+      "name": "id",
+      "type": [
+        "string"
+      ],
+      "visibility": "public",
+      "comment": ""
+    },
+    {
+      "name": "lastChild",
+      "type": [
+        "Node"
+      ],
+      "visibility": "public",
+      "comment": ""
+    },
+    {
+      "name": "nextSibling",
+      "type": [
+        "Node"
+      ],
+      "visibility": "public",
+      "comment": ""
+    },
+    {
+      "name": "parentNode",
+      "type": [
+        "Node"
+      ],
+      "visibility": "public",
+      "comment": ""
+    },
+    {
+      "name": "previousSibling",
+      "type": [
+        "Node"
+      ],
+      "visibility": "public",
+      "comment": ""
+    }
+  ],
+  "methods": [
+    {
+      "name": "addListener<T extends INodeEvents = INodeEvents, E extends keyof T = keyof T>",
+      "returnType": [],
+      "visibility": "public",
+      "arguments": [
+        {
+          "name": "eventName",
+          "comment": "",
+          "type": [
+            "E"
+          ]
+        },
+        {
+          "name": "handler",
+          "comment": "",
+          "type": [
+            "T[E]"
+          ]
+        },
+        {
+          "name": "scope?",
+          "comment": "",
+          "type": [
+            "object"
+          ]
+        },
+        {
+          "name": "options?",
+          "comment": "",
+          "type": [
+            "object"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "appendChild",
+      "returnType": [
+        "Node"
+      ],
+      "visibility": "public",
+      "arguments": [
+        {
+          "name": "node",
+          "comment": "",
+          "type": [
+            "Node",
+            "unknown[]"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "bubble",
+      "returnType": [],
+      "visibility": "public",
+      "arguments": [
+        {
+          "name": "fn",
+          "comment": "",
+          "type": [
+            "Function"
+          ]
+        },
+        {
+          "name": "scope?",
+          "comment": "",
+          "type": [
+            "object"
+          ]
+        },
+        {
+          "name": "args?",
+          "comment": "",
+          "type": [
+            "unknown[]"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "cascade",
+      "returnType": [],
+      "visibility": "public",
+      "arguments": [
+        {
+          "name": "fn",
+          "comment": "",
+          "type": [
+            "Function"
+          ]
+        },
+        {
+          "name": "scope?",
+          "comment": "",
+          "type": [
+            "object"
+          ]
+        },
+        {
+          "name": "args?",
+          "comment": "",
+          "type": [
+            "unknown[]"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "clear",
+      "returnType": [],
+      "visibility": "private",
+      "arguments": [
+        {
+          "name": "destroy",
+          "comment": "",
+          "type": [
+            "object"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "contains",
+      "returnType": [
+        "boolean"
+      ],
+      "visibility": "public",
+      "arguments": [
+        {
+          "name": "node",
+          "comment": "",
+          "type": [
+            "Node"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "destroy",
+      "returnType": [],
+      "visibility": "public",
+      "arguments": [
+        {
+          "name": "silent",
+          "comment": "",
+          "type": [
+            "object"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "eachChild",
+      "returnType": [],
+      "visibility": "public",
+      "arguments": [
+        {
+          "name": "fn",
+          "comment": "",
+          "type": [
+            "Function"
+          ]
+        },
+        {
+          "name": "scope?",
+          "comment": "",
+          "type": [
+            "object"
+          ]
+        },
+        {
+          "name": "args?",
+          "comment": "",
+          "type": [
+            "unknown[]"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "findChild",
+      "returnType": [
+        "Node"
+      ],
+      "visibility": "public",
+      "arguments": [
+        {
+          "name": "attribute",
+          "comment": "",
+          "type": [
+            "string"
+          ]
+        },
+        {
+          "name": "value",
+          "comment": "",
+          "type": [
+            "unknown"
+          ]
+        },
+        {
+          "name": "deep?",
+          "comment": "",
+          "type": [
+            "boolean"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "findChildBy",
+      "returnType": [
+        "Node"
+      ],
+      "visibility": "public",
+      "arguments": [
+        {
+          "name": "fn",
+          "comment": "",
+          "type": [
+            "Function"
+          ]
+        },
+        {
+          "name": "scope?",
+          "comment": "",
+          "type": [
+            "object"
+          ]
+        },
+        {
+          "name": "deep?",
+          "comment": "",
+          "type": [
+            "boolean"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "fireEvent<T extends INodeEvents = INodeEvents, E extends keyof T = keyof T>",
+      "returnType": [
+        "boolean"
+      ],
+      "visibility": "public",
+      "arguments": [
+        {
+          "name": "evtName",
+          "comment": "",
+          "type": [
+            "object"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "getDepth",
+      "returnType": [
+        "number"
+      ],
+      "visibility": "public",
+      "arguments": []
+    },
+    {
+      "name": "getOwnerTree",
+      "returnType": [
+        "Tree"
+      ],
+      "visibility": "public",
+      "arguments": []
+    },
+    {
+      "name": "getPath",
+      "returnType": [
+        "string"
+      ],
+      "visibility": "public",
+      "arguments": [
+        {
+          "name": "attr?",
+          "comment": "",
+          "type": [
+            "string"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "hasChildNodes",
+      "returnType": [
+        "boolean"
+      ],
+      "visibility": "public",
+      "arguments": []
+    },
+    {
+      "name": "hasListener<T extends INodeEvents = INodeEvents, E extends keyof T = keyof T>",
+      "returnType": [
+        "boolean"
+      ],
+      "visibility": "public",
+      "arguments": [
+        {
+          "name": "eventName",
+          "comment": "",
+          "type": [
+            "E"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "indexOf",
+      "returnType": [
+        "number"
+      ],
+      "visibility": "public",
+      "arguments": [
+        {
+          "name": "node",
+          "comment": "",
+          "type": [
+            "Node"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "insertBefore",
+      "returnType": [
+        "Node"
+      ],
+      "visibility": "public",
+      "arguments": [
+        {
+          "name": "node",
+          "comment": "",
+          "type": [
+            "Node"
+          ]
+        },
+        {
+          "name": "refNode",
+          "comment": "",
+          "type": [
+            "Node"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "isAncestor",
+      "returnType": [
+        "boolean"
+      ],
+      "visibility": "public",
+      "arguments": [
+        {
+          "name": "node",
+          "comment": "",
+          "type": [
+            "Node"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "isExpandable",
+      "returnType": [
+        "boolean"
+      ],
+      "visibility": "public",
+      "arguments": []
+    },
+    {
+      "name": "isFirst",
+      "returnType": [
+        "boolean"
+      ],
+      "visibility": "public",
+      "arguments": []
+    },
+    {
+      "name": "isLast",
+      "returnType": [
+        "boolean"
+      ],
+      "visibility": "public",
+      "arguments": []
+    },
+    {
+      "name": "isLeaf",
+      "returnType": [
+        "boolean"
+      ],
+      "visibility": "public",
+      "arguments": []
+    },
+    {
+      "name": "item",
+      "returnType": [
+        "Node"
+      ],
+      "visibility": "public",
+      "arguments": [
+        {
+          "name": "index",
+          "comment": "",
+          "type": [
+            "number"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "on<T extends INodeEvents = INodeEvents, E extends keyof T = keyof T>",
+      "returnType": [],
+      "visibility": "public",
+      "arguments": [
+        {
+          "name": "eventName",
+          "comment": "",
+          "type": [
+            "E"
+          ]
+        },
+        {
+          "name": "handler",
+          "comment": "",
+          "type": [
+            "T[E]"
+          ]
+        },
+        {
+          "name": "scope?",
+          "comment": "",
+          "type": [
+            "object"
+          ]
+        },
+        {
+          "name": "options?",
+          "comment": "",
+          "type": [
+            "object"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "onIdChange",
+      "returnType": [],
+      "visibility": "private",
+      "arguments": []
+    },
+    {
+      "name": "remove",
+      "returnType": [
+        "this"
+      ],
+      "visibility": "public",
+      "arguments": [
+        {
+          "name": "destroy",
+          "comment": "",
+          "type": [
+            "boolean"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "removeAll",
+      "returnType": [
+        "this"
+      ],
+      "visibility": "public",
+      "arguments": [
+        {
+          "name": "destroy",
+          "comment": "",
+          "type": [
+            "boolean"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "removeChild",
+      "returnType": [
+        "Node"
+      ],
+      "visibility": "public",
+      "arguments": [
+        {
+          "name": "node",
+          "comment": "",
+          "type": [
+            "Node"
+          ]
+        },
+        {
+          "name": "destroy",
+          "comment": "",
+          "type": [
+            "boolean"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "removeListener<T extends INodeEvents = INodeEvents, E extends keyof T = keyof T>",
+      "returnType": [],
+      "visibility": "public",
+      "arguments": [
+        {
+          "name": "eventName",
+          "comment": "",
+          "type": [
+            "E"
+          ]
+        },
+        {
+          "name": "handler",
+          "comment": "",
+          "type": [
+            "T[E]"
+          ]
+        },
+        {
+          "name": "scope?",
+          "comment": "",
+          "type": [
+            "object"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "replaceChild",
+      "returnType": [
+        "Node"
+      ],
+      "visibility": "public",
+      "arguments": [
+        {
+          "name": "newChild",
+          "comment": "",
+          "type": [
+            "Node"
+          ]
+        },
+        {
+          "name": "oldChild",
+          "comment": "",
+          "type": [
+            "Node"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "setFirstChild",
+      "returnType": [],
+      "visibility": "private",
+      "arguments": [
+        {
+          "name": "node",
+          "comment": "",
+          "type": [
+            "object"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "setId",
+      "returnType": [],
+      "visibility": "public",
+      "arguments": [
+        {
+          "name": "id",
+          "comment": "",
+          "type": [
+            "string"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "setLastChild",
+      "returnType": [],
+      "visibility": "private",
+      "arguments": [
+        {
+          "name": "node",
+          "comment": "",
+          "type": [
+            "object"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "setOwnerTree",
+      "returnType": [],
+      "visibility": "private",
+      "arguments": [
+        {
+          "name": "tree",
+          "comment": "",
+          "type": [
+            "object"
+          ]
+        },
+        {
+          "name": "destroy",
+          "comment": "",
+          "type": [
+            "object"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "sort",
+      "returnType": [],
+      "visibility": "public",
+      "arguments": [
+        {
+          "name": "fn",
+          "comment": "",
+          "type": [
+            "Function"
+          ]
+        },
+        {
+          "name": "scope?",
+          "comment": "",
+          "type": [
+            "object"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "toString",
+      "returnType": [],
+      "visibility": "private",
+      "arguments": []
+    },
+    {
+      "name": "un<T extends INodeEvents = INodeEvents, E extends keyof T = keyof T>",
+      "returnType": [],
+      "visibility": "public",
+      "arguments": [
+        {
+          "name": "eventName",
+          "comment": "",
+          "type": [
+            "E"
+          ]
+        },
+        {
+          "name": "handler",
+          "comment": "",
+          "type": [
+            "T[E]"
+          ]
+        },
+        {
+          "name": "scope?",
+          "comment": "",
+          "type": [
+            "object"
+          ]
+        }
+      ]
+    }
+  ],
+  "events": [
+    {
+      "name": "append",
+      "arguments": [
+        {
+          "name": "tree",
+          "comment": "",
+          "type": [
+            "Tree"
+          ]
+        },
+        {
+          "name": "thisCmp",
+          "comment": "",
+          "type": [
+            "Node"
+          ]
+        },
+        {
+          "name": "node",
+          "comment": "",
+          "type": [
+            "Node"
+          ]
+        },
+        {
+          "name": "index",
+          "comment": "",
+          "type": [
+            "number"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "beforeappend",
+      "arguments": [
+        {
+          "name": "tree",
+          "comment": "",
+          "type": [
+            "Tree"
+          ]
+        },
+        {
+          "name": "thisCmp",
+          "comment": "",
+          "type": [
+            "Node"
+          ]
+        },
+        {
+          "name": "node",
+          "comment": "",
+          "type": [
+            "Node"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "beforeinsert",
+      "arguments": [
+        {
+          "name": "tree",
+          "comment": "",
+          "type": [
+            "Tree"
+          ]
+        },
+        {
+          "name": "thisCmp",
+          "comment": "",
+          "type": [
+            "Node"
+          ]
+        },
+        {
+          "name": "node",
+          "comment": "",
+          "type": [
+            "Node"
+          ]
+        },
+        {
+          "name": "refNode",
+          "comment": "",
+          "type": [
+            "Node"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "beforemove",
+      "arguments": [
+        {
+          "name": "tree",
+          "comment": "",
+          "type": [
+            "Tree"
+          ]
+        },
+        {
+          "name": "thisCmp",
+          "comment": "",
+          "type": [
+            "Node"
+          ]
+        },
+        {
+          "name": "oldParent",
+          "comment": "",
+          "type": [
+            "Node"
+          ]
+        },
+        {
+          "name": "newParent",
+          "comment": "",
+          "type": [
+            "Node"
+          ]
+        },
+        {
+          "name": "index",
+          "comment": "",
+          "type": [
+            "number"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "beforeremove",
+      "arguments": [
+        {
+          "name": "tree",
+          "comment": "",
+          "type": [
+            "Tree"
+          ]
+        },
+        {
+          "name": "thisCmp",
+          "comment": "",
+          "type": [
+            "Node"
+          ]
+        },
+        {
+          "name": "node",
+          "comment": "",
+          "type": [
+            "Node"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "insert",
+      "arguments": [
+        {
+          "name": "tree",
+          "comment": "",
+          "type": [
+            "Tree"
+          ]
+        },
+        {
+          "name": "thisCmp",
+          "comment": "",
+          "type": [
+            "Node"
+          ]
+        },
+        {
+          "name": "node",
+          "comment": "",
+          "type": [
+            "Node"
+          ]
+        },
+        {
+          "name": "refNode",
+          "comment": "",
+          "type": [
+            "Node"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "move",
+      "arguments": [
+        {
+          "name": "tree",
+          "comment": "",
+          "type": [
+            "Tree"
+          ]
+        },
+        {
+          "name": "thisCmp",
+          "comment": "",
+          "type": [
+            "Node"
+          ]
+        },
+        {
+          "name": "oldParent",
+          "comment": "",
+          "type": [
+            "Node"
+          ]
+        },
+        {
+          "name": "newParent",
+          "comment": "",
+          "type": [
+            "Node"
+          ]
+        },
+        {
+          "name": "index",
+          "comment": "",
+          "type": [
+            "number"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "remove",
+      "arguments": [
+        {
+          "name": "tree",
+          "comment": "",
+          "type": [
+            "Tree"
+          ]
+        },
+        {
+          "name": "thisCmp",
+          "comment": "",
+          "type": [
+            "Node"
+          ]
+        },
+        {
+          "name": "node",
+          "comment": "",
+          "type": [
+            "Node"
+          ]
+        }
+      ]
+    }
+  ]
+}

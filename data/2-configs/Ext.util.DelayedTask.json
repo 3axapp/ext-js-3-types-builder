@@ -1,0 +1,50 @@
+{
+  "name": "DelayedTask",
+  "namespace": "Ext.util",
+  "constructorMethod": null,
+  "properties": [],
+  "methods": [
+    {
+      "name": "cancel",
+      "returnType": [],
+      "visibility": "public",
+      "arguments": []
+    },
+    {
+      "name": "delay",
+      "returnType": [],
+      "visibility": "public",
+      "arguments": [
+        {
+          "name": "delay",
+          "comment": "",
+          "type": [
+            "number"
+          ]
+        },
+        {
+          "name": "newFn?",
+          "comment": "",
+          "type": [
+            "Function"
+          ]
+        },
+        {
+          "name": "newScope?",
+          "comment": "",
+          "type": [
+            "object"
+          ]
+        },
+        {
+          "name": "newArgs?",
+          "comment": "",
+          "type": [
+            "unknown[]"
+          ]
+        }
+      ]
+    }
+  ],
+  "events": []
+}

@@ -1,0 +1,41 @@
+{
+  "name": "HorizontalMenu",
+  "namespace": "Ext.layout.boxOverflow",
+  "extends": "Ext.layout.boxOverflow.Menu",
+  "constructorMethod": {
+    "config": [
+      {
+        "name": "afterCls?",
+        "type": [
+          "string"
+        ],
+        "comment": ""
+      }
+    ]
+  },
+  "properties": [],
+  "methods": [
+    {
+      "name": "handleOverflow",
+      "returnType": [],
+      "visibility": "private",
+      "arguments": [
+        {
+          "name": "calculations",
+          "comment": "",
+          "type": [
+            "object"
+          ]
+        },
+        {
+          "name": "targetSize",
+          "comment": "",
+          "type": [
+            "object"
+          ]
+        }
+      ]
+    }
+  ],
+  "events": []
+}

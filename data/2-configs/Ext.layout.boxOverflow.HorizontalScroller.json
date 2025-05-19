@@ -1,0 +1,155 @@
+{
+  "name": "HorizontalScroller",
+  "namespace": "Ext.layout.boxOverflow",
+  "extends": "Ext.layout.boxOverflow.Scroller",
+  "constructorMethod": {
+    "config": [
+      {
+        "name": "afterCls?",
+        "type": [
+          "string"
+        ],
+        "comment": ""
+      },
+      {
+        "name": "afterScrollerCls?",
+        "type": [
+          "string"
+        ],
+        "comment": ""
+      },
+      {
+        "name": "animateScroll?",
+        "type": [
+          "boolean"
+        ],
+        "comment": ""
+      },
+      {
+        "name": "beforeCls?",
+        "type": [
+          "string"
+        ],
+        "comment": ""
+      },
+      {
+        "name": "beforeScrollerCls?",
+        "type": [
+          "string"
+        ],
+        "comment": ""
+      },
+      {
+        "name": "scrollDuration?",
+        "type": [
+          "number"
+        ],
+        "comment": ""
+      },
+      {
+        "name": "scrollIncrement?",
+        "type": [
+          "number"
+        ],
+        "comment": ""
+      },
+      {
+        "name": "scrollRepeatInterval?",
+        "type": [
+          "number"
+        ],
+        "comment": ""
+      },
+      {
+        "name": "scrollerCls?",
+        "type": [
+          "string"
+        ],
+        "comment": ""
+      },
+      {
+        "name": "wheelIncrement?",
+        "type": [
+          "number"
+        ],
+        "comment": ""
+      }
+    ]
+  },
+  "properties": [],
+  "methods": [
+    {
+      "name": "atExtremeAfter",
+      "returnType": [
+        "boolean"
+      ],
+      "visibility": "private",
+      "arguments": []
+    },
+    {
+      "name": "createInnerElements",
+      "returnType": [],
+      "visibility": "private",
+      "arguments": []
+    },
+    {
+      "name": "getMaxScrollRight",
+      "returnType": [
+        "number"
+      ],
+      "visibility": "private",
+      "arguments": []
+    },
+    {
+      "name": "getScrollPosition",
+      "returnType": [
+        "number"
+      ],
+      "visibility": "public",
+      "arguments": []
+    },
+    {
+      "name": "handleOverflow",
+      "returnType": [],
+      "visibility": "private",
+      "arguments": [
+        {
+          "name": "calculations",
+          "comment": "",
+          "type": [
+            "object"
+          ]
+        },
+        {
+          "name": "targetSize",
+          "comment": "",
+          "type": [
+            "object"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "scrollTo",
+      "returnType": [],
+      "visibility": "private",
+      "arguments": [
+        {
+          "name": "position",
+          "comment": "",
+          "type": [
+            "number"
+          ]
+        },
+        {
+          "name": "animate",
+          "comment": "",
+          "type": [
+            "boolean"
+          ]
+        }
+      ]
+    }
+  ],
+  "events": []
+}

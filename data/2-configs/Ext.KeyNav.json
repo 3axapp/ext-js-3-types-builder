@@ -1,0 +1,65 @@
+{
+  "name": "KeyNav",
+  "namespace": "Ext",
+  "constructorMethod": {
+    "config": [
+      {
+        "name": "defaultEventAction?",
+        "type": [
+          "string"
+        ],
+        "comment": ""
+      },
+      {
+        "name": "disabled?",
+        "type": [
+          "boolean"
+        ],
+        "comment": ""
+      },
+      {
+        "name": "forceKeyDown?",
+        "type": [
+          "boolean"
+        ],
+        "comment": ""
+      }
+    ]
+  },
+  "properties": [],
+  "methods": [
+    {
+      "name": "destroy",
+      "returnType": [],
+      "visibility": "public",
+      "arguments": []
+    },
+    {
+      "name": "disable",
+      "returnType": [],
+      "visibility": "public",
+      "arguments": []
+    },
+    {
+      "name": "enable",
+      "returnType": [],
+      "visibility": "public",
+      "arguments": []
+    },
+    {
+      "name": "setDisabled",
+      "returnType": [],
+      "visibility": "public",
+      "arguments": [
+        {
+          "name": "disabled",
+          "comment": "",
+          "type": [
+            "boolean"
+          ]
+        }
+      ]
+    }
+  ],
+  "events": []
+}

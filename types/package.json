@@ -1,0 +1,6 @@
+{
+  "name": "@types/extjs-3",
+  "author": "Zakharov Aleksandr",
+  "version": "3.4.2.0",
+  "types": "./index.d.ts"
+}

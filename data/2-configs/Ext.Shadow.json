@@ -1,0 +1,101 @@
+{
+  "name": "Shadow",
+  "namespace": "Ext",
+  "constructorMethod": {
+    "config": [
+      {
+        "name": "mode?",
+        "type": [
+          "string"
+        ],
+        "comment": ""
+      },
+      {
+        "name": "offset?",
+        "type": [
+          "string"
+        ],
+        "comment": ""
+      }
+    ]
+  },
+  "properties": [],
+  "methods": [
+    {
+      "name": "hide",
+      "returnType": [],
+      "visibility": "public",
+      "arguments": []
+    },
+    {
+      "name": "isVisible",
+      "returnType": [],
+      "visibility": "public",
+      "arguments": []
+    },
+    {
+      "name": "realign",
+      "returnType": [],
+      "visibility": "public",
+      "arguments": [
+        {
+          "name": "left",
+          "comment": "",
+          "type": [
+            "number"
+          ]
+        },
+        {
+          "name": "top",
+          "comment": "",
+          "type": [
+            "number"
+          ]
+        },
+        {
+          "name": "width",
+          "comment": "",
+          "type": [
+            "number"
+          ]
+        },
+        {
+          "name": "height",
+          "comment": "",
+          "type": [
+            "number"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "setZIndex",
+      "returnType": [],
+      "visibility": "public",
+      "arguments": [
+        {
+          "name": "zindex",
+          "comment": "",
+          "type": [
+            "number"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "show",
+      "returnType": [],
+      "visibility": "public",
+      "arguments": [
+        {
+          "name": "targetEl",
+          "comment": "",
+          "type": [
+            "unknown"
+          ]
+        }
+      ]
+    }
+  ],
+  "events": []
+}

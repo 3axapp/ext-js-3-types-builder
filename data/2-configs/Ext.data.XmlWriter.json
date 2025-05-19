@@ -1,0 +1,168 @@
+{
+  "name": "XmlWriter",
+  "namespace": "Ext.data",
+  "extends": "Ext.data.DataWriter",
+  "constructorMethod": {
+    "config": [
+      {
+        "name": "createRecord?",
+        "type": [
+          "Function"
+        ],
+        "comment": ""
+      },
+      {
+        "name": "destroyRecord?",
+        "type": [
+          "Function"
+        ],
+        "comment": ""
+      },
+      {
+        "name": "documentRoot?",
+        "type": [
+          "string"
+        ],
+        "comment": ""
+      },
+      {
+        "name": "forceDocumentRoot?",
+        "type": [
+          "boolean"
+        ],
+        "comment": ""
+      },
+      {
+        "name": "listful?",
+        "type": [
+          "boolean"
+        ],
+        "comment": ""
+      },
+      {
+        "name": "root?",
+        "type": [
+          "string"
+        ],
+        "comment": ""
+      },
+      {
+        "name": "tpl?",
+        "type": [
+          "string",
+          "Ext.XTemplate"
+        ],
+        "comment": ""
+      },
+      {
+        "name": "updateRecord?",
+        "type": [
+          "Function"
+        ],
+        "comment": ""
+      },
+      {
+        "name": "writeAllFields?",
+        "type": [
+          "boolean"
+        ],
+        "comment": ""
+      },
+      {
+        "name": "xmlEncoding?",
+        "type": [
+          "string"
+        ],
+        "comment": ""
+      },
+      {
+        "name": "xmlVersion?",
+        "type": [
+          "string"
+        ],
+        "comment": ""
+      }
+    ]
+  },
+  "properties": [],
+  "methods": [
+    {
+      "name": "createRecord",
+      "returnType": [
+        "unknown[]"
+      ],
+      "visibility": "protected",
+      "arguments": [
+        {
+          "name": "rec",
+          "comment": "",
+          "type": [
+            "Ext.data.Record"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "destroyRecord",
+      "returnType": [
+        "unknown[]"
+      ],
+      "visibility": "protected",
+      "arguments": [
+        {
+          "name": "rec",
+          "comment": "",
+          "type": [
+            "Ext.data.Record"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "render",
+      "returnType": [],
+      "visibility": "public",
+      "arguments": [
+        {
+          "name": "params",
+          "comment": "",
+          "type": [
+            "object"
+          ]
+        },
+        {
+          "name": "baseParams",
+          "comment": "",
+          "type": [
+            "object"
+          ]
+        },
+        {
+          "name": "data",
+          "comment": "",
+          "type": [
+            "object",
+            "Object[]"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "updateRecord",
+      "returnType": [
+        "unknown[]"
+      ],
+      "visibility": "protected",
+      "arguments": [
+        {
+          "name": "rec",
+          "comment": "",
+          "type": [
+            "Ext.data.Record"
+          ]
+        }
+      ]
+    }
+  ],
+  "events": []
+}

@@ -1,0 +1,34 @@
+{
+  "name": "MenuMgr",
+  "namespace": "Ext.menu",
+  "constructorMethod": null,
+  "properties": [],
+  "methods": [
+    {
+      "name": "get",
+      "returnType": [
+        "Ext.menu.Menu"
+      ],
+      "visibility": "public",
+      "arguments": [
+        {
+          "name": "menu",
+          "comment": "",
+          "type": [
+            "string",
+            "object"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "hideAll",
+      "returnType": [
+        "boolean"
+      ],
+      "visibility": "public",
+      "arguments": []
+    }
+  ],
+  "events": []
+}

@@ -1,0 +1,562 @@
+{
+  "name": "DataProxy",
+  "namespace": "Ext.data",
+  "extends": "Ext.util.Observable",
+  "constructorMethod": {
+    "config": [
+      {
+        "name": "api?",
+        "type": [
+          "object"
+        ],
+        "comment": ""
+      },
+      {
+        "name": "doRequest?",
+        "type": [
+          "Function"
+        ],
+        "comment": ""
+      },
+      {
+        "name": "listeners?",
+        "type": [
+          "object"
+        ],
+        "comment": ""
+      },
+      {
+        "name": "restful?",
+        "type": [
+          "boolean"
+        ],
+        "comment": ""
+      }
+    ]
+  },
+  "properties": [],
+  "methods": [
+    {
+      "name": "addListener<T extends IDataProxyEvents = IDataProxyEvents, E extends keyof T = keyof T>",
+      "returnType": [],
+      "visibility": "public",
+      "arguments": [
+        {
+          "name": "eventName",
+          "comment": "",
+          "type": [
+            "E"
+          ]
+        },
+        {
+          "name": "handler",
+          "comment": "",
+          "type": [
+            "T[E]"
+          ]
+        },
+        {
+          "name": "scope?",
+          "comment": "",
+          "type": [
+            "object"
+          ]
+        },
+        {
+          "name": "options?",
+          "comment": "",
+          "type": [
+            "object"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "buildUrl",
+      "returnType": [
+        "string"
+      ],
+      "visibility": "private",
+      "arguments": [
+        {
+          "name": "action",
+          "comment": "",
+          "type": [
+            "string"
+          ]
+        },
+        {
+          "name": "record",
+          "comment": "",
+          "type": [
+            "Ext.data.Record",
+            "Ext.data.Record[]"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "destroy",
+      "returnType": [],
+      "visibility": "public",
+      "arguments": []
+    },
+    {
+      "name": "fireEvent<T extends IDataProxyEvents = IDataProxyEvents, E extends keyof T = keyof T>",
+      "returnType": [
+        "boolean"
+      ],
+      "visibility": "public",
+      "arguments": [
+        {
+          "name": "eventName",
+          "comment": "",
+          "type": [
+            "E"
+          ]
+        },
+        {
+          "name": "...args",
+          "comment": "",
+          "type": [
+            "Parameters<T[E]>"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "hasListener<T extends IDataProxyEvents = IDataProxyEvents, E extends keyof T = keyof T>",
+      "returnType": [
+        "boolean"
+      ],
+      "visibility": "public",
+      "arguments": [
+        {
+          "name": "eventName",
+          "comment": "",
+          "type": [
+            "E"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "isApiAction",
+      "returnType": [
+        "boolean"
+      ],
+      "visibility": "public",
+      "arguments": [
+        {
+          "name": "action",
+          "comment": "",
+          "type": [
+            "string"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "load",
+      "returnType": [],
+      "visibility": "public",
+      "arguments": [
+        {
+          "name": "params",
+          "comment": "",
+          "type": [
+            "object"
+          ]
+        },
+        {
+          "name": "reader",
+          "comment": "",
+          "type": [
+            "object"
+          ]
+        },
+        {
+          "name": "callback",
+          "comment": "",
+          "type": [
+            "object"
+          ]
+        },
+        {
+          "name": "scope",
+          "comment": "",
+          "type": [
+            "object"
+          ]
+        },
+        {
+          "name": "arg",
+          "comment": "",
+          "type": [
+            "object"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "on<T extends IDataProxyEvents = IDataProxyEvents, E extends keyof T = keyof T>",
+      "returnType": [],
+      "visibility": "public",
+      "arguments": [
+        {
+          "name": "eventName",
+          "comment": "",
+          "type": [
+            "E"
+          ]
+        },
+        {
+          "name": "handler",
+          "comment": "",
+          "type": [
+            "T[E]"
+          ]
+        },
+        {
+          "name": "scope?",
+          "comment": "",
+          "type": [
+            "object"
+          ]
+        },
+        {
+          "name": "options?",
+          "comment": "",
+          "type": [
+            "object"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "removeListener<T extends IDataProxyEvents = IDataProxyEvents, E extends keyof T = keyof T>",
+      "returnType": [],
+      "visibility": "public",
+      "arguments": [
+        {
+          "name": "eventName",
+          "comment": "",
+          "type": [
+            "E"
+          ]
+        },
+        {
+          "name": "handler",
+          "comment": "",
+          "type": [
+            "T[E]"
+          ]
+        },
+        {
+          "name": "scope?",
+          "comment": "",
+          "type": [
+            "object"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "request",
+      "returnType": [],
+      "visibility": "public",
+      "arguments": [
+        {
+          "name": "action",
+          "comment": "",
+          "type": [
+            "string"
+          ]
+        },
+        {
+          "name": "rs",
+          "comment": "",
+          "type": [
+            "Ext.data.Record",
+            "Ext.data.Record[]",
+            "null"
+          ]
+        },
+        {
+          "name": "params",
+          "comment": "",
+          "type": [
+            "object"
+          ]
+        },
+        {
+          "name": "reader",
+          "comment": "",
+          "type": [
+            "Ext.data.DataReader"
+          ]
+        },
+        {
+          "name": "callback",
+          "comment": "",
+          "type": [
+            "Function"
+          ]
+        },
+        {
+          "name": "scope",
+          "comment": "",
+          "type": [
+            "object"
+          ]
+        },
+        {
+          "name": "options",
+          "comment": "",
+          "type": [
+            "object"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "setApi",
+      "returnType": [],
+      "visibility": "public",
+      "arguments": [
+        {
+          "name": "api",
+          "comment": "",
+          "type": [
+            "string",
+            "object"
+          ]
+        },
+        {
+          "name": "url",
+          "comment": "",
+          "type": [
+            "string",
+            "Function"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "un<T extends IDataProxyEvents = IDataProxyEvents, E extends keyof T = keyof T>",
+      "returnType": [],
+      "visibility": "public",
+      "arguments": [
+        {
+          "name": "eventName",
+          "comment": "",
+          "type": [
+            "E"
+          ]
+        },
+        {
+          "name": "handler",
+          "comment": "",
+          "type": [
+            "T[E]"
+          ]
+        },
+        {
+          "name": "scope?",
+          "comment": "",
+          "type": [
+            "object"
+          ]
+        }
+      ]
+    }
+  ],
+  "events": [
+    {
+      "name": "beforeload",
+      "arguments": [
+        {
+          "name": "thisCmp",
+          "comment": "",
+          "type": [
+            "DataProxy"
+          ]
+        },
+        {
+          "name": "params",
+          "comment": "",
+          "type": [
+            "object"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "beforewrite",
+      "arguments": [
+        {
+          "name": "thisCmp",
+          "comment": "",
+          "type": [
+            "DataProxy"
+          ]
+        },
+        {
+          "name": "action",
+          "comment": "",
+          "type": [
+            "string"
+          ]
+        },
+        {
+          "name": "rs",
+          "comment": "",
+          "type": [
+            "Ext.data.Record",
+            "Ext.data.Record[]"
+          ]
+        },
+        {
+          "name": "params",
+          "comment": "",
+          "type": [
+            "object"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "exception",
+      "arguments": [
+        {
+          "name": "thisCmp",
+          "comment": "",
+          "type": [
+            "DataProxy"
+          ]
+        },
+        {
+          "name": "type",
+          "comment": "",
+          "type": [
+            "string"
+          ]
+        },
+        {
+          "name": "action",
+          "comment": "",
+          "type": [
+            "string"
+          ]
+        },
+        {
+          "name": "options",
+          "comment": "",
+          "type": [
+            "object"
+          ]
+        },
+        {
+          "name": "response",
+          "comment": "",
+          "type": [
+            "object"
+          ]
+        },
+        {
+          "name": "arg",
+          "comment": "",
+          "type": [
+            "unknown"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "load",
+      "arguments": [
+        {
+          "name": "thisCmp",
+          "comment": "",
+          "type": [
+            "DataProxy"
+          ]
+        },
+        {
+          "name": "o",
+          "comment": "",
+          "type": [
+            "object"
+          ]
+        },
+        {
+          "name": "options",
+          "comment": "",
+          "type": [
+            "object"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "loadexception",
+      "arguments": [
+        {
+          "name": "misc",
+          "comment": "",
+          "type": [
+            "misc"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "write",
+      "arguments": [
+        {
+          "name": "thisCmp",
+          "comment": "",
+          "type": [
+            "DataProxy"
+          ]
+        },
+        {
+          "name": "action",
+          "comment": "",
+          "type": [
+            "string"
+          ]
+        },
+        {
+          "name": "data",
+          "comment": "",
+          "type": [
+            "object"
+          ]
+        },
+        {
+          "name": "response",
+          "comment": "",
+          "type": [
+            "object"
+          ]
+        },
+        {
+          "name": "rs",
+          "comment": "",
+          "type": [
+            "Ext.data.Record",
+            "Ext.data.Record[]"
+          ]
+        },
+        {
+          "name": "options",
+          "comment": "",
+          "type": [
+            "object"
+          ]
+        }
+      ]
+    }
+  ]
+}

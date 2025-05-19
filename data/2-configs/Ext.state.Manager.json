@@ -1,0 +1,89 @@
+{
+  "name": "Manager",
+  "namespace": "Ext.state",
+  "constructorMethod": null,
+  "properties": [],
+  "methods": [
+    {
+      "name": "clear",
+      "returnType": [],
+      "visibility": "public",
+      "arguments": [
+        {
+          "name": "name",
+          "comment": "",
+          "type": [
+            "string"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "get",
+      "returnType": [
+        "unknown"
+      ],
+      "visibility": "public",
+      "arguments": [
+        {
+          "name": "name",
+          "comment": "",
+          "type": [
+            "string"
+          ]
+        },
+        {
+          "name": "defaultValue",
+          "comment": "",
+          "type": [
+            "unknown"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "getProvider",
+      "returnType": [
+        "Provider"
+      ],
+      "visibility": "public",
+      "arguments": []
+    },
+    {
+      "name": "set",
+      "returnType": [],
+      "visibility": "public",
+      "arguments": [
+        {
+          "name": "name",
+          "comment": "",
+          "type": [
+            "string"
+          ]
+        },
+        {
+          "name": "value",
+          "comment": "",
+          "type": [
+            "unknown"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "setProvider",
+      "returnType": [],
+      "visibility": "public",
+      "arguments": [
+        {
+          "name": "stateProvider",
+          "comment": "",
+          "type": [
+            "Provider"
+          ]
+        }
+      ]
+    }
+  ],
+  "events": []
+}

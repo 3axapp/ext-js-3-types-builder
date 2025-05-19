@@ -1,0 +1,42 @@
+{
+  "name": "CartesianSeries",
+  "namespace": "Ext.chart",
+  "extends": "Ext.chart.Series",
+  "constructorMethod": null,
+  "properties": [
+    {
+      "name": "axis",
+      "type": [
+        "string"
+      ],
+      "visibility": "public",
+      "comment": ""
+    },
+    {
+      "name": "showInLegend",
+      "type": [
+        "boolean"
+      ],
+      "visibility": "public",
+      "comment": ""
+    },
+    {
+      "name": "xField",
+      "type": [
+        "string"
+      ],
+      "visibility": "public",
+      "comment": ""
+    },
+    {
+      "name": "yField",
+      "type": [
+        "string"
+      ],
+      "visibility": "public",
+      "comment": ""
+    }
+  ],
+  "methods": [],
+  "events": []
+}

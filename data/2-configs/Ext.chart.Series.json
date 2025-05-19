@@ -1,0 +1,25 @@
+{
+  "name": "Series",
+  "namespace": "Ext.chart",
+  "constructorMethod": null,
+  "properties": [
+    {
+      "name": "displayName",
+      "type": [
+        "string"
+      ],
+      "visibility": "public",
+      "comment": ""
+    },
+    {
+      "name": "type",
+      "type": [
+        "string"
+      ],
+      "visibility": "public",
+      "comment": ""
+    }
+  ],
+  "methods": [],
+  "events": []
+}

@@ -1,0 +1,120 @@
+{
+  "name": "String",
+  "namespace": "",
+  "extends": null,
+  "constructorMethod": null,
+  "properties": [],
+  "methods": [
+    {
+      "name": "toggle",
+      "returnType": [
+        "string"
+      ],
+      "visibility": "public",
+      "arguments": [
+        {
+          "name": "value",
+          "comment": "",
+          "type": [
+            "string"
+          ]
+        },
+        {
+          "name": "other",
+          "comment": "",
+          "type": [
+            "string"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "trim",
+      "returnType": [
+        "string"
+      ],
+      "visibility": "public",
+      "arguments": []
+    },
+    {
+      "name": "escape",
+      "static": true,
+      "returnType": [
+        "string"
+      ],
+      "visibility": "public",
+      "arguments": [
+        {
+          "name": "string",
+          "comment": "",
+          "type": [
+            "string"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "format",
+      "static": true,
+      "returnType": [
+        "string"
+      ],
+      "visibility": "public",
+      "arguments": [
+        {
+          "name": "string",
+          "comment": "",
+          "type": [
+            "string"
+          ]
+        },
+        {
+          "name": "value1",
+          "comment": "",
+          "type": [
+            "string"
+          ]
+        },
+        {
+          "name": "value2",
+          "comment": "",
+          "type": [
+            "string"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "leftPad",
+      "static": true,
+      "returnType": [
+        "string"
+      ],
+      "visibility": "public",
+      "arguments": [
+        {
+          "name": "string",
+          "comment": "",
+          "type": [
+            "string"
+          ]
+        },
+        {
+          "name": "size",
+          "comment": "",
+          "type": [
+            "number"
+          ]
+        },
+        {
+          "name": "char?",
+          "comment": "",
+          "type": [
+            "string"
+          ]
+        }
+      ]
+    }
+  ],
+  "events": []
+}

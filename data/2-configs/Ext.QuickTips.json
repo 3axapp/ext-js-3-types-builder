@@ -1,0 +1,95 @@
+{
+  "name": "QuickTips",
+  "namespace": "Ext",
+  "constructorMethod": null,
+  "properties": [],
+  "methods": [
+    {
+      "name": "disable",
+      "returnType": [],
+      "visibility": "public",
+      "arguments": []
+    },
+    {
+      "name": "enable",
+      "returnType": [],
+      "visibility": "public",
+      "arguments": []
+    },
+    {
+      "name": "getQuickTip",
+      "returnType": [
+        "Ext.QuickTip"
+      ],
+      "visibility": "public",
+      "arguments": []
+    },
+    {
+      "name": "init",
+      "returnType": [],
+      "visibility": "public",
+      "arguments": [
+        {
+          "name": "autoRender",
+          "comment": "",
+          "type": [
+            "boolean"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "isEnabled",
+      "returnType": [
+        "boolean"
+      ],
+      "visibility": "public",
+      "arguments": []
+    },
+    {
+      "name": "register",
+      "returnType": [],
+      "visibility": "public",
+      "arguments": [
+        {
+          "name": "config",
+          "comment": "",
+          "type": [
+            "object"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "tips",
+      "returnType": [],
+      "visibility": "public",
+      "arguments": [
+        {
+          "name": "config",
+          "comment": "",
+          "type": [
+            "object"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "unregister",
+      "returnType": [],
+      "visibility": "public",
+      "arguments": [
+        {
+          "name": "el",
+          "comment": "",
+          "type": [
+            "string",
+            "HTMLElement",
+            "Element"
+          ]
+        }
+      ]
+    }
+  ],
+  "events": []
+}

@@ -1,0 +1,120 @@
+{
+  "name": "XmlReader",
+  "namespace": "Ext.data",
+  "extends": "Ext.data.DataReader",
+  "constructorMethod": {
+    "config": [
+      {
+        "name": "fields?",
+        "type": [
+          "unknown[]",
+          "object"
+        ],
+        "comment": ""
+      },
+      {
+        "name": "idPath?",
+        "type": [
+          "string"
+        ],
+        "comment": ""
+      },
+      {
+        "name": "messageProperty?",
+        "type": [
+          "string"
+        ],
+        "comment": ""
+      },
+      {
+        "name": "record?",
+        "type": [
+          "string"
+        ],
+        "comment": ""
+      },
+      {
+        "name": "successProperty?",
+        "type": [
+          "string"
+        ],
+        "comment": ""
+      },
+      {
+        "name": "totalProperty?",
+        "type": [
+          "string"
+        ],
+        "comment": ""
+      }
+    ]
+  },
+  "properties": [
+    {
+      "name": "xmlData",
+      "type": [
+        "XMLDocument"
+      ],
+      "visibility": "public",
+      "comment": ""
+    }
+  ],
+  "methods": [
+    {
+      "name": "read",
+      "returnType": [
+        "object"
+      ],
+      "visibility": "public",
+      "arguments": [
+        {
+          "name": "response",
+          "comment": "",
+          "type": [
+            "object"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "readRecords",
+      "returnType": [
+        "object"
+      ],
+      "visibility": "public",
+      "arguments": [
+        {
+          "name": "doc",
+          "comment": "",
+          "type": [
+            "object"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "readResponse",
+      "returnType": [
+        "Ext.data.Response"
+      ],
+      "visibility": "public",
+      "arguments": [
+        {
+          "name": "action",
+          "comment": "",
+          "type": [
+            "string"
+          ]
+        },
+        {
+          "name": "response",
+          "comment": "",
+          "type": [
+            "object"
+          ]
+        }
+      ]
+    }
+  ],
+  "events": []
+}

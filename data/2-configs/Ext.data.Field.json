@@ -1,0 +1,83 @@
+{
+  "name": "Field",
+  "namespace": "Ext.data",
+  "extends": null,
+  "constructorMethod": {
+    "config": [
+      {
+        "name": "allowBlank?",
+        "type": [
+          "boolean"
+        ],
+        "comment": ""
+      },
+      {
+        "name": "convert?",
+        "type": [
+          "Function"
+        ],
+        "comment": ""
+      },
+      {
+        "name": "dateFormat?",
+        "type": [
+          "string"
+        ],
+        "comment": ""
+      },
+      {
+        "name": "defaultValue?",
+        "type": [
+          "unknown"
+        ],
+        "comment": ""
+      },
+      {
+        "name": "mapping?",
+        "type": [
+          "string",
+          "number"
+        ],
+        "comment": ""
+      },
+      {
+        "name": "name?",
+        "type": [
+          "string"
+        ],
+        "comment": ""
+      },
+      {
+        "name": "sortDir?",
+        "type": [
+          "string"
+        ],
+        "comment": ""
+      },
+      {
+        "name": "sortType?",
+        "type": [
+          "Function"
+        ],
+        "comment": ""
+      },
+      {
+        "name": "type?",
+        "type": [
+          "unknown"
+        ],
+        "comment": ""
+      },
+      {
+        "name": "useNull?",
+        "type": [
+          "boolean"
+        ],
+        "comment": ""
+      }
+    ]
+  },
+  "properties": [],
+  "methods": [],
+  "events": []
+}

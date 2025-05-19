@@ -1,0 +1,379 @@
+{
+  "name": "DropZone",
+  "namespace": "Ext.dd",
+  "extends": "Ext.dd.DropTarget",
+  "constructorMethod": {
+    "config": [
+      {
+        "name": "ddGroup?",
+        "type": [
+          "string"
+        ],
+        "comment": ""
+      },
+      {
+        "name": "dropAllowed?",
+        "type": [
+          "string"
+        ],
+        "comment": ""
+      },
+      {
+        "name": "dropNotAllowed?",
+        "type": [
+          "string"
+        ],
+        "comment": ""
+      },
+      {
+        "name": "overClass?",
+        "type": [
+          "string"
+        ],
+        "comment": ""
+      }
+    ]
+  },
+  "properties": [],
+  "methods": [
+    {
+      "name": "getTargetFromEvent",
+      "returnType": [
+        "object"
+      ],
+      "visibility": "public",
+      "arguments": [
+        {
+          "name": "e",
+          "comment": "",
+          "type": [
+            "Event"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "notifyDrop",
+      "returnType": [
+        "boolean"
+      ],
+      "visibility": "public",
+      "arguments": [
+        {
+          "name": "source",
+          "comment": "",
+          "type": [
+            "Ext.dd.DragSource"
+          ]
+        },
+        {
+          "name": "e",
+          "comment": "",
+          "type": [
+            "Event"
+          ]
+        },
+        {
+          "name": "data",
+          "comment": "",
+          "type": [
+            "object"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "notifyEnter",
+      "returnType": [
+        "string"
+      ],
+      "visibility": "public",
+      "arguments": [
+        {
+          "name": "source",
+          "comment": "",
+          "type": [
+            "Ext.dd.DragSource"
+          ]
+        },
+        {
+          "name": "e",
+          "comment": "",
+          "type": [
+            "Event"
+          ]
+        },
+        {
+          "name": "data",
+          "comment": "",
+          "type": [
+            "object"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "notifyOut",
+      "returnType": [],
+      "visibility": "public",
+      "arguments": [
+        {
+          "name": "source",
+          "comment": "",
+          "type": [
+            "Ext.dd.DragSource"
+          ]
+        },
+        {
+          "name": "e",
+          "comment": "",
+          "type": [
+            "Event"
+          ]
+        },
+        {
+          "name": "data",
+          "comment": "",
+          "type": [
+            "object"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "notifyOver",
+      "returnType": [
+        "string"
+      ],
+      "visibility": "public",
+      "arguments": [
+        {
+          "name": "source",
+          "comment": "",
+          "type": [
+            "Ext.dd.DragSource"
+          ]
+        },
+        {
+          "name": "e",
+          "comment": "",
+          "type": [
+            "Event"
+          ]
+        },
+        {
+          "name": "data",
+          "comment": "",
+          "type": [
+            "object"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "onContainerDrop",
+      "returnType": [
+        "boolean"
+      ],
+      "visibility": "public",
+      "arguments": [
+        {
+          "name": "source",
+          "comment": "",
+          "type": [
+            "Ext.dd.DragSource"
+          ]
+        },
+        {
+          "name": "e",
+          "comment": "",
+          "type": [
+            "Event"
+          ]
+        },
+        {
+          "name": "data",
+          "comment": "",
+          "type": [
+            "object"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "onContainerOver",
+      "returnType": [
+        "string"
+      ],
+      "visibility": "public",
+      "arguments": [
+        {
+          "name": "source",
+          "comment": "",
+          "type": [
+            "Ext.dd.DragSource"
+          ]
+        },
+        {
+          "name": "e",
+          "comment": "",
+          "type": [
+            "Event"
+          ]
+        },
+        {
+          "name": "data",
+          "comment": "",
+          "type": [
+            "object"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "onNodeDrop",
+      "returnType": [
+        "boolean"
+      ],
+      "visibility": "public",
+      "arguments": [
+        {
+          "name": "nodeData",
+          "comment": "",
+          "type": [
+            "object"
+          ]
+        },
+        {
+          "name": "source",
+          "comment": "",
+          "type": [
+            "Ext.dd.DragSource"
+          ]
+        },
+        {
+          "name": "e",
+          "comment": "",
+          "type": [
+            "Event"
+          ]
+        },
+        {
+          "name": "data",
+          "comment": "",
+          "type": [
+            "object"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "onNodeEnter",
+      "returnType": [],
+      "visibility": "public",
+      "arguments": [
+        {
+          "name": "nodeData",
+          "comment": "",
+          "type": [
+            "object"
+          ]
+        },
+        {
+          "name": "source",
+          "comment": "",
+          "type": [
+            "Ext.dd.DragSource"
+          ]
+        },
+        {
+          "name": "e",
+          "comment": "",
+          "type": [
+            "Event"
+          ]
+        },
+        {
+          "name": "data",
+          "comment": "",
+          "type": [
+            "object"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "onNodeOut",
+      "returnType": [],
+      "visibility": "public",
+      "arguments": [
+        {
+          "name": "nodeData",
+          "comment": "",
+          "type": [
+            "object"
+          ]
+        },
+        {
+          "name": "source",
+          "comment": "",
+          "type": [
+            "Ext.dd.DragSource"
+          ]
+        },
+        {
+          "name": "e",
+          "comment": "",
+          "type": [
+            "Event"
+          ]
+        },
+        {
+          "name": "data",
+          "comment": "",
+          "type": [
+            "object"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "onNodeOver",
+      "returnType": [
+        "string"
+      ],
+      "visibility": "public",
+      "arguments": [
+        {
+          "name": "nodeData",
+          "comment": "",
+          "type": [
+            "object"
+          ]
+        },
+        {
+          "name": "source",
+          "comment": "",
+          "type": [
+            "Ext.dd.DragSource"
+          ]
+        },
+        {
+          "name": "e",
+          "comment": "",
+          "type": [
+            "Event"
+          ]
+        },
+        {
+          "name": "data",
+          "comment": "",
+          "type": [
+            "object"
+          ]
+        }
+      ]
+    }
+  ],
+  "events": []
+}

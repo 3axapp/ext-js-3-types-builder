@@ -1,0 +1,64 @@
+{
+  "name": "AbsoluteLayoutAdapter",
+  "namespace": "Ext.SplitBar",
+  "extends": "Ext.SplitBar.BasicLayoutAdapter",
+  "constructorMethod": null,
+  "properties": [
+    {
+      "name": "BOTTOM",
+      "static": true,
+      "type": [
+        "number"
+      ],
+      "visibility": "public",
+      "comment": ""
+    },
+    {
+      "name": "HORIZONTAL",
+      "static": true,
+      "type": [
+        "number"
+      ],
+      "visibility": "public",
+      "comment": ""
+    },
+    {
+      "name": "LEFT",
+      "static": true,
+      "type": [
+        "number"
+      ],
+      "visibility": "public",
+      "comment": ""
+    },
+    {
+      "name": "RIGHT",
+      "static": true,
+      "type": [
+        "number"
+      ],
+      "visibility": "public",
+      "comment": ""
+    },
+    {
+      "name": "TOP",
+      "static": true,
+      "type": [
+        "number"
+      ],
+      "visibility": "public",
+      "comment": ""
+    },
+    {
+      "name": "VERTICAL",
+      "static": true,
+      "type": [
+        "number"
+      ],
+      "visibility": "public",
+      "comment": ""
+    }
+  ],
+  "methods": [],
+  "events": []
+}
