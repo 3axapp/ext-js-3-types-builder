@@ -1,5 +1,5 @@
 {
-  "name": "Array",
+  "name": "Array<T>",
   "namespace": "",
   "constructorMethod": null,
   "properties": [],
@@ -15,7 +15,7 @@
           "name": "o",
           "comment": "",
           "type": [
-            "object"
+            "T"
           ]
         },
         {
@@ -38,7 +38,7 @@
           "name": "o",
           "comment": "",
           "type": [
-            "object"
+            "T"
           ]
         }
       ]

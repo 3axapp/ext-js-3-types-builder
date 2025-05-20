@@ -14,7 +14,7 @@ declare class Date {
 
   public static YEAR: string;
 
-  public static dayNames: unknown[];
+  public static dayNames: string[];
 
   public static defaults: object;
 
@@ -22,7 +22,7 @@ declare class Date {
 
   public static formatFunctions: object;
 
-  public static monthNames: unknown[];
+  public static monthNames: string[];
 
   public static monthNumbers: object;
 

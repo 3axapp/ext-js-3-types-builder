@@ -70,7 +70,7 @@
       "name": "dayNames",
       "static": true,
       "type": [
-        "unknown[]"
+        "string[]"
       ],
       "visibility": "public",
       "comment": ""
@@ -106,7 +106,7 @@
       "name": "monthNames",
       "static": true,
       "type": [
-        "unknown[]"
+        "string[]"
       ],
       "visibility": "public",
       "comment": ""

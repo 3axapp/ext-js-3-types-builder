@@ -1,6 +1,6 @@
-declare class Array {
+declare class Array<T> {
 
-  public indexOf(o: object, from?: number): number;
+  public indexOf(o: T, from?: number): number;
 
-  public remove(o: object): this;
+  public remove(o: T): this;
 }
