@@ -37,7 +37,7 @@ declare namespace Ext.data {
     pathSeparator?: string,
   }
 
-  interface ITreeEvents extends Record<string, (...args: any[]) => boolean | void> {
+  interface ITreeEvents extends globalThis.Record<string, (...args: any[]) => boolean | void> {
     append: (tree: Tree, parent: Node, node: Node, index: number) => boolean | void;
     beforeappend: (tree: Tree, parent: Node, node: Node) => boolean | void;
     beforeinsert: (tree: Tree, parent: Node, node: Node, refNode: Node) => boolean | void;

@@ -160,7 +160,7 @@ declare namespace Ext.form {
     y?: number,
   }
 
-  interface ITriggerFieldEvents extends Record<string, (...args: any[]) => boolean | void> {
+  interface ITriggerFieldEvents extends globalThis.Record<string, (...args: any[]) => boolean | void> {
     added: (thisCmp: TriggerField, ownerCt: Ext.Container, index: number) => boolean | void;
     afterrender: (thisCmp: TriggerField) => boolean | void;
     autosize: (thisCmp: TriggerField, width: number) => boolean | void;

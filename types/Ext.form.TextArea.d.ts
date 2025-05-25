@@ -125,7 +125,7 @@ declare namespace Ext.form {
     y?: number,
   }
 
-  interface ITextAreaEvents extends Record<string, (...args: any[]) => boolean | void> {
+  interface ITextAreaEvents extends globalThis.Record<string, (...args: any[]) => boolean | void> {
     added: (thisCmp: TextArea, ownerCt: Ext.Container, index: number) => boolean | void;
     afterrender: (thisCmp: TextArea) => boolean | void;
     autosize: (thisCmp: TextArea, width: number) => boolean | void;

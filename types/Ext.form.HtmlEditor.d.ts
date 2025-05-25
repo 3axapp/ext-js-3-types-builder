@@ -182,7 +182,7 @@ declare namespace Ext.form {
     y?: number,
   }
 
-  interface IHtmlEditorEvents extends Record<string, (...args: any[]) => boolean | void> {
+  interface IHtmlEditorEvents extends globalThis.Record<string, (...args: any[]) => boolean | void> {
     activate: (thisCmp: HtmlEditor) => boolean | void;
     added: (thisCmp: HtmlEditor, ownerCt: Ext.Container, index: number) => boolean | void;
     afterrender: (thisCmp: HtmlEditor) => boolean | void;

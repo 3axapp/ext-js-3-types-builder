@@ -35,12 +35,12 @@ declare namespace Ext.data {
     url?: string,
   }
 
-  interface IScriptTagProxyEvents extends Record<string, (...args: any[]) => boolean | void> {
+  interface IScriptTagProxyEvents extends globalThis.Record<string, (...args: any[]) => boolean | void> {
     beforeload: (thisCmp: ScriptTagProxy, params: object) => boolean | void;
-    beforewrite: (thisCmp: ScriptTagProxy, action: string, rs: Ext.data.Record | Ext.data.Record[], params: object) => boolean | void;
+    beforewrite: (thisCmp: ScriptTagProxy, action: string, rs: Ext.data.Record<R> | Ext.data.Record<R>[], params: object) => boolean | void;
     exception: (thisCmp: ScriptTagProxy, type: string, action: string, options: object, response: object, arg: unknown) => boolean | void;
     load: (thisCmp: ScriptTagProxy, o: object, options: object) => boolean | void;
     loadexception: (thisCmp: ScriptTagProxy, options: object, arg: object, e: Error) => boolean | void;
-    write: (thisCmp: ScriptTagProxy, action: string, data: object, response: object, rs: Ext.data.Record | Ext.data.Record[], options: object) => boolean | void;
+    write: (thisCmp: ScriptTagProxy, action: string, data: object, response: object, rs: Ext.data.Record<R> | Ext.data.Record<R>[], options: object) => boolean | void;
   }
 }

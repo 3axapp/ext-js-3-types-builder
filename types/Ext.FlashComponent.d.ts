@@ -104,7 +104,7 @@ declare namespace Ext {
     y?: number,
   }
 
-  interface IFlashComponentEvents extends Record<string, (...args: any[]) => boolean | void> {
+  interface IFlashComponentEvents extends globalThis.Record<string, (...args: any[]) => boolean | void> {
     added: (thisCmp: FlashComponent, ownerCt: Ext.Container, index: number) => boolean | void;
     afterrender: (thisCmp: FlashComponent) => boolean | void;
     beforedestroy: (thisCmp: FlashComponent) => boolean | void;

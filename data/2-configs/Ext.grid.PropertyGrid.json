@@ -2193,7 +2193,7 @@
           "name": "store",
           "comment": "",
           "type": [
-            "Ext.data.Store"
+            "Ext.data.Store<R>"
           ]
         },
         {

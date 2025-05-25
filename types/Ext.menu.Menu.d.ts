@@ -167,7 +167,7 @@ declare namespace Ext.menu {
     zIndex?: number,
   }
 
-  interface IMenuEvents extends Record<string, (...args: any[]) => boolean | void> {
+  interface IMenuEvents extends globalThis.Record<string, (...args: any[]) => boolean | void> {
     add: (thisCmp: Menu, component: Ext.Component, index: number) => boolean | void;
     added: (thisCmp: Menu, ownerCt: Ext.Container, index: number) => boolean | void;
     afterlayout: (thisCmp: Menu, layout: Ext.layout.ContainerLayout) => boolean | void;

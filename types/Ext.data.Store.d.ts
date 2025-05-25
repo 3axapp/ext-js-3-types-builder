@@ -1,5 +1,5 @@
 declare namespace Ext.data {
-  class Store extends Ext.util.Observable {
+  class Store<R extends globalThis.Record<string, unknown> = globalThis.Record<string, unknown>> extends Ext.util.Observable {
 
     public baseParams: object;
 
@@ -21,7 +21,7 @@ declare namespace Ext.data {
 
     public add(records: Ext.data.Record[]): void;
 
-    public addListener<T extends IStoreEvents = IStoreEvents, E extends keyof T = keyof T>(eventName: E, handler: T[E], scope?: object, options?: object): void;
+    public addListener<T extends IStoreEvents<R> = IStoreEvents<R>, E extends keyof T = keyof T>(eventName: E, handler: T[E], scope?: object, options?: object): void;
 
     public addSorted(record: Ext.data.Record): void;
 
@@ -67,7 +67,7 @@ declare namespace Ext.data {
 
     public each(fn: Function, scope?: object): void;
 
-    private execute(action: string, rs: Ext.data.Record | Ext.data.Record[], options: object): void;
+    private execute(action: string, rs: Ext.data.Record<R> | Ext.data.Record<R>[], options: object): void;
 
     public filter(field: string | unknown[], value: string | RegExp, anyMatch?: boolean, caseSensitive?: boolean, exactMatch?: boolean): void;
 
@@ -81,7 +81,7 @@ declare namespace Ext.data {
 
     private findInsertIndex(record: object): void;
 
-    public fireEvent<T extends IStoreEvents = IStoreEvents, E extends keyof T = keyof T>(eventName: E, ...args: Parameters<T[E]>): boolean;
+    public fireEvent<T extends IStoreEvents<R> = IStoreEvents<R>, E extends keyof T = keyof T>(eventName: E, ...args: Parameters<T[E]>): boolean;
 
     public getAt(index: number): Ext.data.Record;
 
@@ -99,7 +99,7 @@ declare namespace Ext.data {
 
     private handleException(e: object): void;
 
-    public hasListener<T extends IStoreEvents = IStoreEvents, E extends keyof T = keyof T>(eventName: E): boolean;
+    public hasListener<T extends IStoreEvents<R> = IStoreEvents<R>, E extends keyof T = keyof T>(eventName: E): boolean;
 
     public indexOf(record: Ext.data.Record): number;
 
@@ -117,7 +117,7 @@ declare namespace Ext.data {
 
     public multiSort(sorters: unknown[], direction: string): void;
 
-    public on<T extends IStoreEvents = IStoreEvents, E extends keyof T = keyof T>(eventName: E, handler: T[E], scope?: object, options?: object): void;
+    public on<T extends IStoreEvents<R> = IStoreEvents<R>, E extends keyof T = keyof T>(eventName: E, handler: T[E], scope?: object, options?: object): void;
 
     private onClear(store: object, records: object): void;
 
@@ -147,7 +147,7 @@ declare namespace Ext.data {
 
     private removeFromBatch(batch: object, action: object, data: object): void;
 
-    public removeListener<T extends IStoreEvents = IStoreEvents, E extends keyof T = keyof T>(eventName: E, handler: T[E], scope?: object): void;
+    public removeListener<T extends IStoreEvents<R> = IStoreEvents<R>, E extends keyof T = keyof T>(eventName: E, handler: T[E], scope?: object): void;
 
     public save(): number;
 
@@ -165,7 +165,7 @@ declare namespace Ext.data {
 
     public sum(property: string, start?: number, end?: number): number;
 
-    public un<T extends IStoreEvents = IStoreEvents, E extends keyof T = keyof T>(eventName: E, handler: T[E], scope?: object): void;
+    public un<T extends IStoreEvents<R> = IStoreEvents<R>, E extends keyof T = keyof T>(eventName: E, handler: T[E], scope?: object): void;
 
     private updateRecord(store: object, record: object, action: object): void;
   }
@@ -191,20 +191,20 @@ declare namespace Ext.data {
     writer?: Ext.data.DataWriter,
   }
 
-  interface IStoreEvents extends Record<string, (...args: any[]) => boolean | void> {
+  interface IStoreEvents<R extends globalThis.Record<string, unknown>> extends globalThis.Record<string, (...args: any[]) => boolean | void> {
     add: (thisCmp: Store, records: Ext.data.Record[], index: number) => boolean | void;
     beforeload: (thisCmp: Store, options: object) => boolean | void;
-    beforesave: (store: Ext.data.Store, data: object) => boolean | void;
-    beforewrite: (store: Ext.data.Store, action: string, rs: Ext.data.Record | Ext.data.Record[], options: object, arg: object) => boolean | void;
-    clear: (thisCmp: Store, records: Ext.data.Record[]) => boolean | void;
+    beforesave: (store: Ext.data.Store<R>, data: object) => boolean | void;
+    beforewrite: (store: Ext.data.Store<R>, action: string, rs: Ext.data.Record<R> | Ext.data.Record<R>[], options: object, arg: object) => boolean | void;
+    clear: (thisCmp: Store, records: Ext.data.Record<R>[]) => boolean | void;
     datachanged: (thisCmp: Store) => boolean | void;
-    exception: (misc: misc) => boolean | void;
+    exception: (misc: unknown) => boolean | void;
     load: (thisCmp: Store, records: Ext.data.Record[], options: object) => boolean | void;
-    loadexception: (misc: misc) => boolean | void;
+    loadexception: (misc: unknown) => boolean | void;
     metachange: (thisCmp: Store, meta: object) => boolean | void;
     remove: (thisCmp: Store, record: Ext.data.Record, index: number) => boolean | void;
-    save: (store: Ext.data.Store, batch: number, data: object) => boolean | void;
+    save: (store: Ext.data.Store<R>, batch: number, data: object) => boolean | void;
     update: (thisCmp: Store, record: Ext.data.Record, operation: string) => boolean | void;
-    write: (store: Ext.data.Store, action: string, result: object, res: Ext.Direct.Transaction, rs: Ext.data.Record | Ext.data.Record[]) => boolean | void;
+    write: (store: Ext.data.Store<R>, action: string, result: object, res: Ext.Direct.Transaction, rs: Ext.data.Record<R> | Ext.data.Record<R>[]) => boolean | void;
   }
 }

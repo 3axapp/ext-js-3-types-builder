@@ -517,7 +517,7 @@
       {
         "name": "store?",
         "type": [
-          "Ext.data.Store"
+          "Ext.data.Store<R>"
         ],
         "comment": ""
       },
@@ -650,7 +650,7 @@
           "name": "store",
           "comment": "",
           "type": [
-            "Ext.data.Store"
+            "Ext.data.Store<R>"
           ]
         }
       ]
@@ -859,7 +859,7 @@
           "name": "store",
           "comment": "",
           "type": [
-            "Ext.data.Store"
+            "Ext.data.Store<R>"
           ]
         }
       ]

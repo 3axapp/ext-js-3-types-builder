@@ -45,7 +45,7 @@ declare namespace Ext.form {
 
     private getParentZIndex(): void;
 
-    public getStore(): Ext.data.Store;
+    public getStore(): Ext.data.Store<R>;
 
     public getValue(): string;
 
@@ -217,7 +217,7 @@ declare namespace Ext.form {
     stateEvents?: unknown[],
     stateId?: string,
     stateful?: boolean,
-    store?: Ext.data.Store | unknown[],
+    store?: Ext.data.Store<R> | unknown[],
     stripCharsRe?: RegExp,
     style?: string,
     submitValue?: boolean,
@@ -248,7 +248,7 @@ declare namespace Ext.form {
     y?: number,
   }
 
-  interface IComboBoxEvents extends Record<string, (...args: any[]) => boolean | void> {
+  interface IComboBoxEvents extends globalThis.Record<string, (...args: any[]) => boolean | void> {
     added: (thisCmp: ComboBox, ownerCt: Ext.Container, index: number) => boolean | void;
     afterrender: (thisCmp: ComboBox) => boolean | void;
     autosize: (thisCmp: ComboBox, width: number) => boolean | void;

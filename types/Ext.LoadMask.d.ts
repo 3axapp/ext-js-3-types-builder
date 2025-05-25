@@ -18,6 +18,6 @@ declare namespace Ext {
     msg?: string,
     msgCls?: string,
     removeMask?: boolean,
-    store?: Ext.data.Store,
+    store?: Ext.data.Store<R>,
   }
 }

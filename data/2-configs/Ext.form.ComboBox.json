@@ -698,7 +698,7 @@
       {
         "name": "store?",
         "type": [
-          "Ext.data.Store",
+          "Ext.data.Store<R>",
           "unknown[]"
         ],
         "comment": ""
@@ -1168,7 +1168,7 @@
     {
       "name": "getStore",
       "returnType": [
-        "Ext.data.Store"
+        "Ext.data.Store<R>"
       ],
       "visibility": "public",
       "arguments": []

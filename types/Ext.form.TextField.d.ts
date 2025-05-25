@@ -150,7 +150,7 @@ declare namespace Ext.form {
     y?: number,
   }
 
-  interface ITextFieldEvents extends Record<string, (...args: any[]) => boolean | void> {
+  interface ITextFieldEvents extends globalThis.Record<string, (...args: any[]) => boolean | void> {
     added: (thisCmp: TextField, ownerCt: Ext.Container, index: number) => boolean | void;
     afterrender: (thisCmp: TextField) => boolean | void;
     autosize: (thisCmp: TextField, width: number) => boolean | void;

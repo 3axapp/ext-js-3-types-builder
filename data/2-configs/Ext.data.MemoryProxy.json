@@ -300,8 +300,8 @@
           "name": "rs",
           "comment": "",
           "type": [
-            "Ext.data.Record",
-            "Ext.data.Record[]"
+            "Ext.data.Record<R>",
+            "Ext.data.Record<R>[]"
           ]
         },
         {
@@ -454,8 +454,8 @@
           "name": "rs",
           "comment": "",
           "type": [
-            "Ext.data.Record",
-            "Ext.data.Record[]"
+            "Ext.data.Record<R>",
+            "Ext.data.Record<R>[]"
           ]
         },
         {

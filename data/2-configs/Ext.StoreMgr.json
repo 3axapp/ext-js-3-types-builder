@@ -92,7 +92,7 @@
     {
       "name": "lookup",
       "returnType": [
-        "Ext.data.Store"
+        "Ext.data.Store<R>"
       ],
       "visibility": "public",
       "arguments": [
@@ -150,7 +150,7 @@
           "name": "...stores",
           "comment": "",
           "type": [
-            "Ext.data.Store[]"
+            "Ext.data.Store<R>[]"
           ]
         }
       ]

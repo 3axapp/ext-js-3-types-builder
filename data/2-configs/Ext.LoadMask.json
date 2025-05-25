@@ -27,7 +27,7 @@
       {
         "name": "store?",
         "type": [
-          "Ext.data.Store"
+          "Ext.data.Store<R>"
         ],
         "comment": ""
       }

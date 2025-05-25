@@ -85,7 +85,7 @@ declare namespace Ext.chart {
     y?: number,
   }
 
-  interface IStackedColumnChartEvents extends Record<string, (...args: any[]) => boolean | void> {
+  interface IStackedColumnChartEvents extends globalThis.Record<string, (...args: any[]) => boolean | void> {
     added: (thisCmp: StackedColumnChart, ownerCt: Ext.Container, index: number) => boolean | void;
     afterrender: (thisCmp: StackedColumnChart) => boolean | void;
     beforedestroy: (thisCmp: StackedColumnChart) => boolean | void;

@@ -52,7 +52,7 @@ declare namespace Ext.tree {
     uiProvider?: Function,
   }
 
-  interface IAsyncTreeNodeEvents extends Record<string, (...args: any[]) => boolean | void> {
+  interface IAsyncTreeNodeEvents extends globalThis.Record<string, (...args: any[]) => boolean | void> {
     append: (tree: Tree, thisCmp: AsyncTreeNode, node: Node, index: number) => boolean | void;
     beforeappend: (tree: Tree, thisCmp: AsyncTreeNode, node: Node) => boolean | void;
     beforechildrenrendered: (thisCmp: AsyncTreeNode) => boolean | void;

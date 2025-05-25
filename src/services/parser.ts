@@ -30,8 +30,9 @@ export class Parser
     CompositeElementLite: () => 'Ext.CompositeElementLite',
     MixedCollection     : () => 'Ext.util.MixedCollection',
     Menu                : () => 'Ext.menu.Menu',
-    Record              : () => 'Ext.data.Record',
-    "Record[]"          : () => 'Ext.data.Record[]',
+    'Ext.data.Store'    : () => 'Ext.data.Store<R>',
+    Record              : () => 'Ext.data.Record<R>',
+    'Record[]'          : () => 'Ext.data.Record<R>[]',
     HtmlElement         : () => 'HTMLElement',
     XMLElement          : () => 'Node',
     Float               : () => 'number',
@@ -42,6 +43,7 @@ export class Parser
     Null                : () => 'null',
     Object              : () => 'object',
     Mixed               : () => 'unknown',
+    misc                : () => 'unknown',
     Array               : () => 'unknown[]',
     Class               : (name) =>
     {

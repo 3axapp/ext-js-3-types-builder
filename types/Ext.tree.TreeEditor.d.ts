@@ -77,7 +77,7 @@ declare namespace Ext.tree {
     xtype?: string,
   }
 
-  interface ITreeEditorEvents extends Record<string, (...args: any[]) => boolean | void> {
+  interface ITreeEditorEvents extends globalThis.Record<string, (...args: any[]) => boolean | void> {
     added: (thisCmp: TreeEditor, ownerCt: Ext.Container, index: number) => boolean | void;
     afterrender: (thisCmp: TreeEditor) => boolean | void;
     beforecomplete: (thisCmp: TreeEditor, value: unknown, startValue: unknown) => boolean | void;

@@ -107,7 +107,7 @@ declare namespace Ext.form {
     y?: number,
   }
 
-  interface IHiddenEvents extends Record<string, (...args: any[]) => boolean | void> {
+  interface IHiddenEvents extends globalThis.Record<string, (...args: any[]) => boolean | void> {
     added: (thisCmp: Hidden, ownerCt: Ext.Container, index: number) => boolean | void;
     afterrender: (thisCmp: Hidden) => boolean | void;
     beforedestroy: (thisCmp: Hidden) => boolean | void;

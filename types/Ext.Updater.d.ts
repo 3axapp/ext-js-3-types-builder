@@ -76,7 +76,7 @@ declare namespace Ext {
     listeners?: object,
   }
 
-  interface IUpdaterEvents extends Record<string, (...args: any[]) => boolean | void> {
+  interface IUpdaterEvents extends globalThis.Record<string, (...args: any[]) => boolean | void> {
     beforeupdate: (el: Ext.Element, url: string | object | Function, params: string | object) => boolean | void;
     failure: (el: Ext.Element, oResponseObject: object) => boolean | void;
     update: (el: Ext.Element, oResponseObject: object) => boolean | void;

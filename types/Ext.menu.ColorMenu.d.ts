@@ -104,7 +104,7 @@ declare namespace Ext.menu {
     zIndex?: number,
   }
 
-  interface IColorMenuEvents extends Record<string, (...args: any[]) => boolean | void> {
+  interface IColorMenuEvents extends globalThis.Record<string, (...args: any[]) => boolean | void> {
     add: (thisCmp: ColorMenu, component: Ext.Component, index: number) => boolean | void;
     added: (thisCmp: ColorMenu, ownerCt: Ext.Container, index: number) => boolean | void;
     afterlayout: (thisCmp: ColorMenu, layout: Ext.layout.ContainerLayout) => boolean | void;

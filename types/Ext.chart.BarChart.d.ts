@@ -85,7 +85,7 @@ declare namespace Ext.chart {
     y?: number,
   }
 
-  interface IBarChartEvents extends Record<string, (...args: any[]) => boolean | void> {
+  interface IBarChartEvents extends globalThis.Record<string, (...args: any[]) => boolean | void> {
     added: (thisCmp: BarChart, ownerCt: Ext.Container, index: number) => boolean | void;
     afterrender: (thisCmp: BarChart) => boolean | void;
     beforedestroy: (thisCmp: BarChart) => boolean | void;

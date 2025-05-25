@@ -1,5 +1,12 @@
 {
   "name": "Store",
+  "types": [
+    {
+      "name": "R",
+      "extends": "globalThis.Record<string, unknown>",
+      "default": "globalThis.Record<string, unknown>"
+    }
+  ],
   "namespace": "Ext.data",
   "extends": "Ext.util.Observable",
   "constructorMethod": {
@@ -215,7 +222,7 @@
       ]
     },
     {
-      "name": "addListener<T extends IStoreEvents = IStoreEvents, E extends keyof T = keyof T>",
+      "name": "addListener<T extends IStoreEvents<R> = IStoreEvents<R>, E extends keyof T = keyof T>",
       "returnType": [],
       "visibility": "public",
       "arguments": [
@@ -662,8 +669,8 @@
           "name": "rs",
           "comment": "",
           "type": [
-            "Ext.data.Record",
-            "Ext.data.Record[]"
+            "Ext.data.Record<R>",
+            "Ext.data.Record<R>[]"
           ]
         },
         {
@@ -860,7 +867,7 @@
       ]
     },
     {
-      "name": "fireEvent<T extends IStoreEvents = IStoreEvents, E extends keyof T = keyof T>",
+      "name": "fireEvent<T extends IStoreEvents<R> = IStoreEvents<R>, E extends keyof T = keyof T>",
       "returnType": [
         "boolean"
       ],
@@ -984,7 +991,7 @@
       ]
     },
     {
-      "name": "hasListener<T extends IStoreEvents = IStoreEvents, E extends keyof T = keyof T>",
+      "name": "hasListener<T extends IStoreEvents<R> = IStoreEvents<R>, E extends keyof T = keyof T>",
       "returnType": [
         "boolean"
       ],
@@ -1147,7 +1154,7 @@
       ]
     },
     {
-      "name": "on<T extends IStoreEvents = IStoreEvents, E extends keyof T = keyof T>",
+      "name": "on<T extends IStoreEvents<R> = IStoreEvents<R>, E extends keyof T = keyof T>",
       "returnType": [],
       "visibility": "public",
       "arguments": [
@@ -1467,7 +1474,7 @@
       ]
     },
     {
-      "name": "removeListener<T extends IStoreEvents = IStoreEvents, E extends keyof T = keyof T>",
+      "name": "removeListener<T extends IStoreEvents<R> = IStoreEvents<R>, E extends keyof T = keyof T>",
       "returnType": [],
       "visibility": "public",
       "arguments": [
@@ -1638,7 +1645,7 @@
       ]
     },
     {
-      "name": "un<T extends IStoreEvents = IStoreEvents, E extends keyof T = keyof T>",
+      "name": "un<T extends IStoreEvents<R> = IStoreEvents<R>, E extends keyof T = keyof T>",
       "returnType": [],
       "visibility": "public",
       "arguments": [
@@ -1747,7 +1754,7 @@
           "name": "store",
           "comment": "",
           "type": [
-            "Ext.data.Store"
+            "Ext.data.Store<R>"
           ]
         },
         {
@@ -1766,7 +1773,7 @@
           "name": "store",
           "comment": "",
           "type": [
-            "Ext.data.Store"
+            "Ext.data.Store<R>"
           ]
         },
         {
@@ -1780,8 +1787,8 @@
           "name": "rs",
           "comment": "",
           "type": [
-            "Ext.data.Record",
-            "Ext.data.Record[]"
+            "Ext.data.Record<R>",
+            "Ext.data.Record<R>[]"
           ]
         },
         {
@@ -1814,7 +1821,7 @@
           "name": "records",
           "comment": "",
           "type": [
-            "Ext.data.Record[]"
+            "Ext.data.Record<R>[]"
           ]
         }
       ]
@@ -1838,7 +1845,7 @@
           "name": "misc",
           "comment": "",
           "type": [
-            "misc"
+            "unknown"
           ]
         }
       ]
@@ -1876,7 +1883,7 @@
           "name": "misc",
           "comment": "",
           "type": [
-            "misc"
+            "unknown"
           ]
         }
       ]
@@ -1933,7 +1940,7 @@
           "name": "store",
           "comment": "",
           "type": [
-            "Ext.data.Store"
+            "Ext.data.Store<R>"
           ]
         },
         {
@@ -1985,7 +1992,7 @@
           "name": "store",
           "comment": "",
           "type": [
-            "Ext.data.Store"
+            "Ext.data.Store<R>"
           ]
         },
         {
@@ -2013,8 +2020,8 @@
           "name": "rs",
           "comment": "",
           "type": [
-            "Ext.data.Record",
-            "Ext.data.Record[]"
+            "Ext.data.Record<R>",
+            "Ext.data.Record<R>[]"
           ]
         }
       ]

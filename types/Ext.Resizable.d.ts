@@ -82,7 +82,7 @@ declare namespace Ext {
     wrap?: boolean,
   }
 
-  interface IResizableEvents extends Record<string, (...args: any[]) => boolean | void> {
+  interface IResizableEvents extends globalThis.Record<string, (...args: any[]) => boolean | void> {
     beforeresize: (thisCmp: Resizable, e: Ext.EventObject) => boolean | void;
     resize: (thisCmp: Resizable, width: number, height: number, e: Ext.EventObject) => boolean | void;
   }

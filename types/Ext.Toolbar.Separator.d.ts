@@ -76,7 +76,7 @@ declare namespace Ext.Toolbar {
     y?: number,
   }
 
-  interface ISeparatorEvents extends Record<string, (...args: any[]) => boolean | void> {
+  interface ISeparatorEvents extends globalThis.Record<string, (...args: any[]) => boolean | void> {
     added: (thisCmp: Separator, ownerCt: Ext.Container, index: number) => boolean | void;
     afterrender: (thisCmp: Separator) => boolean | void;
     beforedestroy: (thisCmp: Separator) => boolean | void;

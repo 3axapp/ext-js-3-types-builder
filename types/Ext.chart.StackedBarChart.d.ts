@@ -85,7 +85,7 @@ declare namespace Ext.chart {
     y?: number,
   }
 
-  interface IStackedBarChartEvents extends Record<string, (...args: any[]) => boolean | void> {
+  interface IStackedBarChartEvents extends globalThis.Record<string, (...args: any[]) => boolean | void> {
     added: (thisCmp: StackedBarChart, ownerCt: Ext.Container, index: number) => boolean | void;
     afterrender: (thisCmp: StackedBarChart) => boolean | void;
     beforedestroy: (thisCmp: StackedBarChart) => boolean | void;

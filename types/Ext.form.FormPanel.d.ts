@@ -180,7 +180,7 @@ declare namespace Ext.form {
     y?: number,
   }
 
-  interface IFormPanelEvents extends Record<string, (...args: any[]) => boolean | void> {
+  interface IFormPanelEvents extends globalThis.Record<string, (...args: any[]) => boolean | void> {
     activate: (p: Ext.Panel) => boolean | void;
     add: (thisCmp: FormPanel, component: Ext.Component, index: number) => boolean | void;
     added: (thisCmp: FormPanel, ownerCt: Ext.Container, index: number) => boolean | void;

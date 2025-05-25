@@ -91,7 +91,7 @@ declare namespace Ext.chart {
     y?: number,
   }
 
-  interface IPieChartEvents extends Record<string, (...args: any[]) => boolean | void> {
+  interface IPieChartEvents extends globalThis.Record<string, (...args: any[]) => boolean | void> {
     added: (thisCmp: PieChart, ownerCt: Ext.Container, index: number) => boolean | void;
     afterrender: (thisCmp: PieChart) => boolean | void;
     beforedestroy: (thisCmp: PieChart) => boolean | void;

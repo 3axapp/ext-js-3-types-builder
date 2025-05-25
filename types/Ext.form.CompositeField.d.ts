@@ -143,7 +143,7 @@ declare namespace Ext.form {
     y?: number,
   }
 
-  interface ICompositeFieldEvents extends Record<string, (...args: any[]) => boolean | void> {
+  interface ICompositeFieldEvents extends globalThis.Record<string, (...args: any[]) => boolean | void> {
     added: (thisCmp: CompositeField, ownerCt: Ext.Container, index: number) => boolean | void;
     afterrender: (thisCmp: CompositeField) => boolean | void;
     beforedestroy: (thisCmp: CompositeField) => boolean | void;

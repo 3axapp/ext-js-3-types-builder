@@ -51,7 +51,7 @@ declare namespace Ext.form {
 
     public load(options: object): this;
 
-    public loadRecord(record: Ext.data.Record): this;
+    public loadRecord(record: Ext.data.Record<R>): this;
 
     public markInvalid(errors: unknown[] | object): this;
 
@@ -73,7 +73,7 @@ declare namespace Ext.form {
 
     public un<T extends IBasicFormEvents = IBasicFormEvents, E extends keyof T = keyof T>(eventName: E, handler: T[E], scope?: object): void;
 
-    public updateRecord(record: Ext.data.Record): this;
+    public updateRecord(record: Ext.data.Record<R>): this;
   }
 
   interface IBasicFormConfig {
@@ -93,7 +93,7 @@ declare namespace Ext.form {
     waitTitle?: string,
   }
 
-  interface IBasicFormEvents extends Record<string, (...args: any[]) => boolean | void> {
+  interface IBasicFormEvents extends globalThis.Record<string, (...args: any[]) => boolean | void> {
     actioncomplete: (thisCmp: BasicForm, action: Action) => boolean | void;
     actionfailed: (thisCmp: BasicForm, action: Action) => boolean | void;
     beforeaction: (thisCmp: BasicForm, action: Action) => boolean | void;

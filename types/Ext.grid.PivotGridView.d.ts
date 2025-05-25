@@ -96,7 +96,7 @@ declare namespace Ext.grid {
     title?: string,
   }
 
-  interface IPivotGridViewEvents extends Record<string, (...args: any[]) => boolean | void> {
+  interface IPivotGridViewEvents extends globalThis.Record<string, (...args: any[]) => boolean | void> {
     beforerefresh: (view: Ext.grid.GridView) => boolean | void;
     beforerowremoved: (view: Ext.grid.GridView, rowIndex: number, record: Ext.data.Record) => boolean | void;
     beforerowsinserted: (view: Ext.grid.GridView, firstRow: number, lastRow: number) => boolean | void;

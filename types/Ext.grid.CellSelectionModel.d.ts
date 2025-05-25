@@ -40,7 +40,7 @@ declare namespace Ext.grid {
     listeners?: object,
   }
 
-  interface ICellSelectionModelEvents extends Record<string, (...args: any[]) => boolean | void> {
+  interface ICellSelectionModelEvents extends globalThis.Record<string, (...args: any[]) => boolean | void> {
     beforecellselect: (thisCmp: CellSelectionModel, rowIndex: number, colIndex: number) => boolean | void;
     cellselect: (thisCmp: CellSelectionModel, rowIndex: number, colIndex: number) => boolean | void;
     selectionchange: (thisCmp: CellSelectionModel, selection: object) => boolean | void;

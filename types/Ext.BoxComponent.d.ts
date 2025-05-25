@@ -119,7 +119,7 @@ declare namespace Ext {
     y?: number,
   }
 
-  interface IBoxComponentEvents extends Record<string, (...args: any[]) => boolean | void> {
+  interface IBoxComponentEvents extends globalThis.Record<string, (...args: any[]) => boolean | void> {
     added: (thisCmp: BoxComponent, ownerCt: Ext.Container, index: number) => boolean | void;
     afterrender: (thisCmp: BoxComponent) => boolean | void;
     beforedestroy: (thisCmp: BoxComponent) => boolean | void;

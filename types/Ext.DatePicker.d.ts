@@ -141,7 +141,7 @@ declare namespace Ext {
     xtype?: string,
   }
 
-  interface IDatePickerEvents extends Record<string, (...args: any[]) => boolean | void> {
+  interface IDatePickerEvents extends globalThis.Record<string, (...args: any[]) => boolean | void> {
     added: (thisCmp: DatePicker, ownerCt: Ext.Container, index: number) => boolean | void;
     afterrender: (thisCmp: DatePicker) => boolean | void;
     beforedestroy: (thisCmp: DatePicker) => boolean | void;

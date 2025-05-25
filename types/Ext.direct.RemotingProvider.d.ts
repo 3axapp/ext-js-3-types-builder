@@ -60,7 +60,7 @@ declare namespace Ext.direct {
     url?: string,
   }
 
-  interface IRemotingProviderEvents extends Record<string, (...args: any[]) => boolean | void> {
+  interface IRemotingProviderEvents extends globalThis.Record<string, (...args: any[]) => boolean | void> {
     beforecall: (provider: Ext.direct.RemotingProvider, transaction: Ext.Direct.Transaction, meta: object) => boolean | void;
     call: (provider: Ext.direct.RemotingProvider, transaction: Ext.Direct.Transaction, meta: object) => boolean | void;
     connect: (provider: Ext.direct.Provider) => boolean | void;

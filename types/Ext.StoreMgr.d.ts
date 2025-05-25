@@ -9,11 +9,11 @@ declare namespace Ext {
 
     public hasListener<T extends IStoreMgrEvents = IStoreMgrEvents, E extends keyof T = keyof T>(eventName: E): boolean;
 
-    public lookup(id: string | object): Ext.data.Store;
+    public lookup(id: string | object): Ext.data.Store<R>;
 
     public on<T extends IStoreMgrEvents = IStoreMgrEvents, E extends keyof T = keyof T>(eventName: E, handler: T[E], scope?: object, options?: object): void;
 
-    public register(...stores: Ext.data.Store[]): void;
+    public register(...stores: Ext.data.Store<R>[]): void;
 
     public removeListener<T extends IStoreMgrEvents = IStoreMgrEvents, E extends keyof T = keyof T>(eventName: E, handler: T[E], scope?: object): void;
 
@@ -26,7 +26,7 @@ declare namespace Ext {
     allowFunctions?: boolean,
   }
 
-  interface IStoreMgrEvents extends Record<string, (...args: any[]) => boolean | void> {
+  interface IStoreMgrEvents extends globalThis.Record<string, (...args: any[]) => boolean | void> {
     add: (index: number, o: object, key: string) => boolean | void;
     clear: () => boolean | void;
     remove: (o: object, key?: string) => boolean | void;

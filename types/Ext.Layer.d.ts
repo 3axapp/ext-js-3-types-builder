@@ -25,7 +25,7 @@ declare namespace Ext {
     zindex?: number,
   }
 
-  interface ILayerEvents extends Record<string, (...args: any[]) => boolean | void> {
+  interface ILayerEvents extends globalThis.Record<string, (...args: any[]) => boolean | void> {
     DOMActivate: (e: Ext.EventObject, t: HTMLElement, o: object) => boolean | void;
     DOMAttrModified: (e: Ext.EventObject, t: HTMLElement, o: object) => boolean | void;
     DOMCharacterDataModified: (e: Ext.EventObject, t: HTMLElement, o: object) => boolean | void;

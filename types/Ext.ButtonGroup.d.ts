@@ -137,7 +137,7 @@ declare namespace Ext {
     y?: number,
   }
 
-  interface IButtonGroupEvents extends Record<string, (...args: any[]) => boolean | void> {
+  interface IButtonGroupEvents extends globalThis.Record<string, (...args: any[]) => boolean | void> {
     activate: (p: Ext.Panel) => boolean | void;
     add: (thisCmp: ButtonGroup, component: Ext.Component, index: number) => boolean | void;
     added: (thisCmp: ButtonGroup, ownerCt: Ext.Container, index: number) => boolean | void;

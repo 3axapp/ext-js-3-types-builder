@@ -73,7 +73,7 @@ declare namespace Ext {
     y?: number,
   }
 
-  interface ISpacerEvents extends Record<string, (...args: any[]) => boolean | void> {
+  interface ISpacerEvents extends globalThis.Record<string, (...args: any[]) => boolean | void> {
     added: (thisCmp: Spacer, ownerCt: Ext.Container, index: number) => boolean | void;
     afterrender: (thisCmp: Spacer) => boolean | void;
     beforedestroy: (thisCmp: Spacer) => boolean | void;

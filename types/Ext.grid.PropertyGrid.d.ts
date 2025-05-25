@@ -152,7 +152,7 @@ declare namespace Ext.grid {
     y?: number,
   }
 
-  interface IPropertyGridEvents extends Record<string, (...args: any[]) => boolean | void> {
+  interface IPropertyGridEvents extends globalThis.Record<string, (...args: any[]) => boolean | void> {
     activate: (p: Ext.Panel) => boolean | void;
     added: (thisCmp: PropertyGrid, ownerCt: Ext.Container, index: number) => boolean | void;
     afteredit: (e: object) => boolean | void;
@@ -209,7 +209,7 @@ declare namespace Ext.grid {
     mouseup: (e: Ext.EventObject) => boolean | void;
     move: (thisCmp: PropertyGrid, x: number, y: number) => boolean | void;
     propertychange: (source: object, recordId: string, value: unknown, oldValue: unknown) => boolean | void;
-    reconfigure: (thisCmp: PropertyGrid, store: Ext.data.Store, colModel: Ext.grid.ColumnModel) => boolean | void;
+    reconfigure: (thisCmp: PropertyGrid, store: Ext.data.Store<R>, colModel: Ext.grid.ColumnModel) => boolean | void;
     removed: (thisCmp: PropertyGrid, ownerCt: Ext.Container) => boolean | void;
     render: (thisCmp: PropertyGrid) => boolean | void;
     resize: (thisCmp: PropertyGrid, adjWidth: number, adjHeight: number, rawWidth: number, rawHeight: number) => boolean | void;

@@ -163,7 +163,7 @@ declare namespace Ext {
     y?: number,
   }
 
-  interface IQuickTipEvents extends Record<string, (...args: any[]) => boolean | void> {
+  interface IQuickTipEvents extends globalThis.Record<string, (...args: any[]) => boolean | void> {
     activate: (p: Ext.Panel) => boolean | void;
     add: (thisCmp: QuickTip, component: Ext.Component, index: number) => boolean | void;
     added: (thisCmp: QuickTip, ownerCt: Ext.Container, index: number) => boolean | void;

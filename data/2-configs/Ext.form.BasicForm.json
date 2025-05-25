@@ -492,7 +492,7 @@
           "name": "record",
           "comment": "",
           "type": [
-            "Ext.data.Record"
+            "Ext.data.Record<R>"
           ]
         }
       ]
@@ -695,7 +695,7 @@
           "name": "record",
           "comment": "",
           "type": [
-            "Ext.data.Record"
+            "Ext.data.Record<R>"
           ]
         }
       ]

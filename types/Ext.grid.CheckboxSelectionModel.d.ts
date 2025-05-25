@@ -50,9 +50,9 @@ declare namespace Ext.grid {
     width?: number,
   }
 
-  interface ICheckboxSelectionModelEvents extends Record<string, (...args: any[]) => boolean | void> {
-    beforerowselect: (thisCmp: CheckboxSelectionModel, rowIndex: number, keepExisting: boolean, record: Ext.data.Record) => boolean | void;
-    rowdeselect: (thisCmp: CheckboxSelectionModel, rowIndex: number, record: Ext.data.Record) => boolean | void;
+  interface ICheckboxSelectionModelEvents extends globalThis.Record<string, (...args: any[]) => boolean | void> {
+    beforerowselect: (thisCmp: CheckboxSelectionModel, rowIndex: number, keepExisting: boolean, record: Ext.data.Record<R>) => boolean | void;
+    rowdeselect: (thisCmp: CheckboxSelectionModel, rowIndex: number, record: Ext.data.Record<R>) => boolean | void;
     rowselect: (thisCmp: CheckboxSelectionModel, rowIndex: number, r: Ext.data.Record) => boolean | void;
     selectionchange: (thisCmp: CheckboxSelectionModel) => boolean | void;
   }

@@ -3,9 +3,9 @@ declare namespace Ext.data {
 
     public constructor(config: IDataWriterConfig);
 
-    public apply(params: object, baseParams: object, action: string, rs: Ext.data.Record | Ext.data.Record[]): void;
+    public apply(params: object, baseParams: object, action: string, rs: Ext.data.Record<R> | Ext.data.Record<R>[]): void;
 
-    public render(action: string, rs: Ext.data.Record[], params: object, data: object): void;
+    public render(action: string, rs: Ext.data.Record<R>[], params: object, data: object): void;
 
     protected toArray(data: Hash): Object[];
 

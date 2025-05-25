@@ -104,7 +104,7 @@ declare namespace Ext {
     y?: number,
   }
 
-  interface IProgressBarEvents extends Record<string, (...args: any[]) => boolean | void> {
+  interface IProgressBarEvents extends globalThis.Record<string, (...args: any[]) => boolean | void> {
     added: (thisCmp: ProgressBar, ownerCt: Ext.Container, index: number) => boolean | void;
     afterrender: (thisCmp: ProgressBar) => boolean | void;
     beforedestroy: (thisCmp: ProgressBar) => boolean | void;

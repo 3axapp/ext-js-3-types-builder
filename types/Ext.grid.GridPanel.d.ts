@@ -25,7 +25,7 @@ declare namespace Ext.grid {
 
     private getState(): void;
 
-    public getStore(): Ext.data.Store;
+    public getStore(): Ext.data.Store<R>;
 
     public getView(): Ext.grid.GridView;
 
@@ -53,7 +53,7 @@ declare namespace Ext.grid {
 
     private processEvent(name: object, e: object): void;
 
-    public reconfigure(store: Ext.data.Store, colModel: Ext.grid.ColumnModel): void;
+    public reconfigure(store: Ext.data.Store<R>, colModel: Ext.grid.ColumnModel): void;
 
     public removeListener<T extends IGridPanelEvents = IGridPanelEvents, E extends keyof T = keyof T>(eventName: E, handler: T[E], scope?: object): void;
 
@@ -161,7 +161,7 @@ declare namespace Ext.grid {
     stateEvents?: unknown[],
     stateId?: string,
     stateful?: boolean,
-    store?: Ext.data.Store,
+    store?: Ext.data.Store<R>,
     stripeRows?: boolean,
     style?: string,
     tabTip?: string,
@@ -183,7 +183,7 @@ declare namespace Ext.grid {
     y?: number,
   }
 
-  interface IGridPanelEvents extends Record<string, (...args: any[]) => boolean | void> {
+  interface IGridPanelEvents extends globalThis.Record<string, (...args: any[]) => boolean | void> {
     activate: (p: Ext.Panel) => boolean | void;
     added: (thisCmp: GridPanel, ownerCt: Ext.Container, index: number) => boolean | void;
     afterrender: (thisCmp: GridPanel) => boolean | void;
@@ -236,7 +236,7 @@ declare namespace Ext.grid {
     mouseover: (e: Ext.EventObject) => boolean | void;
     mouseup: (e: Ext.EventObject) => boolean | void;
     move: (thisCmp: GridPanel, x: number, y: number) => boolean | void;
-    reconfigure: (thisCmp: GridPanel, store: Ext.data.Store, colModel: Ext.grid.ColumnModel) => boolean | void;
+    reconfigure: (thisCmp: GridPanel, store: Ext.data.Store<R>, colModel: Ext.grid.ColumnModel) => boolean | void;
     removed: (thisCmp: GridPanel, ownerCt: Ext.Container) => boolean | void;
     render: (thisCmp: GridPanel) => boolean | void;
     resize: (thisCmp: GridPanel, adjWidth: number, adjHeight: number, rawWidth: number, rawHeight: number) => boolean | void;

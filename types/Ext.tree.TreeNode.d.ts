@@ -127,7 +127,7 @@ declare namespace Ext.tree {
     uiProvider?: Function,
   }
 
-  interface ITreeNodeEvents extends Record<string, (...args: any[]) => boolean | void> {
+  interface ITreeNodeEvents extends globalThis.Record<string, (...args: any[]) => boolean | void> {
     append: (tree: Tree, thisCmp: TreeNode, node: Node, index: number) => boolean | void;
     beforeappend: (tree: Tree, thisCmp: TreeNode, node: Node) => boolean | void;
     beforechildrenrendered: (thisCmp: TreeNode) => boolean | void;

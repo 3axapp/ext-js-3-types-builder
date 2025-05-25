@@ -35,12 +35,12 @@ declare namespace Ext.data {
     restful?: boolean,
   }
 
-  interface IDataProxyEvents extends Record<string, (...args: any[]) => boolean | void> {
+  interface IDataProxyEvents extends globalThis.Record<string, (...args: any[]) => boolean | void> {
     beforeload: (thisCmp: DataProxy, params: object) => boolean | void;
-    beforewrite: (thisCmp: DataProxy, action: string, rs: Ext.data.Record | Ext.data.Record[], params: object) => boolean | void;
+    beforewrite: (thisCmp: DataProxy, action: string, rs: Ext.data.Record<R> | Ext.data.Record<R>[], params: object) => boolean | void;
     exception: (thisCmp: DataProxy, type: string, action: string, options: object, response: object, arg: unknown) => boolean | void;
     load: (thisCmp: DataProxy, o: object, options: object) => boolean | void;
-    loadexception: (misc: misc) => boolean | void;
-    write: (thisCmp: DataProxy, action: string, data: object, response: object, rs: Ext.data.Record | Ext.data.Record[], options: object) => boolean | void;
+    loadexception: (misc: unknown) => boolean | void;
+    write: (thisCmp: DataProxy, action: string, data: object, response: object, rs: Ext.data.Record<R> | Ext.data.Record<R>[], options: object) => boolean | void;
   }
 }

@@ -86,7 +86,7 @@ declare namespace Ext.menu {
     xtype?: string,
   }
 
-  interface ICheckItemEvents extends Record<string, (...args: any[]) => boolean | void> {
+  interface ICheckItemEvents extends globalThis.Record<string, (...args: any[]) => boolean | void> {
     activate: (thisCmp: CheckItem) => boolean | void;
     added: (thisCmp: CheckItem, ownerCt: Ext.Container, index: number) => boolean | void;
     afterrender: (thisCmp: CheckItem) => boolean | void;

@@ -102,7 +102,7 @@ declare namespace Ext.data {
     listeners?: object,
   }
 
-  interface INodeEvents extends Record<string, (...args: any[]) => boolean | void> {
+  interface INodeEvents extends globalThis.Record<string, (...args: any[]) => boolean | void> {
     append: (tree: Tree, thisCmp: Node, node: Node, index: number) => boolean | void;
     beforeappend: (tree: Tree, thisCmp: Node, node: Node) => boolean | void;
     beforeinsert: (tree: Tree, thisCmp: Node, node: Node, refNode: Node) => boolean | void;

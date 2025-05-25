@@ -92,7 +92,7 @@ declare namespace Ext.grid {
     listeners?: object,
   }
 
-  interface IColumnModelEvents extends Record<string, (...args: any[]) => boolean | void> {
+  interface IColumnModelEvents extends globalThis.Record<string, (...args: any[]) => boolean | void> {
     columnmoved: (thisCmp: ColumnModel, oldIndex: number, newIndex: number) => boolean | void;
     configchange: (thisCmp: ColumnModel) => boolean | void;
     headerchange: (thisCmp: ColumnModel, columnIndex: number, newText: string) => boolean | void;

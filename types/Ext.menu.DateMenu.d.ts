@@ -108,7 +108,7 @@ declare namespace Ext.menu {
     zIndex?: number,
   }
 
-  interface IDateMenuEvents extends Record<string, (...args: any[]) => boolean | void> {
+  interface IDateMenuEvents extends globalThis.Record<string, (...args: any[]) => boolean | void> {
     add: (thisCmp: DateMenu, component: Ext.Component, index: number) => boolean | void;
     added: (thisCmp: DateMenu, ownerCt: Ext.Container, index: number) => boolean | void;
     afterlayout: (thisCmp: DateMenu, layout: Ext.layout.ContainerLayout) => boolean | void;

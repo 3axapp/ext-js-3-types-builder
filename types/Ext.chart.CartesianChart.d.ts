@@ -101,7 +101,7 @@ declare namespace Ext.chart {
     y?: number,
   }
 
-  interface ICartesianChartEvents extends Record<string, (...args: any[]) => boolean | void> {
+  interface ICartesianChartEvents extends globalThis.Record<string, (...args: any[]) => boolean | void> {
     added: (thisCmp: CartesianChart, ownerCt: Ext.Container, index: number) => boolean | void;
     afterrender: (thisCmp: CartesianChart) => boolean | void;
     beforedestroy: (thisCmp: CartesianChart) => boolean | void;

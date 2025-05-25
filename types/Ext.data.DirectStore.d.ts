@@ -37,20 +37,20 @@ declare namespace Ext.data {
     writer?: Ext.data.DataWriter,
   }
 
-  interface IDirectStoreEvents extends Record<string, (...args: any[]) => boolean | void> {
+  interface IDirectStoreEvents extends globalThis.Record<string, (...args: any[]) => boolean | void> {
     add: (thisCmp: DirectStore, records: Ext.data.Record[], index: number) => boolean | void;
     beforeload: (thisCmp: DirectStore, options: object) => boolean | void;
-    beforesave: (store: Ext.data.Store, data: object) => boolean | void;
-    beforewrite: (store: Ext.data.Store, action: string, rs: Ext.data.Record | Ext.data.Record[], options: object, arg: object) => boolean | void;
-    clear: (thisCmp: DirectStore, records: Ext.data.Record[]) => boolean | void;
+    beforesave: (store: Ext.data.Store<R>, data: object) => boolean | void;
+    beforewrite: (store: Ext.data.Store<R>, action: string, rs: Ext.data.Record<R> | Ext.data.Record<R>[], options: object, arg: object) => boolean | void;
+    clear: (thisCmp: DirectStore, records: Ext.data.Record<R>[]) => boolean | void;
     datachanged: (thisCmp: DirectStore) => boolean | void;
-    exception: (misc: misc) => boolean | void;
+    exception: (misc: unknown) => boolean | void;
     load: (thisCmp: DirectStore, records: Ext.data.Record[], options: object) => boolean | void;
-    loadexception: (misc: misc) => boolean | void;
+    loadexception: (misc: unknown) => boolean | void;
     metachange: (thisCmp: DirectStore, meta: object) => boolean | void;
     remove: (thisCmp: DirectStore, record: Ext.data.Record, index: number) => boolean | void;
-    save: (store: Ext.data.Store, batch: number, data: object) => boolean | void;
+    save: (store: Ext.data.Store<R>, batch: number, data: object) => boolean | void;
     update: (thisCmp: DirectStore, record: Ext.data.Record, operation: string) => boolean | void;
-    write: (store: Ext.data.Store, action: string, result: object, res: Ext.Direct.Transaction, rs: Ext.data.Record | Ext.data.Record[]) => boolean | void;
+    write: (store: Ext.data.Store<R>, action: string, result: object, res: Ext.Direct.Transaction, rs: Ext.data.Record<R> | Ext.data.Record<R>[]) => boolean | void;
   }
 }

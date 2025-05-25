@@ -206,7 +206,7 @@ declare namespace Ext {
     y?: number,
   }
 
-  interface IToolTipEvents extends Record<string, (...args: any[]) => boolean | void> {
+  interface IToolTipEvents extends globalThis.Record<string, (...args: any[]) => boolean | void> {
     activate: (p: Ext.Panel) => boolean | void;
     add: (thisCmp: ToolTip, component: Ext.Component, index: number) => boolean | void;
     added: (thisCmp: ToolTip, ownerCt: Ext.Container, index: number) => boolean | void;

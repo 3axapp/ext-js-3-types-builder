@@ -1,5 +1,12 @@
 {
   "name": "Record",
+  "types": [
+    {
+      "name": "R",
+      "extends": "globalThis.Record<string, unknown>",
+      "default": "globalThis.Record<string, unknown>"
+    }
+  ],
   "namespace": "Ext.data",
   "constructorMethod": null,
   "properties": [
@@ -71,7 +78,7 @@
     {
       "name": "store",
       "type": [
-        "Ext.data.Store"
+        "Ext.data.Store<R>"
       ],
       "visibility": "public",
       "comment": ""
@@ -107,7 +114,7 @@
     {
       "name": "copy",
       "returnType": [
-        "Ext.data.Record"
+        "Ext.data.Record<R>"
       ],
       "visibility": "public",
       "arguments": [
@@ -161,7 +168,7 @@
           "name": "rec",
           "comment": "",
           "type": [
-            "Ext.data.Record"
+            "Ext.data.Record<R>"
           ]
         }
       ]

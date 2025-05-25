@@ -117,7 +117,7 @@ declare namespace Ext.form {
     y?: number,
   }
 
-  interface ISliderFieldEvents extends Record<string, (...args: any[]) => boolean | void> {
+  interface ISliderFieldEvents extends globalThis.Record<string, (...args: any[]) => boolean | void> {
     added: (thisCmp: SliderField, ownerCt: Ext.Container, index: number) => boolean | void;
     afterrender: (thisCmp: SliderField) => boolean | void;
     beforedestroy: (thisCmp: SliderField) => boolean | void;

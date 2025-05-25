@@ -34,7 +34,7 @@ declare namespace Ext {
     listeners?: object,
   }
 
-  interface IHistoryEvents extends Record<string, (...args: any[]) => boolean | void> {
+  interface IHistoryEvents extends globalThis.Record<string, (...args: any[]) => boolean | void> {
     change: (token: string) => boolean | void;
     ready: (The: Ext.History) => boolean | void;
   }

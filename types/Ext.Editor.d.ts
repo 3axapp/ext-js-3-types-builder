@@ -84,7 +84,7 @@ declare namespace Ext {
     xtype?: string,
   }
 
-  interface IEditorEvents extends Record<string, (...args: any[]) => boolean | void> {
+  interface IEditorEvents extends globalThis.Record<string, (...args: any[]) => boolean | void> {
     added: (thisCmp: Editor, ownerCt: Ext.Container, index: number) => boolean | void;
     afterrender: (thisCmp: Editor) => boolean | void;
     beforecomplete: (thisCmp: Editor, value: unknown, startValue: unknown) => boolean | void;

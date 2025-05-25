@@ -1,5 +1,5 @@
 declare namespace Ext.data {
-  class Record {
+  class Record<R extends globalThis.Record<string, unknown> = globalThis.Record<string, unknown>> {
 
     public data: object;
 
@@ -17,7 +17,7 @@ declare namespace Ext.data {
 
     public phantom: boolean;
 
-    public store: Ext.data.Store;
+    public store: Ext.data.Store<R>;
 
     public beginEdit(): void;
 
@@ -25,7 +25,7 @@ declare namespace Ext.data {
 
     public commit(silent?: boolean): void;
 
-    public copy(id?: string): Ext.data.Record;
+    public copy(id?: string): Ext.data.Record<R>;
 
     public endEdit(): void;
 
@@ -33,7 +33,7 @@ declare namespace Ext.data {
 
     public getChanges(): object;
 
-    public id(rec: Ext.data.Record): string;
+    public id(rec: Ext.data.Record<R>): string;
 
     public isModified(fieldName: string): boolean;
 

@@ -57,7 +57,7 @@ declare namespace Ext.dd {
     tolerance?: number,
   }
 
-  interface IDragTrackerEvents extends Record<string, (...args: any[]) => boolean | void> {
+  interface IDragTrackerEvents extends globalThis.Record<string, (...args: any[]) => boolean | void> {
     drag: (thisCmp: DragTracker, e: object) => boolean | void;
     dragend: (thisCmp: DragTracker, e: object) => boolean | void;
     dragstart: (thisCmp: DragTracker, e: object) => boolean | void;

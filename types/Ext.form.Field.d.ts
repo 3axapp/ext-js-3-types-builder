@@ -169,7 +169,7 @@ declare namespace Ext.form {
     y?: number,
   }
 
-  interface IFieldEvents extends Record<string, (...args: any[]) => boolean | void> {
+  interface IFieldEvents extends globalThis.Record<string, (...args: any[]) => boolean | void> {
     added: (thisCmp: Field, ownerCt: Ext.Container, index: number) => boolean | void;
     afterrender: (thisCmp: Field) => boolean | void;
     beforedestroy: (thisCmp: Field) => boolean | void;

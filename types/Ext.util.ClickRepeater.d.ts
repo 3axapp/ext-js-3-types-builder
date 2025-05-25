@@ -61,7 +61,7 @@ declare namespace Ext.util {
     stopDefault?: boolean,
   }
 
-  interface IClickRepeaterEvents extends Record<string, (...args: any[]) => boolean | void> {
+  interface IClickRepeaterEvents extends globalThis.Record<string, (...args: any[]) => boolean | void> {
     click: (thisCmp: ClickRepeater, e: Ext.EventObject) => boolean | void;
     mousedown: (thisCmp: ClickRepeater, e: Ext.EventObject) => boolean | void;
     mouseup: (thisCmp: ClickRepeater, e: Ext.EventObject) => boolean | void;

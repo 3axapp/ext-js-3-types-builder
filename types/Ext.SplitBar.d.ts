@@ -70,7 +70,7 @@ declare namespace Ext {
     listeners?: object,
   }
 
-  interface ISplitBarEvents extends Record<string, (...args: any[]) => boolean | void> {
+  interface ISplitBarEvents extends globalThis.Record<string, (...args: any[]) => boolean | void> {
     beforeresize: (thisCmp: SplitBar) => boolean | void;
     moved: (thisCmp: SplitBar, newSize: number) => boolean | void;
     resize: (thisCmp: SplitBar, newSize: number) => boolean | void;

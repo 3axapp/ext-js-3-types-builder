@@ -40,7 +40,7 @@ declare namespace Ext.tree {
     listeners?: object,
   }
 
-  interface IMultiSelectionModelEvents extends Record<string, (...args: any[]) => boolean | void> {
+  interface IMultiSelectionModelEvents extends globalThis.Record<string, (...args: any[]) => boolean | void> {
     selectionchange: (thisCmp: MultiSelectionModel, nodes: unknown[]) => boolean | void;
   }
 }

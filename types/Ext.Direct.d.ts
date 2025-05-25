@@ -40,7 +40,7 @@ declare namespace Ext {
     listeners?: object,
   }
 
-  interface IDirectEvents extends Record<string, (...args: any[]) => boolean | void> {
+  interface IDirectEvents extends globalThis.Record<string, (...args: any[]) => boolean | void> {
     event: (e: event, provider: Ext.direct.Provider) => boolean | void;
     exception: (e: event) => boolean | void;
   }

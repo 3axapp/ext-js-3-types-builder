@@ -107,7 +107,7 @@ declare namespace Ext.form {
     y?: number,
   }
 
-  interface IRadioGroupEvents extends Record<string, (...args: any[]) => boolean | void> {
+  interface IRadioGroupEvents extends globalThis.Record<string, (...args: any[]) => boolean | void> {
     added: (thisCmp: RadioGroup, ownerCt: Ext.Container, index: number) => boolean | void;
     afterrender: (thisCmp: RadioGroup) => boolean | void;
     beforedestroy: (thisCmp: RadioGroup) => boolean | void;

@@ -109,7 +109,7 @@ declare namespace Ext {
     y?: number,
   }
 
-  interface IToolbarEvents extends Record<string, (...args: any[]) => boolean | void> {
+  interface IToolbarEvents extends globalThis.Record<string, (...args: any[]) => boolean | void> {
     add: (thisCmp: Toolbar, component: Ext.Component, index: number) => boolean | void;
     added: (thisCmp: Toolbar, ownerCt: Ext.Container, index: number) => boolean | void;
     afterlayout: (thisCmp: Toolbar, layout: Ext.layout.ContainerLayout) => boolean | void;

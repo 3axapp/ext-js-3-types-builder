@@ -43,7 +43,7 @@ declare namespace Ext.grid {
     xtype?: string,
   }
 
-  interface IDateColumnEvents extends Record<string, (...args: any[]) => boolean | void> {
+  interface IDateColumnEvents extends globalThis.Record<string, (...args: any[]) => boolean | void> {
     click: (thisCmp: DateColumn, The: Grid, rowIndex: number, e: Ext.EventObject) => boolean | void;
     contextmenu: (thisCmp: DateColumn, The: Grid, rowIndex: number, e: Ext.EventObject) => boolean | void;
     dblclick: (thisCmp: DateColumn, The: Grid, rowIndex: number, e: Ext.EventObject) => boolean | void;

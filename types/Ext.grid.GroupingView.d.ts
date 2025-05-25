@@ -21,7 +21,7 @@ declare namespace Ext.grid {
 
     private doGroupStart(buf: object, g: object, cs: object, ds: object, colCount: object): void;
 
-    private doRender(columns: unknown[], records: unknown[], store: Ext.data.Store, startRow: number, colCount: number, stripe: boolean): string;
+    private doRender(columns: unknown[], records: unknown[], store: Ext.data.Store<R>, startRow: number, colCount: number, stripe: boolean): string;
 
     public expandAllGroups(): void;
 
@@ -126,7 +126,7 @@ declare namespace Ext.grid {
     startCollapsed?: boolean,
   }
 
-  interface IGroupingViewEvents extends Record<string, (...args: any[]) => boolean | void> {
+  interface IGroupingViewEvents extends globalThis.Record<string, (...args: any[]) => boolean | void> {
     beforerefresh: (view: Ext.grid.GridView) => boolean | void;
     beforerowremoved: (view: Ext.grid.GridView, rowIndex: number, record: Ext.data.Record) => boolean | void;
     beforerowsinserted: (view: Ext.grid.GridView, firstRow: number, lastRow: number) => boolean | void;

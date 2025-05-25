@@ -146,7 +146,7 @@ declare namespace Ext.form {
     stateEvents?: unknown[],
     stateId?: string,
     stateful?: boolean,
-    store?: Ext.data.Store | unknown[],
+    store?: Ext.data.Store<R> | unknown[],
     stripCharsRe?: RegExp,
     style?: string,
     submitValue?: boolean,
@@ -177,7 +177,7 @@ declare namespace Ext.form {
     y?: number,
   }
 
-  interface ITimeFieldEvents extends Record<string, (...args: any[]) => boolean | void> {
+  interface ITimeFieldEvents extends globalThis.Record<string, (...args: any[]) => boolean | void> {
     added: (thisCmp: TimeField, ownerCt: Ext.Container, index: number) => boolean | void;
     afterrender: (thisCmp: TimeField) => boolean | void;
     autosize: (thisCmp: TimeField, width: number) => boolean | void;

@@ -17,7 +17,7 @@ declare namespace Ext {
 
     public collectData(records: unknown[], startIndex: number): unknown[];
 
-    public deselect(node: HTMLElement | number | Ext.data.Record): void;
+    public deselect(node: HTMLElement | number | Ext.data.Record<R>): void;
 
     private doMultiSelection(item: object, index: object, e: object): void;
 
@@ -31,7 +31,7 @@ declare namespace Ext {
 
     public getNodes(start?: number, end?: number): unknown[];
 
-    public getRecord(node: HTMLElement): Ext.data.Record;
+    public getRecord(node: HTMLElement): Ext.data.Record<R>;
 
     public getRecords(nodes: unknown[]): unknown[];
 
@@ -43,13 +43,13 @@ declare namespace Ext {
 
     public getSelectionCount(): number;
 
-    public getStore(): Ext.data.Store;
+    public getStore(): Ext.data.Store<R>;
 
     private getTemplateTarget(): void;
 
     public hasListener<T extends IDataViewEvents = IDataViewEvents, E extends keyof T = keyof T>(eventName: E): boolean;
 
-    public indexOf(nodeInfo: HTMLElement | string | number | Ext.data.Record): number;
+    public indexOf(nodeInfo: HTMLElement | string | number | Ext.data.Record<R>): number;
 
     private initComponent(): void;
 
@@ -83,7 +83,7 @@ declare namespace Ext {
 
     private onUpdate(ds: object, record: object): void;
 
-    public prepareData(data: unknown[] | object, recordIndex: number, record: Ext.data.Record): unknown[] | object;
+    public prepareData(data: unknown[] | object, recordIndex: number, record: Ext.data.Record<R>): unknown[] | object;
 
     public refresh(): void;
 
@@ -159,7 +159,7 @@ declare namespace Ext {
     stateEvents?: unknown[],
     stateId?: string,
     stateful?: boolean,
-    store?: Ext.data.Store,
+    store?: Ext.data.Store<R>,
     style?: string,
     tabTip?: string,
     tpl?: string | unknown[],
@@ -171,7 +171,7 @@ declare namespace Ext {
     y?: number,
   }
 
-  interface IDataViewEvents extends Record<string, (...args: any[]) => boolean | void> {
+  interface IDataViewEvents extends globalThis.Record<string, (...args: any[]) => boolean | void> {
     added: (thisCmp: DataView, ownerCt: Ext.Container, index: number) => boolean | void;
     afterrender: (thisCmp: DataView) => boolean | void;
     beforeclick: (thisCmp: DataView, index: number, node: HTMLElement, e: Ext.EventObject) => boolean | void;

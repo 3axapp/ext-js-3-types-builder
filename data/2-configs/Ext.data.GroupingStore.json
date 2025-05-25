@@ -458,7 +458,7 @@
           "name": "store",
           "comment": "",
           "type": [
-            "Ext.data.Store"
+            "Ext.data.Store<R>"
           ]
         },
         {
@@ -477,7 +477,7 @@
           "name": "store",
           "comment": "",
           "type": [
-            "Ext.data.Store"
+            "Ext.data.Store<R>"
           ]
         },
         {
@@ -491,8 +491,8 @@
           "name": "rs",
           "comment": "",
           "type": [
-            "Ext.data.Record",
-            "Ext.data.Record[]"
+            "Ext.data.Record<R>",
+            "Ext.data.Record<R>[]"
           ]
         },
         {
@@ -525,7 +525,7 @@
           "name": "records",
           "comment": "",
           "type": [
-            "Ext.data.Record[]"
+            "Ext.data.Record<R>[]"
           ]
         }
       ]
@@ -549,7 +549,7 @@
           "name": "misc",
           "comment": "",
           "type": [
-            "misc"
+            "unknown"
           ]
         }
       ]
@@ -606,7 +606,7 @@
           "name": "misc",
           "comment": "",
           "type": [
-            "misc"
+            "unknown"
           ]
         }
       ]
@@ -663,7 +663,7 @@
           "name": "store",
           "comment": "",
           "type": [
-            "Ext.data.Store"
+            "Ext.data.Store<R>"
           ]
         },
         {
@@ -715,7 +715,7 @@
           "name": "store",
           "comment": "",
           "type": [
-            "Ext.data.Store"
+            "Ext.data.Store<R>"
           ]
         },
         {
@@ -743,8 +743,8 @@
           "name": "rs",
           "comment": "",
           "type": [
-            "Ext.data.Record",
-            "Ext.data.Record[]"
+            "Ext.data.Record<R>",
+            "Ext.data.Record<R>[]"
           ]
         }
       ]

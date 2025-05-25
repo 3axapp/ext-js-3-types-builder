@@ -80,7 +80,7 @@ declare namespace Ext.Toolbar {
     y?: number,
   }
 
-  interface IItemEvents extends Record<string, (...args: any[]) => boolean | void> {
+  interface IItemEvents extends globalThis.Record<string, (...args: any[]) => boolean | void> {
     added: (thisCmp: Item, ownerCt: Ext.Container, index: number) => boolean | void;
     afterrender: (thisCmp: Item) => boolean | void;
     beforedestroy: (thisCmp: Item) => boolean | void;

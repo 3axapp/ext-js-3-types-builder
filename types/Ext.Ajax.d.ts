@@ -37,7 +37,7 @@ declare namespace Ext {
     listeners?: object,
   }
 
-  interface IAjaxEvents extends Record<string, (...args: any[]) => boolean | void> {
+  interface IAjaxEvents extends globalThis.Record<string, (...args: any[]) => boolean | void> {
     beforerequest: (conn: Connection, options: object) => boolean | void;
     requestcomplete: (conn: Connection, response: object, options: object) => boolean | void;
     requestexception: (conn: Connection, response: object, options: object) => boolean | void;

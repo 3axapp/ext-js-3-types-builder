@@ -115,7 +115,7 @@ declare namespace Ext {
     y?: number,
   }
 
-  interface ISplitButtonEvents extends Record<string, (...args: any[]) => boolean | void> {
+  interface ISplitButtonEvents extends globalThis.Record<string, (...args: any[]) => boolean | void> {
     added: (thisCmp: SplitButton, ownerCt: Ext.Container, index: number) => boolean | void;
     afterrender: (thisCmp: SplitButton) => boolean | void;
     arrowclick: (thisCmp: SplitButton, e: EventObject) => boolean | void;

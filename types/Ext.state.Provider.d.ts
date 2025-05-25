@@ -32,7 +32,7 @@ declare namespace Ext.state {
     listeners?: object,
   }
 
-  interface IProviderEvents extends Record<string, (...args: any[]) => boolean | void> {
+  interface IProviderEvents extends globalThis.Record<string, (...args: any[]) => boolean | void> {
     statechange: (thisCmp: Provider, key: string, value: string) => boolean | void;
   }
 }

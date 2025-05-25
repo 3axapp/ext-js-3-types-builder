@@ -85,7 +85,7 @@ declare namespace Ext.chart {
     y?: number,
   }
 
-  interface ILineChartEvents extends Record<string, (...args: any[]) => boolean | void> {
+  interface ILineChartEvents extends globalThis.Record<string, (...args: any[]) => boolean | void> {
     added: (thisCmp: LineChart, ownerCt: Ext.Container, index: number) => boolean | void;
     afterrender: (thisCmp: LineChart) => boolean | void;
     beforedestroy: (thisCmp: LineChart) => boolean | void;

@@ -263,7 +263,7 @@ declare namespace Ext {
     y?: number,
   }
 
-  interface IPanelEvents extends Record<string, (...args: any[]) => boolean | void> {
+  interface IPanelEvents extends globalThis.Record<string, (...args: any[]) => boolean | void> {
     activate: (p: Ext.Panel) => boolean | void;
     add: (thisCmp: Panel, component: Ext.Component, index: number) => boolean | void;
     added: (thisCmp: Panel, ownerCt: Ext.Container, index: number) => boolean | void;

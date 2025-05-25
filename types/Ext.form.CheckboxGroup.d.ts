@@ -135,7 +135,7 @@ declare namespace Ext.form {
     y?: number,
   }
 
-  interface ICheckboxGroupEvents extends Record<string, (...args: any[]) => boolean | void> {
+  interface ICheckboxGroupEvents extends globalThis.Record<string, (...args: any[]) => boolean | void> {
     added: (thisCmp: CheckboxGroup, ownerCt: Ext.Container, index: number) => boolean | void;
     afterrender: (thisCmp: CheckboxGroup) => boolean | void;
     beforedestroy: (thisCmp: CheckboxGroup) => boolean | void;

@@ -40,7 +40,7 @@ declare namespace Ext.tree {
     listeners?: object,
   }
 
-  interface IDefaultSelectionModelEvents extends Record<string, (...args: any[]) => boolean | void> {
+  interface IDefaultSelectionModelEvents extends globalThis.Record<string, (...args: any[]) => boolean | void> {
     beforeselect: (thisCmp: DefaultSelectionModel, newNode: TreeNode, oldNode: TreeNode) => boolean | void;
     selectionchange: (thisCmp: DefaultSelectionModel, node: TreeNode) => boolean | void;
   }

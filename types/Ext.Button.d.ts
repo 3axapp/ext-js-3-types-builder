@@ -189,7 +189,7 @@ declare namespace Ext {
     y?: number,
   }
 
-  interface IButtonEvents extends Record<string, (...args: any[]) => boolean | void> {
+  interface IButtonEvents extends globalThis.Record<string, (...args: any[]) => boolean | void> {
     added: (thisCmp: Button, ownerCt: Ext.Container, index: number) => boolean | void;
     afterrender: (thisCmp: Button) => boolean | void;
     beforedestroy: (thisCmp: Button) => boolean | void;

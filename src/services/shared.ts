@@ -1,6 +1,7 @@
 export interface ClassData {
   namespace?: string,
   name: string,
+  types?: {name: string, extends?: string, default?: string}[],
   extends?: string,
   constructorMethod: ClassConstructor,
   properties: ClassProperties,

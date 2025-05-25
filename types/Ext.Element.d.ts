@@ -316,7 +316,7 @@ declare namespace Ext {
     public static select(selector: string | unknown[], root?: HTMLElement | string): Ext.CompositeElementLite | Ext.CompositeElement;
   }
 
-  interface IElementEvents extends Record<string, (...args: any[]) => boolean | void> {
+  interface IElementEvents extends globalThis.Record<string, (...args: any[]) => boolean | void> {
     DOMActivate: (e: Ext.EventObject, t: HTMLElement, o: object) => boolean | void;
     DOMAttrModified: (e: Ext.EventObject, t: HTMLElement, o: object) => boolean | void;
     DOMCharacterDataModified: (e: Ext.EventObject, t: HTMLElement, o: object) => boolean | void;

@@ -153,7 +153,7 @@ declare namespace Ext {
     y?: number,
   }
 
-  interface IContainerEvents extends Record<string, (...args: any[]) => boolean | void> {
+  interface IContainerEvents extends globalThis.Record<string, (...args: any[]) => boolean | void> {
     add: (thisCmp: Container, component: Ext.Component, index: number) => boolean | void;
     added: (thisCmp: Container, ownerCt: Ext.Container, index: number) => boolean | void;
     afterlayout: (thisCmp: Container, layout: Ext.layout.ContainerLayout) => boolean | void;

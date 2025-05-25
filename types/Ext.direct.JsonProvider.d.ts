@@ -27,7 +27,7 @@ declare namespace Ext.direct {
     type?: string,
   }
 
-  interface IJsonProviderEvents extends Record<string, (...args: any[]) => boolean | void> {
+  interface IJsonProviderEvents extends globalThis.Record<string, (...args: any[]) => boolean | void> {
     connect: (provider: Ext.direct.Provider) => boolean | void;
     data: (provider: Ext.direct.Provider, e: event) => boolean | void;
     disconnect: (provider: Ext.direct.Provider) => boolean | void;

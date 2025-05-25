@@ -139,7 +139,7 @@ declare namespace Ext.grid {
     stateEvents?: unknown[],
     stateId?: string,
     stateful?: boolean,
-    store?: Ext.data.Store,
+    store?: Ext.data.Store<R>,
     stripeRows?: boolean,
     style?: string,
     tabTip?: string,
@@ -162,7 +162,7 @@ declare namespace Ext.grid {
     y?: number,
   }
 
-  interface IPivotGridEvents extends Record<string, (...args: any[]) => boolean | void> {
+  interface IPivotGridEvents extends globalThis.Record<string, (...args: any[]) => boolean | void> {
     activate: (p: Ext.Panel) => boolean | void;
     added: (thisCmp: PivotGrid, ownerCt: Ext.Container, index: number) => boolean | void;
     afterrender: (thisCmp: PivotGrid) => boolean | void;
@@ -215,7 +215,7 @@ declare namespace Ext.grid {
     mouseover: (e: Ext.EventObject) => boolean | void;
     mouseup: (e: Ext.EventObject) => boolean | void;
     move: (thisCmp: PivotGrid, x: number, y: number) => boolean | void;
-    reconfigure: (thisCmp: PivotGrid, store: Ext.data.Store, colModel: Ext.grid.ColumnModel) => boolean | void;
+    reconfigure: (thisCmp: PivotGrid, store: Ext.data.Store<R>, colModel: Ext.grid.ColumnModel) => boolean | void;
     removed: (thisCmp: PivotGrid, ownerCt: Ext.Container) => boolean | void;
     render: (thisCmp: PivotGrid) => boolean | void;
     resize: (thisCmp: PivotGrid, adjWidth: number, adjHeight: number, rawWidth: number, rawHeight: number) => boolean | void;

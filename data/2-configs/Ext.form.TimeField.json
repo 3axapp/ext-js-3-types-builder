@@ -749,7 +749,7 @@
       {
         "name": "store?",
         "type": [
-          "Ext.data.Store",
+          "Ext.data.Store<R>",
           "unknown[]"
         ],
         "comment": ""

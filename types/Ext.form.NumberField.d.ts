@@ -135,7 +135,7 @@ declare namespace Ext.form {
     y?: number,
   }
 
-  interface INumberFieldEvents extends Record<string, (...args: any[]) => boolean | void> {
+  interface INumberFieldEvents extends globalThis.Record<string, (...args: any[]) => boolean | void> {
     added: (thisCmp: NumberField, ownerCt: Ext.Container, index: number) => boolean | void;
     afterrender: (thisCmp: NumberField) => boolean | void;
     autosize: (thisCmp: NumberField, width: number) => boolean | void;

@@ -21,7 +21,7 @@ declare namespace Ext.grid {
 
     public getCount(): number;
 
-    public getSelected(): Ext.data.Record;
+    public getSelected(): Ext.data.Record<R>;
 
     public getSelections(): unknown[];
 
@@ -39,7 +39,7 @@ declare namespace Ext.grid {
 
     public isIdSelected(id: string): boolean;
 
-    public isSelected(index: number | Ext.data.Record): boolean;
+    public isSelected(index: number | Ext.data.Record<R>): boolean;
 
     public on<T extends IRowSelectionModelEvents = IRowSelectionModelEvents, E extends keyof T = keyof T>(eventName: E, handler: T[E], scope?: object, options?: object): void;
 
@@ -84,9 +84,9 @@ declare namespace Ext.grid {
     singleSelect?: boolean,
   }
 
-  interface IRowSelectionModelEvents extends Record<string, (...args: any[]) => boolean | void> {
-    beforerowselect: (thisCmp: RowSelectionModel, rowIndex: number, keepExisting: boolean, record: Ext.data.Record) => boolean | void;
-    rowdeselect: (thisCmp: RowSelectionModel, rowIndex: number, record: Ext.data.Record) => boolean | void;
+  interface IRowSelectionModelEvents extends globalThis.Record<string, (...args: any[]) => boolean | void> {
+    beforerowselect: (thisCmp: RowSelectionModel, rowIndex: number, keepExisting: boolean, record: Ext.data.Record<R>) => boolean | void;
+    rowdeselect: (thisCmp: RowSelectionModel, rowIndex: number, record: Ext.data.Record<R>) => boolean | void;
     rowselect: (thisCmp: RowSelectionModel, rowIndex: number, r: Ext.data.Record) => boolean | void;
     selectionchange: (thisCmp: RowSelectionModel) => boolean | void;
   }

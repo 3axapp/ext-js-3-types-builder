@@ -53,7 +53,7 @@ declare namespace Ext.grid {
 
     private destroy(): void;
 
-    private doRender(columns: unknown[], records: unknown[], store: Ext.data.Store, startRow: number, colCount: number, stripe: boolean): string;
+    private doRender(columns: unknown[], records: unknown[], store: Ext.data.Store<R>, startRow: number, colCount: number, stripe: boolean): string;
 
     private ensureVisible(row: object, col: object, hscroll: object): void;
 
@@ -109,7 +109,7 @@ declare namespace Ext.grid {
 
     public getRow(index: number): HTMLElement;
 
-    public getRowClass(record: Ext.data.Record, index: number, rowParams: object, store: Store): string;
+    public getRowClass(record: Ext.data.Record<R>, index: number, rowParams: object, store: Store): string;
 
     private getRows(): void;
 
@@ -139,7 +139,7 @@ declare namespace Ext.grid {
 
     private init(grid: object): void;
 
-    private initData(newStore: Ext.data.Store, newColModel: Ext.grid.ColumnModel): void;
+    private initData(newStore: Ext.data.Store<R>, newColModel: Ext.grid.ColumnModel): void;
 
     private initElements(): void;
 
@@ -290,7 +290,7 @@ declare namespace Ext.grid {
     sortDescText?: string,
   }
 
-  interface IGridViewEvents extends Record<string, (...args: any[]) => boolean | void> {
+  interface IGridViewEvents extends globalThis.Record<string, (...args: any[]) => boolean | void> {
     beforerefresh: (view: Ext.grid.GridView) => boolean | void;
     beforerowremoved: (view: Ext.grid.GridView, rowIndex: number, record: Ext.data.Record) => boolean | void;
     beforerowsinserted: (view: Ext.grid.GridView, firstRow: number, lastRow: number) => boolean | void;

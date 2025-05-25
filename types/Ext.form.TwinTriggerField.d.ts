@@ -126,7 +126,7 @@ declare namespace Ext.form {
     y?: number,
   }
 
-  interface ITwinTriggerFieldEvents extends Record<string, (...args: any[]) => boolean | void> {
+  interface ITwinTriggerFieldEvents extends globalThis.Record<string, (...args: any[]) => boolean | void> {
     added: (thisCmp: TwinTriggerField, ownerCt: Ext.Container, index: number) => boolean | void;
     afterrender: (thisCmp: TwinTriggerField) => boolean | void;
     autosize: (thisCmp: TwinTriggerField, width: number) => boolean | void;

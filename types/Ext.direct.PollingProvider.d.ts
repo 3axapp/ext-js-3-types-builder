@@ -34,7 +34,7 @@ declare namespace Ext.direct {
     url?: string | Function,
   }
 
-  interface IPollingProviderEvents extends Record<string, (...args: any[]) => boolean | void> {
+  interface IPollingProviderEvents extends globalThis.Record<string, (...args: any[]) => boolean | void> {
     beforepoll: (thisCmp: PollingProvider) => boolean | void;
     connect: (provider: Ext.direct.Provider) => boolean | void;
     data: (provider: Ext.direct.Provider, e: event) => boolean | void;

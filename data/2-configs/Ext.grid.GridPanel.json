@@ -688,7 +688,7 @@
       {
         "name": "store?",
         "type": [
-          "Ext.data.Store"
+          "Ext.data.Store<R>"
         ],
         "comment": ""
       },
@@ -967,7 +967,7 @@
     {
       "name": "getStore",
       "returnType": [
-        "Ext.data.Store"
+        "Ext.data.Store<R>"
       ],
       "visibility": "public",
       "arguments": []
@@ -1169,7 +1169,7 @@
           "name": "store",
           "comment": "",
           "type": [
-            "Ext.data.Store"
+            "Ext.data.Store<R>"
           ]
         },
         {
@@ -2289,7 +2289,7 @@
           "name": "store",
           "comment": "",
           "type": [
-            "Ext.data.Store"
+            "Ext.data.Store<R>"
           ]
         },
         {

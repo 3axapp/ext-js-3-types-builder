@@ -235,7 +235,7 @@ declare namespace Ext {
     y?: number,
   }
 
-  interface IWindowEvents extends Record<string, (...args: any[]) => boolean | void> {
+  interface IWindowEvents extends globalThis.Record<string, (...args: any[]) => boolean | void> {
     activate: (thisCmp: Window) => boolean | void;
     add: (thisCmp: Window, component: Ext.Component, index: number) => boolean | void;
     added: (thisCmp: Window, ownerCt: Ext.Container, index: number) => boolean | void;

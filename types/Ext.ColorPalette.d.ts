@@ -73,7 +73,7 @@ declare namespace Ext {
     xtype?: string,
   }
 
-  interface IColorPaletteEvents extends Record<string, (...args: any[]) => boolean | void> {
+  interface IColorPaletteEvents extends globalThis.Record<string, (...args: any[]) => boolean | void> {
     added: (thisCmp: ColorPalette, ownerCt: Ext.Container, index: number) => boolean | void;
     afterrender: (thisCmp: ColorPalette) => boolean | void;
     beforedestroy: (thisCmp: ColorPalette) => boolean | void;

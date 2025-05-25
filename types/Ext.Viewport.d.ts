@@ -78,7 +78,7 @@ declare namespace Ext {
     y?: number,
   }
 
-  interface IViewportEvents extends Record<string, (...args: any[]) => boolean | void> {
+  interface IViewportEvents extends globalThis.Record<string, (...args: any[]) => boolean | void> {
     add: (thisCmp: Viewport, component: Ext.Component, index: number) => boolean | void;
     added: (thisCmp: Viewport, ownerCt: Ext.Container, index: number) => boolean | void;
     afterlayout: (thisCmp: Viewport, layout: Ext.layout.ContainerLayout) => boolean | void;

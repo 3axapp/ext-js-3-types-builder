@@ -11,7 +11,7 @@ declare namespace Ext {
 
     public addListener<T extends IPagingToolbarEvents = IPagingToolbarEvents, E extends keyof T = keyof T>(eventName: E, handler: T[E], scope?: object, options?: object): void;
 
-    public bind(store: Ext.data.Store): void;
+    public bind(store: Ext.data.Store<R>): void;
 
     public bindStore(store: Store, initial?: boolean): void;
 
@@ -37,7 +37,7 @@ declare namespace Ext {
 
     public un<T extends IPagingToolbarEvents = IPagingToolbarEvents, E extends keyof T = keyof T>(eventName: E, handler: T[E], scope?: object): void;
 
-    public unbind(store: Ext.data.Store): void;
+    public unbind(store: Ext.data.Store<R>): void;
   }
 
   interface IPagingToolbarConfig {
@@ -113,7 +113,7 @@ declare namespace Ext {
     stateEvents?: unknown[],
     stateId?: string,
     stateful?: boolean,
-    store?: Ext.data.Store,
+    store?: Ext.data.Store<R>,
     style?: string,
     tabTip?: string,
     tpl?: unknown,
@@ -124,7 +124,7 @@ declare namespace Ext {
     y?: number,
   }
 
-  interface IPagingToolbarEvents extends Record<string, (...args: any[]) => boolean | void> {
+  interface IPagingToolbarEvents extends globalThis.Record<string, (...args: any[]) => boolean | void> {
     add: (thisCmp: PagingToolbar, component: Ext.Component, index: number) => boolean | void;
     added: (thisCmp: PagingToolbar, ownerCt: Ext.Container, index: number) => boolean | void;
     afterlayout: (thisCmp: PagingToolbar, layout: Ext.layout.ContainerLayout) => boolean | void;

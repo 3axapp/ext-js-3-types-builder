@@ -466,7 +466,7 @@
           "name": "store",
           "comment": "",
           "type": [
-            "Ext.data.Store"
+            "Ext.data.Store<R>"
           ]
         },
         {
@@ -936,7 +936,7 @@
           "name": "record",
           "comment": "",
           "type": [
-            "Ext.data.Record"
+            "Ext.data.Record<R>"
           ]
         },
         {
@@ -1154,7 +1154,7 @@
           "name": "newStore",
           "comment": "",
           "type": [
-            "Ext.data.Store"
+            "Ext.data.Store<R>"
           ]
         },
         {

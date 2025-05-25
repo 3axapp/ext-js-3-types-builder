@@ -102,7 +102,7 @@ declare namespace Ext.list {
     stateEvents?: unknown[],
     stateId?: string,
     stateful?: boolean,
-    store?: Ext.data.Store,
+    store?: Ext.data.Store<R>,
     style?: string,
     tabTip?: string,
     tpl?: string | unknown[],
@@ -114,7 +114,7 @@ declare namespace Ext.list {
     y?: number,
   }
 
-  interface IListViewEvents extends Record<string, (...args: any[]) => boolean | void> {
+  interface IListViewEvents extends globalThis.Record<string, (...args: any[]) => boolean | void> {
     added: (thisCmp: ListView, ownerCt: Ext.Container, index: number) => boolean | void;
     afterrender: (thisCmp: ListView) => boolean | void;
     beforeclick: (thisCmp: ListView, index: number, node: HTMLElement, e: Ext.EventObject) => boolean | void;

@@ -79,7 +79,7 @@ declare namespace Ext.form {
     y?: number,
   }
 
-  interface ILabelEvents extends Record<string, (...args: any[]) => boolean | void> {
+  interface ILabelEvents extends globalThis.Record<string, (...args: any[]) => boolean | void> {
     added: (thisCmp: Label, ownerCt: Ext.Container, index: number) => boolean | void;
     afterrender: (thisCmp: Label) => boolean | void;
     beforedestroy: (thisCmp: Label) => boolean | void;

@@ -195,7 +195,7 @@ declare namespace Ext.tree {
     y?: number,
   }
 
-  interface ITreePanelEvents extends Record<string, (...args: any[]) => boolean | void> {
+  interface ITreePanelEvents extends globalThis.Record<string, (...args: any[]) => boolean | void> {
     activate: (p: Ext.Panel) => boolean | void;
     added: (thisCmp: TreePanel, ownerCt: Ext.Container, index: number) => boolean | void;
     afterlayout: (thisCmp: TreePanel, layout: Ext.layout.ContainerLayout) => boolean | void;

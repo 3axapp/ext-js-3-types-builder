@@ -117,7 +117,7 @@ declare namespace Ext.form {
     y?: number,
   }
 
-  interface IFieldSetEvents extends Record<string, (...args: any[]) => boolean | void> {
+  interface IFieldSetEvents extends globalThis.Record<string, (...args: any[]) => boolean | void> {
     add: (thisCmp: FieldSet, component: Ext.Component, index: number) => boolean | void;
     added: (thisCmp: FieldSet, ownerCt: Ext.Container, index: number) => boolean | void;
     afterlayout: (thisCmp: FieldSet, layout: Ext.layout.ContainerLayout) => boolean | void;

@@ -168,7 +168,7 @@ declare namespace Ext.form {
     y?: number,
   }
 
-  interface IDateFieldEvents extends Record<string, (...args: any[]) => boolean | void> {
+  interface IDateFieldEvents extends globalThis.Record<string, (...args: any[]) => boolean | void> {
     added: (thisCmp: DateField, ownerCt: Ext.Container, index: number) => boolean | void;
     afterrender: (thisCmp: DateField) => boolean | void;
     autosize: (thisCmp: DateField, width: number) => boolean | void;

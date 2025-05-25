@@ -133,7 +133,7 @@ declare namespace Ext {
     xtype?: string,
   }
 
-  interface IComponentEvents extends Record<string, (...args: any[]) => boolean | void> {
+  interface IComponentEvents extends globalThis.Record<string, (...args: any[]) => boolean | void> {
     added: (thisCmp: Component, ownerCt: Ext.Container, index: number) => boolean | void;
     afterrender: (thisCmp: Component) => boolean | void;
     beforedestroy: (thisCmp: Component) => boolean | void;

@@ -71,7 +71,7 @@ declare namespace Ext.grid {
     xtype?: string,
   }
 
-  interface IPivotAxisEvents extends Record<string, (...args: any[]) => boolean | void> {
+  interface IPivotAxisEvents extends globalThis.Record<string, (...args: any[]) => boolean | void> {
     added: (thisCmp: PivotAxis, ownerCt: Ext.Container, index: number) => boolean | void;
     afterrender: (thisCmp: PivotAxis) => boolean | void;
     beforedestroy: (thisCmp: PivotAxis) => boolean | void;

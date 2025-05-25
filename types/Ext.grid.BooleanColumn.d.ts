@@ -45,7 +45,7 @@ declare namespace Ext.grid {
     xtype?: string,
   }
 
-  interface IBooleanColumnEvents extends Record<string, (...args: any[]) => boolean | void> {
+  interface IBooleanColumnEvents extends globalThis.Record<string, (...args: any[]) => boolean | void> {
     click: (thisCmp: BooleanColumn, The: Grid, rowIndex: number, e: Ext.EventObject) => boolean | void;
     contextmenu: (thisCmp: BooleanColumn, The: Grid, rowIndex: number, e: Ext.EventObject) => boolean | void;
     dblclick: (thisCmp: BooleanColumn, The: Grid, rowIndex: number, e: Ext.EventObject) => boolean | void;

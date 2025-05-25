@@ -50,8 +50,19 @@ export class Printer
     }
 
     const indent2 = indent.inc();
-    let result    = `\n${indent}interface ${this.getEventInterfaceName()} extends Record<string, (...args: any[]) => boolean | void> {\n`;
+    let result    = `\n${indent}interface ${this.getEventInterfaceName()}`;
 
+    if (this.data.types) {
+      result += `<${this.data.types.map(i => {
+        let type = i.name;
+        if (i.extends) {
+          type += ` extends ${i.extends}`;
+        }
+        return type;
+      }).join(', ')}>`;
+    }
+
+    result += ` extends globalThis.Record<string, (...args: any[]) => boolean | void> {\n`;
 
     for (let event of this.data.events) {
       result += `${indent2}${event.name}: ${this.printEventListener(event)};\n`
@@ -63,6 +74,20 @@ export class Printer
   private printClass(indent: Indent): string
   {
     let result = `${indent}class ${this.data.name}`;
+
+    if (this.data.types) {
+      result += `<${this.data.types.map(i =>
+      {
+        let type = i.name;
+        if (i.extends) {
+          type += ` extends ${i.extends}`;
+        }
+        if (i.default) {
+          type += ` = ${i.default}`;
+        }
+        return type;
+      }).join(', ')}>`;
+    }
 
     if (this.data.extends) {
       result += ` extends ${this.data.extends}`;

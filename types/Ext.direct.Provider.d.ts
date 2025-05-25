@@ -29,7 +29,7 @@ declare namespace Ext.direct {
     type?: string,
   }
 
-  interface IProviderEvents extends Record<string, (...args: any[]) => boolean | void> {
+  interface IProviderEvents extends globalThis.Record<string, (...args: any[]) => boolean | void> {
     connect: (provider: Ext.direct.Provider) => boolean | void;
     data: (provider: Ext.direct.Provider, e: event) => boolean | void;
     disconnect: (provider: Ext.direct.Provider) => boolean | void;

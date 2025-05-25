@@ -89,7 +89,7 @@ declare namespace Ext.util {
     listeners?: object,
   }
 
-  interface IMixedCollectionEvents extends Record<string, (...args: any[]) => boolean | void> {
+  interface IMixedCollectionEvents extends globalThis.Record<string, (...args: any[]) => boolean | void> {
     add: (index: number, o: object, key: string) => boolean | void;
     clear: () => boolean | void;
     remove: (o: object, key?: string) => boolean | void;

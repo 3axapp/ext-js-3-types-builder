@@ -23,9 +23,9 @@ declare namespace Ext.data {
 
     public isData(data: object): boolean;
 
-    public realize(record: Ext.data.Record | Ext.data.Record[], data: object | Object[]): void;
+    public realize(record: Ext.data.Record<R> | Ext.data.Record<R>[], data: object | Object[]): void;
 
-    public update(rs: Ext.data.Record | Ext.data.Record[], data: object | Object[]): void;
+    public update(rs: Ext.data.Record<R> | Ext.data.Record<R>[], data: object | Object[]): void;
   }
 
   interface IDataReaderConfig {

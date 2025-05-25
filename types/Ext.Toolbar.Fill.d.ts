@@ -78,7 +78,7 @@ declare namespace Ext.Toolbar {
     y?: number,
   }
 
-  interface IFillEvents extends Record<string, (...args: any[]) => boolean | void> {
+  interface IFillEvents extends globalThis.Record<string, (...args: any[]) => boolean | void> {
     added: (thisCmp: Fill, ownerCt: Ext.Container, index: number) => boolean | void;
     afterrender: (thisCmp: Fill) => boolean | void;
     beforedestroy: (thisCmp: Fill) => boolean | void;

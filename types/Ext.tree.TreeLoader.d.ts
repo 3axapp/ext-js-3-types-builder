@@ -36,7 +36,7 @@ declare namespace Ext.tree {
     url?: string,
   }
 
-  interface ITreeLoaderEvents extends Record<string, (...args: any[]) => boolean | void> {
+  interface ITreeLoaderEvents extends globalThis.Record<string, (...args: any[]) => boolean | void> {
     beforeload: (This: object, node: object, callback: object) => boolean | void;
     load: (This: object, node: object, response: object) => boolean | void;
     loadexception: (This: object, node: object, response: object) => boolean | void;

@@ -140,7 +140,7 @@ declare namespace Ext.slider {
     y?: number,
   }
 
-  interface ITipEvents extends Record<string, (...args: any[]) => boolean | void> {
+  interface ITipEvents extends globalThis.Record<string, (...args: any[]) => boolean | void> {
     activate: (p: Ext.Panel) => boolean | void;
     add: (thisCmp: Tip, component: Ext.Component, index: number) => boolean | void;
     added: (thisCmp: Tip, ownerCt: Ext.Container, index: number) => boolean | void;

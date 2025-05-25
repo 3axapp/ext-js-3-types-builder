@@ -91,7 +91,7 @@ declare namespace Ext.slider {
     y?: number,
   }
 
-  interface ISingleSliderEvents extends Record<string, (...args: any[]) => boolean | void> {
+  interface ISingleSliderEvents extends globalThis.Record<string, (...args: any[]) => boolean | void> {
     added: (thisCmp: SingleSlider, ownerCt: Ext.Container, index: number) => boolean | void;
     afterrender: (thisCmp: SingleSlider) => boolean | void;
     beforechange: (slider: Ext.slider.MultiSlider, newValue: number, oldValue: number) => boolean | void;

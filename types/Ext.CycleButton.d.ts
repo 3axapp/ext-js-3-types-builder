@@ -114,7 +114,7 @@ declare namespace Ext {
     y?: number,
   }
 
-  interface ICycleButtonEvents extends Record<string, (...args: any[]) => boolean | void> {
+  interface ICycleButtonEvents extends globalThis.Record<string, (...args: any[]) => boolean | void> {
     added: (thisCmp: CycleButton, ownerCt: Ext.Container, index: number) => boolean | void;
     afterrender: (thisCmp: CycleButton) => boolean | void;
     arrowclick: (thisCmp: CycleButton, e: EventObject) => boolean | void;

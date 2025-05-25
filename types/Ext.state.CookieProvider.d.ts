@@ -34,7 +34,7 @@ declare namespace Ext.state {
     secure?: boolean,
   }
 
-  interface ICookieProviderEvents extends Record<string, (...args: any[]) => boolean | void> {
+  interface ICookieProviderEvents extends globalThis.Record<string, (...args: any[]) => boolean | void> {
     statechange: (thisCmp: CookieProvider, key: string, value: string) => boolean | void;
   }
 }

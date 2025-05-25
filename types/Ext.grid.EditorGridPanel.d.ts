@@ -144,7 +144,7 @@ declare namespace Ext.grid {
     stateEvents?: unknown[],
     stateId?: string,
     stateful?: boolean,
-    store?: Ext.data.Store,
+    store?: Ext.data.Store<R>,
     stripeRows?: boolean,
     style?: string,
     tabTip?: string,
@@ -166,7 +166,7 @@ declare namespace Ext.grid {
     y?: number,
   }
 
-  interface IEditorGridPanelEvents extends Record<string, (...args: any[]) => boolean | void> {
+  interface IEditorGridPanelEvents extends globalThis.Record<string, (...args: any[]) => boolean | void> {
     activate: (p: Ext.Panel) => boolean | void;
     added: (thisCmp: EditorGridPanel, ownerCt: Ext.Container, index: number) => boolean | void;
     afteredit: (e: object) => boolean | void;
@@ -221,7 +221,7 @@ declare namespace Ext.grid {
     mouseover: (e: Ext.EventObject) => boolean | void;
     mouseup: (e: Ext.EventObject) => boolean | void;
     move: (thisCmp: EditorGridPanel, x: number, y: number) => boolean | void;
-    reconfigure: (thisCmp: EditorGridPanel, store: Ext.data.Store, colModel: Ext.grid.ColumnModel) => boolean | void;
+    reconfigure: (thisCmp: EditorGridPanel, store: Ext.data.Store<R>, colModel: Ext.grid.ColumnModel) => boolean | void;
     removed: (thisCmp: EditorGridPanel, ownerCt: Ext.Container) => boolean | void;
     render: (thisCmp: EditorGridPanel) => boolean | void;
     resize: (thisCmp: EditorGridPanel, adjWidth: number, adjHeight: number, rawWidth: number, rawHeight: number) => boolean | void;

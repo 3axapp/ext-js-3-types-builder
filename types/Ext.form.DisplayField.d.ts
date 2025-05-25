@@ -100,7 +100,7 @@ declare namespace Ext.form {
     y?: number,
   }
 
-  interface IDisplayFieldEvents extends Record<string, (...args: any[]) => boolean | void> {
+  interface IDisplayFieldEvents extends globalThis.Record<string, (...args: any[]) => boolean | void> {
     added: (thisCmp: DisplayField, ownerCt: Ext.Container, index: number) => boolean | void;
     afterrender: (thisCmp: DisplayField) => boolean | void;
     beforedestroy: (thisCmp: DisplayField) => boolean | void;
