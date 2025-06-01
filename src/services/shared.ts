@@ -1,6 +1,7 @@
 export interface ClassData {
   namespace?: string,
   name: string,
+  singleton?: boolean,
   types?: {name: string, extends?: string, default?: string}[],
   extends?: string,
   constructorMethod: ClassConstructor,
@@ -48,6 +49,7 @@ export interface ExtClassData {
   name: string,
   extends: string,
   html: string,
+  singleton?: boolean,
   members: ExtClassMember[],
 }
 

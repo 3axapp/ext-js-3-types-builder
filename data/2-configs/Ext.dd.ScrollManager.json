@@ -1,6 +1,7 @@
 {
   "name": "ScrollManager",
   "namespace": "Ext.dd",
+  "singleton": true,
   "constructorMethod": null,
   "properties": [
     {

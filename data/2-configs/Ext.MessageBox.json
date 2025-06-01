@@ -1,6 +1,7 @@
 {
   "name": "MessageBox",
   "namespace": "Ext",
+  "singleton": true,
   "constructorMethod": null,
   "properties": [
     {

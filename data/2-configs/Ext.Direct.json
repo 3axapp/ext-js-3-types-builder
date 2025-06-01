@@ -2,6 +2,7 @@
   "name": "Direct",
   "namespace": "Ext",
   "extends": "Ext.util.Observable",
+  "singleton": true,
   "constructorMethod": {
     "config": [
       {

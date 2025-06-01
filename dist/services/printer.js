@@ -49,6 +49,9 @@ export class Printer {
         return `${result}${indent}}\n`;
     }
     printClass(indent) {
+        if (this.data.singleton) {
+            return this.printSingleton(indent);
+        }
         let result = `${indent}class ${this.data.name}`;
         if (this.data.types) {
             result += `<${this.data.types.map(i => {
@@ -79,9 +82,15 @@ export class Printer {
         return result;
     }
     printProperty(property, indent) {
-        let result = [property.visibility || 'public'];
-        if (property.static) {
-            result.push('static');
+        let result = [];
+        if (this.data.singleton) {
+            result.push('const');
+        }
+        else {
+            result.push(property.visibility || 'public');
+            if (property.static) {
+                result.push('static');
+            }
         }
         result.push(`${property.name}:`);
         result.push(`${property.type.join(' | ')};\n`);
@@ -108,11 +117,17 @@ export class Printer {
         return result;
     }
     printMethod(method, indent) {
-        let result = [method.visibility || 'public'];
-        if (method.static) {
-            result.push('static');
+        let result = [];
+        if (this.data.singleton) {
+            result.push(`function ${method.name}(${this.printArguments(method.arguments)}): `);
         }
-        result.push(`${method.name}(${this.printArguments(method.arguments)}):`);
+        else {
+            result.push(method.visibility || 'public');
+            if (method.static) {
+                result.push('static');
+            }
+            result.push(`${method.name}(${this.printArguments(method.arguments)}):`);
+        }
         result.push(`${method.returnType.join(' | ') || 'void'};\n`);
         return `\n${indent}${result.join(' ')}`;
     }
@@ -128,5 +143,12 @@ export class Printer {
     }
     getEventInterfaceName() {
         return `I${this.data.name}Events`;
+    }
+    printSingleton(indent) {
+        let result = `${indent}namespace ${this.data.name}`;
+        result += ' {\n';
+        result += this.printProperties(indent.inc());
+        result += this.printMethods(indent.inc());
+        return `${result}${indent}}\n`;
     }
 }

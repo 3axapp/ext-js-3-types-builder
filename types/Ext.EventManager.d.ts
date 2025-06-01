@@ -1,208 +1,208 @@
 declare namespace Ext {
-  class EventManager {
+  namespace EventManager {
 
-    public A: number;
+    const A: number;
 
-    public ALT: number;
+    const ALT: number;
 
-    public B: number;
+    const B: number;
 
-    public BACKSPACE: number;
+    const BACKSPACE: number;
 
-    public C: number;
+    const C: number;
 
-    public CAPS_LOCK: number;
+    const CAPS_LOCK: number;
 
-    public CONTEXT_MENU: number;
+    const CONTEXT_MENU: number;
 
-    public CTRL: number;
+    const CTRL: number;
 
-    public D: number;
+    const D: number;
 
-    public DELETE: number;
+    const DELETE: number;
 
-    public DOWN: number;
+    const DOWN: number;
 
-    public E: number;
+    const E: number;
 
-    public EIGHT: number;
+    const EIGHT: number;
 
-    public END: number;
+    const END: number;
 
-    public ENTER: number;
+    const ENTER: number;
 
-    public ESC: number;
+    const ESC: number;
 
-    public F: number;
+    const F: number;
 
-    public F1: number;
+    const F1: number;
 
-    public F10: number;
+    const F10: number;
 
-    public F11: number;
+    const F11: number;
 
-    public F12: number;
+    const F12: number;
 
-    public F2: number;
+    const F2: number;
 
-    public F3: number;
+    const F3: number;
 
-    public F4: number;
+    const F4: number;
 
-    public F5: number;
+    const F5: number;
 
-    public F6: number;
+    const F6: number;
 
-    public F7: number;
+    const F7: number;
 
-    public F8: number;
+    const F8: number;
 
-    public F9: number;
+    const F9: number;
 
-    public FIVE: number;
+    const FIVE: number;
 
-    public FOUR: number;
+    const FOUR: number;
 
-    public G: number;
+    const G: number;
 
-    public H: number;
+    const H: number;
 
-    public HOME: number;
+    const HOME: number;
 
-    public I: number;
+    const I: number;
 
-    public INSERT: number;
+    const INSERT: number;
 
-    public J: number;
+    const J: number;
 
-    public K: number;
+    const K: number;
 
-    public L: number;
+    const L: number;
 
-    public LEFT: number;
+    const LEFT: number;
 
-    public M: number;
+    const M: number;
 
-    public N: number;
+    const N: number;
 
-    public NINE: number;
+    const NINE: number;
 
-    public NUM_CENTER: number;
+    const NUM_CENTER: number;
 
-    public NUM_DIVISION: number;
+    const NUM_DIVISION: number;
 
-    public NUM_EIGHT: number;
+    const NUM_EIGHT: number;
 
-    public NUM_FIVE: number;
+    const NUM_FIVE: number;
 
-    public NUM_FOUR: number;
+    const NUM_FOUR: number;
 
-    public NUM_MINUS: number;
+    const NUM_MINUS: number;
 
-    public NUM_MULTIPLY: number;
+    const NUM_MULTIPLY: number;
 
-    public NUM_NINE: number;
+    const NUM_NINE: number;
 
-    public NUM_ONE: number;
+    const NUM_ONE: number;
 
-    public NUM_PERIOD: number;
+    const NUM_PERIOD: number;
 
-    public NUM_PLUS: number;
+    const NUM_PLUS: number;
 
-    public NUM_SEVEN: number;
+    const NUM_SEVEN: number;
 
-    public NUM_SIX: number;
+    const NUM_SIX: number;
 
-    public NUM_THREE: number;
+    const NUM_THREE: number;
 
-    public NUM_TWO: number;
+    const NUM_TWO: number;
 
-    public NUM_ZERO: number;
+    const NUM_ZERO: number;
 
-    public O: number;
+    const O: number;
 
-    public ONE: number;
+    const ONE: number;
 
-    public P: number;
+    const P: number;
 
-    public PAGE_DOWN: number;
+    const PAGE_DOWN: number;
 
-    public PAGE_UP: number;
+    const PAGE_UP: number;
 
-    public PAUSE: number;
+    const PAUSE: number;
 
-    public PRINT_SCREEN: number;
+    const PRINT_SCREEN: number;
 
-    public Q: number;
+    const Q: number;
 
-    public R: number;
+    const R: number;
 
-    public RETURN: number;
+    const RETURN: number;
 
-    public RIGHT: number;
+    const RIGHT: number;
 
-    public S: number;
+    const S: number;
 
-    public SEVEN: number;
+    const SEVEN: number;
 
-    public SHIFT: number;
+    const SHIFT: number;
 
-    public SIX: number;
+    const SIX: number;
 
-    public SPACE: number;
+    const SPACE: number;
 
-    public T: number;
+    const T: number;
 
-    public TAB: number;
+    const TAB: number;
 
-    public THREE: number;
+    const THREE: number;
 
-    public TWO: number;
+    const TWO: number;
 
-    public U: number;
+    const U: number;
 
-    public UP: number;
+    const UP: number;
 
-    public V: number;
+    const V: number;
 
-    public W: number;
+    const W: number;
 
-    public X: number;
+    const X: number;
 
-    public Y: number;
+    const Y: number;
 
-    public Z: number;
+    const Z: number;
 
-    public ZERO: number;
+    const ZERO: number;
 
-    public fireDocReady: object;
+    const fireDocReady: object;
 
-    public ieDeferSrc: boolean;
+    const ieDeferSrc: boolean;
 
-    public textResizeInterval: number;
+    const textResizeInterval: number;
 
-    public addListener(el: string | HTMLElement, eventName: string, handler: Function, scope?: object, options?: object): void;
+    function addListener(el: string | HTMLElement, eventName: string, handler: Function, scope?: object, options?: object):  void;
 
-    public checkReadyState(e: object): boolean;
+    function checkReadyState(e: object):  boolean;
 
-    public hasModifier(): boolean;
+    function hasModifier():  boolean;
 
-    private isNavKeyPress(): void;
+    function isNavKeyPress():  void;
 
-    public on(el: string | HTMLElement, eventName: string, handler: Function, scope?: object, options?: object): void;
+    function on(el: string | HTMLElement, eventName: string, handler: Function, scope?: object, options?: object):  void;
 
-    public onDocumentReady(fn: Function, scope?: object, options?: boolean): void;
+    function onDocumentReady(fn: Function, scope?: object, options?: boolean):  void;
 
-    public onTextResize(fn: Function, scope: object, options: boolean): void;
+    function onTextResize(fn: Function, scope: object, options: boolean):  void;
 
-    public onWindowResize(fn: Function, scope: object, options: boolean): void;
+    function onWindowResize(fn: Function, scope: object, options: boolean):  void;
 
-    public removeAll(el: string | HTMLElement): void;
+    function removeAll(el: string | HTMLElement):  void;
 
-    public removeListener(el: string | HTMLElement, eventName: string, fn: Function, scope: object): void;
+    function removeListener(el: string | HTMLElement, eventName: string, fn: Function, scope: object):  void;
 
-    public removeResizeListener(fn: Function, scope: object): void;
+    function removeResizeListener(fn: Function, scope: object):  void;
 
-    public un(el: string | HTMLElement, eventName: string, fn: Function, scope: object): void;
+    function un(el: string | HTMLElement, eventName: string, fn: Function, scope: object):  void;
   }
 }

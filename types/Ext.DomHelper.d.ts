@@ -1,28 +1,28 @@
 declare namespace Ext {
-  class DomHelper {
+  namespace DomHelper {
 
-    public lastIndex: number;
+    const lastIndex: number;
 
-    public useDom: boolean;
+    const useDom: boolean;
 
-    public append(el: unknown, o: object | string, returnElement?: boolean): HTMLElement | Ext.Element;
+    function append(el: unknown, o: object | string, returnElement?: boolean):  HTMLElement | Ext.Element;
 
-    public applyStyles(el: string | HTMLElement, styles: string | object | Function): void;
+    function applyStyles(el: string | HTMLElement, styles: string | object | Function):  void;
 
-    public createDom(o: object | string): HTMLElement;
+    function createDom(o: object | string):  HTMLElement;
 
-    public createTemplate(o: object): Ext.Template;
+    function createTemplate(o: object):  Ext.Template;
 
-    public insertAfter(el: unknown, o: object, returnElement?: boolean): HTMLElement | Ext.Element;
+    function insertAfter(el: unknown, o: object, returnElement?: boolean):  HTMLElement | Ext.Element;
 
-    public insertBefore(el: unknown, o: object | string, returnElement?: boolean): HTMLElement | Ext.Element;
+    function insertBefore(el: unknown, o: object | string, returnElement?: boolean):  HTMLElement | Ext.Element;
 
-    public insertFirst(el: unknown, o: object | string, returnElement?: boolean): HTMLElement | Ext.Element;
+    function insertFirst(el: unknown, o: object | string, returnElement?: boolean):  HTMLElement | Ext.Element;
 
-    public insertHtml(where: string, el: HTMLElement, html: string): HTMLElement;
+    function insertHtml(where: string, el: HTMLElement, html: string):  HTMLElement;
 
-    public markup(o: object): string;
+    function markup(o: object):  string;
 
-    public overwrite(el: unknown, o: object | string, returnElement?: boolean): HTMLElement | Ext.Element;
+    function overwrite(el: unknown, o: object | string, returnElement?: boolean):  HTMLElement | Ext.Element;
   }
 }

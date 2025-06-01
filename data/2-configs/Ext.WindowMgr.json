@@ -2,6 +2,7 @@
   "name": "WindowMgr",
   "namespace": "Ext",
   "extends": "Ext.WindowGroup",
+  "singleton": true,
   "constructorMethod": null,
   "properties": [],
   "methods": [],

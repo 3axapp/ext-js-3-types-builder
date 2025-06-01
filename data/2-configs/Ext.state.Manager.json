@@ -1,6 +1,7 @@
 {
   "name": "Manager",
   "namespace": "Ext.state",
+  "singleton": true,
   "constructorMethod": null,
   "properties": [],
   "methods": [

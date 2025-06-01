@@ -1,24 +1,24 @@
 declare namespace Ext.data {
-  class Types {
+  namespace Types {
 
-    public AUTO: object;
+    const AUTO: object;
 
-    public BOOL: object;
+    const BOOL: object;
 
-    public BOOLEAN: object;
+    const BOOLEAN: object;
 
-    public DATE: object;
+    const DATE: object;
 
-    public FLOAT: object;
+    const FLOAT: object;
 
-    public INT: object;
+    const INT: object;
 
-    public INTEGER: object;
+    const INTEGER: object;
 
-    public NUMBER: object;
+    const NUMBER: object;
 
-    public STRING: object;
+    const STRING: object;
 
-    public stripRe: Regexp;
+    const stripRe: Regexp;
   }
 }

@@ -1,6 +1,7 @@
 {
   "name": "Functions",
   "namespace": "Ext.util",
+  "singleton": true,
   "constructorMethod": null,
   "properties": [],
   "methods": [

@@ -53,7 +53,8 @@ export class Printer
     let result    = `\n${indent}interface ${this.getEventInterfaceName()}`;
 
     if (this.data.types) {
-      result += `<${this.data.types.map(i => {
+      result += `<${this.data.types.map(i =>
+      {
         let type = i.name;
         if (i.extends) {
           type += ` extends ${i.extends}`;
@@ -73,6 +74,10 @@ export class Printer
 
   private printClass(indent: Indent): string
   {
+    if (this.data.singleton) {
+      return this.printSingleton(indent);
+    }
+
     let result = `${indent}class ${this.data.name}`;
 
     if (this.data.types) {
@@ -113,9 +118,15 @@ export class Printer
 
   private printProperty(property: ClassProperty, indent: Indent): string
   {
-    let result = [property.visibility || 'public'];
-    if (property.static) {
-      result.push('static');
+    let result = [];
+
+    if (this.data.singleton) {
+      result.push('const');
+    } else {
+      result.push(property.visibility || 'public');
+      if (property.static) {
+        result.push('static');
+      }
     }
 
     result.push(`${property.name}:`);
@@ -152,12 +163,18 @@ export class Printer
 
   private printMethod(method: ClassMethod, indent: Indent)
   {
-    let result = [method.visibility || 'public'];
-    if (method.static) {
-      result.push('static');
+    let result = [];
+
+    if (this.data.singleton) {
+      result.push(`function ${method.name}(${this.printArguments(method.arguments)}): `);
+    } else {
+      result.push(method.visibility || 'public');
+      if (method.static) {
+        result.push('static');
+      }
+      result.push(`${method.name}(${this.printArguments(method.arguments)}):`);
     }
 
-    result.push(`${method.name}(${this.printArguments(method.arguments)}):`);
     result.push(`${method.returnType.join(' | ') || 'void'};\n`);
 
     return `\n${indent}${result.join(' ')}`;
@@ -183,5 +200,16 @@ export class Printer
   {
     return `I${this.data.name}Events`;
   }
-}
 
+  private printSingleton(indent: Indent): string
+  {
+    let result = `${indent}namespace ${this.data.name}`;
+
+    result += ' {\n';
+
+    result += this.printProperties(indent.inc());
+    result += this.printMethods(indent.inc());
+
+    return `${result}${indent}}\n`;
+  }
+}

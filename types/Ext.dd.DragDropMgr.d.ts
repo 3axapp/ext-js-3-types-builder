@@ -1,122 +1,122 @@
 declare namespace Ext.dd {
-  class DragDropMgr {
+  namespace DragDropMgr {
 
-    public INTERSECT: int;
+    const INTERSECT: int;
 
-    public POINT: int;
+    const POINT: int;
 
-    public clickPixelThresh: int;
+    const clickPixelThresh: int;
 
-    public clickTimeThresh: int;
+    const clickTimeThresh: int;
 
-    private clickTimeout: object;
+    const clickTimeout: object;
 
-    private deltaX: int;
+    const deltaX: int;
 
-    private deltaY: int;
+    const deltaY: int;
 
-    private dragCurrent: DragDrop;
+    const dragCurrent: DragDrop;
 
-    private dragOvers: unknown[];
+    const dragOvers: unknown[];
 
-    private dragThreshMet: boolean;
+    const dragThreshMet: boolean;
 
-    private elementCache: object;
+    const elementCache: object;
 
-    private handleIds: String[];
+    const handleIds: String[];
 
-    private ids: String[];
+    const ids: String[];
 
-    private initialized: boolean;
+    const initialized: boolean;
 
-    private locationCache: object;
+    const locationCache: object;
 
-    private locked: boolean;
+    const locked: boolean;
 
-    public mode: int;
+    const mode: int;
 
-    public notifyOccluded: boolean;
+    const notifyOccluded: boolean;
 
-    public preventDefault: boolean;
+    const preventDefault: boolean;
 
-    private startX: int;
+    const startX: int;
 
-    private startY: int;
+    const startY: int;
 
-    public stopPropagation: boolean;
+    const stopPropagation: boolean;
 
-    public useCache: boolean;
+    const useCache: boolean;
 
-    private _execOnAll(sMethod: object, args: object): void;
+    function _execOnAll(sMethod: object, args: object):  void;
 
-    private _onLoad(): void;
+    function _onLoad():  void;
 
-    private _onResize(e: object): void;
+    function _onResize(e: object):  void;
 
-    private _onUnload(e: object, me: object): void;
+    function _onUnload(e: object, me: object):  void;
 
-    private _remove(oDD: object): void;
+    function _remove(oDD: object):  void;
 
-    private byZIndex(d1: object, d2: object): void;
+    function byZIndex(d1: object, d2: object):  void;
 
-    private fireEvents(e: Event, isDrop: boolean): void;
+    function fireEvents(e: Event, isDrop: boolean):  void;
 
-    public getBestMatch(dds: DragDrop[]): DragDrop;
+    function getBestMatch(dds: DragDrop[]):  DragDrop;
 
-    public getCss(id: string): object;
+    function getCss(id: string):  object;
 
-    public getDDById(id: string): DragDrop;
+    function getDDById(id: string):  DragDrop;
 
-    private getElWrapper(id: string): Ext.dd.DDM.ElementWrapper;
+    function getElWrapper(id: string):  Ext.dd.DDM.ElementWrapper;
 
-    public getElement(id: string): object;
+    function getElement(id: string):  object;
 
-    public getLocation(oDD: DragDrop): Ext.lib.Region;
+    function getLocation(oDD: DragDrop):  Ext.lib.Region;
 
-    public getRelated(p_oDD: DragDrop, bTargetsOnly: boolean): DragDrop[];
+    function getRelated(p_oDD: DragDrop, bTargetsOnly: boolean):  DragDrop[];
 
-    private getZIndex(element: object): number;
+    function getZIndex(element: object):  number;
 
-    private handleMouseDown(e: Event, oDD: object): void;
+    function handleMouseDown(e: Event, oDD: object):  void;
 
-    private handleMouseMove(e: Event): void;
+    function handleMouseMove(e: Event):  void;
 
-    private handleMouseUp(e: Event): void;
+    function handleMouseUp(e: Event):  void;
 
-    private init(): void;
+    function init():  void;
 
-    public isDragDrop(id: string): boolean;
+    function isDragDrop(id: string):  boolean;
 
-    public isHandle(id: string): boolean;
+    function isHandle(id: string):  boolean;
 
-    public isLegalTarget(oDD: DragDrop, oTargetDD: DragDrop): boolean;
+    function isLegalTarget(oDD: DragDrop, oTargetDD: DragDrop):  boolean;
 
-    public isLocked(): boolean;
+    function isLocked():  boolean;
 
-    private isOverTarget(pt: Ext.lib.Point, oTarget: DragDrop): boolean;
+    function isOverTarget(pt: Ext.lib.Point, oTarget: DragDrop):  boolean;
 
-    public isTypeOfDD(the: object): boolean;
+    function isTypeOfDD(the: object):  boolean;
 
-    public lock(): void;
+    function lock():  void;
 
-    public refreshCache(groups: object): void;
+    function refreshCache(groups: object):  void;
 
-    public regDragDrop(oDD: DragDrop, sGroup: string): void;
+    function regDragDrop(oDD: DragDrop, sGroup: string):  void;
 
-    public regHandle(sDDId: string, sHandleId: string): void;
+    function regHandle(sDDId: string, sHandleId: string):  void;
 
-    private removeDDFromGroup(oDD: object, sGroup: object): void;
+    function removeDDFromGroup(oDD: object, sGroup: object):  void;
 
-    public startDrag(x: object, y: object): void;
+    function startDrag(x: object, y: object):  void;
 
-    private stopDrag(e: Event): void;
+    function stopDrag(e: Event):  void;
 
-    public stopEvent(e: Event): void;
+    function stopEvent(e: Event):  void;
 
-    public unlock(): void;
+    function unlock():  void;
 
-    private unregAll(): void;
+    function unregAll():  void;
 
-    public verifyEl(el: HTMLElement): boolean;
+    function verifyEl(el: HTMLElement):  boolean;
   }
 }

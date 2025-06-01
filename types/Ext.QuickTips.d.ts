@@ -1,20 +1,20 @@
 declare namespace Ext {
-  class QuickTips {
+  namespace QuickTips {
 
-    public disable(): void;
+    function disable():  void;
 
-    public enable(): void;
+    function enable():  void;
 
-    public getQuickTip(): Ext.QuickTip;
+    function getQuickTip():  Ext.QuickTip;
 
-    public init(autoRender: boolean): void;
+    function init(autoRender: boolean):  void;
 
-    public isEnabled(): boolean;
+    function isEnabled():  boolean;
 
-    public register(config: object): void;
+    function register(config: object):  void;
 
-    public tips(config: object): void;
+    function tips(config: object):  void;
 
-    public unregister(el: string | HTMLElement | Element): void;
+    function unregister(el: string | HTMLElement | Element):  void;
   }
 }

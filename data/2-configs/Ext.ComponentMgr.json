@@ -1,6 +1,7 @@
 {
   "name": "ComponentMgr",
   "namespace": "Ext",
+  "singleton": true,
   "constructorMethod": null,
   "properties": [
     {

@@ -13,7 +13,7 @@ declare namespace Ext.data {
 
     public fireEvent<T extends IHttpProxyEvents = IHttpProxyEvents, E extends keyof T = keyof T>(eventName: E, ...args: Parameters<T[E]>): boolean;
 
-    public getConnection(): Connection;
+    public getConnection(): Ext.data.Connection;
 
     public hasListener<T extends IHttpProxyEvents = IHttpProxyEvents, E extends keyof T = keyof T>(eventName: E): boolean;
 

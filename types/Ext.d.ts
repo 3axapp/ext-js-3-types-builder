@@ -1,206 +1,208 @@
-declare class Ext {
+declare namespace Ext {
 
-  public BLANK_IMAGE_URL: string;
+  const BLANK_IMAGE_URL: string;
 
-  public SSL_SECURE_URL: string;
+  const SSL_SECURE_URL: string;
 
-  public USE_NATIVE_JSON: boolean;
+  const USE_NATIVE_JSON: boolean;
 
-  public emptyFn: Function;
+  const emptyFn: Function;
 
-  public enableForcedBoxModel: boolean;
+  const enableForcedBoxModel: boolean;
 
-  public enableFx: boolean;
+  const enableFx: boolean;
 
-  public enableGarbageCollector: boolean;
+  const enableGarbageCollector: boolean;
 
-  public enableListenerCollection: boolean;
+  const enableListenerCollection: boolean;
 
-  public enableNestedListenerRemoval: boolean;
+  const enableNestedListenerRemoval: boolean;
 
-  public isAir: boolean;
+  const isAir: boolean;
 
-  public isBorderBox: boolean;
+  const isBorderBox: boolean;
 
-  public isChrome: boolean;
+  const isChrome: boolean;
 
-  public isGecko: boolean;
+  const isGecko: boolean;
 
-  public isGecko2: boolean;
+  const isGecko2: boolean;
 
-  public isGecko3: boolean;
+  const isGecko3: boolean;
 
-  public isIE: boolean;
+  const isIE: boolean;
 
-  public isIE6: boolean;
+  const isIE6: boolean;
 
-  public isIE7: boolean;
+  const isIE7: boolean;
 
-  public isIE8: boolean;
+  const isIE8: boolean;
 
-  public isIE9: boolean;
+  const isIE9: boolean;
 
-  public isLinux: boolean;
+  const isLinux: boolean;
 
-  public isMac: boolean;
+  const isMac: boolean;
 
-  public isOpera: boolean;
+  const isOpera: boolean;
 
-  public isReady: boolean;
+  const isReady: boolean;
 
-  public isSafari: boolean;
+  const isSafari: boolean;
 
-  public isSafari2: boolean;
+  const isSafari2: boolean;
 
-  public isSafari3: boolean;
+  const isSafari3: boolean;
 
-  public isSafari4: boolean;
+  const isSafari4: boolean;
 
-  public isSecure: boolean;
+  const isSecure: boolean;
 
-  public isStrict: boolean;
+  const isStrict: boolean;
 
-  public isWebKit: boolean;
+  const isWebKit: boolean;
 
-  public isWindows: boolean;
+  const isWindows: boolean;
 
-  public useShims: boolean;
+  const useShims: boolean;
 
-  public ux: object;
+  const ux: object;
 
-  public version: string;
+  const version: string;
 
-  private versionDetail: object;
+  const versionDetail: object;
 
-  public addBehaviors(obj: object): void;
+  function addBehaviors(obj: object):  void;
 
-  public apply(obj: object, config: object, defaults: object): object;
+  function apply(obj: object, config: object, defaults: object):  object;
 
-  public applyIf(obj: object, config: object): object;
+  function applyIf(obj: object, config: object):  object;
 
-  public clean(arr: unknown[] | NodeList): unknown[];
+  function clean(arr: unknown[] | NodeList):  unknown[];
 
-  public copyTo(dest: object, source: object, names: unknown[] | string): object;
+  function copyTo(dest: object, source: object, names: unknown[] | string):  object;
 
-  public create(config: object, defaultType: typeof Ext.util.Observable): Ext.Component;
+  function create(config: object, defaultType: typeof Ext.util.Observable):  Ext.Component;
 
-  public createDelegate(fn: Function, scope?: object, args?: unknown[], appendArgs?: boolean | number): Function;
+  function createDelegate(fn: Function, scope?: object, args?: unknown[], appendArgs?: boolean | number):  Function;
 
-  public createInterceptor(origFn: Function, newFn: Function, scope?: object): Function;
+  function createInterceptor(origFn: Function, newFn: Function, scope?: object):  Function;
 
-  public createSequence(origFn: Function, newFn: Function, scope?: object): Function;
+  function createSequence(origFn: Function, newFn: Function, scope?: object):  Function;
 
-  public decode(json: string, safe?: boolean): object;
+  function decode(json: string, safe?: boolean):  object;
 
-  public defer(fn: Function, millis: number, scope?: object, args?: unknown[], appendArgs?: boolean | number): number;
+  function defer(fn: Function, millis: number, scope?: object, args?: unknown[], appendArgs?: boolean | number):  number;
 
-  public define(className: string, data: object, createdFn: Function): Ext.Base;
+  function define(className: string, data: object, createdFn: Function):  Ext.Base;
 
-  public destroy(...args: unknown[]): void;
+  function destroy(...args: unknown[]):  void;
 
-  public destroyMembers(o: object, arg1: unknown, etc: unknown): void;
+  function destroyMembers(o: object, arg1: unknown, etc: unknown):  void;
 
-  public each(array: unknown[] | NodeList | unknown, fn: Function, scope: object): object;
+  function each(array: unknown[] | NodeList | unknown, fn: Function, scope: object):  object;
 
-  public encode(o: unknown): string;
+  function encode(o: unknown):  string;
 
-  public escapeRe(str: string): string;
+  function escapeRe(str: string):  string;
 
-  public extend(superclass: Function, overrides: object): Function;
+  function extend(superclass: Function, overrides: object):  Function;
 
-  public flatten(arr: unknown[]): unknown[];
+  function extend(subclass: Function, superclass: Function, overrides: object):  Function;
 
-  public fly(el: string | HTMLElement, named?: string): Element;
+  function flatten(arr: unknown[]):  unknown[];
 
-  public get(el: unknown): Element;
+  function fly(el: string | HTMLElement, named?: string):  Element;
 
-  public getBody(): object;
+  function get(el: unknown):  Element;
 
-  public getCmp(id: string): object;
+  function getBody():  object;
 
-  public getDoc(): object;
+  function getCmp(id: string):  object;
 
-  public getDom(el: unknown): object;
+  function getDoc():  object;
 
-  public getHead(): object;
+  function getDom(el: unknown):  object;
 
-  public getScrollBarWidth(force?: boolean): number;
+  function getHead():  object;
 
-  public handleError(e: object | Error): void;
+  function getScrollBarWidth(force?: boolean):  number;
 
-  public id(el?: unknown, prefix?: string): string;
+  function handleError(e: object | Error):  void;
 
-  public invoke(arr: unknown[] | NodeList, methodName: string, ...args: *[]): unknown[];
+  function id(el?: unknown, prefix?: string):  string;
 
-  public isArray(value: unknown): boolean;
+  function invoke(arr: unknown[] | NodeList, methodName: string, ...args: unknown[]):  unknown[];
 
-  public isBoolean(value: unknown): boolean;
+  function isArray(value: unknown):  boolean;
 
-  public isDate(object: object): boolean;
+  function isBoolean(value: unknown):  boolean;
 
-  public isDefined(value: unknown): boolean;
+  function isDate(object: object):  boolean;
 
-  public isElement(value: unknown): boolean;
+  function isDefined(value: unknown):  boolean;
 
-  public isEmpty(value: unknown, allowBlank?: boolean): boolean;
+  function isElement(value: unknown):  boolean;
 
-  public isFunction(value: unknown): boolean;
+  function isEmpty(value: unknown, allowBlank?: boolean):  boolean;
 
-  public isNumber(value: unknown): boolean;
+  function isFunction(value: unknown):  boolean;
 
-  public isObject(value: unknown): boolean;
+  function isNumber(value: unknown):  boolean;
 
-  public isPrimitive(value: unknown): boolean;
+  function isObject(value: unknown):  boolean;
 
-  public isString(value: unknown): boolean;
+  function isPrimitive(value: unknown):  boolean;
 
-  public iterate(object: object | unknown[], fn: Function, scope: object): void;
+  function isString(value: unknown):  boolean;
 
-  public max(arr: unknown[] | NodeList, comp?: Function): object;
+  function iterate(object: object | unknown[], fn: Function, scope: object):  void;
 
-  public mean(arr: unknown[]): number;
+  function max(arr: unknown[] | NodeList, comp?: Function):  object;
 
-  public min(arr: unknown[] | NodeList, comp?: Function): object;
+  function mean(arr: unknown[]):  number;
 
-  public namespace(namespace1: string, namespace2: string, etc: string): object;
+  function min(arr: unknown[] | NodeList, comp?: Function):  object;
 
-  public ns(namespace1: string, namespace2: string, etc: string): object;
+  function namespace(namespace1: string, namespace2: string, etc: string):  object;
 
-  public num(value: unknown, defaultValue: number): number;
+  function ns(namespace1: string, namespace2: string, etc: string):  object;
 
-  public onReady(fn: Function, scope?: object, options?: boolean): void;
+  function num(value: unknown, defaultValue: number):  number;
 
-  public override(target: object, overrides: object): void;
+  function onReady(fn: Function, scope?: object, options?: boolean):  void;
 
-  public partition(arr: unknown[] | NodeList, truth?: Function): unknown[];
+  function override(target: object, overrides: object):  void;
 
-  public pluck(arr: unknown[] | NodeList, prop: string): unknown[];
+  function partition(arr: unknown[] | NodeList, truth?: Function):  unknown[];
 
-  public preg(ptype: string, cls: typeof Ext.Component): void;
+  function pluck(arr: unknown[] | NodeList, prop: string):  unknown[];
 
-  public query(path: string, root?: Node): unknown[];
+  function preg(ptype: string, cls: typeof Ext.Component):  void;
 
-  public reg(xtype: string, cls: typeof Ext.Component): void;
+  function query(path: string, root?: Node):  unknown[];
 
-  public removeNode(node: HTMLElement): void;
+  function reg(xtype: string, cls: typeof Ext.Component):  void;
 
-  public select(selector: string | unknown[], root?: HTMLElement | string): Ext.CompositeElementLite | Ext.CompositeElement;
+  function removeNode(node: HTMLElement):  void;
 
-  public sum(arr: unknown[]): number;
+  function select(selector: string | unknown[], root?: HTMLElement | string):  Ext.CompositeElementLite | Ext.CompositeElement;
 
-  public toArray(the: Iterable): object;
+  function sum(arr: unknown[]):  number;
 
-  public type(object: unknown): string;
+  function toArray(the: Iterable<unknown>):  object;
 
-  public unique(arr: unknown[]): unknown[];
+  function type(object: unknown):  string;
 
-  public urlAppend(url: string, s: string): object;
+  function unique(arr: unknown[]):  unknown[];
 
-  public urlDecode(string: string, overwrite?: boolean): object;
+  function urlAppend(url: string, s: string):  object;
 
-  public urlEncode(o: object, pre?: string): string;
+  function urlDecode(string: string, overwrite?: boolean):  object;
 
-  public value(value: unknown, defaultValue: unknown, allowBlank?: boolean): unknown;
+  function urlEncode(o: object, pre?: string):  string;
 
-  public zip(arr: Arrays | NodeLists, zipper?: Function): unknown[];
+  function value(value: unknown, defaultValue: unknown, allowBlank?: boolean):  unknown;
+
+  function zip(arr: unknown[][] | NodeList[], zipper?: Function):  unknown[];
 }

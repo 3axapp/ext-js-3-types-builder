@@ -1,33 +1,31 @@
 declare namespace Ext {
-  class History extends Ext.util.Observable {
+  namespace History {
 
-    public fieldId: string;
+    const fieldId: string;
 
-    public iframeId: string;
+    const iframeId: string;
 
-    public constructor(config: IHistoryConfig);
+    function add(token: string, preventDuplicates: boolean):  void;
 
-    public add(token: string, preventDuplicates: boolean): void;
+    function addListener<T extends IHistoryEvents = IHistoryEvents, E extends keyof T = keyof T>(eventName: E, handler: T[E], scope?: object, options?: object):  void;
 
-    public addListener<T extends IHistoryEvents = IHistoryEvents, E extends keyof T = keyof T>(eventName: E, handler: T[E], scope?: object, options?: object): void;
+    function back():  void;
 
-    public back(): void;
+    function fireEvent<T extends IHistoryEvents = IHistoryEvents, E extends keyof T = keyof T>(eventName: E, ...args: Parameters<T[E]>):  boolean;
 
-    public fireEvent<T extends IHistoryEvents = IHistoryEvents, E extends keyof T = keyof T>(eventName: E, ...args: Parameters<T[E]>): boolean;
+    function forward():  void;
 
-    public forward(): void;
+    function getToken():  string;
 
-    public getToken(): string;
+    function hasListener<T extends IHistoryEvents = IHistoryEvents, E extends keyof T = keyof T>(eventName: E):  boolean;
 
-    public hasListener<T extends IHistoryEvents = IHistoryEvents, E extends keyof T = keyof T>(eventName: E): boolean;
+    function init(onReady?: boolean, scope?: object):  void;
 
-    public init(onReady?: boolean, scope?: object): void;
+    function on<T extends IHistoryEvents = IHistoryEvents, E extends keyof T = keyof T>(eventName: E, handler: T[E], scope?: object, options?: object):  void;
 
-    public on<T extends IHistoryEvents = IHistoryEvents, E extends keyof T = keyof T>(eventName: E, handler: T[E], scope?: object, options?: object): void;
+    function removeListener<T extends IHistoryEvents = IHistoryEvents, E extends keyof T = keyof T>(eventName: E, handler: T[E], scope?: object):  void;
 
-    public removeListener<T extends IHistoryEvents = IHistoryEvents, E extends keyof T = keyof T>(eventName: E, handler: T[E], scope?: object): void;
-
-    public un<T extends IHistoryEvents = IHistoryEvents, E extends keyof T = keyof T>(eventName: E, handler: T[E], scope?: object): void;
+    function un<T extends IHistoryEvents = IHistoryEvents, E extends keyof T = keyof T>(eventName: E, handler: T[E], scope?: object):  void;
   }
 
   interface IHistoryConfig {

@@ -2,6 +2,7 @@
   "name": "History",
   "namespace": "Ext",
   "extends": "Ext.util.Observable",
+  "singleton": true,
   "constructorMethod": {
     "config": [
       {

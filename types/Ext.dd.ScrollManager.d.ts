@@ -1,24 +1,24 @@
 declare namespace Ext.dd {
-  class ScrollManager {
+  namespace ScrollManager {
 
-    public animDuration: number;
+    const animDuration: number;
 
-    public animate: boolean;
+    const animate: boolean;
 
-    public ddGroup: string;
+    const ddGroup: string;
 
-    public frequency: number;
+    const frequency: number;
 
-    public hthresh: number;
+    const hthresh: number;
 
-    public increment: number;
+    const increment: number;
 
-    public vthresh: number;
+    const vthresh: number;
 
-    public refreshCache(): void;
+    function refreshCache():  void;
 
-    public register(el: unknown | unknown[]): void;
+    function register(el: unknown | unknown[]):  void;
 
-    public unregister(el: unknown | unknown[]): void;
+    function unregister(el: unknown | unknown[]):  void;
   }
 }

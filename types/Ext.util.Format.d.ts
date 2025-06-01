@@ -1,48 +1,48 @@
 declare namespace Ext.util {
-  class Format {
+  namespace Format {
 
-    public capitalize(value: string): string;
+    function capitalize(value: string):  string;
 
-    public date(value: string | Date, format?: string): string;
+    function date(value: string | Date, format?: string):  string;
 
-    public dateRenderer(format: string): Function;
+    function dateRenderer(format: string):  Function;
 
-    public defaultValue(value: unknown, defaultValue: string): string;
+    function defaultValue(value: unknown, defaultValue: string):  string;
 
-    public ellipsis(value: string, length: number, word: boolean): string;
+    function ellipsis(value: string, length: number, word: boolean):  string;
 
-    public fileSize(size: number | string): string;
+    function fileSize(size: number | string):  string;
 
-    public htmlDecode(value: string): string;
+    function htmlDecode(value: string):  string;
 
-    public htmlEncode(value: string): string;
+    function htmlEncode(value: string):  string;
 
-    public lowercase(value: string): string;
+    function lowercase(value: string):  string;
 
-    public math(): Function;
+    function math():  Function;
 
-    public nl2br(The: string): string;
+    function nl2br(The: string):  string;
 
-    public number(v: number, format: string): string;
+    function number(v: number, format: string):  string;
 
-    public numberRenderer(format: string): Function;
+    function numberRenderer(format: string):  Function;
 
-    public plural(value: number, singular: string, plural?: string): void;
+    function plural(value: number, singular: string, plural?: string):  void;
 
-    public round(value: number | string, precision: number): number;
+    function round(value: number | string, precision: number):  number;
 
-    public stripScripts(value: unknown): string;
+    function stripScripts(value: unknown):  string;
 
-    public stripTags(value: unknown): string;
+    function stripTags(value: unknown):  string;
 
-    public substr(value: string, start: number, length: number): string;
+    function substr(value: string, start: number, length: number):  string;
 
-    public trim(value: string): string;
+    function trim(value: string):  string;
 
-    public undef(value: unknown): unknown;
+    function undef(value: unknown):  unknown;
 
-    public uppercase(value: string): string;
+    function uppercase(value: string):  string;
 
-    public usMoney(value: number | string): string;
+    function usMoney(value: number | string):  string;
   }
 }

@@ -1,6 +1,7 @@
 {
   "name": "JSON",
   "namespace": "Ext.util",
+  "singleton": true,
   "constructorMethod": null,
   "properties": [],
   "methods": [

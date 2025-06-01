@@ -1,6 +1,6 @@
 declare namespace Ext {
-  class FlashProxy {
+  namespace FlashProxy {
 
-    private onEvent(id: object, e: object): void;
+    function onEvent(id: object, e: object):  void;
   }
 }

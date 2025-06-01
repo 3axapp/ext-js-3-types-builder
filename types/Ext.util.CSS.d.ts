@@ -1,18 +1,18 @@
 declare namespace Ext.util {
-  class CSS {
+  namespace CSS {
 
-    public createStyleSheet(cssText: string, id: string): StyleSheet;
+    function createStyleSheet(cssText: string, id: string):  StyleSheet;
 
-    public getRule(selector: string | unknown[], refreshCache: boolean): CSSRule;
+    function getRule(selector: string | unknown[], refreshCache: boolean):  CSSRule;
 
-    public getRules(refreshCache: boolean): object;
+    function getRules(refreshCache: boolean):  object;
 
-    public refreshCache(): object;
+    function refreshCache():  object;
 
-    public removeStyleSheet(id: string): void;
+    function removeStyleSheet(id: string):  void;
 
-    public swapStyleSheet(id: string, url: string): void;
+    function swapStyleSheet(id: string, url: string):  void;
 
-    public updateRule(selector: string | unknown[], property: string, value: string): boolean;
+    function updateRule(selector: string | unknown[], property: string, value: string):  boolean;
   }
 }

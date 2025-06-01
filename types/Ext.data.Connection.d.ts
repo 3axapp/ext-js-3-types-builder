@@ -35,8 +35,8 @@ declare namespace Ext.data {
   }
 
   interface IConnectionEvents extends globalThis.Record<string, (...args: any[]) => boolean | void> {
-    beforerequest: (conn: Connection, options: object) => boolean | void;
-    requestcomplete: (conn: Connection, response: object, options: object) => boolean | void;
-    requestexception: (conn: Connection, response: object, options: object) => boolean | void;
+    beforerequest: (conn: Ext.data.Connection, options: object) => boolean | void;
+    requestcomplete: (conn: Ext.data.Connection, response: object, options: object) => boolean | void;
+    requestexception: (conn: Ext.data.Connection, response: object, options: object) => boolean | void;
   }
 }

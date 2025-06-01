@@ -1,35 +1,33 @@
 declare namespace Ext {
-  class Ajax extends Ext.data.Connection {
+  namespace Ajax {
 
-    public autoAbort: boolean;
+    const autoAbort: boolean;
 
-    public defaultHeaders: object;
+    const defaultHeaders: object;
 
-    public disableCaching: boolean;
+    const disableCaching: boolean;
 
-    public extraParams: object;
+    const extraParams: object;
 
-    public method: string;
+    const method: string;
 
-    public timeout: number;
+    const timeout: number;
 
-    public url: string;
+    const url: string;
 
-    public constructor(config: IAjaxConfig);
+    function addListener<T extends IAjaxEvents = IAjaxEvents, E extends keyof T = keyof T>(eventName: E, handler: T[E], scope?: object, options?: object):  void;
 
-    public addListener<T extends IAjaxEvents = IAjaxEvents, E extends keyof T = keyof T>(eventName: E, handler: T[E], scope?: object, options?: object): void;
+    function fireEvent<T extends IAjaxEvents = IAjaxEvents, E extends keyof T = keyof T>(eventName: E, ...args: Parameters<T[E]>):  boolean;
 
-    public fireEvent<T extends IAjaxEvents = IAjaxEvents, E extends keyof T = keyof T>(eventName: E, ...args: Parameters<T[E]>): boolean;
+    function hasListener<T extends IAjaxEvents = IAjaxEvents, E extends keyof T = keyof T>(eventName: E):  boolean;
 
-    public hasListener<T extends IAjaxEvents = IAjaxEvents, E extends keyof T = keyof T>(eventName: E): boolean;
+    function on<T extends IAjaxEvents = IAjaxEvents, E extends keyof T = keyof T>(eventName: E, handler: T[E], scope?: object, options?: object):  void;
 
-    public on<T extends IAjaxEvents = IAjaxEvents, E extends keyof T = keyof T>(eventName: E, handler: T[E], scope?: object, options?: object): void;
+    function removeListener<T extends IAjaxEvents = IAjaxEvents, E extends keyof T = keyof T>(eventName: E, handler: T[E], scope?: object):  void;
 
-    public removeListener<T extends IAjaxEvents = IAjaxEvents, E extends keyof T = keyof T>(eventName: E, handler: T[E], scope?: object): void;
+    function serializeForm(form: string | HTMLElement):  string;
 
-    public serializeForm(form: string | HTMLElement): string;
-
-    public un<T extends IAjaxEvents = IAjaxEvents, E extends keyof T = keyof T>(eventName: E, handler: T[E], scope?: object): void;
+    function un<T extends IAjaxEvents = IAjaxEvents, E extends keyof T = keyof T>(eventName: E, handler: T[E], scope?: object):  void;
   }
 
   interface IAjaxConfig {
@@ -38,8 +36,8 @@ declare namespace Ext {
   }
 
   interface IAjaxEvents extends globalThis.Record<string, (...args: any[]) => boolean | void> {
-    beforerequest: (conn: Connection, options: object) => boolean | void;
-    requestcomplete: (conn: Connection, response: object, options: object) => boolean | void;
-    requestexception: (conn: Connection, response: object, options: object) => boolean | void;
+    beforerequest: (conn: Ext.data.Connection, options: object) => boolean | void;
+    requestcomplete: (conn: Ext.data.Connection, response: object, options: object) => boolean | void;
+    requestexception: (conn: Ext.data.Connection, response: object, options: object) => boolean | void;
   }
 }

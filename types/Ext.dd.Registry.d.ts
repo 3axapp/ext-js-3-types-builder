@@ -1,16 +1,16 @@
 declare namespace Ext.dd {
-  class Registry {
+  namespace Registry {
 
-    public getHandle(id: string | HTMLElement): object;
+    function getHandle(id: string | HTMLElement):  object;
 
-    public getHandleFromEvent(e: Event): object;
+    function getHandleFromEvent(e: Event):  object;
 
-    public getTarget(id: string | HTMLElement): object;
+    function getTarget(id: string | HTMLElement):  object;
 
-    public getTargetFromEvent(e: Event): object;
+    function getTargetFromEvent(e: Event):  object;
 
-    public register(element: string | HTMLElement, data?: object): void;
+    function register(element: string | HTMLElement, data?: object):  void;
 
-    public unregister(element: string | HTMLElement): void;
+    function unregister(element: string | HTMLElement):  void;
   }
 }

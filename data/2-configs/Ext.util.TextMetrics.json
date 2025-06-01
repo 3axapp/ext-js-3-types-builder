@@ -1,6 +1,7 @@
 {
   "name": "TextMetrics",
   "namespace": "Ext.util",
+  "singleton": true,
   "constructorMethod": null,
   "properties": [],
   "methods": [

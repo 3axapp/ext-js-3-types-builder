@@ -1,30 +1,30 @@
 declare namespace Ext {
-  class EventObject {
+  namespace EventObject {
 
-    public getCharCode(): number;
+    function getCharCode():  number;
 
-    public getKey(): number;
+    function getKey():  number;
 
-    public getPageX(): number;
+    function getPageX():  number;
 
-    public getPageY(): number;
+    function getPageY():  number;
 
-    public getRelatedTarget(): HTMLElement;
+    function getRelatedTarget():  HTMLElement;
 
-    public getTarget(selector?: string, maxDepth?: number | unknown, returnEl?: boolean): HTMLelement;
+    function getTarget(selector?: string, maxDepth?: number | unknown, returnEl?: boolean):  HTMLelement;
 
-    public getWheelDelta(): number;
+    function getWheelDelta():  number;
 
-    public getXY(): unknown[];
+    function getXY():  unknown[];
 
-    public preventDefault(): void;
+    function preventDefault():  void;
 
-    private setEvent(e: object): void;
+    function setEvent(e: object):  void;
 
-    public stopEvent(): void;
+    function stopEvent():  void;
 
-    public stopPropagation(): void;
+    function stopPropagation():  void;
 
-    public within(el: unknown, related?: boolean, allowEl?: boolean): boolean;
+    function within(el: unknown, related?: boolean, allowEl?: boolean):  boolean;
   }
 }

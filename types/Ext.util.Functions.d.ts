@@ -1,12 +1,12 @@
 declare namespace Ext.util {
-  class Functions {
+  namespace Functions {
 
-    public createDelegate(fn: Function, scope?: object, args?: unknown[], appendArgs?: boolean | number): Function;
+    function createDelegate(fn: Function, scope?: object, args?: unknown[], appendArgs?: boolean | number):  Function;
 
-    public createInterceptor(origFn: Function, newFn: Function, scope?: object): Function;
+    function createInterceptor(origFn: Function, newFn: Function, scope?: object):  Function;
 
-    public createSequence(origFn: Function, newFn: Function, scope?: object): Function;
+    function createSequence(origFn: Function, newFn: Function, scope?: object):  Function;
 
-    public defer(fn: Function, millis: number, scope?: object, args?: unknown[], appendArgs?: boolean | number): number;
+    function defer(fn: Function, millis: number, scope?: object, args?: unknown[], appendArgs?: boolean | number):  number;
   }
 }

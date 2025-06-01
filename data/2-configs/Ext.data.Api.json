@@ -2,6 +2,7 @@
   "name": "Api",
   "namespace": "Ext.data",
   "extends": null,
+  "singleton": true,
   "constructorMethod": null,
   "properties": [
     {

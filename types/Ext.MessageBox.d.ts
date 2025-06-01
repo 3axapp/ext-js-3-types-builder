@@ -1,58 +1,58 @@
 declare namespace Ext {
-  class MessageBox {
+  namespace MessageBox {
 
-    public CANCEL: object;
+    const CANCEL: object;
 
-    public ERROR: string;
+    const ERROR: string;
 
-    public INFO: string;
+    const INFO: string;
 
-    public OK: object;
+    const OK: object;
 
-    public OKCANCEL: object;
+    const OKCANCEL: object;
 
-    public QUESTION: string;
+    const QUESTION: string;
 
-    public WARNING: string;
+    const WARNING: string;
 
-    public YESNO: object;
+    const YESNO: object;
 
-    public YESNOCANCEL: object;
+    const YESNOCANCEL: object;
 
-    public buttonText: object;
+    const buttonText: object;
 
-    public defaultTextHeight: number;
+    const defaultTextHeight: number;
 
-    public maxWidth: number;
+    const maxWidth: number;
 
-    public minProgressWidth: number;
+    const minProgressWidth: number;
 
-    public minPromptWidth: number;
+    const minPromptWidth: number;
 
-    public minWidth: number;
+    const minWidth: number;
 
-    public alert(title: string, msg: string, fn?: Function, scope?: object): this;
+    function alert(title: string, msg: string, fn?: Function, scope?: object):  this;
 
-    public confirm(title: string, msg: string, fn?: Function, scope?: object): this;
+    function confirm(title: string, msg: string, fn?: Function, scope?: object):  this;
 
-    public getDialog(titleText: object): Ext.Window;
+    function getDialog(titleText: object):  Ext.Window;
 
-    public hide(): this;
+    function hide():  this;
 
-    public isVisible(): boolean;
+    function isVisible():  boolean;
 
-    public progress(title: string, msg: string, progressText?: string): this;
+    function progress(title: string, msg: string, progressText?: string):  this;
 
-    public prompt(title: string, msg: string, fn?: Function, scope?: object, multiline?: boolean | number, value?: string): this;
+    function prompt(title: string, msg: string, fn?: Function, scope?: object, multiline?: boolean | number, value?: string):  this;
 
-    public setIcon(icon: string): this;
+    function setIcon(icon: string):  this;
 
-    public show(config: object): this;
+    function show(config: object):  this;
 
-    public updateProgress(value: number, progressText: string, msg: string): this;
+    function updateProgress(value: number, progressText: string, msg: string):  this;
 
-    public updateText(text?: string): this;
+    function updateText(text?: string):  this;
 
-    public wait(msg: string, title?: string, config?: object): this;
+    function wait(msg: string, title?: string, config?: object):  this;
   }
 }

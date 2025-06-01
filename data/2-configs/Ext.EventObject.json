@@ -1,6 +1,7 @@
 {
   "name": "EventObject",
   "namespace": "Ext",
+  "singleton": true,
   "constructorMethod": null,
   "properties": [],
   "methods": [

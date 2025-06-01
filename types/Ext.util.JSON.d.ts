@@ -1,10 +1,10 @@
 declare namespace Ext.util {
-  class JSON {
+  namespace JSON {
 
-    public decode(json: string): object;
+    function decode(json: string):  object;
 
-    public encode(o: unknown): string;
+    function encode(o: unknown):  string;
 
-    public encodeDate(d: Date): string;
+    function encodeDate(d: Date):  string;
   }
 }

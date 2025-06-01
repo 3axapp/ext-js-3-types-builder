@@ -1,6 +1,7 @@
 {
   "name": "QuickTips",
   "namespace": "Ext",
+  "singleton": true,
   "constructorMethod": null,
   "properties": [],
   "methods": [

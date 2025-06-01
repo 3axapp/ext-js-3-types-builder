@@ -1,20 +1,20 @@
 declare namespace Ext.data {
-  class SortTypes {
+  namespace SortTypes {
 
-    public stripTagsRE: RegExp;
+    const stripTagsRE: RegExp;
 
-    public asDate(s: unknown): number;
+    function asDate(s: unknown):  number;
 
-    public asFloat(s: unknown): number;
+    function asFloat(s: unknown):  number;
 
-    public asInt(s: unknown): number;
+    function asInt(s: unknown):  number;
 
-    public asText(s: unknown): string;
+    function asText(s: unknown):  string;
 
-    public asUCString(s: unknown): string;
+    function asUCString(s: unknown):  string;
 
-    public asUCText(s: unknown): string;
+    function asUCText(s: unknown):  string;
 
-    public none(s: unknown): unknown;
+    function none(s: unknown):  unknown;
   }
 }

@@ -1,20 +1,20 @@
 declare namespace Ext.data {
-  class Api {
+  namespace Api {
 
-    public actions: object;
+    const actions: object;
 
-    public restActions: object;
+    const restActions: object;
 
-    public getVerb(name: string): string | null;
+    function getVerb(name: string):  string | null;
 
-    public hasUniqueUrl(proxy: Ext.data.DataProxy, verb: string): boolean;
+    function hasUniqueUrl(proxy: Ext.data.DataProxy, verb: string):  boolean;
 
-    public isAction(action: string): boolean;
+    function isAction(action: string):  boolean;
 
-    public isValid(api: object): String[]|true;
+    function isValid(api: object):  String[]|true;
 
-    public prepare(proxy: Ext.data.DataProxy): void;
+    function prepare(proxy: Ext.data.DataProxy):  void;
 
-    public restify(proxy: Ext.data.DataProxy): void;
+    function restify(proxy: Ext.data.DataProxy):  void;
   }
 }

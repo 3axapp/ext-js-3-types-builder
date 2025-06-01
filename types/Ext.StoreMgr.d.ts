@@ -1,25 +1,23 @@
 declare namespace Ext {
-  class StoreMgr extends Ext.util.MixedCollection {
+  namespace StoreMgr {
 
-    public constructor(config: IStoreMgrConfig);
+    function addListener<T extends IStoreMgrEvents = IStoreMgrEvents, E extends keyof T = keyof T>(eventName: E, handler: T[E], scope?: object, options?: object):  void;
 
-    public addListener<T extends IStoreMgrEvents = IStoreMgrEvents, E extends keyof T = keyof T>(eventName: E, handler: T[E], scope?: object, options?: object): void;
+    function fireEvent<T extends IStoreMgrEvents = IStoreMgrEvents, E extends keyof T = keyof T>(eventName: E, ...args: Parameters<T[E]>):  boolean;
 
-    public fireEvent<T extends IStoreMgrEvents = IStoreMgrEvents, E extends keyof T = keyof T>(eventName: E, ...args: Parameters<T[E]>): boolean;
+    function hasListener<T extends IStoreMgrEvents = IStoreMgrEvents, E extends keyof T = keyof T>(eventName: E):  boolean;
 
-    public hasListener<T extends IStoreMgrEvents = IStoreMgrEvents, E extends keyof T = keyof T>(eventName: E): boolean;
+    function lookup(id: string | object):  Ext.data.Store<R>;
 
-    public lookup(id: string | object): Ext.data.Store<R>;
+    function on<T extends IStoreMgrEvents = IStoreMgrEvents, E extends keyof T = keyof T>(eventName: E, handler: T[E], scope?: object, options?: object):  void;
 
-    public on<T extends IStoreMgrEvents = IStoreMgrEvents, E extends keyof T = keyof T>(eventName: E, handler: T[E], scope?: object, options?: object): void;
+    function register(...stores: Ext.data.Store<R>[]):  void;
 
-    public register(...stores: Ext.data.Store<R>[]): void;
+    function removeListener<T extends IStoreMgrEvents = IStoreMgrEvents, E extends keyof T = keyof T>(eventName: E, handler: T[E], scope?: object):  void;
 
-    public removeListener<T extends IStoreMgrEvents = IStoreMgrEvents, E extends keyof T = keyof T>(eventName: E, handler: T[E], scope?: object): void;
+    function un<T extends IStoreMgrEvents = IStoreMgrEvents, E extends keyof T = keyof T>(eventName: E, handler: T[E], scope?: object):  void;
 
-    public un<T extends IStoreMgrEvents = IStoreMgrEvents, E extends keyof T = keyof T>(eventName: E, handler: T[E], scope?: object): void;
-
-    public unregister(ids: string | object): void;
+    function unregister(ids: string | object):  void;
   }
 
   interface IStoreMgrConfig {

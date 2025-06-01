@@ -1,6 +1,7 @@
 {
   "name": "DragDropMgr",
   "namespace": "Ext.dd",
+  "singleton": true,
   "constructorMethod": null,
   "properties": [
     {

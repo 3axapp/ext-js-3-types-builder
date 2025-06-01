@@ -17,9 +17,12 @@ export class Parser {
         CompositeElementLite: () => 'Ext.CompositeElementLite',
         MixedCollection: () => 'Ext.util.MixedCollection',
         Menu: () => 'Ext.menu.Menu',
+        Connection: () => 'Ext.data.Connection',
         'Ext.data.Store': () => 'Ext.data.Store<R>',
         Record: () => 'Ext.data.Record<R>',
         'Record[]': () => 'Ext.data.Record<R>[]',
+        Iterable: () => 'Iterable<unknown>',
+        '*': () => 'unknown',
         HtmlElement: () => 'HTMLElement',
         XMLElement: () => 'Node',
         Float: () => 'number',
@@ -32,6 +35,8 @@ export class Parser {
         Mixed: () => 'unknown',
         misc: () => 'unknown',
         Array: () => 'unknown[]',
+        Arrays: () => 'unknown[][]',
+        NodeLists: () => 'NodeList[]',
         Class: (name) => {
             if (name == 'xtype') {
                 return 'typeof Ext.Component';
@@ -60,6 +65,7 @@ export class Parser {
             name: name,
             namespace: namespace.join('.'),
             extends: data.extends,
+            singleton: data.singleton ? true : undefined,
             constructorMethod: this.getConstructor(this.getMemberByTagName(MemberTypes.CONFIG)),
             properties: this.getProperties(this.getMemberByTagName(MemberTypes.PROPERTY)),
             methods: this.getMethods(this.getMemberByTagName(MemberTypes.METHOD)),

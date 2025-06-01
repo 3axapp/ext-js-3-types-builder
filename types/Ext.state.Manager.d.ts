@@ -1,14 +1,14 @@
 declare namespace Ext.state {
-  class Manager {
+  namespace Manager {
 
-    public clear(name: string): void;
+    function clear(name: string):  void;
 
-    public get(name: string, defaultValue: unknown): unknown;
+    function get(name: string, defaultValue: unknown):  unknown;
 
-    public getProvider(): Provider;
+    function getProvider():  Provider;
 
-    public set(name: string, value: unknown): void;
+    function set(name: string, value: unknown):  void;
 
-    public setProvider(stateProvider: Provider): void;
+    function setProvider(stateProvider: Provider):  void;
   }
 }

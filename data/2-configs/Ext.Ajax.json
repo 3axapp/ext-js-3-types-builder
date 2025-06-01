@@ -2,6 +2,7 @@
   "name": "Ajax",
   "namespace": "Ext",
   "extends": "Ext.data.Connection",
+  "singleton": true,
   "constructorMethod": {
     "config": [
       {
@@ -270,7 +271,7 @@
           "name": "conn",
           "comment": "",
           "type": [
-            "Connection"
+            "Ext.data.Connection"
           ]
         },
         {
@@ -289,7 +290,7 @@
           "name": "conn",
           "comment": "",
           "type": [
-            "Connection"
+            "Ext.data.Connection"
           ]
         },
         {
@@ -315,7 +316,7 @@
           "name": "conn",
           "comment": "",
           "type": [
-            "Connection"
+            "Ext.data.Connection"
           ]
         },
         {

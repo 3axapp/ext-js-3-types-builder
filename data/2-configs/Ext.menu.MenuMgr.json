@@ -1,6 +1,7 @@
 {
   "name": "MenuMgr",
   "namespace": "Ext.menu",
+  "singleton": true,
   "constructorMethod": null,
   "properties": [],
   "methods": [

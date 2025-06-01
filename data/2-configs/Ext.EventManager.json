@@ -2,6 +2,7 @@
   "name": "EventManager",
   "namespace": "Ext",
   "extends": null,
+  "singleton": true,
   "constructorMethod": null,
   "properties": [
     {

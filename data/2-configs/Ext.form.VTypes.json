@@ -1,6 +1,7 @@
 {
   "name": "VTypes",
   "namespace": "Ext.form",
+  "singleton": true,
   "constructorMethod": null,
   "properties": [
     {

@@ -1,6 +1,7 @@
 {
   "name": "FlashProxy",
   "namespace": "Ext",
+  "singleton": true,
   "constructorMethod": null,
   "properties": [],
   "methods": [

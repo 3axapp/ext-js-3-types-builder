@@ -1,26 +1,26 @@
 declare namespace Ext.form {
-  class VTypes {
+  namespace VTypes {
 
-    public alphaMask: RegExp;
+    const alphaMask: RegExp;
 
-    public alphaText: string;
+    const alphaText: string;
 
-    public alphanumMask: RegExp;
+    const alphanumMask: RegExp;
 
-    public alphanumText: string;
+    const alphanumText: string;
 
-    public emailMask: RegExp;
+    const emailMask: RegExp;
 
-    public emailText: string;
+    const emailText: string;
 
-    public urlText: string;
+    const urlText: string;
 
-    public alpha(value: string): boolean;
+    function alpha(value: string):  boolean;
 
-    public alphanum(value: string): boolean;
+    function alphanum(value: string):  boolean;
 
-    public email(value: string): boolean;
+    function email(value: string):  boolean;
 
-    public url(value: string): boolean;
+    function url(value: string):  boolean;
   }
 }

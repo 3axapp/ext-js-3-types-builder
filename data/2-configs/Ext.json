@@ -2,6 +2,7 @@
   "name": "Ext",
   "namespace": "",
   "extends": null,
+  "singleton": true,
   "constructorMethod": null,
   "properties": [
     {
@@ -758,6 +759,36 @@
       ]
     },
     {
+      "name": "extend",
+      "returnType": [
+        "Function"
+      ],
+      "visibility": "public",
+      "arguments": [
+        {
+          "name": "subclass",
+          "comment": "",
+          "type": [
+            "Function"
+          ]
+        },
+        {
+          "name": "superclass",
+          "comment": "",
+          "type": [
+            "Function"
+          ]
+        },
+        {
+          "name": "overrides",
+          "comment": "",
+          "type": [
+            "object"
+          ]
+        }
+      ]
+    },
+    {
       "name": "flatten",
       "returnType": [
         "unknown[]"
@@ -949,7 +980,7 @@
           "name": "...args",
           "comment": "",
           "type": [
-            "*[]"
+            "unknown[]"
           ]
         }
       ]
@@ -1542,7 +1573,7 @@
           "name": "the",
           "comment": "",
           "type": [
-            "Iterable"
+            "Iterable<unknown>"
           ]
         }
       ]
@@ -1689,8 +1720,8 @@
           "name": "arr",
           "comment": "",
           "type": [
-            "Arrays",
-            "NodeLists"
+            "unknown[][]",
+            "NodeList[]"
           ]
         },
         {

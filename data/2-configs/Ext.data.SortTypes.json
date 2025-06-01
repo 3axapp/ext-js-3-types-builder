@@ -1,6 +1,7 @@
 {
   "name": "SortTypes",
   "namespace": "Ext.data",
+  "singleton": true,
   "constructorMethod": null,
   "properties": [
     {

@@ -2,6 +2,7 @@
   "name": "StoreMgr",
   "namespace": "Ext",
   "extends": "Ext.util.MixedCollection",
+  "singleton": true,
   "constructorMethod": {
     "config": [
       {

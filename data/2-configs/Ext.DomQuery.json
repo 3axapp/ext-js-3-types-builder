@@ -1,6 +1,7 @@
 {
   "name": "DomQuery",
   "namespace": "Ext",
+  "singleton": true,
   "constructorMethod": null,
   "properties": [
     {

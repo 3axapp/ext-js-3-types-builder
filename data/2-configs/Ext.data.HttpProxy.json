@@ -184,7 +184,7 @@
     {
       "name": "getConnection",
       "returnType": [
-        "Connection"
+        "Ext.data.Connection"
       ],
       "visibility": "public",
       "arguments": []

@@ -1,8 +1,8 @@
 declare namespace Ext.menu {
-  class MenuMgr {
+  namespace MenuMgr {
 
-    public get(menu: string | object): Ext.menu.Menu;
+    function get(menu: string | object):  Ext.menu.Menu;
 
-    public hideAll(): boolean;
+    function hideAll():  boolean;
   }
 }

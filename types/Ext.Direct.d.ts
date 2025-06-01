@@ -1,39 +1,37 @@
 declare namespace Ext {
-  class Direct extends Ext.util.Observable {
+  namespace Direct {
 
-    public eventTypes: object;
+    const eventTypes: object;
 
-    public exceptions: object;
+    const exceptions: object;
 
-    public constructor(config: IDirectConfig);
+    function addListener<T extends IDirectEvents = IDirectEvents, E extends keyof T = keyof T>(eventName: E, handler: T[E], scope?: object, options?: object):  void;
 
-    public addListener<T extends IDirectEvents = IDirectEvents, E extends keyof T = keyof T>(eventName: E, handler: T[E], scope?: object, options?: object): void;
+    function addProvider(provider: object | unknown[]):  void;
 
-    public addProvider(provider: object | unknown[]): void;
+    function addTransaction(t: object):  void;
 
-    private addTransaction(t: object): void;
+    function createEvent(response: object, extraProps: object):  void;
 
-    private createEvent(response: object, extraProps: object): void;
+    function fireEvent<T extends IDirectEvents = IDirectEvents, E extends keyof T = keyof T>(eventName: E, ...args: Parameters<T[E]>):  boolean;
 
-    public fireEvent<T extends IDirectEvents = IDirectEvents, E extends keyof T = keyof T>(eventName: E, ...args: Parameters<T[E]>): boolean;
+    function getProvider(id: string):  void;
 
-    public getProvider(id: string): void;
+    function getTransaction(tid: object):  void;
 
-    private getTransaction(tid: object): void;
+    function hasListener<T extends IDirectEvents = IDirectEvents, E extends keyof T = keyof T>(eventName: E):  boolean;
 
-    public hasListener<T extends IDirectEvents = IDirectEvents, E extends keyof T = keyof T>(eventName: E): boolean;
+    function on<T extends IDirectEvents = IDirectEvents, E extends keyof T = keyof T>(eventName: E, handler: T[E], scope?: object, options?: object):  void;
 
-    public on<T extends IDirectEvents = IDirectEvents, E extends keyof T = keyof T>(eventName: E, handler: T[E], scope?: object, options?: object): void;
+    function onProviderData(provider: object, e: object):  void;
 
-    private onProviderData(provider: object, e: object): void;
+    function removeListener<T extends IDirectEvents = IDirectEvents, E extends keyof T = keyof T>(eventName: E, handler: T[E], scope?: object):  void;
 
-    public removeListener<T extends IDirectEvents = IDirectEvents, E extends keyof T = keyof T>(eventName: E, handler: T[E], scope?: object): void;
+    function removeProvider(id: object):  void;
 
-    private removeProvider(id: object): void;
+    function removeTransaction(t: object):  void;
 
-    private removeTransaction(t: object): void;
-
-    public un<T extends IDirectEvents = IDirectEvents, E extends keyof T = keyof T>(eventName: E, handler: T[E], scope?: object): void;
+    function un<T extends IDirectEvents = IDirectEvents, E extends keyof T = keyof T>(eventName: E, handler: T[E], scope?: object):  void;
   }
 
   interface IDirectConfig {
