@@ -214,7 +214,7 @@
           "name": "fn",
           "comment": "",
           "type": [
-            "Function"
+            "T[E]"
           ]
         },
         {
@@ -1831,7 +1831,7 @@
           "name": "fn",
           "comment": "",
           "type": [
-            "Function"
+            "T[E]"
           ]
         },
         {
@@ -2052,7 +2052,7 @@
           "name": "fn",
           "comment": "",
           "type": [
-            "Function"
+            "T[E]"
           ]
         },
         {
@@ -2850,7 +2850,7 @@
           "name": "fn",
           "comment": "",
           "type": [
-            "Function"
+            "T[E]"
           ]
         },
         {

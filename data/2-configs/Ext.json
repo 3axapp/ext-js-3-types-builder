@@ -1269,24 +1269,10 @@
       "visibility": "public",
       "arguments": [
         {
-          "name": "namespace1",
+          "name": "...namespaces",
           "comment": "",
           "type": [
-            "string"
-          ]
-        },
-        {
-          "name": "namespace2",
-          "comment": "",
-          "type": [
-            "string"
-          ]
-        },
-        {
-          "name": "etc",
-          "comment": "",
-          "type": [
-            "string"
+            "string[]"
           ]
         }
       ]
@@ -1299,24 +1285,10 @@
       "visibility": "public",
       "arguments": [
         {
-          "name": "namespace1",
+          "name": "...namespaces",
           "comment": "",
           "type": [
-            "string"
-          ]
-        },
-        {
-          "name": "namespace2",
-          "comment": "",
-          "type": [
-            "string"
-          ]
-        },
-        {
-          "name": "etc",
-          "comment": "",
-          "type": [
-            "string"
+            "string[]"
           ]
         }
       ]

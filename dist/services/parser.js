@@ -222,7 +222,7 @@ export class Parser {
             if (a.name == 'eventName') {
                 a.type = [`E`];
             }
-            else if (a.name == 'handler') {
+            else if (a.name == 'handler' || a.name == 'fn') {
                 a.type = ['T[E]'];
             }
             else if (a.name == '...args') {

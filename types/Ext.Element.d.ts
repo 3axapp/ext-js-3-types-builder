@@ -31,7 +31,7 @@ declare namespace Ext {
 
     public addKeyMap(config: object): Ext.KeyMap;
 
-    public addListener<T extends IElementEvents = IElementEvents, E extends keyof T = keyof T>(eventName: E, fn: Function, scope?: object, options?: object): this;
+    public addListener<T extends IElementEvents = IElementEvents, E extends keyof T = keyof T>(eventName: E, fn: T[E], scope?: object, options?: object): this;
 
     private addUnits(size: object): void;
 
@@ -201,7 +201,7 @@ declare namespace Ext {
 
     public next(selector?: string, returnDom?: boolean): Ext.Element | HTMLElement;
 
-    public on<T extends IElementEvents = IElementEvents, E extends keyof T = keyof T>(eventName: E, fn: Function, scope?: object, options?: object): void;
+    public on<T extends IElementEvents = IElementEvents, E extends keyof T = keyof T>(eventName: E, fn: T[E], scope?: object, options?: object): void;
 
     public parent(selector?: string, returnDom?: boolean): Ext.Element | HTMLElement;
 
@@ -225,7 +225,7 @@ declare namespace Ext {
 
     public removeClass(className: string | unknown[]): this;
 
-    public removeListener<T extends IElementEvents = IElementEvents, E extends keyof T = keyof T>(eventName: E, fn: Function, scope: object): this;
+    public removeListener<T extends IElementEvents = IElementEvents, E extends keyof T = keyof T>(eventName: E, fn: T[E], scope: object): this;
 
     public repaint(): this;
 
@@ -297,7 +297,7 @@ declare namespace Ext {
 
     public translatePoints(x: number | unknown[], y?: number): object;
 
-    public un<T extends IElementEvents = IElementEvents, E extends keyof T = keyof T>(eventName: E, fn: Function, scope: object): this;
+    public un<T extends IElementEvents = IElementEvents, E extends keyof T = keyof T>(eventName: E, fn: T[E], scope: object): this;
 
     public unclip(): this;
 

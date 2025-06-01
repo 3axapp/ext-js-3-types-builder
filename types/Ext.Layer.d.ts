@@ -3,15 +3,15 @@ declare namespace Ext {
 
     public constructor(config: ILayerConfig);
 
-    public addListener<T extends ILayerEvents = ILayerEvents, E extends keyof T = keyof T>(eventName: E, fn: Function, scope?: object, options?: object): this;
+    public addListener<T extends ILayerEvents = ILayerEvents, E extends keyof T = keyof T>(eventName: E, fn: T[E], scope?: object, options?: object): this;
 
-    public on<T extends ILayerEvents = ILayerEvents, E extends keyof T = keyof T>(eventName: E, fn: Function, scope?: object, options?: object): void;
+    public on<T extends ILayerEvents = ILayerEvents, E extends keyof T = keyof T>(eventName: E, fn: T[E], scope?: object, options?: object): void;
 
-    public removeListener<T extends ILayerEvents = ILayerEvents, E extends keyof T = keyof T>(eventName: E, fn: Function, scope: object): this;
+    public removeListener<T extends ILayerEvents = ILayerEvents, E extends keyof T = keyof T>(eventName: E, fn: T[E], scope: object): this;
 
     public setZIndex(zindex: number): this;
 
-    public un<T extends ILayerEvents = ILayerEvents, E extends keyof T = keyof T>(eventName: E, fn: Function, scope: object): this;
+    public un<T extends ILayerEvents = ILayerEvents, E extends keyof T = keyof T>(eventName: E, fn: T[E], scope: object): this;
   }
 
   interface ILayerConfig {

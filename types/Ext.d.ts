@@ -164,9 +164,9 @@ declare namespace Ext {
 
   function min(arr: unknown[] | NodeList, comp?: Function):  object;
 
-  function namespace(namespace1: string, namespace2: string, etc: string):  object;
+  function namespace(...namespaces: string[]):  object;
 
-  function ns(namespace1: string, namespace2: string, etc: string):  object;
+  function ns(...namespaces: string[]):  object;
 
   function num(value: unknown, defaultValue: number):  number;
 
