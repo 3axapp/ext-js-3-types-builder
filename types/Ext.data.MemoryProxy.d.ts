@@ -30,7 +30,7 @@ declare namespace Ext.data {
     beforewrite: (thisCmp: MemoryProxy, action: string, rs: Ext.data.Record<R> | Ext.data.Record<R>[], params: object) => boolean | void;
     exception: (thisCmp: MemoryProxy, type: string, action: string, options: object, response: object, arg: unknown) => boolean | void;
     load: (thisCmp: MemoryProxy, o: object, options: object) => boolean | void;
-    loadexception: (thisCmp: MemoryProxy, arg: object, null: object, e: Error) => boolean | void;
+    loadexception: (thisCmp: MemoryProxy, arg: object, willAlwaysBeNull: object, e: Error) => boolean | void;
     write: (thisCmp: MemoryProxy, action: string, data: object, response: object, rs: Ext.data.Record<R> | Ext.data.Record<R>[], options: object) => boolean | void;
   }
 }

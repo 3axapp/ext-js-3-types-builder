@@ -7,6 +7,7 @@ export class Parser {
         class: 'className',
         old: 'oldValue',
         new: 'newValue',
+        null: 'willAlwaysBeNull',
     };
     primitives = {
         ContainerLayout: () => 'Ext.layout.ContainerLayout',
@@ -182,6 +183,10 @@ export class Parser {
         return config;
     }
     replaceName(name) {
+        if (name.includes('-')) {
+            name = name.split('-').map(s => s[0].toUpperCase() + s.slice(1)).join('');
+            name = name[0].toLowerCase() + name.slice(1);
+        }
         return this.replaceNames[name] || name;
     }
     getConfigPropertyType(argument, id) {

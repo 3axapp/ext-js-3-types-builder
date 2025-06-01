@@ -43,7 +43,7 @@
       "visibility": "private",
       "arguments": [
         {
-          "name": "data-root",
+          "name": "dataRoot",
           "comment": "",
           "type": [
             "Object[]",

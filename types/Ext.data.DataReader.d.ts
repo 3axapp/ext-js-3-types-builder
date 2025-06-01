@@ -7,7 +7,7 @@ declare namespace Ext.data {
 
     public buildExtractors(): void;
 
-    private extractData(data-root: Object[] | object, returnRecords: boolean): void;
+    private extractData(dataRoot: Object[] | object, returnRecords: boolean): void;
 
     public extractValues(): void;
 
